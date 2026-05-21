@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BookCard from "../../components/BookCard.astro";
+import { getAllTopics, getBooks } from "../../lib/books";
+
+const books = await getBooks();
+const topics = getAllTopics(books);
+---
+
+<BaseLayout title="Books | Kevin L. Michel - The Library" description="Browse the Kevin L. Michel book catalogue.">
+  <section class="page-intro">
+    <p class="eyebrow">Catalogue</p>
+    <h1>Books by Kevin L. Michel</h1>
+    <p>
+      A growing shelf of field guides, philosophical works, poems, parables, strategy books,
+      and living manuscripts.
+    </p>
+  </section>
+
+  <section class="filter-panel" aria-label="Topic index">
+    <span>Browse signals</span>
+    <div class="topic-cloud topic-cloud--compact">
+      {topics.map((topic) => <a href={`?topic=${encodeURIComponent(topic)}`}>{topic}</a>)}
+    </div>
+  </section>
+
+  <section class="book-grid" aria-label="All books">
+    {books.map((book) => <BookCard book={book} />)}
+  </section>
+</BaseLayout>

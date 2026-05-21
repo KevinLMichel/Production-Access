@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kevin L. Michel Library mark">
+  <rect width="64" height="64" rx="14" fill="#101827"/>
+  <path d="M14 17h14c4 0 7 3 7 7v25c-2.6-2.4-5.8-3.6-9.8-3.6H14V17Z" fill="#f3ead9"/>
+  <path d="M50 17H36c-4 0-7 3-7 7v25c2.6-2.4 5.8-3.6 9.8-3.6H50V17Z" fill="#27d8ff"/>
+  <path d="M32 15v35" stroke="#ff6b4a" stroke-width="3" stroke-linecap="round"/>
+</svg>

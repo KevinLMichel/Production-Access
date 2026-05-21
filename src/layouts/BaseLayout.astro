@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import { siteMeta } from "../lib/siteMeta";
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  title = siteMeta.title,
+  description = siteMeta.description,
+  bodyClass = ""
+} = Astro.props;
+
+const navItems = [
+  { href: "/", label: "Library" },
+  { href: "/books/", label: "Books" },
+  { href: "/author/", label: "Author" },
+  { href: "/about/", label: "About" }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body class={bodyClass}>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Kevin L. Michel Library home">
+          <span class="brand__mark">KL</span>
+          <span>
+            <strong>Kevin L. Michel</strong>
+            <small>The Library</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="site-footer">
+        <p>{siteMeta.displayTitle}. {siteMeta.subtitle}.</p>
+        <p>Books, manuscripts, parables, field guides, and philosophical work by Kevin L. Michel.</p>
+      </footer>
+    </div>
+  </body>
+</html>

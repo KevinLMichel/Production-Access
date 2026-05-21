@@ -1,0 +1,27 @@
+---
+interface FormatLink {
+  label: string;
+  href?: string;
+  status?: "available" | "planned" | "production" | "external";
+}
+
+interface Props {
+  formats?: FormatLink[];
+}
+
+const { formats = [] } = Astro.props;
+---
+
+<div class="format-links" aria-label="Available formats">
+  {
+    formats.map((format) =>
+      format.href ? (
+        <a class="format-link format-link--available" href={format.href}>
+          {format.label}
+        </a>
+      ) : (
+        <span class:list={["format-link", `format-link--${format.status ?? "planned"}`]}>{format.label}</span>
+      )
+    )
+  }
+</div>

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+.astro-preview*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*

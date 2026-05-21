@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BookCard from "../components/BookCard.astro";
+import FeaturedBook from "../components/FeaturedBook.astro";
+import GlassPanel from "../components/GlassPanel.astro";
+import { getAllTopics, getBooks, getBooksByShelf, getFeaturedBook } from "../lib/books";
+import { siteMeta } from "../lib/siteMeta";
+
+const books = await getBooks();
+const featuredBook = await getFeaturedBook();
+const featured = getBooksByShelf(books, "Featured").slice(0, 6);
+const active = getBooksByShelf(books, "New & Active").slice(0, 6);
+const fieldGuides = getBooksByShelf(books, "Field Guides").slice(0, 6);
+const comingSoon = getBooksByShelf(books, "Coming Soon").slice(0, 8);
+const topics = getAllTopics(books).slice(0, 18);
+---
+
+<BaseLayout title={siteMeta.displayTitle} description={siteMeta.description} bodyClass="home-page">
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Book Access</p>
+      <h1>Kevin L. Michel <span>The Library</span></h1>
+      <p class="hero__lede">
+        A future-facing catalogue for the collected works: field guides, philosophical manuals,
+        parables, poems, strategy books, and living manuscripts.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="/books/">Browse the books</a>
+        <a class="button button--ghost" href="/author/">About Kevin</a>
+      </div>
+    </div>
+
+    <GlassPanel className="hero__stat-panel">
+      <p class="eyebrow">Current archive</p>
+      <strong>{books.length}</strong>
+      <span>catalogued titles</span>
+      <div class="signal-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </GlassPanel>
+  </section>
+
+  <FeaturedBook book={featuredBook} />
+
+  <section class="shelf-section" aria-labelledby="featured-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Start here</p>
+      <h2 id="featured-heading">Featured works</h2>
+    </div>
+    <div class="book-rail">
+      {featured.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+
+  <section class="shelf-section" aria-labelledby="active-heading">
+    <div class="section-heading">
+      <p class="eyebrow">In motion</p>
+      <h2 id="active-heading">New and active</h2>
+    </div>
+    <div class="book-rail">
+      {active.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+
+  <section class="split-showcase">
+    <GlassPanel>
+      <p class="eyebrow">Browse by signal</p>
+      <h2>Topics across the library</h2>
+      <div class="topic-cloud">
+        {topics.map((topic) => <a href={`/books/?topic=${encodeURIComponent(topic)}`}>{topic}</a>)}
+      </div>
+    </GlassPanel>
+    <GlassPanel>
+      <p class="eyebrow">Coming shelf</p>
+      <h2>Future catalogue records</h2>
+      <ul class="compact-list">
+        {comingSoon.map((book) => <li><a href={`/books/${book.id}/`}>{book.data.title}</a></li>)}
+      </ul>
+    </GlassPanel>
+  </section>
+
+  <section class="shelf-section" aria-labelledby="field-guide-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Practical shelf</p>
+      <h2 id="field-guide-heading">Field guides and strategy books</h2>
+    </div>
+    <div class="book-rail">
+      {fieldGuides.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+</BaseLayout>

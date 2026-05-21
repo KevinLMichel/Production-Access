@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GlassPanel from "../components/GlassPanel.astro";
+import { getBooks } from "../lib/books";
+
+const books = await getBooks();
+---
+
+<BaseLayout title="Author | Kevin L. Michel - The Library" description="About Kevin L. Michel and the Library.">
+  <section class="page-intro page-intro--author">
+    <p class="eyebrow">Author</p>
+    <h1>Kevin L. Michel</h1>
+    <p>
+      Kevin L. Michel writes across practical philosophy, civic resilience, inner discipline,
+      parable, poetry, sport psychology, and the strange places where personal transformation
+      meets public life.
+    </p>
+  </section>
+
+  <section class="split-showcase">
+    <GlassPanel>
+      <h2>The library idea</h2>
+      <p>
+        This hub is built as a permanent shelf for the work: finished books, living manuscripts,
+        experimental texts, future audio editions, and book sites that can grow on their own.
+      </p>
+    </GlassPanel>
+    <GlassPanel>
+      <h2>Current catalogue</h2>
+      <p>
+        The first version opens with {books.length} catalogued titles and a featured living
+        manuscript, <em>The New Prince of Hard Times</em>.
+      </p>
+    </GlassPanel>
+  </section>
+</BaseLayout>

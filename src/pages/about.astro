@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GlassPanel from "../components/GlassPanel.astro";
+---
+
+<BaseLayout title="About | Kevin L. Michel - The Library" description="About Kevin L. Michel - The Library.">
+  <section class="page-intro">
+    <p class="eyebrow">About the archive</p>
+    <h1>A catalogue built for many books</h1>
+    <p>
+      Kevin L. Michel - The Library is the front door: a discovery layer for individual book
+      sites, downloadable editions, production updates, and future audio or print releases.
+    </p>
+  </section>
+
+  <section class="split-showcase">
+    <GlassPanel>
+      <h2>Simple now</h2>
+      <p>
+        V1 is intentionally static: no database, no accounts, no CMS, and no hidden admin layer.
+        The catalogue is stored in Markdown, deployed as a fast static site, and easy to expand.
+      </p>
+    </GlassPanel>
+    <GlassPanel>
+      <h2>Built to scale</h2>
+      <p>
+        Each book can later point to its own full site, PDF, paperback, audiobook, source notes,
+        or series page while this library remains the central browsing experience.
+      </p>
+    </GlassPanel>
+  </section>
+</BaseLayout>

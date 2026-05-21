@@ -1,0 +1,36 @@
+---
+import type { Book } from "../lib/books";
+import { bookHref } from "../lib/books";
+import FormatLinks from "./FormatLinks.astro";
+import StatusPill from "./StatusPill.astro";
+
+interface Props {
+  book: Book;
+  featured?: boolean;
+}
+
+const { book, featured = false } = Astro.props;
+const palette = ["#27d8ff", "#ff6b4a", "#b8ff5c", "#f4c95d", "#9f8cff", "#5eead4"];
+const accent = palette[book.id.length % palette.length];
+const href = bookHref(book);
+---
+
+<article class:list={["book-card", featured && "book-card--featured"]} style={`--accent: ${accent}`}>
+  <a class="book-card__cover-link" href={href} aria-label={`Open ${book.data.title}`}>
+    <div class="rendered-cover" aria-hidden="true">
+      <span class="rendered-cover__kicker">Kevin L. Michel</span>
+      <strong>{book.data.title}</strong>
+      {book.data.subtitle && <small>{book.data.subtitle}</small>}
+    </div>
+  </a>
+
+  <div class="book-card__body">
+    <StatusPill status={book.data.status} label={book.data.statusLabel} />
+    <h3><a href={href}>{book.data.title}</a></h3>
+    <p>{book.data.dek}</p>
+    <div class="topic-strip">
+      {book.data.topics.slice(0, 4).map((topic) => <span>{topic}</span>)}
+    </div>
+    <FormatLinks formats={book.data.formats.slice(0, 3)} />
+  </div>
+</article>

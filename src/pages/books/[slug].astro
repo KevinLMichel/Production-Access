@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FormatLinks from "../../components/FormatLinks.astro";
+import StatusPill from "../../components/StatusPill.astro";
+import { render } from "astro:content";
+import { bookHref, formatDate, getBooks } from "../../lib/books";
+
+export async function getStaticPaths() {
+  const books = await getBooks();
+  return books.map((book) => ({
+    params: { slug: book.id },
+    props: { book }
+  }));
+}
+
+const { book } = Astro.props;
+const { Content } = await render(book);
+const books = await getBooks();
+const index = books.findIndex((entry) => entry.id === book.id);
+const previous = index > 0 ? books[index - 1] : undefined;
+const next = index < books.length - 1 ? books[index + 1] : undefined;
+---
+
+<BaseLayout title={`${book.data.title} | Kevin L. Michel - The Library`} description={book.data.description}>
+  <article class="book-detail">
+    <aside class="book-detail__cover" aria-hidden="true">
+      <div class="hero-cover hero-cover--detail">
+        <span>{book.data.author}</span>
+        <strong>{book.data.title}</strong>
+        {book.data.subtitle && <small>{book.data.subtitle}</small>}
+      </div>
+    </aside>
+
+    <div class="book-detail__body">
+      <p class="eyebrow">Catalogue record</p>
+      <StatusPill status={book.data.status} label={book.data.statusLabel} />
+      <h1>{book.data.title}</h1>
+      {book.data.subtitle && <p class="book-detail__subtitle">{book.data.subtitle}</p>}
+      <p class="book-detail__dek">{book.data.dek}</p>
+      <FormatLinks formats={book.data.formats} />
+
+      <dl class="book-meta-list">
+        <div>
+          <dt>Author</dt>
+          <dd>{book.data.author}</dd>
+        </div>
+        <div>
+          <dt>Updated</dt>
+          <dd>{formatDate(book.data.updated)}</dd>
+        </div>
+        {
+          book.data.editionLabel && (
+            <div>
+              <dt>Edition</dt>
+              <dd>{book.data.editionLabel}</dd>
+            </div>
+          )
+        }
+      </dl>
+
+      <div class="topic-strip topic-strip--large">
+        {book.data.topics.map((topic) => <span>{topic}</span>)}
+      </div>
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav" aria-label="Adjacent books">
+        {previous ? <a href={bookHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={bookHref(next)}>Next: {next.data.title}</a> : <span></span>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

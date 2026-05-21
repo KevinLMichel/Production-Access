@@ -1,0 +1,37 @@
+---
+import type { Book } from "../lib/books";
+import { bookHref, formatDate } from "../lib/books";
+import FormatLinks from "./FormatLinks.astro";
+import StatusPill from "./StatusPill.astro";
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+const href = bookHref(book);
+---
+
+<section class="featured-book" aria-labelledby="featured-book-title">
+  <div class="featured-book__copy">
+    <p class="eyebrow">Featured now</p>
+    <StatusPill status={book.data.status} label={book.data.statusLabel} />
+    <h2 id="featured-book-title">{book.data.title}</h2>
+    {book.data.subtitle && <p class="featured-book__subtitle">{book.data.subtitle}</p>}
+    <p>{book.data.description}</p>
+    <div class="featured-book__meta">
+      <span>Updated {formatDate(book.data.updated)}</span>
+      {book.data.editionLabel && <span>{book.data.editionLabel}</span>}
+    </div>
+    <FormatLinks formats={book.data.formats} />
+    <a class="text-link" href={href}>View catalogue record</a>
+  </div>
+
+  <a class="featured-book__cover" href={href} aria-label={`Open ${book.data.title}`}>
+    <div class="hero-cover" aria-hidden="true">
+      <span>A field guide for hard times</span>
+      <strong>The New<br />Prince<br />of Hard<br />Times</strong>
+      <small>Kevin L. Michel</small>
+    </div>
+  </a>
+</section>

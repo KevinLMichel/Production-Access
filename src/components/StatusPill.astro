@@ -1,0 +1,10 @@
+---
+interface Props {
+  label?: string;
+  status?: string;
+}
+
+const { label = "Catalogue record", status = "catalogued" } = Astro.props;
+---
+
+<span class:list={["status-pill", `status-pill--${status}`]}>{label}</span>

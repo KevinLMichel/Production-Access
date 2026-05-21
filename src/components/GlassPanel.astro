@@ -1,0 +1,11 @@
+---
+interface Props {
+  className?: string;
+}
+
+const { className = "" } = Astro.props;
+---
+
+<section class:list={["glass-panel", className]}>
+  <slot />
+</section>
