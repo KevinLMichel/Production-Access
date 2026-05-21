@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
     "extract:freedom": "node scripts/extract-freedom-book.mjs",
     "preview": "astro preview",
     "astro": "astro"
@@ -16,5 +17,8 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "astro": "^6.3.1"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "^10.6.0"
   }
 }

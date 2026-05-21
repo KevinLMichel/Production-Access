@@ -147,8 +147,6 @@ If schedule disruption: Then I’ll treat that day as a recovery day or still sq
 
 If work crisis: I’ll scale back the week’s focus temporarily (maybe postpone a stretch goal) but maintain the core habit (like still do micro-promise to keep continuity).
 
-If I feel discouraged...(continuing Chapter 17)
-
 If I feel discouraged or fall behind: Then I will remind myself of my theme and that progress is not linear. I’ll re-read an inspiring entry from earlier in the plan (or a supportive note I wrote to myself before starting) to reconnect with my motivation. I’ll also shrink my commitments for a day to something easily achievable to get a quick win and rebuild momentum, rather than giving up.
 
 By pre-thinking obstacles and solutions, you’ll be able to act instead of overthink when challenges arise. Keep this troubleshooting list visible (maybe at the bottom of your tracker). It’s your personal FAQ for the tough moments.
