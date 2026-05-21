@@ -118,6 +118,26 @@
   }
 }
 
+@page toc {
+  margin: 0.72in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
 @page toc:left {
   margin: 0.72in 0.84in 0.72in 0.58in;
 

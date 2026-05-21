@@ -39,7 +39,7 @@ npm run book:pdf:fragmented
 The generated file is committed at `public/downloads/a-book-for-the-fragmented-kevin-l-michel.pdf`.
 Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
 
-Current generated interior: 406 pages at 5.5 x 8.5 inches.
+Current generated interior: 405 pages at 5.5 x 8.5 inches.
 
 ## Freedom by Design Cover
 

@@ -2,6 +2,7 @@
 const { chapter, printId, Content } = Astro.props;
 const { kickerLabel } = Astro.props;
 const { startOnRecto = false } = Astro.props;
+const { showSubtitle = true } = Astro.props;
 const isIntroduction = chapter.data.order === 0;
 const defaultKicker = isIntroduction ? "Introduction" : `Chapter ${chapter.data.order}`;
 ---
@@ -10,7 +11,7 @@ const defaultKicker = isIntroduction ? "Introduction" : `Chapter ${chapter.data.
   <header class="chapter-opener">
     <p class="chapter-kicker">{kickerLabel ?? defaultKicker}</p>
     <h1>{chapter.data.title}</h1>
-    {chapter.data.subtitle && <p class="chapter-subtitle">{chapter.data.subtitle}</p>}
+    {showSubtitle && chapter.data.subtitle && <p class="chapter-subtitle">{chapter.data.subtitle}</p>}
   </header>
   <div class="chapter-body">
     <Content />
