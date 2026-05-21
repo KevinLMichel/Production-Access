@@ -24,11 +24,17 @@ const next = index < books.length - 1 ? books[index + 1] : undefined;
 <BaseLayout title={`${book.data.title} | Kevin L. Michel - The Library`} description={book.data.description}>
   <article class="book-detail">
     <aside class="book-detail__cover" aria-hidden="true">
-      <div class="hero-cover hero-cover--detail">
-        <span>{book.data.author}</span>
-        <strong>{book.data.title}</strong>
-        {book.data.subtitle && <small>{book.data.subtitle}</small>}
-      </div>
+      {
+        book.data.cover ? (
+          <img class="hero-cover hero-cover--detail hero-cover--image" src={book.data.cover} alt="" />
+        ) : (
+          <div class="hero-cover hero-cover--detail">
+            <span>{book.data.author}</span>
+            <strong>{book.data.title}</strong>
+            {book.data.subtitle && <small>{book.data.subtitle}</small>}
+          </div>
+        )
+      }
     </aside>
 
     <div class="book-detail__body">

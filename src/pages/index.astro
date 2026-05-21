@@ -48,7 +48,7 @@ const topics = getAllTopics(books).slice(0, 18);
       <h2 id="featured-heading">Featured works</h2>
     </div>
     <div class="book-rail">
-      {featured.map((book) => <BookCard book={book} />)}
+      {featured.map((book) => <BookCard book={book} variant="shelf" />)}
     </div>
   </section>
 
@@ -58,7 +58,7 @@ const topics = getAllTopics(books).slice(0, 18);
       <h2 id="active-heading">New and active</h2>
     </div>
     <div class="book-rail">
-      {active.map((book) => <BookCard book={book} />)}
+      {active.map((book) => <BookCard book={book} variant="shelf" />)}
     </div>
   </section>
 
@@ -85,7 +85,7 @@ const topics = getAllTopics(books).slice(0, 18);
       <h2 id="field-guide-heading">Field guides and strategy books</h2>
     </div>
     <div class="book-rail">
-      {fieldGuides.map((book) => <BookCard book={book} />)}
+      {fieldGuides.map((book) => <BookCard book={book} variant="shelf" />)}
     </div>
   </section>
 </BaseLayout>

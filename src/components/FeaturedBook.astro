@@ -28,10 +28,16 @@ const href = bookHref(book);
   </div>
 
   <a class="featured-book__cover" href={href} aria-label={`Open ${book.data.title}`}>
-    <div class="hero-cover" aria-hidden="true">
-      <span>A field guide for hard times</span>
-      <strong>The New<br />Prince<br />of Hard<br />Times</strong>
-      <small>Kevin L. Michel</small>
-    </div>
+    {
+      book.data.cover ? (
+        <img class="hero-cover hero-cover--image" src={book.data.cover} alt="" loading="lazy" />
+      ) : (
+        <div class="hero-cover" aria-hidden="true">
+          <span>A field guide for hard times</span>
+          <strong>The New<br />Prince<br />of Hard<br />Times</strong>
+          <small>Kevin L. Michel</small>
+        </div>
+      )
+    }
   </a>
 </section>

@@ -7,21 +7,30 @@ import StatusPill from "./StatusPill.astro";
 interface Props {
   book: Book;
   featured?: boolean;
+  variant?: "shelf" | "catalogue";
 }
 
-const { book, featured = false } = Astro.props;
+const { book, featured = false, variant = "catalogue" } = Astro.props;
 const palette = ["#27d8ff", "#ff6b4a", "#b8ff5c", "#f4c95d", "#9f8cff", "#5eead4"];
 const accent = palette[book.id.length % palette.length];
 const href = bookHref(book);
+const topicLimit = variant === "shelf" ? 2 : 4;
+const formatLimit = variant === "shelf" ? 1 : 3;
 ---
 
-<article class:list={["book-card", featured && "book-card--featured"]} style={`--accent: ${accent}`}>
+<article class:list={["book-card", `book-card--${variant}`, featured && "book-card--featured"]} style={`--accent: ${accent}`}>
   <a class="book-card__cover-link" href={href} aria-label={`Open ${book.data.title}`}>
-    <div class="rendered-cover" aria-hidden="true">
-      <span class="rendered-cover__kicker">Kevin L. Michel</span>
-      <strong>{book.data.title}</strong>
-      {book.data.subtitle && <small>{book.data.subtitle}</small>}
-    </div>
+    {
+      book.data.cover ? (
+        <img class="rendered-cover rendered-cover--image" src={book.data.cover} alt="" loading="lazy" />
+      ) : (
+        <div class="rendered-cover" aria-hidden="true">
+          <span class="rendered-cover__kicker">Kevin L. Michel</span>
+          <strong>{book.data.title}</strong>
+          {book.data.subtitle && <small>{book.data.subtitle}</small>}
+        </div>
+      )
+    }
   </a>
 
   <div class="book-card__body">
@@ -29,8 +38,8 @@ const href = bookHref(book);
     <h3><a href={href}>{book.data.title}</a></h3>
     <p>{book.data.dek}</p>
     <div class="topic-strip">
-      {book.data.topics.slice(0, 4).map((topic) => <span>{topic}</span>)}
+      {book.data.topics.slice(0, topicLimit).map((topic) => <span>{topic}</span>)}
     </div>
-    <FormatLinks formats={book.data.formats.slice(0, 3)} />
+    <FormatLinks formats={book.data.formats.slice(0, formatLimit)} />
   </div>
 </article>
