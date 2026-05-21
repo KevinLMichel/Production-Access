@@ -9,10 +9,12 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "extract:freedom": "node scripts/extract-freedom-book.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "adm-zip": "^0.5.16",
     "astro": "^6.3.1"
   }
 }

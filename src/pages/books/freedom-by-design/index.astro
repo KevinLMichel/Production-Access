@@ -1,0 +1,138 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormatLinks from "../../../components/FormatLinks.astro";
+import { getBooks } from "../../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../../lib/bookWorld";
+
+const books = await getBooks();
+const book = books.find((entry) => entry.id === "freedom-by-design");
+
+if (!book) {
+  throw new Error("Freedom by Design catalogue record not found.");
+}
+
+const chapters = await getBookChapters("freedom-by-design");
+const parts = groupChaptersByPart(chapters);
+const firstChapter = chapters[0];
+const totalWords = chapters.reduce((sum, chapter) => sum + getChapterWordCount(chapter), 0);
+const chapterCount = chapters.filter((chapter) => chapter.data.order > 0).length;
+const practices = [
+  "Belief Audit",
+  "Language Shifts",
+  "Micro-Promises",
+  "Daily Alignments",
+  "30-Day Reclaim Plan"
+];
+---
+
+<BaseLayout
+  title="Freedom by Design | Kevin L. Michel - The Library"
+  description={book.data.description}
+  bodyClass="theme-freedom-by-design"
+>
+  <section class="book-world-hero" aria-labelledby="freedom-title">
+    <div class="book-world-hero__copy">
+      <p class="eyebrow">Freedom by Design</p>
+      <h1 id="freedom-title">Rewrite the agreements. Reclaim the life.</h1>
+      <p class="book-world-hero__subtitle">{book.data.subtitle}</p>
+      <p class="book-world-hero__lede">
+        A Toltec-inspired blueprint for noticing the beliefs you inherited, redesigning the
+        language you live by, and building freedom through small kept promises.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href={chapterHref(firstChapter)}>Start reading</a>
+        <a class="button button--ghost" href="#chapter-map">Explore chapters</a>
+      </div>
+      <FormatLinks formats={book.data.formats} />
+    </div>
+
+    <aside class="book-world-cover" aria-label="Freedom by Design cover">
+      <img src={book.data.cover} alt="Freedom by Design book cover by Kevin L. Michel" />
+    </aside>
+  </section>
+
+  <section class="freedom-stats" aria-label="Book statistics">
+    <div>
+      <strong>{chapterCount}</strong>
+      <span>chapters</span>
+    </div>
+    <div>
+      <strong>{parts.length}</strong>
+      <span>movements</span>
+    </div>
+    <div>
+      <strong>{readingTimeFromWords(totalWords)}</strong>
+      <span>minute read</span>
+    </div>
+  </section>
+
+  <section class="freedom-section freedom-promise">
+    <p class="eyebrow">The promise</p>
+    <h2>Freedom is not a mood. It is a design practice.</h2>
+    <p>
+      This book treats inner freedom as architecture: beliefs are load-bearing walls, words are
+      wiring, promises are beams, and daily cues are the small hinges that decide whether a life
+      opens or closes.
+    </p>
+  </section>
+
+  <section class="freedom-section" aria-labelledby="practice-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Field practices</p>
+        <h2 id="practice-heading">Tools for rewriting the inner blueprint</h2>
+      </div>
+    </div>
+    <div class="practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{practice}</h3>
+            <p>
+              A practical artifact from the book: simple enough to use today, deep enough to
+              repeat until the new agreement becomes natural.
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section" id="chapter-map" aria-labelledby="chapter-map-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Chapter map</p>
+        <h2 id="chapter-map-heading">Move from inherited scripts to deliberate freedom</h2>
+      </div>
+    </div>
+
+    <div class="part-map">
+      {
+        parts.map(({ part, chapters: partChapters }) => (
+          <section class="part-panel" aria-labelledby={`part-${partChapters[0].data.order}`}>
+            <p class="part-panel__label">{part}</p>
+            <h3 id={`part-${partChapters[0].data.order}`}>
+              {part === "Opening" ? "Begin the blueprint" : part.replace(/^Part\s+[IVX]+:\s*/, "")}
+            </h3>
+            <div class="chapter-grid">
+              {partChapters.map((chapter) => (
+                <a class="chapter-tile" href={chapterHref(chapter)}>
+                  <span>{chapter.data.order === 0 ? "Intro" : `Chapter ${chapter.data.order}`}</span>
+                  <strong>{chapter.data.title}</strong>
+                  <small>{chapter.data.summary}</small>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

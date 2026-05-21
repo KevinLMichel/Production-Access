@@ -7,10 +7,12 @@ import { bookHref, formatDate, getBooks } from "../../lib/books";
 
 export async function getStaticPaths() {
   const books = await getBooks();
-  return books.map((book) => ({
-    params: { slug: book.id },
-    props: { book }
-  }));
+  return books
+    .filter((book) => book.id !== "freedom-by-design")
+    .map((book) => ({
+      params: { slug: book.id },
+      props: { book }
+    }));
 }
 
 const { book } = Astro.props;

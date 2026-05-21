@@ -42,4 +42,17 @@ const books = defineCollection({
   })
 });
 
-export const collections = { books };
+const bookChapters = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/book-chapters" }),
+  schema: z.object({
+    bookSlug: z.string(),
+    title: z.string(),
+    subtitle: z.string().optional(),
+    part: z.string(),
+    order: z.number(),
+    summary: z.string(),
+    updated: z.coerce.date()
+  })
+});
+
+export const collections = { books, bookChapters };

@@ -1,0 +1,67 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const chapters = await getBookChapters("freedom-by-design");
+  return chapters.map((chapter) => ({
+    params: { slug: chapterSlug(chapter) },
+    props: { chapter }
+  }));
+}
+
+const { chapter } = Astro.props;
+const { Content } = await render(chapter);
+const chapters = await getBookChapters("freedom-by-design");
+const currentIndex = chapters.findIndex((entry) => entry.id === chapter.id);
+const previous = currentIndex > 0 ? chapters[currentIndex - 1] : undefined;
+const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(chapter);
+---
+
+<BaseLayout
+  title={`${chapter.data.title} | Freedom by Design`}
+  description={chapter.data.summary}
+  bodyClass="theme-freedom-by-design reader-mode"
+>
+  <article class="freedom-reader">
+    <aside class="reader-sidebar" aria-label="Freedom by Design chapter navigation">
+      <a class="reader-sidebar__back" href="/books/freedom-by-design/">Freedom by Design</a>
+      <p>{chapter.data.part}</p>
+      <strong>{chapter.data.order === 0 ? "Introduction" : `Chapter ${chapter.data.order}`}</strong>
+      <nav>
+        <a href="/books/freedom-by-design/#chapter-map">All chapters</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header">
+        <p class="eyebrow">{chapter.data.part}</p>
+        <h1>{chapter.data.title}</h1>
+        <p>{chapter.data.summary}</p>
+        <div class="reader-meta">
+          <span>{chapter.data.order === 0 ? "Introduction" : `Chapter ${chapter.data.order}`}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent Freedom by Design chapters">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/freedom-by-design/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
