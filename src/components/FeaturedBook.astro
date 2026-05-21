@@ -10,6 +10,7 @@ interface Props {
 
 const { book } = Astro.props;
 const href = bookHref(book);
+const coverShape = book.data.coverShape ?? "portrait";
 ---
 
 <section class="featured-book" aria-labelledby="featured-book-title">
@@ -30,7 +31,7 @@ const href = bookHref(book);
   <a class="featured-book__cover" href={href} aria-label={`Open ${book.data.title}`}>
     {
       book.data.cover ? (
-        <img class="hero-cover hero-cover--image" src={book.data.cover} alt="" loading="lazy" />
+        <img class:list={["hero-cover", "hero-cover--image", `hero-cover--${coverShape}`]} src={book.data.cover} alt="" loading="lazy" />
       ) : (
         <div class="hero-cover" aria-hidden="true">
           <span>A field guide for hard times</span>

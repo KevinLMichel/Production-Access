@@ -7,8 +7,9 @@ import { bookHref, formatDate, getBooks } from "../../lib/books";
 
 export async function getStaticPaths() {
   const books = await getBooks();
+  const customBookWorlds = new Set(["freedom-by-design", "fragmented-become-whole"]);
   return books
-    .filter((book) => book.id !== "freedom-by-design")
+    .filter((book) => !customBookWorlds.has(book.id))
     .map((book) => ({
       params: { slug: book.id },
       props: { book }
@@ -28,7 +29,7 @@ const next = index < books.length - 1 ? books[index + 1] : undefined;
     <aside class="book-detail__cover" aria-hidden="true">
       {
         book.data.cover ? (
-          <img class="hero-cover hero-cover--detail hero-cover--image" src={book.data.cover} alt="" />
+          <img class:list={["hero-cover", "hero-cover--detail", "hero-cover--image", `hero-cover--${book.data.coverShape ?? "portrait"}`]} src={book.data.cover} alt="" />
         ) : (
           <div class="hero-cover hero-cover--detail">
             <span>{book.data.author}</span>

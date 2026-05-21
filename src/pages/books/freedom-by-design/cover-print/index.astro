@@ -1,0 +1,86 @@
+---
+const title = "Freedom by Design";
+const subtitle = "Toltec-Inspired Practices for Rewriting Your Beliefs and Reclaiming Your Life";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Your life runs on agreements, some chosen and many inherited. Freedom by Design is a practical, Toltec-inspired guide to seeing the beliefs that shape your self-talk, relationships, work, and daily choices - then redesigning the ones that no longer fit.",
+  "Through belief audits, language shifts, micro-promises, daily alignments, and a 30-day reclaim plan, Kevin L. Michel offers a grounded path from automatic living to deliberate practice.",
+  "This is not about becoming someone else. It is about unlearning what is not yours, speaking to yourself with more truth and care, and building freedom one kept promise at a time."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <svg class="wrap-glyph wrap-glyph--back" viewBox="0 0 300 260" aria-hidden="true">
+        <use href="#winged-heart-glyph"></use>
+      </svg>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">A practical guide to inner freedom</p>
+        <h2>Freedom is not a mood. It is a design practice.</h2>
+        <div class="back-rule"></div>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="author-note">Kevin L. Michel writes practical philosophy and inner-discipline books for readers building a more deliberate life.</p>
+        <p class="back-footer">Begin with one agreement. Keep one small promise. Build from there.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <div class="spine-text">
+          <span>{title}</span>
+          <span>{author}</span>
+        </div>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <div class="front-corner front-corner--top" aria-hidden="true"></div>
+        <div class="front-corner front-corner--bottom" aria-hidden="true"></div>
+        <svg class="front-glyph" viewBox="0 0 300 260" role="img" aria-label="Winged heart compass emblem">
+          <use href="#winged-heart-glyph"></use>
+        </svg>
+        <h1>
+          <span>Freedom</span>
+          <span>by Design</span>
+        </h1>
+        <p class="cover-subtitle">
+          <span>Toltec-Inspired Practices for</span>
+          <strong>Rewriting Your Beliefs</strong>
+          <span>and Reclaiming Your Life</span>
+        </p>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+
+      <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <g id="winged-heart-glyph">
+            <path class="glyph-wing" d="M139 118C104 72 64 54 22 64c8 35 38 57 88 68" />
+            <path class="glyph-wing" d="M161 118c35-46 75-64 117-54-8 35-38 57-88 68" />
+            <path class="glyph-line" d="M34 74c29 6 57 21 88 50" />
+            <path class="glyph-line" d="M44 96c25 3 49 13 74 34" />
+            <path class="glyph-line" d="M266 74c-29 6-57 21-88 50" />
+            <path class="glyph-line" d="M256 96c-25 3-49 13-74 34" />
+            <path class="glyph-body" d="M150 70l-52 139 52-42 52 42z" />
+            <path class="glyph-body" d="M150 88l-30 78 30-24 30 24z" />
+            <circle class="glyph-ring" cx="150" cy="44" r="28" />
+            <path class="glyph-heart" d="M150 53c-15-11-25-17-25-29 0-8 6-14 14-14 5 0 9 2 11 6 3-4 7-6 12-6 8 0 14 6 14 14 0 12-11 19-26 29z" />
+            <path class="glyph-feather" d="M105 178c-20 16-25 36-11 55 24-6 38-20 41-44" />
+            <path class="glyph-feather" d="M195 178c20 16 25 36 11 55-24-6-38-20-41-44" />
+            <path class="glyph-line" d="M150 167v70" />
+          </g>
+        </defs>
+      </svg>
+    </main>
+  </body>
+</html>

@@ -1,13 +1,25 @@
 ---
 title: "A Book for the Fragmented Who Seek to Become Whole"
-dek: "A healing and integration book for readers trying to gather themselves again."
-description: "A catalogue record for a work on fragmentation, wholeness, attention, and inner repair."
+dek: "A symbolic inner journey for readers trying to gather themselves again."
+description: "A complete online book-world about fracture, shadow, inner voices, healing, and the quiet work of becoming whole."
+status: "available"
+statusLabel: "Full book world"
+cover: "/covers/fragmented-become-whole.jfif"
+coverShape: "square"
 updated: 2026-05-21
-topics: ["wholeness", "healing", "attention"]
-shelves: ["Catalogue", "Coming Soon", "Inner Discipline"]
+topics: ["wholeness", "shadow work", "inner dialogue", "healing", "attention", "integration"]
+shelves: ["Featured", "New & Active", "Catalogue", "Inner Discipline"]
+featuredRank: 9
+links:
+  - label: "Start reading"
+    href: "/books/fragmented-become-whole/"
+    kind: "read"
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/fragmented-become-whole/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+A Book for the Fragmented Who Seek to Become Whole unfolds as a dialogue between the divided self and the deeper presence that can hold every voice without erasing it.
+
+This record now opens into the complete online book world.

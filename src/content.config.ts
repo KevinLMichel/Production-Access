@@ -18,6 +18,7 @@ const books = defineCollection({
     editionLabel: z.string().optional(),
     updated: z.coerce.date(),
     cover: z.string().optional(),
+    coverShape: z.enum(["portrait", "square"]).default("portrait"),
     topics: z.array(z.string()).default([]),
     shelves: z.array(z.string()).default(["Catalogue"]),
     featuredRank: z.number().optional(),

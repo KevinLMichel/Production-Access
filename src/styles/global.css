@@ -612,6 +612,22 @@ p {
   background: none;
 }
 
+.rendered-cover--square {
+  height: 112px;
+  min-height: 0;
+  aspect-ratio: 1;
+}
+
+.book-card--shelf .rendered-cover--square {
+  height: 96px;
+  min-height: 0;
+}
+
+.hero-cover--square {
+  min-height: 0;
+  aspect-ratio: 1;
+}
+
 .rendered-cover strong {
   font-family: var(--serif);
   font-size: 1.05rem;
@@ -1307,6 +1323,146 @@ p {
   max-width: 76ch;
 }
 
+.theme-fragmented-become-whole {
+  --frag-indigo: #071223;
+  --frag-blue: #0b3c67;
+  --frag-cobalt: #123c89;
+  --frag-orange: #f26a24;
+  --frag-ember: #c23b1f;
+  --frag-gold: #f4d68a;
+  --frag-cream: #fff0c9;
+  --frag-soft: rgba(255, 240, 201, 0.78);
+  --fbd-navy: var(--frag-indigo);
+  --fbd-navy-2: #102042;
+  --fbd-cream: var(--frag-cream);
+  --fbd-cream-muted: var(--frag-soft);
+  --fbd-gold: var(--frag-orange);
+  --fbd-gold-bright: var(--frag-gold);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(242, 106, 36, 0.26), transparent 28rem),
+    radial-gradient(circle at 82% 18%, rgba(18, 60, 137, 0.34), transparent 26rem),
+    radial-gradient(circle at 72% 78%, rgba(244, 214, 138, 0.12), transparent 24rem),
+    linear-gradient(rgba(255, 240, 201, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 240, 201, 0.035) 1px, transparent 1px),
+    linear-gradient(145deg, #06101f, #121735 54%, #071223);
+  background-size: auto, auto, auto, 46px 46px, 46px 46px, auto;
+}
+
+.theme-fragmented-become-whole .eyebrow,
+.theme-fragmented-become-whole .text-link,
+.theme-fragmented-become-whole .reader-sidebar__back {
+  color: var(--frag-gold);
+}
+
+.theme-fragmented-become-whole .button--primary {
+  color: #10111a;
+  background: linear-gradient(135deg, var(--frag-gold), var(--frag-orange));
+  box-shadow: 0 22px 58px rgba(242, 106, 36, 0.28);
+}
+
+.theme-fragmented-become-whole .button--ghost {
+  border-color: rgba(244, 214, 138, 0.42);
+  color: var(--frag-cream);
+}
+
+.theme-fragmented-become-whole .book-world-hero h1 {
+  color: var(--frag-cream);
+  text-shadow: 0 0 34px rgba(242, 106, 36, 0.12);
+}
+
+.theme-fragmented-become-whole .book-world-hero__subtitle {
+  color: var(--frag-gold);
+}
+
+.theme-fragmented-become-whole .book-world-hero__lede {
+  color: var(--frag-soft);
+}
+
+.fragmented-cover::before {
+  border-color: rgba(244, 214, 138, 0.68);
+  border-radius: 38px;
+}
+
+.fragmented-cover::after {
+  border-color: rgba(242, 106, 36, 0.46);
+  border-radius: 28px;
+}
+
+.fragmented-cover img {
+  width: min(430px, 76vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-color: rgba(244, 214, 138, 0.76);
+  border-radius: 30px;
+  box-shadow: 0 46px 110px rgba(0, 0, 0, 0.52), 0 0 72px rgba(242, 106, 36, 0.18);
+}
+
+.fragmented-section,
+.fragmented-stats div,
+.theme-fragmented-become-whole .reader-sidebar,
+.theme-fragmented-become-whole .reader-column {
+  border-color: rgba(244, 214, 138, 0.22);
+  background:
+    linear-gradient(145deg, rgba(255, 240, 201, 0.09), rgba(18, 60, 137, 0.08)),
+    rgba(6, 16, 31, 0.72);
+}
+
+.fragmented-promise p {
+  max-width: 880px;
+}
+
+.voice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.voice-grid span {
+  border: 1px solid rgba(244, 214, 138, 0.25);
+  border-radius: 999px;
+  padding: 0.78rem 1rem;
+  color: var(--frag-cream);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(242, 106, 36, 0.18), transparent 5rem),
+    rgba(255, 240, 201, 0.045);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+.fragmented-part-panel,
+.fragmented-chapter-tile {
+  border-color: rgba(244, 214, 138, 0.22);
+}
+
+.fragmented-reader .reader-column {
+  background:
+    linear-gradient(145deg, rgba(255, 240, 201, 0.075), rgba(18, 60, 137, 0.06)),
+    rgba(5, 12, 24, 0.78);
+}
+
+.fragmented-reader-header h1 {
+  color: var(--frag-cream);
+}
+
+.fragmented-prose {
+  max-width: 72ch;
+}
+
+.fragmented-prose p,
+.fragmented-prose li {
+  color: rgba(255, 240, 201, 0.9);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  line-height: 1.9;
+}
+
+.fragmented-prose strong {
+  color: var(--frag-gold);
+  font-family: var(--sans);
+  font-size: 0.92em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 820px) {
   .site-header,
   .site-footer,
@@ -1381,6 +1537,11 @@ p {
     min-height: 128px;
   }
 
+  .book-rail .rendered-cover--square {
+    height: 84px;
+    min-height: 0;
+  }
+
   .book-grid .book-card {
     grid-template-columns: 1fr;
   }
@@ -1388,6 +1549,13 @@ p {
   .book-grid .rendered-cover {
     width: 100%;
     min-height: 190px;
+  }
+
+  .book-grid .rendered-cover--square {
+    width: min(220px, 100%);
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1;
   }
 }
 

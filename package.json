@@ -9,7 +9,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "book:cover:freedom": "node scripts/build-freedom-cover.mjs",
     "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
+    "extract:fragmented": "node scripts/extract-fragmented-book.mjs",
     "extract:freedom": "node scripts/extract-freedom-book.mjs",
     "preview": "astro preview",
     "astro": "astro"
