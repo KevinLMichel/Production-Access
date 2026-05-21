@@ -14,9 +14,15 @@ links:
   - label: "Start reading"
     href: "/books/fragmented-become-whole/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/a-book-for-the-fragmented-kevin-l-michel.pdf"
+    kind: "download"
 formats:
   - label: "Start Reading"
     href: "/books/fragmented-become-whole/"
+    status: "available"
+  - label: "Download PDF"
+    href: "/downloads/a-book-for-the-fragmented-kevin-l-michel.pdf"
     status: "available"
 ---
 
