@@ -102,6 +102,17 @@ npm run book:cover:fragmented
 The generated release asset is written to `production/covers/output/a-book-for-the-fragmented-cover-wrap.pdf`.
 It uses the 405-page, black-and-white groundwood KDP template geometry: `12.202 x 8.75` inches with a `0.952` inch spine.
 
+## Steam Over Cold Steel Cover
+
+Regenerate the KDP paperback cover wrap after the paperback page count/template changes:
+
+```powershell
+npm run book:cover:steam
+```
+
+The generated release asset is written to `production/covers/output/steam-over-cold-steel-cover-wrap.pdf`.
+It uses the 46-page, black-and-white groundwood KDP template MediaBox geometry: `11.3611 x 8.75` inches with a `0.1111` inch blank spine.
+
 ## The Subconscious Advantage Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

@@ -1,0 +1,73 @@
+---
+const title = "Steam Over Cold Steel";
+const subtitle = "A historical parable of tea, steel, duty, and restraint";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Steam Over Cold Steel is a spare historical parable about Sen no Rikyū, Katō Masanobu, and the moment when duty, violence, ceremony, and conscience meet inside the narrow door of a tea hut.",
+  "Sent with an order of death, a samurai expects weakness. Instead he encounters silence, ritual, and a gentleness strong enough to unsettle command itself.",
+  "This is a story about restraint under pressure, honor without cruelty, and the strange power of a bowl of tea to outlast the edge of a blade."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="paper-field" aria-hidden="true"></div>
+      <div class="steam steam--back" aria-hidden="true"></div>
+      <div class="steam steam--front" aria-hidden="true"></div>
+      <div class="bamboo bamboo--back" aria-hidden="true"></div>
+      <div class="bamboo bamboo--front" aria-hidden="true"></div>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">A parable of restraint</p>
+        <h2>A sword entered the tearoom. It did not leave unchanged.</h2>
+        <div class="back-rule"></div>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="author-note">Kevin L. Michel writes practical philosophy, literary parables, and works of inner discipline for readers interested in power, conscience, and the difficult art of self-command.</p>
+        <p class="back-footer">When force grows cold, steam remembers the living hand.</p>
+      </section>
+
+      <section class="spine" aria-label="Narrow blank spine"></section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <p class="front-kicker">A historical parable</p>
+        <h1>
+          <span>Steam</span>
+          <span>Over</span>
+          <span>Cold Steel</span>
+        </h1>
+        <svg class="front-symbol" viewBox="0 0 540 440" role="img" aria-label="Tea kettle steam rising over a sword">
+          <path class="symbol-sword" d="M58 304h356l52-20 16 20-16 20-52-20H58z" />
+          <path class="symbol-sword-edge" d="M78 304h330" />
+          <path class="symbol-handle" d="M45 278h72v52H45z" />
+          <path class="symbol-handle-wrap" d="M58 280v48M76 280v48M94 280v48" />
+          <path class="symbol-kettle" d="M220 246c0-45 36-80 81-80h40c45 0 81 35 81 80v30H220z" />
+          <path class="symbol-kettle-lid" d="M270 166h100l-24-32h-52z" />
+          <path class="symbol-kettle-spout" d="M421 218c46-16 74-5 92 26-35-9-61-6-92 16z" />
+          <path class="symbol-kettle-handle" d="M232 224c-48-20-83-12-104 28 37-14 67-9 104 13" />
+          <path class="symbol-bowl" d="M194 306c26 42 77 65 128 65s102-23 128-65z" />
+          <path class="symbol-steam symbol-steam--one" d="M282 139c-36-50 36-69 6-121" />
+          <path class="symbol-steam symbol-steam--two" d="M333 139c-36-50 36-69 6-121" />
+          <path class="symbol-steam symbol-steam--three" d="M383 154c-29-40 26-61 2-105" />
+        </svg>
+        <p class="cover-subtitle">{subtitle}</p>
+        <p class="author">{author}</p>
+        <div class="red-seal" aria-hidden="true">
+          <span>静</span>
+        </div>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>
