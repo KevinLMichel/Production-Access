@@ -275,7 +275,6 @@ body {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 0.44in;
   line-height: 0.94;
-  text-shadow: 0 0.018in 0.05in rgba(0, 0, 0, 0.4);
 }
 
 .back-rule {
@@ -300,7 +299,6 @@ body {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 0.145in;
   line-height: 1.28;
-  text-shadow: 0 0.012in 0.04in rgba(0, 0, 0, 0.35);
 }
 
 .author-note {
@@ -497,9 +495,6 @@ body {
   line-height: 0.92;
   letter-spacing: 0.015em;
   text-transform: uppercase;
-  text-shadow:
-    0 0.018in 0 rgba(57, 38, 9, 0.82),
-    0 0.05in 0.11in rgba(0, 0, 0, 0.72);
 }
 
 .front-cover h1 span,
@@ -533,7 +528,6 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.32;
   text-transform: uppercase;
-  text-shadow: 0 0.015in 0.045in rgba(0, 0, 0, 0.72);
 }
 
 .outcome-icons {
@@ -574,5 +568,4 @@ body {
   letter-spacing: 0.13em;
   line-height: 1;
   text-transform: uppercase;
-  text-shadow: 0 0.018in 0.05in rgba(0, 0, 0, 0.45);
 }

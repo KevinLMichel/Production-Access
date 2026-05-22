@@ -26,6 +26,8 @@
     "astro": "^6.3.1"
   },
   "devDependencies": {
-    "@vivliostyle/cli": "^10.6.0"
+    "@vivliostyle/cli": "^10.6.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.0.4"
   }
 }
