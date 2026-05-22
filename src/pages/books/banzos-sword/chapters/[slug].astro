@@ -1,0 +1,74 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const sections = await getBookChapters("banzos-sword");
+  return sections.map((section) => ({
+    params: { slug: chapterSlug(section) },
+    props: { section }
+  }));
+}
+
+const { section } = Astro.props;
+const { Content } = await render(section);
+const sections = await getBookChapters("banzos-sword");
+const currentIndex = sections.findIndex((entry) => entry.id === section.id);
+const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
+const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(section);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Historical Note";
+  if (order === 1) return "Prologue";
+  if (order === 7) return "Epilogue";
+  return `Part ${["I", "II", "III", "IV", "V"][order - 2]}`;
+}
+---
+
+<BaseLayout
+  title={`${section.data.title} | Banzo's Sword`}
+  description={section.data.summary}
+  bodyClass="theme-banzos-sword reader-mode"
+>
+  <article class="freedom-reader banzo-reader">
+    <aside class="reader-sidebar" aria-label="Banzo's Sword section navigation">
+      <a class="reader-sidebar__back" href="/books/banzos-sword/">Banzo's Sword</a>
+      <p>{section.data.part}</p>
+      <strong>{sectionLabel(section.data.order)}</strong>
+      <nav>
+        <a href="/books/banzos-sword/#section-map">All sections</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header banzo-reader-header">
+        <p class="eyebrow">{section.data.part}</p>
+        <h1>{section.data.title}</h1>
+        <p>{section.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(section.data.order)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose banzo-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent Banzo's Sword sections">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/banzos-sword/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

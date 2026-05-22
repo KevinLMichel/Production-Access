@@ -1,0 +1,184 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormatLinks from "../../../components/FormatLinks.astro";
+import { getBooks } from "../../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../../lib/bookWorld";
+
+const books = await getBooks();
+const book = books.find((entry) => entry.id === "banzos-sword");
+
+if (!book) {
+  throw new Error("Banzo's Sword catalogue record not found.");
+}
+
+const sections = await getBookChapters("banzos-sword");
+const parts = groupChaptersByPart(sections);
+const firstStorySection = sections.find((section) => section.data.order === 1) ?? sections[0];
+const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(section), 0);
+
+const disciplines = [
+  {
+    name: "Patience",
+    line: "The refusal to mistake urgency for readiness."
+  },
+  {
+    name: "Zanshin",
+    line: "Awareness that remains after the obvious moment has passed."
+  },
+  {
+    name: "Restraint",
+    line: "Power held in the hand without letting the hand become its servant."
+  },
+  {
+    name: "Mastery",
+    line: "The edge that appears when the whole life has become practice."
+  }
+];
+
+const practices = [
+  "Study the gate before asking for the sword",
+  "Let ordinary work sharpen attention",
+  "Receive correction without making it theater",
+  "Hold the blade inside before lifting it outside",
+  "Win first against haste, pride, and display"
+];
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Historical Note";
+  if (order === 1) return "Prologue";
+  if (order === 7) return "Epilogue";
+  return `Part ${["I", "II", "III", "IV", "V"][order - 2]}`;
+}
+---
+
+<BaseLayout
+  title="Banzo's Sword | Kevin L. Michel - The Library"
+  description={book.data.description}
+  bodyClass="theme-banzos-sword"
+>
+  <section class="book-world-hero banzo-hero" aria-labelledby="banzo-title">
+    <div class="book-world-hero__copy">
+      <p class="eyebrow">Banzo's Sword</p>
+      <h1 id="banzo-title">The blade is not ready until the hand has disappeared.</h1>
+      <p class="book-world-hero__subtitle">{book.data.dek}</p>
+      <p class="book-world-hero__lede">
+        Matajuro comes to Banzo hungry for skill, speed, and proof. Banzo gives him years
+        without steel: sweeping, waiting, blows from nowhere, and the slow education of a
+        mind that wants mastery before it has learned attention.
+      </p>
+      <div class="hero__actions">
+        {firstStorySection && <a class="button button--primary" href={chapterHref(firstStorySection)}>Start reading</a>}
+        <a class="button button--ghost" href="#section-map">Explore sections</a>
+        <a class="text-link" href="/books/">Return to Library</a>
+      </div>
+      <FormatLinks formats={book.data.formats} />
+    </div>
+
+    <aside class="book-world-cover banzo-cover" aria-label="Banzo's Sword cover">
+      <img src={book.data.cover} alt="Banzo's Sword cover by Kevin L. Michel" />
+    </aside>
+  </section>
+
+  <section class="freedom-stats banzo-stats" aria-label="Book statistics">
+    <div>
+      <strong>{sections.length}</strong>
+      <span>sections</span>
+    </div>
+    <div>
+      <strong>{parts.length}</strong>
+      <span>movements</span>
+    </div>
+    <div>
+      <strong>{readingTimeFromWords(totalWords)}</strong>
+      <span>minute read</span>
+    </div>
+  </section>
+
+  <section class="freedom-section banzo-section banzo-promise">
+    <p class="eyebrow">The story promise</p>
+    <h2>A parable for anyone who wants the weapon before the discipline.</h2>
+    <p>
+      Banzo's Sword follows the old pattern of martial teaching tales: a student arrives
+      wanting the secret, and the master turns the whole world into the lesson. The sword
+      is present, but the deeper subject is readiness: attention in the body, humility under
+      correction, and the quiet strength that no longer needs to advertise itself.
+    </p>
+  </section>
+
+  <section class="freedom-section banzo-section" aria-labelledby="discipline-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Discipline map</p>
+        <h2 id="discipline-heading">What the parable sharpens</h2>
+      </div>
+    </div>
+    <div class="outcome-grid banzo-discipline-grid">
+      {
+        disciplines.map((discipline) => (
+          <article>
+            <span>{discipline.name}</span>
+            <p>{discipline.line}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section banzo-section" aria-labelledby="practice-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reading discipline</p>
+        <h2 id="practice-heading">How to carry the sword without clutching it</h2>
+      </div>
+    </div>
+    <div class="practice-grid banzo-practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{practice}</h3>
+            <p>
+              A way to read the parable as training: less spectacle, more attention,
+              and a steadier relationship with the work itself.
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section banzo-section" id="section-map" aria-labelledby="section-map-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reading path</p>
+        <h2 id="section-map-heading">From rain to the sword that is no sword</h2>
+      </div>
+    </div>
+
+    <div class="part-map">
+      {
+        parts.map(({ part, chapters }) => (
+          <section class="part-panel banzo-part-panel" aria-labelledby={`part-${chapters[0].data.order}`}>
+            <p class="part-panel__label">{part}</p>
+            <h3 id={`part-${chapters[0].data.order}`}>{chapters[0].data.title}</h3>
+            <div class="chapter-grid">
+              {chapters.map((section) => (
+                <a class="chapter-tile banzo-chapter-tile" href={chapterHref(section)}>
+                  <span>{sectionLabel(section.data.order)}</span>
+                  <strong>{section.data.title}</strong>
+                  <small>{section.data.summary}</small>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

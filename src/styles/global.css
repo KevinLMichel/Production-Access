@@ -1804,6 +1804,178 @@ p {
   color: var(--steam-gold);
 }
 
+.theme-banzos-sword {
+  --banzo-ink: #11100d;
+  --banzo-charcoal: #24211b;
+  --banzo-paper: #f2e4c9;
+  --banzo-paper-soft: rgba(242, 228, 201, 0.8);
+  --banzo-red: #a72f24;
+  --banzo-red-bright: #c84736;
+  --banzo-gold: #d4ad67;
+  --banzo-mist: rgba(242, 228, 201, 0.12);
+  --fbd-navy: var(--banzo-ink);
+  --fbd-navy-2: var(--banzo-charcoal);
+  --fbd-cream: var(--banzo-paper);
+  --fbd-cream-muted: var(--banzo-paper-soft);
+  --fbd-gold: var(--banzo-red);
+  --fbd-gold-bright: var(--banzo-gold);
+  background:
+    radial-gradient(circle at 15% 12%, rgba(167, 47, 36, 0.24), transparent 25rem),
+    radial-gradient(circle at 82% 16%, rgba(212, 173, 103, 0.16), transparent 30rem),
+    radial-gradient(circle at 70% 78%, rgba(242, 228, 201, 0.1), transparent 25rem),
+    linear-gradient(rgba(242, 228, 201, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(242, 228, 201, 0.028) 1px, transparent 1px),
+    linear-gradient(145deg, #0d0d0b, #201d18 55%, #101313);
+  background-size: auto, auto, auto, 54px 54px, 54px 54px, auto;
+}
+
+.theme-banzos-sword::before {
+  background:
+    radial-gradient(circle at 22% 24%, rgba(167, 47, 36, 0.12), transparent 22rem),
+    linear-gradient(115deg, transparent 18%, rgba(242, 228, 201, 0.05) 36%, transparent 53%),
+    linear-gradient(74deg, transparent 39%, rgba(212, 173, 103, 0.055) 50%, transparent 63%);
+}
+
+.theme-banzos-sword .eyebrow,
+.theme-banzos-sword .text-link,
+.theme-banzos-sword .reader-sidebar__back {
+  color: var(--banzo-gold);
+}
+
+.theme-banzos-sword .button--primary {
+  color: #17120f;
+  background: linear-gradient(135deg, var(--banzo-paper), var(--banzo-gold));
+  box-shadow: 0 22px 58px rgba(212, 173, 103, 0.2);
+}
+
+.theme-banzos-sword .button--ghost {
+  border-color: rgba(212, 173, 103, 0.42);
+  color: var(--banzo-paper);
+}
+
+.banzo-hero {
+  position: relative;
+}
+
+.banzo-hero::after {
+  position: absolute;
+  right: min(4vw, 2.5rem);
+  bottom: 8%;
+  width: min(28vw, 340px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(212, 173, 103, 0.22);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle, transparent 29%, rgba(212, 173, 103, 0.12) 30% 31%, transparent 32%),
+    linear-gradient(90deg, transparent 49%, rgba(167, 47, 36, 0.18) 50%, transparent 51%),
+    linear-gradient(transparent 49%, rgba(212, 173, 103, 0.12) 50%, transparent 51%);
+  opacity: 0.34;
+  mask-image: radial-gradient(circle, #000 48%, transparent 72%);
+}
+
+.theme-banzos-sword .book-world-hero h1 {
+  color: var(--banzo-paper);
+  text-shadow: 0 0 34px rgba(167, 47, 36, 0.15);
+}
+
+.theme-banzos-sword .book-world-hero__subtitle {
+  color: var(--banzo-gold);
+}
+
+.theme-banzos-sword .book-world-hero__lede {
+  color: var(--banzo-paper-soft);
+}
+
+.banzo-cover::before {
+  border-color: rgba(212, 173, 103, 0.64);
+  border-radius: 38px;
+}
+
+.banzo-cover::after {
+  border-color: rgba(167, 47, 36, 0.52);
+  border-radius: 28px;
+}
+
+.banzo-cover img {
+  width: min(430px, 76vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-color: rgba(212, 173, 103, 0.72);
+  border-radius: 30px;
+  box-shadow: 0 46px 110px rgba(0, 0, 0, 0.52), 0 0 72px rgba(167, 47, 36, 0.16);
+}
+
+.banzo-section,
+.banzo-stats div,
+.theme-banzos-sword .reader-sidebar,
+.theme-banzos-sword .reader-column {
+  border-color: rgba(212, 173, 103, 0.22);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(167, 47, 36, 0.08), transparent 13rem),
+    linear-gradient(145deg, rgba(242, 228, 201, 0.09), rgba(36, 33, 27, 0.18)),
+    rgba(17, 16, 13, 0.76);
+}
+
+.banzo-promise p {
+  max-width: 900px;
+}
+
+.banzo-discipline-grid article {
+  border-color: rgba(212, 173, 103, 0.24);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(167, 47, 36, 0.15), transparent 8rem),
+    rgba(242, 228, 201, 0.045);
+}
+
+.banzo-discipline-grid span {
+  color: var(--banzo-gold);
+}
+
+.banzo-discipline-grid p {
+  color: var(--banzo-paper-soft);
+}
+
+.banzo-practice-grid article,
+.banzo-part-panel,
+.banzo-chapter-tile {
+  border-color: rgba(212, 173, 103, 0.22);
+}
+
+.banzo-practice-grid article::before {
+  background: linear-gradient(90deg, rgba(167, 47, 36, 0.72), rgba(212, 173, 103, 0.2));
+}
+
+.banzo-reader .reader-column {
+  background:
+    linear-gradient(145deg, rgba(242, 228, 201, 0.07), rgba(167, 47, 36, 0.045)),
+    rgba(16, 15, 13, 0.84);
+}
+
+.banzo-reader-header h1 {
+  color: var(--banzo-paper);
+}
+
+.banzo-prose {
+  max-width: 76ch;
+}
+
+.banzo-prose p,
+.banzo-prose li {
+  color: rgba(242, 228, 201, 0.9);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  line-height: 1.9;
+}
+
+.banzo-prose em {
+  color: rgba(212, 173, 103, 0.95);
+}
+
+.banzo-prose strong {
+  color: var(--banzo-gold);
+}
+
 .theme-tao-of-maat {
   --tao-black: #030405;
   --tao-ink: #090d0e;
