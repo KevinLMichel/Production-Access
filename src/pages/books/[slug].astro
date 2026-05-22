@@ -7,7 +7,7 @@ import { bookHref, formatDate, getBooks } from "../../lib/books";
 
 export async function getStaticPaths() {
   const books = await getBooks();
-  const customBookWorlds = new Set(["freedom-by-design", "fragmented-become-whole"]);
+  const customBookWorlds = new Set(["freedom-by-design", "fragmented-become-whole", "subconscious-advantage"]);
   return books
     .filter((book) => !customBookWorlds.has(book.id))
     .map((book) => ({

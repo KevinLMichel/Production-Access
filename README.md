@@ -15,6 +15,18 @@ npm run dev
 npm run build
 ```
 
+## Book Text Extraction
+
+Regenerate committed Markdown chapters from local DOCX source files when a source manuscript changes:
+
+```powershell
+npm run extract:freedom
+npm run extract:fragmented
+npm run extract:subconscious
+```
+
+Raw DOCX folders remain local inputs and are ignored by Git.
+
 ## Freedom by Design PDF
 
 Regenerate the downloadable Freedom by Design interior PDF after chapter changes:

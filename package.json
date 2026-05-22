@@ -15,6 +15,7 @@
     "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
     "extract:fragmented": "node scripts/extract-fragmented-book.mjs",
     "extract:freedom": "node scripts/extract-freedom-book.mjs",
+    "extract:subconscious": "node scripts/extract-subconscious-book.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

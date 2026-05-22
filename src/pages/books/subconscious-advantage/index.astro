@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormatLinks from "../../../components/FormatLinks.astro";
+import { getBooks } from "../../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../../lib/bookWorld";
+
+const books = await getBooks();
+const book = books.find((entry) => entry.id === "subconscious-advantage");
+
+if (!book) {
+  throw new Error("The Subconscious Advantage catalogue record not found.");
+}
+
+const chapters = await getBookChapters("subconscious-advantage");
+const parts = groupChaptersByPart(chapters);
+const firstChapter = chapters[0];
+const totalWords = chapters.reduce((sum, chapter) => sum + getChapterWordCount(chapter), 0);
+const chapterCount = chapters.filter((chapter) => chapter.data.order > 0).length;
+const outcomes = [
+  {
+    name: "Wealth",
+    line: "Automatic money behaviors that reduce leakage, protect attention, and make progress visible."
+  },
+  {
+    name: "Wellness",
+    line: "Small state shifts, sleep windows, breath, posture, and energy defaults that lower resistance."
+  },
+  {
+    name: "Power",
+    line: "Presence, influence, language, and follow-through habits that make self-command easier to trust."
+  },
+  {
+    name: "Joy",
+    line: "Gratitude, connection, play, and ordinary delight turned into repeatable daily contact."
+  }
+];
+const practices = [
+  "Cue-based routines",
+  "Micro-practices",
+  "Language shifts",
+  "Visualization protocols",
+  "Emotional tagging",
+  "Weekly reset rituals"
+];
+
+function sectionLabel(order: number) {
+  return order === 0 ? "Introduction" : `Chapter ${order}`;
+}
+---
+
+<BaseLayout
+  title="The Subconscious Advantage | Kevin L. Michel - The Library"
+  description={book.data.description}
+  bodyClass="theme-subconscious-advantage"
+>
+  <section class="book-world-hero subconscious-hero" aria-labelledby="subconscious-title">
+    <div class="book-world-hero__copy">
+      <p class="eyebrow">The Subconscious Advantage</p>
+      <h1 id="subconscious-title">Train the defaults beneath the day.</h1>
+      <p class="book-world-hero__subtitle">{book.data.subtitle}</p>
+      <p class="book-world-hero__lede">
+        A practical path for turning cues, emotions, rehearsal, sleep, language, and weekly
+        feedback into a quieter form of self-command: not more hustle, but smarter defaults.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href={chapterHref(firstChapter)}>Start reading</a>
+        <a class="button button--ghost" href="#chapter-map">Explore chapters</a>
+        <a class="text-link" href="/books/">Return to Library</a>
+      </div>
+      <FormatLinks formats={book.data.formats} />
+    </div>
+
+    <aside class="book-world-cover subconscious-cover" aria-label="The Subconscious Advantage cover">
+      <img src={book.data.cover} alt="The Subconscious Advantage book cover by Kevin L. Michel" />
+    </aside>
+  </section>
+
+  <section class="freedom-stats subconscious-stats" aria-label="Book statistics">
+    <div>
+      <strong>{chapterCount}</strong>
+      <span>chapters</span>
+    </div>
+    <div>
+      <strong>{parts.length}</strong>
+      <span>movements</span>
+    </div>
+    <div>
+      <strong>{readingTimeFromWords(totalWords)}</strong>
+      <span>minute read</span>
+    </div>
+  </section>
+
+  <section class="freedom-section subconscious-section subconscious-promise">
+    <p class="eyebrow">The operating idea</p>
+    <h2>Your life does not run only on decisions. It runs on defaults.</h2>
+    <p>
+      The book treats the subconscious as an operating system that can be given better inputs:
+      clearer instructions, easier first steps, emotional rewards, sensory cues, and weekly
+      course-corrections. The aim is not fantasy control. The aim is to make the better action
+      easier to begin and easier to repeat.
+    </p>
+  </section>
+
+  <section class="freedom-section subconscious-section" aria-labelledby="outcomes-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Four outcomes</p>
+        <h2 id="outcomes-heading">Wealth, wellness, power, and joy as practiced defaults</h2>
+      </div>
+    </div>
+    <div class="outcome-grid">
+      {
+        outcomes.map((outcome) => (
+          <article>
+            <span>{outcome.name}</span>
+            <p>{outcome.line}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section subconscious-section" aria-labelledby="practice-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Practice system</p>
+        <h2 id="practice-heading">The tools that program the path</h2>
+      </div>
+    </div>
+    <div class="practice-grid subconscious-practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{practice}</h3>
+            <p>
+              A compact method for giving the automatic mind something clear, repeatable, and
+              emotionally marked enough to run when attention is tired.
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section subconscious-section" id="chapter-map" aria-labelledby="chapter-map-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Chapter map</p>
+        <h2 id="chapter-map-heading">From autopilot awareness to durable momentum</h2>
+      </div>
+    </div>
+
+    <div class="part-map">
+      {
+        parts.map(({ part, chapters: partChapters }) => (
+          <section class="part-panel subconscious-part-panel" aria-labelledby={`part-${partChapters[0].data.order}`}>
+            <p class="part-panel__label">{part}</p>
+            <h3 id={`part-${partChapters[0].data.order}`}>
+              {part.replace(/^Part\s+[IVX]+:\s*/, "").replace(/^Opening\s+-\s*/, "").trim()}
+            </h3>
+            <div class="chapter-grid">
+              {partChapters.map((chapter) => (
+                <a class="chapter-tile subconscious-chapter-tile" href={chapterHref(chapter)}>
+                  <span>{sectionLabel(chapter.data.order)}</span>
+                  <strong>{chapter.data.title}</strong>
+                  <small>{chapter.data.summary}</small>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

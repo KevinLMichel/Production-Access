@@ -1,0 +1,71 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const chapters = await getBookChapters("subconscious-advantage");
+  return chapters.map((chapter) => ({
+    params: { slug: chapterSlug(chapter) },
+    props: { chapter }
+  }));
+}
+
+const { chapter } = Astro.props;
+const { Content } = await render(chapter);
+const chapters = await getBookChapters("subconscious-advantage");
+const currentIndex = chapters.findIndex((entry) => entry.id === chapter.id);
+const previous = currentIndex > 0 ? chapters[currentIndex - 1] : undefined;
+const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(chapter);
+
+function sectionLabel(order: number) {
+  return order === 0 ? "Introduction" : `Chapter ${order}`;
+}
+---
+
+<BaseLayout
+  title={`${chapter.data.title} | The Subconscious Advantage`}
+  description={chapter.data.summary}
+  bodyClass="theme-subconscious-advantage reader-mode"
+>
+  <article class="freedom-reader subconscious-reader">
+    <aside class="reader-sidebar" aria-label="The Subconscious Advantage chapter navigation">
+      <a class="reader-sidebar__back" href="/books/subconscious-advantage/">The Subconscious Advantage</a>
+      <p>{chapter.data.part}</p>
+      <strong>{sectionLabel(chapter.data.order)}</strong>
+      <nav>
+        <a href="/books/subconscious-advantage/#chapter-map">All sections</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header subconscious-reader-header">
+        <p class="eyebrow">{chapter.data.part}</p>
+        <h1>{chapter.data.title}</h1>
+        <p>{chapter.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(chapter.data.order)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose subconscious-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent The Subconscious Advantage sections">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/subconscious-advantage/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
