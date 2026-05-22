@@ -152,9 +152,40 @@ body {
   height: 8.75in;
   opacity: 0.88;
   background:
-    radial-gradient(ellipse at 50% 38%, rgba(15, 136, 139, 0.56), transparent 1.55in),
-    radial-gradient(ellipse at 47% 66%, rgba(245, 217, 131, 0.18), transparent 1.35in),
+    radial-gradient(ellipse at 50% 42%, rgba(15, 136, 139, 0.7), transparent 1.85in),
+    radial-gradient(ellipse at 48% 60%, rgba(245, 217, 131, 0.2), transparent 1.55in),
     radial-gradient(ellipse at 86% 86%, rgba(2, 11, 20, 0.86), transparent 1.4in);
+}
+
+.field--front::before,
+.field--front::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.field--front::before {
+  left: 0.42in;
+  top: 1.9in;
+  width: 4.8in;
+  height: 4.75in;
+  opacity: 0.48;
+  background:
+    repeating-radial-gradient(circle at 50% 49%, transparent 0 0.24in, rgba(184, 233, 221, 0.13) 0.25in 0.257in, transparent 0.266in 0.44in),
+    repeating-conic-gradient(from -18deg at 50% 49%, rgba(245, 217, 131, 0.09) 0deg 4deg, transparent 4deg 18deg);
+  border-radius: 50%;
+}
+
+.field--front::after {
+  left: 1.08in;
+  top: 2.48in;
+  width: 3.4in;
+  height: 3.1in;
+  opacity: 0.32;
+  background:
+    linear-gradient(31deg, transparent 0 48%, rgba(245, 217, 131, 0.28) 49% 50%, transparent 51% 100%),
+    linear-gradient(116deg, transparent 0 46%, rgba(184, 233, 221, 0.17) 47% 48%, transparent 49% 100%),
+    linear-gradient(154deg, transparent 0 51%, rgba(184, 233, 221, 0.12) 52% 53%, transparent 54% 100%);
 }
 
 .back-cover {
@@ -186,15 +217,29 @@ body {
   pointer-events: none;
 }
 
+.front-cover::before {
+  opacity: 0.92;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(245, 217, 131, 0.08), transparent 1.34in),
+    repeating-radial-gradient(circle at 50% 49%, transparent 0 0.31in, rgba(17, 161, 165, 0.1) 0.32in 0.327in, transparent 0.337in 0.58in),
+    linear-gradient(90deg, transparent 0 49%, rgba(245, 217, 131, 0.08) 49.4% 50.6%, transparent 51% 100%);
+}
+
 .front-cover::after {
   position: absolute;
-  left: 0.52in;
-  right: 0.52in;
-  bottom: 0.86in;
-  z-index: 1;
-  height: 0.015in;
+  left: 2.34in;
+  top: 2.17in;
+  z-index: 2;
+  width: 0.46in;
+  height: 4.45in;
+  border-radius: 50%;
   content: "";
-  background: linear-gradient(90deg, transparent, rgba(245, 217, 131, 0.82), transparent);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(245, 217, 131, 0.42), transparent 0.78in),
+    linear-gradient(180deg, transparent 0%, rgba(245, 217, 131, 0.18) 24%, rgba(245, 217, 131, 0.34) 61%, transparent 100%);
+  filter: blur(0.015in);
+  opacity: 0.72;
+  transform: rotate(-6deg);
 }
 
 .kicker,
@@ -367,11 +412,11 @@ body {
 
 .front-mind {
   position: absolute;
-  left: 1.02in;
-  top: 2.47in;
+  left: 0.72in;
+  top: 2.03in;
   z-index: 3;
-  width: 3.45in;
-  height: 4.25in;
+  width: 4.08in;
+  height: 5.04in;
   filter: drop-shadow(0 0.05in 0.11in rgba(0, 0, 0, 0.48));
 }
 
@@ -420,9 +465,20 @@ body {
 .key-path {
   fill: none;
   stroke: var(--gold-bright);
-  stroke-width: 26;
+  stroke-width: 31;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.front-mind .key-path {
+  filter: drop-shadow(0 0.035in 0.075in rgba(245, 217, 131, 0.5));
+  stroke-width: 35;
+}
+
+.front-mind .maze-ring,
+.front-mind .maze-line,
+.front-mind .maze-break {
+  stroke: rgba(22, 177, 178, 0.82);
 }
 
 .front-kicker {
