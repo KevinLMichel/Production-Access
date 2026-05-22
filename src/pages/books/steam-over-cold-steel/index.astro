@@ -86,7 +86,7 @@ function sectionLabel(order: number) {
       </p>
       <div class="hero__actions">
         {firstSection && <a class="button button--primary" href={chapterHref(firstSection)}>Start reading</a>}
-        {downloadFormat && <a class="button button--ghost" href={downloadFormat.href}>Download PDF</a>}
+        {downloadFormat && <a class="button button--ghost" href={downloadFormat.href} target="_blank" rel="noopener noreferrer">Download PDF</a>}
         <a class="button button--ghost" href="#section-map">Explore the path</a>
         <a class="text-link" href="/books/">Return to Library</a>
       </div>

@@ -10,13 +10,22 @@ interface Props {
 }
 
 const { formats = [] } = Astro.props;
+
+function opensSeparately(format: FormatLink) {
+  return format.href?.toLowerCase().endsWith(".pdf") || format.label.toLowerCase().includes("download");
+}
 ---
 
 <div class="format-links" aria-label="Available formats">
   {
     formats.map((format) =>
       format.href ? (
-        <a class="format-link format-link--available" href={format.href}>
+        <a
+          class="format-link format-link--available"
+          href={format.href}
+          target={opensSeparately(format) ? "_blank" : undefined}
+          rel={opensSeparately(format) ? "noopener noreferrer" : undefined}
+        >
           {format.label}
         </a>
       ) : (
