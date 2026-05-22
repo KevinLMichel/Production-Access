@@ -1,0 +1,71 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const sections = await getBookChapters("will-to-fail");
+  return sections.map((section) => ({
+    params: { slug: chapterSlug(section) },
+    props: { section }
+  }));
+}
+
+const { section } = Astro.props;
+const { Content } = await render(section);
+const sections = await getBookChapters("will-to-fail");
+const currentIndex = sections.findIndex((entry) => entry.id === section.id);
+const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
+const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(section);
+
+function sectionLabel(order: number) {
+  return order === 0 ? "Prologue" : `Chapter ${order}`;
+}
+---
+
+<BaseLayout
+  title={`${section.data.title} | The Will to Fail`}
+  description={section.data.summary}
+  bodyClass="theme-will-to-fail reader-mode"
+>
+  <article class="freedom-reader will-reader">
+    <aside class="reader-sidebar" aria-label="The Will to Fail section navigation">
+      <a class="reader-sidebar__back" href="/books/will-to-fail/">The Will to Fail</a>
+      <p>{section.data.part}</p>
+      <strong>{sectionLabel(section.data.order)}</strong>
+      <nav>
+        <a href="/books/will-to-fail/#section-map">All sections</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header will-reader-header">
+        <p class="eyebrow">{section.data.part}</p>
+        <h1>{section.data.title}</h1>
+        <p>{section.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(section.data.order)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose will-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent The Will to Fail sections">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/will-to-fail/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

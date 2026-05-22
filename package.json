@@ -22,6 +22,7 @@
     "extract:steam": "node scripts/extract-steam-book.mjs",
     "extract:subconscious": "node scripts/extract-subconscious-book.mjs",
     "extract:tao-maat": "node scripts/extract-tao-maat-book.mjs",
+    "extract:will-to-fail": "node scripts/extract-will-to-fail-book.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

@@ -1994,6 +1994,205 @@ p {
   color: var(--tao-gold-bright);
 }
 
+.theme-will-to-fail {
+  --will-ink: #17130f;
+  --will-black: #0a0907;
+  --will-paper: #f0e4c4;
+  --will-paper-deep: #d7c69e;
+  --will-paper-soft: rgba(240, 228, 196, 0.8);
+  --will-red: #b4211f;
+  --will-red-dark: #701614;
+  --will-gray: #6f6757;
+  --fbd-navy: var(--will-black);
+  --fbd-navy-2: #1a1510;
+  --fbd-cream: var(--will-paper);
+  --fbd-cream-muted: var(--will-paper-soft);
+  --fbd-gold: var(--will-red-dark);
+  --fbd-gold-bright: var(--will-red);
+  background:
+    radial-gradient(circle at 18% 15%, rgba(180, 33, 31, 0.22), transparent 26rem),
+    radial-gradient(circle at 77% 10%, rgba(240, 228, 196, 0.14), transparent 30rem),
+    radial-gradient(circle at 66% 78%, rgba(111, 103, 87, 0.22), transparent 24rem),
+    linear-gradient(rgba(240, 228, 196, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 228, 196, 0.026) 1px, transparent 1px),
+    linear-gradient(145deg, #070605, #17130f 52%, #0b0907);
+  background-size: auto, auto, auto, 48px 48px, 48px 48px, auto;
+}
+
+.theme-will-to-fail::before {
+  background:
+    radial-gradient(circle at 19% 24%, rgba(180, 33, 31, 0.11), transparent 20rem),
+    linear-gradient(105deg, transparent 16%, rgba(240, 228, 196, 0.045) 38%, transparent 58%),
+    linear-gradient(75deg, transparent 38%, rgba(180, 33, 31, 0.055) 51%, transparent 67%);
+}
+
+.theme-will-to-fail .eyebrow,
+.theme-will-to-fail .text-link,
+.theme-will-to-fail .reader-sidebar__back {
+  color: var(--will-red);
+}
+
+.theme-will-to-fail .button--primary {
+  color: #f8edd1;
+  background: linear-gradient(135deg, var(--will-red), #2a2118);
+  box-shadow: 0 22px 58px rgba(180, 33, 31, 0.22);
+}
+
+.theme-will-to-fail .button--ghost {
+  border-color: rgba(240, 228, 196, 0.36);
+  color: var(--will-paper);
+}
+
+.will-hero {
+  position: relative;
+}
+
+.will-hero::after {
+  position: absolute;
+  right: min(4vw, 2.5rem);
+  bottom: 7%;
+  width: min(30vw, 360px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(180, 33, 31, 0.26);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 45%, rgba(180, 33, 31, 0.18) 46% 54%, transparent 55%),
+    linear-gradient(transparent 45%, rgba(240, 228, 196, 0.11) 46% 54%, transparent 55%),
+    radial-gradient(circle, rgba(240, 228, 196, 0.055), transparent 58%);
+  opacity: 0.34;
+  mask-image: radial-gradient(circle, #000 48%, transparent 72%);
+}
+
+.theme-will-to-fail .book-world-hero h1 {
+  color: var(--will-paper);
+  text-shadow: 0 0 34px rgba(180, 33, 31, 0.16);
+}
+
+.theme-will-to-fail .book-world-hero__subtitle {
+  color: var(--will-paper-deep);
+}
+
+.theme-will-to-fail .book-world-hero__lede {
+  color: var(--will-paper-soft);
+}
+
+.will-cover::before {
+  border-color: rgba(240, 228, 196, 0.5);
+  border-radius: 38px;
+}
+
+.will-cover::after {
+  border-color: rgba(180, 33, 31, 0.52);
+  border-radius: 28px;
+}
+
+.will-cover img {
+  width: min(430px, 76vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-color: rgba(240, 228, 196, 0.62);
+  border-radius: 30px;
+  box-shadow: 0 46px 110px rgba(0, 0, 0, 0.56), 0 0 72px rgba(180, 33, 31, 0.16);
+}
+
+.will-section,
+.will-stats div,
+.theme-will-to-fail .reader-sidebar,
+.theme-will-to-fail .reader-column {
+  border-color: rgba(240, 228, 196, 0.2);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(180, 33, 31, 0.09), transparent 13rem),
+    linear-gradient(145deg, rgba(240, 228, 196, 0.08), rgba(23, 19, 15, 0.18)),
+    rgba(13, 10, 7, 0.78);
+}
+
+.will-promise p {
+  max-width: 900px;
+}
+
+.will-payoff-grid article {
+  border-color: rgba(240, 228, 196, 0.2);
+  background:
+    radial-gradient(circle at 16% 0%, rgba(180, 33, 31, 0.16), transparent 8rem),
+    rgba(240, 228, 196, 0.045);
+}
+
+.will-payoff-grid span {
+  color: var(--will-paper);
+  font-family: var(--serif);
+}
+
+.will-payoff-grid p {
+  color: var(--will-paper-soft);
+}
+
+.will-practice-grid article,
+.will-part-panel,
+.will-chapter-tile {
+  border-color: rgba(240, 228, 196, 0.2);
+}
+
+.will-practice-grid article::before {
+  background: linear-gradient(90deg, rgba(180, 33, 31, 0.72), rgba(240, 228, 196, 0.16));
+}
+
+.will-chapter-tile span {
+  color: var(--will-red);
+}
+
+.will-reader .reader-sidebar,
+.will-reader .reader-column {
+  border-color: rgba(23, 19, 15, 0.18);
+  background:
+    radial-gradient(circle at 82% 6%, rgba(180, 33, 31, 0.08), transparent 14rem),
+    linear-gradient(rgba(23, 19, 15, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 19, 15, 0.022) 1px, transparent 1px),
+    #f0e4c4;
+  background-size: auto, 34px 34px, 34px 34px, auto;
+  color: var(--will-ink);
+}
+
+.will-reader .reader-sidebar__back,
+.will-reader .reader-sidebar nav a,
+.will-reader .eyebrow {
+  color: var(--will-red-dark);
+}
+
+.will-reader .reader-sidebar p,
+.will-reader .reader-header p,
+.will-reader .reader-meta span {
+  color: rgba(23, 19, 15, 0.68);
+}
+
+.will-reader .reader-sidebar strong,
+.will-reader-header h1 {
+  color: var(--will-ink);
+}
+
+.will-reader .reader-sidebar nav a,
+.will-reader .reader-meta span {
+  border-color: rgba(23, 19, 15, 0.18);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.will-prose {
+  max-width: 76ch;
+}
+
+.will-prose p,
+.will-prose li {
+  color: rgba(23, 19, 15, 0.92);
+  font-size: clamp(1.06rem, 1.8vw, 1.19rem);
+  line-height: 1.9;
+}
+
+.will-prose strong,
+.will-prose em {
+  color: var(--will-red-dark);
+}
+
 @media (max-width: 820px) {
   .site-header,
   .site-footer,
