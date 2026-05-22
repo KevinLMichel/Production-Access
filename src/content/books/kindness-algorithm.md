@@ -1,13 +1,24 @@
 ---
 title: "The Kindness Algorithm"
-dek: "A humane systems book about kindness, design, and better social defaults."
-description: "A catalogue record for a work exploring kindness as a practical, repeatable pattern in systems and relationships."
-updated: 2026-05-21
-topics: ["kindness", "systems", "ethics"]
-shelves: ["New & Active", "Catalogue", "Coming Soon"]
+subtitle: "Small acts, big upgrades!"
+dek: "A humane systems book about kindness, empathy, generosity, and better social defaults."
+description: "A complete online book-world for a practical, systems-minded guide to kindness as a repeatable pattern: inner council, empathy design, five-coin rituals, kindness sprints, civic APIs, and network effects."
+status: "available"
+statusLabel: "Read online"
+cover: "/covers/kindness-algorithm.jfif"
+coverShape: "square"
+updated: 2026-05-22
+topics: ["kindness", "empathy", "generosity", "social defaults", "inner council", "civic design", "burnout-proof giving", "systems"]
+shelves: ["Featured", "New & Active", "Catalogue", "Self Development", "Practical Philosophy", "Systems", "Available Online"]
+featuredRank: 15
+links:
+  - label: "Start reading"
+    href: "/books/kindness-algorithm/"
+    kind: "read"
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/kindness-algorithm/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+The Kindness Algorithm opens a complete online reading path through practical kindness: small acts, stronger defaults, better relationships, healthier systems, and a more humane way to move through the day.

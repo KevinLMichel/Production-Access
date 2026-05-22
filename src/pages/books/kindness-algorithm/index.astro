@@ -1,0 +1,187 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormatLinks from "../../../components/FormatLinks.astro";
+import { getBooks } from "../../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../../lib/bookWorld";
+
+const books = await getBooks();
+const book = books.find((entry) => entry.id === "kindness-algorithm");
+
+if (!book) {
+  throw new Error("The Kindness Algorithm catalogue record not found.");
+}
+
+const sections = await getBookChapters("kindness-algorithm");
+const parts = groupChaptersByPart(sections);
+const firstSection = sections[0];
+const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(section), 0);
+const chapterCount = sections.filter((section) => section.data.order > 0 && section.data.order < 14).length;
+
+const systems = [
+  {
+    name: "Inner Council",
+    line: "Listen to self-interest, social mirror, and ideal self without letting one voice hijack the room."
+  },
+  {
+    name: "Five-Coin Day",
+    line: "Make kindness visible through small repeated acts that turn goodwill into a daily ritual."
+  },
+  {
+    name: "Kindness Sprints",
+    line: "Use short bursts of outreach to create connection before busyness becomes an excuse."
+  },
+  {
+    name: "Civic API",
+    line: "Ask how institutions, policies, workplaces, and neighborhoods can make humane defaults easier."
+  }
+];
+
+const practices = [
+  "Run the Inner Council check-in",
+  "Spend one kindness coin before noon",
+  "Pause for the 60-second kindfulness reset",
+  "Track a 72-hour ripple",
+  "Protect generosity with boundaries"
+];
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Prologue";
+  if (order === 14) return "Epilogue";
+  return `Chapter ${order}`;
+}
+
+function partHeading(part: string) {
+  return part.replace(/^Part\s+[IVX]+\s+-\s*/, "").trim();
+}
+---
+
+<BaseLayout
+  title="The Kindness Algorithm | Kevin L. Michel - The Library"
+  description={book.data.description}
+  bodyClass="theme-kindness-algorithm"
+>
+  <section class="book-world-hero kindness-hero" aria-labelledby="kindness-title">
+    <div class="book-world-hero__copy">
+      <p class="eyebrow">The Kindness Algorithm</p>
+      <h1 id="kindness-title">Small acts can become better social defaults.</h1>
+      <p class="book-world-hero__subtitle">{book.data.subtitle}</p>
+      <p class="book-world-hero__lede">
+        A practical, hopeful guide to kindness as a repeatable system: inner checks,
+        empathy patterns, daily coins, short sprints, wiser metrics, and civic designs
+        that make care easier to practice.
+      </p>
+      <div class="hero__actions">
+        {firstSection && <a class="button button--primary" href={chapterHref(firstSection)}>Start reading</a>}
+        <a class="button button--ghost" href="#section-map">Explore sections</a>
+        <a class="text-link" href="/books/">Return to Library</a>
+      </div>
+      <FormatLinks formats={book.data.formats} />
+    </div>
+
+    <aside class="book-world-cover kindness-cover" aria-label="The Kindness Algorithm cover">
+      <img src={book.data.cover} alt="The Kindness Algorithm cover by Kevin L. Michel" />
+    </aside>
+  </section>
+
+  <section class="freedom-stats kindness-stats" aria-label="Book statistics">
+    <div>
+      <strong>{chapterCount}</strong>
+      <span>chapters</span>
+    </div>
+    <div>
+      <strong>{parts.length}</strong>
+      <span>movements</span>
+    </div>
+    <div>
+      <strong>{readingTimeFromWords(totalWords)}</strong>
+      <span>minute read</span>
+    </div>
+  </section>
+
+  <section class="freedom-section kindness-section kindness-promise">
+    <p class="eyebrow">The book promise</p>
+    <h2>A kind life should not depend on heroic mood.</h2>
+    <p>
+      The Kindness Algorithm treats generosity as design: a pattern of cues, practices,
+      boundaries, measurements, and social defaults that help ordinary people become more
+      reliable sources of warmth without burning themselves out.
+    </p>
+  </section>
+
+  <section class="freedom-section kindness-section" aria-labelledby="system-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Operating system</p>
+        <h2 id="system-heading">How kindness becomes repeatable</h2>
+      </div>
+    </div>
+    <div class="outcome-grid kindness-system-grid">
+      {
+        systems.map((system) => (
+          <article>
+            <span>{system.name}</span>
+            <p>{system.line}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section kindness-section" aria-labelledby="practice-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Practice panel</p>
+        <h2 id="practice-heading">Small acts, big upgrades</h2>
+      </div>
+    </div>
+    <div class="practice-grid kindness-practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{practice}</h3>
+            <p>
+              A simple behavior that turns kindness from a vague wish into a visible,
+              repeatable part of the day.
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section kindness-section" id="section-map" aria-labelledby="section-map-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Section map</p>
+        <h2 id="section-map-heading">From inner defaults to network effects</h2>
+      </div>
+    </div>
+
+    <div class="part-map">
+      {
+        parts.map(({ part, chapters }) => (
+          <section class="part-panel kindness-part-panel" aria-labelledby={`part-${chapters[0].data.order}`}>
+            <p class="part-panel__label">{part}</p>
+            <h3 id={`part-${chapters[0].data.order}`}>{partHeading(part)}</h3>
+            <div class="chapter-grid">
+              {chapters.map((section) => (
+                <a class="chapter-tile kindness-chapter-tile" href={chapterHref(section)}>
+                  <span>{sectionLabel(section.data.order)}</span>
+                  <strong>{section.data.title}</strong>
+                  <small>{section.data.summary}</small>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

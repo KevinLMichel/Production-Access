@@ -22,6 +22,7 @@
     "extract:steam": "node scripts/extract-steam-book.mjs",
     "extract:subconscious": "node scripts/extract-subconscious-book.mjs",
     "extract:banzos-sword": "node scripts/extract-banzos-sword-book.mjs",
+    "extract:kindness-algorithm": "node scripts/extract-kindness-algorithm-book.mjs",
     "extract:tao-maat": "node scripts/extract-tao-maat-book.mjs",
     "extract:will-to-fail": "node scripts/extract-will-to-fail-book.mjs",
     "preview": "astro preview",

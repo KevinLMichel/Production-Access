@@ -1976,6 +1976,182 @@ p {
   color: var(--banzo-gold);
 }
 
+.theme-kindness-algorithm {
+  --kind-ink: #09202a;
+  --kind-navy: #0d1c2a;
+  --kind-teal: #55c5c9;
+  --kind-teal-deep: #1b8791;
+  --kind-coral: #f07b66;
+  --kind-coral-soft: #f5a088;
+  --kind-cream: #fff3e8;
+  --kind-soft: rgba(255, 243, 232, 0.82);
+  --fbd-navy: var(--kind-ink);
+  --fbd-navy-2: var(--kind-navy);
+  --fbd-cream: var(--kind-cream);
+  --fbd-cream-muted: var(--kind-soft);
+  --fbd-gold: var(--kind-coral);
+  --fbd-gold-bright: var(--kind-teal);
+  background:
+    radial-gradient(circle at 16% 13%, rgba(85, 197, 201, 0.26), transparent 29rem),
+    radial-gradient(circle at 78% 12%, rgba(240, 123, 102, 0.2), transparent 31rem),
+    radial-gradient(circle at 66% 76%, rgba(255, 243, 232, 0.12), transparent 28rem),
+    linear-gradient(rgba(255, 243, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 243, 232, 0.028) 1px, transparent 1px),
+    linear-gradient(145deg, #07141c, #0f2b35 48%, #152333);
+  background-size: auto, auto, auto, 56px 56px, 56px 56px, auto;
+}
+
+.theme-kindness-algorithm::before {
+  background:
+    radial-gradient(circle at 18% 25%, rgba(85, 197, 201, 0.11), transparent 21rem),
+    radial-gradient(circle at 88% 80%, rgba(240, 123, 102, 0.1), transparent 22rem),
+    linear-gradient(115deg, transparent 18%, rgba(255, 243, 232, 0.055) 37%, transparent 58%);
+}
+
+.theme-kindness-algorithm .eyebrow,
+.theme-kindness-algorithm .text-link,
+.theme-kindness-algorithm .reader-sidebar__back {
+  color: var(--kind-teal);
+}
+
+.theme-kindness-algorithm .button--primary {
+  color: #09202a;
+  background: linear-gradient(135deg, var(--kind-cream), var(--kind-teal));
+  box-shadow: 0 22px 58px rgba(85, 197, 201, 0.22);
+}
+
+.theme-kindness-algorithm .button--ghost {
+  border-color: rgba(255, 243, 232, 0.42);
+  color: var(--kind-cream);
+}
+
+.kindness-hero {
+  position: relative;
+}
+
+.kindness-hero::after {
+  position: absolute;
+  right: min(4vw, 2.5rem);
+  bottom: 8%;
+  width: min(30vw, 360px);
+  aspect-ratio: 1;
+  border-radius: 48% 52% 44% 56%;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 36%, rgba(255, 243, 232, 0.09), transparent 28%),
+    radial-gradient(circle at 68% 42%, rgba(85, 197, 201, 0.1), transparent 30%),
+    radial-gradient(circle at 52% 64%, rgba(240, 123, 102, 0.1), transparent 34%);
+  opacity: 0.52;
+  filter: blur(0.2px);
+}
+
+.theme-kindness-algorithm .book-world-hero h1 {
+  color: var(--kind-cream);
+  text-shadow: 0 0 34px rgba(85, 197, 201, 0.16);
+}
+
+.theme-kindness-algorithm .book-world-hero__subtitle {
+  color: var(--kind-coral-soft);
+}
+
+.theme-kindness-algorithm .book-world-hero__lede {
+  color: var(--kind-soft);
+}
+
+.kindness-cover::before {
+  border-color: rgba(85, 197, 201, 0.58);
+  border-radius: 38px;
+}
+
+.kindness-cover::after {
+  border-color: rgba(240, 123, 102, 0.5);
+  border-radius: 28px;
+}
+
+.kindness-cover img {
+  width: min(430px, 76vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-color: rgba(255, 243, 232, 0.7);
+  border-radius: 30px;
+  box-shadow: 0 46px 110px rgba(0, 0, 0, 0.46), 0 0 72px rgba(85, 197, 201, 0.18);
+}
+
+.kindness-section,
+.kindness-stats div,
+.theme-kindness-algorithm .reader-sidebar,
+.theme-kindness-algorithm .reader-column {
+  border-color: rgba(255, 243, 232, 0.22);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(240, 123, 102, 0.08), transparent 13rem),
+    linear-gradient(145deg, rgba(255, 243, 232, 0.1), rgba(85, 197, 201, 0.08)),
+    rgba(9, 32, 42, 0.74);
+}
+
+.kindness-promise p {
+  max-width: 900px;
+}
+
+.kindness-system-grid article {
+  border-color: rgba(255, 243, 232, 0.22);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(85, 197, 201, 0.16), transparent 8rem),
+    rgba(255, 243, 232, 0.05);
+}
+
+.kindness-system-grid span {
+  color: var(--kind-teal);
+}
+
+.kindness-system-grid p {
+  color: var(--kind-soft);
+}
+
+.kindness-practice-grid article,
+.kindness-part-panel,
+.kindness-chapter-tile {
+  border-color: rgba(255, 243, 232, 0.22);
+}
+
+.kindness-practice-grid article::before {
+  background: linear-gradient(90deg, rgba(85, 197, 201, 0.72), rgba(240, 123, 102, 0.32));
+}
+
+.kindness-reader .reader-column {
+  background:
+    linear-gradient(145deg, rgba(255, 243, 232, 0.1), rgba(85, 197, 201, 0.06)),
+    rgba(8, 27, 36, 0.84);
+}
+
+.kindness-reader-header h1 {
+  color: var(--kind-cream);
+}
+
+.kindness-prose {
+  max-width: 74ch;
+}
+
+.kindness-prose h2 {
+  margin-top: 2.25rem;
+  color: var(--kind-coral-soft);
+  font-family: var(--sans);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kindness-prose p,
+.kindness-prose li {
+  color: rgba(255, 243, 232, 0.91);
+  font-size: clamp(1.04rem, 1.75vw, 1.18rem);
+  line-height: 1.86;
+}
+
+.kindness-prose strong {
+  color: var(--kind-teal);
+}
+
 .theme-tao-of-maat {
   --tao-black: #030405;
   --tao-ink: #090d0e;
