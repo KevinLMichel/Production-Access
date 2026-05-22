@@ -69,7 +69,7 @@ await run(nodeCommand, [
   "--style",
   coverStylesheet,
   "-s",
-  "11.673in,8.75in",
+  "11.6666667in,8.75in",
   "-o",
   coverPath,
   "--title",
