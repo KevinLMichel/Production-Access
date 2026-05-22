@@ -150,11 +150,12 @@ body {
   top: 0;
   width: 5.72in;
   height: 8.75in;
-  opacity: 0.88;
+  opacity: 1;
   background:
-    radial-gradient(ellipse at 50% 42%, rgba(15, 136, 139, 0.7), transparent 1.85in),
-    radial-gradient(ellipse at 48% 60%, rgba(245, 217, 131, 0.2), transparent 1.55in),
-    radial-gradient(ellipse at 86% 86%, rgba(2, 11, 20, 0.86), transparent 1.4in);
+    linear-gradient(180deg, rgba(2, 11, 20, 0.9) 0%, rgba(2, 11, 20, 0.5) 18%, transparent 37%, rgba(2, 11, 20, 0.24) 63%, rgba(2, 11, 20, 0.82) 100%),
+    radial-gradient(ellipse at 50% 46%, rgba(245, 217, 131, 0.18), transparent 1.72in),
+    url("./covers/subconscious-dream-architecture-mind.png") center center / cover no-repeat,
+    linear-gradient(180deg, #020b14, #052630 48%, #020b14);
 }
 
 .field--front::before,
@@ -165,27 +166,28 @@ body {
 }
 
 .field--front::before {
-  left: 0.42in;
-  top: 1.9in;
-  width: 4.8in;
-  height: 4.75in;
-  opacity: 0.48;
+  left: 0.15in;
+  top: 0.12in;
+  width: 5.4in;
+  height: 8.5in;
+  opacity: 0.32;
   background:
-    repeating-radial-gradient(circle at 50% 49%, transparent 0 0.24in, rgba(184, 233, 221, 0.13) 0.25in 0.257in, transparent 0.266in 0.44in),
-    repeating-conic-gradient(from -18deg at 50% 49%, rgba(245, 217, 131, 0.09) 0deg 4deg, transparent 4deg 18deg);
-  border-radius: 50%;
+    repeating-radial-gradient(circle at 52% 51%, transparent 0 0.34in, rgba(184, 233, 221, 0.1) 0.35in 0.357in, transparent 0.367in 0.62in),
+    repeating-conic-gradient(from -18deg at 52% 51%, rgba(245, 217, 131, 0.06) 0deg 4deg, transparent 4deg 20deg);
+  mix-blend-mode: screen;
 }
 
 .field--front::after {
-  left: 1.08in;
-  top: 2.48in;
-  width: 3.4in;
-  height: 3.1in;
-  opacity: 0.32;
+  left: 0.48in;
+  top: 1.22in;
+  width: 4.58in;
+  height: 6.18in;
+  opacity: 0.2;
   background:
-    linear-gradient(31deg, transparent 0 48%, rgba(245, 217, 131, 0.28) 49% 50%, transparent 51% 100%),
-    linear-gradient(116deg, transparent 0 46%, rgba(184, 233, 221, 0.17) 47% 48%, transparent 49% 100%),
-    linear-gradient(154deg, transparent 0 51%, rgba(184, 233, 221, 0.12) 52% 53%, transparent 54% 100%);
+    linear-gradient(31deg, transparent 0 48%, rgba(245, 217, 131, 0.24) 49% 50%, transparent 51% 100%),
+    linear-gradient(116deg, transparent 0 46%, rgba(184, 233, 221, 0.14) 47% 48%, transparent 49% 100%),
+    linear-gradient(154deg, transparent 0 51%, rgba(184, 233, 221, 0.11) 52% 53%, transparent 54% 100%);
+  mix-blend-mode: screen;
 }
 
 .back-cover {
@@ -218,28 +220,27 @@ body {
 }
 
 .front-cover::before {
-  opacity: 0.92;
+  opacity: 1;
   background:
-    radial-gradient(circle at 50% 50%, rgba(245, 217, 131, 0.08), transparent 1.34in),
-    repeating-radial-gradient(circle at 50% 49%, transparent 0 0.31in, rgba(17, 161, 165, 0.1) 0.32in 0.327in, transparent 0.337in 0.58in),
-    linear-gradient(90deg, transparent 0 49%, rgba(245, 217, 131, 0.08) 49.4% 50.6%, transparent 51% 100%);
+    linear-gradient(180deg, rgba(2, 11, 20, 0.68) 0%, rgba(2, 11, 20, 0.14) 28%, transparent 52%, rgba(2, 11, 20, 0.18) 70%, rgba(2, 11, 20, 0.72) 100%),
+    radial-gradient(ellipse at 50% 34%, rgba(245, 217, 131, 0.08), transparent 1.6in);
 }
 
 .front-cover::after {
   position: absolute;
-  left: 2.34in;
-  top: 2.17in;
+  left: 2.05in;
+  top: 2.86in;
   z-index: 2;
-  width: 0.46in;
-  height: 4.45in;
+  width: 0.72in;
+  height: 3.2in;
   border-radius: 50%;
   content: "";
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(245, 217, 131, 0.42), transparent 0.78in),
-    linear-gradient(180deg, transparent 0%, rgba(245, 217, 131, 0.18) 24%, rgba(245, 217, 131, 0.34) 61%, transparent 100%);
-  filter: blur(0.015in);
-  opacity: 0.72;
-  transform: rotate(-6deg);
+    radial-gradient(ellipse at 50% 35%, rgba(245, 217, 131, 0.34), transparent 0.55in),
+    linear-gradient(180deg, transparent 0%, rgba(245, 217, 131, 0.12) 18%, rgba(245, 217, 131, 0.22) 57%, transparent 100%);
+  filter: blur(0.02in);
+  opacity: 0.46;
+  transform: rotate(-2deg);
 }
 
 .kicker,
@@ -417,6 +418,7 @@ body {
   z-index: 3;
   width: 4.08in;
   height: 5.04in;
+  display: none;
   filter: drop-shadow(0 0.05in 0.11in rgba(0, 0, 0, 0.48));
 }
 
@@ -489,15 +491,15 @@ body {
   position: relative;
   z-index: 4;
   margin: 0.18in auto 0;
-  color: var(--gold-bright);
+  color: var(--cream);
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 0.57in;
   line-height: 0.92;
   letter-spacing: 0.015em;
   text-transform: uppercase;
   text-shadow:
-    0 0.018in 0 rgba(88, 58, 16, 0.65),
-    0 0.045in 0.08in rgba(0, 0, 0, 0.38);
+    0 0.018in 0 rgba(57, 38, 9, 0.82),
+    0 0.05in 0.11in rgba(0, 0, 0, 0.72);
 }
 
 .front-cover h1 span,
@@ -521,13 +523,17 @@ body {
   bottom: 1.34in;
   z-index: 5;
   margin: 0;
-  color: var(--gold-bright);
+  padding: 0.12in 0.18in;
+  color: var(--cream);
+  background: linear-gradient(90deg, rgba(2, 11, 20, 0.78), rgba(5, 38, 48, 0.64), rgba(2, 11, 20, 0.78));
+  border-top: 0.012in solid rgba(245, 217, 131, 0.34);
+  border-bottom: 0.012in solid rgba(245, 217, 131, 0.26);
   font-size: 0.166in;
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.32;
   text-transform: uppercase;
-  text-shadow: 0 0.015in 0.045in rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.015in 0.045in rgba(0, 0, 0, 0.72);
 }
 
 .outcome-icons {
@@ -536,7 +542,7 @@ body {
   right: 0.95in;
   bottom: 0.86in;
   z-index: 5;
-  display: flex;
+  display: none;
   justify-content: space-between;
   color: var(--gold-bright);
   font-family: "Source Sans 3", Arial, sans-serif;
