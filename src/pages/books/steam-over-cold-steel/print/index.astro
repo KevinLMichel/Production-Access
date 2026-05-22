@@ -1,0 +1,105 @@
+---
+import { render } from "astro:content";
+import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "Steam Over Cold Steel",
+  subtitle: "A historical parable of tea, steel, duty, and restraint",
+  author: "Kevin L. Michel"
+};
+
+const sections = await getBookChapters("steam-over-cold-steel");
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const { Content } = await render(section);
+    return {
+      section,
+      Content,
+      printId: sectionId(section.data.order),
+      label: sectionLabel(section.data.order)
+    };
+  })
+);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Prologue";
+  if (order === 7) return "Epilogue";
+  return `Part ${["I", "II", "III", "IV", "V", "VI"][order - 1]}`;
+}
+
+function sectionId(order: number) {
+  if (order === 0) return "prologue";
+  if (order === 7) return "epilogue";
+  return `part-${order}`;
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">A historical parable</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owner, except as permitted by law.
+      </p>
+      <p>
+        This is a work of literary and historical imagination. References to historical persons, places, traditions, practices, and events are used for storytelling, commentary, education, and discussion. Dialogue, interior thought, scenes, and dramatic interpretation are fictionalized.
+      </p>
+      <p>
+        All trademarks and trade names are the property of their respective owners.
+      </p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          renderedSections.map((entry) => (
+            <li>
+              <div class="toc-entry" data-target={`#${entry.printId}`}>
+                <span class="toc-chapter">{entry.label}</span>
+                <span class="toc-title">{entry.section.data.title}</span>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        renderedSections.map((entry) => (
+          <PrintBookChapter
+            chapter={entry.section}
+            printId={entry.printId}
+            Content={entry.Content}
+            kickerLabel={entry.label}
+            startOnRecto={entry.section.data.order === 0}
+            showSubtitle={false}
+          />
+        ))
+      }
+    </main>
+  </body>
+</html>

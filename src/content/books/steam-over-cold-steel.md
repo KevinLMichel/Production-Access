@@ -14,9 +14,15 @@ links:
   - label: "Start reading"
     href: "/books/steam-over-cold-steel/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/steam-over-cold-steel-kevin-l-michel.pdf"
+    kind: "download"
 formats:
   - label: "Start Reading"
     href: "/books/steam-over-cold-steel/"
+    status: "available"
+  - label: "Download PDF"
+    href: "/downloads/steam-over-cold-steel-kevin-l-michel.pdf"
     status: "available"
 ---
 

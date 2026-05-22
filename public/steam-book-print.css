@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.56in 0.74in;
+}
+
+@page :left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.5pt;
+  }
+}
+
+@page :right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "Steam Over Cold Steel";
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.5pt;
+  }
+}
+
+@page :blank {
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page front {
+  margin: 0.72in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page toc:left {
+  margin: 0.72in 0.86in 0.72in 0.58in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page toc:right {
+  margin: 0.72in 0.58in 0.72in 0.86in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page chapter {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.56in 0.74in;
+}
+
+@page chapter:left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.5pt;
+  }
+}
+
+@page chapter:right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "Steam Over Cold Steel";
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #4b3d32;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.5pt;
+  }
+}
+
+@page chapter:first,
+@page chapter:blank {
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #171412;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 10.35pt;
+  line-height: 1.39;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+blockquote {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-page,
+.copyright-page {
+  page: front;
+  break-after: page;
+}
+
+.toc-page {
+  page: toc;
+  break-after: page;
+}
+
+.title-page {
+  align-items: center;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.title-page h1 {
+  color: #171412;
+  font-size: 34pt;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+  margin: 0.26in auto 0.16in;
+  max-width: 4.15in;
+}
+
+.title-eyebrow,
+.title-author,
+.chapter-kicker,
+.toc-chapter {
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.title-eyebrow {
+  color: #9e3025;
+  font-size: 8.6pt;
+  font-weight: 700;
+}
+
+.title-subtitle {
+  color: #4b3d32;
+  font-size: 11.4pt;
+  line-height: 1.42;
+  margin: 0 auto 0.42in;
+  max-width: 3.8in;
+}
+
+.title-author {
+  color: #171412;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.copyright-page {
+  font-size: 8.5pt;
+  line-height: 1.42;
+  padding-top: 0.1in;
+}
+
+.copyright-page p {
+  margin-bottom: 0.14in;
+}
+
+.toc-page h1 {
+  color: #171412;
+  font-size: 24pt;
+  margin-bottom: 0.28in;
+}
+
+.toc-page ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-page li {
+  border-bottom: 0.75pt solid rgba(23, 20, 18, 0.16);
+  break-inside: avoid;
+  padding: 0.07in 0;
+}
+
+.toc-entry {
+  display: grid;
+  gap: 0.08in;
+  grid-template-columns: 0.64in minmax(0, 1fr) 0.42in;
+}
+
+.toc-entry::after {
+  content: target-counter(attr(data-target url), page);
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 8.5pt;
+  font-weight: 700;
+  text-align: right;
+}
+
+.toc-title {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-chapter {
+  color: #6f2f27;
+  font-size: 7.3pt;
+  font-weight: 700;
+}
+
+.book-body {
+  counter-reset: chapter;
+}
+
+.print-chapter {
+  break-before: page;
+  page: chapter;
+}
+
+.print-chapter--recto {
+  break-before: right;
+}
+
+.chapter-opener {
+  margin-bottom: 0.36in;
+  padding-top: 0.72in;
+}
+
+.chapter-kicker {
+  color: #9e3025;
+  font-size: 7.8pt;
+  font-weight: 700;
+  margin-bottom: 0.14in;
+}
+
+.chapter-opener h1 {
+  color: #171412;
+  font-size: 22pt;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+  margin-bottom: 0.12in;
+}
+
+.chapter-body {
+  hyphens: auto;
+  orphans: 3;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-align-last: left;
+  widows: 3;
+}
+
+.chapter-body h2,
+.chapter-body h3 {
+  break-after: avoid;
+  color: #171412;
+  line-height: 1.16;
+  text-align: left;
+}
+
+.chapter-body h2 {
+  font-size: 13.3pt;
+  margin: 0.28in 0 0.1in;
+}
+
+.chapter-body h3 {
+  color: #4b3d32;
+  font-size: 11.3pt;
+  margin: 0.22in 0 0.08in;
+}
+
+.chapter-body p {
+  margin: 0;
+}
+
+.chapter-body p + p {
+  text-indent: 0.2in;
+}
+
+.chapter-body h2 + p,
+.chapter-body h3 + p,
+.chapter-body blockquote + p,
+.chapter-body ul + p,
+.chapter-body ol + p {
+  text-indent: 0;
+}
+
+.chapter-body em {
+  color: #4b3d32;
+}
+
+.chapter-body blockquote {
+  border-bottom: 0.75pt solid rgba(23, 20, 18, 0.32);
+  border-top: 0.75pt solid rgba(23, 20, 18, 0.32);
+  font-size: 10pt;
+  font-style: italic;
+  line-height: 1.38;
+  margin: 0.18in 0.2in;
+  padding: 0.08in 0;
+  text-align: left;
+}
+
+.chapter-body blockquote p,
+.chapter-body li p {
+  text-indent: 0;
+}
+
+.chapter-body blockquote p + p {
+  margin-top: 0.08in;
+  text-indent: 0;
+}
+
+.chapter-body ul,
+.chapter-body ol {
+  margin: 0 0 0.14in 0.22in;
+  padding: 0;
+  text-align: left;
+}
+
+.chapter-body li {
+  margin-bottom: 0.05in;
+}

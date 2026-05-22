@@ -22,6 +22,7 @@ Regenerate committed Markdown chapters from local DOCX source files when a sourc
 ```powershell
 npm run extract:freedom
 npm run extract:fragmented
+npm run extract:steam
 npm run extract:subconscious
 ```
 
@@ -52,6 +53,19 @@ The generated file is committed at `public/downloads/a-book-for-the-fragmented-k
 Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
 
 Current generated interior: 405 pages at 5.5 x 8.5 inches.
+
+## Steam Over Cold Steel PDF
+
+Regenerate the downloadable Steam Over Cold Steel interior PDF after section changes:
+
+```powershell
+npm run book:pdf:steam
+```
+
+The generated file is committed at `public/downloads/steam-over-cold-steel-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 46 pages at 5.5 x 8.5 inches.
 
 ## The Subconscious Advantage PDF
 
