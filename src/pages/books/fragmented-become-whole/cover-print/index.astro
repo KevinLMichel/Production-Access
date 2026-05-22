@@ -1,0 +1,93 @@
+---
+const title = "A Book for the Fragmented Who Seek to Become Whole";
+const shortTitle = "A Book for the Fragmented";
+const spineTitleTop = "A Book for the Fragmented";
+const spineTitleBottom = "Who Seek to Become Whole";
+const subtitle = "A symbolic inner journey through fracture, shadow, alchemy, and return";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Some books ask you to fix yourself. This one begins somewhere gentler: with the possibility that every voice inside you has been trying, in its imperfect way, to keep you alive.",
+  "Through a symbolic dialogue between The Self, The Infinite, The Alchemist, The Scientist, The Underground Man, and The Shadow, A Book for the Fragmented Who Seek to Become Whole follows an inner journey from fracture to integration.",
+  "This is a book for readers who feel divided, tired, intense, unfinished, and still strangely called toward wholeness. It does not promise a life without contradiction. It offers a way to listen deeply, gather the exiled pieces, and return to the world with a steadier heart."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{shortTitle} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="paper-grain" aria-hidden="true"></div>
+      <div class="paint-wash paint-wash--back" aria-hidden="true"></div>
+      <div class="paint-wash paint-wash--front" aria-hidden="true"></div>
+      <div class="paint-wash paint-wash--ember" aria-hidden="true"></div>
+      <svg class="fracture-map fracture-map--back" viewBox="0 0 500 500" aria-hidden="true">
+        <path class="head-fill" d="M355 54c-99 0-178 72-178 165 0 33 9 63 25 91l-102 45c44 14 74 39 91 74l7 55h202v-103c55-39 85-96 85-160 0-93-57-167-130-167z" />
+        <path class="profile-cut" d="M183 287c-28-2-54 0-78 10 34-29 54-62 59-108 7-62 47-110 104-134" />
+        <circle class="mirror-fill" cx="339" cy="196" r="102" />
+        <circle class="mirror-ring" cx="339" cy="196" r="102" />
+        <path class="crack crack--one" d="M338 97l-25 74 34 29-16 96" />
+        <path class="crack crack--two" d="M238 196l75-25 63 19 61-50" />
+        <path class="crack crack--three" d="M281 282l66-82 89 45" />
+        <path class="crack crack--four" d="M372 107l-25 93 59 91" />
+        <path class="face-line" d="M156 257c35 4 63 20 78 48" />
+        <path class="face-line" d="M192 345c30 12 67 11 104-3" />
+      </svg>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">An inner journey through fracture and return</p>
+        <h2>The pieces are not the enemy.</h2>
+        <div class="back-rule"></div>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="author-note">Kevin L. Michel writes practical philosophy, inner-discipline, and symbolic works for readers trying to live with more clarity, courage, and wholeness.</p>
+        <p class="back-footer">Gather the pieces. Welcome the shadow. Become whole.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <div class="spine-text">
+          <span class="spine-title">
+            <span>{spineTitleTop}</span>
+            <span>{spineTitleBottom}</span>
+          </span>
+          <span class="spine-author">{author}</span>
+        </div>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <svg class="front-head" viewBox="0 0 500 500" role="img" aria-label="Fragmented head and mirror emblem">
+          <path class="head-fill" d="M355 54c-99 0-178 72-178 165 0 33 9 63 25 91l-102 45c44 14 74 39 91 74l7 55h202v-103c55-39 85-96 85-160 0-93-57-167-130-167z" />
+          <path class="profile-cut" d="M183 287c-28-2-54 0-78 10 34-29 54-62 59-108 7-62 47-110 104-134" />
+          <circle class="mirror-fill" cx="339" cy="196" r="102" />
+          <circle class="mirror-ring" cx="339" cy="196" r="102" />
+          <path class="crack crack--one" d="M338 97l-25 74 34 29-16 96" />
+          <path class="crack crack--two" d="M238 196l75-25 63 19 61-50" />
+          <path class="crack crack--three" d="M281 282l66-82 89 45" />
+          <path class="crack crack--four" d="M372 107l-25 93 59 91" />
+          <path class="face-line" d="M156 257c35 4 63 20 78 48" />
+          <path class="face-line" d="M192 345c30 12 67 11 104-3" />
+        </svg>
+        <p class="front-kicker">A symbolic inner journey</p>
+        <h1>
+          <span>A Book</span>
+          <span>For the</span>
+          <strong>Fragmented</strong>
+          <span>Who Seek to</span>
+          <strong>Become</strong>
+          <strong>Whole</strong>
+        </h1>
+        <p class="cover-subtitle">{subtitle}</p>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>

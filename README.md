@@ -52,6 +52,17 @@ npm run book:cover:freedom
 The generated release asset is written to `production/covers/output/freedom-by-design-cover-wrap.pdf`.
 It uses the 230-page, black-and-white groundwood KDP template geometry: `11.7916667 x 8.75` inches with a `0.5416667` inch spine.
 
+## A Book for the Fragmented Cover
+
+Regenerate the KDP paperback cover wrap after the paperback page count/template changes:
+
+```powershell
+npm run book:cover:fragmented
+```
+
+The generated release asset is written to `production/covers/output/a-book-for-the-fragmented-cover-wrap.pdf`.
+It uses the 405-page, black-and-white groundwood KDP template geometry: `12.202 x 8.75` inches with a `0.952` inch spine.
+
 ## Render
 
 - Build command: `npm install && npm run build`

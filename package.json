@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "book:cover:fragmented": "node scripts/build-fragmented-cover.mjs",
     "book:cover:freedom": "node scripts/build-freedom-cover.mjs",
     "book:pdf:fragmented": "node scripts/build-fragmented-pdf.mjs",
     "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
