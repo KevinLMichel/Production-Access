@@ -17,6 +17,7 @@
     "book:pdf:subconscious": "node scripts/build-subconscious-pdf.mjs",
     "extract:fragmented": "node scripts/extract-fragmented-book.mjs",
     "extract:freedom": "node scripts/extract-freedom-book.mjs",
+    "extract:steam": "node scripts/extract-steam-book.mjs",
     "extract:subconscious": "node scripts/extract-subconscious-book.mjs",
     "preview": "astro preview",
     "astro": "astro"

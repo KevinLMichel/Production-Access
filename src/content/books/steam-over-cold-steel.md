@@ -1,13 +1,25 @@
 ---
 title: "Steam Over Cold Steel"
-dek: "A title of pressure, machinery, force, and human heat."
-description: "A catalogue record for a literary or strategic work framed by steam, steel, pressure, and resolve."
-updated: 2026-05-21
-topics: ["literary", "pressure", "resolve"]
-shelves: ["Catalogue", "Coming Soon"]
+dek: "A historical parable of tea, steel, duty, and the gentleness that outlives force."
+description: "A complete online book-world for a literary historical parable about Sen no Rikyū, Katō Masanobu, tea ceremony, violence, restraint, and the strange victory of gentleness over steel."
+status: "available"
+statusLabel: "Read online"
+cover: "/covers/steam-over-cold-steel.jfif"
+coverShape: "square"
+updated: 2026-05-22
+topics: ["tea ceremony", "samurai", "duty", "restraint", "gentleness", "steel", "steam", "honor"]
+shelves: ["Featured", "New & Active", "Catalogue", "Literary Fiction", "Historical Parable", "Inner Discipline", "Available Online"]
+featuredRank: 11
+links:
+  - label: "Start reading"
+    href: "/books/steam-over-cold-steel/"
+    kind: "read"
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/steam-over-cold-steel/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+Steam Over Cold Steel unfolds as a historical parable of force meeting ceremony, command meeting conscience, and a tea master whose gentleness becomes more dangerous than a blade.
+
+This record now opens into the complete online book world.

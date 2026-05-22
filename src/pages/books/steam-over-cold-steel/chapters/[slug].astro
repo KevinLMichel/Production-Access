@@ -1,0 +1,73 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const chapters = await getBookChapters("steam-over-cold-steel");
+  return chapters.map((chapter) => ({
+    params: { slug: chapterSlug(chapter) },
+    props: { chapter }
+  }));
+}
+
+const { chapter } = Astro.props;
+const { Content } = await render(chapter);
+const chapters = await getBookChapters("steam-over-cold-steel");
+const currentIndex = chapters.findIndex((entry) => entry.id === chapter.id);
+const previous = currentIndex > 0 ? chapters[currentIndex - 1] : undefined;
+const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(chapter);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Prologue";
+  if (order === 7) return "Epilogue";
+  return `Part ${["I", "II", "III", "IV", "V", "VI"][order - 1]}`;
+}
+---
+
+<BaseLayout
+  title={`${chapter.data.title} | Steam Over Cold Steel`}
+  description={chapter.data.summary}
+  bodyClass="theme-steam-over-cold-steel reader-mode"
+>
+  <article class="freedom-reader steam-reader">
+    <aside class="reader-sidebar" aria-label="Steam Over Cold Steel section navigation">
+      <a class="reader-sidebar__back" href="/books/steam-over-cold-steel/">Steam Over Cold Steel</a>
+      <p>{chapter.data.part}</p>
+      <strong>{sectionLabel(chapter.data.order)}</strong>
+      <nav>
+        <a href="/books/steam-over-cold-steel/#section-map">All sections</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header steam-reader-header">
+        <p class="eyebrow">{chapter.data.part}</p>
+        <h1>{chapter.data.title}</h1>
+        <p>{chapter.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(chapter.data.order)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose steam-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent Steam Over Cold Steel sections">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/steam-over-cold-steel/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,192 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import FormatLinks from "../../../components/FormatLinks.astro";
+import { getBooks } from "../../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../../lib/bookWorld";
+
+const books = await getBooks();
+const book = books.find((entry) => entry.id === "steam-over-cold-steel");
+
+if (!book) {
+  throw new Error("Steam Over Cold Steel catalogue record not found.");
+}
+
+const sections = await getBookChapters("steam-over-cold-steel");
+const parts = groupChaptersByPart(sections);
+const firstSection = sections[0];
+const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(section), 0);
+const forces = [
+  {
+    name: "Steam",
+    line: "Yielding, obscuring, scalding, transforming: the soft force that enters where steel cannot."
+  },
+  {
+    name: "Steel",
+    line: "Command, blade, duty, certainty: the hard world that believes obedience is the same as honor."
+  },
+  {
+    name: "Tea",
+    line: "Attention made visible: bowl, water, silence, and the discipline of doing one small thing completely."
+  },
+  {
+    name: "Garden",
+    line: "Memory, impermanence, witness: the place where violence fails to own the final meaning."
+  }
+];
+const practices = [
+  "Enter the room before drawing the sword",
+  "Notice what gentleness does under pressure",
+  "Let ritual slow the appetite for certainty",
+  "Ask whether duty has become an excuse",
+  "Carry the lesson back into the world"
+];
+const partTitles = new Map([
+  ["Prologue", "The Crushed Camellia"],
+  ["Part I", "The Road to Sakai"],
+  ["Part II", "The Tea Hut and the Steam"],
+  ["Part III", "The Pact After the Kettle"],
+  ["Part IV", "Before the Final Tea"],
+  ["Part V", "The Last Bowl"],
+  ["Part VI", "Report to Hideyoshi"],
+  ["Epilogue", "The Garden Within"]
+]);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Prologue";
+  if (order === 7) return "Epilogue";
+  return `Part ${["I", "II", "III", "IV", "V", "VI"][order - 1]}`;
+}
+---
+
+<BaseLayout
+  title="Steam Over Cold Steel | Kevin L. Michel - The Library"
+  description={book.data.description}
+  bodyClass="theme-steam-over-cold-steel"
+>
+  <section class="book-world-hero steam-hero" aria-labelledby="steam-title">
+    <div class="book-world-hero__copy">
+      <p class="eyebrow">Steam Over Cold Steel</p>
+      <h1 id="steam-title">Gentleness can be a sharper instrument than force.</h1>
+      <p class="book-world-hero__subtitle">
+        A historical parable of tea, steel, duty, and restraint.
+      </p>
+      <p class="book-world-hero__lede">
+        Katō Masanobu rides toward Sakai with an order meant for a blade. Sen no Rikyū receives
+        him with a kettle, a bowl, and the terrible calm of a man who understands that ceremony
+        can expose what violence tries to hide.
+      </p>
+      <div class="hero__actions">
+        {firstSection && <a class="button button--primary" href={chapterHref(firstSection)}>Start reading</a>}
+        <a class="button button--ghost" href="#section-map">Explore the path</a>
+        <a class="text-link" href="/books/">Return to Library</a>
+      </div>
+      <FormatLinks formats={book.data.formats} />
+    </div>
+
+    <aside class="book-world-cover steam-cover" aria-label="Steam Over Cold Steel cover">
+      <img src={book.data.cover} alt="Steam Over Cold Steel cover by Kevin L. Michel" />
+    </aside>
+  </section>
+
+  <section class="freedom-stats steam-stats" aria-label="Book statistics">
+    <div>
+      <strong>{sections.length}</strong>
+      <span>sections</span>
+    </div>
+    <div>
+      <strong>{parts.length}</strong>
+      <span>movements</span>
+    </div>
+    <div>
+      <strong>{readingTimeFromWords(totalWords)}</strong>
+      <span>minute read</span>
+    </div>
+  </section>
+
+  <section class="freedom-section steam-section steam-promise">
+    <p class="eyebrow">The story promise</p>
+    <h2>A sword enters a tearoom and learns the weight of steam.</h2>
+    <p>
+      The book moves through one charged encounter between command and conscience. It is a story
+      about restraint without weakness, obedience without surrender, and the kind of inner discipline
+      that turns a small room into a judgment on power.
+    </p>
+  </section>
+
+  <section class="freedom-section steam-section" aria-labelledby="forces-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Forces in tension</p>
+        <h2 id="forces-heading">What the story sets against itself</h2>
+      </div>
+    </div>
+    <div class="outcome-grid steam-force-grid">
+      {
+        forces.map((force) => (
+          <article>
+            <span>{force.name}</span>
+            <p>{force.line}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section steam-section" aria-labelledby="practice-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reading discipline</p>
+        <h2 id="practice-heading">How to carry the parable</h2>
+      </div>
+    </div>
+    <div class="practice-grid steam-practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{practice}</h3>
+            <p>
+              A quiet way to read the scene: not as escape, but as a mirror for pressure,
+              authority, fear, and the decision to remain composed.
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="freedom-section steam-section" id="section-map" aria-labelledby="section-map-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reading path</p>
+        <h2 id="section-map-heading">From camellia to garden</h2>
+      </div>
+    </div>
+
+    <div class="part-map">
+      {
+        parts.map(({ part, chapters: partSections }) => (
+          <section class="part-panel steam-part-panel" aria-labelledby={`part-${partSections[0].data.order}`}>
+            <p class="part-panel__label">{part}</p>
+            <h3 id={`part-${partSections[0].data.order}`}>{partTitles.get(part) ?? part}</h3>
+            <div class="chapter-grid">
+              {partSections.map((section) => (
+                <a class="chapter-tile steam-chapter-tile" href={chapterHref(section)}>
+                  <span>{sectionLabel(section.data.order)}</span>
+                  <strong>{section.data.title}</strong>
+                  <small>{section.data.summary}</small>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
