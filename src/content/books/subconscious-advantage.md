@@ -15,9 +15,15 @@ links:
   - label: "Start reading"
     href: "/books/subconscious-advantage/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/the-subconscious-advantage-kevin-l-michel.pdf"
+    kind: "download"
 formats:
   - label: "Start Reading"
     href: "/books/subconscious-advantage/"
+    status: "available"
+  - label: "Download PDF"
+    href: "/downloads/the-subconscious-advantage-kevin-l-michel.pdf"
     status: "available"
 ---
 

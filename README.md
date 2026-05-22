@@ -53,6 +53,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 405 pages at 5.5 x 8.5 inches.
 
+## The Subconscious Advantage PDF
+
+Regenerate the downloadable The Subconscious Advantage interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:subconscious
+```
+
+The generated file is committed at `public/downloads/the-subconscious-advantage-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 180 pages at 5.5 x 8.5 inches.
+
 ## Freedom by Design Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

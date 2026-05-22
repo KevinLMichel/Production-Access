@@ -21,7 +21,11 @@ const chapters = await getBookChapters("subconscious-advantage");
 const parts = groupChaptersByPart(chapters);
 const firstChapter = chapters[0];
 const totalWords = chapters.reduce((sum, chapter) => sum + getChapterWordCount(chapter), 0);
-const chapterCount = chapters.filter((chapter) => chapter.data.order > 0).length;
+const chapterCount = chapters.filter((chapter) => chapter.data.order > 0 && chapter.data.order < 20).length;
+const movementCount = parts.filter(({ part }) => part.startsWith("Part ")).length;
+const downloadFormat = book.data.formats.find(
+  (format) => format.href && format.label.toLowerCase().includes("download")
+);
 const outcomes = [
   {
     name: "Wealth",
@@ -50,6 +54,7 @@ const practices = [
 ];
 
 function sectionLabel(order: number) {
+  if (order === 20) return "Endnotes";
   return order === 0 ? "Introduction" : `Chapter ${order}`;
 }
 ---
@@ -70,6 +75,7 @@ function sectionLabel(order: number) {
       </p>
       <div class="hero__actions">
         <a class="button button--primary" href={chapterHref(firstChapter)}>Start reading</a>
+        {downloadFormat && <a class="button button--ghost" href={downloadFormat.href}>Download PDF</a>}
         <a class="button button--ghost" href="#chapter-map">Explore chapters</a>
         <a class="text-link" href="/books/">Return to Library</a>
       </div>
@@ -87,7 +93,7 @@ function sectionLabel(order: number) {
       <span>chapters</span>
     </div>
     <div>
-      <strong>{parts.length}</strong>
+      <strong>{movementCount}</strong>
       <span>movements</span>
     </div>
     <div>

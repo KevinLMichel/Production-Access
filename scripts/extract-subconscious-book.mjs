@@ -35,7 +35,8 @@ const summaries = new Map([
   ["7-minute-drills-and-checklists", "Packages the method into compact drills and checklists that can be practiced even on crowded days."],
   ["weekly-reset-rituals", "Creates a weekly reset for reviewing scorecards, cleaning defaults, and recommitting with precision."],
   ["tracking-feedback-and-tiny-course-corrections", "Shows how to use feedback without shame and adjust the system one small lever at a time."],
-  ["troubleshooting-and-staying-consistent", "Closes with ways to recover from drift, simplify the plan, and keep momentum alive."]
+  ["troubleshooting-and-staying-consistent", "Closes with ways to recover from drift, simplify the plan, and keep momentum alive."],
+  ["endnotes", "Source notes and research references for the practical claims used throughout The Subconscious Advantage."]
 ]);
 
 function decodeXml(value) {
@@ -177,8 +178,25 @@ for (const paragraph of paragraphs) {
 
 if (current) sections.push(current);
 
-if (sections.length !== 20) {
-  throw new Error(`Expected 20 sections, found ${sections.length}.`);
+const finalChapter = sections.find((section) => section.order === 19);
+if (finalChapter) {
+  const endnotesIndex = finalChapter.paragraphs.findIndex((paragraph) => /^Endnotes:?$/i.test(paragraph.trim()));
+
+  if (endnotesIndex >= 0) {
+    const endnotes = finalChapter.paragraphs.slice(endnotesIndex + 1);
+    finalChapter.paragraphs = finalChapter.paragraphs.slice(0, endnotesIndex);
+    sections.push({
+      order: 20,
+      title: "Endnotes",
+      heading: "Endnotes",
+      part: "Back Matter - Endnotes",
+      paragraphs: endnotes
+    });
+  }
+}
+
+if (sections.length !== 21) {
+  throw new Error(`Expected 21 sections, found ${sections.length}.`);
 }
 
 await fs.rm(outputDir, { recursive: true, force: true });
