@@ -1,0 +1,92 @@
+---
+const title = "The Subconscious Advantage";
+const subtitle = "A Practical Path to Wealth, Wellness, Power, and Joy";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Your life does not run only on decisions. It runs on defaults.",
+  "The Subconscious Advantage is a practical guide to training the automatic mind through cues, micro-practices, visualization, emotional tagging, sleep windows, and weekly reset rituals.",
+  "Instead of demanding more hustle, Kevin L. Michel shows how to make better behavior easier to repeat: clearer instructions, lower friction, stronger identity, and small systems that compound across wealth, wellness, power, and joy."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="field field--back" aria-hidden="true"></div>
+      <div class="field field--front" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <svg class="mind-glyph mind-glyph--back" viewBox="0 0 500 620" aria-hidden="true">
+        <use href="#mind-path-glyph"></use>
+      </svg>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">A practical guide to better defaults</p>
+        <h2>Train the defaults beneath the day.</h2>
+        <div class="back-rule"></div>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="author-note">Kevin L. Michel writes practical philosophy and inner-discipline books for readers building clearer systems of thought, action, and self-command.</p>
+        <p class="back-footer">Cue the path. Lower the friction. Let better defaults run.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <div class="spine-text">
+          <span class="spine-title">THE SUBCONSCIOUS ADVANTAGE</span>
+          <span class="spine-author">{author}</span>
+        </div>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <p class="front-kicker">Train the automatic mind</p>
+        <h1>
+          <span>The</span>
+          <strong>Subconscious</strong>
+          <strong>Advantage</strong>
+        </h1>
+        <svg class="front-mind" viewBox="0 0 500 620" role="img" aria-label="Head silhouette with maze, keyhole, and golden path">
+          <use href="#mind-path-glyph"></use>
+        </svg>
+        <p class="cover-subtitle">{subtitle}</p>
+        <div class="outcome-icons" aria-hidden="true">
+          <span>$</span>
+          <span>+</span>
+          <span>UP</span>
+          <span>OK</span>
+        </div>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+
+      <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <g id="mind-path-glyph">
+            <path class="head-fill" d="M317 106c-92 0-166 69-166 154 0 34 10 66 29 93l-37 87h88v80h174V390c52-35 82-86 82-143 0-79-63-141-170-141z" />
+            <path class="profile-line" d="M392 205c31 18 49 43 49 73 0 33-24 65-65 85" />
+            <path class="neck-shadow" d="M222 440c33 16 83 17 147 3" />
+            <circle class="maze-ring" cx="293" cy="255" r="103" />
+            <circle class="maze-ring maze-ring--inner" cx="293" cy="255" r="76" />
+            <path class="maze-line" d="M231 255c0-42 26-72 64-72 42 0 70 28 70 67 0 28-14 50-40 62" />
+            <path class="maze-line" d="M252 255c0-27 18-48 44-48 25 0 45 18 45 43 0 16-8 30-23 38" />
+            <path class="maze-line" d="M274 255c0-12 9-24 23-24 13 0 24 10 24 23 0 10-6 18-16 22" />
+            <path class="maze-break" d="M190 255h39" />
+            <path class="maze-break" d="M293 152v31" />
+            <path class="maze-break" d="M293 330v35" />
+            <path class="key-path" d="M293 327c-3 52-77 72-73 141 3 48 45 81 45 124" />
+            <path class="keyhole" d="M293 277c-15 0-27 12-27 27 0 10 5 18 13 23l-13 48h54l-13-48c8-5 13-13 13-23 0-15-12-27-27-27z" />
+          </g>
+        </defs>
+      </svg>
+    </main>
+  </body>
+</html>

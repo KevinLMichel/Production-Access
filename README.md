@@ -88,6 +88,17 @@ npm run book:cover:fragmented
 The generated release asset is written to `production/covers/output/a-book-for-the-fragmented-cover-wrap.pdf`.
 It uses the 405-page, black-and-white groundwood KDP template geometry: `12.202 x 8.75` inches with a `0.952` inch spine.
 
+## The Subconscious Advantage Cover
+
+Regenerate the KDP paperback cover wrap after the paperback page count/template changes:
+
+```powershell
+npm run book:cover:subconscious
+```
+
+The generated release asset is written to `production/covers/output/the-subconscious-advantage-cover-wrap.pdf`.
+It uses the 180-page, black-and-white groundwood KDP template geometry: `11.673 x 8.75` inches with a `0.423` inch spine.
+
 ## Render
 
 - Build command: `npm install && npm run build`
