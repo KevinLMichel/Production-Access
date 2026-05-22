@@ -24,6 +24,7 @@ npm run extract:freedom
 npm run extract:fragmented
 npm run extract:steam
 npm run extract:subconscious
+npm run extract:kindness-algorithm
 ```
 
 Raw DOCX folders remain local inputs and are ignored by Git.
@@ -79,6 +80,19 @@ The generated file is committed at `public/downloads/the-subconscious-advantage-
 Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
 
 Current generated interior: 180 pages at 5.5 x 8.5 inches.
+
+## The Kindness Algorithm PDF
+
+Regenerate the downloadable The Kindness Algorithm interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:kindness
+```
+
+The generated file is committed at `public/downloads/the-kindness-algorithm-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 199 pages at 5.5 x 8.5 inches.
 
 ## Freedom by Design Cover
 

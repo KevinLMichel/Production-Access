@@ -1,0 +1,145 @@
+---
+import { render } from "astro:content";
+import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "The Kindness Algorithm",
+  subtitle: "Small acts, big upgrades!",
+  author: "Kevin L. Michel"
+};
+
+const sections = await getBookChapters("kindness-algorithm");
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const { Content } = await render(section);
+    return {
+      section,
+      Content,
+      printId: sectionId(section.data.order),
+      label: sectionLabel(section.data.order)
+    };
+  })
+);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Prologue";
+  if (order === 14) return "Epilogue";
+  return `Chapter ${order}`;
+}
+
+function sectionId(order: number) {
+  if (order === 0) return "prologue";
+  if (order === 14) return "epilogue";
+  return `chapter-${order}`;
+}
+
+function partId(part: string) {
+  return part
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function partTitle(part: string) {
+  return part.replace(/^Part\s+[IVX]+\s+-\s*/, "").trim();
+}
+
+const printSections = [];
+const seenParts = new Set();
+
+for (const entry of renderedSections) {
+  const part = entry.section.data.part;
+
+  if (part.startsWith("Part") && !seenParts.has(part)) {
+    seenParts.add(part);
+    printSections.push({ type: "part", part, id: partId(part) });
+  }
+
+  printSections.push({ type: "section", ...entry });
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">A humane operating system for everyday life</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owner, except as permitted by law.
+      </p>
+      <p>
+        This book is provided for informational, educational, and self-development purposes only. It does not constitute medical, legal, financial, psychological, therapeutic, spiritual, or other professional advice. Readers should consult qualified professionals for advice regarding their own circumstances.
+      </p>
+      <p>
+        References to research, traditions, public figures, institutions, products, services, and events are used for commentary, criticism, education, and discussion. All trademarks and trade names are the property of their respective owners.
+      </p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          printSections.map((section) =>
+            section.type === "part" ? (
+              <li class="toc-part-row">
+                <div class="toc-part">
+                  <span>{section.part}</span>
+                </div>
+              </li>
+            ) : (
+              <li>
+                <div class="toc-entry" data-target={`#${section.printId}`}>
+                  <span class="toc-chapter">{section.label}</span>
+                  <span class="toc-title">{section.section.data.title}</span>
+                </div>
+              </li>
+            )
+          )
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        printSections.map((section) =>
+          section.type === "part" ? (
+            <section class="part-opener" id={section.id}>
+              <p class="chapter-kicker">{section.part}</p>
+              <h1>{partTitle(section.part)}</h1>
+            </section>
+          ) : (
+            <PrintBookChapter
+              chapter={section.section}
+              printId={section.printId}
+              Content={section.Content}
+              kickerLabel={section.label}
+              startOnRecto={section.section.data.order === 0 || section.section.data.order === 14}
+              showSubtitle={false}
+            />
+          )
+        )
+      }
+    </main>
+  </body>
+</html>

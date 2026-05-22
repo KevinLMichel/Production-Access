@@ -15,9 +15,15 @@ links:
   - label: "Start reading"
     href: "/books/kindness-algorithm/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/the-kindness-algorithm-kevin-l-michel.pdf"
+    kind: "download"
 formats:
   - label: "Start Reading"
     href: "/books/kindness-algorithm/"
+    status: "available"
+  - label: "Download PDF"
+    href: "/downloads/the-kindness-algorithm-kevin-l-michel.pdf"
     status: "available"
 ---
 
