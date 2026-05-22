@@ -3,7 +3,7 @@ const title = "Steam Over Cold Steel";
 const subtitle = "A historical parable of tea, steel, duty, and restraint";
 const author = "Kevin L. Michel";
 const backPitch = [
-  "Steam Over Cold Steel is a spare historical parable about Sen no Rikyū, Katō Masanobu, and the moment when duty, violence, ceremony, and conscience meet inside the narrow door of a tea hut.",
+  "Steam Over Cold Steel is a spare historical parable about Sen no Rikyu, Kato Masanobu, and the moment when duty, violence, ceremony, and conscience meet inside the narrow door of a tea hut.",
   "Sent with an order of death, a samurai expects weakness. Instead he encounters silence, ritual, and a gentleness strong enough to unsettle command itself.",
   "This is a story about restraint under pressure, honor without cruelty, and the strange power of a bowl of tea to outlast the edge of a blade."
 ];
@@ -21,12 +21,28 @@ const backPitch = [
   <body>
     <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
       <div class="paper-field" aria-hidden="true"></div>
-      <div class="steam steam--back" aria-hidden="true"></div>
-      <div class="steam steam--front" aria-hidden="true"></div>
+      <div class="ink-wash ink-wash--back" aria-hidden="true"></div>
+      <div class="ink-wash ink-wash--front" aria-hidden="true"></div>
+      <div class="steam-field steam-field--back" aria-hidden="true"></div>
+      <div class="steam-field steam-field--front" aria-hidden="true"></div>
       <div class="bamboo bamboo--back" aria-hidden="true"></div>
       <div class="bamboo bamboo--front" aria-hidden="true"></div>
 
       <section class="back-cover" aria-label="Back cover">
+        <svg class="back-scene" viewBox="0 0 620 760" aria-hidden="true">
+          <path class="hut-roof" d="M252 354l126-74 126 74-33 18-93-51-93 51z" />
+          <path class="hut-wall" d="M303 366h152v116H303z" />
+          <path class="hut-door" d="M362 388h34v94h-34z" />
+          <path class="hut-ground" d="M190 498c94-30 236-33 340 2" />
+          <path class="bamboo-stem-svg" d="M90 90c-2 130 6 254-9 407" />
+          <path class="bamboo-stem-svg bamboo-stem-svg--two" d="M542 108c-18 132-11 263-35 400" />
+          <path class="bamboo-leaf-svg" d="M94 172c50-18 80-52 102-100-48 19-79 52-102 100z" />
+          <path class="bamboo-leaf-svg" d="M75 260c-45-12-75-39-100-82 47 8 83 36 100 82z" />
+          <path class="bamboo-leaf-svg" d="M514 201c-49-17-79-51-101-98 48 18 81 49 101 98z" />
+          <path class="bamboo-leaf-svg" d="M518 296c44-12 77-40 103-83-49 10-84 35-103 83z" />
+          <path class="samurai-shadow" d="M168 421c15-4 23-22 10-35 21 3 35 16 39 39 7 42-9 78-9 78h-62s9-45 22-82z" />
+          <path class="samurai-shadow" d="M196 418l58 26-9 18-57-18z" />
+        </svg>
         <p class="kicker">A parable of restraint</p>
         <h2>A sword entered the tearoom. It did not leave unchanged.</h2>
         <div class="back-rule"></div>
@@ -40,31 +56,30 @@ const backPitch = [
       <section class="spine" aria-label="Narrow blank spine"></section>
 
       <section class="front-cover" aria-label="Front cover">
+        <svg class="front-scene" viewBox="0 0 700 760" role="img" aria-label="Tea steam rising across a katana">
+          <path class="front-mat" d="M71 565c136-53 361-50 556 10 22 7 26 37 3 45-191 63-419 64-557 8-26-10-28-52-2-63z" />
+          <path class="front-blade-shadow" d="M67 578c156-35 308-74 458-119 25-8 53 4 63 28-156 48-314 87-472 118-32 7-49-5-49-27z" />
+          <path class="front-blade" d="M45 548c169-28 328-67 478-119l88 20-80 37C363 536 207 578 65 600z" />
+          <path class="front-blade-edge" d="M82 563c148-28 301-67 455-118" />
+          <path class="front-handle" d="M505 414l112-31 32 63-111 33z" />
+          <path class="front-handle-wrap" d="M525 421l24 48M548 414l24 48M571 408l24 48M594 402l24 48" />
+          <path class="front-bowl" d="M172 423c26 68 92 106 174 101 78-5 127-48 146-112-102 33-211 37-320 11z" />
+          <ellipse class="front-bowl-mouth" cx="331" cy="414" rx="164" ry="41" />
+          <ellipse class="front-bowl-tea" cx="331" cy="410" rx="118" ry="24" />
+          <path class="front-steam front-steam--one" d="M235 371c-66-76 78-111 7-218-42-64 32-91 5-142" />
+          <path class="front-steam front-steam--two" d="M326 367c-64-62 54-108-1-177-52-64 44-106 0-167" />
+          <path class="front-steam front-steam--three" d="M416 377c-42-58 55-86 14-151-42-66 47-94 20-151" />
+          <path class="front-steam front-steam--veil" d="M170 291c84 53 205 62 318 14 34-15 75 21 51 53-74 98-302 101-394 13-32-30-10-101 25-80z" />
+        </svg>
         <p class="front-kicker">A historical parable</p>
         <h1>
           <span>Steam</span>
           <span>Over</span>
           <span>Cold Steel</span>
         </h1>
-        <svg class="front-symbol" viewBox="0 0 540 440" role="img" aria-label="Tea kettle steam rising over a sword">
-          <path class="symbol-sword" d="M58 304h356l52-20 16 20-16 20-52-20H58z" />
-          <path class="symbol-sword-edge" d="M78 304h330" />
-          <path class="symbol-handle" d="M45 278h72v52H45z" />
-          <path class="symbol-handle-wrap" d="M58 280v48M76 280v48M94 280v48" />
-          <path class="symbol-kettle" d="M220 246c0-45 36-80 81-80h40c45 0 81 35 81 80v30H220z" />
-          <path class="symbol-kettle-lid" d="M270 166h100l-24-32h-52z" />
-          <path class="symbol-kettle-spout" d="M421 218c46-16 74-5 92 26-35-9-61-6-92 16z" />
-          <path class="symbol-kettle-handle" d="M232 224c-48-20-83-12-104 28 37-14 67-9 104 13" />
-          <path class="symbol-bowl" d="M194 306c26 42 77 65 128 65s102-23 128-65z" />
-          <path class="symbol-steam symbol-steam--one" d="M282 139c-36-50 36-69 6-121" />
-          <path class="symbol-steam symbol-steam--two" d="M333 139c-36-50 36-69 6-121" />
-          <path class="symbol-steam symbol-steam--three" d="M383 154c-29-40 26-61 2-105" />
-        </svg>
         <p class="cover-subtitle">{subtitle}</p>
         <p class="author">{author}</p>
-        <div class="red-seal" aria-hidden="true">
-          <span>静</span>
-        </div>
+        <div class="red-seal" aria-hidden="true"><span></span></div>
       </section>
 
       <div class="barcode-reserve" aria-hidden="true"></div>
