@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" role="img" aria-labelledby="title desc">
+  <title id="title">The Tao of Ma’at by Kevin L. Michel</title>
+  <desc id="desc">A black and gold symbolic cover with Ma’at-inspired wings, scales, feather, sun, ankh, and Kevin L. Michel byline.</desc>
+  <defs>
+    <radialGradient id="ember" cx="50%" cy="18%" r="72%">
+      <stop offset="0%" stop-color="#18383c" />
+      <stop offset="28%" stop-color="#101719" />
+      <stop offset="100%" stop-color="#030405" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff0b6" />
+      <stop offset="42%" stop-color="#d7ad55" />
+      <stop offset="100%" stop-color="#8f6727" />
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#35b8b2" />
+      <stop offset="100%" stop-color="#0b4b55" />
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="papyrus" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M0 7H64M0 31H64M0 55H64M13 0V64M41 0V64" stroke="#d7ad55" stroke-opacity=".045" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="900" height="1350" fill="url(#ember)" />
+  <rect width="900" height="1350" fill="url(#papyrus)" />
+  <circle cx="450" cy="244" r="130" fill="none" stroke="url(#gold)" stroke-opacity=".48" stroke-width="3" />
+  <circle cx="450" cy="244" r="84" fill="#110c05" stroke="#d7ad55" stroke-width="5" />
+  <circle cx="450" cy="244" r="54" fill="url(#gold)" opacity=".92" filter="url(#softGlow)" />
+  <circle cx="450" cy="244" r="28" fill="#7d211c" opacity=".82" />
+
+  <g opacity=".92">
+    <path d="M395 248C283 222 173 172 74 93c122 18 245 50 361 105-18 18-31 34-40 50Z" fill="url(#teal)" opacity=".74" />
+    <path d="M505 248c112-26 222-76 321-155-122 18-245 50-361 105 18 18 31 34 40 50Z" fill="url(#teal)" opacity=".74" />
+    <path d="M393 270C276 280 169 249 68 190c123-6 241 7 352 48-14 10-23 20-27 32Z" fill="none" stroke="#d7ad55" stroke-opacity=".55" stroke-width="5" />
+    <path d="M507 270c117 10 224-21 325-80-123-6-241 7-352 48 14 10 23 20 27 32Z" fill="none" stroke="#d7ad55" stroke-opacity=".55" stroke-width="5" />
+  </g>
+
+  <g fill="none" stroke="#d7ad55" stroke-opacity=".42" stroke-width="3">
+    <path d="M450 334v130" />
+    <path d="M314 402h272" />
+    <path d="M333 402l-54 112h108l-54-112Z" />
+    <path d="M567 402l-54 112h108l-54-112Z" />
+    <path d="M400 570c35 20 66 20 101 0" />
+  </g>
+
+  <g transform="translate(450 613)" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M0-92c36 54 38 112 0 176-38-64-36-122 0-176Z" fill="#0b4b55" fill-opacity=".2" />
+    <path d="M0-72c20 46 20 89 0 134" />
+    <path d="M-32-14H32" />
+    <path d="M-22 24H22" />
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="450" y="748" fill="#f6e6b3" font-size="66" font-weight="800" letter-spacing="4">THE TAO</text>
+    <text x="450" y="828" fill="url(#gold)" font-size="80" font-weight="800" letter-spacing="2">OF MA’AT</text>
+    <path d="M250 873H650" stroke="#d7ad55" stroke-width="3" stroke-opacity=".68" />
+    <text x="450" y="956" fill="#f7edd2" font-size="26" letter-spacing="9">EIGHTY-ONE MEDITATIONS</text>
+    <text x="450" y="1194" fill="#f7edd2" font-size="30" font-family="Arial, sans-serif" font-weight="700" letter-spacing="8">KEVIN L. MICHEL</text>
+  </g>
+
+  <g opacity=".7" fill="none" stroke="#d7ad55" stroke-width="2">
+    <path d="M102 112h696v1126H102Z" />
+    <path d="M130 140h640v1070H130Z" stroke-opacity=".45" />
+    <path d="M102 368h118M680 368h118M102 1032h118M680 1032h118" />
+  </g>
+
+  <circle cx="212" cy="1075" r="7" fill="#8e302c" />
+  <circle cx="688" cy="1075" r="7" fill="#8e302c" />
+</svg>

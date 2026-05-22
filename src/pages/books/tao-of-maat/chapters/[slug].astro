@@ -1,0 +1,71 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const meditations = await getBookChapters("tao-of-maat");
+  return meditations.map((meditation) => ({
+    params: { slug: chapterSlug(meditation) },
+    props: { meditation }
+  }));
+}
+
+const { meditation } = Astro.props;
+const { Content } = await render(meditation);
+const meditations = await getBookChapters("tao-of-maat");
+const currentIndex = meditations.findIndex((entry) => entry.id === meditation.id);
+const previous = currentIndex > 0 ? meditations[currentIndex - 1] : undefined;
+const next = currentIndex < meditations.length - 1 ? meditations[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(meditation);
+
+function meditationLabel() {
+  return `Meditation ${(meditation.data.subtitle ?? String(meditation.data.order)).replace(/\.$/, "")}`;
+}
+---
+
+<BaseLayout
+  title={`${meditation.data.title} | The Tao of Ma’at`}
+  description={meditation.data.summary}
+  bodyClass="theme-tao-of-maat reader-mode"
+>
+  <article class="freedom-reader tao-reader">
+    <aside class="reader-sidebar" aria-label="The Tao of Ma’at meditation navigation">
+      <a class="reader-sidebar__back" href="/books/tao-of-maat/">The Tao of Ma’at</a>
+      <p>{meditation.data.part}</p>
+      <strong>{meditationLabel()}</strong>
+      <nav>
+        <a href="/books/tao-of-maat/#meditation-map">All meditations</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header tao-reader-header">
+        <p class="eyebrow">{meditation.data.part}</p>
+        <h1>{meditation.data.title}</h1>
+        <p>{meditation.data.summary}</p>
+        <div class="reader-meta">
+          <span>{meditationLabel()}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose tao-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent The Tao of Ma’at meditations">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/tao-of-maat/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>
