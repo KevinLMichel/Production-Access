@@ -1,14 +1,24 @@
 ---
 title: "Mental Toughness"
 subtitle: "Strengthen Your Mind to Achieve Your Dreams"
-dek: "A mindset and resilience book for disciplined achievement."
-description: "A catalogue record for a practical work on mental toughness, motivation, and goal pursuit."
-updated: 2026-05-21
-topics: ["mental toughness", "goals", "resilience"]
-shelves: ["Catalogue", "Coming Soon", "Field Guides", "Inner Discipline"]
+dek: "A practical resilience manual for building purpose, persistence, precision practice, and perspective."
+description: "A complete online book-world for strengthening the mind, building resilience, and turning disciplined inner training into real-world achievement."
+status: "available"
+statusLabel: "Read online"
+cover: "/covers/mental-toughness-dreams.jfif"
+coverShape: "square"
+updated: 2026-05-22
+topics: ["mental toughness", "discipline", "resilience", "purpose", "persistence", "precision practice", "perspective", "achievement", "inner sovereignty"]
+shelves: ["Featured", "New & Active", "Catalogue", "Self Development", "Inner Discipline", "Performance", "Available Online"]
+featuredRank: 16
+links:
+  - label: "Start Reading"
+    href: "/books/mental-toughness-dreams/"
+    kind: "read"
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/mental-toughness-dreams/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+Mental Toughness is a practical guide to building the inner strength that lets dreams survive friction: stress, doubt, delay, pressure, and the long middle where discipline matters more than mood.

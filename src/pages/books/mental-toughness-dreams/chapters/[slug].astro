@@ -1,0 +1,71 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const sections = await getBookChapters("mental-toughness-dreams");
+  return sections.map((section) => ({
+    params: { slug: chapterSlug(section) },
+    props: { section }
+  }));
+}
+
+const { section } = Astro.props;
+const { Content } = await render(section);
+const sections = await getBookChapters("mental-toughness-dreams");
+const currentIndex = sections.findIndex((entry) => entry.id === section.id);
+const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
+const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(section);
+
+function sectionLabel(order: number) {
+  return order === 0 ? "Author's Note" : `Chapter ${order}`;
+}
+---
+
+<BaseLayout
+  title={`${section.data.title} | Mental Toughness`}
+  description={section.data.summary}
+  bodyClass="theme-mental-toughness-dreams reader-mode"
+>
+  <article class="freedom-reader mental-reader">
+    <aside class="reader-sidebar" aria-label="Mental Toughness section navigation">
+      <a class="reader-sidebar__back" href="/books/mental-toughness-dreams/">Mental Toughness</a>
+      <p>{section.data.part}</p>
+      <strong>{sectionLabel(section.data.order)}</strong>
+      <nav>
+        <a href="/books/mental-toughness-dreams/#section-map">All chapters</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column">
+      <header class="reader-header mental-reader-header">
+        <p class="eyebrow">{section.data.part}</p>
+        <h1>{section.data.title}</h1>
+        <p>{section.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(section.data.order)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose mental-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label="Adjacent Mental Toughness sections">
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href="/books/mental-toughness-dreams/">Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

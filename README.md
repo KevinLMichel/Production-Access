@@ -25,6 +25,7 @@ npm run extract:fragmented
 npm run extract:steam
 npm run extract:subconscious
 npm run extract:kindness-algorithm
+npm run extract:mental-toughness-dreams
 ```
 
 Raw DOCX folders remain local inputs and are ignored by Git.
