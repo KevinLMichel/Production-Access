@@ -1,0 +1,93 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import { batchBookWorlds, getBatchBookWorld } from "../../../../lib/batchBookWorlds";
+import { getBooks } from "../../../../lib/books";
+import {
+  chapterHref,
+  chapterSlug,
+  getBookChapters,
+  getChapterWordCount,
+  readingTimeFromWords
+} from "../../../../lib/bookWorld";
+
+export async function getStaticPaths() {
+  const books = await getBooks();
+  const paths = [];
+
+  for (const slug of Object.keys(batchBookWorlds)) {
+    const book = books.find((entry) => entry.id === slug);
+    const sections = await getBookChapters(slug);
+
+    if (!book) continue;
+
+    for (const section of sections) {
+      paths.push({
+        params: { bookSlug: slug, slug: chapterSlug(section) },
+        props: { book, section }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { book, section } = Astro.props;
+const batchWorld = getBatchBookWorld(book.id);
+
+if (!batchWorld) {
+  throw new Error(`Batch book-world configuration not found for ${book.id}.`);
+}
+
+const { Content } = await render(section);
+const sections = await getBookChapters(book.id);
+const currentIndex = sections.findIndex((entry) => entry.id === section.id);
+const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
+const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
+const wordCount = getChapterWordCount(section);
+const themeStyle = `--batch-accent: ${batchWorld.accent}; --batch-accent-2: ${batchWorld.accent2}; --batch-glow: ${batchWorld.glow};`;
+
+function sectionLabel(order: number, subtitle?: string) {
+  return subtitle ?? `Section ${order + 1}`;
+}
+---
+
+<BaseLayout
+  title={`${section.data.title} | ${book.data.title}`}
+  description={section.data.summary}
+  bodyClass={`theme-batch-book-world theme-${book.id} reader-mode`}
+>
+  <article class="freedom-reader batch-reader" style={themeStyle}>
+    <aside class="reader-sidebar batch-reader-sidebar" aria-label={`${book.data.title} section navigation`}>
+      <a class="reader-sidebar__back" href={`/books/${book.id}/`}>{book.data.title}</a>
+      <p>{section.data.part}</p>
+      <strong>{sectionLabel(section.data.order, section.data.subtitle)}</strong>
+      <nav>
+        <a href={`/books/${book.id}/#section-map`}>All sections</a>
+        <a href="/books/">Library catalogue</a>
+      </nav>
+    </aside>
+
+    <div class="reader-column batch-reader-column">
+      <header class="reader-header batch-reader-header">
+        <p class="eyebrow">{section.data.part}</p>
+        <h1>{section.data.title}</h1>
+        <p>{section.data.summary}</p>
+        <div class="reader-meta">
+          <span>{sectionLabel(section.data.order, section.data.subtitle)}</span>
+          <span>{readingTimeFromWords(wordCount)} minute read</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <div class="freedom-prose batch-prose">
+        <Content />
+      </div>
+
+      <nav class="book-nav reader-nav" aria-label={`Adjacent ${book.data.title} sections`}>
+        {previous ? <a href={chapterHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+        {next ? <a href={chapterHref(next)}>Next: {next.data.title}</a> : <a href={`/books/${book.id}/`}>Back to book hub</a>}
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

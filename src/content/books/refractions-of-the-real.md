@@ -2,14 +2,19 @@
 title: "Refractions of the Real"
 subtitle: "A Manual for Self-Directed Beings"
 dek: "A philosophical manual for readers trying to act with clarity inside contested reality."
-description: "A catalogue record for a philosophical and practical manual on self-direction, perception, and agency."
-updated: 2026-05-21
-topics: ["philosophy", "agency", "reality"]
-shelves: ["Featured", "Catalogue", "Coming Soon", "Inner Discipline"]
+description: "A full online edition of Refractions of the Real, a philosophical and practical manual on self-direction, perception, language, and agency."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/refractions-of-the-real.jfif"
+coverShape: "square"
+topics: ["philosophy", "agency", "reality", "perception", "self-direction"]
+shelves: ["Featured", "Catalogue", "Available Online", "Inner Discipline", "Mind and Reality"]
 featuredRank: 3
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/refractions-of-the-real/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+Reality is not treated here as a slogan or a cage. It is treated as a field of perception, desire, language, and responsibility.

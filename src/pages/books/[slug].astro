@@ -3,7 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import FormatLinks from "../../components/FormatLinks.astro";
 import StatusPill from "../../components/StatusPill.astro";
 import { render } from "astro:content";
+import { getBatchBookWorld, isBatchBookWorldSlug } from "../../lib/batchBookWorlds";
 import { bookHref, formatDate, getBooks } from "../../lib/books";
+import {
+  chapterHref,
+  getBookChapters,
+  getChapterWordCount,
+  groupChaptersByPart,
+  readingTimeFromWords
+} from "../../lib/bookWorld";
 
 export async function getStaticPaths() {
   const books = await getBooks();
@@ -27,68 +35,176 @@ export async function getStaticPaths() {
 }
 
 const { book } = Astro.props;
-const { Content } = await render(book);
+const isBatchWorld = isBatchBookWorldSlug(book.id);
+const batchWorld = getBatchBookWorld(book.id);
+const renderedBook = isBatchWorld ? undefined : await render(book);
+const Content = renderedBook?.Content;
 const books = await getBooks();
 const index = books.findIndex((entry) => entry.id === book.id);
 const previous = index > 0 ? books[index - 1] : undefined;
 const next = index < books.length - 1 ? books[index + 1] : undefined;
+const sections = isBatchWorld ? await getBookChapters(book.id) : [];
+const parts = groupChaptersByPart(sections);
+const firstSection = sections[0];
+const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(section), 0);
+const themeStyle = batchWorld
+  ? `--batch-accent: ${batchWorld.accent}; --batch-accent-2: ${batchWorld.accent2}; --batch-glow: ${batchWorld.glow};`
+  : "";
+
+function sectionLabel(order: number, subtitle?: string) {
+  return subtitle ?? `Section ${order + 1}`;
+}
 ---
 
-<BaseLayout title={`${book.data.title} | Kevin L. Michel - The Library`} description={book.data.description}>
-  <article class="book-detail">
-    <aside class="book-detail__cover" aria-hidden="true">
-      {
-        book.data.cover ? (
-          <img class:list={["hero-cover", "hero-cover--detail", "hero-cover--image", `hero-cover--${book.data.coverShape ?? "portrait"}`]} src={book.data.cover} alt="" />
-        ) : (
-          <div class="hero-cover hero-cover--detail">
-            <span>{book.data.author}</span>
-            <strong>{book.data.title}</strong>
-            {book.data.subtitle && <small>{book.data.subtitle}</small>}
-          </div>
-        )
-      }
-    </aside>
-
-    <div class="book-detail__body">
-      <p class="eyebrow">Catalogue record</p>
-      <StatusPill status={book.data.status} label={book.data.statusLabel} />
-      <h1>{book.data.title}</h1>
-      {book.data.subtitle && <p class="book-detail__subtitle">{book.data.subtitle}</p>}
-      <p class="book-detail__dek">{book.data.dek}</p>
-      <FormatLinks formats={book.data.formats} />
-
-      <dl class="book-meta-list">
-        <div>
-          <dt>Author</dt>
-          <dd>{book.data.author}</dd>
-        </div>
-        <div>
-          <dt>Updated</dt>
-          <dd>{formatDate(book.data.updated)}</dd>
-        </div>
-        {
-          book.data.editionLabel && (
-            <div>
-              <dt>Edition</dt>
-              <dd>{book.data.editionLabel}</dd>
+<BaseLayout
+  title={`${book.data.title} | Kevin L. Michel - The Library`}
+  description={book.data.description}
+  bodyClass={isBatchWorld ? `theme-batch-book-world theme-${book.id}` : ""}
+>
+  {
+    isBatchWorld && batchWorld ? (
+      <div class="batch-world" style={themeStyle}>
+        <section class="book-world-hero batch-world-hero" aria-labelledby="batch-title">
+          <div class="book-world-hero__copy">
+            <p class="eyebrow">{batchWorld.eyebrow}</p>
+            <h1 id="batch-title">{batchWorld.heroTitle}</h1>
+            {book.data.subtitle && <p class="book-world-hero__subtitle">{book.data.subtitle}</p>}
+            <p class="book-world-hero__lede">{batchWorld.lede}</p>
+            <div class="hero__actions">
+              {firstSection && <a class="button button--primary" href={chapterHref(firstSection)}>Start reading</a>}
+              <a class="button button--ghost" href="#section-map">Explore sections</a>
+              <a class="text-link" href="/books/">Return to Library</a>
             </div>
-          )
-        }
-      </dl>
+          </div>
 
-      <div class="topic-strip topic-strip--large">
-        {book.data.topics.map((topic) => <span>{topic}</span>)}
+          <aside class="book-world-cover batch-world-cover" aria-label={`${book.data.title} cover`}>
+            {book.data.cover && <img src={book.data.cover} alt={`${book.data.title} cover by ${book.data.author}`} />}
+          </aside>
+        </section>
+
+        <section class="freedom-stats batch-world-stats" aria-label="Book statistics">
+          <div>
+            <strong>{sections.length}</strong>
+            <span>sections</span>
+          </div>
+          <div>
+            <strong>{parts.length}</strong>
+            <span>movements</span>
+          </div>
+          <div>
+            <strong>{readingTimeFromWords(totalWords)}</strong>
+            <span>minute read</span>
+          </div>
+        </section>
+
+        <section class="freedom-section batch-world-section">
+          <p class="eyebrow">Book promise</p>
+          <h2>{batchWorld.promiseTitle}</h2>
+          <p>{batchWorld.promiseBody}</p>
+        </section>
+
+        <section class="freedom-section batch-world-section" aria-labelledby="practice-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">{batchWorld.cardHeading}</p>
+              <h2 id="practice-heading">What the reader can carry forward</h2>
+            </div>
+          </div>
+          <div class="practice-grid batch-card-grid">
+            {batchWorld.cards.map((card, cardIndex) => (
+              <article>
+                <span>{String(cardIndex + 1).padStart(2, "0")}</span>
+                <h3>{card}</h3>
+                <p>A compact thread from the book's larger argument, carried as a practical lens for reading and return.</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section class="freedom-section batch-world-section" id="section-map" aria-labelledby="section-map-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Reading path</p>
+              <h2 id="section-map-heading">{batchWorld.mapTitle}</h2>
+            </div>
+          </div>
+
+          <div class="part-map">
+            {parts.map(({ part, chapters }) => (
+              <section class="part-panel batch-part-panel" aria-labelledby={`part-${chapters[0].data.order}`}>
+                <p class="part-panel__label">{part}</p>
+                <h3 id={`part-${chapters[0].data.order}`}>{part}</h3>
+                <div class="chapter-grid">
+                  {chapters.map((section) => (
+                    <a class="chapter-tile batch-chapter-tile" href={chapterHref(section)}>
+                      <span>{sectionLabel(section.data.order, section.data.subtitle)}</span>
+                      <strong>{section.data.title}</strong>
+                      <small>{section.data.summary}</small>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </section>
       </div>
+    ) : (
+      <article class="book-detail">
+        <aside class="book-detail__cover" aria-hidden="true">
+          {
+            book.data.cover ? (
+              <img class:list={["hero-cover", "hero-cover--detail", "hero-cover--image", `hero-cover--${book.data.coverShape ?? "portrait"}`]} src={book.data.cover} alt="" />
+            ) : (
+              <div class="hero-cover hero-cover--detail">
+                <span>{book.data.author}</span>
+                <strong>{book.data.title}</strong>
+                {book.data.subtitle && <small>{book.data.subtitle}</small>}
+              </div>
+            )
+          }
+        </aside>
 
-      <div class="prose">
-        <Content />
-      </div>
+        <div class="book-detail__body">
+          <p class="eyebrow">Catalogue record</p>
+          <StatusPill status={book.data.status} label={book.data.statusLabel} />
+          <h1>{book.data.title}</h1>
+          {book.data.subtitle && <p class="book-detail__subtitle">{book.data.subtitle}</p>}
+          <p class="book-detail__dek">{book.data.dek}</p>
+          <FormatLinks formats={book.data.formats} />
 
-      <nav class="book-nav" aria-label="Adjacent books">
-        {previous ? <a href={bookHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
-        {next ? <a href={bookHref(next)}>Next: {next.data.title}</a> : <span></span>}
-      </nav>
-    </div>
-  </article>
+          <dl class="book-meta-list">
+            <div>
+              <dt>Author</dt>
+              <dd>{book.data.author}</dd>
+            </div>
+            <div>
+              <dt>Updated</dt>
+              <dd>{formatDate(book.data.updated)}</dd>
+            </div>
+            {
+              book.data.editionLabel && (
+                <div>
+                  <dt>Edition</dt>
+                  <dd>{book.data.editionLabel}</dd>
+                </div>
+              )
+            }
+          </dl>
+
+          <div class="topic-strip topic-strip--large">
+            {book.data.topics.map((topic) => <span>{topic}</span>)}
+          </div>
+
+          <div class="prose">
+            {Content && <Content />}
+          </div>
+
+          <nav class="book-nav" aria-label="Adjacent books">
+            {previous ? <a href={bookHref(previous)}>Previous: {previous.data.title}</a> : <span></span>}
+            {next ? <a href={bookHref(next)}>Next: {next.data.title}</a> : <span></span>}
+          </nav>
+        </div>
+      </article>
+    )
+  }
 </BaseLayout>

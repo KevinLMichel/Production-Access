@@ -2846,3 +2846,100 @@ p {
     animation-duration: 0.001ms !important;
   }
 }
+
+.theme-batch-book-world {
+  background:
+    radial-gradient(circle at 18% 12%, var(--batch-glow, rgba(76, 220, 255, 0.2)), transparent 28rem),
+    radial-gradient(circle at 84% 20%, color-mix(in srgb, var(--batch-accent-2, #f0c978) 18%, transparent), transparent 24rem),
+    var(--page-bg);
+}
+
+.batch-world {
+  --batch-panel: rgba(21, 30, 52, 0.72);
+  --batch-line: color-mix(in srgb, var(--batch-accent, #28d7ff) 42%, rgba(255, 255, 255, 0.18));
+  display: grid;
+  gap: 2.2rem;
+}
+
+.batch-world-hero,
+.batch-world-section,
+.batch-reader .reader-sidebar,
+.batch-reader .reader-column {
+  border-color: var(--batch-line);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.25), 0 0 42px var(--batch-glow, rgba(76, 220, 255, 0.16));
+}
+
+.batch-world-hero {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 42%),
+    radial-gradient(circle at 76% 34%, var(--batch-glow, rgba(76, 220, 255, 0.2)), transparent 18rem),
+    rgba(14, 22, 42, 0.76);
+}
+
+.batch-world .eyebrow,
+.batch-reader .eyebrow,
+.batch-world .text-link,
+.batch-reader .reader-sidebar__back {
+  color: var(--batch-accent, #28d7ff);
+}
+
+.batch-world .button--primary {
+  background: linear-gradient(135deg, var(--batch-accent, #28d7ff), var(--batch-accent-2, #f0c978));
+  color: #08101e;
+}
+
+.batch-world .button--ghost {
+  border-color: var(--batch-line);
+  color: var(--batch-accent-2, #f0c978);
+}
+
+.batch-world-cover img {
+  aspect-ratio: 1;
+  border-radius: 28px;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42), 0 0 44px var(--batch-glow, rgba(76, 220, 255, 0.2));
+}
+
+.batch-world-stats strong,
+.batch-card-grid span,
+.batch-chapter-tile span,
+.batch-reader .reader-meta span {
+  color: var(--batch-accent-2, #f0c978);
+}
+
+.batch-world-section {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--batch-accent, #28d7ff) 10%, transparent), transparent 48%),
+    var(--batch-panel);
+}
+
+.batch-card-grid article,
+.batch-part-panel,
+.batch-chapter-tile {
+  border-color: var(--batch-line);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 50%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.batch-chapter-tile:hover {
+  border-color: var(--batch-accent, #28d7ff);
+  transform: translateY(-3px);
+}
+
+.batch-reader {
+  --reader-paper: rgba(13, 19, 34, 0.82);
+}
+
+.batch-reader .reader-column {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 38%),
+    var(--reader-paper);
+}
+
+.batch-prose {
+  color: rgba(246, 239, 224, 0.9);
+}
+
+.batch-prose h2 {
+  color: var(--batch-accent-2, #f0c978);
+}

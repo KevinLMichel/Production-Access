@@ -1,13 +1,18 @@
 ---
 title: "The Will to Become"
 dek: "A work on transformation, resolve, and the discipline of becoming."
-description: "A catalogue record for a book about becoming more than inherited habit, fear, or circumstance."
-updated: 2026-05-21
-topics: ["becoming", "will", "transformation"]
-shelves: ["New & Active", "Catalogue", "Coming Soon", "Inner Discipline"]
+description: "A full online edition of The Will to Become, a philosophical story about education, identity, flux, debate, and the choice to become."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/will-to-become.jfif"
+coverShape: "square"
+topics: ["becoming", "will", "transformation", "identity", "philosophical fiction"]
+shelves: ["New & Active", "Catalogue", "Available Online", "Inner Discipline", "Literary Fiction"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/will-to-become/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+Becoming begins when the inherited self can no longer hold the whole life.

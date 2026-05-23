@@ -1,13 +1,19 @@
 ---
 title: "Shadow-Dialogues at the Edge of Reason"
+subtitle: "A Republic of Shadows"
 dek: "A dialogic work where philosophy meets uncertainty, darkness, and the limits of explanation."
-description: "A catalogue record for a philosophical dialogue sequence at the border of reason and shadow."
-updated: 2026-05-21
-topics: ["dialogue", "reason", "shadow"]
-shelves: ["Catalogue", "Coming Soon", "Mind and Reality"]
+description: "A full online edition of Shadow-Dialogues at the Edge of Reason, a symbolic philosophical journey through power, pleasure, truth, silence, and dawn."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/shadow-dialogues-edge-reason.jfif"
+coverShape: "square"
+topics: ["dialogue", "reason", "shadow", "myth", "philosophy"]
+shelves: ["Catalogue", "Available Online", "Mind and Reality", "Poetry and Myth"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/shadow-dialogues-edge-reason/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+A lantern enters the city where reason discovers its edge and the shadows begin to answer.

@@ -1,13 +1,18 @@
 ---
 title: "The Thought That Changed Everything"
 dek: "A work about the moment an idea rearranges a life."
-description: "A catalogue record for a book about decisive thoughts, insight, and personal transformation."
-updated: 2026-05-21
-topics: ["insight", "transformation", "mind"]
-shelves: ["Catalogue", "Coming Soon", "Mind and Reality"]
+description: "A full online edition of The Thought That Changed Everything, a contemplative book about insight, metamorphosis, illumination, and integration."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/thought-that-changed-everything.jfif"
+coverShape: "square"
+topics: ["insight", "transformation", "mind", "illumination", "integration"]
+shelves: ["Catalogue", "Available Online", "Mind and Reality"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/thought-that-changed-everything/"
+    status: "available"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+Some thoughts pass through. Some become a door.
