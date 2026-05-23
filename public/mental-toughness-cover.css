@@ -183,6 +183,7 @@ body {
   inset: 0;
   content: "";
   background:
+    linear-gradient(180deg, rgba(6, 19, 26, 0.72) 0, rgba(6, 19, 26, 0.48) 0.14in, rgba(6, 19, 26, 0.16) 0.34in, transparent 0.72in),
     radial-gradient(ellipse at 31% 25%, rgba(6, 19, 26, 0.5), transparent 1.9in),
     linear-gradient(90deg, rgba(6, 19, 26, 0.26), transparent 48%, rgba(6, 19, 26, 0.08));
   pointer-events: none;
@@ -305,14 +306,14 @@ body {
 }
 
 .spine-title {
-  top: 2.5in;
-  font-size: 8.4pt;
-  letter-spacing: 0.085em;
+  top: 4.35in;
+  font-size: 9.3pt;
+  letter-spacing: 0.065em;
 }
 
 .spine-author {
   color: var(--amber-bright);
-  top: 6.48in;
+  top: 1.35in;
   font-size: 7.35pt;
   letter-spacing: 0.09em;
 }
