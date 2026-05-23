@@ -1,0 +1,111 @@
+---
+const title = "The Kindness Algorithm";
+const subtitle = "Small acts, big upgrades!";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Kindness is often treated like a mood, a virtue, or a personality trait.",
+  "But what if kindness is also a method?",
+  "The Kindness Algorithm offers a practical way to turn good intentions into repeatable choices. Blending self-development with grounded philosophy, this book shows how to practice kindness without becoming passive, performative, or exhausted.",
+  "Through clear principles and everyday examples, you'll learn how to pause before reacting, choose responses that reduce harm, set boundaries without cruelty, and build a life guided by intention rather than impulse."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="sky-wash" aria-hidden="true"></div>
+      <div class="cloud-field cloud-field--back" aria-hidden="true"></div>
+      <div class="cloud-field cloud-field--front" aria-hidden="true"></div>
+      <div class="kindness-network kindness-network--back" aria-hidden="true"></div>
+      <div class="kindness-network kindness-network--front" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <svg class="leaf-sigil leaf-sigil--back" viewBox="0 0 520 520" aria-hidden="true">
+        <use href="#leaf-sigil"></use>
+      </svg>
+      <svg class="leaf-sigil leaf-sigil--front" viewBox="0 0 520 520" aria-hidden="true">
+        <use href="#leaf-sigil"></use>
+      </svg>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">Practical philosophy for everyday decisions</p>
+        <h2>Kindness is not just a feeling. It is a system you can practice.</h2>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="back-cadence">
+          <p>Kindness is not weakness.</p>
+          <p>It is not approval.</p>
+          <p>It is a system.</p>
+        </div>
+        <p class="author-note">
+          Kevin L. Michel writes practical philosophy, self-development, and civic-minded works for readers building clearer, kinder, and more disciplined lives.
+        </p>
+        <p class="back-footer">Debug the default. Spend one kindness coin. Let the ripple travel.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <div class="spine-text">
+          <span class="spine-title">THE KINDNESS ALGORITHM</span>
+          <span class="spine-author">{author}</span>
+        </div>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <p class="front-kicker">A humane operating system</p>
+        <h1>
+          <span>The</span>
+          <strong>Kindness</strong>
+          <strong>Algorithm</strong>
+        </h1>
+        <svg class="heart-cloud" viewBox="0 0 620 360" role="img" aria-label="Soft cloud and leaf network forming a heart">
+          <use href="#heart-cloud"></use>
+        </svg>
+        <p class="cover-subtitle">{subtitle}</p>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+
+      <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <g id="leaf-sigil">
+            <path class="leaf-line" d="M92 390c74-121 174-208 306-261" />
+            <path class="leaf-fill" d="M182 310c-66-31-88-88-78-169 72 13 118 55 137 130-21 21-40 34-59 39z" />
+            <path class="leaf-fill leaf-fill--teal" d="M315 210c-28-67-5-128 63-182 45 61 48 125 10 193-28 2-52-1-73-11z" />
+            <path class="leaf-fill" d="M347 345c19-75 72-118 154-129 6 83-31 140-111 172-18-9-32-23-43-43z" />
+            <circle class="node" cx="148" cy="343" r="13" />
+            <circle class="node" cx="268" cy="246" r="11" />
+            <circle class="node" cx="383" cy="170" r="13" />
+            <circle class="node" cx="441" cy="295" r="10" />
+          </g>
+          <g id="heart-cloud">
+            <path class="heart-fill" d="M310 297c-22-29-66-58-105-92-42-36-66-73-66-116 0-50 38-84 88-84 33 0 64 17 83 48 19-31 50-48 83-48 50 0 88 34 88 84 0 43-24 80-66 116-39 34-83 63-105 92z" />
+            <path class="heart-cloud-line" d="M72 205c31-45 78-62 140-52" />
+            <path class="heart-cloud-line" d="M408 151c70-14 122 7 157 62" />
+            <path class="network-line" d="M188 166 269 111 351 145 432 102" />
+            <path class="network-line" d="M211 224 310 176 414 226" />
+            <circle class="network-node" cx="188" cy="166" r="11" />
+            <circle class="network-node" cx="269" cy="111" r="10" />
+            <circle class="network-node" cx="351" cy="145" r="11" />
+            <circle class="network-node" cx="432" cy="102" r="9" />
+            <circle class="network-node" cx="211" cy="224" r="9" />
+            <circle class="network-node" cx="310" cy="176" r="13" />
+            <circle class="network-node" cx="414" cy="226" r="9" />
+            <path class="sprout" d="M309 176c-22 31-28 60-18 88" />
+            <path class="sprout" d="M294 224c-24-22-50-29-80-20" />
+            <path class="sprout" d="M323 223c27-17 55-21 85-8" />
+          </g>
+        </defs>
+      </svg>
+    </main>
+  </body>
+</html>

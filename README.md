@@ -138,6 +138,17 @@ npm run book:cover:subconscious
 The generated release asset is written to `production/covers/output/the-subconscious-advantage-cover-wrap.pdf`.
 It uses the 180-page, black-and-white groundwood KDP template PDF MediaBox geometry: `11.6667 x 8.75` inches with a `0.423` inch spine.
 
+## The Kindness Algorithm Cover
+
+Regenerate the KDP paperback cover wrap after the paperback page count/template changes:
+
+```powershell
+npm run book:cover:kindness
+```
+
+The generated release asset is written to `production/covers/output/the-kindness-algorithm-cover-wrap.pdf`.
+It uses the 199-page, black-and-white groundwood KDP template PDF MediaBox geometry: `11.722222 x 8.75` inches with a `0.472222` inch spine.
+
 ## Render
 
 - Build command: `npm install && npm run build`
