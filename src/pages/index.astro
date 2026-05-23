@@ -13,6 +13,8 @@ const active = getBooksByShelf(books, "New & Active").slice(0, 6);
 const fieldGuides = getBooksByShelf(books, "Field Guides").slice(0, 6);
 const comingSoon = getBooksByShelf(books, "Coming Soon").slice(0, 8);
 const topics = getAllTopics(books).slice(0, 18);
+const readableCount = books.filter((book) => book.data.status === "available" || book.data.formats.some((format) => format.href)).length;
+const downloadCount = books.filter((book) => book.data.formats.some((format) => format.href?.toLowerCase().endsWith(".pdf"))).length;
 ---
 
 <BaseLayout title={siteMeta.displayTitle} description={siteMeta.description} bodyClass="home-page">
@@ -38,6 +40,46 @@ const topics = getAllTopics(books).slice(0, 18);
         <span></span><span></span><span></span><span></span>
       </div>
     </GlassPanel>
+  </section>
+
+  <section class="library-dashboard" data-library-dashboard aria-labelledby="dashboard-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Reader OS</p>
+        <h2 id="dashboard-heading">Your Library dashboard</h2>
+      </div>
+      <a class="text-link" href="/books/">Open full catalogue</a>
+    </div>
+
+    <div class="dashboard-grid">
+      <GlassPanel className="dashboard-card dashboard-card--continue">
+        <p class="eyebrow">Continue reading</p>
+        <h3 data-dashboard-title>No active session yet</h3>
+        <p data-dashboard-copy>Open any readable book and the Library will remember your place on this device.</p>
+        <a class="button button--ghost" href="/books/" data-dashboard-link>Choose a book</a>
+      </GlassPanel>
+
+      <GlassPanel className="dashboard-card">
+        <p class="eyebrow">Available now</p>
+        <strong>{readableCount}</strong>
+        <span>readable titles</span>
+      </GlassPanel>
+
+      <GlassPanel className="dashboard-card">
+        <p class="eyebrow">Downloads</p>
+        <strong>{downloadCount}</strong>
+        <span>PDF interiors</span>
+      </GlassPanel>
+
+      <GlassPanel className="dashboard-card dashboard-card--signals">
+        <p class="eyebrow">Recent signals</p>
+        <div class="dashboard-signals" data-dashboard-signals>
+          <span>clarity</span>
+          <span>discipline</span>
+          <span>agency</span>
+        </div>
+      </GlassPanel>
+    </div>
   </section>
 
   <FeaturedBook book={featuredBook} />

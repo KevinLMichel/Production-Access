@@ -5,6 +5,17 @@ import { getAllTopics, getBooks } from "../../lib/books";
 
 const books = await getBooks();
 const topics = getAllTopics(books);
+const topicMeta = topics
+  .map((topic) => ({
+    topic,
+    count: books.filter((book) => book.data.topics.includes(topic)).length
+  }))
+  .sort((a, b) => b.count - a.count || a.topic.localeCompare(b.topic))
+  .slice(0, 54);
+const statusMeta = Array.from(new Set(books.map((book) => book.data.status))).sort();
+const shelfMeta = ["Featured", "New & Active", "Field Guides", "Available Online", "Free Downloads", "Coming Soon"].filter((shelf) =>
+  books.some((book) => book.data.shelves.includes(shelf))
+);
 ---
 
 <BaseLayout title="Books | Kevin L. Michel - The Library" description="Browse the Kevin L. Michel book catalogue.">
@@ -17,14 +28,49 @@ const topics = getAllTopics(books);
     </p>
   </section>
 
-  <section class="filter-panel" aria-label="Topic index">
-    <span>Browse signals</span>
-    <div class="topic-cloud topic-cloud--compact">
-      {topics.map((topic) => <a href={`?topic=${encodeURIComponent(topic)}`}>{topic}</a>)}
+  <section class="signal-map" data-library-discovery aria-labelledby="signal-map-heading">
+    <div class="signal-map__header">
+      <div>
+        <p class="eyebrow">Signal map</p>
+        <h2 id="signal-map-heading">Find the right book by pressure, practice, or mood.</h2>
+      </div>
+      <p data-library-result-count>{books.length} titles showing</p>
     </div>
+
+    <label class="signal-search">
+      <span>Search the shelf</span>
+      <input data-library-search type="search" name="q" autocomplete="off" placeholder="Try discipline, kindness, power, parable..." />
+    </label>
+
+    <div class="signal-map__group" aria-label="Topic filters">
+      <button type="button" class="signal-chip signal-chip--all" data-topic-filter="">All signals</button>
+      {topicMeta.map(({ topic, count }) => (
+        <button type="button" class="signal-chip" data-topic-filter={topic} style={`--signal-weight: ${Math.min(1.8, 0.88 + count * 0.12)}`}>
+          <span>{topic}</span>
+          <small>{count}</small>
+        </button>
+      ))}
+    </div>
+    <p class="signal-map__hint">Showing the strongest catalogue signals. Search covers the full shelf.</p>
+
+    <div class="signal-map__filters" aria-label="Shelf and status filters">
+      <div>
+        <span>Shelf</span>
+        <button type="button" data-shelf-filter="">Any shelf</button>
+        {shelfMeta.map((shelf) => <button type="button" data-shelf-filter={shelf}>{shelf}</button>)}
+      </div>
+      <div>
+        <span>Status</span>
+        <button type="button" data-status-filter="">Any status</button>
+        {statusMeta.map((status) => <button type="button" data-status-filter={status}>{status.replace("-", " ")}</button>)}
+      </div>
+    </div>
+
+    <a class="signal-clear" href="/books/" data-library-clear>Clear filters</a>
   </section>
 
-  <section class="book-grid" aria-label="All books">
+  <section class="book-grid" data-book-grid aria-label="All books">
     {books.map((book) => <BookCard book={book} />)}
   </section>
+  <p class="empty-state" data-library-empty hidden>No matching books yet. Clear the filters and try another signal.</p>
 </BaseLayout>

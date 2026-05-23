@@ -1,6 +1,7 @@
 ---
 import type { Book } from "../lib/books";
 import { bookHref } from "../lib/books";
+import { bookVisualThemeStyle } from "../lib/bookVisualThemes";
 import FormatLinks from "./FormatLinks.astro";
 import StatusPill from "./StatusPill.astro";
 
@@ -11,15 +12,28 @@ interface Props {
 }
 
 const { book, featured = false, variant = "catalogue" } = Astro.props;
-const palette = ["#27d8ff", "#ff6b4a", "#b8ff5c", "#f4c95d", "#9f8cff", "#5eead4"];
-const accent = palette[book.id.length % palette.length];
 const href = bookHref(book);
 const topicLimit = variant === "shelf" ? 2 : 4;
 const formatLimit = variant === "shelf" ? 1 : 3;
 const coverShape = book.data.coverShape ?? "portrait";
+const visibleTopics = book.data.topics.slice(0, topicLimit);
+const hiddenTopicCount = Math.max(0, book.data.topics.length - visibleTopics.length);
+const searchableTopics = book.data.topics.join(" ").toLowerCase();
+const searchableShelves = book.data.shelves.join(" ").toLowerCase();
+const searchableFormats = book.data.formats.map((format) => `${format.label} ${format.status ?? ""}`).join(" ").toLowerCase();
 ---
 
-<article class:list={["book-card", `book-card--${variant}`, `book-card--cover-${coverShape}`, featured && "book-card--featured"]} style={`--accent: ${accent}`}>
+<article
+  class:list={["book-card", `book-card--${variant}`, `book-card--cover-${coverShape}`, featured && "book-card--featured"]}
+  style={bookVisualThemeStyle(book)}
+  data-book-card
+  data-book-slug={book.id}
+  data-book-title={book.data.title.toLowerCase()}
+  data-book-topics={searchableTopics}
+  data-book-shelves={searchableShelves}
+  data-book-status={book.data.status}
+  data-book-formats={searchableFormats}
+>
   <a class="book-card__cover-link" href={href} aria-label={`Open ${book.data.title}`}>
     {
       book.data.cover ? (
@@ -39,7 +53,8 @@ const coverShape = book.data.coverShape ?? "portrait";
     <h3><a href={href}>{book.data.title}</a></h3>
     <p>{book.data.dek}</p>
     <div class="topic-strip">
-      {book.data.topics.slice(0, topicLimit).map((topic) => <span>{topic}</span>)}
+      {visibleTopics.map((topic) => <span>{topic}</span>)}
+      {hiddenTopicCount > 0 && <span class="topic-strip__more">+{hiddenTopicCount}</span>}
     </div>
     <FormatLinks formats={book.data.formats.slice(0, formatLimit)} />
   </div>

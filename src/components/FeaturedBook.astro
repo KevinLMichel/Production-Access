@@ -1,6 +1,7 @@
 ---
 import type { Book } from "../lib/books";
 import { bookHref, formatDate } from "../lib/books";
+import { bookVisualThemeStyle } from "../lib/bookVisualThemes";
 import FormatLinks from "./FormatLinks.astro";
 import StatusPill from "./StatusPill.astro";
 
@@ -13,7 +14,7 @@ const href = bookHref(book);
 const coverShape = book.data.coverShape ?? "portrait";
 ---
 
-<section class="featured-book" aria-labelledby="featured-book-title">
+<section class="featured-book" aria-labelledby="featured-book-title" style={bookVisualThemeStyle(book)}>
   <div class="featured-book__copy">
     <p class="eyebrow">Featured now</p>
     <StatusPill status={book.data.status} label={book.data.statusLabel} />
