@@ -95,6 +95,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 199 pages at 5.5 x 8.5 inches.
 
+## Mental Toughness PDF
+
+Regenerate the downloadable Mental Toughness interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:mental-toughness
+```
+
+The generated file is committed at `public/downloads/mental-toughness-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 185 pages at 5.5 x 8.5 inches.
+
 ## Freedom by Design Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

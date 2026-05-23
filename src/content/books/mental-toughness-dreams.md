@@ -15,9 +15,15 @@ links:
   - label: "Start Reading"
     href: "/books/mental-toughness-dreams/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/mental-toughness-kevin-l-michel.pdf"
+    kind: "download"
 formats:
   - label: "Start Reading"
     href: "/books/mental-toughness-dreams/"
+    status: "available"
+  - label: "Download PDF"
+    href: "/downloads/mental-toughness-kevin-l-michel.pdf"
     status: "available"
 ---
 

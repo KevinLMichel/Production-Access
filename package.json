@@ -17,6 +17,7 @@
     "book:pdf:fragmented": "node scripts/build-fragmented-pdf.mjs",
     "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
     "book:pdf:kindness": "node scripts/build-kindness-pdf.mjs",
+    "book:pdf:mental-toughness": "node scripts/build-mental-toughness-pdf.mjs",
     "book:pdf:steam": "node scripts/build-steam-pdf.mjs",
     "book:pdf:subconscious": "node scripts/build-subconscious-pdf.mjs",
     "extract:fragmented": "node scripts/extract-fragmented-book.mjs",
