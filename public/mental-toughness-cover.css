@@ -135,8 +135,8 @@ body {
 }
 
 .grain {
-  z-index: 12;
-  opacity: 0.18;
+  z-index: 8;
+  opacity: 0.14;
   background:
     radial-gradient(circle at 18% 21%, rgba(247, 237, 218, 0.35) 0 0.007in, transparent 0.011in),
     radial-gradient(circle at 55% 42%, rgba(0, 0, 0, 0.4) 0 0.009in, transparent 0.014in),
@@ -273,39 +273,48 @@ body {
   width: var(--spine-width);
   height: var(--sheet-height);
   background:
-    linear-gradient(180deg, rgba(247, 237, 218, 0.12), transparent 22%, transparent 78%, rgba(247, 237, 218, 0.1)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.56), #0b1b22 46%, rgba(0, 0, 0, 0.62));
+    linear-gradient(180deg, rgba(247, 237, 218, 0.1), transparent 18%, transparent 82%, rgba(247, 237, 218, 0.08)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.66), #0a1c23 46%, rgba(0, 0, 0, 0.72));
   border-left: 0.012in solid rgba(255, 211, 106, 0.52);
   border-right: 0.012in solid rgba(255, 211, 106, 0.46);
 }
 
-.spine-text {
+.spine::before {
+  position: absolute;
+  inset: 0.22in 0.08in;
+  content: "";
+  border-top: 0.012in solid rgba(255, 211, 106, 0.42);
+  border-bottom: 0.012in solid rgba(255, 211, 106, 0.38);
+  pointer-events: none;
+}
+
+.spine-title,
+.spine-author {
   position: absolute;
   left: 50%;
-  top: 0.52in;
-  display: flex;
-  width: 7.7in;
-  transform: translateX(-50%) rotate(90deg);
-  transform-origin: center;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.18in;
+  z-index: 2;
   color: var(--cream);
   font-family: "Source Sans 3", Arial, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.08em;
   line-height: 1;
+  text-align: center;
   text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
   white-space: nowrap;
 }
 
 .spine-title {
-  font-size: 8.5pt;
+  top: 2.5in;
+  font-size: 8.4pt;
+  letter-spacing: 0.085em;
 }
 
 .spine-author {
   color: var(--amber-bright);
-  font-size: 7.4pt;
+  top: 6.48in;
+  font-size: 7.35pt;
+  letter-spacing: 0.09em;
 }
 
 .kicker,
