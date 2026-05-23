@@ -163,6 +163,17 @@ npm run book:cover:kindness
 The generated release asset is written to `production/covers/output/the-kindness-algorithm-cover-wrap.pdf`.
 It uses the 199-page, black-and-white groundwood KDP template PDF MediaBox geometry: `11.722222 x 8.75` inches with a `0.472222` inch spine.
 
+## Mental Toughness Cover
+
+Regenerate the KDP paperback cover wrap after the paperback page count/template changes:
+
+```powershell
+npm run book:cover:mental-toughness
+```
+
+The generated release asset is written to `production/covers/output/mental-toughness-cover-wrap.pdf`.
+It uses the 185-page, black-and-white groundwood KDP template PDF MediaBox geometry: `11.680556 x 8.75` inches with a `0.430556` inch spine.
+
 ## Render
 
 - Build command: `npm install && npm run build`

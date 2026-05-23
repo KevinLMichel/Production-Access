@@ -1,0 +1,97 @@
+---
+const title = "Mental Toughness";
+const subtitle = "Strengthen Your Mind to Achieve Your Dreams";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "Mental Toughness is a practical guide to building the inner strength that carries ambition through stress, doubt, delay, pressure, and the long middle where discipline matters more than mood.",
+  "Kevin L. Michel turns resilience into a trainable system: purpose, persistence, precision practice, perspective, stress inoculation, and the steady art of finishing what matters.",
+  "This book is for readers who want more than motivation. It is for builders, athletes, artists, leaders, students, and late bloomers learning to make the mind an ally under pressure."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="pressure-field" aria-hidden="true"></div>
+      <div class="training-grid" aria-hidden="true"></div>
+      <div class="fracture-field fracture-field--back" aria-hidden="true"></div>
+      <div class="fracture-field fracture-field--front" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <svg class="stone-head stone-head--back" viewBox="0 0 520 620" aria-hidden="true">
+        <use href="#stone-head"></use>
+      </svg>
+      <svg class="stone-head stone-head--front" viewBox="0 0 520 620" aria-hidden="true">
+        <use href="#stone-head"></use>
+      </svg>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">Inner discipline for real pressure</p>
+        <h2>Dreams do not survive on inspiration alone.</h2>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="pillar-list">
+          <span>Purpose</span>
+          <span>Persistence</span>
+          <span>Precision practice</span>
+          <span>Perspective</span>
+        </div>
+        <p class="author-note">
+          Kevin L. Michel writes practical philosophy, self-development, and inner-discipline books for readers building clearer, stronger, and more sovereign lives.
+        </p>
+        <p class="back-footer">Train the mind. Hold the line. Finish the dream.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <div class="spine-text">
+          <span class="spine-title">MENTAL TOUGHNESS</span>
+          <span class="spine-author">{author}</span>
+        </div>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <p class="front-kicker">Train the mind under pressure</p>
+        <h1>
+          <span>Mental</span>
+          <strong>Toughness</strong>
+        </h1>
+        <p class="cover-subtitle">{subtitle}</p>
+        <div class="crack-card" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+
+      <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <g id="stone-head">
+            <path class="head-shadow" d="M168 517c-44-62-54-138-30-228 18-68 58-123 119-165 45-31 91-45 139-42 31 2 55 13 72 33 20 23 28 52 24 87-3 29-16 55-38 78 27 10 42 29 45 56 3 31-13 58-49 82-29 19-62 31-100 36-7 40-26 70-57 91-38 26-80 17-125-28z" />
+            <path class="face-plane" d="M248 139c58-40 118-48 180-23 22 28 29 61 22 99-5 31-22 61-51 88 45 0 72 17 81 51-9 35-45 59-109 72-51 10-93 4-126-18-31-21-49-54-52-100-4-67 15-123 55-169z" />
+            <path class="neck-plane" d="M176 454c26 28 61 44 106 47 32 2 62-7 88-27-10 41-28 73-55 96-45 38-93 29-144-28-12-13-24-32-37-57 13-16 27-27 42-31z" />
+            <path class="brow" d="M260 252c45-17 89-19 132-5" />
+            <path class="nose" d="M388 259c20 44 21 76 3 97-13 14-34 18-62 10" />
+            <path class="mouth" d="M291 396c42 15 86 12 133-10" />
+            <path class="crack crack--one" d="M338 132c-14 56-9 99 17 129 20 23 27 52 20 87" />
+            <path class="crack crack--two" d="M251 205c42 18 69 42 81 72-17 39-13 77 14 114" />
+            <path class="crack crack--three" d="M404 213c-30 28-43 57-40 87 5 44-6 79-34 106" />
+            <circle class="light-node" cx="354" cy="260" r="10" />
+            <circle class="light-node" cx="374" cy="346" r="8" />
+          </g>
+        </defs>
+      </svg>
+    </main>
+  </body>
+</html>
