@@ -1,8 +1,7 @@
 import { exec } from "node:child_process";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
-import { pathToFileURL } from "node:url";
+import { dirname, extname, resolve } from "node:path";
 import { PDFDocument, PDFName } from "pdf-lib";
 import puppeteer from "puppeteer-core";
 
@@ -88,11 +87,31 @@ function findBrowserExecutable() {
   return executable;
 }
 
-function cssWithAbsoluteAssetUrls(css) {
-  return css.replace(/url\((["']?)\.\/([^)"']+)\1\)/g, (_match, _quote, relativePath) => {
-    const absolutePath = resolve(root, "public", relativePath);
-    return `url("${pathToFileURL(absolutePath).href}")`;
-  });
+function mimeTypeForAsset(filePath) {
+  const extension = extname(filePath).toLowerCase();
+  if (extension === ".png") return "image/png";
+  if (extension === ".jpg" || extension === ".jpeg" || extension === ".jfif") return "image/jpeg";
+  if (extension === ".svg") return "image/svg+xml";
+  if (extension === ".woff2") return "font/woff2";
+  if (extension === ".woff") return "font/woff";
+  return "application/octet-stream";
+}
+
+async function cssWithEmbeddedAssetUrls(css) {
+  const assetMatches = [...css.matchAll(/url\((["']?)\.\/([^)"']+)\1\)/g)];
+  const replacements = await Promise.all(
+    assetMatches.map(async (match) => {
+      const absolutePath = resolve(root, "public", match[2]);
+      const asset = await readFile(absolutePath);
+      const dataUri = `data:${mimeTypeForAsset(absolutePath)};base64,${asset.toString("base64")}`;
+      return [match[0], `url("${dataUri}")`];
+    })
+  );
+
+  return replacements.reduce(
+    (updatedCss, [original, replacement]) => updatedCss.replace(original, replacement),
+    css
+  );
 }
 
 function pageHtmlWithInlineCss(html, css) {
@@ -125,7 +144,7 @@ async function renderCoverPng() {
     readFile(coverInput, "utf8"),
     readFile(coverStylesheet, "utf8")
   ]);
-  const styledHtml = pageHtmlWithInlineCss(html, cssWithAbsoluteAssetUrls(css));
+  const styledHtml = pageHtmlWithInlineCss(html, await cssWithEmbeddedAssetUrls(css));
 
   const browser = await puppeteer.launch({
     executablePath: findBrowserExecutable(),
