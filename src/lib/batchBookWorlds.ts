@@ -539,6 +539,36 @@ export const batchBookWorlds = {
     accent2: "#d9b35f",
     glow: "rgba(178, 77, 52, 0.23)"
   },
+  "unbridled-prince": {
+    eyebrow: "Self-Belief and Inner Power",
+    heroTitle: "The prince becomes unbridled when self-belief stops asking permission.",
+    lede:
+      "A short princely manual on conviction, potential, self-preservation, strategic alliances, leadership, and the disciplined confidence to move through wolves without becoming one.",
+    promiseTitle: "Build self-belief with eyes open.",
+    promiseBody:
+      "The Unbridled Prince blends self-development with an ethical warning about power games. It teaches self-belief, potential, preservation, networking, leadership, and conquest as inner disciplines rather than excuses for cruelty.",
+    mapTitle: "Caution, self-belief, potential, preservation, leadership, conquest",
+    cardHeading: "Princely disciplines",
+    cards: ["Ethical caution", "Foundation of self-belief", "Strategic relationships", "Conqueror's mindset"],
+    accent: "#7ecbff",
+    accent2: "#d5b66a",
+    glow: "rgba(126, 203, 255, 0.23)"
+  },
+  "resurrection-marcus-aurelius": {
+    eyebrow: "Modern Meditations",
+    heroTitle: "The old Stoic wakes beneath electric skies.",
+    lede:
+      "A modern meditation sequence imagining Marcus Aurelius speaking into screens, identity, excess, relationships, influence, fear, information overload, mortality, and practice.",
+    promiseTitle: "Carry Stoic discipline into the digital age.",
+    promiseBody:
+      "The Resurrection of Marcus Aurelius brings ancient steadiness into modern pressure. It asks how virtue, attention, courage, moderation, and mortality can guide a life surrounded by noise.",
+    mapTitle: "Identity, reality, temperance, relationships, courage, wisdom, death",
+    cardHeading: "Stoic practices",
+    cards: ["Return of the Stoic", "Sphere of influence", "Courage under fear", "Mortality as teacher"],
+    accent: "#6be7ff",
+    accent2: "#d9e8ff",
+    glow: "rgba(107, 231, 255, 0.24)"
+  },
   "machiavellian-dreams": {
     eyebrow: "A Manual of Strategy and Shadow",
     heroTitle: "Learn the wolf's grammar without surrendering the sheep.",

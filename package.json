@@ -32,6 +32,7 @@
     "extract:batch-book-worlds": "node scripts/extract-batch-book-worlds.mjs",
     "extract:kindness-algorithm": "node scripts/extract-kindness-algorithm-book.mjs",
     "extract:machiavellian-dreams": "node scripts/extract-machiavellian-dreams-book.mjs",
+    "extract:session-five-two-worlds": "node scripts/extract-session-five-two-worlds.mjs",
     "extract:mental-toughness-dreams": "node scripts/extract-mental-toughness-dreams-book.mjs",
     "extract:new-prince-book-world": "node scripts/extract-new-prince-book-world.mjs",
     "extract:session-three-book-worlds": "node scripts/extract-session-three-book-worlds.mjs",
