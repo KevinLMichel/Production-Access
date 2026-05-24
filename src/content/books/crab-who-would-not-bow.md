@@ -1,13 +1,22 @@
 ---
 title: "The Crab Who Would Not Bow"
-dek: "A small parable of dignity, refusal, and strange courage."
-description: "A catalogue record for a parable about stubborn dignity and the cost of refusing false authority."
-updated: 2026-05-21
-topics: ["parable", "dignity", "courage"]
-shelves: ["Catalogue", "Coming Soon", "Parables"]
+dek: "A small parable of dignity, refusal, heat, hunger, and strange courage."
+description: "A complete online book-world for a poetic parable about stubborn dignity, trial by sun and tide, and the cost of refusing false authority."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/crab-who-would-not-bow.jfif"
+coverShape: "square"
+topics: ["parable", "dignity", "courage", "refusal", "folklore", "poetry"]
+shelves: ["Catalogue", "Available Online", "Parables", "Poetry and Myth"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/crab-who-would-not-bow/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/crab-who-would-not-bow/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.

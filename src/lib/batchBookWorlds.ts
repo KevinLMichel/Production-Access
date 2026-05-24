@@ -283,6 +283,171 @@ export const batchBookWorlds = {
     accent: "#ffd166",
     accent2: "#ff7a5c",
     glow: "rgba(255, 209, 102, 0.22)"
+  },
+  "7-rules-acceleration": {
+    eyebrow: "Transforming Life at 40 and Beyond",
+    heroTitle: "The second half is not a decline. It is an acceleration window.",
+    lede:
+      "A field guide for readers ready to own the story, rewire the mind, upgrade the body, rebuild connection, strengthen money, strategize, and pursue legacy with force.",
+    promiseTitle: "Turn midlife pressure into directed momentum.",
+    promiseBody:
+      "7 Rules of Acceleration frames reinvention as a practical campaign. The book moves through responsibility, neuroplasticity, health, love, wealth, strategy, and purpose as linked accelerators.",
+    mapTitle: "Story, mind, body, connection, wealth, strategy, legacy",
+    cardHeading: "Acceleration rules",
+    cards: ["Own the story", "Rewire the mind", "Build the wealth engine", "Pursue legacy"],
+    accent: "#7cff8a",
+    accent2: "#ffd166",
+    glow: "rgba(124, 255, 138, 0.2)"
+  },
+  "song-for-new-gods": {
+    eyebrow: "A Myth for the Machine Age",
+    heroTitle: "When old gods fade, the new ones arrive wearing circuitry and song.",
+    lede:
+      "A poetic myth-cycle about doubt, farewell, assembly, technology, ritual, and the powers modern people make when they stop believing they are worshipping anything.",
+    promiseTitle: "Walk through the twilight into a stranger sacred language.",
+    promiseBody:
+      "A Song for the New Gods treats modernity as a mythic threshold. It asks what replaces older forms of worship, which new powers deserve suspicion, and whether a truer song can still be sung.",
+    mapTitle: "Twilight, doubt, assembly, farewell, crucible, song",
+    cardHeading: "Mythic movements",
+    cards: ["Old gods fading", "Cleansing doubt", "The great assembly", "A new song"],
+    accent: "#c9a4ff",
+    accent2: "#ff8f70",
+    glow: "rgba(201, 164, 255, 0.22)"
+  },
+  "acta-non-verba": {
+    eyebrow: "Deeds, Not Words",
+    heroTitle: "Character is not what you announce. It is what your life can prove.",
+    lede:
+      "A compact discipline text about controllables, habit architecture, impulse, focus, calm, integrity, leadership, noise, systems, and legacy.",
+    promiseTitle: "Build proof where performance used to stand.",
+    promiseBody:
+      "Acta Non Verba turns action into a philosophy of self-command. It moves from the inner engine of habits and focus toward outer impact, team loops, social contagion, and battles worth winning.",
+    mapTitle: "Forge the engine, wield the impact",
+    cardHeading: "Deed disciplines",
+    cards: ["Daily deeds audit", "Focused fortress", "Calm edge", "Legacy architecture"],
+    accent: "#ff6d4a",
+    accent2: "#f7d58b",
+    glow: "rgba(255, 109, 74, 0.22)"
+  },
+  "memento-mori": {
+    eyebrow: "Daily Death, Daily Renewal",
+    heroTitle: "Remember death, not to shrink from life, but to enter it awake.",
+    lede:
+      "A sequence of poetic meditations on mortality, rebirth, humility, urgency, and the daily practice of letting an old self die so a truer one can live.",
+    promiseTitle: "Let the skull become a lamp.",
+    promiseBody:
+      "Memento Mori uses death and rebirth as philosophical images for daily renewal. Each meditation presses the reader toward clarity, gratitude, courage, and a more deliberate use of a finite life.",
+    mapTitle: "Thirty-three meditations on renewal",
+    cardHeading: "Mortality practices",
+    cards: ["Remember clearly", "Release the old self", "Return to the day", "Live awake"],
+    accent: "#e8e1d0",
+    accent2: "#9fb2ff",
+    glow: "rgba(232, 225, 208, 0.18)"
+  },
+  "path-of-the-prince": {
+    eyebrow: "Ambition, Strategy, and Self-Rule",
+    heroTitle: "The prince is not born at the throne. He is forged on the road to it.",
+    lede:
+      "A strategic life manual about ambition, challenge, maneuver, decisive action, resilience, wellness, persistence, and the power claimed through action.",
+    promiseTitle: "Walk the path from desire to command.",
+    promiseBody:
+      "The Path of the Prince turns personal growth into a campaign of discipline and decision. It treats ambition as a forge, setbacks as terrain, and action as the final claim on destiny.",
+    mapTitle: "Ambition, challenge, maneuver, action",
+    cardHeading: "Princely disciplines",
+    cards: ["Forge ambition", "Read the battlefield", "Strike decisively", "Persist through siege"],
+    accent: "#f2c56b",
+    accent2: "#73d7ff",
+    glow: "rgba(242, 197, 107, 0.22)"
+  },
+  "polyphasic-sleep": {
+    eyebrow: "A Balanced Approach",
+    heroTitle: "Alternate sleep is not a stunt. It is an experiment with limits.",
+    lede:
+      "A concise guide to polyphasic sleep patterns, adaptation, risks, personal experience, sleep science, and the need to treat recovery as seriously as ambition.",
+    promiseTitle: "Experiment with sleep without declaring war on the body.",
+    promiseBody:
+      "Polyphasic Sleep introduces the concepts, schedules, advantages, disadvantages, adaptation methods, and science behind nontraditional sleep while keeping the tone measured and health-aware.",
+    mapTitle: "Concepts, patterns, adaptation, science",
+    cardHeading: "Sleep questions",
+    cards: ["What patterns exist?", "What are the tradeoffs?", "How does adaptation work?", "What does science say?"],
+    accent: "#78d8ff",
+    accent2: "#c6a7ff",
+    glow: "rgba(120, 216, 255, 0.22)"
+  },
+  "crab-who-would-not-bow": {
+    eyebrow: "A Parable of Dignity",
+    heroTitle: "A small shell can hold a kingdom of refusal.",
+    lede:
+      "A poetic parable of a crab, moon, tide, sun, hunger, trial, and the dignity that refuses to bend before false command.",
+    promiseTitle: "Follow the creature who stands when the shore itself turns against her.",
+    promiseBody:
+      "The Crab Who Would Not Bow moves through moonlit oath, tidal challenge, scorching trial, reflection, memory, and generations. Its lesson is small, fierce, and difficult to forget.",
+    mapTitle: "Moon-shell, challenge, scorch, memory",
+    cardHeading: "Parable forces",
+    cards: ["Moonlit oath", "Tidal pressure", "Refusal under heat", "A story carried forward"],
+    accent: "#ffad68",
+    accent2: "#8de7ff",
+    glow: "rgba(255, 173, 104, 0.22)"
+  },
+  "kappas-gift": {
+    eyebrow: "A Folklore Parable",
+    heroTitle: "A gift given by the river cannot be stolen without waking the river.",
+    lede:
+      "A folkloric parable of cucumber seeds, a kappa, an oath, envy, ransom, covenant, and the strange mercy of keeping faith.",
+    promiseTitle: "Enter the field where gift, greed, and gratitude meet.",
+    promiseBody:
+      "The Kappa's Gift follows Jubei, a dangerous river spirit, and a village learning that borrowed blessing becomes curse when separated from humility and promise.",
+    mapTitle: "Oath, envy, blight, shrine, covenant",
+    cardHeading: "Folklore lessons",
+    cards: ["Receive the gift", "Resist imitation", "Honor the covenant", "Let greed go hungry"],
+    accent: "#70e08f",
+    accent2: "#ffd36c",
+    glow: "rgba(112, 224, 143, 0.2)"
+  },
+  "liberated-mind": {
+    eyebrow: "Attention and Inner Authority",
+    heroTitle: "The mind becomes free when attention stops serving every passing master.",
+    lede:
+      "A guide to reclaiming attention, clearing mental clutter, practicing essentialism, auditing freedom leaks, and designing life with liberation loops.",
+    promiseTitle: "Recover the steering wheel of attention.",
+    promiseBody:
+      "The Liberated Mind moves from awakening to advancing: word, world, clutter, hidden yeses, freedom audits, metacognition, high-flow work, social contracts, and systems of agency.",
+    mapTitle: "Awakening, audit, loop, system",
+    cardHeading: "Liberation practices",
+    cards: ["Map attention leaks", "Clear mental barnacles", "Design liberation loops", "Scale from self to system"],
+    accent: "#6be7ff",
+    accent2: "#ffcf7a",
+    glow: "rgba(107, 231, 255, 0.22)"
+  },
+  "little-green-book-guaranteed-success": {
+    eyebrow: "Success as Seed and System",
+    heroTitle: "Success grows where vision, energy, strategy, and alignment keep meeting.",
+    lede:
+      "A compact success guide about mindset, conscientiousness, trainable intelligence, energy, time, momentum, adversity, and living as the vision.",
+    promiseTitle: "Plant the seed, then build the conditions.",
+    promiseBody:
+      "The Little Green Book of Guaranteed Success treats achievement as a cultivated ecology: mind, body, strategy, adversity, speech, action, and alignment working together.",
+    mapTitle: "Mindset, body, strategy, alignment",
+    cardHeading: "Green-book principles",
+    cards: ["Vision principle", "Energy management", "Momentum mechanics", "Forward motion"],
+    accent: "#8dff7a",
+    accent2: "#f2d36b",
+    glow: "rgba(141, 255, 122, 0.21)"
+  },
+  "mango-of-justice": {
+    eyebrow: "A Tamil Nadu Village Parable",
+    heroTitle: "Justice can hang from a branch, sweet and impossible to ignore.",
+    lede:
+      "A village parable of seed money, summons, juice, honor, slices, and the moral weight hidden inside an ordinary mango.",
+    promiseTitle: "Watch a small fruit reveal a larger law.",
+    promiseBody:
+      "The Mango of Justice uses a village setting and a simple object to explore fairness, desire, reputation, judgment, and the communal memory of what is owed.",
+    mapTitle: "Seed, summons, juice, honor, slices",
+    cardHeading: "Village questions",
+    cards: ["Who owns the fruit?", "What does honor require?", "How is justice shared?", "What remains after sweetness?"],
+    accent: "#ffb84d",
+    accent2: "#72e6b5",
+    glow: "rgba(255, 184, 77, 0.22)"
   }
 } as const;
 

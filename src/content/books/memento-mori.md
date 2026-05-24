@@ -1,13 +1,22 @@
 ---
 title: "Memento Mori"
-dek: "A meditation on death, urgency, humility, and how to live awake."
-description: "A catalogue record for a philosophical work on mortality and the disciplined use of a limited life."
-updated: 2026-05-21
-topics: ["mortality", "stoicism", "life"]
-shelves: ["Catalogue", "Coming Soon", "Inner Discipline"]
+dek: "A poetic meditation on death, rebirth, urgency, humility, and living awake."
+description: "A complete online book-world for a philosophical and poetic work on mortality, daily renewal, disciplined attention, and the art of remembering death without surrendering life."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/memento-mori.jfif"
+coverShape: "square"
+topics: ["mortality", "stoicism", "life", "rebirth", "poetry", "humility"]
+shelves: ["Catalogue", "Available Online", "Inner Discipline", "Poetry and Myth"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/memento-mori/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/memento-mori/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.

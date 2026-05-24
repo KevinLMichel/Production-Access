@@ -1,14 +1,23 @@
 ---
 title: "Polyphasic Sleep"
 subtitle: "A Balanced Approach"
-dek: "A measured look at alternate sleep patterns and practical limits."
-description: "A catalogue record for a concise guide to polyphasic sleep, recovery, discipline, and health-aware experimentation."
-updated: 2026-05-21
-topics: ["sleep", "health", "experimentation"]
-shelves: ["Catalogue", "Coming Soon", "Field Guides"]
+dek: "A measured look at alternate sleep patterns, recovery, experimentation, and practical limits."
+description: "A complete online book-world for a concise guide to polyphasic sleep, sleep-pattern experimentation, adaptation, risks, recovery, and health-aware discipline."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/polyphasic-sleep.jfif"
+coverShape: "portrait"
+topics: ["sleep", "health", "experimentation", "recovery", "habits", "energy"]
+shelves: ["Catalogue", "Available Online", "Field Guides", "Health and Performance"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/polyphasic-sleep/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/polyphasic-sleep/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.
