@@ -1,0 +1,64 @@
+---
+const title = "I Am What Happens";
+const subtitle = "When you try to carve God from the wood of your own hunger";
+const author = "Kevin L. Michel";
+const backPitch = [
+  "I Am What Happens is a poetic allegorical epic in six movements: Longing, Forms, Beloved, Trials, Illumination, and Return and Revelation.",
+  "A pilgrim enters the forest of his own hunger seeking God, love, certainty, and a shape strong enough to hold desire. Along the way he meets teachers, illusions, trials, the beloved, and the strange mercy of being broken open.",
+  "This is a book for readers drawn to mystical poetry, symbolic journeys, and the hard inward labor of becoming. It does not explain longing away. It follows longing until it becomes a threshold."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+    <link rel="stylesheet" href="/i-am-what-happens-cover.css" />
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="paper-field" aria-hidden="true"></div>
+      <div class="back-symbols" aria-hidden="true"></div>
+      <div class="spine-seam" aria-hidden="true"></div>
+      <div class="front-art" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">A mystical poem of hunger and God</p>
+        <h2>Hunger makes an idol first. Then it asks to be transformed.</h2>
+        <div class="back-copy">
+          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="author-note">
+          Kevin L. Michel writes philosophical, poetic, civic, and self-development works for readers trying to live with more clarity, courage, discipline, imagination, and inner authority.
+        </p>
+        <p class="back-footer">Enter longing. Pass through forms. Return with fire.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <span class="spine-title">I AM WHAT HAPPENS</span>
+        <span class="spine-author">{author}</span>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <h1 class="cover-title" aria-label={title}>
+          <span>I Am</span>
+          <span>What</span>
+          <span>Happens</span>
+        </h1>
+        <p class="cover-subtitle">
+          <span>When you try to carve God</span>
+          <span>from the wood of your</span>
+          <span>own hunger</span>
+        </p>
+        <p class="author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>

@@ -11,6 +11,7 @@
     "build": "astro build",
     "book:cover:fragmented": "node scripts/build-fragmented-cover.mjs",
     "book:cover:freedom": "node scripts/build-freedom-cover.mjs",
+    "book:cover:i-am-what-happens": "node scripts/build-i-am-what-happens-cover.mjs",
     "book:cover:kindness": "node scripts/build-kindness-cover.mjs",
     "book:cover:mental-toughness": "node scripts/build-mental-toughness-cover.mjs",
     "book:cover:steam": "node scripts/build-steam-cover.mjs",
