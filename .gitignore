@@ -4,6 +4,7 @@ dist/
 Books downloader from Kindle/
 Book Downlo/
 Book Files and images for Book Access Detail/
+Notes - Do not add to repo/
 .env
 .env.*
 .astro-preview*.log

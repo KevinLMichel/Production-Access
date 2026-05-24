@@ -2945,6 +2945,211 @@ p {
   color: var(--batch-accent-2, #f0c978);
 }
 
+body.theme-architecture-of-calm .batch-prose {
+  color: rgba(248, 241, 226, 0.92);
+}
+
+body.theme-architecture-of-calm .batch-prose h2 {
+  margin-top: 2.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(200, 164, 90, 0.3);
+  color: #f2d89a;
+}
+
+body.theme-architecture-of-calm .batch-prose h3 {
+  margin-top: 2rem;
+  color: #9fc6d2;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+body.theme-architecture-of-calm .batch-prose table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  margin: 1.7rem 0;
+  border: 1px solid rgba(200, 164, 90, 0.28);
+  border-radius: 18px;
+  border-spacing: 0;
+  background: rgba(248, 241, 226, 0.055);
+}
+
+body.theme-architecture-of-calm .batch-prose th,
+body.theme-architecture-of-calm .batch-prose td {
+  min-width: 10rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(200, 164, 90, 0.18);
+  color: rgba(248, 241, 226, 0.9);
+  vertical-align: top;
+}
+
+body.theme-architecture-of-calm .batch-prose th {
+  color: #f2d89a;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body.theme-architecture-of-calm .batch-prose tr:last-child td {
+  border-bottom: 0;
+}
+
+.calm-figure {
+  position: relative;
+  overflow: hidden;
+  margin: 2.2rem 0;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid rgba(200, 164, 90, 0.38);
+  border-radius: 26px;
+  color: #22282b;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(143, 184, 200, 0.16), transparent 13rem),
+    linear-gradient(135deg, #fbf6e9, #ede1c8);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.46);
+}
+
+.calm-figure::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(62, 54, 40, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(62, 54, 40, 0.03) 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.7;
+}
+
+.calm-figure__label {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  color: #8a6a2e;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.calm-figure svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.calm-figure text {
+  fill: #293033;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-anchor: middle;
+}
+
+.calm-figure .calm-heading {
+  fill: #1f2528;
+  font-family: "Source Serif 4", serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.calm-figure .calm-small {
+  fill: #4e5a5f;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.calm-figure .calm-stone,
+.calm-figure .calm-paper {
+  fill: rgba(255, 255, 255, 0.5);
+  stroke: #8a8a80;
+  stroke-width: 3;
+}
+
+.calm-figure .calm-line,
+.calm-figure .calm-grid path,
+.calm-figure .calm-pencil,
+.calm-figure .calm-desk {
+  fill: none;
+  stroke: #596166;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.calm-figure .calm-line.thick,
+.calm-figure .calm-road {
+  fill: none;
+  stroke: #8a6a2e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
+
+.calm-figure .calm-accent-box,
+.calm-figure .calm-window,
+.calm-figure .calm-pillar,
+.calm-figure .calm-support {
+  fill: rgba(143, 184, 200, 0.2);
+  stroke: #8a6a2e;
+  stroke-width: 3;
+}
+
+.calm-figure .calm-garden,
+.calm-figure .calm-gold-line,
+.calm-figure .calm-icon {
+  fill: none;
+  stroke: #b38d3e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.calm-figure .calm-chaos {
+  fill: none;
+  stroke: #aa6650;
+  stroke-linecap: round;
+  stroke-width: 4;
+  opacity: 0.8;
+}
+
+.calm-figure .calm-alert,
+.calm-figure .calm-window-dot {
+  fill: rgba(200, 164, 90, 0.35);
+  stroke: #8a6a2e;
+  stroke-width: 3;
+}
+
+.calm-figure .calm-week circle {
+  fill: rgba(255, 255, 255, 0.56);
+  stroke: #8a6a2e;
+  stroke-width: 4;
+}
+
+.calm-figure .calm-week text {
+  font-size: 18px;
+}
+
+.calm-figure figcaption {
+  position: relative;
+  z-index: 1;
+  max-width: 54rem;
+  margin: 0.7rem auto 0;
+  color: #445057;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 /* Library UX upgrade: denser catalogue cards, signal discovery, and local reader tools. */
 .featured-book,
 .book-card,
@@ -3743,6 +3948,36 @@ body.theme-four-upgrades .batch-reader::after {
     linear-gradient(rgba(255, 159, 110, 0.045) 1px, transparent 1px),
     radial-gradient(circle at 72% 26%, rgba(79, 212, 255, 0.16), transparent 18rem);
   background-size: 44px 44px, 44px 44px, auto;
+}
+
+body.theme-architecture-of-calm .batch-world::before,
+body.theme-architecture-of-calm .batch-reader::before {
+  background:
+    radial-gradient(circle at 20% 14%, rgba(200, 164, 90, 0.18), transparent 25rem),
+    radial-gradient(circle at 80% 28%, rgba(143, 184, 200, 0.14), transparent 28rem),
+    linear-gradient(145deg, rgba(23, 27, 33, 0.92), rgba(41, 35, 29, 0.62), rgba(13, 20, 31, 0.88));
+}
+
+body.theme-architecture-of-calm .batch-world::after,
+body.theme-architecture-of-calm .batch-reader::after {
+  background:
+    radial-gradient(circle at 74% 22%, rgba(200, 164, 90, 0.12), transparent 18rem),
+    linear-gradient(90deg, rgba(200, 164, 90, 0.04) 1px, transparent 1px),
+    linear-gradient(rgba(143, 184, 200, 0.035) 1px, transparent 1px),
+    linear-gradient(115deg, transparent 0 32%, rgba(236, 226, 203, 0.07) 46%, transparent 62% 100%);
+  background-size: auto, 56px 56px, 56px 56px, auto;
+}
+
+body.theme-architecture-of-calm .batch-world-hero {
+  background:
+    radial-gradient(circle at 84% 34%, rgba(200, 164, 90, 0.16), transparent 18rem),
+    linear-gradient(135deg, rgba(236, 226, 203, 0.14), rgba(255, 255, 255, 0.028)),
+    rgba(18, 22, 31, 0.58);
+}
+
+body.theme-architecture-of-calm .batch-world-cover img {
+  aspect-ratio: auto;
+  border-radius: 18px;
 }
 
 .batch-world-hero {

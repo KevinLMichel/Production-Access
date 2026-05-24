@@ -70,6 +70,7 @@ function sectionLabel(order: number, subtitle?: string) {
         <section class="book-world-hero batch-world-hero" aria-labelledby="batch-title">
           <div class="book-world-hero__copy">
             <p class="eyebrow">{batchWorld.eyebrow}</p>
+            <StatusPill status={book.data.status} label={book.data.statusLabel} />
             <h1 id="batch-title">{batchWorld.heroTitle}</h1>
             {book.data.subtitle && <p class="book-world-hero__subtitle">{book.data.subtitle}</p>}
             <p class="book-world-hero__lede">{batchWorld.lede}</p>

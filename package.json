@@ -33,6 +33,7 @@
     "extract:session-three-book-worlds": "node scripts/extract-session-three-book-worlds.mjs",
     "extract:session-four-book-worlds": "node scripts/extract-session-four-book-worlds.mjs",
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",
+    "extract:architecture-calm": "node scripts/extract-architecture-calm-book.mjs",
     "extract:tao-maat": "node scripts/extract-tao-maat-book.mjs",
     "extract:will-to-fail": "node scripts/extract-will-to-fail-book.mjs",
     "preview": "astro preview",

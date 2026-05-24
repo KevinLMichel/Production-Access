@@ -479,6 +479,21 @@ export const batchBookWorlds = {
     accent2: "#cba6ff",
     glow: "rgba(255, 155, 106, 0.23)"
   },
+  "architecture-of-calm": {
+    eyebrow: "A Philosophical Press Edition",
+    heroTitle: "Calm is not an escape. It is architecture.",
+    lede:
+      "A work-in-progress manual for readers who became competent in storms and are ready to build a life that does not require crisis to feel real.",
+    promiseTitle: "Build steadiness before the room fills with smoke.",
+    promiseBody:
+      "The Architecture of Calm treats peace as a designed condition: sleep, breath, body, thresholds, rooms, boundaries, attention, challenge, recovery, and the quiet maintenance that makes a life more inhabitable.",
+    mapTitle: "From crisis-built house to quiet house",
+    cardHeading: "Calm-building tools",
+    cards: ["Chaos baseline audit", "Three-breath repair", "One-room reset", "30-day quiet house build"],
+    accent: "#c8a45a",
+    accent2: "#8fb8c8",
+    glow: "rgba(200, 164, 90, 0.2)"
+  },
   "7-laws-quantum-power": {
     eyebrow: "Ego, Essence, Intention, Field",
     heroTitle: "Power begins where thought, energy, and identity learn to move together.",
