@@ -509,6 +509,21 @@ export const batchBookWorlds = {
     accent2: "#8fb8c8",
     glow: "rgba(200, 164, 90, 0.2)"
   },
+  "consciousness-of-power": {
+    eyebrow: "Presence, Choice, Influence",
+    heroTitle: "Power begins where the operator wakes up.",
+    lede:
+      "A final-draft work-in-progress about becoming conscious of the forces moving you, then redesigning those forces into presence, choice, and clean influence.",
+    promiseTitle: "Move from being driven to becoming self-directed.",
+    promiseBody:
+      "The Consciousness of Power reframes power as interior authorship: the ability to notice the body signal, resist the seductive story, pause before reflex, install conscious defaults, and influence without performance.",
+    mapTitle: "Signal, story, pause, influence, will",
+    cardHeading: "Power practices",
+    cards: ["Machinery inventory", "Pre-speech scan", "Ten-second sovereignty", "Conscious default card"],
+    accent: "#b24d34",
+    accent2: "#d9b35f",
+    glow: "rgba(178, 77, 52, 0.23)"
+  },
   "7-laws-quantum-power": {
     eyebrow: "Ego, Essence, Intention, Field",
     heroTitle: "Power begins where thought, energy, and identity learn to move together.",

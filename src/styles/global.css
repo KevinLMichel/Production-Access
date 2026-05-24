@@ -2998,6 +2998,169 @@ body.theme-architecture-of-calm .batch-prose tr:last-child td {
   border-bottom: 0;
 }
 
+body.theme-consciousness-of-power .batch-prose {
+  color: rgba(248, 240, 221, 0.92);
+}
+
+body.theme-consciousness-of-power .batch-prose h2 {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(217, 179, 95, 0.24);
+  color: #f0ca78;
+}
+
+body.theme-consciousness-of-power .batch-prose table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  margin: 1.7rem 0;
+  border: 1px solid rgba(217, 179, 95, 0.28);
+  border-radius: 18px;
+  border-spacing: 0;
+  background: rgba(248, 240, 221, 0.055);
+}
+
+body.theme-consciousness-of-power .batch-prose th,
+body.theme-consciousness-of-power .batch-prose td {
+  min-width: 10rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(217, 179, 95, 0.17);
+  color: rgba(248, 240, 221, 0.9);
+  vertical-align: top;
+}
+
+body.theme-consciousness-of-power .batch-prose th {
+  color: #f0ca78;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.power-figure {
+  position: relative;
+  overflow: hidden;
+  margin: 2.2rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid rgba(217, 179, 95, 0.34);
+  border-radius: 26px;
+  color: #171a17;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(178, 77, 52, 0.16), transparent 13rem),
+    radial-gradient(circle at 78% 18%, rgba(217, 179, 95, 0.2), transparent 14rem),
+    linear-gradient(135deg, #f5ead2, #dec89b);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.36);
+}
+
+.power-figure__label {
+  margin-bottom: 0.6rem;
+  color: #8e3d2d;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.power-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.power-figure figcaption {
+  margin-top: 0.85rem;
+  color: rgba(23, 26, 23, 0.72);
+  font-size: 0.92rem;
+}
+
+.power-panel {
+  fill: rgba(16, 22, 20, 0.88);
+  stroke: rgba(217, 179, 95, 0.7);
+  stroke-width: 2;
+}
+
+.power-panel--light {
+  fill: rgba(255, 246, 224, 0.72);
+}
+
+.power-title,
+.power-small,
+.power-pause-text,
+.power-node text {
+  font-family: "Source Sans 3", sans-serif;
+  text-anchor: middle;
+}
+
+.power-title {
+  fill: #f5ead2;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.power-panel--light + .power-title,
+.power-small,
+.power-pause-text {
+  fill: #18201d;
+}
+
+.power-orbit,
+.power-machine,
+.power-rule,
+.power-path,
+.power-pause,
+.power-drop {
+  fill: none;
+  stroke: #b24d34;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
+
+.power-machine,
+.power-rule,
+.power-path,
+.power-pause,
+.power-drop {
+  stroke: #8f6e2d;
+}
+
+.power-eye {
+  fill: #d9b35f;
+}
+
+.power-small {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.power-node circle {
+  fill: rgba(255, 246, 224, 0.76);
+  stroke: rgba(143, 110, 45, 0.78);
+  stroke-width: 3;
+}
+
+.power-node--speech circle {
+  fill: rgba(178, 77, 52, 0.18);
+}
+
+.power-node text {
+  fill: #18201d;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+.power-pause-text {
+  fill: #8e3d2d;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .calm-figure {
   position: relative;
   overflow: hidden;
@@ -4018,6 +4181,39 @@ body.theme-architecture-of-calm .batch-world-hero {
 }
 
 body.theme-architecture-of-calm .batch-world-cover img {
+  aspect-ratio: auto;
+  border-radius: 18px;
+}
+
+body.theme-consciousness-of-power .batch-world::before,
+body.theme-consciousness-of-power .batch-reader::before {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(178, 77, 52, 0.24), transparent 26rem),
+    radial-gradient(circle at 84% 18%, rgba(217, 179, 95, 0.14), transparent 27rem),
+    radial-gradient(circle at 52% 78%, rgba(30, 35, 28, 0.34), transparent 36rem),
+    linear-gradient(145deg, rgba(9, 13, 17, 0.96), rgba(31, 25, 20, 0.7), rgba(7, 11, 18, 0.94));
+}
+
+body.theme-consciousness-of-power .batch-world::after,
+body.theme-consciousness-of-power .batch-reader::after {
+  background:
+    radial-gradient(circle at 74% 22%, rgba(217, 179, 95, 0.12), transparent 18rem),
+    radial-gradient(circle at 24% 62%, rgba(178, 77, 52, 0.12), transparent 18rem),
+    repeating-radial-gradient(circle at 62% 34%, rgba(217, 179, 95, 0.08) 0 1px, transparent 1px 28px),
+    linear-gradient(90deg, rgba(217, 179, 95, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(217, 179, 95, 0.026) 1px, transparent 1px);
+  background-size: auto, auto, auto, 54px 54px, 54px 54px;
+}
+
+body.theme-consciousness-of-power .batch-world-hero {
+  background:
+    radial-gradient(circle at 82% 30%, rgba(217, 179, 95, 0.17), transparent 18rem),
+    radial-gradient(circle at 14% 62%, rgba(178, 77, 52, 0.13), transparent 16rem),
+    linear-gradient(135deg, rgba(245, 234, 210, 0.12), rgba(255, 255, 255, 0.026)),
+    rgba(15, 20, 22, 0.64);
+}
+
+body.theme-consciousness-of-power .batch-world-cover img {
   aspect-ratio: auto;
   border-radius: 18px;
 }
