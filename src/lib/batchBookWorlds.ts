@@ -539,6 +539,21 @@ export const batchBookWorlds = {
     accent2: "#d9b35f",
     glow: "rgba(178, 77, 52, 0.23)"
   },
+  "machiavellian-dreams": {
+    eyebrow: "A Manual of Strategy and Shadow",
+    heroTitle: "Learn the wolf's grammar without surrendering the sheep.",
+    lede:
+      "A dark Renaissance strategy manual on dreams, ambition, influence, deception, conquest, and the ethical discipline of recognizing power games before they recognize you.",
+    promiseTitle: "Use the knowledge as shield, not sword.",
+    promiseBody:
+      "Machiavellian Dreams enters the throne room, armory, fortress, battlefield, shadows, and price of power. It keeps the ethical caution visible: understanding manipulation is not the same as worshiping it.",
+    mapTitle: "Caution, ambition, armory, conquest, shadow, cost",
+    cardHeading: "Strategic instruments",
+    cards: ["Ethical caution", "Throne of dreams", "Armory of influence", "Price of power"],
+    accent: "#9f2230",
+    accent2: "#c4c7cf",
+    glow: "rgba(159, 34, 48, 0.24)"
+  },
   "7-laws-quantum-power": {
     eyebrow: "Ego, Essence, Intention, Field",
     heroTitle: "Power begins where thought, energy, and identity learn to move together.",
