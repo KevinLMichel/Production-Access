@@ -38,6 +38,7 @@
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",
     "extract:architecture-calm": "node scripts/extract-architecture-calm-book.mjs",
     "extract:consciousness-power": "node scripts/extract-consciousness-power-book.mjs",
+    "extract:eternal-wisdom": "node scripts/extract-eternal-wisdom-book.mjs",
     "extract:tao-maat": "node scripts/extract-tao-maat-book.mjs",
     "extract:will-to-fail": "node scripts/extract-will-to-fail-book.mjs",
     "preview": "astro preview",

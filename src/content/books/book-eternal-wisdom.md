@@ -1,14 +1,25 @@
 ---
 title: "The Book of Eternal Wisdom"
-dek: "A wisdom text for readers seeking clarity, humility, and durable principles."
-description: "A catalogue record for a broad philosophical work on wisdom, conduct, and meaning."
-updated: 2026-05-21
-topics: ["wisdom", "philosophy", "meaning"]
-shelves: ["Featured", "Catalogue", "Coming Soon", "Poetry and Myth"]
+dek: "A sacred-modern wisdom text on creation, justice, mercy, humility, patience, leadership, family, seasons, shadow, and hope."
+description: "A readable online book-world for a broad philosophical and sacred-literary work on wisdom, conduct, covenant, compassion, justice, and durable hope."
+author: "Kevin L. Michel"
+status: "available"
+statusLabel: "Read online"
+editionLabel: "Digital library edition"
+updated: 2026-05-24
+cover: "/covers/book-eternal-wisdom.jfif"
+coverShape: "square"
+topics: ["wisdom", "philosophy", "sacred literature", "justice", "mercy", "humility", "patience", "hope"]
+shelves: ["Featured", "Catalogue", "Available Online", "Poetry and Myth", "Practical Philosophy"]
 featuredRank: 6
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/book-eternal-wisdom/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/book-eternal-wisdom/"
+    type: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+The Book of Eternal Wisdom is available as a full online reading experience in the Library.

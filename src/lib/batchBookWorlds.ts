@@ -14,6 +14,21 @@ export const batchBookWorlds = {
     accent2: "#e6c878",
     glow: "rgba(180, 71, 50, 0.22)"
   },
+  "book-eternal-wisdom": {
+    eyebrow: "Sacred-Modern Wisdom",
+    heroTitle: "Wisdom rises like a city between darkness and light.",
+    lede:
+      "A luminous wisdom text moving through creation, justice, mercy, humility, patience, leadership, family, seasons, shadow, and hope.",
+    promiseTitle: "Carry ancient counsel into the modern city.",
+    promiseBody:
+      "The Book of Eternal Wisdom gathers sacred-literary reflections into a practical path of conduct. It asks the reader to listen for wisdom, walk in truth and mercy, resist pride and greed, serve with justice, and keep hope alive through the valley of shadow.",
+    mapTitle: "Creation, wisdom, justice, mercy, humility, patience, hope",
+    cardHeading: "Wisdom practices",
+    cards: ["Hear wisdom's call", "Balance truth and mercy", "Practice humble strength", "Carry hope through shadow"],
+    accent: "#0fb2c5",
+    accent2: "#f0b84d",
+    glow: "rgba(15, 178, 197, 0.24)"
+  },
   "refractions-of-the-real": {
     eyebrow: "A Manual for Self-Directed Beings",
     heroTitle: "Reality is not a wall. It is a lens, a frame, and a responsibility.",
