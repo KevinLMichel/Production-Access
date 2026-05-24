@@ -94,11 +94,31 @@
 @page poem:left {
   margin-left: 0.62in;
   margin-right: 0.74in;
+
+  @top-left {
+    color: #4b5563;
+    content: "Kevin L. Michel";
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 }
 
 @page poem:right {
   margin-left: 0.74in;
   margin-right: 0.62in;
+
+  @top-right {
+    color: #4b5563;
+    content: "I Am What Happens";
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 }
 
 @page poem:first {
