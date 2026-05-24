@@ -448,6 +448,81 @@ export const batchBookWorlds = {
     accent: "#ffb84d",
     accent2: "#72e6b5",
     glow: "rgba(255, 184, 77, 0.22)"
+  },
+  "die-auferstehung-des-marcus-aurelius": {
+    eyebrow: "Moderne Meditationen",
+    heroTitle: "Ein alter Stoiker erwacht in einer Welt aus Bildschirmen, Stimmen und neuen Prüfungen.",
+    lede:
+      "A German-language Stoic meditation on identity, digital reality, moderation, relationships, courage, wisdom, and mortality in modern life.",
+    promiseTitle: "Bring Stoic steadiness into the modern storm.",
+    promiseBody:
+      "Die Auferstehung des Marcus Aurelius imagines Stoic counsel crossing into the digital age. It asks how virtue, attention, courage, and mortality change when the forum becomes a screen and the old questions return in new clothes.",
+    mapTitle: "Identity, reality, moderation, courage, mortality",
+    cardHeading: "Stoic meditations",
+    cards: ["Digital identity", "Reality and attention", "Moderation in excess", "Mortality as compass"],
+    accent: "#d9b35f",
+    accent2: "#9db6ff",
+    glow: "rgba(217, 179, 95, 0.2)"
+  },
+  "i-am-what-happens": {
+    eyebrow: "A Mystical Poem of Hunger and God",
+    heroTitle: "The pilgrim carves toward the divine, and the hunger answers back.",
+    lede:
+      "A poetic spiritual journey through longing, forms, beloved presence, trials, illumination, and return.",
+    promiseTitle: "Follow longing until it becomes revelation.",
+    promiseBody:
+      "I Am What Happens moves like a symbolic pilgrimage: the wanderer enters longing, meets forms, encounters the beloved, survives trials, receives illumination, and returns with a stranger fire.",
+    mapTitle: "Longing, forms, beloved, trials, illumination, return",
+    cardHeading: "Pilgrim passages",
+    cards: ["Longing as gate", "Forms and emptiness", "The beloved revealed", "Return with fire"],
+    accent: "#ff9b6a",
+    accent2: "#cba6ff",
+    glow: "rgba(255, 155, 106, 0.23)"
+  },
+  "7-laws-quantum-power": {
+    eyebrow: "Ego, Essence, Intention, Field",
+    heroTitle: "Power begins where thought, energy, and identity learn to move together.",
+    lede:
+      "A metaphysical self-development guide to seven laws of quantum power: ego and essence, intentional creation, attraction, expanded perception, visualization, balance, and unified-field actualization.",
+    promiseTitle: "Make inner alignment feel like an operating law.",
+    promiseBody:
+      "The 7 Laws of Quantum Power treats manifestation as a disciplined inner architecture. It blends poetic metaphysics with practices for intention, energy, visualization, balance, and participation in a larger field.",
+    mapTitle: "Essence, intention, attraction, expansion, destiny",
+    cardHeading: "Quantum laws",
+    cards: ["Ego and essence", "Intentional creation", "Energetic balance", "Unified-field actualization"],
+    accent: "#9d7cff",
+    accent2: "#61e8ff",
+    glow: "rgba(157, 124, 255, 0.24)"
+  },
+  "science-law-attraction": {
+    eyebrow: "How It Works, Why It Works",
+    heroTitle: "Attraction becomes useful when belief learns to meet behavior.",
+    lede:
+      "A practical bridge between law-of-attraction ideas and psychology, visualization, confidence, habit formation, biology, and resilient action.",
+    promiseTitle: "Give manifestation a working mechanism.",
+    promiseBody:
+      "The Science of the Law of Attraction connects expectation, self-efficacy, neural priming, body language, goal-setting, neuroplasticity, and daily practice into a grounded system for change.",
+    mapTitle: "Expectation, signal, practice, biology, integration",
+    cardHeading: "Attraction mechanics",
+    cards: ["Expectancy and mindset", "Visualization and priming", "Confidence signals", "Habits and integration"],
+    accent: "#73e0ff",
+    accent2: "#f6c768",
+    glow: "rgba(115, 224, 255, 0.22)"
+  },
+  "theory-ordered-sacrifice": {
+    eyebrow: "Power, Transcendence, Civilization",
+    heroTitle: "Civilization survives when power bows to meaning before it demands obedience.",
+    lede:
+      "A philosophical argument about voluntary sacrifice, tyranny, transcendence, faith, art, beauty, collapse cycles, and civilizational renewal.",
+    promiseTitle: "Understand the choice beneath political order.",
+    promiseBody:
+      "The Theory of Ordered Sacrifice frames civilization as a struggle between raw power and transcendent order. It asks whether societies can recover meaning, faith, beauty, service, and restraint before power becomes its own justification.",
+    mapTitle: "Power, sacrifice, collapse, restoration",
+    cardHeading: "Civilization questions",
+    cards: ["Power or transcendence?", "Why civilizations crumble", "Voluntary sacrifice", "Beauty as civic order"],
+    accent: "#f0c06a",
+    accent2: "#d95f5f",
+    glow: "rgba(240, 192, 106, 0.22)"
   }
 } as const;
 

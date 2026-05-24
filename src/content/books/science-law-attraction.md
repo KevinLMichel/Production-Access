@@ -1,14 +1,23 @@
 ---
 title: "The Science of the Law of Attraction"
 subtitle: "How It Works, Why It Works"
-dek: "A plain-language exploration of belief, attention, action, and manifestation."
-description: "A catalogue record for a work connecting law-of-attraction ideas with practical psychology and action."
-updated: 2026-05-21
-topics: ["manifestation", "psychology", "attention"]
-shelves: ["Catalogue", "Coming Soon", "Mind and Reality"]
+dek: "A practical bridge between law-of-attraction ideas, psychology, visualization, confidence, habits, and action."
+description: "A complete online book-world for a work connecting manifestation language with expectancy, self-efficacy, neural priming, goal-setting, biology, resilience, and daily practice."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-24
+cover: "/covers/science-law-attraction.jfif"
+coverShape: "square"
+topics: ["law of attraction", "psychology", "visualization", "habits", "confidence", "manifestation"]
+shelves: ["Catalogue", "Available Online", "Mind and Reality", "Self Development"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/science-law-attraction/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/science-law-attraction/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.

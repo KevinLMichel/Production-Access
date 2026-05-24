@@ -1,0 +1,49 @@
+---
+bookSlug: "i-am-what-happens"
+title: "Return and Revelation"
+subtitle: "Chapter 6"
+part: "I Am What Happens"
+order: 5
+summary: "On a quiet dawn where valley meets wood, A traveler appeared where none had been, Along a path near where the hermit stood In earlier places, when journey did begin."
+updated: "2026-05-24"
+---
+
+On a quiet dawn where valley meets wood, A traveler appeared where none had been, Along a path near where the hermit stood In earlier places, when journey did begin. This traveler walked calmly, a subtle grace, Wearing a plain brown shawl, mien genuine. Yet something luminous shone in his face, Though humble his pace, as of one who knows And needs not rush, for all is in its place. Villagers from the trial vale arose To see who approached-some recognized him, The kind stranger who eased their cruel woes.
+
+Whisper ran through them: “It’s him, though eyes dim We thought he perished on dangerous road.” They gathered, timid joy at every limb. He greeted each by name though time had flowed, Remembering their faces, wounds and fears- They marveled: “How long our paths since you showed?” For to them, many months had passed in tears, But to him, the journey was beyond time, His transformation unbound by our years. He stayed with them again, and without chime Healed the sick with just research and a prayer, The famine ended as crops longed for life.
+
+Rain came gentle that spring, the fields grew fair; Those bandits he’d met returned, now changed men, Bringing supplies and building homes with care. The armies from war’s brink-news traveled then- Had signed a truce, leaders influenced By a wanderer’s courage, remembering when. Our traveler worked humbly, not pretenced As holy above, but each task he met- From mending shoes to teaching with patience. Wherever he went, hearts and minds were set Alight by his presence quiet and pure, He listened deeply to all in regret.
+
+When asked what faith he followed, to assure If he was prophet, or wizard, or saint, He answered simply, “One beyond borders. All faiths hold truth, all hearts in love acquaint. I come not to build another temple, But to help each soul from darkness to faint.” He spoke with authority yet gentle, Quoting scriptures of many a tradition With ease, making each as his own supple. Transformation came not by derision But by parables that made people think, Challenging dogmas with loving vision.
+
+In one town’s square, near a fountain’s brink, He engaged a scholar and a priest both, On nature of truth from which all men drink. The priest insisted salvation was growth Only through his creed’s exclusive portal. The scholar argued reason was the troth- If not empirical, truth’s chaff mortal. They turned to the pilgrim for his reply. He answered with a story, not chortle: “Once a traveler, parched under midday sky, Found a well guarded by a stern old man. ‘Only my bucket draws water,’ his cry.
+
+Another wanderer came with his plan, Saying, ‘No rope but mine can reach the deep.’ They argued which way was the proper span While the traveler still thirsted in keep. Tiring, he simply clambered down the wall, And drank from the source where waters do leap. Truth’s well is abundant, and gives to all; Buckets and ropes are our creeds and logic- Useful, but secondary in the call. Better we climb down to taste-to frolic In direct experience of the source, Than die of thirst amid debates prologic.”
+
+Some folks gasped; the priest saw threat of course To authority; the scholar, offense At a truth beyond mind’s experimental force. But most laughed gently, and saw the sense: That love and direct seeking of the Real Trump quarrels over method and defense. The priest, to save face, said with wounded zeal, “So you claim all religions equal stand?” The traveler replied, “No, not ideal, For each is unique as each culture’s hand. But all hands can lift the soul to what’s right, If the heart within beats love as command.”
+
+Rumors of a wise teacher shone bright Traveled afar to ears of city grand, And from Beloved City came invite. The pilgrim returned there at the demand Of old friends-the children now grown in grace, The elders who recalled him leaving land. He found the city flourishing, a place That had sent emissaries to all sides, Spreading seeds of knowledge, healing and place. They welcomed him with festival besides, Honoring not him (for he would not allow), But the truth he carried under disguise.
+
+In the Temple, he spoke from oculus glow, Not from scripture scroll or doctrine’s decree, But sharing fruits of the journey’s long flow. His words juxtaposed Eastern and Western tree Into one garland of wisdom and love, Stressing virtues of integrity. He taught that the search itself is enough, That questions when honest can lead to light, That doubt can refine instead of rebuff. He urged compassion, that we must unite In care for each other, all life as kin, For the divine spark in all is alight.
+
+There were controversial points within: He cautioned priests not to hoard divine grace, Challenged kings that the poor’s plight is their sin. Subtle his language, never naming face, But those with ears to hear knew the aim- Corrupt in power grew red in disgrace. Yet because he spoke not in anger flame But in sorrow that such potential bleeds, His censure cut deep yet left little blame. People left inspired to better deeds, Not just in awe of the mystic speaker, But resolved to plant love’s humble seeds.
+
+After the talk, as twilight crowned with stars, He wandered to garden ‘neath olive tree Where he first had vision that healed his scars. A familiar presence then he could see- The Sufi woman, or was it the guide, Or the sage? It was all, smiling calmly. He bowed low, they embraced with no more pride Between them, for they were truly one Soul Now meeting itself on life’s other side. No words were needed; in silence whole They communicated gratitude and joy. At length the figure spoke, “The final goal
+
+Is realized, yet work remains, dear boy.” The traveler laughed, for he was quite old In years by now, though spirit in buoy. “Yes, always the work. But with heart of gold It becomes dance and song, not mere duty. I will carry on until body cold Returns to dust. Then what comes, let it be.” The figure nodded and slowly faded, Merging into night as subtle beauty. He remained by the tree, bliss pervaded, Until a young acolyte found him there, To escort him where kindly bed was laid.
+
+He lived among city folk for a year, Teaching by day, in meditation deep At night, bridging earth with heavenly sphere. Yet he knew soon his promise he must keep- To return to where it started, forest gloom, To the hermit or whoever gave leap. Thus one morning, quiet as dawn in bloom, He left city’s warmth for the wild again, Following memory’s signal through glume. The road seemed shorter; he knew it attain When twilight found him by the ancient wood, The same dark forest where he met the pain.
+
+Entering beneath that canopy stood Just as in youth, but now unafraid Of shadows whispering fear as they would. He followed instinct, a spirit conveyed, To find that clearing where stone doorway gaped; He half-wondered if hermit still replayed. To his surprise, by moon’s light that draped, He found the very rock by cedar lined, But broken in two as if earth quaked. The portal was gone, just ruin assigned. He stepped into the glade and found no man, No hermit waiting with wisdom opined.
+
+Instead, at center, a small fire began- Crackling orange, newly lit, inviting. He approached slowly, and saw of a span A circle of stones set round as writing. The fire beckoned him closer to sit; As he did so, the woods came alighting. From behind trunks, figures came to flit: The hermit in red, the hooded guide dark, The white-robed sage, the Sufi exquisite, The elder, the child, and more to remark- Faces from all moments and trials severe. They ringed him silently, each a soul-mark.
+
+He realized these were forms held most dear In journey, but more-archetypes of soul, The Beloved’s masks to draw him near. They glowed faint, each like an aureole, Neither fully flesh nor phantom mere, As if present and absent on patrol. Then from the fire a voice crystal clear: “Thou art returned, and we are well pleased. The wood of the world thou hast carved sincere, Not into idol, but icon that eased The path for others to glimpse the divine. Thus hunger transmuted to love increased.”
+
+All in the circle nodded in design. The pilgrim spoke out, voice echoing strong, Addressing them all or That in their sign: “It was you who guided me all along- But you are me as well, I understand. The line between self and other is gone. Thus carving the god from hunger so grand Only succeeded once I shattered the ‘I’. Now whatever you ask, I’ll do at hand.” The figures smiled in unison to imply Approval. The hermit stepped forth and said, “Your tale must be told so others might try.”
+
+The hooded guide: “In hearts must you embed The truth that seeking is a sacred art.” The sage: “That emptiness and form be wed.” The Sufi: “That love’s fire be lit in heart.” The elder: “That wisdom with compassion blend.” The child: “That innocence and wonder never depart.” All voices together: “Go forth, dear friend, In the world of men your journey goes on. This moment closes, another will impend.” He bowed to each, then by break of dawn They vanished like mist, one final farewell. He stood alone as new day was born.
+
+He quenched the fire and left the glade as well, Heart full, steps light, though tears in eyes did swell- Not of sorrow, but joy’s overflowing bell. He realized a circle had been traveled, From hunger to wholeness, all drama befell. A final thought in his mind unraveled, As tolling bell or last line to infer, To etch what his entire journey marveled:
+
+“I am what happens when you try to carve God from the wood of your own hunger.”

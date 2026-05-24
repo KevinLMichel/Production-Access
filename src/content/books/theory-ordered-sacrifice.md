@@ -1,14 +1,23 @@
 ---
 title: "The Theory of Ordered Sacrifice"
 subtitle: "Power, Transcendence, and the Struggle for Civilization"
-dek: "A serious philosophical work on sacrifice, civilization, power, and transcendence."
-description: "A catalogue record for a major philosophical work about the role of sacrifice in order, power, and civilization."
-updated: 2026-05-21
-topics: ["civilization", "power", "sacrifice", "transcendence"]
-shelves: ["Catalogue", "Coming Soon", "Mind and Reality"]
+dek: "A philosophical argument about power, meaning, sacrifice, truth, faith, beauty, and the conditions of civilizational order."
+description: "A complete online book-world for a serious philosophical work on voluntary sacrifice, tyranny, transcendence, collapse cycles, faith, art, beauty, and civic renewal."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-24
+cover: "/covers/theory-ordered-sacrifice.jfif"
+coverShape: "square"
+topics: ["civilization", "power", "sacrifice", "transcendence", "meaning", "faith"]
+shelves: ["Catalogue", "Available Online", "Mind and Reality", "Civilization"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/theory-ordered-sacrifice/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/theory-ordered-sacrifice/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.
