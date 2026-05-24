@@ -1,4 +1,19 @@
 export const batchBookWorlds = {
+  "new-prince-hard-times": {
+    eyebrow: "A Field Guide for Hard Times",
+    heroTitle: "Become harder to deceive without becoming cruel.",
+    lede:
+      "A civic survival field manual for inflation, layoffs, rent pressure, war, administrative gates, mutual aid, and local power.",
+    promiseTitle: "Private discipline, public justice, local courage.",
+    promiseBody:
+      "The New Prince of Hard Times teaches household steadiness without pretending private discipline can replace public accountability. It moves from crisis weather into records, reserves, neighbors, source notes, and lawful pressure.",
+    mapTitle: "From permanent crisis to useful local power",
+    cardHeading: "Field manual tools",
+    cards: ["Hard Times Triangle", "Emergency liquidity", "Administrative go-bag", "Local power map"],
+    accent: "#b44732",
+    accent2: "#e6c878",
+    glow: "rgba(180, 71, 50, 0.22)"
+  },
   "refractions-of-the-real": {
     eyebrow: "A Manual for Self-Directed Beings",
     heroTitle: "Reality is not a wall. It is a lens, a frame, and a responsibility.",

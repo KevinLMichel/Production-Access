@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "asset:new-prince-cover": "node scripts/generate-new-prince-cover-asset.mjs",
     "book:cover:fragmented": "node scripts/build-fragmented-cover.mjs",
     "book:cover:freedom": "node scripts/build-freedom-cover.mjs",
     "book:cover:i-am-what-happens": "node scripts/build-i-am-what-happens-cover.mjs",
@@ -31,6 +32,7 @@
     "extract:batch-book-worlds": "node scripts/extract-batch-book-worlds.mjs",
     "extract:kindness-algorithm": "node scripts/extract-kindness-algorithm-book.mjs",
     "extract:mental-toughness-dreams": "node scripts/extract-mental-toughness-dreams-book.mjs",
+    "extract:new-prince-book-world": "node scripts/extract-new-prince-book-world.mjs",
     "extract:session-three-book-worlds": "node scripts/extract-session-three-book-worlds.mjs",
     "extract:session-four-book-worlds": "node scripts/extract-session-four-book-worlds.mjs",
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",

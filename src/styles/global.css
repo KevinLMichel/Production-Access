@@ -3950,6 +3950,48 @@ body.theme-four-upgrades .batch-reader::after {
   background-size: 44px 44px, 44px 44px, auto;
 }
 
+body.theme-new-prince-hard-times .batch-world::before,
+body.theme-new-prince-hard-times .batch-reader::before {
+  background:
+    radial-gradient(circle at 18% 14%, rgba(180, 71, 50, 0.24), transparent 26rem),
+    radial-gradient(circle at 82% 18%, rgba(230, 200, 120, 0.14), transparent 28rem),
+    radial-gradient(circle at 50% 82%, rgba(72, 81, 58, 0.2), transparent 34rem),
+    linear-gradient(145deg, rgba(10, 14, 20, 0.96), rgba(26, 25, 20, 0.72), rgba(8, 13, 25, 0.94));
+}
+
+body.theme-new-prince-hard-times .batch-world::after,
+body.theme-new-prince-hard-times .batch-reader::after {
+  background:
+    radial-gradient(circle at 78% 24%, rgba(180, 71, 50, 0.12), transparent 18rem),
+    linear-gradient(90deg, rgba(230, 200, 120, 0.045) 1px, transparent 1px),
+    linear-gradient(rgba(230, 200, 120, 0.035) 1px, transparent 1px),
+    repeating-linear-gradient(155deg, rgba(180, 71, 50, 0.045) 0 1px, transparent 1px 34px),
+    linear-gradient(115deg, transparent 0 34%, rgba(230, 200, 120, 0.06) 48%, transparent 64% 100%);
+  background-size: auto, 52px 52px, 52px 52px, auto, auto;
+}
+
+body.theme-new-prince-hard-times .batch-world-hero {
+  background:
+    radial-gradient(circle at 82% 28%, rgba(180, 71, 50, 0.16), transparent 18rem),
+    linear-gradient(135deg, rgba(238, 226, 205, 0.11), rgba(255, 255, 255, 0.025)),
+    rgba(16, 21, 24, 0.62);
+}
+
+body.theme-new-prince-hard-times .batch-world-cover img {
+  border-radius: 18px;
+}
+
+body.theme-new-prince-hard-times .batch-prose table {
+  overflow: hidden;
+  border: 1px solid rgba(230, 200, 120, 0.22);
+  border-radius: 14px;
+  background: rgba(255, 245, 223, 0.035);
+}
+
+body.theme-new-prince-hard-times .batch-prose td:empty::after {
+  content: "\00a0";
+}
+
 body.theme-architecture-of-calm .batch-world::before,
 body.theme-architecture-of-calm .batch-reader::before {
   background:
