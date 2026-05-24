@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/eb-garamond/eb-garamond-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/eb-garamond/eb-garamond-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/eb-garamond/eb-garamond-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/eb-garamond/eb-garamond-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.74in 0.62in 0.82in;
+}
+
+@page :left {
+  margin-left: 0.62in;
+  margin-right: 0.74in;
+}
+
+@page :right {
+  margin-left: 0.74in;
+  margin-right: 0.62in;
+}
+
+@page front {
+  margin: 0.78in 0.7in;
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page toc {
+  margin: 0.78in 0.68in;
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page divider {
+  margin: 0.78in 0.7in;
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page poem {
+  margin-top: 0.74in;
+  margin-bottom: 0.82in;
+
+  @bottom-center {
+    color: #4b5563;
+    content: counter(page);
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+@page poem:left {
+  margin-left: 0.62in;
+  margin-right: 0.74in;
+}
+
+@page poem:right {
+  margin-left: 0.74in;
+  margin-right: 0.62in;
+}
+
+@page poem:first {
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page :blank {
+  @bottom-center {
+    content: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #171717;
+  font-family: "EB Garamond", "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.34;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+ol {
+  margin-top: 0;
+}
+
+.half-title-page,
+.title-page,
+.copyright-page,
+.invocation-page,
+.form-note-page,
+.toc-page,
+.final-inscription-page,
+.about-author-page {
+  break-after: page;
+  page: front;
+}
+
+.toc-page {
+  page: toc;
+}
+
+.half-title-page,
+.title-page,
+.final-inscription-page {
+  align-items: center;
+  display: flex;
+  min-height: 6.9in;
+  text-align: center;
+}
+
+.half-title-page {
+  justify-content: center;
+}
+
+.half-title-page h1,
+.title-page h1 {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+.half-title-page h1 {
+  font-size: 24pt;
+}
+
+.title-page h1 {
+  font-size: 34pt;
+  margin: 0.18in auto;
+  max-width: 4in;
+}
+
+.title-eyebrow,
+.title-author,
+.movement-roman,
+.toc-roman {
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title-eyebrow {
+  color: #57534e;
+  font-size: 7.8pt;
+}
+
+.title-subtitle {
+  font-size: 14pt;
+  font-style: italic;
+  line-height: 1.25;
+  margin: 0 auto 0.48in;
+  max-width: 3.65in;
+}
+
+.title-author {
+  font-size: 8.8pt;
+}
+
+.copyright-page {
+  font-size: 8.7pt;
+  line-height: 1.42;
+  padding-top: 0.08in;
+}
+
+.copyright-page p {
+  margin-bottom: 0.14in;
+}
+
+.invocation-page h1,
+.form-note-page h1,
+.toc-page h1,
+.about-author-page h1 {
+  font-size: 20pt;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 0.28in;
+}
+
+.invocation-page {
+  padding-top: 0.05in;
+  text-align: center;
+}
+
+.invocation-poem p {
+  font-size: 12.1pt;
+  line-height: 1.28;
+  margin: 0 0 0.17in;
+}
+
+.invocation-poem span,
+.final-inscription-page span {
+  display: block;
+}
+
+.form-note-page {
+  font-size: 9.8pt;
+  line-height: 1.34;
+}
+
+.form-note-page p {
+  margin-bottom: 0.12in;
+}
+
+.form-note-page .note-question {
+  font-size: 11.5pt;
+  font-style: italic;
+  line-height: 1.25;
+  margin: 0.18in 0;
+  text-align: center;
+}
+
+.toc-page ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-page li {
+  border-bottom: 0.65pt solid rgba(23, 23, 23, 0.18);
+  break-inside: avoid;
+  padding: 0.105in 0;
+}
+
+.toc-entry {
+  display: grid;
+  gap: 0.12in;
+  grid-template-columns: 0.38in minmax(0, 1fr) 0.38in;
+}
+
+.toc-entry::after {
+  content: target-counter(attr(data-target url), page);
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 8.2pt;
+  font-weight: 700;
+  text-align: right;
+}
+
+.toc-roman {
+  color: #57534e;
+  font-size: 7.5pt;
+}
+
+.toc-title {
+  font-size: 11.3pt;
+}
+
+.book-body {
+  counter-reset: movement;
+}
+
+.movement-opener {
+  align-items: center;
+  break-after: right;
+  break-before: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 6.9in;
+  page: divider;
+  text-align: center;
+}
+
+.movement-symbol {
+  height: 0.72in;
+  margin-bottom: 0.22in;
+  position: relative;
+  width: 0.72in;
+}
+
+.movement-symbol::before,
+.movement-symbol::after {
+  border: 0.75pt solid #171717;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movement-symbol::before {
+  border-radius: 999px;
+  height: 0.48in;
+  width: 0.48in;
+}
+
+.movement-symbol::after {
+  height: 0.34in;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0.34in;
+}
+
+.movement-opener--root .movement-symbol::after {
+  border-left: 0;
+  border-top: 0;
+  height: 0.45in;
+  transform: translate(-50%, -38%) rotate(45deg);
+}
+
+.movement-opener--chalice .movement-symbol::before {
+  border-radius: 0 0 999px 999px;
+  border-top: 0;
+  height: 0.28in;
+  top: 40%;
+}
+
+.movement-opener--flame .movement-symbol::after {
+  border-radius: 999px 999px 999px 0;
+}
+
+.movement-opener--path .movement-symbol::before {
+  border-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  height: 0.54in;
+}
+
+.movement-opener--gate .movement-symbol::before {
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+}
+
+.movement-opener--circle .movement-symbol::after {
+  border-radius: 999px;
+  height: 0.18in;
+  width: 0.18in;
+}
+
+.movement-roman {
+  font-size: 8.4pt;
+  margin-bottom: 0.16in;
+}
+
+.movement-opener h1 {
+  font-size: 13pt;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.06in;
+}
+
+.movement-opener h2 {
+  font-size: 25pt;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.02;
+  margin-bottom: 0.26in;
+  text-transform: uppercase;
+}
+
+.movement-threshold {
+  font-size: 10.5pt;
+  font-style: italic;
+  line-height: 1.32;
+  margin: 0 auto;
+  max-width: 3in;
+}
+
+.movement-text {
+  break-before: right;
+  page: poem;
+}
+
+.movement-text__header {
+  margin-bottom: 0.3in;
+  padding-top: 0.32in;
+  text-align: center;
+}
+
+.movement-text__header p {
+  color: #57534e;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 7.6pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.08in;
+}
+
+.movement-text__header h1 {
+  font-size: 19pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.04;
+  text-transform: uppercase;
+}
+
+.poem-body {
+  orphans: 3;
+  text-align: left;
+  widows: 3;
+}
+
+.poem-stanza {
+  font-size: 10.9pt;
+  line-height: 1.29;
+  margin: 0 0 0.16in;
+}
+
+.poem-line {
+  display: block;
+  padding-left: 0.16in;
+  text-indent: -0.16in;
+}
+
+.final-inscription-page {
+  break-before: right;
+  justify-content: center;
+}
+
+.final-inscription-page p {
+  font-size: 17pt;
+  font-style: italic;
+  line-height: 1.34;
+  margin: 0 auto;
+  max-width: 3.3in;
+}
+
+.about-author-page {
+  break-before: page;
+  font-size: 10.6pt;
+  line-height: 1.42;
+  padding-top: 1.12in;
+}
+
+.about-author-page p {
+  margin-bottom: 0;
+}

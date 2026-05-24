@@ -45,6 +45,9 @@ const currentIndex = sections.findIndex((entry) => entry.id === section.id);
 const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
 const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
 const wordCount = getChapterWordCount(section);
+const downloadFormat = book.data.formats.find(
+  (format) => format.href && (format.href.toLowerCase().endsWith(".pdf") || format.label.toLowerCase().includes("download"))
+);
 const themeStyle = `--batch-accent: ${batchWorld.accent}; --batch-accent-2: ${batchWorld.accent2}; --batch-glow: ${batchWorld.glow};`;
 
 function sectionLabel(order: number, subtitle?: string) {
@@ -64,6 +67,7 @@ function sectionLabel(order: number, subtitle?: string) {
       <strong>{sectionLabel(section.data.order, section.data.subtitle)}</strong>
       <nav>
         <a href={`/books/${book.id}/#section-map`}>All sections</a>
+        {downloadFormat && <a href={downloadFormat.href} target="_blank" rel="noopener noreferrer">Download PDF</a>}
         <a href="/books/">Library catalogue</a>
       </nav>
     </aside>

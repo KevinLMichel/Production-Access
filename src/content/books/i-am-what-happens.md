@@ -14,10 +14,16 @@ formats:
   - label: "Start Reading"
     href: "/books/i-am-what-happens/"
     status: "available"
+  - label: "Download PDF"
+    href: "/downloads/i-am-what-happens-kevin-l-michel.pdf"
+    status: "available"
 links:
   - label: "Start Reading"
     href: "/books/i-am-what-happens/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/i-am-what-happens-kevin-l-michel.pdf"
+    kind: "download"
 ---
 
 This complete online edition is available to read in the Library.

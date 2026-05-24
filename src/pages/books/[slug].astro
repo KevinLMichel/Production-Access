@@ -47,6 +47,9 @@ const sections = isBatchWorld ? await getBookChapters(book.id) : [];
 const parts = groupChaptersByPart(sections);
 const firstSection = sections[0];
 const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(section), 0);
+const downloadFormat = book.data.formats.find(
+  (format) => format.href && (format.href.toLowerCase().endsWith(".pdf") || format.label.toLowerCase().includes("download"))
+);
 const themeStyle = batchWorld
   ? `--batch-accent: ${batchWorld.accent}; --batch-accent-2: ${batchWorld.accent2}; --batch-glow: ${batchWorld.glow};`
   : "";
@@ -72,6 +75,7 @@ function sectionLabel(order: number, subtitle?: string) {
             <p class="book-world-hero__lede">{batchWorld.lede}</p>
             <div class="hero__actions">
               {firstSection && <a class="button button--primary" href={chapterHref(firstSection)}>Start reading</a>}
+              {downloadFormat && <a class="button button--ghost" href={downloadFormat.href} target="_blank" rel="noopener noreferrer">Download PDF</a>}
               <a class="button button--ghost" href="#section-map">Explore sections</a>
               <a class="text-link" href="/books/">Return to Library</a>
             </div>

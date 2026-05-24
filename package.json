@@ -17,6 +17,7 @@
     "book:cover:subconscious": "node scripts/build-subconscious-cover.mjs",
     "book:pdf:fragmented": "node scripts/build-fragmented-pdf.mjs",
     "book:pdf:freedom": "node scripts/build-freedom-pdf.mjs",
+    "book:pdf:i-am-what-happens": "node scripts/build-i-am-what-happens-pdf.mjs",
     "book:pdf:kindness": "node scripts/build-kindness-pdf.mjs",
     "book:pdf:mental-toughness": "node scripts/build-mental-toughness-pdf.mjs",
     "book:pdf:steam": "node scripts/build-steam-pdf.mjs",
@@ -42,6 +43,7 @@
     "astro": "^6.3.1"
   },
   "devDependencies": {
+    "@fontsource/eb-garamond": "^5.2.7",
     "@vivliostyle/cli": "^10.6.0",
     "pdf-lib": "^1.17.1",
     "puppeteer-core": "^25.0.4"

@@ -69,6 +69,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 46 pages at 5.5 x 8.5 inches.
 
+## I Am What Happens PDF
+
+Regenerate the downloadable I Am What Happens interior PDF after movement changes:
+
+```powershell
+npm run book:pdf:i-am-what-happens
+```
+
+The generated file is committed at `public/downloads/i-am-what-happens-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 86 pages at 5.5 x 8.5 inches.
+
 ## The Subconscious Advantage PDF
 
 Regenerate the downloadable The Subconscious Advantage interior PDF after chapter changes:

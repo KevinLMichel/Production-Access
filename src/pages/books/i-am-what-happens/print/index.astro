@@ -1,0 +1,219 @@
+---
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "I Am What Happens",
+  subtitle: "When You Try to Carve God from the Wood of Your Own Hunger",
+  author: "Kevin L. Michel"
+};
+
+const movementOrdinals = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"];
+const movementRomans = ["I", "II", "III", "IV", "V", "VI"];
+const movementThresholds = [
+  "A forest. A hunger. A god not yet born.",
+  "A chalice. A desert. The mind stripped bare.",
+  "A city. A song. Love wearing golden light.",
+  "A valley. A wound. Service under ash.",
+  "An oak. A gate. The self undone by fire.",
+  "A circle. A dawn. The hunger returned as gift."
+];
+const movementSymbols = ["root", "chalice", "flame", "path", "gate", "circle"];
+const finalInscription = [
+  "I am what happens",
+  "when you try to carve God",
+  "from the wood",
+  "of your own hunger."
+];
+
+const invocation = [
+  ["For the one who mistook hunger for holiness,", "and still kept walking."],
+  ["For the one who carved an altar", "from ache,", "from absence,", "from the old wood of wanting."],
+  ["For the one who entered the forest", "with no lamp but longing,", "and found that every shadow", "was asking to be seen."],
+  ["Let this book be a threshold."],
+  [
+    "Let the reader come barefoot in spirit,",
+    "without weapon,",
+    "without certainty,",
+    "without the proud little crown",
+    "of being right."
+  ],
+  ["Let the false gods fall gently", "where they must fall."],
+  ["Let the true fire survive them."],
+  ["Let every wound become a doorway,", "every question become a road,", "every road become a return."],
+  ["And when the final hunger is spent,", "may what remains", "be wide enough", "to hold the soul."]
+];
+
+const formNoteParagraphs = [
+  "This book is written as a continuous allegorical poem in six movements.",
+  "It follows a wanderer through forest, desert, city, valley, mountain, and return. These places are not meant only as locations. They are inner territories. The forest is the first confusion of the soul. The desert is the mind stripped of noise. The city is the vision of love and unity. The valley is the world’s suffering. The mountain is the place of surrender. The return is the test of whether revelation can become service.",
+  "The poem draws from several streams of wisdom, including mystical Christianity, Platonism, Sufi devotion, Buddhist emptiness, mythic pilgrimage, and the older language of sacred trial. No single tradition is treated as a cage for truth. Each appears as a vessel, a symbol, a voice, a lamp held for a while in the dark.",
+  "The central question of the book is simple, though it takes the whole journey to approach it:",
+  "What happens when the soul tries to make God out of its own hunger?",
+  "At first, hunger leads the seeker forward. It gives him motion, courage, dissatisfaction, and the refusal to live by lesser answers. Yet hunger also deceives. It can carve idols from fear, ambition, loneliness, grief, and desire. It can mistake intensity for truth. It can bow before what it has secretly made.",
+  "The journey of the wanderer is therefore a journey of purification. He does not reject longing. He follows it until longing reveals its own limits. He learns that truth cannot be possessed as an object, that love cannot be hoarded as private bliss, and that illumination has no value unless it returns to the broken world with compassion in its hands.",
+  "The form of the book is intentionally elevated, ceremonial, and old in sound. Its language reaches toward the feeling of scripture, epic, parable, and prayer. The reader is invited to move through it slowly. This is not a book designed to be consumed in haste. It is meant to be entered.",
+  "Some passages may be read as philosophy. Some as spiritual allegory. Some as myth. Some as the record of one soul learning to stop worshiping its own need.",
+  "The title speaks from the far side of that transformation.",
+  "I am what happens when you try to carve God from the wood of your own hunger."
+];
+
+const aboutAuthor =
+  "Kevin L. Michel writes philosophical, poetic, civic, and self-development works for readers trying to live with more clarity, courage, discipline, imagination, and inner authority. His books move between practical strategy, mythic reflection, spiritual allegory, and the everyday work of becoming more fully human.";
+
+const chapters = await getBookChapters("i-am-what-happens");
+const movements = chapters.map((chapter, index) => ({
+  chapter,
+  printId: `movement-${index + 1}`,
+  roman: movementRomans[index],
+  ordinal: movementOrdinals[index],
+  threshold: movementThresholds[index],
+  symbol: movementSymbols[index],
+  stanzas: toStanzas(chapter.body ?? "", index === chapters.length - 1)
+}));
+
+function toStanzas(body: string, isFinalMovement: boolean) {
+  const finalSentence = "I am what happens when you try to carve God from the wood of your own hunger.";
+  const cleaned = isFinalMovement
+    ? body.replace(/[\s\r\n]*[“"]I am what happens when you try to carve God from the wood of your own hunger\.[”"]\s*$/u, "")
+    : body;
+
+  return cleaned
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.replace(/\s+/g, " ").trim())
+    .filter(Boolean)
+    .map((paragraph) => ({
+      lines: splitVerseLines(paragraph)
+    }));
+}
+
+function splitVerseLines(paragraph: string) {
+  const lines: string[] = [];
+  const lineRegex = /(.+?[,:;.!?][”"]?)(?=\s+[A-Z“"‘]|\s*$)/gu;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = lineRegex.exec(paragraph)) !== null) {
+    const line = match[1].trim();
+    if (line) lines.push(line);
+    lastIndex = lineRegex.lastIndex;
+  }
+
+  const rest = paragraph.slice(lastIndex).trim();
+  if (rest) lines.push(rest);
+
+  return lines.length ? lines : [paragraph];
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="half-title-page" aria-label="Half title">
+      <h1>{book.title}</h1>
+    </section>
+
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">A poetic allegorical epic in six movements</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owner, except as permitted by law.
+      </p>
+      <p>
+        This book is a literary, poetic, spiritual, and philosophical work. It is provided for informational, educational, artistic, and self-reflective purposes only and does not constitute medical, psychological, legal, financial, spiritual, or other professional advice.
+      </p>
+      <p>
+        References to traditions, archetypes, beliefs, practices, and historical streams of thought are used for literary, symbolic, educational, and commentary purposes. All trademarks and trade names are the property of their respective owners.
+      </p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <section class="invocation-page" aria-label="Invocation">
+      <h1>Invocation</h1>
+      <div class="invocation-poem">
+        {invocation.map((stanza) => <p>{stanza.map((line) => <span>{line}</span>)}</p>)}
+      </div>
+    </section>
+
+    <section class="form-note-page" aria-label="A Note on the Form">
+      <h1>A Note on the Form</h1>
+      {formNoteParagraphs.map((paragraph, index) => (
+        <p class:list={[index === 4 || index === 10 ? "note-question" : ""]}>{paragraph}</p>
+      ))}
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          movements.map((movement) => (
+            <li>
+              <div class="toc-entry" data-target={`#${movement.printId}`}>
+                <span class="toc-roman">{movement.roman}</span>
+                <span class="toc-title">{movement.ordinal} Movement: {movement.chapter.data.title}</span>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        movements.map((movement) => (
+          <>
+            <section class:list={["movement-opener", `movement-opener--${movement.symbol}`]} id={movement.printId}>
+              <div class="movement-symbol" aria-hidden="true"></div>
+              <p class="movement-roman">{movement.roman}</p>
+              <h1>{movement.ordinal} Movement</h1>
+              <h2>{movement.chapter.data.title}</h2>
+              <p class="movement-threshold">{movement.threshold}</p>
+            </section>
+
+            <article class="movement-text">
+              <header class="movement-text__header">
+                <p>{movement.roman}</p>
+                <h1>{movement.chapter.data.title}</h1>
+              </header>
+              <div class="poem-body">
+                {
+                  movement.stanzas.map((stanza) => (
+                    <p class="poem-stanza">
+                      {stanza.lines.map((line) => <span class="poem-line">{line}</span>)}
+                    </p>
+                  ))
+                }
+              </div>
+            </article>
+          </>
+        ))
+      }
+    </main>
+
+    <section class="final-inscription-page" aria-label="Final inscription">
+      <p>{finalInscription.map((line) => <span>{line}</span>)}</p>
+    </section>
+
+    <section class="about-author-page" aria-label="About the Author">
+      <h1>About the Author</h1>
+      <p>{aboutAuthor}</p>
+    </section>
+  </body>
+</html>
