@@ -74,16 +74,42 @@ const movements = chapters.map((chapter, index) => ({
 function toStanzas(body: string, isFinalMovement: boolean) {
   const finalSentence = "I am what happens when you try to carve God from the wood of your own hunger.";
   const cleaned = isFinalMovement
-    ? body.replace(/[\s\r\n]*[“"]I am what happens when you try to carve God from the wood of your own hunger\.[”"]\s*$/u, "")
+    ? removeFinalInscription(body, finalSentence)
     : body;
 
   return cleaned
+    .replace(/\r\n?/gu, "\n")
+    .replace(/<br\s*\/?>[ \t]*(?:\n)?/giu, "\n")
     .split(/\n{2,}/)
-    .map((paragraph) => paragraph.replace(/\s+/g, " ").trim())
+    .map((paragraph) => paragraph.replace(/[ \t]+/g, " ").trim())
     .filter(Boolean)
     .map((paragraph) => ({
-      lines: splitVerseLines(paragraph)
+      lines: splitPoemLines(paragraph)
     }));
+}
+
+function removeFinalInscription(body: string, finalSentence: string) {
+  const escapedSentence = finalSentence.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const lineatedSentence = finalSentence
+    .split(/\s+/)
+    .map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .join("(?:\\s|<br\\s*\\/?>)+");
+  const finalPattern = new RegExp(
+    `[\\s\\r\\n]*(?:[“”"']\\s*)?(?:${escapedSentence}|${lineatedSentence})(?:\\s*[“”"'])?\\s*$`,
+    "iu"
+  );
+
+  return body.replace(finalPattern, "");
+}
+
+function splitPoemLines(paragraph: string) {
+  const sourceLines = paragraph
+    .split(/\n+/)
+    .map((line) => line.replace(/[ \t]+/g, " ").trim())
+    .filter(Boolean);
+
+  if (sourceLines.length > 1) return sourceLines;
+  return splitVerseLines(sourceLines[0] ?? paragraph);
 }
 
 function splitVerseLines(paragraph: string) {

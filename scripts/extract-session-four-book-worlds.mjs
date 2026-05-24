@@ -9,6 +9,10 @@ const inputDir =
   path.join(root, "Book Files and images for Book Access Detail", "Session Four");
 const outputBase = path.join(root, "src", "content", "book-chapters");
 const updated = "2026-05-24";
+const requestedSlugs = (process.env.BOOK_ACCESS_SESSION_FOUR_SLUGS ?? "")
+  .split(",")
+  .map((slug) => slug.trim())
+  .filter(Boolean);
 
 const books = [
   {
@@ -23,7 +27,8 @@ const books = [
     title: "I Am What Happens",
     source: "I_Am_What_Happens_extracted_from_KDP.docx",
     expected: 6,
-    mode: "chapter-list"
+    mode: "chapter-list",
+    preserveLineBreaks: true
   },
   {
     slug: "7-laws-quantum-power",
@@ -232,7 +237,7 @@ function isSubheading(record) {
 }
 
 function recordToMarkdown(record) {
-  let text = normalizeTitle(record.text);
+  let text = record.preserveLineBreaks ? cleanText(record.text) : normalizeTitle(record.text);
   if (!text) return "";
   if (record.german) text = repairGermanHyphenation(text);
   if (record.asSubheading) return `## ${text}`;
@@ -315,7 +320,7 @@ function parseChapterList(book, records) {
       continue;
     }
     if (!current || shouldSkipFrontMatter(book, text) || /^Chapter \d:/.test(text)) continue;
-    current.records.push({ ...record, asSubheading: false });
+    current.records.push({ ...record, preserveLineBreaks: book.preserveLineBreaks, asSubheading: false });
   }
 
   if (current) sections.push(current);
@@ -495,6 +500,13 @@ async function writeBook(book) {
   console.log(`${book.slug}: ${sections.length} sections`);
 }
 
-for (const book of books) {
+const selectedBooks = requestedSlugs.length ? books.filter((book) => requestedSlugs.includes(book.slug)) : books;
+const missingSlugs = requestedSlugs.filter((slug) => !books.some((book) => book.slug === slug));
+
+if (missingSlugs.length) {
+  throw new Error(`Unknown Session Four book slug(s): ${missingSlugs.join(", ")}`);
+}
+
+for (const book of selectedBooks) {
   await writeBook(book);
 }
