@@ -1,13 +1,22 @@
 ---
 title: "Stamped Identity"
-dek: "A work on labels, identity, social pressure, and self-definition."
-description: "A catalogue record for a book exploring the identities placed upon us and the identities we choose."
-updated: 2026-05-21
-topics: ["identity", "society", "self-definition"]
-shelves: ["Catalogue", "Coming Soon", "Mind and Reality"]
+dek: "A symbolic work on labels, marks, identity, social pressure, and self-definition."
+description: "A complete online book-world for a compact symbolic work about the identities placed upon us, the signals we inherit, and the names we learn to choose."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/stamped-identity.jfif"
+coverShape: "square"
+topics: ["identity", "society", "self-definition", "symbols", "belonging"]
+shelves: ["Catalogue", "Available Online", "Mind and Reality"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/stamped-identity/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/stamped-identity/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.

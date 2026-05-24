@@ -3838,6 +3838,14 @@ body.theme-four-upgrades .batch-reader::after {
     min-height: auto;
   }
 
+  .home-page .hero::before,
+  .home-page .hero::after,
+  .home-page .library-dashboard::before {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
   .home-page .hero__copy::before {
     left: 0;
     opacity: 0.5;

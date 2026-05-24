@@ -1,0 +1,41 @@
+---
+bookSlug: "virtue-of-the-gods"
+title: "Maximum Virtue"
+subtitle: "Maximum Virtue"
+part: "The First Letter to Aloysius"
+order: 3
+summary: "For Aloysius, it is not acceptable that you should be weak. There is no eternal law, force, or deity that is forbidding you from achieving the extremes of greatness for all eternity."
+updated: "2026-05-23"
+---
+
+For Aloysius, it is not acceptable that you should be weak. There is no eternal law, force, or deity that is forbidding you from achieving the extremes of greatness for all eternity. Yes, it may seem that your life is short compared to the apparent infinity of the universe, and yes, your life appears short when compared to the myths of Zeus, Apollo, or Kratos. The seeming shortness of your life is an illusion, for certainly your life can be as long as you choose it to be, and even longer still. Shall your life cease tomorrow, or shall it end one million years hence, the reality from your perspective is that your life endured for all of time. Your terminal breath shall be a long breath out, and the time between that last exhale and the next inhale, shall be the balance of eternity. In the intervening moment between those breaths you shall not have awareness of an infinity of occurrences throughout the universe, but that is only a miniscule difference between that infinity of none awareness which you have right now.
+
+Aloysius, it shall serve you well to develop the aptitude for deep breathing, and focused awareness in your daily life. Now inhale through the nose, and then hold it for five seconds, and then exhale for seven seconds through the mouth; then inhale for five, then exhale for seven, and then in again, then, after the next exhale, you wait for the passage of all remaining time and existence. Even as your body decays, the next breath in, shall be pending - those are the breaths of an eternal being.
+
+As a human, you do not ask for permission to inhale, and you request no guarantee of life, neither life eternal nor even life in the next moment. For you are life, and life persists for as long as you persist - yet nothing is promised. The threat of death carries no weight for someone who has no need for the breath nor need for any specific pleasant accommodation.
+
+“Whoever tries to save his life will lose it, but whoever loses his life will preserve it.” - Luke 17:34
+
+Aloysius, I quote that line not because it is the truth, for no faith has a monopoly on truth, and it is well known that not one of the many great books was written by a god - all by their own admission, have been the works of man. I focus on the Christian book since it is the most prevalent in your culture, that book having been written by man and as with all such books, alleged to have been inspired by god. Mind you, the very same man wrote that book who, if we follow the logic, is capable of “bearing false witness against [his] neighbor.” Why would an all powerful god ask you Aloysius to trust the words of your fellow dishonest man, and then to have you punished for all eternity if you fail to be so gullible? The Christian god knows that man is dishonest, thus the commandment forbidding the “bearing of false witness.” If god thought man to be honest then that commandment would have been unnecessary. An all powerful god would never entrust the fate of your soul to the words of dishonest human beings. I can assure you that an all powerful god would speak to you directly on matters that relate to the fate of your soul. A human being who is seeking to control and deceive you would say to you “do not question the book, for it is holy,” and to “trust in faith.” An all powerful god would not establish blind faith to be a virtue, for blind faith is a virtue only of fools. Blind faith is not a virtue of the gods. Foolishness is not a virtue of the gods. I understand that so many of us, as children, were told that faith is a virtue, but faith is no virtue. Faith is lazy. Faith is an unwillingness to engage in investigation and reason. Faith is for the blind and a powerful god would want you to clearly see the truth, without ambiguity, so that you may choose the right path.
+
+“When I was a child, I spoke as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things.” - 1 Corinthians 13:11
+
+Aloysius you know that man has lied to you, because no god would say to you that you must bow down and worship. You are not asked to be subservient, and if any god asks you to be subservient, and to worship him/her, then that is not a powerful god, for powerful gods need nothing added to them. Mighty gods do not crave your worship, your admiration, or your flattery. Those are not desires of gods, those are desires of men.
+
+The gods do not listen to prayers, for their reasoning is countless steps in advance of our own, and essentially every event to unfold has been considered or even adjudicated through their own will. However the gods do not propose that the future is fixed, and they expect of us that we act responsibly and take the action we can to determine our own fate. If you seek to pray, the gods respect it most when your prayers take the form of measurable goals, actions, and sustained processes. From the perspective of the gods, to say “thoughts and prayers” as a response to situations within our control, is both a sin and a taunt. Spare your thoughts and prayers, and get to work.
+
+What can be said of the gods, can also be said of man, that is, the gods admire in man the virtues that are in their own image. Exempli gratia, the gods admire strength, the gods admire courage, and the gods admire wisdom - to state this differently, the gods admire the virtues that are godlike. Aloysius, you are called to get off of your knees, and to embody the virtue of the gods, and to be your true nature, which is the nature of the gods. In this first of seven letters, I share with you the virtues of the gods that you would do well to emulate if you are to be one who can stand in the company of the gods, and if you are to live a life of significance whilst in this universe. No doubt the first virtue is the willingness to think, and to question, and to engage in reasoning and logistical processes.
+
+Having the virtue of the gods and being able to stand confidently in the presence of the gods is not about pleasing your ego - having the virtue of the gods and being able to stand with them is about making a better world, and making a difference. It is ultimately about feeding the hungry, healing the sick, and building up the capabilities of the poor. That Aloysius, if you are to be truly virtuous, is what you must do - feed the hungry, heal the sick, and strengthen, house, and clothe the poor. Is that not what has been said were the actions of the Christian god in his time on earth? For I promise you, much of the truth has been lost in translation, and much of the original documentation was falsified, and warped by man’s own malevolence, and twisted to serve man’s own ego and predilections, and crafted by groupings of men seeking control over the squalid masses - and if the other gods were to put you up for trial, I can declare to you that the questions asked will not be:
+
+“Did you wear the correct hat?”
+
+“Did you mix linen and wool?”
+
+“What specific religion did you follow? Was it the right religion? Did you decipher the nature of the real prophet?”
+
+“Did you eat an unclean meat?”
+
+“Did you do things at the moment when the Earth was at a certain point in the celestial orbit?”
+
+Those are not the questions! I assure you, that is not the test. You shall be queried regarding your contributions to the quality of life of your fellow man, helping, feeding, clothing, healing, you know, godlike stuff, not trivial, benign, or banal things. There are questions about care and concern for your fellow man. There are no questions about penises and how to use them and where they should go - those are childish and silly things, suitable for petty and small minds. I know Aloysius that you do not see the gods as being so petty that they would spend their time talking about rituals, and specific days, and what meats were eaten and when. Those are not the concerns of mighty gods, those are blatantly and manifestly the concerns of the weakest and most manipulative of men.

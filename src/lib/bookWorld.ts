@@ -32,5 +32,5 @@ export function readingTimeFromWords(words: number) {
 }
 
 export function getChapterWordCount(chapter: BookChapter) {
-  return chapter.body.split(/\s+/).filter(Boolean).length;
+  return (chapter.body ?? "").split(/\s+/).filter(Boolean).length;
 }

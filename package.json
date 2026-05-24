@@ -29,6 +29,7 @@
     "extract:batch-book-worlds": "node scripts/extract-batch-book-worlds.mjs",
     "extract:kindness-algorithm": "node scripts/extract-kindness-algorithm-book.mjs",
     "extract:mental-toughness-dreams": "node scripts/extract-mental-toughness-dreams-book.mjs",
+    "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",
     "extract:tao-maat": "node scripts/extract-tao-maat-book.mjs",
     "extract:will-to-fail": "node scripts/extract-will-to-fail-book.mjs",
     "preview": "astro preview",

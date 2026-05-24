@@ -133,6 +133,156 @@ export const batchBookWorlds = {
     accent: "#8ac7ff",
     accent2: "#f0b35a",
     glow: "rgba(138, 199, 255, 0.22)"
+  },
+  "alpha-tennis-blueprint": {
+    eyebrow: "Neuroscience, Strategy, and Court Command",
+    heroTitle: "The match is played with a racket, but it is won through signal, space, and nerve.",
+    lede:
+      "A tennis performance manual for players who want strategy, neuroscience, pressure control, body language, and competitive presence working as one system.",
+    promiseTitle: "Turn court pressure into organized advantage.",
+    promiseBody:
+      "Alpha Tennis Blueprint treats dominance as a trainable pattern: chemistry, territory, rhythm, momentum, flow, longevity, and the mental habits that carry a competitor beyond the baseline.",
+    mapTitle: "From win chemistry to the infinite game",
+    cardHeading: "Competitive tools",
+    cards: ["Win chemistry", "Territory control", "Pressure conversion", "Flow and longevity"],
+    accent: "#76f0ff",
+    accent2: "#f5c15f",
+    glow: "rgba(118, 240, 255, 0.22)"
+  },
+  "behind-the-gates": {
+    eyebrow: "A Gatekeeper Fiction",
+    heroTitle: "When truth is hidden for the public good, the gate becomes a prison.",
+    lede:
+      "A speculative story about secrecy, managed knowledge, hidden privilege, and the people who discover that order can become another name for control.",
+    promiseTitle: "Enter the architecture of concealed power.",
+    promiseBody:
+      "Behind the Gates moves from escape narrative into institutional memoir and classified fragments, asking what happens when guardians of public stability begin to fear the public itself.",
+    mapTitle: "Glimmer, message, flight, archive",
+    cardHeading: "Gate questions",
+    cards: ["Who controls truth?", "What does safety hide?", "When does order decay?", "What survives disclosure?"],
+    accent: "#ff6f61",
+    accent2: "#73d6ff",
+    glow: "rgba(255, 111, 97, 0.2)"
+  },
+  "first-principles-everyday-wins": {
+    eyebrow: "Science for Work and Life",
+    heroTitle: "When the noise gets loud, return to the few things that make the system move.",
+    lede:
+      "A plain-language toolkit for using first principles, decision science, physics, biology, and practical systems thinking in everyday choices.",
+    promiseTitle: "Think from causes, then build the next useful move.",
+    promiseBody:
+      "First Principles, Everyday Wins turns abstract science into workday tools: define the real problem, reason from base rates, reduce friction, protect recovery, and design better decisions.",
+    mapTitle: "Problem, model, decision, leverage, life",
+    cardHeading: "Plain-language tools",
+    cards: ["Find the real problem", "Use base rates", "Lower friction", "Design for resilience"],
+    accent: "#7fdcff",
+    accent2: "#ffd36c",
+    glow: "rgba(127, 220, 255, 0.21)"
+  },
+  "more-than-matter": {
+    eyebrow: "Mind in a Physical World",
+    heroTitle: "Matter may explain much, but experience still asks its own question.",
+    lede:
+      "A philosophical and science-facing guide to consciousness, first-person evidence, brains, bodies, machines, animals, and the stakes of personhood.",
+    promiseTitle: "Think about mind without flattening mystery into fog.",
+    promiseBody:
+      "More Than Matter gives readers a structured way to weigh consciousness theories, thought experiments, clinical evidence, machine minds, animal experience, and the ethical consequences of every answer.",
+    mapTitle: "Experience, evidence, theory, ethics",
+    cardHeading: "Consciousness lenses",
+    cards: ["First-person evidence", "Brain-body tests", "Big theories", "Ethical stakes"],
+    accent: "#9ae8ff",
+    accent2: "#d3b3ff",
+    glow: "rgba(154, 232, 255, 0.22)"
+  },
+  "safe-to-speak": {
+    eyebrow: "Speech, Panic, and Civic Repair",
+    heroTitle: "A free society has to protect speech without teaching people to fear the square.",
+    lede:
+      "A civic guide to free speech, nonviolence, democratic security, attention engines, public forums, and the hard work of repairing trust.",
+    promiseTitle: "Protect the forum without surrendering the republic to panic.",
+    promiseBody:
+      "Safe to Speak argues for a public life where adversaries remain adversaries, not enemies; where speech is protected; and where communities learn practical guardrails against violence and viral panic.",
+    mapTitle: "Line, argument, settlement, repair",
+    cardHeading: "Civic safeguards",
+    cards: ["Nonviolence compact", "Secure forums", "Virality guardrails", "Adult citizenship"],
+    accent: "#6ee7ff",
+    accent2: "#ffcf7a",
+    glow: "rgba(110, 231, 255, 0.22)"
+  },
+  "stamped-identity": {
+    eyebrow: "Marks, Signals, and Self-Definition",
+    heroTitle: "Every age stamps people. The question is whether the mark becomes a cage.",
+    lede:
+      "A compact symbolic work about identity, labels, signals, belief, and the old human struggle to name oneself before the world does.",
+    promiseTitle: "Read the marks without becoming only the mark.",
+    promiseBody:
+      "Stamped Identity follows makers, clay tablets, signals, roads, brands, and digital code as images of social identity and the deeper choice of self-definition.",
+    mapTitle: "Mark, signal, road, code",
+    cardHeading: "Identity symbols",
+    cards: ["The maker's mark", "Signal and belief", "Mercury's road", "Zeroes and ones"],
+    accent: "#ff9e64",
+    accent2: "#f2dfad",
+    glow: "rgba(255, 158, 100, 0.22)"
+  },
+  "subconscious-mind-wealth": {
+    eyebrow: "Program Your Mind to Be Rich",
+    heroTitle: "Wealth begins as a pattern the mind can rehearse before the world can count it.",
+    lede:
+      "A compact wealth-mindset work about subconscious programming, belief, mental defaults, and mind hacks for abundance.",
+    promiseTitle: "Train the wealth pattern underneath the decision.",
+    promiseBody:
+      "Subconscious Mind Wealth focuses on the force and function of the automatic mind, the way rich and poor patterns are learned, and practical mental hacks for changing one's relationship with money.",
+    mapTitle: "Different defaults, deeper functions, wealth hacks",
+    cardHeading: "Mind-wealth prompts",
+    cards: ["Rich defaults", "Subconscious functions", "Belief programming", "Wealth creation hacks"],
+    accent: "#64f0b8",
+    accent2: "#f7d56d",
+    glow: "rgba(100, 240, 184, 0.2)"
+  },
+  "everyday-strategist": {
+    eyebrow: "Classic Power for Daily Life",
+    heroTitle: "Strategy is not a costume for ambition. It is how judgment learns to move.",
+    lede:
+      "A practical guide translating classic strategy and laws of power into everyday decisions about work, relationships, negotiation, influence, and legacy.",
+    promiseTitle: "Use strategy without becoming false.",
+    promiseBody:
+      "The Everyday Strategist teaches readers how to understand power, build alliances, handle conflict, advance careers, use social capital, and carry influence with responsibility.",
+    mapTitle: "Foundation, relation, career, society, legacy",
+    cardHeading: "Strategy moves",
+    cards: ["Read power", "Build trust", "Negotiate cleanly", "Leave a legacy"],
+    accent: "#f4b65f",
+    accent2: "#7edcff",
+    glow: "rgba(244, 182, 95, 0.22)"
+  },
+  "uninstrument": {
+    eyebrow: "A Republic of Shadows Novel",
+    heroTitle: "A person is not an instrument just because power has learned how to hold them.",
+    lede:
+      "A literary-philosophical novel of vigil, exile, hidden paths, fractured harmony, shadow, and the refusal to become merely useful to another will.",
+    promiseTitle: "Follow the republic where harmony breaks and remakes itself.",
+    promiseBody:
+      "The Uninstrument moves through a Republic of Shadows story-world where grief, discord, and political force test whether the self can remain more than a tool in someone else's hand.",
+    mapTitle: "Founding, vigil, void, sanctuary, dawn",
+    cardHeading: "Shadow-world forces",
+    cards: ["Refusal", "Discord", "Harmony", "Dawn after shadow"],
+    accent: "#a68cff",
+    accent2: "#67e0ff",
+    glow: "rgba(166, 140, 255, 0.22)"
+  },
+  "virtue-of-the-gods": {
+    eyebrow: "The First Letter to Aloysius",
+    heroTitle: "Do not kneel before small gods when the test is to become more fully alive.",
+    lede:
+      "A letter-form philosophical work on virtue, courage, strength, divinity, trial by fire, and the human refusal to live beneath possible greatness.",
+    promiseTitle: "Stand inside the fire with a larger idea of virtue.",
+    promiseBody:
+      "Virtue of the Gods addresses Aloysius in the mode of counsel and provocation, asking what kind of strength, service, courage, and self-command would deserve admiration from gods worth naming.",
+    mapTitle: "Letter, virtue, fire, farewell",
+    cardHeading: "Virtue tests",
+    cards: ["Maximum virtue", "Fire as trial", "Service as measure", "Confidence without worship"],
+    accent: "#ffd166",
+    accent2: "#ff7a5c",
+    glow: "rgba(255, 209, 102, 0.22)"
   }
 } as const;
 

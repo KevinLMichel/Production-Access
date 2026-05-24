@@ -1,14 +1,23 @@
 ---
 title: "More Than Matter"
 subtitle: "Rethinking Mind in a Physical World"
-dek: "A philosophical work on consciousness, mind, matter, and the limits of reduction."
-description: "A catalogue record for a book questioning what mind is and how it fits inside a physical world."
-updated: 2026-05-21
-topics: ["mind", "consciousness", "philosophy"]
-shelves: ["New & Active", "Catalogue", "Coming Soon", "Mind and Reality"]
+dek: "A philosophical and science-facing guide to consciousness, mind, matter, and the limits of reduction."
+description: "A complete online book-world for readers thinking through consciousness, first-person experience, neuroscience, physicalism, emergence, panpsychism, machines, animals, and personhood."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/more-than-matter.jfif"
+coverShape: "portrait"
+topics: ["mind", "consciousness", "philosophy", "neuroscience", "matter", "ethics"]
+shelves: ["New & Active", "Catalogue", "Available Online", "Mind and Reality"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/more-than-matter/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/more-than-matter/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.

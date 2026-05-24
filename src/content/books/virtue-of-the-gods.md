@@ -1,14 +1,23 @@
 ---
 title: "Virtue of the Gods"
 subtitle: "The First Letter to Aloysius"
-dek: "A letter-form work on virtue, power, and divine imagination."
-description: "A catalogue record for a philosophical letter to Aloysius on virtue, gods, and human becoming."
-updated: 2026-05-21
-topics: ["virtue", "letters", "philosophy"]
-shelves: ["Catalogue", "Coming Soon", "Poetry and Myth"]
+dek: "A letter-form work on virtue, courage, divinity, trial, and human becoming."
+description: "A complete online book-world for the first letter to Aloysius, exploring godlike virtue, strength, courage, service, fire, and the refusal to live beneath one's possible stature."
+status: "available"
+statusLabel: "Read online"
+updated: 2026-05-23
+cover: "/covers/virtue-of-the-gods.jfif"
+coverShape: "portrait"
+topics: ["virtue", "letters", "philosophy", "courage", "myth", "becoming"]
+shelves: ["Catalogue", "Available Online", "Poetry and Myth", "Mind and Reality"]
 formats:
-  - label: "Details coming soon"
-    status: "planned"
+  - label: "Start Reading"
+    href: "/books/virtue-of-the-gods/"
+    status: "available"
+links:
+  - label: "Start Reading"
+    href: "/books/virtue-of-the-gods/"
+    kind: "read"
 ---
 
-This record is ready for future links, editions, excerpts, or a dedicated book site.
+This complete online edition is available to read in the Library.
