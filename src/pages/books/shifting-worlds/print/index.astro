@@ -1,0 +1,223 @@
+---
+import { render } from "astro:content";
+import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "Shifting Worlds",
+  subtitle: "Harnessing the Power of Mental Models for Success and Wellness",
+  author: "Kevin L. Michel"
+};
+
+const aboutAuthor =
+  "Kevin L. Michel writes practical philosophy, self-development, poetic, civic, and symbolic works for readers trying to live with more clarity, courage, discipline, imagination, and inner authority. His books move between mental models, inner discipline, mythic reflection, practical strategy, and the everyday work of becoming more fully human.";
+
+const indexEntries = [
+  { term: "action as proof", targets: ["chapter-8", "chapter-17", "conclusion"] },
+  { term: "Alcaraz, Carlos", targets: ["chapter-5"] },
+  { term: "Aim Protocol", targets: ["chapter-8"] },
+  { term: "attention", targets: ["introduction", "chapter-4"] },
+  { term: "attention diet", targets: ["chapter-4"] },
+  { term: "Bannister, Roger", targets: ["chapter-8"] },
+  { term: "balance", targets: ["chapter-14"] },
+  { term: "Biles, Simone", targets: ["chapter-12"] },
+  { term: "body as instrument", targets: ["chapter-12"] },
+  { term: "boundaries", targets: ["chapter-18"] },
+  { term: "Bryant, Kobe", targets: ["chapter-11"] },
+  { term: "Curry, Stephen", targets: ["chapter-19"] },
+  { term: "Daily Shift Protocol", targets: ["chapter-17"] },
+  { term: "Dyson, James", targets: ["chapter-16", "chapter-19"] },
+  { term: "emotion", targets: ["chapter-5"] },
+  { term: "evidence logs", targets: ["chapter-16"] },
+  { term: "failure as feedback", targets: ["chapter-11"] },
+  { term: "Honnold, Alex", targets: ["chapter-15"] },
+  { term: "identity", targets: ["chapter-9"] },
+  { term: "Kipchoge, Eliud", targets: ["chapter-8"] },
+  { term: "language", targets: ["chapter-6"] },
+  { term: "mental model engineering", targets: ["chapter-16"] },
+  { term: "mental models", targets: ["introduction", "chapter-1", "chapter-16"] },
+  { term: "model attraction", targets: ["chapter-7"] },
+  { term: "Moving Star Journal", targets: ["chapter-20"] },
+  { term: "opportunity", targets: ["chapter-10"] },
+  { term: "parallel worlds", targets: ["chapter-2", "chapter-20"] },
+  { term: "Phelps, Michael", targets: ["chapter-15"] },
+  { term: "prosperity", targets: ["chapter-19"] },
+  { term: "Ragettli, Andri", targets: ["chapter-10", "chapter-20"] },
+  { term: "relationships", targets: ["chapter-18"] },
+  { term: "relief ladder", targets: ["chapter-13"] },
+  { term: "resilience", targets: ["chapter-11"] },
+  { term: "Serena Williams", targets: ["chapter-12"] },
+  { term: "Shared World Reset", targets: ["chapter-18"] },
+  { term: "Small Signal Practice", targets: ["chapter-17"] },
+  { term: "stress", targets: ["chapter-13"] },
+  { term: "success model", targets: ["chapter-8"] },
+  { term: "visualization", targets: ["chapter-15"] },
+  { term: "wealth and value creation", targets: ["chapter-19"] },
+  { term: "wellness", targets: ["chapter-12"] },
+  { term: "work and creativity", targets: ["chapter-19"] }
+];
+
+const sections = await getBookChapters("shifting-worlds");
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const { Content } = await render(section);
+    return {
+      section,
+      Content,
+      printId: sectionId(section.data.order),
+      label: sectionLabel(section.data.order)
+    };
+  })
+);
+
+function sectionLabel(order: number) {
+  if (order === 0) return "Introduction";
+  if (order === 21) return "Conclusion";
+  return `Chapter ${order}`;
+}
+
+function sectionId(order: number) {
+  if (order === 0) return "introduction";
+  if (order === 21) return "conclusion";
+  return `chapter-${order}`;
+}
+
+function partId(part: string) {
+  return part
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function partTitle(part: string) {
+  return part.replace(/^Part\s+[IVX]+\s+-\s*/, "").trim();
+}
+
+const printSections = [];
+const seenParts = new Set();
+
+for (const entry of renderedSections) {
+  const part = entry.section.data.part;
+
+  if (part.startsWith("Part") && !seenParts.has(part)) {
+    seenParts.add(part);
+    printSections.push({ type: "part", part, id: partId(part) });
+  }
+
+  printSections.push({ type: "section", ...entry });
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="half-title-page" aria-label="Half title">
+      <h1>{book.title}</h1>
+    </section>
+
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">A breakthrough guide to possibility</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owner, except as permitted by law.
+      </p>
+      <p>
+        This book is provided for informational, educational, and self-development purposes only. It does not constitute medical, legal, financial, psychological, therapeutic, spiritual, fitness, or other professional advice. Readers should consult qualified professionals for advice regarding their own circumstances.
+      </p>
+      <p>
+        References to research, public figures, institutions, products, services, events, and traditions are used for commentary, criticism, education, and discussion. All trademarks and trade names are the property of their respective owners.
+      </p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          printSections.map((section) =>
+            section.type === "part" ? (
+              <li class="toc-part-row">
+                <div class="toc-part">
+                  <span>{section.part}</span>
+                </div>
+              </li>
+            ) : (
+              <li>
+                <div class="toc-entry" data-target={`#${section.printId}`}>
+                  <span class="toc-chapter">{section.label}</span>
+                  <span class="toc-title">{section.section.data.title}</span>
+                </div>
+              </li>
+            )
+          )
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        printSections.map((section) =>
+          section.type === "part" ? (
+            <section class="part-opener" id={section.id}>
+              <p class="chapter-kicker">{section.part}</p>
+              <h1>{partTitle(section.part)}</h1>
+            </section>
+          ) : (
+            <PrintBookChapter
+              chapter={section.section}
+              printId={section.printId}
+              Content={section.Content}
+              kickerLabel={section.label}
+              startOnRecto={section.section.data.order === 0}
+              showSubtitle={false}
+            />
+          )
+        )
+      }
+    </main>
+
+    <section class="about-author-page" aria-label="About the Author">
+      <h1>About the Author</h1>
+      <p>{aboutAuthor}</p>
+    </section>
+
+    <section class="index-page" aria-label="Index">
+      <h1>Index</h1>
+      <ul>
+        {
+          indexEntries.map((entry) => (
+            <li>
+              <span class="index-term">{entry.term}</span>
+              <span class="index-pages">
+                {entry.targets.map((target, index) => (
+                  <>
+                    {index > 0 && <span class="index-separator">, </span>}
+                    <span class="index-page-ref" data-target={`#${target}`}></span>
+                  </>
+                ))}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </body>
+</html>

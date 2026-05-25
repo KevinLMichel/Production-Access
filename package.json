@@ -22,6 +22,7 @@
     "book:pdf:i-am-what-happens": "node scripts/build-i-am-what-happens-pdf.mjs",
     "book:pdf:kindness": "node scripts/build-kindness-pdf.mjs",
     "book:pdf:mental-toughness": "node scripts/build-mental-toughness-pdf.mjs",
+    "book:pdf:shifting-worlds": "node scripts/build-shifting-worlds-pdf.mjs",
     "book:pdf:steam": "node scripts/build-steam-pdf.mjs",
     "book:pdf:subconscious": "node scripts/build-subconscious-pdf.mjs",
     "extract:fragmented": "node scripts/extract-fragmented-book.mjs",

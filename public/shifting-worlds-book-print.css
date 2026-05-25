@@ -1,0 +1,711 @@
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.69in 0.56in 0.74in;
+}
+
+@page :left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.4pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.2pt;
+  }
+}
+
+@page :right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "Shifting Worlds";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.4pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.2pt;
+  }
+}
+
+@page :blank {
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page front {
+  margin: 0.72in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page toc:left {
+  margin: 0.72in 0.86in 0.72in 0.58in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page toc:right {
+  margin: 0.72in 0.58in 0.72in 0.86in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page chapter {
+  size: 5.5in 8.5in;
+  margin: 0.69in 0.56in 0.74in;
+}
+
+@page chapter:left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.4pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.2pt;
+  }
+}
+
+@page chapter:right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "Shifting Worlds";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.4pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.2pt;
+  }
+}
+
+@page chapter:first,
+@page chapter:blank {
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page part {
+  size: 5.5in 8.5in;
+  margin: 0.69in 0.56in 0.74in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page part:left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+}
+
+@page part:right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+}
+
+@page back {
+  size: 5.5in 8.5in;
+  margin: 0.72in 0.62in 0.78in;
+
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-left {
+    content: none;
+  }
+
+  @bottom-right {
+    content: none;
+  }
+}
+
+@page index:left {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.84in 0.74in 0.58in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+@page index:right {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.58in 0.74in 0.84in;
+
+  @top-right {
+    content: "Shifting Worlds";
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #405361;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #111827;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 10.28pt;
+  line-height: 1.39;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+blockquote {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.half-title-page,
+.title-page,
+.copyright-page {
+  page: front;
+}
+
+.half-title-page {
+  align-items: center;
+  break-after: right;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.half-title-page h1 {
+  color: #071820;
+  font-size: 25pt;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.title-page {
+  align-items: center;
+  break-after: page;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.title-page h1 {
+  color: #071820;
+  font-size: 33pt;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.94;
+  margin: 0.24in auto 0.17in;
+  max-width: 4.1in;
+}
+
+.title-eyebrow,
+.title-author,
+.chapter-kicker,
+.toc-chapter,
+.toc-part span,
+.chapter-body strong,
+.index-term {
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title-eyebrow {
+  color: #b78220;
+  font-size: 8.5pt;
+  font-weight: 700;
+}
+
+.title-subtitle {
+  color: #27637a;
+  font-size: 11.4pt;
+  line-height: 1.42;
+  margin: 0 auto 0.42in;
+  max-width: 3.8in;
+}
+
+.title-author {
+  color: #071820;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.copyright-page {
+  break-after: right;
+  font-size: 8.45pt;
+  line-height: 1.42;
+  padding-top: 0.1in;
+}
+
+.copyright-page p {
+  margin-bottom: 0.14in;
+}
+
+.toc-page {
+  break-after: page;
+  page: toc;
+}
+
+.toc-page h1,
+.index-page h1,
+.about-author-page h1 {
+  color: #071820;
+  font-size: 24pt;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin-bottom: 0.28in;
+}
+
+.toc-page ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-page li {
+  border-bottom: 0.75pt solid rgba(17, 24, 39, 0.16);
+  break-inside: avoid;
+  padding: 0.056in 0;
+}
+
+.toc-page .toc-part-row {
+  border-bottom: 0;
+  padding: 0.12in 0 0.035in;
+}
+
+.toc-entry {
+  display: grid;
+  gap: 0.08in;
+  grid-template-columns: 0.78in minmax(0, 1fr) 0.42in;
+}
+
+.toc-entry::after {
+  content: target-counter(attr(data-target url), page);
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 8.4pt;
+  font-weight: 700;
+  text-align: right;
+}
+
+.toc-title {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-chapter {
+  color: #27637a;
+  font-size: 7pt;
+  font-weight: 700;
+}
+
+.toc-part span {
+  color: #b78220;
+  font-size: 7.4pt;
+  font-weight: 700;
+}
+
+.book-body {
+  counter-reset: chapter;
+}
+
+.part-opener {
+  break-before: page;
+  page: part;
+  padding-top: 1.52in;
+}
+
+.part-opener h1 {
+  color: #071820;
+  font-size: 24pt;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin-bottom: 0;
+}
+
+.print-chapter {
+  break-before: page;
+  page: chapter;
+}
+
+.print-chapter--recto {
+  break-before: right;
+}
+
+.chapter-opener {
+  margin-bottom: 0.32in;
+  padding-top: 0.68in;
+}
+
+.chapter-kicker {
+  color: #b78220;
+  font-size: 7.8pt;
+  font-weight: 700;
+  margin-bottom: 0.14in;
+}
+
+.chapter-opener h1 {
+  color: #071820;
+  font-size: 20.5pt;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 0.12in;
+}
+
+.chapter-subtitle {
+  color: #405361;
+  font-size: 10.3pt;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.chapter-body {
+  hyphens: auto;
+  orphans: 3;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-align-last: left;
+  widows: 3;
+}
+
+.chapter-body h2 {
+  break-after: avoid;
+  color: #071820;
+  font-size: 13.2pt;
+  line-height: 1.13;
+  margin: 0.28in 0 0.1in;
+  text-align: left;
+}
+
+.chapter-body h3 {
+  break-after: avoid;
+  color: #27637a;
+  font-size: 11.2pt;
+  line-height: 1.16;
+  margin: 0.22in 0 0.08in;
+  text-align: left;
+}
+
+.chapter-body p {
+  margin: 0;
+}
+
+.chapter-body p + p {
+  text-indent: 0.2in;
+}
+
+.chapter-body h2 + p,
+.chapter-body h3 + p,
+.chapter-body blockquote + p,
+.chapter-body table + p,
+.chapter-body ul + p,
+.chapter-body ol + p {
+  text-indent: 0;
+}
+
+.chapter-body strong {
+  color: #b78220;
+  font-size: 7.8pt;
+  font-weight: 700;
+}
+
+.chapter-body blockquote {
+  border-bottom: 0.75pt solid rgba(39, 99, 122, 0.38);
+  border-top: 0.75pt solid rgba(39, 99, 122, 0.38);
+  color: #071820;
+  font-size: 9.95pt;
+  font-style: italic;
+  line-height: 1.37;
+  margin: 0.18in 0.2in;
+  padding: 0.08in 0;
+  text-align: left;
+}
+
+.chapter-body blockquote p,
+.chapter-body li p {
+  text-indent: 0;
+}
+
+.chapter-body blockquote p + p {
+  margin-top: 0.08in;
+  text-indent: 0;
+}
+
+.chapter-body ul,
+.chapter-body ol {
+  margin: 0 0 0.14in 0.22in;
+  padding: 0;
+  text-align: left;
+}
+
+.chapter-body li {
+  margin-bottom: 0.05in;
+}
+
+.chapter-body table {
+  border-collapse: collapse;
+  font-size: 7.75pt;
+  margin: 0.16in 0;
+  text-align: left;
+  width: 100%;
+}
+
+.chapter-body th,
+.chapter-body td {
+  border: 0.75pt solid rgba(17, 24, 39, 0.42);
+  padding: 0.04in;
+  vertical-align: top;
+}
+
+.chapter-body th {
+  color: #071820;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-weight: 700;
+}
+
+.about-author-page {
+  break-before: page;
+  break-after: page;
+  page: back;
+  padding-top: 1.15in;
+}
+
+.about-author-page p {
+  font-size: 10.4pt;
+  line-height: 1.45;
+  max-width: 3.9in;
+}
+
+.index-page {
+  break-before: page;
+  page: index;
+}
+
+.index-page ul {
+  column-gap: 0.24in;
+  columns: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.index-page li {
+  break-inside: avoid;
+  font-size: 8.35pt;
+  line-height: 1.28;
+  margin-bottom: 0.045in;
+}
+
+.index-term {
+  color: #071820;
+  font-size: 7.2pt;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: none;
+}
+
+.index-pages {
+  color: #27637a;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 7.8pt;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.index-term::after {
+  content: " ";
+}
+
+.index-page-ref::after {
+  content: target-counter(attr(data-target url), page);
+}

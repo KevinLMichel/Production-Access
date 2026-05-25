@@ -16,10 +16,16 @@ formats:
   - label: "Start Reading"
     href: "/books/shifting-worlds/"
     status: "available"
+  - label: "Download PDF"
+    href: "/downloads/shifting-worlds-kevin-l-michel.pdf"
+    status: "available"
 links:
   - label: "Start Reading"
     href: "/books/shifting-worlds/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/shifting-worlds-kevin-l-michel.pdf"
+    kind: "download"
 ---
 
 Shifting Worlds is being built live in the Library as an expandable draft.
