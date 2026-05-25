@@ -80,6 +80,48 @@ It is not merely attracted.
 
 It is organized.
 
+## Refusing the first instrument
+
+There is a world called "not enough."
+
+Not big enough.
+
+Not strong enough.
+
+Not obvious enough.
+
+Not chosen enough.
+
+Not impressive enough on first inspection.
+
+Many people are handed this world early. They are measured by the wrong instrument and then tempted to become loyal to the measurement.
+
+Stephen Curry's story is useful because it can be read as a refusal of the first instrument. He did not fit every inherited model of what basketball dominance was supposed to look like. That is the danger of models: they can miss the future because they are trained on the past. A scout, company, school, family, or industry may ask, "Does this person look like what succeeded before?"
+
+But the future often arrives in a form the old model cannot recognize.
+
+This is about value sight.
+
+The world may not initially see your value because it is using a category too crude for what you carry. It may be measuring height when it should measure range. It may be measuring noise when it should measure discipline. It may be measuring pedigree when it should measure hunger. It may be measuring polish when it should measure learning velocity.
+
+The old model asks, "Why did they not choose me?"
+
+The new model asks, "What can I build so clearly that the old model becomes irrelevant?"
+
+This is not resentment. Resentment keeps attention trapped in the room that rejected you. This is authorship.
+
+Train the thing they missed.
+
+Strengthen the capacity not yet obvious.
+
+Build the evidence.
+
+Let underestimation become fuel, not identity.
+
+Sara Blakely's family story around failure offers a complementary world. When failure is treated as shame, people hide attempts. When failure is treated as evidence that you tried something difficult, people become more willing to move. That one cultural shift changes the economic world because it changes how many experiments a person is willing to run.
+
+Prosperity often begins before money appears. It begins when you stop asking only, "How do I get chosen?" and begin asking, "What value can I learn to create so clearly that trust has somewhere to go?"
+
 ## Creative worlds
 
 Creativity also depends on the model.

@@ -94,6 +94,48 @@ One suffers in confusion.
 
 The other suffers in formation.
 
+## The four-minute world
+
+There are numbers that behave like prison bars.
+
+For years, the four-minute mile was one of them. Before May 6, 1954, the barrier was not merely a mark on a stopwatch. It had become part of the atmosphere around the event, widely treated as a symbolic border around what elite runners had not yet done. Runners approached it, respected it, strained against it, and turned back. The number entered the imagination and began to feel like a law.
+
+Then Roger Bannister ran the mile in 3:59.4.
+
+The track did not change. The distance did not change. Human lungs did not receive a software update from heaven. But the psychological world changed. What many had treated as out of reach became achieved. What had been achieved became more imaginable. What became imaginable became more trainable.
+
+This is one of the great functions of human example: one person's breakthrough can become another person's permission.
+
+Bannister did not abolish difficulty. He converted the model around difficulty. That matters because many people live inside private four-minute miles. They have inherited numbers, sentences, forecasts, and limits that have never been tested with full devotion.
+
+"I could never build wealth."
+
+"I could never heal."
+
+"I could never write the book."
+
+"I could never be loved well."
+
+"I could never begin again at this age."
+
+"I could never become that kind of person."
+
+Some limits are real. Respect the real ones. Wisdom does not require pretending gravity has resigned.
+
+But some limits are models wearing the costume of law.
+
+The first task is not always to break the barrier publicly. The first task is to stop worshipping it privately. To look at the old number and say, "Perhaps this is not a wall. Perhaps this is a training problem. Perhaps the world I have been obeying is not the only world available."
+
+Eliud Kipchoge's two-hour marathon demonstration decades later carried a similar lesson, even with all the important distinctions around conditions and record status. A human being moved through a border that had lived in imagination before it lived in common reality. The point is not that every reader should compare their life to elite endurance records. Please do not turn this into self-punishment. The point is simpler and more useful.
+
+A worthy aim changes the room.
+
+It gives effort a direction. It gives practice a reason. It gives discomfort a meaning. It gives the mind a new search command.
+
+Ask yourself gently but seriously: what is my four-minute mile?
+
+Then ask the better question: what would I practice if I no longer treated it as sacred impossibility?
+
 ## Difficulty wakes the self
 
 Do not choose a goal so small that it asks nothing of your soul.

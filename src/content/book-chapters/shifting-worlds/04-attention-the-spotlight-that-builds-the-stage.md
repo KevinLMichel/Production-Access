@@ -78,6 +78,32 @@ Then ask:
 
 One degree is enough. One degree repeated changes the destination.
 
+## The attention diet of a champion
+
+There is a reason serious performers become careful about what enters the mind before the work begins.
+
+A runner does not eat a heavy meal ten seconds before the race and then wonder why the body feels slow. A singer does not scream all morning and expect the voice to arrive untouched at night. A strategist does not fill the hour before a decisive meeting with gossip, doom, and comparison, then expect clean judgment.
+
+Attention has a diet.
+
+If you feed the mind outrage for breakfast, comparison for lunch, and dread before sleep, do not be shocked when the inner world feels inflamed. The body has been trained to expect threat. The imagination has been trained to rehearse insult. The nervous system has been asked to compete while carrying the residue of a thousand unnecessary signals.
+
+This is not a moral lecture. It is practical engineering.
+
+A champion of any field learns that attention must be warmed up, protected, directed, and recovered. Before the performance, the mind needs cues that belong to the desired world: the breath, the ritual, the music, the notebook, the first repetition, the familiar sentence, the clean environment. These are not superstitions when they are used consciously. They are entry doors.
+
+You have entry doors too.
+
+Maybe your entry door is ten quiet minutes before the phone touches your hand. Maybe it is a walk without headphones. Maybe it is reading one page from a book that pulls you upward instead of scrolling through people who make you feel behind. Maybe it is placing the most important work where your eyes land first. Maybe it is refusing to begin the day by letting strangers choose the emotional weather of your inner world.
+
+Small? Yes.
+
+Small is often where the real kingdom is governed.
+
+The question is not only what you are capable of when the lights are on. The question is what your attention has been practicing when no one was watching. If you want to inhabit a stronger world, stop letting the weakest signals rent the best rooms in your mind.
+
+Feed the model you want to live from.
+
 ## Attention is participation
 
 Attention is not a passive observer sitting quietly in the balcony of the mind.

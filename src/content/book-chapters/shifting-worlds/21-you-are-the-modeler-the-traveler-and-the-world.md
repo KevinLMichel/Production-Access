@@ -228,6 +228,46 @@ That is the philosophy hidden inside action.
 
 That is Shifting Worlds.
 
+## If you are still waiting
+
+If you are still waiting for permission, let this be a clean place to begin ending the wait.
+
+Not because the book can grant you authority from the outside. It cannot. No book can. A book can point, awaken, disturb, clarify, encourage, and hand you tools. But the crossing still belongs to you.
+
+Maybe you are waiting to feel ready. Maybe you are waiting to feel chosen. Maybe you are waiting for the old fear to disappear so completely that action feels effortless. Maybe you are waiting for someone who doubted you to finally understand. Maybe you are waiting for a perfect plan because a perfect plan would protect you from the humiliation of being seen in progress.
+
+That world is too expensive.
+
+It charges you years for the illusion of safety.
+
+Begin smaller.
+
+Begin with the sentence you can actually speak. Begin with the walk you can actually take. Begin with the invoice you can actually send, the room you can actually clean, the page you can actually write, the apology you can actually offer, the doctor you can actually call, the practice you can actually repeat.
+
+The first action does not need to prove the whole future. It only needs to stop proving the past.
+
+This is where many people misunderstand transformation. They think the new world must feel convincing before they act. Often the opposite is true. You act cleanly while the old world is still arguing. Then the action creates evidence. The evidence creates trust. Trust creates a larger action. The larger action creates a stronger identity. The stronger identity begins to see a world the old self could not see.
+
+You do not become free by winning one debate inside your head.
+
+You become free by giving the better model a body.
+
+A sentence is good.
+
+A breath is good.
+
+A vision is good.
+
+But the world shifts when the sentence, breath, and vision become behavior.
+
+So before you close this book, do not ask for a feeling large enough to carry your whole life.
+
+Ask for the next honest action.
+
+Then give it weight.
+
+The world does not need your performance before it permits your participation. It needs your participation before performance can become honest. Step into the experiment. Let reality teach you. Let the model improve in contact with the day.
+
 ## Practice: The Next Honest Action
 
 Before leaving the book, choose:

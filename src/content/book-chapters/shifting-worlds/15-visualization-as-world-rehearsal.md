@@ -48,6 +48,54 @@ The new world does not need fantasy.
 
 It needs rehearsal.
 
+## Counting strokes in the dark
+
+There are moments when vision disappears.
+
+The plan breaks. The room changes. The evidence is gone. The body is under pressure. The old confidence cannot find its usual landmarks.
+
+In the 2008 Olympic 200-meter butterfly final, Michael Phelps' goggles filled with water. The lane blurred. The wall disappeared from clear sight. The ordinary model would have been panic:
+
+"I cannot see. Something is wrong. The race is ruined."
+
+But a trained system does not require perfect conditions to continue. It returns to rhythm. It returns to what has been rehearsed so deeply that the body can still act when the eyes cannot guide.
+
+He counted strokes.
+
+That is the part that belongs in this chapter.
+
+Visualization is not daydreaming about applause. It is training the self to remain organized when the outer world stops cooperating. You rehearse the action. You rehearse the obstacle. You rehearse the moment when the email does not come, when the critic speaks, when the investor says no, when the body is tired, when the craving appears, when the plan leaks water.
+
+Then you ask:
+
+"What will I count when I cannot see?"
+
+A writer counts sentences.
+
+A recovering person counts breaths.
+
+A leader counts principles.
+
+A frightened person counts the next honest action.
+
+An athlete counts repetitions.
+
+A builder counts today's brick.
+
+A healer counts one signal of safety at a time.
+
+Counting strokes in the dark is not glamorous. It is better than glamorous. It is useful.
+
+This is also why extreme preparation stories, like Alex Honnold's free soloing, should be read carefully. Do not imitate the danger. Learn from the seriousness of rehearsal. There are fields where fantasy gets punished fast. The nervous system must know the route. The body must know the sequence. The mind must not be meeting the obstacle for the first time when the cost is high.
+
+Your life may not involve a rock wall or an Olympic pool, but it will involve darkness. Confusion. Pressure. Missing information. Emotional weather. Moments when the old map is gone.
+
+Rehearse a return path before you need it.
+
+When panic says, "The race is ruined," the trained self can answer:
+
+"Count."
+
 ## Rehearse the path, not only the prize
 
 The subconscious mind is always searching.

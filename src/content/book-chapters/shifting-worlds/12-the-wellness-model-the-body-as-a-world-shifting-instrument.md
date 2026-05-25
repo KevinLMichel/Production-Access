@@ -32,6 +32,46 @@ The new world will ask for a nervous system capable of receiving it.
 
 Prepare the vessel.
 
+## The boundary that protected greatness
+
+There is a false world that tells ambitious people, "If you stop, you are weak."
+
+It is a brutal model. It mistakes self-abandonment for discipline. It calls depletion commitment. It calls collapse courage. It asks the body to keep performing long after the deeper system has begun sending distress signals.
+
+Simone Biles gave the world a different model.
+
+At the Tokyo Olympics, while dealing with the dangerous mental block gymnasts often call the twisties, she stepped back from several events. The outside world had opinions, as it always does when a person chooses health in public. But the deeper lesson was simple: the body and mind are not side characters in greatness. They are the instrument through which greatness must pass.
+
+The old model says:
+
+"Perform even if you are divided."
+
+The new model says:
+
+"Wholeness is part of performance."
+
+The old model says:
+
+"Your value depends on continuing."
+
+The new model says:
+
+"Your life is larger than this moment."
+
+Her later return matters because it prevents the story from being reduced to withdrawal alone. She did not merely stop. She rebuilt. She came back with more authorship, more maturity, and more visible sovereignty over the terms of her own excellence, helping lead the United States to team gold and winning the all-around title at Paris in 2024.
+
+That arc is important for the reader who fears that rest means surrender.
+
+Sometimes a boundary is not the end of the dream.
+
+Sometimes it is the architecture that keeps the dream from consuming the dreamer.
+
+Serena Williams' return to elite tennis after a life-threatening childbirth experience carries a related lesson: the body is not an inconvenience interrupting ambition. The body is where ambition must become humane if it wants to last.
+
+You do not need to be an Olympian or a champion to use this. If your version of success requires the disappearance of your health, your peace, your relationships, and your basic dignity, question the model. The world you are building may be using your body as raw material instead of honoring it as the vehicle.
+
+Protect the instrument because you respect the music.
+
 ## Poor engineering is not weakness
 
 Wellness is not the absence of ambition.

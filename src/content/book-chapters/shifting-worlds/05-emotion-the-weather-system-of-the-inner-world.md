@@ -146,6 +146,40 @@ So before you ask, "What should I do with my life?" ask, "What state am I asking
 
 The world you see from depletion is not always the world that is available from regulation.
 
+## Joy as method
+
+The old success model often makes excellence look grim.
+
+The jaw must tighten. The face must harden. The dream must become a burden. The person must prove seriousness by becoming less alive.
+
+But some performers remind us that joy can be part of the method, not a prize postponed until after the method works. Carlos Alcaraz gives a vivid public example. By his early twenties, he had already become a former World No. 1 and a major champion on hard, grass, and clay courts. The point here is not merely the trophy case. The point is the visible operating system: speed, creativity, improvisation, elastic courage, and a kind of fierce playfulness that keeps options open under pressure.
+
+Joy does not make the task easy.
+
+A five-set match is still suffering. Clay still punishes impatience. Grass still asks a different timing from the body. A great opponent still takes away your favorite answers and forces you to invent better ones. But joy changes the nervous system's relationship to the difficulty. It keeps the player from shrinking the world into fear alone.
+
+Fear asks, "How do I avoid losing?"
+
+Joy asks, "What can I create inside this point?"
+
+That difference matters. In your life, joy may not look like tennis. It may look like curiosity while building a business, humor during a hard training season, music while cleaning the room, play inside a complicated project, warmth in a conversation that could become defensive, or the private satisfaction of practicing a craft before anyone applauds.
+
+Do not misunderstand this. Joy is not denial. It is not pretending the score does not matter. It is not floating above responsibility. Real joy can coexist with discipline, grief, fatigue, ambition, and pressure. Sometimes joy is simply the state in which your intelligence becomes less cramped.
+
+If you have been trying to pressure yourself into the next world, pause here for a moment.
+
+Ask whether the model itself is exhausting you. Ask whether your dream has been wrapped in a mood that makes it harder to reach. Ask whether the next level needs more violence from you, or more aliveness.
+
+The question is not only, "What do I want to achieve?"
+
+The question is also, "What state allows me to bring my best intelligence to the attempt?"
+
+For some people, the missing ingredient is not pressure. They have plenty. The missing ingredient is permission to bring delight back into the work. A lighter grip. A cleaner breath. A return to why the dream mattered before it became a performance.
+
+The ideal world is not the one where you finally achieve enough to deserve joy.
+
+The ideal world is the one where joy helps you achieve without losing yourself.
+
 ## Crossing the emotional border
 
 Every new world makes you a beginner again.

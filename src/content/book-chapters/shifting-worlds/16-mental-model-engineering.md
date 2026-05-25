@@ -90,6 +90,58 @@ The new world needs witnesses.
 
 Become one.
 
+## The prototype world
+
+James Dyson's vacuum story is useful here because it makes model engineering wonderfully unromantic.
+
+There was a frustration. There was a machine that did not work as well as it should. There was an idea. Then there were prototypes. Not one. Not twelve. Famously, thousands.
+
+A prototype is a physical argument with reality.
+
+It says, "Here is what I think might work."
+
+Reality answers.
+
+Sometimes the answer is no.
+
+Good.
+
+Now the model knows more.
+
+This is the spirit many people fail to bring to their own inner world. They want the new identity to work immediately. They want the first routine to be perfect, the first offer to sell, the first conversation to heal the whole relationship, the first week of discipline to prove permanent transformation.
+
+But a life can be prototyped.
+
+A morning routine is a prototype.
+
+A budget is a prototype.
+
+A recovery plan is a prototype.
+
+A better sentence is a prototype.
+
+A boundary is a prototype.
+
+A business offer is a prototype.
+
+A new way of handling fear is a prototype.
+
+This does not make life fake. It makes life learnable.
+
+The prototype world is merciful because it does not require every attempt to become a verdict. It asks only that each attempt produce information. What worked? What broke? Where did flow stop? What did I misunderstand? What does the next version require?
+
+If you can answer those questions, you are not merely failing.
+
+You are engineering.
+
+The old model wants a flawless performance because it is terrified of judgment. The new model wants a better version because it is devoted to learning. These are very different worlds.
+
+Build the prototype.
+
+Let reality answer.
+
+Then improve the design.
+
 ## Symbols of the new world
 
 A symbol is a compressed world.

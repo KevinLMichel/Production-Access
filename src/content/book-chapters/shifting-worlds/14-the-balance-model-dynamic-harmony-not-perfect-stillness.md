@@ -100,6 +100,46 @@ The goal is not to feel perfectly centered at all times.
 
 The goal is to keep returning before drift becomes identity.
 
+## Learn the surface
+
+Balance is not sameness.
+
+A tennis player knows this quickly. Clay asks one thing from the body. Grass asks another. Hard court asks another. A strategy that looks brilliant on one surface may become clumsy on the next. The excellent player does not shout at the surface for being different. The excellent player learns the surface.
+
+The lesson is not limited to athletes. Any person pursuing a serious aim must adjust footwork, patience, aggression, recovery, and timing depending on the ground beneath them and the challenge in front of them. The model is not rigid confidence. It is responsive confidence.
+
+This belongs to balance.
+
+Many people try to use the same rhythm for every season. They use crisis energy in a healing season. They use rest language when the moment asks for courage. They use sprint expectations during grief. They use monk expectations during parenthood. They use hustle scripts inside a body that has been begging for repair.
+
+Then they call themselves inconsistent.
+
+Maybe the deeper issue is that they have not learned the surface.
+
+Ask, "What season am I standing on?"
+
+Is this a sprint season or a repair season?
+
+Is this a learning season or a finishing season?
+
+Is this a grieving season or a building season?
+
+Is this a season for visibility or for preparation?
+
+Is this a season to push, protect, prune, practice, or pause?
+
+The answer will not excuse you from responsibility. It will make responsibility more accurate.
+
+If you are in a sprint season, balance may mean protecting sleep with unusual seriousness because output is high. If you are in a repair season, balance may mean letting smaller tasks count because the nervous system is rebuilding trust. If you are in a learning season, balance may mean tolerating awkwardness. If you are in a finishing season, balance may mean refusing new distractions that would be attractive in another month.
+
+The old harsh model says, "A strong person should be the same every day."
+
+A wiser model says, "A strong person learns the surface and brings the right movement."
+
+This is not inconsistency. It is intelligence under changing conditions.
+
+You are not a machine executing one program forever. You are a living system moving through surfaces. Learn the surface. Then choose the rhythm that belongs there.
+
 ## Practice: The Rhythm Calendar
 
 Create a seven-day rhythm calendar with four tiny categories: body, focus, relationship, restoration. At night, do not score yourself as good or bad. Ask what helped you return and what needs gentler design.

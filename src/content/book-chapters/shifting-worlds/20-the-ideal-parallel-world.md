@@ -60,6 +60,62 @@ As you move, you will become the kind of person who can see better lights.
 
 The world reveals itself to the traveler, not to the one who refuses to leave the chair.
 
+## Medal-world and mastery-world
+
+The ideal world cannot depend entirely on one scoreboard.
+
+This is hard to accept because scoreboards are seductive. They are visible. They are clean. They tell a simple story: medal or no medal, accepted or rejected, funded or unfunded, chosen or not chosen, married or unmarried, promoted or passed over, applauded or ignored.
+
+The scoreboard matters. Do not pretend it does not. Wanting the podium, the contract, the publication, the diagnosis, the reconciliation, the championship, or the visible proof is not a moral failure. Human beings need outer evidence. We need contact with reality. We need the world to answer sometimes.
+
+But there is danger in living only in medal-world.
+
+Andri Ragettli has lived close to that edge. As one of freeski slopestyle's most decorated World Cup athletes, he has built a career around precision, creativity, and courage. Yet as of the 2026 Winter Olympics, his Olympic slopestyle story still included near-misses rather than the simple medal completion a casual viewer might expect. He had reached finals and finished fourth more than once, facing the public disappointment of being close to the podium rather than on it.
+
+The easy story would be tragedy: the champion without the one medal he wanted most.
+
+But that is too small a model for a life.
+
+There is medal-world, and medal-world matters.
+
+There is also mastery-world.
+
+In mastery-world, the question is not only, "Did I receive the medal?"
+
+The question is:
+
+"Did I give everything cleanly?"
+
+"Did I become more precise?"
+
+"Did I return after injury?"
+
+"Did I honor the work?"
+
+"Did I raise the level of the field?"
+
+"Did I become someone the younger version of me would recognize with pride?"
+
+The medal-world is decided by judges, weather, competitors, timing, fractions, visibility, and the strange mathematics of a single run.
+
+The mastery-world is decided by devotion.
+
+This distinction is not consolation. It is maturity.
+
+If your ideal world is only a frozen result, life can make you meaningless by denying that result. If your ideal world is also a way of becoming, then even grief can exist inside dignity. You can want the medal fiercely and still refuse to reduce your life to whether the medal arrived on schedule.
+
+Maybe your medal is not athletic. Maybe it is a number, a relationship, a launch, a house, a title, a body, a public recognition, a private apology, a version of success you have carried for years.
+
+Good. Name it honestly.
+
+Then build mastery-world around it.
+
+Who are you becoming while you pursue it? What capacities are being forged? What devotion would remain honorable even if the outer proof came late? What would make the younger version of you proud before the scoreboard speaks?
+
+Fourth place can hurt.
+
+And still the life can be magnificent.
+
 ## Designing the world without freezing it
 
 A designed world must be specific enough to guide action and flexible enough to mature.
