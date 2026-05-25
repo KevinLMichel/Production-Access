@@ -5,7 +5,7 @@ subtitle: "Chapter 5"
 part: "Part II - The Science of Shifting Worlds"
 order: 5
 summary: "Emotion is the weather of the inner world: it signals model orientation, early evidence of change, and the tug-of-war between old and emerging selves."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > A belief is a behavior waiting to happen.
@@ -70,16 +70,20 @@ A scattered mind asks the world for clarity it has not yet created within itself
 
 To become coherent is to become believable to yourself.
 
-## What this changes
+## Crossing the emotional border
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+Every new world makes you a beginner again.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+That is why transformation often feels embarrassing. The successful person must become a student. The proud person must become teachable. The old identity must tolerate looking foolish for a while.
+
+Feeling clumsy is not proof that you are failing. It is proof that you are entering territory where the old self is no longer in command.
+
+Emotion is data, not command. Listen to the weather. Do not hand it the government.
 
 ## Practice: Emotional Weather Report
 
 Name the inner weather without becoming it. Write the body sensation, the story attached to it, and the model it seems to come from. Then ask what weather would support the next right action. Do not demand joy. Ask for one degree more room.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part II - The Science of Shifting Worlds. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 5 is not only information. It is a rehearsal space for the next world.
+The weather will change. The chosen world is strengthened when you can feel the weather without letting it choose the road.

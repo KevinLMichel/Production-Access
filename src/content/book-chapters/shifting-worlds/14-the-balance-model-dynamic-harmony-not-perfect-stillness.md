@@ -5,7 +5,7 @@ subtitle: "Chapter 14"
 part: "Part IV - Building Wellness Models"
 order: 14
 summary: "Balance is dynamic harmony, not perfect stillness; the new world must be built through compassionate rhythm rather than self-violence."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > Do not confuse emotional familiarity with truth.
@@ -56,16 +56,18 @@ You do not deny the world by choosing a better model.
 
 You become capable of moving through it.
 
-## What this changes
+## Harmony under motion
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+Do not confuse balance with hiding from difficulty. But do not confuse discipline with making war on the person who must carry the discipline.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+Balance is not the absence of effort. It is the intelligent alternation of effort, recovery, attention, and release. A worthy aim turns suffering into training, but wisdom still distinguishes training from punishment.
+
+The right rhythm lets effort and recovery serve the same world.
 
 ## Practice: The Rhythm Calendar
 
 Create a seven-day rhythm calendar with four tiny categories: body, focus, relationship, restoration. At night, do not score yourself as good or bad. Ask what helped you return and what needs gentler design.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part IV - Building Wellness Models. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 14 is not only information. It is a rehearsal space for the next world.
+Build rhythm instead of drama. The new world needs enough challenge to awaken you and enough mercy to keep you whole.

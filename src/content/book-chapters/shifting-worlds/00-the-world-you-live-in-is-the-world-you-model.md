@@ -5,7 +5,7 @@ subtitle: "Introduction"
 part: "Opening"
 order: 0
 summary: "The opening argument: reality is partly lived through models, the present is data rather than destiny, and a new world begins as an inner model before it becomes outer evidence."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 Two people can stand in the same room and still live in different worlds.
@@ -68,11 +68,17 @@ The world you are trying to enter must be supported by the person you are becomi
 
 ## How to read this book
 
-This is a live draft, which means it is also a live workshop. Some chapters are already moving toward full prose. Others are structured as working models, exercises, and chapter promises that will expand through later passes. That is appropriate for this book because the method itself is iterative: name the model, test the model, keep what works, discard what weakens, build a better model, and install it through repetition.
+Read this book as a practical laboratory. Do not rush to believe everything. Test it. Do not use the idea of "shifting worlds" to escape responsibility. Use it to take more precise responsibility. Do not pretend the outer world has no force. It does. But also do not surrender your inner simulator to the first fear, old story, or inherited script that walks into the room.
 
-Read it the same way.
+The method is simple enough to begin today and deep enough to return to for years: name the model, test the model, keep what works, discard what weakens, build a better model, and install it through repetition.
 
-Do not rush to believe everything. Test it. Do not use the idea of "shifting worlds" to escape responsibility. Use it to take more precise responsibility. Do not pretend the outer world has no force. It does. But also do not surrender your inner simulator to the first fear, old story, or inherited script that walks into the room.
+Most people wait for readiness as though readiness were a gate that someone else must open. But readiness is often not the beginning of movement. Readiness is the result of movement.
+
+The first version of anything meaningful is usually crude. The first plan is incomplete. The first attempt is embarrassing. The first sentence does not yet know the book it belongs to. The first workout does not yet know the body it is building. The first act of courage does not yet feel like courage. It feels like awkwardness with a pulse.
+
+This is not a defect in the process. This is the process.
+
+The old world demands that you be impressive before you begin. The new world asks only that you begin honestly.
 
 You do not merely move through the world.
 
@@ -82,7 +88,7 @@ And if that is true, then there is a profound practical question waiting at the 
 
 What world am I practicing now?
 
-## Additional second-draft frame
+## The present is data, not destiny
 
 The present moment has a strange authority over the human mind.
 

@@ -5,7 +5,7 @@ subtitle: "Chapter 1"
 part: "Part I - The Model-Making Mind"
 order: 1
 summary: "A mental model acts like a reality engine: map, lens, calculator, and machine, selecting evidence and turning assumptions into behavior."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 A mental model is a reality engine.
@@ -114,7 +114,7 @@ The difference is action.
 
 If a model makes you less honest, less disciplined, less compassionate, less embodied, or less willing to test reality, it is not empowering. It is anesthesia. But if a model helps you see more clearly, choose more wisely, endure discomfort, recover from setbacks, and move toward what matters, then it is not merely positive. It is functional.
 
-## Second-draft expansion
+## The model selects the world
 
 The mind does not simply look at the world. The mind builds a working version of the world and then asks you to live inside it.
 

@@ -5,7 +5,7 @@ subtitle: "Chapter 4"
 part: "Part II - The Science of Shifting Worlds"
 order: 4
 summary: "Attention is reality selection: what the mind repeatedly notices becomes emotionally charged, behaviorally powerful, and increasingly real."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > Imagination is not escape when it returns with instructions.
@@ -78,16 +78,20 @@ Then ask:
 
 One degree is enough. One degree repeated changes the destination.
 
-## What this changes
+## What the spotlight teaches
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+When you choose an aim, attention receives an assignment.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+Some things become tools. Some become obstacles. Most things become irrelevant. This is not narrowness. It is orientation.
+
+Much of wisdom is learning what has become irrelevant.
+
+If the dream is too distant, bring the target closer. Place the spotlight on the next visible marker, the next paragraph, the next phone call, the next workout set, the next ten minutes, the next clean action. A distant dream can overwhelm the nervous system. A near target can mobilize it.
 
 ## Practice: The Seven-Day Attention Experiment
 
 For seven days, track what your attention is strengthening. Each evening, write three signals you gave to the old world and three signals you gave to the preferred world. End by choosing one thing you will notice on purpose tomorrow.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part II - The Science of Shifting Worlds. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 4 is not only information. It is a rehearsal space for the next world.
+Attention is not merely something you spend. It is something you train. The world you repeatedly notice becomes the world you are most prepared to enter.

@@ -5,7 +5,7 @@ subtitle: "Chapter 18"
 part: "Part V - The Practice of Shifting Worlds"
 order: 18
 summary: "Relationships are shared worlds built through language, expectations, boundaries, repair, listening, and the models people bring into the room."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > The door between worlds is usually disguised as the next honest action.
@@ -46,16 +46,18 @@ A relationship changes when the language inside it changes.
 
 The strongest people do not dominate the room. They stabilize it.
 
-## What this changes
+## The shared model in the room
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+Relationships change when the model inside the conversation changes.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+A conflict can be entered as a courtroom, a battlefield, a classroom, a repair shop, or a doorway. The words may be similar, but the world beneath them is not.
+
+Before an important conversation, ask: what world am I trying to build here? If the answer is domination, the sentence will carry one kind of weather. If the answer is repair, clarity, or courage, the sentence will carry another.
 
 ## Practice: The Shared World Conversation
 
 Choose one relationship. Name the old model you bring, the shared world you want to build, the sentence that would open it, the boundary that would protect honesty, and the repair you are willing to offer.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part V - The Practice of Shifting Worlds. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 18 is not only information. It is a rehearsal space for the next world.
+A shared world is built one sentence at a time. Speak in a way that protects truth without destroying the bridge truth needs to cross.

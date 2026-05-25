@@ -5,7 +5,7 @@ subtitle: "Chapter 6"
 part: "Part II - The Science of Shifting Worlds"
 order: 6
 summary: "Language programs identity and perception; words are tools that can imprison the old world or give the new one a place to stand."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > The subconscious obeys the questions you keep asking.
@@ -54,16 +54,18 @@ Change "I am stuck" to "I am between models," and the whole room changes shape.
 
 Your words do not merely describe your state. They recruit your state.
 
-## What this changes
+## Words as instructions
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+A sentence is a small operating system.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+If your language keeps saying, "I always ruin this," the body receives one kind of assignment. If your language says, "I am learning the next clean response," the body receives another.
+
+This does not mean lying. It means refusing to let the oldest sentence be the only sentence. A better question can open a better search. A cleaner phrase can give the nervous system a cleaner door.
 
 ## Practice: The Vocabulary Shift
 
 List five old-world phrases you use often. Translate each into language that is still truthful but more useful. Speak the replacement sentence out loud for seven days so the body can hear the new model.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part II - The Science of Shifting Worlds. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 6 is not only information. It is a rehearsal space for the next world.
+Your words are tools. Use them to give the new world instructions precise enough to practice.

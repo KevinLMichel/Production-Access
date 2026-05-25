@@ -5,7 +5,7 @@ subtitle: "Chapter 3"
 part: "Part I - The Model-Making Mind"
 order: 3
 summary: "Beliefs act as instructions to the whole organism; change the input and the nervous system, attention, posture, and behavior begin producing different outputs."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > The future does not merely arrive. It is rehearsed.
@@ -56,16 +56,18 @@ Then another.
 
 This is how the mind changes direction without violence against itself.
 
-## What this changes
+## Reprogramming the machine
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+The little machine does not change because you yell at it. It changes because you feed it cleaner inputs and let behavior confirm them.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+A sentence becomes a cue. A cue becomes a body state. A body state makes an action more likely. The action creates evidence. The evidence becomes easier to believe the next time.
+
+This is why the first replacement input must be believable enough to practice. Do not demand that the machine leap from despair to triumph. Give it the next clean instruction.
 
 ## Practice: Change the Input
 
 Choose one output you dislike: panic, avoidance, resentment, collapse, harsh speech, or delay. Work backward to the usual input: the sentence, image, memory, environment, or body state that starts the machine. Replace it with one cleaner instruction and use that instruction before the old pattern warms up.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part I - The Model-Making Mind. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 3 is not only information. It is a rehearsal space for the next world.
+Change the input, then watch what the system produces. A better model becomes powerful when it stops being an idea and becomes an instruction the whole self can obey.

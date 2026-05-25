@@ -5,7 +5,7 @@ subtitle: "Chapter 2"
 part: "Part I - The Model-Making Mind"
 order: 2
 summary: "Parallel worlds are competing models of the same moment, and every small choice is a doorway into one trajectory or another."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
 > Your attention is a vote for the world you are strengthening.
@@ -56,16 +56,26 @@ You cross into a better life by becoming loyal to better interpretations.
 
 A parallel world is not always somewhere else. Sometimes it is the same room, entered with a different mind.
 
-## What this changes
+## The cost of standing still
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+Standing still is not the same as staying safe.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+The world keeps moving. Time keeps moving. The body keeps aging. Opportunities open and close. Relationships evolve. Skills decay when unused. Courage weakens when never asked to act. The old model deepens its roots each time it goes unchallenged.
+
+There is no true stasis.
+
+There is movement toward the chosen world, or there is drift toward the inherited one.
+
+The smallest forward motion matters. One page. One walk. One honest conversation. One repaired habit. One debt paid down. One morning where you do not hand your mind over to the old fear.
+
+These are not small in the invisible architecture of a life.
+
+They are votes against decay.
 
 ## Practice: Three-World Simulation
 
 Choose one current situation. Write the old world, the fear world, and the chosen world. For each one, name the dominant sentence, the body posture, the likely action, and the probable result. Then choose one action from the chosen world and do it today.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part I - The Model-Making Mind. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 2 is not only information. It is a rehearsal space for the next world.
+Parallel worlds do not begin as science-fiction spectacles. They begin as competing interpretations inside the same moment. Choose the interpretation that makes the next better action available.

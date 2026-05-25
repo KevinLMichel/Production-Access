@@ -5,10 +5,10 @@ subtitle: "Chapter 7"
 part: "Part II - The Science of Shifting Worlds"
 order: 7
 summary: "Attraction is reframed as alignment: models organize attention, emotion, language, behavior, and probability toward the worlds they repeatedly rehearse."
-updated: "2026-05-24"
+updated: "2026-05-25"
 ---
 
-> The body is not separate from the dream. It is how the dream walks.
+> Coherence is what happens when the inner committee stops arguing.
 
 The law of attraction is often misunderstood because people separate desire from discipline.
 
@@ -31,8 +31,6 @@ You choose relationships, habits, and environments that do not sabotage the sign
 In this sense, attraction is not laziness. It is coherence.
 
 The aligned person becomes easier for the desired future to find because the aligned person is already living as its citizen.
-
-Coherence is what happens when the inner committee stops arguing.
 
 The thought says, "I choose this."
 
@@ -80,34 +78,18 @@ Once you choose, stop holding auditions for the old world.
 
 The new world does not require perfect certainty. It requires enough inner agreement to begin.
 
-Write one decision you have made.
+## Alignment instead of fantasy
 
-Then complete:
+Vision alone is incomplete.
 
-"If I were lined up with this decision, I would stop saying..."
+Dreaming about the final life can become soothing but passive. The useful move is to visualize the desired world, then immediately ask: what could get in the way, and what will I do when it does?
 
-"If I were lined up with this decision, I would start saying..."
-
-"If I were lined up with this decision, I would stop doing..."
-
-"If I were lined up with this decision, I would start doing..."
-
-"If I were lined up with this decision, I would allow myself to feel..."
-
-"If I were lined up with this decision, my next clean action would be..."
-
-Then do the next clean action before debating with the old world.
-
-## What this changes
-
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
-
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+Desire becomes powerful when it becomes aligned instruction. It tells thought, emotion, body, language, environment, and action what world they are serving today.
 
 ## Practice: Attraction Through Alignment
 
 Write one decision you have already made. Complete these prompts: if I were lined up with this decision, I would stop saying; start saying; stop doing; start doing; allow myself to feel; and take this next clean action.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part II - The Science of Shifting Worlds. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 7 is not only information. It is a rehearsal space for the next world.
+Attraction is not a substitute for action. It is the name for a coherent system that notices, chooses, rehearses, and behaves from the world it intends to enter.

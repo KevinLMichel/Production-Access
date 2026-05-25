@@ -4,8 +4,8 @@ title: "The Opportunity Model: Seeing Doors Where Others See Walls"
 subtitle: "Chapter 10"
 part: "Part III - Building Success Models"
 order: 10
-summary: "Opportunity recognition is model-dependent: scarcity scans for walls, while trained possibility scans the same facts for doors, skills, value, and next experiments."
-updated: "2026-05-24"
+summary: "Opportunity recognition is model-dependent: a chosen aim trains the mind to sort the same facts into tools, obstacles, irrelevance, doors, and next experiments."
+updated: "2026-05-25"
 ---
 
 > The old model will call the new model unrealistic until the new model starts producing evidence.
@@ -44,6 +44,20 @@ Do the small clean thing.
 
 Then listen for the next one.
 
+## Doors require a trained eye
+
+Chapter 8 named aim as the force that organizes the room. Here the work becomes more practical: once the aim is chosen, the mind must learn to recognize openings that do not look like openings yet.
+
+An obstacle may contain a skill you need to build, a person you need to ask, a boundary you need to set, a service you could offer, a story you could tell, a system you could improve, or a lesson that makes the next attempt sharper.
+
+Opportunity is rarely just "out there." It is out there plus a model capable of noticing it.
+
+The facts may be the same. The world is not.
+
+This is why opportunity often appears after commitment. The doors did not all magically appear at once. Your model became capable of seeing doors as doors.
+
+## Receiving the better thought
+
 There is a kind of thinking that is really just rearranged fear.
 
 It looks active. It feels urgent. It produces lists, plans, arguments, predictions, defenses, and rehearsals. But beneath all of it, the old model remains in charge. The mind is not discovering. It is circling.
@@ -74,16 +88,18 @@ Let the better thought arrive.
 
 Then honor it with action.
 
-## What this changes
+## Practice: Door Hidden Inside the Obstacle
 
-The old world treats this subject as something fixed: a personality trait, a mood, a limitation, a fact already settled. The shifting-worlds approach treats it as a model in motion. If the model can be seen, it can be revised. If it can be revised, it can be practiced. If it can be practiced, it can gather evidence.
+Name one obstacle.
 
-The goal is not to deny reality. The goal is to stop giving old interpretations permanent ownership of reality. A better model does not erase the facts; it reorganizes your participation in them.
+List ten possible doors it may contain: a skill, contact, offer, pivot, lesson, story, product, service, boundary, inner upgrade, or cleaner next experiment.
 
-## Practice: Ten Doors
+Do not stop at three. The later doors train perception.
 
-Name one obstacle. List ten doors it may contain: skills, contacts, offers, pivots, lessons, stories, products, services, boundaries, or inner upgrades. Do not stop at three. The later doors train perception.
+After you list ten, choose one door and take the smallest action that tests it.
 
-## Integration
+## Carry it forward
 
-This chapter belongs to Part III - Building Success Models. Its work is simple but not small: help the reader move from knowing the idea to living from it. Chapter 10 is not only information. It is a rehearsal space for the next world.
+Opportunity is not only discovered. It is trained. The more precisely you name the world you are building, the more intelligently your mind can sort reality into tools, obstacles, and noise.
+
+The door between worlds is usually disguised as the next honest action.
