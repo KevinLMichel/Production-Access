@@ -539,6 +539,21 @@ export const batchBookWorlds = {
     accent2: "#d9b35f",
     glow: "rgba(178, 77, 52, 0.23)"
   },
+  "skyborn-must-fall": {
+    eyebrow: "A Mythic-Philosophical Novella",
+    heroTitle: "Heaven learns its weight when it falls toward dust.",
+    lede:
+      "A celestial novella about Aurel, the Skyborn, the city of Veyr, the burden of witness, and the strange obligation that begins when distance can no longer pretend to be holiness.",
+    promiseTitle: "Altitude is not innocence. Distance is not wisdom.",
+    promiseBody:
+      "The Skyborn Must Fall follows a watcher above the clouds as judgment, rebellion, witness, origin, and rain remake the meaning of height. It asks what heaven owes the earth once it has truly heard the voices below.",
+    mapTitle: "Altitude, dust, court, witness, verdict, rain",
+    cardHeading: "Mythic pressures",
+    cards: ["The law of altitude", "Aurel touches dust", "Witnesses of the city", "The first rain"],
+    accent: "#8fb8ff",
+    accent2: "#d9ad5f",
+    glow: "rgba(143, 184, 255, 0.24)"
+  },
   "unbridled-prince": {
     eyebrow: "Self-Belief and Inner Power",
     heroTitle: "The prince becomes unbridled when self-belief stops asking permission.",

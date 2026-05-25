@@ -4233,6 +4233,40 @@ body.theme-consciousness-of-power .batch-world-cover img {
   border-radius: 18px;
 }
 
+body.theme-skyborn-must-fall .batch-world::before,
+body.theme-skyborn-must-fall .batch-reader::before {
+  background:
+    radial-gradient(circle at 52% 8%, rgba(143, 184, 255, 0.26), transparent 24rem),
+    radial-gradient(circle at 82% 22%, rgba(217, 173, 95, 0.16), transparent 26rem),
+    radial-gradient(circle at 22% 76%, rgba(45, 74, 130, 0.28), transparent 34rem),
+    linear-gradient(145deg, rgba(3, 7, 17, 0.97), rgba(9, 22, 43, 0.75), rgba(5, 8, 18, 0.95));
+}
+
+body.theme-skyborn-must-fall .batch-world::after,
+body.theme-skyborn-must-fall .batch-reader::after {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(232, 242, 255, 0.12), transparent 16rem),
+    radial-gradient(ellipse at 50% 70%, rgba(143, 184, 255, 0.12), transparent 24rem),
+    repeating-radial-gradient(circle at 52% 18%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 34px),
+    linear-gradient(180deg, rgba(143, 184, 255, 0.055) 0 1px, transparent 1px 56px),
+    linear-gradient(115deg, transparent 0 30%, rgba(217, 173, 95, 0.07) 44%, transparent 62% 100%);
+  background-size: auto, auto, auto, 100% 56px, auto;
+}
+
+body.theme-skyborn-must-fall .batch-world-hero {
+  background:
+    radial-gradient(circle at 75% 30%, rgba(143, 184, 255, 0.2), transparent 17rem),
+    radial-gradient(ellipse at 78% 76%, rgba(217, 173, 95, 0.14), transparent 18rem),
+    linear-gradient(135deg, rgba(232, 242, 255, 0.1), rgba(255, 255, 255, 0.022)),
+    rgba(5, 12, 28, 0.66);
+}
+
+body.theme-skyborn-must-fall .batch-world-cover img {
+  aspect-ratio: auto;
+  border-radius: 18px;
+  box-shadow: 0 34px 110px rgba(143, 184, 255, 0.24), 0 0 0 1px rgba(217, 173, 95, 0.28);
+}
+
 body.theme-book-eternal-wisdom .batch-world::before,
 body.theme-book-eternal-wisdom .batch-reader::before {
   background:
