@@ -10,6 +10,10 @@ const sourcePath =
 const outputDir = path.join(root, "src", "content", "book-chapters", "shifting-worlds");
 const updated = "2026-05-24";
 
+// Shifting Worlds has moved beyond this generated scaffold into a hand-expanded
+// second draft. Rerun this extractor only when intentionally rebuilding the
+// manuscript files, because it will overwrite the live draft chapters.
+
 const sections = [
   {
     marker: "Introduction - The World You Live In Is the World You Model",

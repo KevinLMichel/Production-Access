@@ -4,7 +4,7 @@ title: "The World You Live In Is the World You Model"
 subtitle: "Introduction"
 part: "Opening"
 order: 0
-summary: "Two people can stand in the same room and still live in different worlds. The facts may be identical."
+summary: "The opening argument: reality is partly lived through models, the present is data rather than destiny, and a new world begins as an inner model before it becomes outer evidence."
 updated: "2026-05-24"
 ---
 
@@ -81,6 +81,56 @@ You move through the world your mind has made available to you.
 And if that is true, then there is a profound practical question waiting at the threshold of every day:
 
 What world am I practicing now?
+
+## Additional second-draft frame
+
+The present moment has a strange authority over the human mind.
+
+Because it is visible, we believe it is final. Because it is measurable, we believe it is superior to imagination. Because it has already happened, we give it the status of truth. We look at the bank account, the body, the relationship, the diagnosis, the career, the room, the calendar, the evidence, and we say, "This is my reality."
+
+Yes.
+
+But it is not your only reality.
+
+The present is real, but it is not complete. It is the surface expression of previous patterns, previous decisions, previous interpretations, previous habits, previous models. It deserves your attention, but not your worship. It deserves your honesty, but not your surrender.
+
+The present tells you where you are standing.
+
+It does not tell you where you are allowed to go.
+
+This distinction changes everything.
+
+A person who confuses the present with destiny becomes obedient to evidence. A person who understands the present as data becomes available to design. The first person says, "This is how things are." The second says, "This is what the current model has produced."
+
+And once you see the model, you can begin to shift it.
+
+You do not deny the present. You study it. You listen to it. You extract its information. Then you ask the great shifting question:
+
+"What model would produce the world I actually want to live in?"
+
+That is where the doorway appears.
+
+A problem is loud because it is already manifest.
+
+It has furniture. It has bills. It has symptoms. It has conversations. It has a history. It can point to itself and say, "Look. I am real."
+
+A solution is quieter at first.
+
+It begins as a possibility. Then a thought. Then a feeling. Then a sentence. Then a small action. Then a new pattern. Then evidence. Then momentum. Then what once seemed impossible becomes ordinary.
+
+This is why the solution-world must be protected in its early stages. It is easy to crush a new world by demanding that it look fully grown before it has roots.
+
+The old world has proof because it has been practiced.
+
+The new world needs practice before it has proof.
+
+Do not ask a seed to provide shade on the day it is planted. Do not ask a new identity to produce a lifetime of evidence in its first hour. Do not ask a better model to reorganize your entire reality before you have given it your attention, your language, your breath, your body, your choices, and your loyalty.
+
+The solution-world exists first as a direction.
+
+Turn toward it.
+
+Then keep turning.
 
 ## Opening practice: Name the world
 
