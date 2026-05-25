@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 11.680556in 8.75in;
+  margin: 0;
+}
+
+:root {
+  --sheet-width: 11.680556in;
+  --sheet-height: 8.75in;
+  --cover-width: 5.5in;
+  --trim-height: 8.5in;
+  --spine-width: 0.430556in;
+  --bleed: 0.125in;
+  --back-left: 0.125in;
+  --spine-left: 5.625in;
+  --front-left: 6.055556in;
+  --midnight: #071a3d;
+  --midnight-deep: #020817;
+  --indigo: #3a2bff;
+  --cyan: #4debff;
+  --cyan-soft: #a7fbff;
+  --violet: #b56cff;
+  --gold: #ffd76a;
+  --gold-deep: #dca62c;
+  --white: #fbfdff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--white);
+  background: var(--midnight-deep);
+  font-family: "Source Sans 3", Arial, sans-serif;
+}
+
+.cover-sheet {
+  position: relative;
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 77% 48%, rgba(77, 235, 255, 0.42), transparent 1.45in),
+    radial-gradient(circle at 83% 50%, rgba(181, 108, 255, 0.38), transparent 2.75in),
+    radial-gradient(circle at 90% 36%, rgba(255, 215, 106, 0.22), transparent 2.1in),
+    radial-gradient(circle at 16% 31%, rgba(58, 43, 255, 0.24), transparent 2.4in),
+    linear-gradient(132deg, #020817 0%, #071a3d 43%, #11116d 72%, #030817 100%);
+}
+
+.cover-sheet::before,
+.cover-sheet::after,
+.universe-field,
+.particle-field,
+.wave-field,
+.back-motif,
+.spine-light,
+.grain,
+.back-cover,
+.front-cover,
+.front-portal,
+.spine,
+.barcode-reserve {
+  position: absolute;
+}
+
+.cover-sheet::before,
+.cover-sheet::after,
+.universe-field,
+.particle-field,
+.wave-field,
+.grain {
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.cover-sheet::before {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.44), transparent 11%, transparent 88%, rgba(0, 0, 0, 0.42)),
+    linear-gradient(90deg, transparent 0 48.1%, rgba(0, 0, 0, 0.44) 48.12% 52.8%, transparent 52.9% 100%),
+    radial-gradient(ellipse at 80% 9%, rgba(255, 255, 255, 0.16), transparent 1.1in),
+    radial-gradient(ellipse at 85% 92%, rgba(255, 215, 106, 0.16), transparent 1.65in);
+}
+
+.cover-sheet::after {
+  z-index: 20;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 18%, transparent 79%, rgba(0, 0, 0, 0.32)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.14), transparent 10%, transparent 90%, rgba(0, 0, 0, 0.18));
+  mix-blend-mode: soft-light;
+}
+
+.universe-field {
+  z-index: 2;
+  opacity: 0.9;
+  background:
+    radial-gradient(circle at 78% 45%, rgba(255, 255, 255, 0.98) 0 0.018in, transparent 0.023in),
+    radial-gradient(circle at 71% 40%, rgba(77, 235, 255, 0.95) 0 0.021in, transparent 0.027in),
+    radial-gradient(circle at 92% 33%, rgba(255, 215, 106, 0.95) 0 0.019in, transparent 0.025in),
+    radial-gradient(circle at 83% 66%, rgba(181, 108, 255, 0.95) 0 0.017in, transparent 0.023in),
+    radial-gradient(circle at 24% 19%, rgba(77, 235, 255, 0.48) 0 0.012in, transparent 0.017in),
+    radial-gradient(circle at 42% 82%, rgba(255, 215, 106, 0.5) 0 0.011in, transparent 0.016in);
+  background-size: 0.41in 0.41in, 0.49in 0.49in, 0.57in 0.57in, 0.38in 0.38in, 0.34in 0.34in, 0.52in 0.52in;
+  background-position: 0.08in 0.12in, 0.26in 0.31in, 0.11in 0.05in, 0.33in 0.18in, 0.02in 0.09in, 0.18in 0.27in;
+}
+
+.particle-field {
+  z-index: 3;
+  opacity: 0.72;
+  mask-image: radial-gradient(circle at 79% 49%, black 0 2.95in, rgba(0, 0, 0, 0.52) 3.55in, transparent 5.6in);
+  -webkit-mask-image: radial-gradient(circle at 79% 49%, black 0 2.95in, rgba(0, 0, 0, 0.52) 3.55in, transparent 5.6in);
+}
+
+.particle-field--cyan {
+  background:
+    linear-gradient(68deg, transparent 0 49.7%, rgba(77, 235, 255, 0.62) 49.86% 50%, transparent 50.15% 100%),
+    linear-gradient(104deg, transparent 0 49.7%, rgba(77, 235, 255, 0.36) 49.9% 50.05%, transparent 50.18% 100%);
+  background-size: 0.72in 0.72in, 1.16in 1.16in;
+}
+
+.particle-field--violet {
+  opacity: 0.54;
+  background:
+    linear-gradient(118deg, transparent 0 49.7%, rgba(181, 108, 255, 0.54) 49.86% 50.03%, transparent 50.18% 100%),
+    linear-gradient(25deg, transparent 0 49.72%, rgba(181, 108, 255, 0.28) 49.9% 50.05%, transparent 50.18% 100%);
+  background-size: 0.86in 0.86in, 1.28in 1.28in;
+}
+
+.particle-field--gold {
+  opacity: 0.5;
+  background:
+    linear-gradient(145deg, transparent 0 49.68%, rgba(255, 215, 106, 0.58) 49.87% 50.04%, transparent 50.2% 100%),
+    linear-gradient(82deg, transparent 0 49.72%, rgba(255, 215, 106, 0.3) 49.9% 50.05%, transparent 50.2% 100%);
+  background-size: 0.96in 0.96in, 1.36in 1.36in;
+}
+
+.wave-field {
+  z-index: 4;
+  opacity: 0.5;
+  background:
+    repeating-radial-gradient(circle at 79% 48%, transparent 0 0.34in, rgba(167, 251, 255, 0.3) 0.355in 0.367in, transparent 0.382in 0.56in),
+    repeating-radial-gradient(circle at 79% 48%, transparent 0 0.58in, rgba(255, 215, 106, 0.22) 0.595in 0.605in, transparent 0.62in 0.92in);
+  mask-image: radial-gradient(circle at 79% 48%, black 0 3.2in, transparent 4.9in);
+  -webkit-mask-image: radial-gradient(circle at 79% 48%, black 0 3.2in, transparent 4.9in);
+}
+
+.grain {
+  z-index: 19;
+  opacity: 0.16;
+  background:
+    radial-gradient(circle at 21% 20%, rgba(255, 255, 255, 0.32) 0 0.006in, transparent 0.01in),
+    radial-gradient(circle at 57% 45%, rgba(0, 0, 0, 0.55) 0 0.008in, transparent 0.013in),
+    radial-gradient(circle at 84% 77%, rgba(77, 235, 255, 0.22) 0 0.006in, transparent 0.012in);
+  background-size: 0.13in 0.13in, 0.19in 0.19in, 0.23in 0.23in;
+  mix-blend-mode: soft-light;
+}
+
+.back-motif {
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 5.66in;
+  height: var(--sheet-height);
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(77, 235, 255, 0.28) 0 0.46in, transparent 0.47in),
+    radial-gradient(circle at 22% 18%, rgba(181, 108, 255, 0.2) 0 0.88in, transparent 0.89in),
+    radial-gradient(circle at 14% 78%, rgba(255, 215, 106, 0.22) 0 0.34in, transparent 0.35in),
+    linear-gradient(42deg, transparent 0 48.7%, rgba(77, 235, 255, 0.24) 48.9% 49.15%, transparent 49.35%),
+    linear-gradient(122deg, transparent 0 49%, rgba(255, 215, 106, 0.22) 49.18% 49.42%, transparent 49.6%);
+}
+
+.spine-light {
+  z-index: 6;
+  left: var(--spine-left);
+  top: 0;
+  width: var(--spine-width);
+  height: var(--sheet-height);
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 215, 106, 0.34) 0 0.012in, transparent 0.014in calc(100% - 0.014in), rgba(77, 235, 255, 0.38) calc(100% - 0.012in)),
+    radial-gradient(ellipse at 50% 48%, rgba(77, 235, 255, 0.42), transparent 2.6in),
+    linear-gradient(180deg, rgba(7, 26, 61, 0.72), rgba(58, 43, 255, 0.28), rgba(2, 8, 23, 0.84));
+}
+
+.back-cover,
+.front-cover,
+.spine {
+  z-index: 10;
+}
+
+.back-cover {
+  left: calc(var(--back-left) + 0.39in);
+  top: 0.66in;
+  width: 4.5in;
+  height: 7.24in;
+  color: rgba(251, 253, 255, 0.92);
+}
+
+.kicker,
+.front-hook,
+.signal-list,
+.spine-title,
+.spine-author,
+.back-footer,
+.cover-subtitle,
+.author,
+.author-credit {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.kicker {
+  margin: 0 0 0.28in;
+  color: var(--gold);
+  font-size: 8.2pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.back-cover h2 {
+  max-width: 4in;
+  margin: 0 0 0.26in;
+  color: var(--white);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 27pt;
+  line-height: 0.93;
+  text-wrap: balance;
+}
+
+.back-copy {
+  max-width: 4.12in;
+  padding: 0.17in 0.2in 0.14in 0;
+  border-top: 1px solid rgba(77, 235, 255, 0.34);
+  border-bottom: 1px solid rgba(255, 215, 106, 0.26);
+  background: linear-gradient(90deg, rgba(2, 8, 23, 0.34), transparent);
+}
+
+.back-copy p {
+  margin: 0 0 0.125in;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 10.15pt;
+  line-height: 1.32;
+}
+
+.back-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.signal-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.08in;
+  width: 3.75in;
+  margin-top: 0.25in;
+}
+
+.signal-list span {
+  padding: 0.045in 0.08in;
+  border: 1px solid rgba(77, 235, 255, 0.34);
+  color: rgba(167, 251, 255, 0.96);
+  font-size: 7.1pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.back-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0.22in;
+  width: 2.9in;
+  margin: 0;
+  color: var(--gold);
+  font-size: 8.2pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.35;
+}
+
+.front-cover {
+  left: calc(var(--front-left) + 0.28in);
+  top: 0.42in;
+  width: 4.94in;
+  height: 7.82in;
+  text-align: center;
+}
+
+.front-portal {
+  z-index: -1;
+  left: -0.82in;
+  top: 1.32in;
+  width: 6.22in;
+  height: 6.22in;
+  opacity: 0.95;
+}
+
+.front-portal svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.portal-rings {
+  fill: none;
+  stroke: rgba(167, 251, 255, 0.32);
+  stroke-width: 1.4;
+}
+
+.portal-rings circle:nth-child(2),
+.portal-rings circle:nth-child(4) {
+  stroke: rgba(255, 215, 106, 0.28);
+}
+
+.portal-rays {
+  stroke: rgba(77, 235, 255, 0.2);
+  stroke-width: 1.1;
+}
+
+.portal-rays line:nth-child(3n) {
+  stroke: rgba(181, 108, 255, 0.25);
+}
+
+.portal-rays line:nth-child(5n) {
+  stroke: rgba(255, 215, 106, 0.22);
+}
+
+.front-hook {
+  margin: 0 auto 0.58in;
+  color: var(--white);
+  font-size: 17pt;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  line-height: 1.28;
+}
+
+.front-hook span {
+  display: block;
+}
+
+.front-cover h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto 0.26in;
+  color: var(--white);
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 83pt;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.78;
+  text-transform: uppercase;
+  transform: scaleX(1.06);
+}
+
+.front-cover h1 span {
+  display: block;
+  text-shadow:
+    0 0 0.012in rgba(255, 255, 255, 0.2),
+    0 0 0.1in rgba(77, 235, 255, 0.2);
+}
+
+.cover-subtitle {
+  width: 4.3in;
+  margin: 0.05in auto 0;
+  color: var(--cyan-soft);
+  font-size: 21pt;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.23;
+}
+
+.author {
+  margin: 0.48in 0 0.09in;
+  color: var(--gold);
+  font-size: 38pt;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  line-height: 0.95;
+}
+
+.author-credit {
+  margin: 0 auto;
+  color: rgba(251, 253, 255, 0.94);
+  font-size: 10.6pt;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.author-credit em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.spine {
+  left: var(--spine-left);
+  top: 0;
+  width: var(--spine-width);
+  height: var(--sheet-height);
+  overflow: hidden;
+  color: var(--white);
+}
+
+.spine-title,
+.spine-author {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 7.45in;
+  text-align: center;
+  transform: translateX(-50%) rotate(90deg);
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+.spine-title {
+  top: 3.72in;
+  color: var(--white);
+  font-size: 11.4pt;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.spine-author {
+  top: 6.72in;
+  color: var(--gold);
+  font-size: 7.2pt;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.barcode-reserve {
+  z-index: 30;
+  left: 3.375in;
+  top: 7.15in;
+  width: 2in;
+  height: 1.2in;
+  pointer-events: none;
+  background: transparent;
+}

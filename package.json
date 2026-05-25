@@ -15,6 +15,7 @@
     "book:cover:i-am-what-happens": "node scripts/build-i-am-what-happens-cover.mjs",
     "book:cover:kindness": "node scripts/build-kindness-cover.mjs",
     "book:cover:mental-toughness": "node scripts/build-mental-toughness-cover.mjs",
+    "book:cover:shifting-worlds": "node scripts/build-shifting-worlds-cover.mjs",
     "book:cover:steam": "node scripts/build-steam-cover.mjs",
     "book:cover:subconscious": "node scripts/build-subconscious-cover.mjs",
     "book:pdf:fragmented": "node scripts/build-fragmented-pdf.mjs",
