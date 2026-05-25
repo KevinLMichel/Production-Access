@@ -205,7 +205,16 @@
   }
 }
 
-@page chapter:first,
+@page chapter:first {
+  @top-left {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+}
+
 @page chapter:blank {
   @top-left {
     content: none;
@@ -331,6 +340,7 @@ html {
 
 body {
   background: #fff;
+  counter-reset: page -1;
   margin: 0;
 }
 
@@ -471,7 +481,7 @@ a {
 }
 
 .toc-entry::after {
-  content: target-counter(attr(data-target url), page);
+  content: attr(data-page);
   font-family: "Source Sans 3", "Arial Narrow", sans-serif;
   font-size: 8.4pt;
   font-weight: 700;
@@ -556,6 +566,13 @@ a {
   text-align: justify;
   text-align-last: left;
   widows: 3;
+}
+
+.print-index-anchor {
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .chapter-body h2 {
@@ -683,7 +700,11 @@ a {
   break-inside: avoid;
   font-size: 8.35pt;
   line-height: 1.28;
-  margin-bottom: 0.045in;
+  margin-bottom: 0.052in;
+}
+
+.index-line {
+  break-inside: avoid;
 }
 
 .index-term {
@@ -702,10 +723,28 @@ a {
   white-space: nowrap;
 }
 
-.index-term::after {
+.index-term::after,
+.index-subterm::after {
   content: " ";
 }
 
 .index-page-ref::after {
   content: target-counter(attr(data-target url), page);
+}
+
+.index-subentries {
+  columns: auto;
+  list-style: none;
+  margin: 0.015in 0 0.018in 0.12in;
+  padding: 0;
+}
+
+.index-subentries li {
+  font-size: 7.95pt;
+  line-height: 1.24;
+  margin-bottom: 0.018in;
+}
+
+.index-subterm {
+  color: #263744;
 }

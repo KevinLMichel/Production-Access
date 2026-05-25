@@ -132,7 +132,7 @@ npm run book:pdf:shifting-worlds
 The generated file is committed at `public/downloads/shifting-worlds-kevin-l-michel.pdf`.
 Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
 
-Current generated interior: 181 pages at 5.5 x 8.5 inches.
+Current generated interior: 183 pages at 5.5 x 8.5 inches.
 
 ## Freedom by Design Cover
 

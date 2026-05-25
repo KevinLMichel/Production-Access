@@ -1,5 +1,5 @@
 ---
-import { render } from "astro:content";
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
 import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
 import { getBookChapters } from "../../../../lib/bookWorld";
 
@@ -12,63 +12,676 @@ const book = {
 const aboutAuthor =
   "Kevin L. Michel writes practical philosophy, self-development, poetic, civic, and symbolic works for readers trying to live with more clarity, courage, discipline, imagination, and inner authority. His books move between mental models, inner discipline, mythic reflection, practical strategy, and the everyday work of becoming more fully human.";
 
-const indexEntries = [
-  { term: "action as proof", targets: ["chapter-8", "chapter-17", "conclusion"] },
-  { term: "Alcaraz, Carlos", targets: ["chapter-5"] },
-  { term: "Aim Protocol", targets: ["chapter-8"] },
-  { term: "attention", targets: ["introduction", "chapter-4"] },
-  { term: "attention diet", targets: ["chapter-4"] },
-  { term: "Bannister, Roger", targets: ["chapter-8"] },
-  { term: "balance", targets: ["chapter-14"] },
-  { term: "Biles, Simone", targets: ["chapter-12"] },
-  { term: "body as instrument", targets: ["chapter-12"] },
-  { term: "boundaries", targets: ["chapter-18"] },
-  { term: "Bryant, Kobe", targets: ["chapter-11"] },
-  { term: "Curry, Stephen", targets: ["chapter-19"] },
-  { term: "Daily Shift Protocol", targets: ["chapter-17"] },
-  { term: "Dyson, James", targets: ["chapter-16", "chapter-19"] },
-  { term: "emotion", targets: ["chapter-5"] },
-  { term: "evidence logs", targets: ["chapter-16"] },
-  { term: "failure as feedback", targets: ["chapter-11"] },
-  { term: "Honnold, Alex", targets: ["chapter-15"] },
-  { term: "identity", targets: ["chapter-9"] },
-  { term: "Kipchoge, Eliud", targets: ["chapter-8"] },
-  { term: "language", targets: ["chapter-6"] },
-  { term: "mental model engineering", targets: ["chapter-16"] },
-  { term: "mental models", targets: ["introduction", "chapter-1", "chapter-16"] },
-  { term: "model attraction", targets: ["chapter-7"] },
-  { term: "Moving Star Journal", targets: ["chapter-20"] },
-  { term: "opportunity", targets: ["chapter-10"] },
-  { term: "parallel worlds", targets: ["chapter-2", "chapter-20"] },
-  { term: "Phelps, Michael", targets: ["chapter-15"] },
-  { term: "prosperity", targets: ["chapter-19"] },
-  { term: "Ragettli, Andri", targets: ["chapter-10", "chapter-20"] },
-  { term: "relationships", targets: ["chapter-18"] },
-  { term: "relief ladder", targets: ["chapter-13"] },
-  { term: "resilience", targets: ["chapter-11"] },
-  { term: "Serena Williams", targets: ["chapter-12"] },
-  { term: "Shared World Reset", targets: ["chapter-18"] },
-  { term: "Small Signal Practice", targets: ["chapter-17"] },
-  { term: "stress", targets: ["chapter-13"] },
-  { term: "success model", targets: ["chapter-8"] },
-  { term: "visualization", targets: ["chapter-15"] },
-  { term: "wealth and value creation", targets: ["chapter-19"] },
-  { term: "wellness", targets: ["chapter-12"] },
-  { term: "work and creativity", targets: ["chapter-19"] }
+type IndexAnchor = {
+  id: string;
+  order: number;
+  phrase: string;
+};
+
+type IndexSubentry = {
+  term: string;
+  targets: string[];
+};
+
+type IndexEntry = {
+  term: string;
+  targets?: string[];
+  subentries?: IndexSubentry[];
+};
+
+const indexAnchors: IndexAnchor[] = [
+  { id: "idx-intro-two-worlds", order: 0, phrase: "Two people can stand in the same room and still live in different worlds." },
+  { id: "idx-inner-model", order: 0, phrase: "A model is not the whole world." },
+  { id: "idx-change-inner-model", order: 0, phrase: "## Change your inner model, change your outer world" },
+  { id: "idx-sequence-world", order: 0, phrase: "## The sequence of a world" },
+  { id: "idx-success-without-self-destruction", order: 0, phrase: "## Success without self-destruction" },
+  { id: "idx-present-data", order: 0, phrase: "## The present is data, not destiny" },
+  { id: "idx-name-world", order: 0, phrase: "## Opening practice: Name the world" },
+  { id: "idx-reality-engine", order: 1, phrase: "A mental model is a reality engine." },
+  { id: "idx-brain-predicts", order: 1, phrase: "## The brain predicts before it records" },
+  { id: "idx-map-lens-calculator", order: 1, phrase: "## Map, lens, calculator, machine" },
+  { id: "idx-bad-models-feel-true", order: 1, phrase: "## Why bad models can feel true" },
+  { id: "idx-empowering-models", order: 1, phrase: "## Empowering models are not fantasies" },
+  { id: "idx-model-selects-world", order: 1, phrase: "## The model selects the world" },
+  { id: "idx-model-audit", order: 1, phrase: "## Practice: The Model Audit" },
+  { id: "idx-parallel-worlds", order: 2, phrase: "Every decision is a doorway, but not every doorway announces itself." },
+  { id: "idx-five-minutes", order: 2, phrase: "The defeated world and the disciplined world may differ at first by only five minutes." },
+  { id: "idx-world-not-outside", order: 2, phrase: "## The world is not outside you in the way you think" },
+  { id: "idx-outside-answers-inside", order: 2, phrase: "## The outside answers the inside" },
+  { id: "idx-loop-freedom", order: 2, phrase: "## The loop is where freedom begins" },
+  { id: "idx-cost-standing-still", order: 2, phrase: "## The cost of standing still" },
+  { id: "idx-three-world-simulation", order: 2, phrase: "## Practice: Three-World Simulation" },
+  { id: "idx-inside-outside-loop", order: 2, phrase: "## Practice: The Inside/Outside Loop" },
+  { id: "idx-belief-instruction", order: 3, phrase: "This is why a belief is not merely a sentence. It is an instruction." },
+  { id: "idx-spotlight-floodlight", order: 3, phrase: "## Spotlight and floodlight consciousness" },
+  { id: "idx-maintenance-crew", order: 3, phrase: "## The deeper maintenance crew" },
+  { id: "idx-reprogramming-machine", order: 3, phrase: "## Reprogramming the machine" },
+  { id: "idx-change-input", order: 3, phrase: "## Practice: Change the Input" },
+  { id: "idx-attention-creation", order: 4, phrase: "Attention is the first act of creation." },
+  { id: "idx-attention-diet", order: 4, phrase: "## The attention diet of a champion" },
+  { id: "idx-attention-participation", order: 4, phrase: "## Attention is participation" },
+  { id: "idx-attention-vote", order: 4, phrase: "## Attention as prayer, attention as vote" },
+  { id: "idx-awareness-obsession", order: 4, phrase: "## Awareness without obsession" },
+  { id: "idx-spotlight-teaches", order: 4, phrase: "## What the spotlight teaches" },
+  { id: "idx-attention-experiment", order: 4, phrase: "## Practice: The Seven-Day Attention Experiment" },
+  { id: "idx-attention-ledger", order: 4, phrase: "## Practice: The Attention Ledger" },
+  { id: "idx-emotion-relief", order: 5, phrase: "Sometimes the first evidence is relief." },
+  { id: "idx-emotion-weather", order: 5, phrase: "## Emotion as weather, compass, and chemistry" },
+  { id: "idx-fear-prophecy", order: 5, phrase: "## Do not ask fear to write the prophecy" },
+  { id: "idx-state-before-strategy", order: 5, phrase: "## State before strategy" },
+  { id: "idx-joy-method", order: 5, phrase: "## Joy as method" },
+  { id: "idx-alcaraz", order: 5, phrase: "Carlos Alcaraz gives a vivid public example." },
+  { id: "idx-emotional-weather-report", order: 5, phrase: "## Practice: Emotional Weather Report" },
+  { id: "idx-language-organizes", order: 6, phrase: "Words are not decorations placed on top of reality." },
+  { id: "idx-words-instructions", order: 6, phrase: "## Words as instructions to the whole system" },
+  { id: "idx-sentence-beneath", order: 6, phrase: "## The sentence beneath the sentence" },
+  { id: "idx-private-sentence-business", order: 6, phrase: "## The private sentence that ran the business" },
+  { id: "idx-bridge-language", order: 6, phrase: "## Bridge language" },
+  { id: "idx-vocabulary-shift", order: 6, phrase: "## Practice: The Vocabulary Shift" },
+  { id: "idx-attraction-coherence", order: 7, phrase: "In this sense, attraction is not laziness. It is coherence." },
+  { id: "idx-attraction-not-begging", order: 7, phrase: "## Attraction as coherence, not begging" },
+  { id: "idx-universe-hears-habits", order: 7, phrase: "## The universe hears habits" },
+  { id: "idx-elena", order: 7, phrase: "### Case Study: Elena and the Two Worlds" },
+  { id: "idx-coherence-ordinary", order: 7, phrase: "## Coherence in ordinary places" },
+  { id: "idx-alignment-fantasy", order: 7, phrase: "## Alignment instead of fantasy" },
+  { id: "idx-attraction-alignment-practice", order: 7, phrase: "## Practice: Attraction Through Alignment" },
+  { id: "idx-success-probability", order: 8, phrase: "Success is not only an outcome. It is a probability field." },
+  { id: "idx-aim-room", order: 8, phrase: "## Aim changes the room" },
+  { id: "idx-goal-world-converter", order: 8, phrase: "## The goal as a world-converter" },
+  { id: "idx-four-minute-world", order: 8, phrase: "## The four-minute world" },
+  { id: "idx-bannister", order: 8, phrase: "Then Roger Bannister ran the mile in 3:59.4." },
+  { id: "idx-kipchoge", order: 8, phrase: "Eliud Kipchoge's two-hour marathon demonstration" },
+  { id: "idx-difficulty-wakes", order: 8, phrase: "## Difficulty wakes the self" },
+  { id: "idx-progress-reward", order: 8, phrase: "## Progress is the reward system" },
+  { id: "idx-expectancy", order: 8, phrase: "## Expectancy as a world-selector" },
+  { id: "idx-self-efficacy", order: 8, phrase: "## Self-efficacy: the belief that I can move" },
+  { id: "idx-trained-participation", order: 8, phrase: "## Trained participation" },
+  { id: "idx-expectancy-upgrade", order: 8, phrase: "## Practice: Expectancy Upgrade" },
+  { id: "idx-aim-protocol", order: 8, phrase: "## Practice: The Aim Protocol" },
+  { id: "idx-identity-pattern", order: 9, phrase: "The ideal self is not a fantasy version of you floating beyond reach." },
+  { id: "idx-rough-draft-self", order: 9, phrase: "## The rough draft of the self" },
+  { id: "idx-fool-doorway", order: 9, phrase: "## The fool at the doorway" },
+  { id: "idx-self-authorship", order: 9, phrase: "## Self-authorship" },
+  { id: "idx-identity-rehearsal", order: 9, phrase: "## The identity rehearsal" },
+  { id: "idx-old-self", order: 9, phrase: "## The old self is not evil" },
+  { id: "idx-compassion-old-strategy", order: 9, phrase: "## Compassion for the old strategy" },
+  { id: "idx-rough-draft-action", order: 9, phrase: "## Practice: The Rough Draft Action" },
+  { id: "idx-small-clean-thing", order: 10, phrase: "Do the small clean thing." },
+  { id: "idx-doors-trained-eye", order: 10, phrase: "## Doors require a trained eye" },
+  { id: "idx-obstacle-course-mind", order: 10, phrase: "## The obstacle-course mind" },
+  { id: "idx-ragettli-perception", order: 10, phrase: "Andri Ragettli does not merely train tricks." },
+  { id: "idx-ragettli-career", order: 10, phrase: "Ragettli's career makes the lesson sharper" },
+  { id: "idx-ordinary-obstacle-course", order: 10, phrase: "## Your ordinary obstacle course" },
+  { id: "idx-cleaner-thought", order: 10, phrase: "## Receiving the cleaner thought" },
+  { id: "idx-room-useful-thought", order: 10, phrase: "## Make room for the useful thought" },
+  { id: "idx-door-hidden-obstacle", order: 10, phrase: "## Practice: Door Hidden Inside the Obstacle" },
+  { id: "idx-failure-information", order: 11, phrase: "But failure is not identity. Failure is information." },
+  { id: "idx-airballs-tuition", order: 11, phrase: "## The airballs as tuition" },
+  { id: "idx-kobe", order: 11, phrase: "Kobe Bryant's rookie playoff airballs" },
+  { id: "idx-redemptive-mistakes", order: 11, phrase: "## Redemptive mistakes" },
+  { id: "idx-crisis-visibility", order: 11, phrase: "## Crisis as visibility" },
+  { id: "idx-crisis-flashlight", order: 11, phrase: "## Crisis as a flashlight" },
+  { id: "idx-romanticize-crisis", order: 11, phrase: "## Do not romanticize crisis" },
+  { id: "idx-failure-translation", order: 11, phrase: "## Practice: The Failure Translation Sheet" },
+  { id: "idx-body-instrument", order: 12, phrase: "Wellness is not separate from success." },
+  { id: "idx-boundary-greatness", order: 12, phrase: "## The boundary that protected greatness" },
+  { id: "idx-biles", order: 12, phrase: "Simone Biles gave the world a different model." },
+  { id: "idx-serena", order: 12, phrase: "Serena Williams' return to elite tennis" },
+  { id: "idx-poor-engineering", order: 12, phrase: "## Poor engineering is not weakness" },
+  { id: "idx-support-regulation", order: 12, phrase: "## Support is easier to perceive from regulation" },
+  { id: "idx-quiet-technology", order: 12, phrase: "## Quiet as technology" },
+  { id: "idx-biology-world", order: 12, phrase: "## The biology of a world" },
+  { id: "idx-genes-not-jailers", order: 12, phrase: "## Your genes are not your jailers" },
+  { id: "idx-thomas-body-world", order: 12, phrase: "## Thomas and the body-world" },
+  { id: "idx-maintenance-possibility", order: 12, phrase: "## Maintenance of possibility" },
+  { id: "idx-body-world-audit", order: 12, phrase: "## Practice: The Body-World Audit" },
+  { id: "idx-stress-energy", order: 13, phrase: "Sometimes stress is the body announcing that importance has entered the room." },
+  { id: "idx-relief-ladder", order: 13, phrase: "## The relief ladder" },
+  { id: "idx-next-playable-unit", order: 13, phrase: "## The next playable unit" },
+  { id: "idx-relief-doorway", order: 13, phrase: "## Relief is a doorway, not a lesser goal" },
+  { id: "idx-no-score-window", order: 13, phrase: "## The no-score window" },
+  { id: "idx-win-not-pretty", order: 13, phrase: "## When the win is not pretty" },
+  { id: "idx-relief-practice", order: 13, phrase: "## Practice: Relief Ladder and Dark-Path Protocol" },
+  { id: "idx-balance-traveler", order: 14, phrase: "The shift into a better world must include a better way of treating the traveler." },
+  { id: "idx-rhythm-drama", order: 14, phrase: "## Rhythm instead of drama" },
+  { id: "idx-harmony-motion", order: 14, phrase: "## Harmony under motion" },
+  { id: "idx-living-negotiation", order: 14, phrase: "## Balance as a living negotiation" },
+  { id: "idx-learn-surface", order: 14, phrase: "## Learn the surface" },
+  { id: "idx-rhythm-calendar", order: 14, phrase: "## Practice: The Rhythm Calendar" },
+  { id: "idx-visualization-preparation", order: 15, phrase: "It is good to imagine the life you want." },
+  { id: "idx-phelps", order: 15, phrase: "In the 2008 Olympic 200-meter butterfly final" },
+  { id: "idx-honnold", order: 15, phrase: "Alex Honnold's free soloing" },
+  { id: "idx-path-not-prize", order: 15, phrase: "## Rehearse the path, not only the prize" },
+  { id: "idx-stabilize-before-proof", order: 15, phrase: "## Stabilize before demanding proof" },
+  { id: "idx-not-vacation-action", order: 15, phrase: "## Visualization is not a vacation from action" },
+  { id: "idx-vision-trains-action", order: 15, phrase: "## Vision that trains action" },
+  { id: "idx-world-rehearsal", order: 15, phrase: "## Practice: World Rehearsal With Obstacles" },
+  { id: "idx-obstacle-rehearsal", order: 15, phrase: "## Practice: Obstacle Rehearsal" },
+  { id: "idx-engineering-living", order: 16, phrase: 'At some point, every serious person must ask: "Is my model helping me live?"' },
+  { id: "idx-honest-accountant", order: 16, phrase: "## The honest accountant" },
+  { id: "idx-prototype-world", order: 16, phrase: "## The prototype world" },
+  { id: "idx-dyson", order: 16, phrase: "James Dyson's vacuum story is useful here" },
+  { id: "idx-symbols-new-world", order: 16, phrase: "## Symbols of the new world" },
+  { id: "idx-brain-clay", order: 16, phrase: "## The brain is clay, not concrete" },
+  { id: "idx-progress-visible", order: 16, phrase: "## Make progress visible" },
+  { id: "idx-new-archive", order: 16, phrase: "## Build the new archive" },
+  { id: "idx-model-lab", order: 16, phrase: "## Practice: The Model Lab" },
+  { id: "idx-daily-protocol", order: 17, phrase: "Each morning, before the world rushes in to name you, name yourself." },
+  { id: "idx-seven-days", order: 17, phrase: "## Seven days in the new operating system" },
+  { id: "idx-spotlight-method", order: 17, phrase: "## The spotlight method" },
+  { id: "idx-micro-finish-lines", order: 17, phrase: "## Micro-finish lines" },
+  { id: "idx-daily-sequence", order: 17, phrase: "## The daily sequence" },
+  { id: "idx-morning-signal", order: 17, phrase: "## The morning signal" },
+  { id: "idx-protocol-protects", order: 17, phrase: "## A protocol protects freedom from mood" },
+  { id: "idx-practice-daily-shift", order: 17, phrase: "## Practice: The Daily Shift Protocol" },
+  { id: "idx-shared-worlds", order: 18, phrase: "Every relationship is a shared world." },
+  { id: "idx-relationship-climate", order: 18, phrase: "## Every relationship has a climate" },
+  { id: "idx-expectations-shape", order: 18, phrase: "## Expectations shape people" },
+  { id: "idx-listening-world-making", order: 18, phrase: "## Listening as world-making" },
+  { id: "idx-boundaries-architecture", order: 18, phrase: "## Boundaries are world architecture" },
+  { id: "idx-marriage-language", order: 18, phrase: "### Scenario: The Marriage That Changed Its Language" },
+  { id: "idx-shared-model-room", order: 18, phrase: "## The shared model in the room" },
+  { id: "idx-shared-conversation", order: 18, phrase: "## Practice: The Shared World Conversation" },
+  { id: "idx-shared-reset", order: 18, phrase: "## Practice: The Shared World Reset" },
+  { id: "idx-prosperity-capacity", order: 19, phrase: "## Prosperity as capacity" },
+  { id: "idx-curry", order: 19, phrase: "Stephen Curry's story is useful" },
+  { id: "idx-blakely", order: 19, phrase: "Sara Blakely's family story around failure" },
+  { id: "idx-creative-worlds", order: 19, phrase: "## Creative worlds" },
+  { id: "idx-prosperity-possession", order: 19, phrase: "## Prosperity beyond possession" },
+  { id: "idx-work-relevance", order: 19, phrase: "## Work as a field of relevance" },
+  { id: "idx-imperfect-existence", order: 19, phrase: "## The creative world requires imperfect existence" },
+  { id: "idx-value-sight", order: 19, phrase: "## Wealth begins with value sight" },
+  { id: "idx-money-worth", order: 19, phrase: "## Do not let money become a mirror of worth" },
+  { id: "idx-andre-prosperity", order: 19, phrase: "### Scenario: Andre and the Prosperity Model" },
+  { id: "idx-prosperity-map", order: 19, phrase: "## Practice: The Prosperity Capacity Map" },
+  { id: "idx-value-world-map", order: 19, phrase: "## Practice: The Value World Map" },
+  { id: "idx-ideal-world", order: 20, phrase: "The ideal parallel world is not a fantasy palace" },
+  { id: "idx-moving-star", order: 20, phrase: "## The moving star" },
+  { id: "idx-medal-mastery", order: 20, phrase: "## Medal-world and mastery-world" },
+  { id: "idx-ragettli-mastery", order: 20, phrase: "Andri Ragettli has lived close to that edge." },
+  { id: "idx-design-not-freeze", order: 20, phrase: "## Designing the world without freezing it" },
+  { id: "idx-design-boldly", order: 20, phrase: "## Design boldly, revise humbly" },
+  { id: "idx-moving-star-design", order: 20, phrase: "## Practice: Moving Star World Design" },
+  { id: "idx-new-normality", order: 21, phrase: "This is how transformation often announces itself: not as fireworks, but as new normality." },
+  { id: "idx-fully-lit-path", order: 21, phrase: "## Do not wait for the fully lit path" },
+  { id: "idx-modeler-traveler", order: 21, phrase: "## The modeler and the traveler" },
+  { id: "idx-great-participation", order: 21, phrase: "## The great participation" },
+  { id: "idx-final-instruction", order: 21, phrase: "## The final instruction" },
+  { id: "idx-still-waiting", order: 21, phrase: "## If you are still waiting" },
+  { id: "idx-next-honest-action", order: 21, phrase: "## Practice: The Next Honest Action" },
+  { id: "idx-final-word", order: 21, phrase: "## Final word" }
 ];
 
+const indexEntries: IndexEntry[] = [
+  {
+    term: "action",
+    targets: ["idx-small-clean-thing", "idx-next-honest-action"],
+    subentries: [
+      { term: "as evidence", targets: ["idx-model-audit", "idx-progress-visible"] },
+      { term: "as proof", targets: ["idx-success-probability", "idx-daily-sequence"] },
+      { term: "clean next action", targets: ["idx-small-clean-thing", "idx-next-honest-action"] }
+    ]
+  },
+  { term: "Aim Protocol", targets: ["idx-aim-protocol"] },
+  {
+    term: "aim",
+    targets: ["idx-aim-room", "idx-goal-world-converter", "idx-moving-star"],
+    subentries: [
+      { term: "as world-converter", targets: ["idx-goal-world-converter"] },
+      { term: "moving star", targets: ["idx-moving-star", "idx-moving-star-design"] },
+      { term: "success probability", targets: ["idx-success-probability", "idx-aim-protocol"] }
+    ]
+  },
+  { term: "Alcaraz, Carlos", targets: ["idx-alcaraz"] },
+  {
+    term: "alignment",
+    targets: ["idx-attraction-coherence", "idx-alignment-fantasy"],
+    subentries: [
+      { term: "coherence", targets: ["idx-attraction-not-begging", "idx-coherence-ordinary"] },
+      { term: "instead of fantasy", targets: ["idx-alignment-fantasy"] },
+      { term: "practice", targets: ["idx-attraction-alignment-practice"] }
+    ]
+  },
+  { term: "Andre prosperity scenario", targets: ["idx-andre-prosperity"] },
+  {
+    term: "attention",
+    targets: ["idx-attention-creation", "idx-attention-participation", "idx-attention-vote"],
+    subentries: [
+      { term: "diet", targets: ["idx-attention-diet"] },
+      { term: "ledger", targets: ["idx-attention-ledger"] },
+      { term: "participation", targets: ["idx-attention-participation"] },
+      { term: "spotlight", targets: ["idx-spotlight-floodlight", "idx-spotlight-teaches", "idx-spotlight-method"] },
+      { term: "vote", targets: ["idx-attention-vote"] }
+    ]
+  },
+  { term: "Attention Ledger", targets: ["idx-attention-ledger"] },
+  { term: "Bannister, Roger", targets: ["idx-bannister", "idx-four-minute-world"] },
+  {
+    term: "balance",
+    targets: ["idx-balance-traveler", "idx-harmony-motion", "idx-living-negotiation"],
+    subentries: [
+      { term: "rhythm", targets: ["idx-rhythm-drama", "idx-rhythm-calendar"] },
+      { term: "without self-attack", targets: ["idx-balance-traveler"] }
+    ]
+  },
+  { term: "Biles, Simone", targets: ["idx-biles", "idx-boundary-greatness"] },
+  {
+    term: "body",
+    targets: ["idx-body-instrument", "idx-biology-world", "idx-body-world-audit"],
+    subentries: [
+      { term: "as instrument", targets: ["idx-body-instrument", "idx-maintenance-possibility"] },
+      { term: "body-world case study", targets: ["idx-thomas-body-world"] },
+      { term: "genes are not jailers", targets: ["idx-genes-not-jailers"] },
+      { term: "wellness audit", targets: ["idx-body-world-audit"] }
+    ]
+  },
+  {
+    term: "boundaries",
+    targets: ["idx-boundaries-architecture", "idx-boundary-greatness"],
+    subentries: [
+      { term: "greatness and wellness", targets: ["idx-boundary-greatness"] },
+      { term: "relationship architecture", targets: ["idx-boundaries-architecture"] }
+    ]
+  },
+  {
+    term: "brain",
+    subentries: [
+      { term: "as clay", targets: ["idx-brain-clay"] },
+      { term: "prediction", targets: ["idx-brain-predicts"] },
+      { term: "subconscious maintenance", targets: ["idx-maintenance-crew"] }
+    ]
+  },
+  { term: "Bryant, Kobe", targets: ["idx-kobe", "idx-airballs-tuition"] },
+  {
+    term: "coherence",
+    targets: ["idx-attraction-coherence", "idx-coherence-ordinary"],
+    subentries: [
+      { term: "habits as signal", targets: ["idx-universe-hears-habits"] },
+      { term: "ordinary places", targets: ["idx-coherence-ordinary"] }
+    ]
+  },
+  { term: "compassion for the old self", targets: ["idx-old-self", "idx-compassion-old-strategy"] },
+  {
+    term: "creativity",
+    targets: ["idx-creative-worlds", "idx-imperfect-existence"],
+    subentries: [
+      { term: "first version", targets: ["idx-imperfect-existence"] },
+      { term: "work and wealth", targets: ["idx-creative-worlds", "idx-work-relevance"] }
+    ]
+  },
+  {
+    term: "crisis",
+    targets: ["idx-crisis-visibility", "idx-crisis-flashlight", "idx-romanticize-crisis"],
+    subentries: [
+      { term: "as flashlight", targets: ["idx-crisis-flashlight"] },
+      { term: "not romanticized", targets: ["idx-romanticize-crisis"] }
+    ]
+  },
+  { term: "Curry, Stephen", targets: ["idx-curry"] },
+  {
+    term: "Daily Shift Protocol",
+    targets: ["idx-daily-protocol", "idx-practice-daily-shift"],
+    subentries: [
+      { term: "morning signal", targets: ["idx-morning-signal"] },
+      { term: "micro-finish lines", targets: ["idx-micro-finish-lines"] },
+      { term: "seven-day operating system", targets: ["idx-seven-days"] },
+      { term: "spotlight method", targets: ["idx-spotlight-method"] }
+    ]
+  },
+  { term: "Decision Alignment Sheet", targets: ["idx-aim-protocol", "idx-daily-sequence"] },
+  { term: "doors", targets: ["idx-doors-trained-eye", "idx-door-hidden-obstacle", "idx-cleaner-thought"] },
+  { term: "Dyson, James", targets: ["idx-dyson", "idx-prototype-world"] },
+  { term: "Elena and the two worlds", targets: ["idx-elena"] },
+  {
+    term: "emotion",
+    targets: ["idx-emotion-relief", "idx-emotion-weather", "idx-state-before-strategy"],
+    subentries: [
+      { term: "fear as messenger", targets: ["idx-fear-prophecy"] },
+      { term: "joy as method", targets: ["idx-joy-method", "idx-alcaraz"] },
+      { term: "weather report", targets: ["idx-emotional-weather-report"] }
+    ]
+  },
+  {
+    term: "evidence",
+    targets: ["idx-model-audit", "idx-progress-visible", "idx-new-archive"],
+    subentries: [
+      { term: "archive", targets: ["idx-new-archive"] },
+      { term: "logs", targets: ["idx-honest-accountant", "idx-progress-visible"] },
+      { term: "progress visibility", targets: ["idx-progress-visible"] }
+    ]
+  },
+  { term: "Expectancy Upgrade", targets: ["idx-expectancy-upgrade"] },
+  { term: "expectancy", targets: ["idx-expectancy", "idx-self-efficacy", "idx-expectancy-upgrade"] },
+  {
+    term: "failure",
+    targets: ["idx-failure-information", "idx-failure-translation"],
+    subentries: [
+      { term: "as data", targets: ["idx-failure-information"] },
+      { term: "as tuition", targets: ["idx-airballs-tuition", "idx-kobe"] },
+      { term: "redemptive mistakes", targets: ["idx-redemptive-mistakes"] }
+    ]
+  },
+  { term: "fear", targets: ["idx-fear-prophecy", "idx-stress-energy"] },
+  { term: "four-minute mile", targets: ["idx-four-minute-world", "idx-bannister"] },
+  { term: "Honnold, Alex", targets: ["idx-honnold"] },
+  {
+    term: "identity",
+    targets: ["idx-identity-pattern", "idx-identity-rehearsal"],
+    subentries: [
+      { term: "old self", targets: ["idx-old-self", "idx-compassion-old-strategy"] },
+      { term: "rough draft", targets: ["idx-rough-draft-self", "idx-rough-draft-action"] },
+      { term: "self-authorship", targets: ["idx-self-authorship"] }
+    ]
+  },
+  {
+    term: "inside/outside loop",
+    targets: ["idx-outside-answers-inside", "idx-inside-outside-loop", "idx-loop-freedom"]
+  },
+  { term: "Kipchoge, Eliud", targets: ["idx-kipchoge"] },
+  {
+    term: "language",
+    targets: ["idx-language-organizes", "idx-words-instructions", "idx-vocabulary-shift"],
+    subentries: [
+      { term: "bridge language", targets: ["idx-bridge-language"] },
+      { term: "private sentence", targets: ["idx-private-sentence-business"] },
+      { term: "sentence beneath the sentence", targets: ["idx-sentence-beneath"] },
+      { term: "vocabulary shift", targets: ["idx-vocabulary-shift"] }
+    ]
+  },
+  {
+    term: "mental model engineering",
+    targets: ["idx-engineering-living", "idx-honest-accountant", "idx-model-lab"],
+    subentries: [
+      { term: "honest accountant", targets: ["idx-honest-accountant"] },
+      { term: "model lab", targets: ["idx-model-lab"] },
+      { term: "prototype world", targets: ["idx-prototype-world", "idx-dyson"] },
+      { term: "symbols", targets: ["idx-symbols-new-world"] }
+    ]
+  },
+  {
+    term: "mental models",
+    targets: ["idx-inner-model", "idx-reality-engine", "idx-model-selects-world"],
+    subentries: [
+      { term: "audit", targets: ["idx-model-audit"] },
+      { term: "bad models feeling true", targets: ["idx-bad-models-feel-true"] },
+      { term: "empowering models", targets: ["idx-empowering-models"] },
+      { term: "map, lens, calculator, machine", targets: ["idx-map-lens-calculator"] }
+    ]
+  },
+  { term: "micro-finish lines", targets: ["idx-micro-finish-lines"] },
+  {
+    term: "model attraction",
+    targets: ["idx-attraction-coherence", "idx-attraction-not-begging", "idx-universe-hears-habits"]
+  },
+  { term: "Moving Star World Design", targets: ["idx-moving-star", "idx-moving-star-design"] },
+  { term: "No-Score Window", targets: ["idx-no-score-window"] },
+  {
+    term: "opportunity",
+    targets: ["idx-doors-trained-eye", "idx-obstacle-course-mind", "idx-door-hidden-obstacle"],
+    subentries: [
+      { term: "cleaner thought", targets: ["idx-cleaner-thought", "idx-room-useful-thought"] },
+      { term: "ordinary obstacle course", targets: ["idx-ordinary-obstacle-course"] },
+      { term: "tools, obstacles, irrelevance", targets: ["idx-spotlight-teaches", "idx-door-hidden-obstacle"] }
+    ]
+  },
+  {
+    term: "parallel worlds",
+    targets: ["idx-parallel-worlds", "idx-five-minutes", "idx-ideal-world"],
+    subentries: [
+      { term: "competing models", targets: ["idx-parallel-worlds", "idx-three-world-simulation"] },
+      { term: "ideal world", targets: ["idx-ideal-world", "idx-design-not-freeze"] },
+      { term: "world crossing", targets: ["idx-five-minutes", "idx-next-honest-action"] }
+    ]
+  },
+  { term: "Phelps, Michael", targets: ["idx-phelps"] },
+  {
+    term: "practice",
+    subentries: [
+      { term: "Aim Protocol", targets: ["idx-aim-protocol"] },
+      { term: "Attention Ledger", targets: ["idx-attention-ledger"] },
+      { term: "Body-World Audit", targets: ["idx-body-world-audit"] },
+      { term: "Daily Shift Protocol", targets: ["idx-practice-daily-shift"] },
+      { term: "Model Lab", targets: ["idx-model-lab"] },
+      { term: "Next Honest Action", targets: ["idx-next-honest-action"] },
+      { term: "Prosperity Capacity Map", targets: ["idx-prosperity-map"] },
+      { term: "Shared World Reset", targets: ["idx-shared-reset"] },
+      { term: "World Rehearsal With Obstacles", targets: ["idx-world-rehearsal", "idx-obstacle-rehearsal"] }
+    ]
+  },
+  {
+    term: "prosperity",
+    targets: ["idx-prosperity-capacity", "idx-prosperity-possession", "idx-prosperity-map"],
+    subentries: [
+      { term: "capacity", targets: ["idx-prosperity-capacity", "idx-prosperity-possession"] },
+      { term: "money and worth", targets: ["idx-money-worth"] },
+      { term: "stewardship", targets: ["idx-andre-prosperity"] },
+      { term: "value creation", targets: ["idx-value-sight", "idx-value-world-map"] }
+    ]
+  },
+  {
+    term: "Ragettli, Andri",
+    targets: ["idx-ragettli-perception", "idx-ragettli-career", "idx-ragettli-mastery"],
+    subentries: [
+      { term: "mastery beyond medals", targets: ["idx-medal-mastery", "idx-ragettli-mastery"] },
+      { term: "obstacle-course mind", targets: ["idx-obstacle-course-mind", "idx-ragettli-perception"] }
+    ]
+  },
+  {
+    term: "relationships",
+    targets: ["idx-shared-worlds", "idx-relationship-climate", "idx-shared-reset"],
+    subentries: [
+      { term: "boundaries", targets: ["idx-boundaries-architecture"] },
+      { term: "climate", targets: ["idx-relationship-climate"] },
+      { term: "expectations", targets: ["idx-expectations-shape"] },
+      { term: "listening", targets: ["idx-listening-world-making"] },
+      { term: "Shared World Reset", targets: ["idx-shared-reset"] }
+    ]
+  },
+  {
+    term: "relief",
+    targets: ["idx-relief-ladder", "idx-relief-doorway", "idx-relief-practice"],
+    subentries: [
+      { term: "ladder", targets: ["idx-relief-ladder", "idx-relief-practice"] },
+      { term: "next playable unit", targets: ["idx-next-playable-unit"] }
+    ]
+  },
+  {
+    term: "resilience",
+    targets: ["idx-failure-information", "idx-redemptive-mistakes", "idx-crisis-flashlight"],
+    subentries: [
+      { term: "correction", targets: ["idx-failure-translation"] },
+      { term: "crisis", targets: ["idx-crisis-visibility", "idx-crisis-flashlight"] },
+      { term: "setbacks as data", targets: ["idx-failure-information"] }
+    ]
+  },
+  { term: "Rough Draft Action", targets: ["idx-rough-draft-action"] },
+  { term: "Serena Williams", targets: ["idx-serena"] },
+  { term: "Shared World Reset", targets: ["idx-shared-reset"] },
+  { term: "Simone Biles", targets: ["idx-biles"] },
+  { term: "Small Signal Practice", targets: ["idx-daily-protocol", "idx-morning-signal"] },
+  {
+    term: "stress",
+    targets: ["idx-stress-energy", "idx-relief-ladder", "idx-no-score-window"],
+    subentries: [
+      { term: "as energy", targets: ["idx-stress-energy"] },
+      { term: "peace-worlds", targets: ["idx-relief-doorway", "idx-win-not-pretty"] }
+    ]
+  },
+  {
+    term: "success model",
+    targets: ["idx-success-probability", "idx-aim-room", "idx-trained-participation"],
+    subentries: [
+      { term: "difficulty", targets: ["idx-difficulty-wakes"] },
+      { term: "progress", targets: ["idx-progress-reward"] },
+      { term: "self-efficacy", targets: ["idx-self-efficacy"] }
+    ]
+  },
+  {
+    term: "visualization",
+    targets: ["idx-visualization-preparation", "idx-vision-trains-action", "idx-obstacle-rehearsal"],
+    subentries: [
+      { term: "action rehearsal", targets: ["idx-vision-trains-action"] },
+      { term: "obstacles", targets: ["idx-world-rehearsal", "idx-obstacle-rehearsal"] },
+      { term: "Phelps example", targets: ["idx-phelps"] }
+    ]
+  },
+  {
+    term: "wealth",
+    targets: ["idx-prosperity-capacity", "idx-work-relevance", "idx-value-sight"],
+    subentries: [
+      { term: "money and worth", targets: ["idx-money-worth"] },
+      { term: "prosperity capacity map", targets: ["idx-prosperity-map"] },
+      { term: "value sight", targets: ["idx-value-sight", "idx-value-world-map"] }
+    ]
+  },
+  {
+    term: "wellness",
+    targets: ["idx-success-without-self-destruction", "idx-body-instrument", "idx-maintenance-possibility"],
+    subentries: [
+      { term: "body as instrument", targets: ["idx-body-instrument"] },
+      { term: "quiet as technology", targets: ["idx-quiet-technology"] },
+      { term: "support and regulation", targets: ["idx-support-regulation"] }
+    ]
+  },
+  {
+    term: "work",
+    targets: ["idx-work-relevance", "idx-value-sight"],
+    subentries: [
+      { term: "creative worlds", targets: ["idx-creative-worlds"] },
+      { term: "field of relevance", targets: ["idx-work-relevance"] },
+      { term: "portable capacity", targets: ["idx-work-relevance", "idx-prosperity-capacity"] }
+    ]
+  }
+];
+
+// Vivliostyle resolves backward index target-counters correctly after the printed-page
+// offset, but forward TOC target-counters collapse under that reset. These explicit
+// TOC locators mirror the generated visible page numbers for the current print layout.
+const tocPageNumbers: Record<number, number> = {
+  0: 1,
+  1: 9,
+  2: 15,
+  3: 22,
+  4: 28,
+  5: 36,
+  6: 43,
+  7: 50,
+  8: 59,
+  9: 70,
+  10: 77,
+  11: 84,
+  12: 92,
+  13: 101,
+  14: 108,
+  15: 115,
+  16: 123,
+  17: 131,
+  18: 139,
+  19: 148,
+  20: 159,
+  21: 166
+};
+
 const sections = await getBookChapters("shifting-worlds");
+const markdownProcessor = await createMarkdownProcessor({ syntaxHighlight: false });
+const missingIndexAnchors: string[] = [];
+
 const renderedSections = await Promise.all(
   sections.map(async (section) => {
-    const { Content } = await render(section);
+    const html = await renderPrintMarkdownWithIndexAnchors(section.body ?? "", section.data.order);
+
     return {
       section,
-      Content,
+      html,
       printId: sectionId(section.data.order),
       label: sectionLabel(section.data.order)
     };
   })
 );
+
+const printIds = new Set(renderedSections.map((entry) => entry.printId));
+const indexAnchorIds = new Set(indexAnchors.map((anchor) => anchor.id));
+const undefinedTargets = [...collectIndexTargets(indexEntries)].filter(
+  (target) => !printIds.has(target) && !indexAnchorIds.has(target)
+);
+
+if (undefinedTargets.length > 0) {
+  throw new Error(`Shifting Worlds index has undefined targets: ${undefinedTargets.join(", ")}`);
+}
+
+if (missingIndexAnchors.length > 0) {
+  console.warn(`Shifting Worlds index anchors fell back to chapter starts: ${missingIndexAnchors.join(", ")}`);
+}
+
+async function renderPrintMarkdownWithIndexAnchors(markdown: string, order: number) {
+  const injectedMarkdown = injectIndexAnchors(markdown, order);
+  const rendered = await markdownProcessor.render(injectedMarkdown);
+  return rendered.code;
+}
+
+function collectIndexTargets(entries: IndexEntry[]) {
+  const targets = new Set<string>();
+
+  for (const entry of entries) {
+    for (const target of entry.targets ?? []) {
+      targets.add(target);
+    }
+
+    for (const subentry of entry.subentries ?? []) {
+      for (const target of subentry.targets) {
+        targets.add(target);
+      }
+    }
+  }
+
+  return targets;
+}
+
+function injectIndexAnchors(markdown: string, order: number) {
+  const normalizedMarkdown = markdown.replace(/\r\n/g, "\n");
+  const anchors = indexAnchors.filter((anchor) => anchor.order === order);
+
+  if (anchors.length === 0) {
+    return normalizedMarkdown;
+  }
+
+  const insertions = new Map<number, string[]>();
+  const fallbackMarkers: string[] = [];
+
+  for (const anchor of anchors) {
+    const phraseIndex = normalizedMarkdown.indexOf(anchor.phrase);
+    const marker = indexAnchorMarkup(anchor.id);
+
+    if (phraseIndex === -1) {
+      missingIndexAnchors.push(anchor.id);
+      fallbackMarkers.push(marker);
+      continue;
+    }
+
+    const paragraphBreakIndex = normalizedMarkdown.lastIndexOf("\n\n", phraseIndex);
+    const insertAt = paragraphBreakIndex === -1 ? 0 : paragraphBreakIndex + 2;
+    const markers = insertions.get(insertAt) ?? [];
+    markers.push(marker);
+    insertions.set(insertAt, markers);
+  }
+
+  let output = normalizedMarkdown;
+  const sortedInsertions = [...insertions.entries()].sort(([a], [b]) => b - a);
+
+  for (const [insertAt, markers] of sortedInsertions) {
+    output = `${output.slice(0, insertAt)}${markers.join("\n")}\n\n${output.slice(insertAt)}`;
+  }
+
+  if (fallbackMarkers.length > 0) {
+    output = `${fallbackMarkers.join("\n")}\n\n${output}`;
+  }
+
+  return output;
+}
+
+function indexAnchorMarkup(id: string) {
+  return `<div id="${id}" class="print-index-anchor" aria-hidden="true"></div>`;
+}
 
 function sectionLabel(order: number) {
   if (order === 0) return "Introduction";
@@ -80,6 +693,10 @@ function sectionId(order: number) {
   if (order === 0) return "introduction";
   if (order === 21) return "conclusion";
   return `chapter-${order}`;
+}
+
+function tocPageNumber(order: number) {
+  return tocPageNumbers[order] ?? "";
 }
 
 function partId(part: string) {
@@ -161,7 +778,7 @@ for (const entry of renderedSections) {
               </li>
             ) : (
               <li>
-                <div class="toc-entry" data-target={`#${section.printId}`}>
+                <div class="toc-entry" data-target={`#${section.printId}`} data-page={tocPageNumber(section.section.data.order)}>
                   <span class="toc-chapter">{section.label}</span>
                   <span class="toc-title">{section.section.data.title}</span>
                 </div>
@@ -184,7 +801,7 @@ for (const entry of renderedSections) {
             <PrintBookChapter
               chapter={section.section}
               printId={section.printId}
-              Content={section.Content}
+              html={section.html}
               kickerLabel={section.label}
               startOnRecto={section.section.data.order === 0}
               showSubtitle={false}
@@ -204,16 +821,37 @@ for (const entry of renderedSections) {
       <ul>
         {
           indexEntries.map((entry) => (
-            <li>
-              <span class="index-term">{entry.term}</span>
-              <span class="index-pages">
-                {entry.targets.map((target, index) => (
-                  <>
-                    {index > 0 && <span class="index-separator">, </span>}
-                    <span class="index-page-ref" data-target={`#${target}`}></span>
-                  </>
-                ))}
-              </span>
+            <li class="index-entry">
+              <div class="index-line">
+                <span class="index-term">{entry.term}</span>
+                {entry.targets && (
+                  <span class="index-pages">
+                    {entry.targets.map((target, index) => (
+                      <>
+                        {index > 0 && <span class="index-separator">, </span>}
+                        <span class="index-page-ref" data-target={`#${target}`}></span>
+                      </>
+                    ))}
+                  </span>
+                )}
+              </div>
+              {entry.subentries && (
+                <ul class="index-subentries">
+                  {entry.subentries.map((subentry) => (
+                    <li>
+                      <span class="index-subterm">{subentry.term}</span>
+                      <span class="index-pages">
+                        {subentry.targets.map((target, index) => (
+                          <>
+                            {index > 0 && <span class="index-separator">, </span>}
+                            <span class="index-page-ref" data-target={`#${target}`}></span>
+                          </>
+                        ))}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))
         }

@@ -1,5 +1,5 @@
 ---
-const { chapter, printId, Content } = Astro.props;
+const { chapter, printId, Content, html } = Astro.props;
 const { kickerLabel } = Astro.props;
 const { startOnRecto = false } = Astro.props;
 const { showSubtitle = true } = Astro.props;
@@ -14,6 +14,6 @@ const defaultKicker = isIntroduction ? "Introduction" : `Chapter ${chapter.data.
     {showSubtitle && chapter.data.subtitle && <p class="chapter-subtitle">{chapter.data.subtitle}</p>}
   </header>
   <div class="chapter-body">
-    <Content />
+    {html ? <Fragment set:html={html} /> : <Content />}
   </div>
 </article>
