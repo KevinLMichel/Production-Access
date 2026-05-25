@@ -44,6 +44,21 @@ export const batchBookWorlds = {
     accent2: "#ff5f8f",
     glow: "rgba(37, 217, 255, 0.24)"
   },
+  "shifting-worlds": {
+    eyebrow: "A Breakthrough Guide to Possibility",
+    heroTitle: "Change your inner model. Change your outer world.",
+    lede:
+      "A live-draft guide to mental models as inner worlds: attention, emotion, language, identity, body, visualization, relationships, work, wealth, creativity, and daily practice.",
+    promiseTitle: "Build the model that makes better action available.",
+    promiseBody:
+      "Shifting Worlds teaches the reader to inspect the world their mind is currently simulating, revise the assumptions that keep producing old outcomes, and practice the thoughts, words, emotions, body states, and actions that belong to a stronger trajectory.",
+    mapTitle: "Model-making, shifting science, success, wellness, daily practice",
+    cardHeading: "World-shifting tools",
+    cards: ["Model Audit", "Three-World Simulation", "Vocabulary Shift", "Daily Shift Protocol"],
+    accent: "#20d8ff",
+    accent2: "#ffd45a",
+    glow: "rgba(87, 77, 255, 0.28)"
+  },
   "refractions-of-the-real": {
     eyebrow: "A Manual for Self-Directed Beings",
     heroTitle: "Reality is not a wall. It is a lens, a frame, and a responsibility.",
