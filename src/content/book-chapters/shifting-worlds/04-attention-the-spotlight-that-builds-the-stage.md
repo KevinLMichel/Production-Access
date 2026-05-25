@@ -78,6 +78,94 @@ Then ask:
 
 One degree is enough. One degree repeated changes the destination.
 
+## Attention is participation
+
+Attention is not a passive observer sitting quietly in the balcony of the mind.
+
+Attention participates.
+
+Whatever you repeatedly attend to becomes more psychologically alive. The mind begins gathering evidence around it. The body begins preparing for it. The emotions begin coloring the world with it. The imagination begins rehearsing futures that match it.
+
+This is why attention must be treated as sacred power.
+
+If you give your finest attention to fear, fear becomes architect.
+
+If you give your finest attention to resentment, resentment becomes climate.
+
+If you give your finest attention to possibility, possibility becomes visible.
+
+If you give your finest attention to growth, the world becomes a classroom.
+
+If you give your finest attention to wellness, the body becomes an ally instead of a neglected machine.
+
+This does not mean you ignore pain. Ignoring pain is not consciousness. It is avoidance. A wise person can look at pain directly. But looking at pain is different from building a temple around it.
+
+Many people say they are trying to heal while giving most of their attention to the wound. They rehearse the injury, study the insult, retell the betrayal, and keep returning to the old scene as though pain were a sacred flame that must never be allowed to go out.
+
+But attention is nourishment.
+
+Whatever you feed will grow roots.
+
+To shift worlds, ask often:
+
+“What am I making more real by giving it my attention?”
+
+This question alone can rescue a life from unconscious repetition.
+
+## Attention as prayer, attention as vote
+
+Every moment of attention is a vote for a world.
+
+The vote may be small, but repeated votes become governments.
+
+When you wake and immediately surrender your attention to panic, you have voted for threat-world.
+
+When you pause, breathe, and name the world you intend to inhabit, you have voted for chosen-world.
+
+When you study what is broken without asking what can be built, you vote for problem-world.
+
+When you extract information from the problem and turn toward the next useful action, you vote for solution-world.
+
+When you scroll through other people’s lives and use them as evidence of your insufficiency, you vote for comparison-world.
+
+When you return to your own work, your own body, your own breath, your own next honest action, you vote for authorship-world.
+
+No single vote decides the whole election.
+
+But repeated votes do.
+
+This is why daily practice matters. The old world may have years of voting behind it. It may have been elected by repetition long before you knew you had a choice. So do not be discouraged when one good thought does not overthrow an entire regime.
+
+Keep voting.
+
+With attention.
+
+With language.
+
+With action.
+
+With environment.
+
+With recovery.
+
+With the people you allow near your future.
+
+Eventually the inner government changes.
+
+And when the inner government changes, the laws of the world you live by begin to change with it.
+
+## Awareness without obsession
+
+Awareness must not become obsession.
+
+The purpose of attention training is not to watch yourself with suspicion all day. That would only create another old world: surveillance-world, where every thought becomes a trial and every emotion becomes evidence against you.
+
+Train attention with steadiness, not panic. Notice what you are feeding, then redirect without theater. If you discover you have spent the morning in comparison-world, you do not need to punish yourself. Punishment is usually just the old model changing uniforms. You need to make a cleaner vote.
+
+Return to the page. Return to the body. Return to the next honest action. Return to the person in front of you. Return to the skill being built. Return to the world you are trying to strengthen.
+
+Attention is sacred power, but it is also ordinary power. It works through repetition, not drama.
+
 ## What the spotlight teaches
 
 When you choose an aim, attention receives an assignment.
@@ -92,6 +180,52 @@ If the dream is too distant, bring the target closer. Place the spotlight on the
 
 For seven days, track what your attention is strengthening. Each evening, write three signals you gave to the old world and three signals you gave to the preferred world. End by choosing one thing you will notice on purpose tomorrow.
 
-## Carry it forward
+## Practice: The Attention Ledger
+
+For one day, track where your attention goes.
+
+Use three columns:
+
+Attention Given
+
+What did I focus on?
+
+World Strengthened
+
+What world did that focus make more real?
+
+Alternative Vote
+
+What could I attend to instead?
+
+Example:
+
+Attention given: “What if this project fails?”
+
+World strengthened: Failure-world.
+
+Alternative vote: “What is the next controllable action?”
+
+Attention given: “My body is not where I want it to be.”
+
+World strengthened: Shame-world.
+
+Alternative vote: “What action today would respect the body?”
+
+Attention given: “They did not text me back.”
+
+World strengthened: Rejection-world.
+
+Alternative vote: “What else could be true, and what deserves my energy now?”
+
+Do this without self-attack.
+
+You are not judging the mind.
+
+You are learning its voting record.
+
+## Vote with the next focus
 
 Attention is not merely something you spend. It is something you train. The world you repeatedly notice becomes the world you are most prepared to enter.
+
+Do not demand perfect focus. Cast the next vote. Then cast the next one. A new inner government is not elected by one heroic morning. It is elected by repeated attention, repeated return, and repeated loyalty to the world worth strengthening.

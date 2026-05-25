@@ -128,6 +128,92 @@ A life becomes satisfying when the inner author returns to the desk.
 
 Pick up the pen.
 
+## The identity rehearsal
+
+Identity is not only what you believe about yourself.
+
+Identity is what you rehearse as yourself.
+
+The anxious self is rehearsed.
+
+The disciplined self is rehearsed.
+
+The invisible self is rehearsed.
+
+The prosperous self is rehearsed.
+
+The healed self is rehearsed.
+
+The creative self is rehearsed.
+
+Every time you repeat a thought with emotion, every time you perform a behavior, every time you speak a sentence beginning with “I am,” you are rehearsing identity.
+
+This is why the phrase “That is just who I am” must be handled carefully.
+
+Sometimes it is truth.
+
+Sometimes it is a cage with familiar furniture.
+
+A person may say, “I am not good with money,” when the more accurate sentence is, “I have rehearsed avoidance around money.”
+
+A person may say, “I am not athletic,” when the more accurate sentence is, “I have not yet built a relationship with movement.”
+
+A person may say, “I am bad at relationships,” when the more accurate sentence is, “I learned protective patterns that now interfere with intimacy.”
+
+Precision gives power back.
+
+When identity becomes a fixed verdict, the world closes.
+
+When identity becomes a rehearsed pattern, the world opens.
+
+Because what has been rehearsed can be rehearsed differently.
+
+## The old self is not evil
+
+The old self is not evil.
+
+The old self adapted.
+
+It learned how to survive particular rooms, families, disappointments, pressures, absences, humiliations, and fears. It developed strategies. Some were clumsy. Some were costly. Some protected you when no better option was available.
+
+Do not begin transformation by hating the self that carried you this far.
+
+That hatred belongs to the old world.
+
+Begin with gratitude and authority.
+
+“Thank you for protecting me. You are no longer the only model available.”
+
+This is how the inner transition becomes compassionate without becoming weak.
+
+You can retire an old pattern without humiliating the part of you that learned it.
+
+You can say:
+
+“The avoidance protected me from criticism. Now it prevents visibility.”
+
+“The overworking protected me from feeling worthless. Now it prevents peace.”
+
+“The suspicion protected me from betrayal. Now it prevents love.”
+
+“The emotional numbness protected me from overwhelm. Now it prevents joy.”
+
+The old self becomes less frightening when you understand its function.
+
+Then you are free to build a new function.
+
+## Compassion for the old strategy
+
+The new identity must be practiced without contempt for the old one.
+
+Contempt slows transformation because it keeps attention locked on the self you are trying to outgrow. Compassion does not mean approving every old habit. It means understanding that the old identity was once an attempt at protection, belonging, safety, or control.
+
+Thank the old strategy for what it tried to do. Then tell the truth about what it now costs.
+
+"You helped me survive, but you cannot lead this chapter."
+
+That sentence alone can soften the war inside the self. The emerging identity does not need to murder the old one. It needs to become trustworthy enough that the old one can retire from command.
+
 ## Practice: The Rough Draft Action
 
 Choose one dream you have delayed because you wanted to do it well.
@@ -142,8 +228,8 @@ The assignment is existence.
 
 Create something reality can respond to.
 
-## Carry it forward
+## Rehearse the self who can live there
 
-Identity is not only what you believe about yourself. It is what you are willing to practice before the applause arrives. The old world asks for perfection before movement. The new world is born from movement before perfection.
+Identity changes when the self receives repeated evidence of a new allegiance. You do not need to feel fully transformed before acting. You need to act in ways that give the emerging self something to stand on.
 
-Begin badly enough that reality has something to correct.
+Begin before ready. Begin without contempt. Begin as a rough draft. The person who can live in the new world is not found by waiting for confidence. That person is rehearsed into existence.

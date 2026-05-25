@@ -88,6 +88,62 @@ Let the better thought arrive.
 
 Then honor it with action.
 
+## Receiving the cleaner thought
+
+Not every useful thought arrives through effort.
+
+Some thoughts arrive when effort relaxes.
+
+This is difficult for the overtrained mind to understand. It believes all wisdom must be squeezed out of strain. It sits at the desk and commands insight. It argues with the problem. It tightens, presses, demands, analyzes.
+
+But the mind is not only a hammer.
+
+It is also an antenna.
+
+There are thoughts you can construct, and there are thoughts you must become quiet enough to receive.
+
+The cleaner thought often has a different quality. It is less frantic. Less theatrical. Less self-punishing. It does not flatter laziness, but it does not carry panic. It may be simple:
+
+“Call her.”
+
+“Rest first.”
+
+“Tell the truth.”
+
+“Start smaller.”
+
+“Stop explaining to people committed to misunderstanding.”
+
+“Look at the numbers.”
+
+“Write the first page.”
+
+“Apologize without defending.”
+
+“Leave the room.”
+
+“Try again tomorrow.”
+
+These thoughts may not feel dramatic enough to be guidance, but drama is not the measure of wisdom.
+
+A clean thought often feels like relief plus responsibility.
+
+It gives you room, and it gives you a step.
+
+That combination is worth trusting.
+
+## Make room for the useful thought
+
+Opportunity often requires spaciousness because the old model is loud.
+
+It shouts in familiar conclusions. It says, "This always happens." It says, "There is no door here." It says, "People like me do not get that chance." It says, "If the answer were real, I would already have found it."
+
+But a crowded mind cannot see subtle openings. When every thought is an emergency, the cleaner thought has nowhere to land. This is why walking, resting, breathing, praying, journaling, and unhurried conversation can become practical tools rather than luxuries. They lower the volume of the old model long enough for a different pattern to be perceived.
+
+The door may not be dramatic. It may be a question. It may be a name. It may be a sentence in a book. It may be the realization that the obstacle is asking for a skill, not a miracle.
+
+Leave enough room for the useful thought to find you.
+
 ## Practice: Door Hidden Inside the Obstacle
 
 Name one obstacle.
@@ -98,8 +154,8 @@ Do not stop at three. The later doors train perception.
 
 After you list ten, choose one door and take the smallest action that tests it.
 
-## Carry it forward
+## Train the eye for doors
 
 Opportunity is not only discovered. It is trained. The more precisely you name the world you are building, the more intelligently your mind can sort reality into tools, obstacles, and noise.
 
-The door between worlds is usually disguised as the next honest action.
+The door between worlds is usually disguised as the next honest action. Make enough room to see it, then move through it before the old model explains it away.

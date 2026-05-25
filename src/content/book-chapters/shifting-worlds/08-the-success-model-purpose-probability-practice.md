@@ -134,6 +134,128 @@ Becoming is a renewable source of power.
 
 Learn to enjoy progress, and the path itself becomes medicine.
 
+## Expectancy as a world-selector
+
+Expectation is imagination with authority.
+
+It tells the body what to prepare for.
+
+If you expect rejection, you may enter guarded. If you enter guarded, others may feel distance. If others feel distance, they may respond coolly. Then rejection appears confirmed.
+
+If you expect learning, you enter differently. You ask questions. You take feedback less personally. You try again after mistakes. You improve faster. Then growth appears confirmed.
+
+Expectation is not passive prediction. It is active preparation.
+
+The student who expects failure studies with dread or avoids studying altogether. The speaker who expects humiliation rehearses panic more than message. The entrepreneur who expects betrayal cannot recognize trustworthy help. The patient who expects decline may stop practicing the behaviors that support recovery.
+
+But the person who expects possibility behaves differently.
+
+They are not naïve. They simply enter the world with a model that keeps doors visible.
+
+Expectation turns perception into an advance team. It goes ahead of you and marks certain things as relevant. If you expect opportunity, opportunity becomes easier to notice. If you expect hostility, hostility becomes easier to notice.
+
+This is why the question “What do I expect?” is not small.
+
+It is architectural.
+
+Expectations build rooms before you enter them.
+
+## Self-efficacy: the belief that I can move
+
+There is a difference between believing a thing is possible and believing it is possible for you.
+
+The first is optimism about the world.
+
+The second is self-efficacy.
+
+Self-efficacy is the inner expectation: “I can take action here. I can learn this. I can influence the outcome. I can recover if it goes badly. I can become more capable through practice.”
+
+Without self-efficacy, even a beautiful vision can become painful. The desired world glows in the distance, but the person feels no bridge between here and there.
+
+So the work is not only to dream.
+
+The work is to build evidence of capability.
+
+This begins with mastery experiences: small completions that teach the nervous system, “I can do what I say.”
+
+One walk.
+
+One saved dollar.
+
+One completed paragraph.
+
+One honest conversation.
+
+One morning routine.
+
+One boundary kept.
+
+One healthy meal.
+
+One application sent.
+
+One practice session finished.
+
+Do not despise small mastery. It is how the self becomes believable to itself.
+
+Each completed action becomes a stone in the bridge.
+
+At first, the bridge is short. It may only cross one hour of fear. Then one day. Then one week. Eventually, the person who once needed proof before acting becomes a person who creates proof by acting.
+
+That is self-efficacy.
+
+Not arrogance.
+
+Earned trust.
+
+## Trained participation
+
+A probability field is altered by expectancy, but expectancy must be trained through contact with reality.
+
+If you expect nothing from yourself, you will often do the minimum required to confirm the expectation. If you expect immediate perfection, you may freeze because the standard is too expensive to enter. A wise expectation is different. It says, "I may not control the outcome, but I can increase my influence. I can learn. I can move. I can recover. I can become more capable through practice."
+
+This kind of expectation does not deny difficulty. It gives difficulty a job.
+
+Difficulty becomes the weight that builds the muscle. Feedback becomes the instrument that tunes the method. Delay becomes the classroom of patience. Repetition becomes a form of proof.
+
+The success model is not blind confidence. It is trained participation.
+
+## Practice: Expectancy Upgrade
+
+Write one goal.
+
+Then answer:
+
+What do I currently expect to happen?
+
+Be honest.
+
+What behavior does that expectation produce?
+
+Avoidance? Over-effort? Panic? Preparation? Courage?
+
+What would a wiser expectation be?
+
+Not fantasy. Wise possibility.
+
+Examples:
+
+Old expectation: “This will probably fail.”
+
+Wiser expectation: “This will teach me what the next version requires.”
+
+Old expectation: “People will judge me.”
+
+Wiser expectation: “Some may judge; some may connect; my task is to show up cleanly.”
+
+Old expectation: “I cannot do this.”
+
+Wiser expectation: “I cannot yet do all of this, but I can do the next learnable part.”
+
+Then write the behavior that belongs to the wiser expectation.
+
+Expectation is not complete until it becomes action.
+
 ## Practice: The Aim Protocol
 
 Choose one meaningful aim. Not ten. One.
@@ -157,10 +279,8 @@ Examples:
 
 That is how aim becomes architecture.
 
-## Carry it forward
+## Let aim organize the chaos
 
 Success begins when the aim becomes strong enough to organize the chaos. Before aim, everything is equally loud: the phone, fear, other people's opinions, old habits, unfinished past, body fatigue, and every competing command in the room. But a worthy aim creates hierarchy. It says, "This matters. That does not. This belongs to the world I am building. That belongs to the world I am leaving."
 
-This is not rigidity. It is orientation.
-
-Purpose names the world. Practice raises its probability. Progress gives the nervous system evidence that the world is already beginning.
+Purpose names the world. Expectancy tells the body that movement is possible. Practice raises probability. Progress gives the nervous system evidence that the world is already beginning.

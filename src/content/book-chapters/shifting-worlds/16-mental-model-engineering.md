@@ -126,6 +126,100 @@ Let them be visible.
 
 Let them call you back.
 
+## The brain is clay, not concrete
+
+The old world wants you to believe the brain is finished.
+
+“This is how I think.”
+
+“This is how I react.”
+
+“This is how I am.”
+
+“This is how my family is.”
+
+“This is how people like me live.”
+
+But the brain is not concrete.
+
+The brain is living tissue shaped by repetition, attention, emotion, behavior, environment, and practice. Every time you repeat a pattern, you make that pattern easier to repeat. Every time you interrupt a pattern and practice a new one, you begin carving a different path.
+
+This is both the warning and the promise.
+
+If you rehearse resentment, resentment becomes more available.
+
+If you rehearse gratitude, gratitude becomes more available.
+
+If you rehearse helplessness, helplessness becomes more available.
+
+If you rehearse agency, agency becomes more available.
+
+The mind becomes better at what it practices.
+
+This means no thought is trivial when repeated with devotion. It also means no new practice is wasted when repeated with sincerity.
+
+At first, the new thought may feel artificial. That does not mean it is false. It may simply be unfamiliar.
+
+The old model feels true partly because it has been practiced.
+
+Give the new model practice, and it too will gain weight.
+
+## Make progress visible
+
+The mind often forgets quiet progress.
+
+It remembers the collapse more than the recovery.
+
+It remembers the day you failed more than the week you practiced.
+
+It remembers the awkward conversation more than the courage required to have it.
+
+It remembers the old identity because the old identity has emotional volume.
+
+This is why evidence logs are essential.
+
+Do not rely on mood to measure transformation.
+
+Mood is weather.
+
+Use records.
+
+Track the walk.
+
+Track the writing session.
+
+Track the money saved.
+
+Track the hours slept.
+
+Track the conversations repaired.
+
+Track the days you returned after slipping.
+
+Track the moment you chose the better sentence.
+
+Track the fear you felt and the action you took anyway.
+
+Visible evidence helps the new model survive old weather.
+
+When the mind says, “Nothing is changing,” the evidence log says, “Look again.”
+
+The evidence log is not vanity.
+
+It is reality support for the world you are building.
+
+## Build the new archive
+
+Model engineering requires evidence because the old model has a long memory.
+
+It remembers every embarrassment, every failed attempt, every closed door, every old name someone called you, every day you promised change and returned to the same pattern. If you try to defeat that archive with one enthusiastic sentence, the archive may laugh.
+
+So do not argue only with the archive. Build a new one.
+
+Record the walk. Record the page. Record the dollar saved. Record the conversation handled differently. Record the fear felt and the action taken anyway. Record the night you returned instead of spiraling. Record the proof that the new world is no longer theoretical.
+
+Evidence is how the future earns credibility inside the nervous system.
+
 ## Practice: The Model Lab
 
 Choose one model to redesign.
@@ -142,8 +236,8 @@ Name:
 
 Then run a one-week experiment that lets the better model touch real life. Do not wait for a total personality transformation. Create one visible piece of evidence.
 
-## Carry it forward
+## Engineer evidence, not excuses
 
-Engineering is not forcing a new belief through slogans. It is designing the conditions in which a better belief can collect proof.
+A model changes faster when it receives clean evidence. Do not ask the new world to survive only on enthusiasm. Give it records. Give it symbols. Give it completed actions. Give it visible proof that the old identity is no longer the only archive in the mind.
 
-The old identity will ask for evidence. Give it evidence.
+The honest accountant is not cold. The honest accountant is merciful because it refuses to let quiet progress disappear.

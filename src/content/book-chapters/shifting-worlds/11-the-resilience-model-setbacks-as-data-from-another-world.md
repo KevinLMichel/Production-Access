@@ -90,6 +90,58 @@ A crisis is not automatically a blessing. Pain does not need to be romanticized.
 
 The person who asks this question honestly is already shifting.
 
+## Crisis as a flashlight
+
+Crisis is not automatically transformation.
+
+Some people become smaller through crisis. Some become harder. Some become more awake.
+
+The difference is not the crisis alone. It is the model brought to it.
+
+A crisis interrupts the ordinary trance. The calendar breaks. The old routine cracks. The assumptions that were carrying life quietly in the background suddenly become visible.
+
+This is why crisis can become a flashlight.
+
+It shows what was already unstable.
+
+It shows which relationships were built only on convenience.
+
+It shows which ambitions were borrowed.
+
+It shows how much peace depended on everything going exactly as planned.
+
+It shows where the body had been ignored.
+
+It shows where money had been avoided.
+
+It shows where the person had confused busyness with meaning.
+
+A crisis does not need to be romanticized. Pain is pain. Loss is loss. Fear is fear.
+
+But after the first wave, the modeler asks:
+
+“What is this revealing?”
+
+Not, “Why am I cursed?”
+
+Not, “How do I return to sleep?”
+
+But, “What structure has become visible, and what world must I now build?”
+
+This question turns crisis from mere suffering into information.
+
+## Do not romanticize crisis
+
+Do not romanticize crisis.
+
+Pain is not automatically noble. Loss is not automatically wise. Pressure does not automatically strengthen character. Some pressure simply damages what should have been protected. Some pain requires help, rest, repair, justice, or distance.
+
+But when crisis has already arrived, the question becomes: what model will meet it?
+
+The old model may turn crisis into identity: "This proves life is against me." The numb model may turn it into avoidance: "I will feel nothing and learn nothing." The conscious model does something harder. It grieves what must be grieved, protects what must be protected, and then asks what the interruption has made visible.
+
+Crisis is not the teacher. Reality is the teacher. Crisis merely turns up the light on parts of reality you may have been avoiding.
+
 ## Practice: The Failure Translation Sheet
 
 Translate one setback.
@@ -108,8 +160,8 @@ Then add one final line:
 
 Finish the sentence with a concrete action.
 
-## Carry it forward
+## Let correction become a doorway
 
 Resilience is the art of refusing to let one chapter impersonate the whole book. You do not need mistakes to feel good. You need them to become informative.
 
-Begin badly enough that reality has something to correct. Then let the correction become a doorway.
+Begin badly enough that reality has something to correct. Then let the correction become a doorway. The old world uses failure to close the future. The new world uses failure to revise the map.

@@ -157,6 +157,66 @@ If resistance appears as overwhelm, I will reduce the task to one paragraph.
 
 One degree is enough. One degree repeated changes the destination.
 
+## The morning signal
+
+The first signal of the day matters.
+
+Not because the whole day is ruined if the morning goes badly. That is too fragile a model. But the morning is powerful because the mind is still soft. The old world has not yet fully assembled its arguments.
+
+Before you check the outer world, establish the inner one.
+
+Before headlines, messages, demands, metrics, and comparisons, pause.
+
+Name the world.
+
+“I enter the world of disciplined peace.”
+
+“I enter the world of healthy prosperity.”
+
+“I enter the world of honest love.”
+
+“I enter the world of creative completion.”
+
+“I enter the world where my body is treated as ally.”
+
+“I enter the world where I choose the next honest action.”
+
+Then give the world a signal.
+
+Make the bed.
+
+Drink water.
+
+Breathe for one minute.
+
+Step into light.
+
+Write the first sentence.
+
+Move the body.
+
+Review the aim.
+
+Send the necessary message.
+
+The action does not need to be grand.
+
+It needs to be clean.
+
+A clean morning signal tells the nervous system: “We are not drifting today. We are choosing.”
+
+## A protocol protects freedom from mood
+
+A protocol is not meant to make life mechanical. It is meant to protect freedom from mood.
+
+Mood is weather. It matters, but it should not be the only government. If you act only when the weather is beautiful, the old world will retain control of your calendar. A protocol gives you a way to move even when the inner sky is gray.
+
+This is why the daily shift must remain small enough to use on bad days. If the protocol becomes elaborate, you will abandon it when life gets noisy. Keep it close to the ground: name the world, breathe, choose the near target, prepare for resistance, act, record evidence.
+
+That is enough.
+
+Enough repeated becomes more than enough.
+
 ## Practice: The Daily Shift Protocol
 
 Use this sequence for seven days:
@@ -178,8 +238,8 @@ Examples of if-then plans:
 
 Do not turn the protocol into a performance. The goal is not to have an impressive day. The goal is to cast one clear vote for the world you are building.
 
-## Carry it forward
+## Keep the promise close to the ground
 
 The new world may be far away, but the next step must be near. A protocol is a promise you made to yourself while you could still see clearly.
 
-Use the promise when the old world gets loud.
+Use the promise when the old world gets loud. Keep it small enough to use while tired, honest enough to matter, and repeatable enough to become identity. A daily shift does not need to impress anyone. It needs to return you to authorship.

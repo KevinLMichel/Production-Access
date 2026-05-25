@@ -90,6 +90,18 @@ These answers do not need to be perfect. They need to be usable.
 
 The future becomes more reachable when it can give instructions to today.
 
+## Design boldly, revise humbly
+
+The ideal parallel world must remain alive.
+
+If you freeze the vision too tightly, it becomes another prison. You may cling to a version of success that belonged to an earlier self. You may pursue a goal after the soul has outgrown it. You may become loyal to an image instead of the life the image was meant to serve.
+
+This is why the moving star matters. The aim should guide you, not trap you. It should organize the present while remaining open to correction by wisdom, experience, love, health, and truth.
+
+A better world is not merely the old ego with better furniture. It is a more honest arrangement of energy. It asks what kind of person you are becoming, what kind of relationships can breathe there, what kind of work deserves your attention, what kind of body must carry the path, what kind of peace would make success worth having.
+
+Design boldly. Revise humbly. Walk steadily.
+
 ## Practice: Moving Star World Design
 
 Write the aim you currently see.
@@ -107,8 +119,36 @@ Reduce the paragraph to one sentence.
 
 Reduce the sentence to one action.
 
-## Carry it forward
+## The ideal world in ordinary terms
 
-The ideal parallel world is not fantasy. It is direction. It is a world-shaped question you carry into the day: what action belongs to the life I am learning to see?
+Do not make the ideal world so cinematic that you cannot enter it on a Tuesday.
 
-Do not demand perfect certainty before motion. The star may move because your vision is improving.
+The mind loves spectacular images. It sees the finished house, the healed body, the thriving business, the deep relationship, the calm morning, the respected work, the bank account no longer carrying dread. These images can inspire, but they can also become distant if they are never translated into ordinary terms.
+
+What does the ideal world do at 7:30 in the morning?
+
+What does it eat when tired?
+
+How does it answer a difficult email?
+
+How does it spend money after a disappointing day?
+
+How does it repair after speaking too sharply?
+
+How does it treat the body before the body has transformed?
+
+How does it continue when the first attempt is awkward?
+
+These questions matter because a world is not only made of peak moments. It is made of defaults. If you can describe the ideal world only as a destination, it remains a dream. If you can describe its defaults, it becomes a model.
+
+The ideal world is not merely the day when everything finally looks different. It is the pattern by which you begin making today compatible with what you claim to want. It is the sentence you speak when no one applauds. It is the action you take when the result is still invisible. It is the boundary you keep when the old self wants approval more than peace.
+
+Make the ideal world ordinary enough to practice.
+
+That is how it becomes real.
+
+## Follow the moving star
+
+The ideal parallel world is not a fantasy palace. It is a direction of coherence. It teaches the present what to protect, what to release, what to practice, and what to stop pretending not to know.
+
+Follow the moving star. Let it call you forward without turning it into a tyrant. A living aim should make you more awake, more honest, more capable, and more human. If it stops doing that, revise the map.

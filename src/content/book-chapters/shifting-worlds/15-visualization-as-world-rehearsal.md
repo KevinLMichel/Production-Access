@@ -96,6 +96,92 @@ Do not keep asking the old world whether the new world is real.
 
 Build until the answer becomes obvious.
 
+## Visualization is not a vacation from action
+
+Visualization is powerful because the brain rehearses what it vividly imagines.
+
+But visualization can become a trap if it ends in satisfaction without movement.
+
+The point is not to sit in the theater of the mind forever eating imaginary victory.
+
+The point is to rehearse the body, the choice, the obstacle, the return, the next action.
+
+See the desired world, yes.
+
+See the healed body, the strong business, the loving home, the peaceful morning, the wealth handled wisely, the creative work completed.
+
+Then see the resistance.
+
+See yourself tired.
+
+See yourself tempted.
+
+See yourself criticized.
+
+See yourself bored.
+
+See yourself wanting to quit.
+
+See yourself slipping for a day and returning without drama.
+
+This matters because the old world often returns through predictable doors. Fatigue. Shame. Delay. Social pressure. Distraction. Perfectionism. Fear of being seen. Fear of being ordinary. Fear of being successful.
+
+If you visualize only the final celebration, the obstacle will feel like betrayal.
+
+If you visualize the obstacle and your response, the obstacle becomes part of the path.
+
+The trained self says, “I have been here before.”
+
+Even if only in rehearsal, the nervous system recognizes the route.
+
+That recognition creates steadiness.
+
+And steadiness changes outcomes.
+
+## Vision that trains action
+
+The purpose of visualization is to prepare contact.
+
+Do not use the imagined world as a place to hide from the real one. Use it as a rehearsal room. Let the body feel the desired future, then practice meeting the friction that stands between here and there. See the phone call. See the doubt. See the tired evening. See the awkward first draft. See the old temptation. See the moment when the result has not arrived yet and the mind wants to quit.
+
+Then rehearse the new response.
+
+This is where visualization becomes honest. It does not only picture success. It trains the self who can walk through resistance without returning to the old world.
+
+A vision that never touches action becomes a sedative. A vision that trains action becomes architecture.
+
+## Practice: World Rehearsal With Obstacles
+
+Choose one goal.
+
+Close your eyes and imagine the completed world.
+
+Then write:
+
+Scene 1: The Desired World
+
+What do I see, hear, feel, and do when this is real?
+
+Scene 2: The Main Obstacle
+
+What is most likely to interfere?
+
+Scene 3: The Old Pattern
+
+How would the old self respond?
+
+Scene 4: The New Response
+
+How will the ideal self respond?
+
+Scene 5: The Next Physical Action
+
+What action can I take today to make the rehearsal real?
+
+Visualization must end with embodiment.
+
+Otherwise, the mind may mistake the movie for the mission.
+
 ## Practice: Obstacle Rehearsal
 
 Write your desired world at the top of a page.
@@ -116,6 +202,8 @@ The future self should not be forced to improvise every rescue.
 
 Prepare the bridge in advance.
 
-## Carry it forward
+## Rehearse the crossing
 
-Visualization is not escape when it returns with instructions. Picture the world, yes. But also picture the resistance, the recovery, the next action, and the person you are becoming by meeting the obstacle differently.
+Imagination without rehearsal becomes sedation. Imagination with action becomes creation.
+
+See the world, then see the obstacle. See the obstacle, then see the response. See the response, then practice it while the stakes are still small. The mind does not need a fantasy theater. It needs a training ground for the life you intend to enter.
