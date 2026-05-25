@@ -1,6 +1,7 @@
 ---
 import { createMarkdownProcessor } from "@astrojs/markdown-remark";
 import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import PrintIndex from "../../../../components/PrintIndex.astro";
 import { getBookChapters } from "../../../../lib/bookWorld";
 
 const book = {
@@ -225,7 +226,7 @@ const indexEntries: IndexEntry[] = [
   { term: "Aim Protocol", targets: ["idx-aim-protocol"] },
   {
     term: "aim",
-    targets: ["idx-aim-room", "idx-goal-world-converter", "idx-moving-star"],
+    targets: ["idx-aim-room", "idx-moving-star"],
     subentries: [
       { term: "as world-converter", targets: ["idx-goal-world-converter"] },
       { term: "moving star", targets: ["idx-moving-star", "idx-moving-star-design"] },
@@ -255,16 +256,16 @@ const indexEntries: IndexEntry[] = [
     ]
   },
   { term: "Attention Ledger", targets: ["idx-attention-ledger"] },
-  { term: "Bannister, Roger", targets: ["idx-bannister", "idx-four-minute-world"] },
+  { term: "Bannister, Roger", targets: ["idx-bannister"] },
   {
     term: "balance",
-    targets: ["idx-balance-traveler", "idx-harmony-motion", "idx-living-negotiation"],
+    targets: ["idx-balance-traveler", "idx-harmony-motion"],
     subentries: [
       { term: "rhythm", targets: ["idx-rhythm-drama", "idx-rhythm-calendar"] },
       { term: "without self-attack", targets: ["idx-balance-traveler"] }
     ]
   },
-  { term: "Biles, Simone", targets: ["idx-biles", "idx-boundary-greatness"] },
+  { term: "Biles, Simone", targets: ["idx-biles"] },
   {
     term: "body",
     targets: ["idx-body-instrument", "idx-biology-world", "idx-body-world-audit"],
@@ -277,7 +278,7 @@ const indexEntries: IndexEntry[] = [
   },
   {
     term: "boundaries",
-    targets: ["idx-boundaries-architecture", "idx-boundary-greatness"],
+    targets: ["idx-boundary-greatness", "idx-boundaries-architecture"],
     subentries: [
       { term: "greatness and wellness", targets: ["idx-boundary-greatness"] },
       { term: "relationship architecture", targets: ["idx-boundaries-architecture"] }
@@ -291,7 +292,7 @@ const indexEntries: IndexEntry[] = [
       { term: "subconscious maintenance", targets: ["idx-maintenance-crew"] }
     ]
   },
-  { term: "Bryant, Kobe", targets: ["idx-kobe", "idx-airballs-tuition"] },
+  { term: "Bryant, Kobe", targets: ["idx-kobe"] },
   {
     term: "coherence",
     targets: ["idx-attraction-coherence", "idx-coherence-ordinary"],
@@ -329,21 +330,21 @@ const indexEntries: IndexEntry[] = [
     ]
   },
   { term: "Decision Alignment Sheet", targets: ["idx-aim-protocol", "idx-daily-sequence"] },
-  { term: "doors", targets: ["idx-doors-trained-eye", "idx-door-hidden-obstacle", "idx-cleaner-thought"] },
-  { term: "Dyson, James", targets: ["idx-dyson", "idx-prototype-world"] },
+  { term: "doors", targets: ["idx-doors-trained-eye", "idx-cleaner-thought", "idx-door-hidden-obstacle"] },
+  { term: "Dyson, James", targets: ["idx-dyson"] },
   { term: "Elena and the two worlds", targets: ["idx-elena"] },
   {
     term: "emotion",
     targets: ["idx-emotion-relief", "idx-emotion-weather", "idx-state-before-strategy"],
     subentries: [
       { term: "fear as messenger", targets: ["idx-fear-prophecy"] },
-      { term: "joy as method", targets: ["idx-joy-method", "idx-alcaraz"] },
+      { term: "joy as method", targets: ["idx-joy-method"] },
       { term: "weather report", targets: ["idx-emotional-weather-report"] }
     ]
   },
   {
     term: "evidence",
-    targets: ["idx-model-audit", "idx-progress-visible", "idx-new-archive"],
+    targets: ["idx-model-audit", "idx-progress-visible"],
     subentries: [
       { term: "archive", targets: ["idx-new-archive"] },
       { term: "logs", targets: ["idx-honest-accountant", "idx-progress-visible"] },
@@ -357,12 +358,12 @@ const indexEntries: IndexEntry[] = [
     targets: ["idx-failure-information", "idx-failure-translation"],
     subentries: [
       { term: "as data", targets: ["idx-failure-information"] },
-      { term: "as tuition", targets: ["idx-airballs-tuition", "idx-kobe"] },
+      { term: "as tuition", targets: ["idx-airballs-tuition"] },
       { term: "redemptive mistakes", targets: ["idx-redemptive-mistakes"] }
     ]
   },
   { term: "fear", targets: ["idx-fear-prophecy", "idx-stress-energy"] },
-  { term: "four-minute mile", targets: ["idx-four-minute-world", "idx-bannister"] },
+  { term: "four-minute mile", targets: ["idx-four-minute-world"] },
   { term: "Honnold, Alex", targets: ["idx-honnold"] },
   {
     term: "identity",
@@ -375,7 +376,7 @@ const indexEntries: IndexEntry[] = [
   },
   {
     term: "inside/outside loop",
-    targets: ["idx-outside-answers-inside", "idx-inside-outside-loop", "idx-loop-freedom"]
+    targets: ["idx-outside-answers-inside", "idx-loop-freedom", "idx-inside-outside-loop"]
   },
   { term: "Kipchoge, Eliud", targets: ["idx-kipchoge"] },
   {
@@ -394,7 +395,7 @@ const indexEntries: IndexEntry[] = [
     subentries: [
       { term: "honest accountant", targets: ["idx-honest-accountant"] },
       { term: "model lab", targets: ["idx-model-lab"] },
-      { term: "prototype world", targets: ["idx-prototype-world", "idx-dyson"] },
+      { term: "prototype world", targets: ["idx-prototype-world"] },
       { term: "symbols", targets: ["idx-symbols-new-world"] }
     ]
   },
@@ -417,7 +418,7 @@ const indexEntries: IndexEntry[] = [
   { term: "No-Score Window", targets: ["idx-no-score-window"] },
   {
     term: "opportunity",
-    targets: ["idx-doors-trained-eye", "idx-obstacle-course-mind", "idx-door-hidden-obstacle"],
+    targets: ["idx-doors-trained-eye", "idx-door-hidden-obstacle"],
     subentries: [
       { term: "cleaner thought", targets: ["idx-cleaner-thought", "idx-room-useful-thought"] },
       { term: "ordinary obstacle course", targets: ["idx-ordinary-obstacle-course"] },
@@ -426,7 +427,7 @@ const indexEntries: IndexEntry[] = [
   },
   {
     term: "parallel worlds",
-    targets: ["idx-parallel-worlds", "idx-five-minutes", "idx-ideal-world"],
+    targets: ["idx-parallel-worlds", "idx-ideal-world"],
     subentries: [
       { term: "competing models", targets: ["idx-parallel-worlds", "idx-three-world-simulation"] },
       { term: "ideal world", targets: ["idx-ideal-world", "idx-design-not-freeze"] },
@@ -463,7 +464,7 @@ const indexEntries: IndexEntry[] = [
     targets: ["idx-ragettli-perception", "idx-ragettli-career", "idx-ragettli-mastery"],
     subentries: [
       { term: "mastery beyond medals", targets: ["idx-medal-mastery", "idx-ragettli-mastery"] },
-      { term: "obstacle-course mind", targets: ["idx-obstacle-course-mind", "idx-ragettli-perception"] }
+      { term: "obstacle-course mind", targets: ["idx-obstacle-course-mind"] }
     ]
   },
   {
@@ -501,7 +502,7 @@ const indexEntries: IndexEntry[] = [
   { term: "Small Signal Practice", targets: ["idx-daily-protocol", "idx-morning-signal"] },
   {
     term: "stress",
-    targets: ["idx-stress-energy", "idx-relief-ladder", "idx-no-score-window"],
+    targets: ["idx-stress-energy", "idx-no-score-window"],
     subentries: [
       { term: "as energy", targets: ["idx-stress-energy"] },
       { term: "peace-worlds", targets: ["idx-relief-doorway", "idx-win-not-pretty"] }
@@ -549,7 +550,7 @@ const indexEntries: IndexEntry[] = [
     subentries: [
       { term: "creative worlds", targets: ["idx-creative-worlds"] },
       { term: "field of relevance", targets: ["idx-work-relevance"] },
-      { term: "portable capacity", targets: ["idx-work-relevance", "idx-prosperity-capacity"] }
+      { term: "portable capacity", targets: ["idx-prosperity-capacity", "idx-work-relevance"] }
     ]
   }
 ];
@@ -818,44 +819,7 @@ for (const entry of renderedSections) {
 
     <section class="index-page" aria-label="Index">
       <h1>Index</h1>
-      <ul>
-        {
-          indexEntries.map((entry) => (
-            <li class="index-entry">
-              <div class="index-line">
-                <span class="index-term">{entry.term}</span>
-                {entry.targets && (
-                  <span class="index-pages">
-                    {entry.targets.map((target, index) => (
-                      <>
-                        {index > 0 && <span class="index-separator">, </span>}
-                        <span class="index-page-ref" data-target={`#${target}`}></span>
-                      </>
-                    ))}
-                  </span>
-                )}
-              </div>
-              {entry.subentries && (
-                <ul class="index-subentries">
-                  {entry.subentries.map((subentry) => (
-                    <li>
-                      <span class="index-subterm">{subentry.term}</span>
-                      <span class="index-pages">
-                        {subentry.targets.map((target, index) => (
-                          <>
-                            {index > 0 && <span class="index-separator">, </span>}
-                            <span class="index-page-ref" data-target={`#${target}`}></span>
-                          </>
-                        ))}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))
-        }
-      </ul>
+      <PrintIndex entries={indexEntries} />
     </section>
   </body>
 </html>

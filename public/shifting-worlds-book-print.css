@@ -688,30 +688,52 @@ a {
   page: index;
 }
 
-.index-page ul {
-  column-gap: 0.24in;
+.print-index-list {
+  column-gap: 0.28in;
   columns: 2;
   list-style: none;
-  margin: 0;
+  margin: 0.12in 0 0;
   padding: 0;
 }
 
-.index-page li {
+.index-entry {
   break-inside: avoid;
-  font-size: 8.35pt;
-  line-height: 1.28;
-  margin-bottom: 0.052in;
+  font-size: 8.05pt;
+  line-height: 1.22;
+  margin-bottom: 0.04in;
+  padding-left: 0.11in;
+  text-indent: -0.11in;
+}
+
+.index-letter {
+  border-top: 0.35pt solid rgba(39, 99, 122, 0.32);
+  break-after: avoid;
+  color: #27637a;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 6.8pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  list-style: none;
+  margin: 0.045in 0 0.045in;
+  padding-top: 0.035in;
+  text-transform: uppercase;
+}
+
+.index-letter:first-child {
+  margin-top: 0;
 }
 
 .index-line {
   break-inside: avoid;
+  display: block;
 }
 
 .index-term {
   color: #071820;
-  font-size: 7.2pt;
-  font-weight: 700;
-  letter-spacing: 0.045em;
+  font-size: 7.55pt;
+  font-weight: 800;
+  letter-spacing: 0.018em;
   text-transform: none;
 }
 
@@ -720,6 +742,7 @@ a {
   font-family: "Source Sans 3", "Arial Narrow", sans-serif;
   font-size: 7.8pt;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
@@ -733,18 +756,24 @@ a {
 }
 
 .index-subentries {
-  columns: auto;
+  columns: 1;
   list-style: none;
-  margin: 0.015in 0 0.018in 0.12in;
+  margin: 0.014in 0 0.02in 0.12in;
   padding: 0;
+  text-indent: 0;
 }
 
 .index-subentries li {
-  font-size: 7.95pt;
-  line-height: 1.24;
-  margin-bottom: 0.018in;
+  break-inside: avoid;
+  display: block;
+  font-size: 7.75pt;
+  line-height: 1.2;
+  margin-bottom: 0.014in;
+  padding-left: 0.1in;
+  text-indent: -0.1in;
 }
 
 .index-subterm {
   color: #263744;
+  font-style: italic;
 }

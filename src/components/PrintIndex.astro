@@ -1,0 +1,92 @@
+---
+type IndexSubentry = {
+  term: string;
+  targets: string[];
+};
+
+type IndexEntry = {
+  term: string;
+  targets?: string[];
+  subentries?: IndexSubentry[];
+};
+
+const { entries } = Astro.props as { entries: IndexEntry[] };
+
+const normalizedEntries = entries
+  .map((entry) => ({
+    ...entry,
+    targets: uniqueTargets(entry.targets),
+    subentries: entry.subentries?.map((subentry) => ({
+      ...subentry,
+      targets: uniqueTargets(subentry.targets) ?? []
+    }))
+  }))
+  .sort((a, b) => a.term.localeCompare(b.term, "en", { sensitivity: "base" }));
+
+const groups = normalizedEntries.reduce<Array<{ letter: string; entries: IndexEntry[] }>>((acc, entry) => {
+  const letter = indexLetter(entry.term);
+  const current = acc[acc.length - 1];
+  if (!current || current.letter !== letter) {
+    acc.push({ letter, entries: [entry] });
+  } else {
+    current.entries.push(entry);
+  }
+  return acc;
+}, []);
+
+function indexLetter(term: string) {
+  const first = term.trim().match(/[A-Za-z0-9]/)?.[0] ?? "#";
+  return /[0-9]/.test(first) ? "#" : first.toUpperCase();
+}
+
+function uniqueTargets(targets?: string[]) {
+  if (!targets) {
+    return undefined;
+  }
+  return [...new Set(targets)];
+}
+---
+
+<ol class="print-index-list">
+  {
+    groups.map((group) => (
+      <>
+        <li class="index-letter" aria-hidden="true">{group.letter}</li>
+        {group.entries.map((entry) => (
+          <li class="index-entry">
+            <div class="index-line">
+              <span class="index-term">{entry.term}</span>
+              {entry.targets && entry.targets.length > 0 && (
+                <span class="index-pages">
+                  {entry.targets.map((target, index) => (
+                    <>
+                      {index > 0 && <span class="index-separator">, </span>}
+                      <span class="index-page-ref" data-target={`#${target}`}></span>
+                    </>
+                  ))}
+                </span>
+              )}
+            </div>
+            {entry.subentries && entry.subentries.length > 0 && (
+              <ol class="index-subentries">
+                {entry.subentries.map((subentry) => (
+                  <li>
+                    <span class="index-subterm">{subentry.term}</span>
+                    <span class="index-pages">
+                      {subentry.targets.map((target, index) => (
+                        <>
+                          {index > 0 && <span class="index-separator">, </span>}
+                          <span class="index-page-ref" data-target={`#${target}`}></span>
+                        </>
+                      ))}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </li>
+        ))}
+      </>
+    ))
+  }
+</ol>
