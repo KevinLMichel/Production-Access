@@ -4300,6 +4300,38 @@ body.theme-book-eternal-wisdom .batch-world-cover img {
   box-shadow: 0 34px 100px rgba(15, 178, 197, 0.22), 0 0 0 1px rgba(240, 184, 77, 0.34);
 }
 
+body.theme-art-of-reality-warping .batch-world::before,
+body.theme-art-of-reality-warping .batch-reader::before {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(37, 217, 255, 0.26), transparent 25rem),
+    radial-gradient(circle at 78% 18%, rgba(255, 95, 143, 0.2), transparent 26rem),
+    radial-gradient(circle at 50% 78%, rgba(255, 174, 67, 0.16), transparent 34rem),
+    linear-gradient(145deg, rgba(7, 2, 18, 0.97), rgba(13, 21, 52, 0.74), rgba(33, 4, 36, 0.95));
+}
+
+body.theme-art-of-reality-warping .batch-world::after,
+body.theme-art-of-reality-warping .batch-reader::after {
+  background:
+    radial-gradient(circle at 28% 30%, rgba(37, 217, 255, 0.13), transparent 16rem),
+    radial-gradient(circle at 70% 36%, rgba(255, 95, 143, 0.11), transparent 18rem),
+    repeating-conic-gradient(from 22deg at 58% 28%, rgba(255, 255, 255, 0.07) 0 3deg, transparent 3deg 18deg),
+    linear-gradient(115deg, transparent 0 28%, rgba(255, 174, 67, 0.08) 44%, transparent 62% 100%);
+}
+
+body.theme-art-of-reality-warping .batch-world-hero {
+  background:
+    radial-gradient(circle at 78% 32%, rgba(37, 217, 255, 0.18), transparent 18rem),
+    radial-gradient(circle at 14% 62%, rgba(255, 95, 143, 0.14), transparent 18rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.024)),
+    rgba(12, 10, 31, 0.66);
+}
+
+body.theme-art-of-reality-warping .batch-world-cover img {
+  aspect-ratio: auto;
+  border-radius: 18px;
+  box-shadow: 0 34px 110px rgba(37, 217, 255, 0.23), 0 0 0 1px rgba(255, 95, 143, 0.28);
+}
+
 .batch-world-hero {
   position: relative;
   overflow: hidden;

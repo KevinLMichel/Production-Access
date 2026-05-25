@@ -29,6 +29,21 @@ export const batchBookWorlds = {
     accent2: "#f0b84d",
     glow: "rgba(15, 178, 197, 0.24)"
   },
+  "art-of-reality-warping": {
+    eyebrow: "Poems to Inspire and Empower",
+    heroTitle: "Reality bends first through the eye that learns to see differently.",
+    lede:
+      "A vivid poetry collection moving through perception, thought, quantum possibility, intention, many paths, forgiveness, courage, breath, compassion, action, movement, healing, self-love, and transformation.",
+    promiseTitle: "Turn perception into possibility.",
+    promiseBody:
+      "The Art of Reality Warping treats poetry as an instrument of inner reorientation. Its movements ask the reader to shift perception, cultivate intention, practice compassion, reclaim hope, and meet transformation as a living art.",
+    mapTitle: "Perception, intention, healing, movement, transformation",
+    cardHeading: "Reality-warping lenses",
+    cards: ["Perception as doorway", "Intention as compass", "Compassion as force", "Transformation as practice"],
+    accent: "#25d9ff",
+    accent2: "#ff5f8f",
+    glow: "rgba(37, 217, 255, 0.24)"
+  },
   "refractions-of-the-real": {
     eyebrow: "A Manual for Self-Directed Beings",
     heroTitle: "Reality is not a wall. It is a lens, a frame, and a responsibility.",

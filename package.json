@@ -39,6 +39,7 @@
     "extract:session-four-book-worlds": "node scripts/extract-session-four-book-worlds.mjs",
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",
     "extract:architecture-calm": "node scripts/extract-architecture-calm-book.mjs",
+    "extract:art-of-reality-warping": "node scripts/extract-art-of-reality-warping-book.mjs",
     "extract:consciousness-power": "node scripts/extract-consciousness-power-book.mjs",
     "extract:skyborn-must-fall": "node scripts/extract-skyborn-must-fall-book.mjs",
     "extract:eternal-wisdom": "node scripts/extract-eternal-wisdom-book.mjs",
