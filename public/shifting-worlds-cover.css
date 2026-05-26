@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
 @page {
   size: 11.680556in 8.75in;
   margin: 0;
@@ -6,6 +13,9 @@
 :root {
   --sheet-width: 11.680556in;
   --sheet-height: 8.75in;
+  --spine-left: 5.625in;
+  --spine-width: 0.430556in;
+  --spine-center: 5.840278in;
 }
 
 * {
@@ -40,4 +50,76 @@ body {
   width: var(--sheet-width);
   height: var(--sheet-height);
   background: url("./covers/shifting-worlds-cover-wrap-source.png") 0 0 / 100% 100% no-repeat;
+}
+
+.spine-repair {
+  position: absolute;
+  z-index: 2;
+  left: 5.555in;
+  top: 0;
+  width: 0.57in;
+  height: var(--sheet-height);
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(47, 236, 255, 0.2), transparent 0.07in),
+    linear-gradient(90deg, transparent calc(100% - 0.07in), rgba(255, 210, 82, 0.28)),
+    radial-gradient(ellipse at 48% 46%, rgba(38, 151, 255, 0.56), transparent 2.55in),
+    linear-gradient(180deg, #03102f 0%, #061b52 38%, #05071d 70%, #020817 100%);
+  box-shadow:
+    inset 0.035in 0 0.06in rgba(54, 236, 255, 0.35),
+    inset -0.025in 0 0.045in rgba(255, 207, 78, 0.34);
+  color: #ffffff;
+  font-family: "Source Sans 3", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.spine-repair::before,
+.spine-repair::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.spine-repair::before {
+  left: 0.07in;
+  width: 0.018in;
+  background: linear-gradient(180deg, transparent, rgba(47, 236, 255, 0.88), transparent);
+  filter: blur(0.004in);
+}
+
+.spine-repair::after {
+  right: 0.065in;
+  width: 0.012in;
+  background: linear-gradient(180deg, transparent, rgba(255, 210, 82, 0.92), transparent);
+  filter: blur(0.003in);
+}
+
+.spine-title,
+.spine-author {
+  position: absolute;
+  left: calc(var(--spine-center) - 5.555in);
+  display: block;
+  width: 4.9in;
+  text-align: center;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
+  text-shadow: 0 0 0.045in rgba(0, 0, 0, 0.52);
+}
+
+.spine-title {
+  top: 2.62in;
+  font-size: 15.4pt;
+  font-weight: 700;
+  letter-spacing: 0.105em;
+}
+
+.spine-author {
+  top: 6.15in;
+  color: #ffd24c;
+  font-size: 12.1pt;
+  font-weight: 700;
+  letter-spacing: 0.155em;
 }
