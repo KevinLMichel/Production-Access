@@ -59,6 +59,21 @@ export const batchBookWorlds = {
     accent2: "#ffd45a",
     glow: "rgba(87, 77, 255, 0.28)"
   },
+  "clock-with-no-hands": {
+    eyebrow: "A Live-Build Metaphysical Novella",
+    heroTitle: "A clock without hands. A civilization waiting for agency.",
+    lede:
+      "A surreal first-person journey through time, labor, war, education, propaganda, abundance, machines, and the moral pressure to become more than a witness.",
+    promiseTitle: "History is not a machine that excuses the hand.",
+    promiseBody:
+      "The Clock with No Hands begins inside a vast clock whose rim contains cities, factories, battlefields, schools, screens, markets, and possible futures. The narrator moves from passive witnessing toward inquiry, intervention, and authorship.",
+    mapTitle: "Clock, factory, city, school, screen, supermarket, court",
+    cardHeading: "Live-build thresholds",
+    cards: ["The missing hand", "The factory of separation", "The burning river", "The court of purpose"],
+    accent: "#c79a4f",
+    accent2: "#c74a35",
+    glow: "rgba(199, 154, 79, 0.25)"
+  },
   "refractions-of-the-real": {
     eyebrow: "A Manual for Self-Directed Beings",
     heroTitle: "Reality is not a wall. It is a lens, a frame, and a responsibility.",

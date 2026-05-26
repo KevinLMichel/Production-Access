@@ -4416,6 +4416,44 @@ body.theme-shifting-worlds .shifting-figure figcaption {
   line-height: 1.45;
 }
 
+body.theme-clock-with-no-hands .batch-world::before,
+body.theme-clock-with-no-hands .batch-reader::before {
+  background:
+    radial-gradient(circle at 46% 18%, rgba(221, 180, 105, 0.22), transparent 21rem),
+    radial-gradient(circle at 18% 62%, rgba(151, 45, 28, 0.24), transparent 24rem),
+    radial-gradient(circle at 82% 44%, rgba(90, 112, 120, 0.18), transparent 24rem),
+    linear-gradient(145deg, rgba(4, 8, 10, 0.98), rgba(21, 24, 24, 0.92), rgba(8, 10, 12, 0.98));
+}
+
+body.theme-clock-with-no-hands .batch-world::after,
+body.theme-clock-with-no-hands .batch-reader::after {
+  background:
+    radial-gradient(circle at 50% 32%, rgba(243, 215, 162, 0.1), transparent 13rem),
+    repeating-radial-gradient(circle at 50% 34%, rgba(199, 154, 79, 0.12) 0 1px, transparent 1px 32px),
+    repeating-conic-gradient(from 10deg at 50% 34%, rgba(199, 154, 79, 0.12) 0 1deg, transparent 1deg 18deg),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px);
+  background-size: auto, auto, auto, 68px 68px, 68px 68px;
+}
+
+body.theme-clock-with-no-hands .batch-world-hero {
+  background:
+    radial-gradient(circle at 72% 36%, rgba(199, 154, 79, 0.18), transparent 18rem),
+    radial-gradient(circle at 16% 72%, rgba(199, 74, 53, 0.16), transparent 18rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.025)),
+    rgba(12, 15, 17, 0.74);
+}
+
+body.theme-clock-with-no-hands .batch-world-cover img {
+  border-radius: 18px;
+  box-shadow: 0 36px 120px rgba(2, 3, 4, 0.58), 0 0 0 1px rgba(199, 154, 79, 0.34);
+}
+
+body.theme-clock-with-no-hands .batch-prose h2,
+body.theme-clock-with-no-hands .batch-prose h3 {
+  color: #f1d9a8;
+}
+
 /* Futurist UX pass: command-center homepage, living rails, richer cards, and immersive readers. */
 :where(.button, .format-link, .text-link, .site-nav a, .signal-chip, .signal-map__filters button, .signal-clear, .reader-tools button) {
   transition:
