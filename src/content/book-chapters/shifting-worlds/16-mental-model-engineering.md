@@ -216,6 +216,11 @@ The old model feels true partly because it has been practiced.
 
 Give the new model practice, and it too will gain weight.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/brain-is-clay.png" alt="A brain and path diagram showing an automatic old path and a strengthening new path." loading="lazy" />
+  <figcaption>The brain is clay, not concrete. Repeated patterns deepen paths, and repeated interruptions begin carving new ones.</figcaption>
+</figure>
+
 ## Make progress visible
 
 The mind often forgets quiet progress.

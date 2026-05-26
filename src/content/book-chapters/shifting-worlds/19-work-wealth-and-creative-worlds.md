@@ -80,6 +80,11 @@ It is not merely attracted.
 
 It is organized.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/prosperity-as-capacity.png" alt="A temple diagram showing prosperity as capacity supported by skill, stewardship, service, attention, and freedom." loading="lazy" />
+  <figcaption>Prosperity is bigger than income. It becomes durable when capacity, trust, service, attention, and stewardship carry the structure.</figcaption>
+</figure>
+
 ## Refusing the first instrument
 
 There is a world called "not enough."

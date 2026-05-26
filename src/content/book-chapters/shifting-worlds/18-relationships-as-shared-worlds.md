@@ -72,6 +72,11 @@ The deeper question is:
 
 “What world do we create when we are together?”
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/relationships-shared-worlds.png" alt="Two overlapping relationship worlds forming a shared climate between them." loading="lazy" />
+  <figcaption>Relationships create atmosphere. The shared world is shaped by language, listening, boundaries, repair, and the weather each person brings.</figcaption>
+</figure>
+
 Love without a livable world becomes exhaustion.
 
 Affection without repair becomes nostalgia.

@@ -60,6 +60,11 @@ As you move, you will become the kind of person who can see better lights.
 
 The world reveals itself to the traveler, not to the one who refuses to leave the chair.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/moving-star.png" alt="A traveler following a path toward a moving star that becomes clearer as the path updates." loading="lazy" />
+  <figcaption>The ideal world evolves as you evolve. The first aim may not be the final address, but it can still pull you into motion.</figcaption>
+</figure>
+
 ## Medal-world and mastery-world
 
 The ideal world cannot depend entirely on one scoreboard.

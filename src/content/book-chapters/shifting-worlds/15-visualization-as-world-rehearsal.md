@@ -178,6 +178,11 @@ If you visualize only the final celebration, the obstacle will feel like betraya
 
 If you visualize the obstacle and your response, the obstacle becomes part of the path.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/visualization-as-rehearsal.png" alt="A visual rehearsal diagram contrasting fantasy with preparation, obstacles, and action." loading="lazy" />
+  <figcaption>Visualization works best when it rehearses resistance and behavior, not only the fantasy of arrival.</figcaption>
+</figure>
+
 The trained self says, “I have been here before.”
 
 Even if only in rehearsal, the nervous system recognizes the route.

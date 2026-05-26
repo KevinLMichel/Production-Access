@@ -606,7 +606,8 @@ a {
 .chapter-body blockquote + p,
 .chapter-body table + p,
 .chapter-body ul + p,
-.chapter-body ol + p {
+.chapter-body ol + p,
+.chapter-body figure + p {
   text-indent: 0;
 }
 
@@ -668,6 +669,34 @@ a {
   color: #071820;
   font-family: "Source Sans 3", "Arial Narrow", sans-serif;
   font-weight: 700;
+}
+
+.chapter-body .shifting-figure {
+  break-inside: avoid;
+  margin: 0.18in 0;
+  padding: 0.06in;
+  border: 0.75pt solid rgba(39, 99, 122, 0.36);
+  border-radius: 0.08in;
+  background: rgba(234, 243, 246, 0.42);
+  text-align: left;
+}
+
+.chapter-body .shifting-figure img {
+  display: block;
+  width: 100%;
+  max-height: 2.75in;
+  object-fit: contain;
+  border-radius: 0.045in;
+}
+
+.chapter-body .shifting-figure figcaption {
+  margin: 0.045in 0.035in 0;
+  color: #405361;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 7.65pt;
+  font-weight: 700;
+  line-height: 1.24;
+  text-align: left;
 }
 
 .about-author-page {

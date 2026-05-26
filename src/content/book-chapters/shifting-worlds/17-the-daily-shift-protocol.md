@@ -191,6 +191,11 @@ If resistance appears as overwhelm, I will reduce the task to one paragraph.
 
 One degree is enough. One degree repeated changes the destination.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/daily-shift-protocol.png" alt="A morning, midday, and evening loop diagram for the Daily Shift Protocol." loading="lazy" />
+  <figcaption>The Daily Shift Protocol keeps authorship close to the ground: morning signal, midday return, evening evidence.</figcaption>
+</figure>
+
 ## The morning signal
 
 The first signal of the day matters.

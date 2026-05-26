@@ -40,6 +40,11 @@ That is why bad models can feel like facts. They have rehearsed themselves insid
 
 This book is a guide to opening the file.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/inner-model.png" alt="A mountain path diagram showing an inner model between the outer world and what a person notices, expects, and does." loading="lazy" />
+  <figcaption>The inner model does not replace the outer world. It determines which paths, signals, and next actions become visible.</figcaption>
+</figure>
+
 ## The sequence of a world
 
 A world is not built all at once. It is built by sequence.

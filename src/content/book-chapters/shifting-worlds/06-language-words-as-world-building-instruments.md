@@ -100,6 +100,11 @@ The right words do not lie.
 
 They lead.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/language-system.png" alt="Overlapping circles linking words, thoughts, mindset, and reality." loading="lazy" />
+  <figcaption>Language shapes the larger system: words influence thought, thought organizes mindset, and mindset changes the reality a person can enter.</figcaption>
+</figure>
+
 ## The sentence beneath the sentence
 
 Every person has public language and private language.

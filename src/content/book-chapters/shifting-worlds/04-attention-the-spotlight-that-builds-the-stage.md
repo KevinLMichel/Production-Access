@@ -180,6 +180,11 @@ Eventually the inner government changes.
 
 And when the inner government changes, the laws of the world you live by begin to change with it.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/attention-as-vote.png" alt="Two ballot boxes comparing attention given to problem-world and possibility-world." loading="lazy" />
+  <figcaption>Every repeated focus is a vote. The world you repeatedly attend to becomes stronger inside the model.</figcaption>
+</figure>
+
 ## Awareness without obsession
 
 Awareness must not become obsession.

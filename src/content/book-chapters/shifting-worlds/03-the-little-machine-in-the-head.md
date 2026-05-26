@@ -32,6 +32,11 @@ Your models are instructions to the whole organism.
 
 Change the instruction, and you change the output.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/little-machine-in-the-head.png" alt="A small machine diagram showing input beliefs being processed into emotional and behavioral outputs." loading="lazy" />
+  <figcaption>The little machine in the head treats repeated beliefs like instructions. Cleaner inputs make different outputs possible.</figcaption>
+</figure>
+
 A thought with momentum behaves like a body sliding downhill.
 
 You cannot always stop it instantly. This is why people fail when they demand immediate transformation from themselves. They feel fear and then attack themselves for feeling fear. They feel doubt and then add shame to the doubt. They feel anger and then become angry that they are angry.

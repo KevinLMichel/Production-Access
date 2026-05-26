@@ -617,7 +617,7 @@ if (missingIndexAnchors.length > 0) {
 async function renderPrintMarkdownWithIndexAnchors(markdown: string, order: number) {
   const injectedMarkdown = injectIndexAnchors(markdown, order);
   const rendered = await markdownProcessor.render(injectedMarkdown);
-  return rendered.code;
+  return rendered.code.replaceAll('src="/images/', 'src="images/');
 }
 
 function collectIndexTargets(entries: IndexEntry[]) {

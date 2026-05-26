@@ -134,6 +134,11 @@ The new model says, “I am afraid, therefore something matters. Now let me brin
 
 Fear becomes fuel when it is no longer allowed to become fate.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/fear-message-not-prophet.png" alt="A road sign diagram showing fear as a signal while wisdom chooses the direction." loading="lazy" />
+  <figcaption>Fear can signal that something matters. It should not be allowed to write the whole prophecy.</figcaption>
+</figure>
+
 ## State before strategy
 
 State comes before strategy more often than proud minds want to admit.

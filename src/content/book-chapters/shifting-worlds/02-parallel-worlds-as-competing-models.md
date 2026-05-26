@@ -134,6 +134,11 @@ Do not underestimate the dignity of one altered link. A calmer tone can change a
 
 When you change one link, you are not pretending the chain is gone. You are proving the chain is not god.
 
+<figure class="shifting-figure">
+  <img src="/images/shifting-worlds/life-loop.png" alt="A circular life loop diagram connecting belief, attention, emotion, action, and evidence." loading="lazy" />
+  <figcaption>The loop becomes a life when each link quietly reinforces the next. Change one link and the whole pattern can begin to answer differently.</figcaption>
+</figure>
+
 ## The cost of standing still
 
 Standing still is not the same as staying safe.
