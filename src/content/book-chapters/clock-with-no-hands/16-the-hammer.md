@@ -82,4 +82,23 @@ I picked up the hammer and felt neither virtue nor crime, only possibility waiti
 
 The room did not become free. Not so easily. But it became less enchanted.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>Upon the bench there lay a hammer still,</span>
+<span>Its iron head asleep beside the wood,</span>
+<span>Awaiting neither mercy, wrath, nor will.</span></p>
+<p><span>It knew no house, no prison, and no blood;</span>
+<span>It was a question weighted in the hand,</span>
+<span>A silent star before the soul’s dark flood.</span></p>
+<p><span>With it, a roof might rise above the land;</span>
+<span>With it, a chain might learn a cruel song;</span>
+<span>With it, the broken hinge might rise and stand.</span></p>
+<p><span>The tool asked nothing, yet endured the wrong</span>
+<span>Of every purpose poured through human fire,</span>
+<span>And bore our virtue or our violence long.</span></p>
+<p><span>“O mortal hand,” it seemed to say, “desire</span>
+<span>Makes altar, gallows, cradle, cage, or door;</span>
+<span>I follow what thy hidden depths require.”</span></p>
+<p><span>The hammer waits; the soul must answer more.</span></p>
+</aside>
+
 The hammer in my hand clicked, and its head unfolded into a keyboard. The classroom shelves stretched upward, multiplied, and became an infinite library.

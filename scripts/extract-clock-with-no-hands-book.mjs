@@ -10,6 +10,14 @@ const guidePath =
 const draftPath =
   process.env.BOOK_ACCESS_CLOCK_NO_HANDS_DRAFT_INPUT ??
   path.join(process.env.USERPROFILE ?? "", "Downloads", "Book Downlo", "The Clock with No Hand draft content by Kevin.docx");
+const terzaPath =
+  process.env.BOOK_ACCESS_CLOCK_NO_HANDS_TERZA_INPUT ??
+  path.join(
+    process.env.USERPROFILE ?? "",
+    "Downloads",
+    "Book Downlo",
+    "Terza Rima Poems by Kevin L. Michel for The Clock with No Hands.docx"
+  );
 const outputDir = path.join(root, "src", "content", "book-chapters", "clock-with-no-hands");
 const updated = "2026-05-26";
 
@@ -52,6 +60,12 @@ const sectionDefinitions = [
   const [, chapterNumber, title] = heading.match(/^Chapter\s+(\d+)\s+-\s+(.+)$/);
   return { part: formatPart(part), chapterNumber: Number(chapterNumber), title, heading, order };
 });
+
+const terzaSelectionOverrides = new Map([
+  [1, "alternate"],
+  [29, "alternate"],
+  [30, "alternate"]
+]);
 
 const chapterOneDraft = String.raw`I stood inside a clock large enough to contain weather.
 
@@ -664,6 +678,10 @@ function decodeXml(value) {
 
 function cleanText(value) {
   return value
+    .replace(/\u00e2\u20ac\u0153|\u00e2\u20ac\ufffd|\u00e2\u20ac/g, '"')
+    .replace(/\u00e2\u20ac\u2122|\u00e2\u20ac\u02dc/g, "'")
+    .replace(/\u00e2\u20ac\u201c|\u00e2\u20ac\u009d/g, "-")
+    .replace(/\u00e2\u20ac\u00a6/g, "...")
     .replace(/Ã¢â‚¬Å“|Ã¢â‚¬ï¿½/g, '"')
     .replace(/Ã¢â‚¬Ëœ|Ã¢â‚¬â„¢/g, "'")
     .replace(/Ã¢â‚¬â€|Ã¢â‚¬â€œ/g, "-")
@@ -685,6 +703,106 @@ function extractParagraphs(filePath) {
     )
     .map(cleanText)
     .filter(Boolean);
+}
+
+function extractParagraphsWithLineBreaks(filePath) {
+  const zip = new AdmZip(filePath);
+  const xml = zip.readAsText("word/document.xml");
+  return [...xml.matchAll(/<w:p\b[^>]*>([\s\S]*?)<\/w:p>/g)]
+    .map(([, paragraph]) => {
+      const tokens = [];
+      for (const match of paragraph.matchAll(/<w:t[^>]*>([\s\S]*?)<\/w:t>|<w:br\b[^>]*\/>/g)) {
+        if (match[0].startsWith("<w:br")) {
+          tokens.push("\n");
+        } else {
+          tokens.push(decodeXml(match[1]));
+        }
+      }
+
+      return tokens
+        .join("")
+        .split(/\n+/)
+        .map(cleanText)
+        .filter(Boolean)
+        .join("\n");
+    })
+    .filter(Boolean);
+}
+
+function splitTerzaSections(paragraphs) {
+  const sections = new Map();
+  let current;
+
+  for (const paragraph of paragraphs) {
+    const heading = paragraph.match(/^(\d{1,2})\.\s+(.+)$/);
+    if (heading) {
+      current = { chapterNumber: Number(heading[1]), title: heading[2].trim(), lines: [] };
+      sections.set(current.chapterNumber, current);
+      continue;
+    }
+
+    if (!current) continue;
+    const lines = paragraph
+      .split(/\n+/)
+      .map(cleanText)
+      .filter(Boolean);
+    current.lines.push(...lines);
+  }
+
+  return sections;
+}
+
+function loadTerzaPoems(filePath) {
+  const paragraphs = extractParagraphsWithLineBreaks(filePath);
+  const alternateIndex = paragraphs.findIndex((paragraph) => /^ALTERNATE VERSIONS$/i.test(paragraph));
+  if (alternateIndex === -1) throw new Error("Missing ALTERNATE VERSIONS marker in Clock terza rima packet.");
+
+  const primary = splitTerzaSections(paragraphs.slice(0, alternateIndex));
+  const alternate = splitTerzaSections(paragraphs.slice(alternateIndex + 1));
+  if (primary.size !== 30) throw new Error(`Expected 30 primary terza poems, found ${primary.size}`);
+  if (alternate.size !== 30) throw new Error(`Expected 30 alternate terza poems, found ${alternate.size}`);
+
+  return { primary, alternate };
+}
+
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderTerzaBlock(poem) {
+  const stanzas = [];
+  for (let index = 0; index < poem.lines.length; index += 3) {
+    stanzas.push(poem.lines.slice(index, index + 3));
+  }
+
+  const stanzaMarkup = stanzas
+    .map((stanza) => {
+      const lines = stanza.map((line) => `<span>${escapeHtml(line)}</span>`).join("\n");
+      return `<p>${lines}</p>`;
+    })
+    .join("\n");
+
+  return `<aside class="clock-terza" aria-label="Terza rima interlude">
+${stanzaMarkup}
+</aside>`;
+}
+
+function selectedTerzaForChapter(section, poems) {
+  const source = terzaSelectionOverrides.get(section.chapterNumber) ?? "primary";
+  const collection = source === "alternate" ? poems.alternate : poems.primary;
+  const poem = collection.get(section.chapterNumber);
+  if (!poem) throw new Error(`Missing ${source} terza poem for chapter ${section.chapterNumber}`);
+  if (normalizeHeadingTitle(poem.title) !== normalizeHeadingTitle(section.title)) {
+    throw new Error(
+      `Terza poem ${section.chapterNumber} title mismatch: expected "${section.title}", found "${poem.title}"`
+    );
+  }
+
+  return poem;
 }
 
 function slugify(value) {
@@ -746,8 +864,17 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['\u2019]");
 }
 
-function buildChapterBody(section, draftSection) {
-  if (section.chapterNumber === 1) return chapterOneDraft;
+function insertTerzaInterlude(body, interlude, section) {
+  const paragraphs = body.split(/\n{2,}/);
+  if (paragraphs.length < 2) return `${body}\n\n${interlude}`;
+
+  const insertBefore = section.chapterNumber === 30 ? Math.max(1, paragraphs.length - 2) : paragraphs.length - 1;
+  return [...paragraphs.slice(0, insertBefore), interlude, ...paragraphs.slice(insertBefore)].join("\n\n");
+}
+
+function buildChapterBody(section, draftSection, poems) {
+  const interlude = renderTerzaBlock(selectedTerzaForChapter(section, poems));
+  if (section.chapterNumber === 1) return insertTerzaInterlude(chapterOneDraft, interlude, section);
   if (!draftSection) throw new Error(`Missing draft section for chapter ${section.chapterNumber}: ${section.title}`);
 
   const paragraphs = draftSection.paragraphs.filter(
@@ -765,7 +892,8 @@ function buildChapterBody(section, draftSection) {
     ...(hingePassages[section.chapterNumber] ?? [])
   ];
   const insertAt = Math.max(1, paragraphs.length - 2);
-  return [...paragraphs.slice(0, insertAt), ...expansions, ...paragraphs.slice(insertAt)].join("\n\n");
+  const body = [...paragraphs.slice(0, insertAt), ...expansions, ...paragraphs.slice(insertAt)].join("\n\n");
+  return insertTerzaInterlude(body, interlude, section);
 }
 
 function summarize(markdown, fallback) {
@@ -787,6 +915,7 @@ async function main() {
 
   const draftParagraphs = extractParagraphs(draftPath);
   const draftSections = findDraftSections(draftParagraphs);
+  const terzaPoems = loadTerzaPoems(terzaPath);
   await fs.rm(outputDir, { recursive: true, force: true });
   await fs.mkdir(outputDir, { recursive: true });
 
@@ -806,7 +935,7 @@ async function main() {
       );
     }
 
-    const body = buildChapterBody(section, draftSection);
+    const body = buildChapterBody(section, draftSection, terzaPoems);
     totalWords += wordCount(body);
     const subtitle = `Chapter ${section.chapterNumber}`;
     const filename = `${String(section.order).padStart(2, "0")}-${slugify(section.title)}.md`;

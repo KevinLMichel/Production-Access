@@ -64,4 +64,23 @@ In that house, survival was not noble or base. It was intimate. It had breath on
 
 A telephone wire coiled around its legs.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I entered through a mouth of broken stone,</span>
+<span>Where banners once had sworn the stars to war,</span>
+<span>And rats held council under a split throne.</span></p>
+<p><span>No trumpet answered from the upper floor;</span>
+<span>The grand idea had dwindled into breath,</span>
+<span>A doctrine gnawed beside a splintered door.</span></p>
+<p><span>In cupboards, kingdoms learned the taste of death;</span>
+<span>In stairwells, soldiers counted not the skies,</span>
+<span>But crumbs, cold fingers, and the dust beneath.</span></p>
+<p><span>There pride put off its crown and wore disguise,</span>
+<span>A rag, a whisper, one more hour to spare,</span>
+<span>While mortar snowed on unbelieving eyes.</span></p>
+<p><span>O house made pit, O cellar of despair,</span>
+<span>Thou taught what golden mouths refuse to say:</span>
+<span>That war, when stripped, is hunger in the air.</span></p>
+<p><span>And dust survives the banners of the day.</span></p>
+</aside>
+
 When I pulled the chair free, the wire tightened and led me upward.

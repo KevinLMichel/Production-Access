@@ -72,4 +72,23 @@ Part of me wanted the snake to become a riddle with a clever answer. I wanted th
 
 The loose plank in my hand grew heavier. Bark became tar. Tar became driftwood. Driftwood became a beam from a shipwreck. I smelled salt.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>Beside the wire I knelt before the fence;</span>
+<span>A serpent poured itself through one small seam,</span>
+<span>And seemed to braid my severed human sense.</span></p>
+<p><span>It did not halt to honor human dream,</span>
+<span>Nor call the splintered opening the truth,</span>
+<span>But drew one body past the broken seam.</span></p>
+<p><span>“Thy window,” said its scales, “is not the truth,</span>
+<span>Nor iron’s mouth the measure of the writ;</span>
+<span>I wore one road before thy naming tooth.</span></p>
+<p><span>“Thou call’st the slit a world, the world a slit,</span>
+<span>And mak’st a jailer of thy seeking soul,</span>
+<span>Then bow’st to bars as though the bars were writ.”</span></p>
+<p><span>So through the fence it carried one dark whole</span>
+<span>As though the earth remembered being round,</span>
+<span>And left a question coiled within my soul:</span></p>
+<p><span>What mind is free that kneels to broken ground?</span></p>
+</aside>
+
 The clock dissolved into water.

@@ -78,4 +78,23 @@ When the factory became the tank, I understood that production and destruction w
 
 The tank slowed.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The noon lay mute upon the winter steppe,</span>
+<span>When from the west advanced an iron tread,</span>
+<span>As if a factory through history crept.</span></p>
+<p><span>Its bolts recited numbers for the dead,</span>
+<span>Its smokestack heart exhaled across the snow,</span>
+<span>And harvest fields remembered belts of bread.</span></p>
+<p><span>What once made clocks now measured blood on snow;</span>
+<span>What once moved crates now mastered flesh with steel,</span>
+<span>And taught the farmer’s furrow where to flow.</span></p>
+<p><span>The driver watched a doctrine turn the wheel,</span>
+<span>While villages bent low as trampled grain,</span>
+<span>And distant offices approved the steel.</span></p>
+<p><span>O steppe, wide altar of the broken grain,</span>
+<span>Thou heard the treads make law from iron feet,</span>
+<span>And swallowed orders deeper than their pain.</span></p>
+<p><span>When logic marches, history bleeds at its feet.</span></p>
+</aside>
+
 On the horizon, a city burned.

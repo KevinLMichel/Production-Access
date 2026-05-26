@@ -80,4 +80,23 @@ Leaving the library, I felt the danger of another temptation: to become clever i
 
 As I descended, the shelves rearranged themselves. Spines became screens. Pages became pixels. Whispering became broadcast. The staircase deposited me in a room of blue light where everyone faced the same direction.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>Beyond the stairs I saw the shelves ascend,</span>
+<span>An endless night of books without a sun,</span>
+<span>Where every aisle refused to find an end.</span></p>
+<p><span>There histories slept beside what had not begun;</span>
+<span>Theorems shone like frost on buried springs,</span>
+<span>And every answer birthed another one.</span></p>
+<p><span>At last I found a book with blank white wings,</span>
+<span>Its pages empty as unfallen snow,</span>
+<span>Yet heavy with the weight of nameless things.</span></p>
+<p><span>It asked not what the learned mind could know,</span>
+<span>But what the knowing hand would dare to bear,</span>
+<span>When truth had ripened into debt below.</span></p>
+<p><span>The lamps grew pale; the letters filled the air,</span>
+<span>And all the volumes whispered from the night:</span>
+<span>Knowledge is judgment when it learns to care.</span></p>
+<p><span>The blank page waits for hands that serve the light.</span></p>
+</aside>
+
 The screen filled the sky.

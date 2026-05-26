@@ -84,4 +84,23 @@ The robot blinked, and I wondered how much of the age could be summarized by mac
 
 Beyond the office was not an office.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I met the robot at the market gate;</span>
+<span>It bowed in glass and asked the goods to stand,</span>
+<span>Then thanked each coin with patience learned too late.</span></p>
+<p><span>Its painted smile concealed no human hand,</span>
+<span>No malice turned within its silver chest;</span>
+<span>It served the choice that none would call command.</span></p>
+<p><span>Behind it, absent wills had purchased rest,</span>
+<span>The human hour removed from human bread,</span>
+<span>And conscience slept in efficiency’s breast.</span></p>
+<p><span>It scanned the apples, candles, milk, and bread;</span>
+<span>Its voice so courteous that blame grew faint,</span>
+<span>While unseen fingers moved the cost overhead.</span></p>
+<p><span>“O servant,” said I, “mild without complaint,</span>
+<span>Thou art the mask of owners fled from view,</span>
+<span>A silver choirboy serving no named saint.”</span></p>
+<p><span>The choice was human, though the hands withdrew.</span></p>
+</aside>
+
 It was a court without a judge.

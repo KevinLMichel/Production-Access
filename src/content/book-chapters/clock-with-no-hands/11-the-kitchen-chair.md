@@ -72,4 +72,23 @@ The room had not consented to become a battlefield. Its wallpaper still insisted
 
 He glanced at it. “Someone should remember it was not always ours.”
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The chair stood by the table, plain and worn,</span>
+<span>Remembering bread, the lamp, the mother’s hand,</span>
+<span>Before the windows brightened into morn.</span></p>
+<p><span>It knew the bowl, the salt, the swept dry land,</span>
+<span>The small peace gathered round a humble plate,</span>
+<span>The child asleep where gentle shadows stand.</span></p>
+<p><span>Then boots came in and broke the house with fate;</span>
+<span>They dragged it out beneath a roof of smoke,</span>
+<span>And set it where the guns would calculate.</span></p>
+<p><span>Its wooden back, where weary fathers spoke,</span>
+<span>Became a rest for rifles in the night,</span>
+<span>And every grain remembered when it broke.</span></p>
+<p><span>“O hands,” it cried, “that carved me for delight,</span>
+<span>Why bend my patience toward the work of lead?</span>
+<span>I was a seat for peace, not war’s cold rite.”</span></p>
+<p><span>The chair kept silence for the seated dead.</span></p>
+</aside>
+
 I lifted the chair. It was heavier than before. The telephone wire slipped loose and coiled across the floor. Its end rose like a snake and slid under a door that opened onto a schoolyard filled with snow.

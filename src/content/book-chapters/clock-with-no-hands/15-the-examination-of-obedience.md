@@ -80,4 +80,23 @@ One forbidden question had more life in it than all the approved answers on the 
 
 The pencil in her hand lengthened, hardened, darkened. Its eraser became a claw. Its wood became a handle.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The paper lay before us white as snow,</span>
+<span>With numbered blanks where thought was meant to die,</span>
+<span>And every question taught the hand to go.</span></p>
+<p><span>We filled the lines beneath the warden’s eye,</span>
+<span>Until one child, whose pencil shook with light,</span>
+<span>Wrote one small word upon the page: why.</span></p>
+<p><span>Then all the room drew back from that small light;</span>
+<span>The desks grew wheels, the walls revealed their chain,</span>
+<span>The clock-face sweated in its painted night.</span></p>
+<p><span>For why had touched the engine of the brain,</span>
+<span>Exposed the belts that carried yes to yes,</span>
+<span>And made consent remember it was pain.</span></p>
+<p><span>The masters called it error, stain, excess;</span>
+<span>Yet in that syllable the gears were shown,</span>
+<span>And fear stood naked in its borrowed dress.</span></p>
+<p><span>One forbidden flame can light the stone.</span></p>
+</aside>
+
 It became a hammer.

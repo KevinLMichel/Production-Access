@@ -88,4 +88,23 @@ The factory did not feel like a place after a while. It felt like a method. It e
 
 No one below looked at it directly. Their eyes rose only as far as the belts.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I found a river plated as a floor,</span>
+<span>Its channel humming in a belt of steam;</span>
+<span>It took our footfall into one great roar.</span></p>
+<p><span>No oar was ours upon that backward stream;</span>
+<span>It bore our bodies faster than our feet,</span>
+<span>Before the soul could rise against the dream.</span></p>
+<p><span>The lamps leaned down and numbered our feet,</span>
+<span>The soul cried, “Halt,” but no command stood still;</span>
+<span>Its cry was ground to rhythm and repeat.</span></p>
+<p><span>Above, the clock-faced pulleys drilled the will,</span>
+<span>And every lifted palm became two hands</span>
+<span>That served the gear, then taught the gear to kill.</span></p>
+<p><span>I saw a thousand severed human hands</span>
+<span>Wave under oil where no one dared say no,</span>
+<span>Each blessing shortened into new commands.</span></p>
+<p><span>The floor moved on because we let it go.</span></p>
+</aside>
+
 A staircase led upward.

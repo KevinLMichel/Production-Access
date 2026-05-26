@@ -88,6 +88,37 @@ The sound entered me last. Not as command. As answer.
 
 I thought of the snake, still moving beyond the fence. I thought of the wake, still widening. I thought of the girl at the gun, the child in the classroom, the cashier before the robot, the machine in the court. None of them had vanished into symbol. They remained, insisting that meaning without response is only another form of delay. The hour had become intimate. It had entered the hand. It had stopped being a subject for observers and become a demand upon the living. Even silence now had consequences. Even waiting had chosen a side. The clock knew. So did I, finally, with my hand raised.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>At last the now rang inward like a bell,</span>
+<span>Not from the sky, but entering my hand,</span>
+<span>And broke the frozen vestibule of hell.</span></p>
+<p><span>The sound went down through sinew into land,</span>
+<span>It found the hour crouched upon my brow,</span>
+<span>And taught the sleeping fingers how to stand.</span></p>
+<p><span>No foreign trumpet manufactured now,</span>
+<span>No angel pulled me upward into fire,</span>
+<span>The sentence rose through risk beneath my brow.</span></p>
+<p><span>Responsibility became the fire</span>
+<span>That asked no throne to authorize the bone,</span>
+<span>But kindled action out of old desire.</span></p>
+<p><span>The clock no longer worshipped distant stone,</span>
+<span>The sky no longer carried all my why,</span>
+<span>The hand confessed the future as its own.</span></p>
+<p><span>I heard the child who once had answered sky,</span>
+<span>The river burning, and the classroom gate</span>
+<span>All call, Not soon, not never, but reply.</span></p>
+<p><span>Delay came limping, robed in measured fate,</span>
+<span>Its sleeves were damp with unrecorded blood,</span>
+<span>It begged me call its prudence merely late.</span></p>
+<p><span>But now stood bright above the darkened flood,</span>
+<span>It bore no sword, but opened by its name,</span>
+<span>And lifted seeds from underneath the mud.</span></p>
+<p><span>I spoke, not clean, not free of ancient shame,</span>
+<span>Yet willing now to answer for the whole,</span>
+<span>And let my palm receive the living flame.</span></p>
+<p><span>The bell became the labor of the soul.</span></p>
+</aside>
+
 It entered the machinery.
 
 And the clock, which had no hands until I raised mine, began to strike.

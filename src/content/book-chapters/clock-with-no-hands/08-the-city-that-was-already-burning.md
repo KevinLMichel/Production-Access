@@ -64,4 +64,23 @@ The city burned in colors no flag could own. Fire is a poor patriot. It consumes
 
 I had no answer.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I entered when the roofs were crowned with flame,</span>
+<span>Yet heard no first spark falling from a tongue,</span>
+<span>For long before the fire, they lit the name.</span></p>
+<p><span>In council halls the polished phrases sprung</span>
+<span>Like oil from vessels carried under stone,</span>
+<span>And pride was tuned until it could be sung.</span></p>
+<p><span>They called the neighbor shadow, vermin, stone;</span>
+<span>They called delay prudence, mercy late,</span>
+<span>And built a throne from each forsaken bone.</span></p>
+<p><span>Each signed sentence ripened into delay,</span>
+<span>Each sealed report was kindling for the night,</span>
+<span>Each neutral mouth returned to common clay.</span></p>
+<p><span>Then windows flowered open into night,</span>
+<span>And every mother taught the street to burn;</span>
+<span>I saw approval glimmer in the light.</span></p>
+<p><span>A city burns before the torches burn.</span></p>
+</aside>
+
 The river burned.

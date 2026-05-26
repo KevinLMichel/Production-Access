@@ -64,4 +64,23 @@ The first leaf looked fragile, which is to say it looked honest.
 
 The court faded.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I saw the tank take root in frozen clay,</span>
+<span>Its turret lifted into boughs of green,</span>
+<span>Yet iron scars remained beneath the gray.</span></p>
+<p><span>The leaves came softly over what had been,</span>
+<span>But bark did not erase the bolted tread,</span>
+<span>Nor blossoms whiten history’s machine.</span></p>
+<p><span>Birds nested where the gun had crowned the dead,</span>
+<span>And children touched the rust with solemn care,</span>
+<span>For shade grew only where remorse was fed.</span></p>
+<p><span>No garland made the engine clean or fair;</span>
+<span>The roots drank oil and memory below,</span>
+<span>And fruit was oath, not ornament in air.</span></p>
+<p><span>“O tree,” I said, “thou teachest us to grow</span>
+<span>By naming fully what we once became,</span>
+<span>And making shelter answer for the blow.”</span></p>
+<p><span>Redemption keeps the wound and signs its name.</span></p>
+</aside>
+
 I stood again inside the clock.

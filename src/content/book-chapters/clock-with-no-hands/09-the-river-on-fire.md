@@ -64,4 +64,23 @@ I carried the shoe because I had no better ritual. Sometimes witness begins with
 
 Ahead, the tunnel narrowed into darkness. I crawled through it on my elbows, still holding the child’s shoe.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The river moved beneath a crown of fire,</span>
+<span>And lit the faces gathered on both banks,</span>
+<span>As though the water carried its own pyre.</span></p>
+<p><span>It passed the rich, the poor, the armed in ranks,</span>
+<span>It took the church bell, cradle, oath, and flame,</span>
+<span>And gave no private island for our thanks.</span></p>
+<p><span>“I witnessed mercy entering the flame,”</span>
+<span>The current said, “and judgment through the snow;</span>
+<span>The same red mirror answers every name.</span></p>
+<p><span>“What one bank pours, the other comes to know.”</span>
+<span>So children’s tears met soldiers’ blackened hand,</span>
+<span>And ash became a seed within the flow.</span></p>
+<p><span>I knelt beside that double-burning land,</span>
+<span>And saw the missing hand rise in the wake,</span>
+<span>Not to command the fire, but to stand.</span></p>
+<p><span>Both banks inherit what their choices make.</span></p>
+</aside>
+
 When I emerged, I was inside a house that had three armies in it.

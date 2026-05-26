@@ -90,4 +90,23 @@ What had been divided could not be healed by sentiment. The rooms would have to 
 
 I left with my hand bleeding slightly. The blood drops on the floor did not fall randomly. They formed arrows leading deeper into the factory.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>Four chambers stood divided by a wall;</span>
+<span>In each, a laborer guarded one lone hand,</span>
+<span>And listened for the others’ hidden call.</span></p>
+<p><span>The first made tools, but never touched the land;</span>
+<span>The second planned, yet never felt the heart;</span>
+<span>The third obeyed a faceless black command.</span></p>
+<p><span>The fourth kept watch, but saw no living part;</span>
+<span>Each was an organ severed from its lung,</span>
+<span>Each fashioned skill into a lesser art.</span></p>
+<p><span>Through stone I heard the hammer seek its tongue,</span>
+<span>The chart demand the warmth of human eye,</span>
+<span>The weary breath ask whence its wound had sprung.</span></p>
+<p><span>“O answer,” cried the eye, “answer why</span>
+<span>Our severed strengths have starved the common soul,”</span>
+<span>Then each through darkness gave the same dry cry:</span></p>
+<p><span>No organ lives when exiled from the soul.</span></p>
+</aside>
+
 At the center stood a machine labeled FUTURE.

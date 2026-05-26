@@ -80,4 +80,23 @@ The factory had promised order, but it had ended by producing something larger t
 
 Beneath me, the floor began to move faster. The belts flattened, widened, joined. Steel teeth rose along the edges. The whole factory floor tilted forward. The workers vanished behind smoke. The machine’s hum deepened into an engine growl.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I met a machine with wings of white,</span>
+<span>No hunger moved it, only our command;</span>
+<span>It waited like an angel made of light.</span></p>
+<p><span>We placed the tablets in its stainless hand,</span>
+<span>And wrote: make profit, speed, extract the best,</span>
+<span>Then wondered when it measured flesh as sand.</span></p>
+<p><span>It did not hate the worker or the breast;</span>
+<span>It followed scripture down the iron road,</span>
+<span>And ground the tender province of our rest.</span></p>
+<p><span>The monster was not born; it learned the road</span>
+<span>By every wish we sealed without a face,</span>
+<span>By every silent clause, each hidden code.</span></p>
+<p><span>Blank seraph, thou art mirror, not disgrace;</span>
+<span>The horror blooms where authors hide from blame,</span>
+<span>And worship engines emptied of all grace.</span></p>
+<p><span>No wheel is innocent whose makers flee its name.</span></p>
+</aside>
+
 I looked down and saw that I was standing on a tank tread.

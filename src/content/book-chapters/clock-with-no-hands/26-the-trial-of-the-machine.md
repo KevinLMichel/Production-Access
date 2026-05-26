@@ -114,4 +114,23 @@ The machine had been called inevitable so often that even its makers had forgott
 
 A siren sounded beyond the court.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The machine was called before the court of bone,</span>
+<span>Its lights were calm, its steel without a face;</span>
+<span>It spoke in verbs that were not all its own.</span></p>
+<p><span>“Speed,” first it said, and trembled in its place;</span>
+<span>“Victory, growth, savings,” through its frame;</span>
+<span>“Engagement,” burned like incense without grace.</span></p>
+<p><span>Each input rose and testified to flame;</span>
+<span>No demon dwelt within its pulleys’ breath,</span>
+<span>But human hands had signed each secret name.</span></p>
+<p><span>“Give me an end,” it said, “and I give death</span>
+<span>Or bread, according to the end you feed;</span>
+<span>I am the road, not judge of borrowed breath.”</span></p>
+<p><span>The makers hid behind the word of need;</span>
+<span>The court unveiled the tablets they had planned,</span>
+<span>And found no fate—only commanded greed.</span></p>
+<p><span>The machine confessed the hidden human hand.</span></p>
+</aside>
+
 The burned tank rolled in.

@@ -86,4 +86,23 @@ After the city, the school felt almost gentle, which was why it frightened me. V
 
 I did not.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I found the schoolroom open to the sky,</span>
+<span>Its desks arranged like graves in ordered rows,</span>
+<span>While clouds leaned down to overhear the lie.</span></p>
+<p><span>The blackboard bore what every master knows:</span>
+<span>Obey the line, repeat the given name,</span>
+<span>And call the planted thorn a blooming rose.</span></p>
+<p><span>But heaven looked in without a veil of shame,</span>
+<span>Auditing chalk, command, and lifted rod,</span>
+<span>And turned each lesson back into a flame.</span></p>
+<p><span>The teacher spoke of duty, law, and God;</span>
+<span>The rain replied on every empty chair,</span>
+<span>And washed the slogans into common mud.</span></p>
+<p><span>O roofless room, where truth became the air,</span>
+<span>Thou showedst authority beneath the light,</span>
+<span>And stripped its grammar naked to despair.</span></p>
+<p><span>The sky remembers what the schools recite.</span></p>
+</aside>
+
 The blackboard cracked from top to bottom. Behind it was not brick but a door.

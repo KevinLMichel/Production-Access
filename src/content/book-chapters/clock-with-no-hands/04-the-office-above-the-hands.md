@@ -92,4 +92,23 @@ I wanted to open a window, but the office had none. It had transparency without 
 
 NECESSARY.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>Above the hands there floated walls of glass,</span>
+<span>A cloud of ledgers over bleeding hands,</span>
+<span>Where those who counted watched the morning pass.</span></p>
+<p><span>They named the torn palms “units” in their plans,</span>
+<span>Made every wound a color in the charts,</span>
+<span>And moved the axes over distant lands.</span></p>
+<p><span>No groan ascended through those polished charts;</span>
+<span>The syllables were clean, the curtains white,</span>
+<span>Yet ink had borrowed pulses from our hearts.</span></p>
+<p><span>There mercy became “variance” under light,</span>
+<span>And grief, a column reddening into blood,</span>
+<span>While wisdom signed approvals into night.</span></p>
+<p><span>I struck the glass; it trembled like a flood,</span>
+<span>But none looked down from that transparent scene,</span>
+<span>For heaven had learned to hover over blood.</span></p>
+<p><span>A word made clean can serve a murder machine.</span></p>
+</aside>
+
 The sound of the stamp striking stone became artillery.

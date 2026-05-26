@@ -80,4 +80,23 @@ The screen arrived after the school because it was another kind of classroom. It
 
 I found a small jar on the floor near the machines. Inside fluttered a moth made of light. The label read: MY ATTENTION.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I watched a pane that promised me the world,</span>
+<span>A glassy sea where every kingdom passed,</span>
+<span>And every distant sorrow burned and swirled.</span></p>
+<p><span>It showed the war, the feast, the rising blast;</span>
+<span>It showed the child, the market, throne, and grave,</span>
+<span>Then drank the watcher while the pictures passed.</span></p>
+<p><span>I thought I looked; in truth, I learned to crave.</span>
+<span>The window had no wind, no street, no door,</span>
+<span>But nets beneath the shining image-wave.</span></p>
+<p><span>My gaze was harvested from shore to shore;</span>
+<span>My hours were weighed like grain in unseen mills,</span>
+<span>And sold as sparks to feed the hidden store.</span></p>
+<p><span>O false bright glass, where every vision spills,</span>
+<span>Thou givest earth and takest back the eye;</span>
+<span>Thy light is honey laid upon the wills.</span></p>
+<p><span>The world appeared; the watcher learned to die.</span></p>
+</aside>
+
 I put the jar in my pocket and walked farther behind the screen, where cables thickened into the pipes of an organ and the blue light warmed into stained glass.

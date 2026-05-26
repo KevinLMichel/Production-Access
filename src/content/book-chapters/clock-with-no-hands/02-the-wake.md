@@ -74,4 +74,23 @@ By the time the ship horn sounded, I no longer believed in clean beginnings. The
 
 Its note lengthened, flattened, became metallic. The deck under my feet trembled. The ocean darkened and hardened. Waves became belts. Foam became steam. The passengers vanished, or were transformed into workers, or had been workers all along.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I stood abaft the ship and watched the wake,</span>
+<span>A silver wound unscrolling from the stern,</span>
+<span>Where every wave confessed the course we make.</span></p>
+<p><span>The captain said, “The weather made us turn,”</span>
+<span>Yet in the foam I saw a written trail,</span>
+<span>And heard the rudder under darkness learn.</span></p>
+<p><span>No prayer could smooth that scripture from the trail,</span>
+<span>No fog annul the iron of the wheel;</span>
+<span>Each choice drew water from its pierced veil.</span></p>
+<p><span>“Deny the compass, if thou wilt, and wheel,”</span>
+<span>The sea replied, “yet not the bruised shore;</span>
+<span>For even silence bears a hidden keel.”</span></p>
+<p><span>Behind us moved a court of foam to shore,</span>
+<span>Where drowned intentions rose enough to hear,</span>
+<span>And every absent harbor asked for more.</span></p>
+<p><span>Who leaves a wake must answer: I was here.</span></p>
+</aside>
+
 The horn became a factory whistle.

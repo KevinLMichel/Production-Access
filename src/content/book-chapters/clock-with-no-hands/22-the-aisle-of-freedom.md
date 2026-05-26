@@ -84,4 +84,23 @@ The supermarket seemed like relief after the screen, and that was its danger. Br
 
 I lifted the hammer.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I walked an aisle beneath unsetting light,</span>
+<span>Where colored boxes raised their little names,</span>
+<span>And freedom shone in wax upon the white.</span></p>
+<p><span>The shelves proclaimed a thousand sovereign names,</span>
+<span>Each label crowned the hand that chose the brand,</span>
+<span>While hunger passed unnoticed through their claims.</span></p>
+<p><span>Behind the price—the farm, the wage, the land,</span>
+<span>The trucks at dawn, the rivers sick with foam—</span>
+<span>Were folded out of reach from choosing hand.</span></p>
+<p><span>I filled a cart and thought I chose my home,</span>
+<span>Yet deeper doors had closed before my birth,</span>
+<span>And choice became a brightly lit catacomb.</span></p>
+<p><span>“O aisle,” I said, “thy kingdom covers earth,</span>
+<span>But not the question hidden under more:</span>
+<span>Who chose the terms by which we measure worth?”</span></p>
+<p><span>The deepest chain is hidden by the store.</span></p>
+</aside>
+
 The wheels unlocked.

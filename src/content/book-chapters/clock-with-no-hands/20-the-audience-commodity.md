@@ -80,4 +80,23 @@ The auction continued after I refused to bid. Markets do not end because one per
 
 MUSEUM OF GOOD INTENTIONS.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I saw Attention bound upon a block,</span>
+<span>Where brokers weighed the pulse in perfumed air,</span>
+<span>And fear was numbered by the market clock.</span></p>
+<p><span>Loneliness lay folded into ware,</span>
+<span>Desire was ribboned, outrage shaped like bread,</span>
+<span>And each was lifted to the bidding air.</span></p>
+<p><span>The auctioneer had eyes of polished lead;</span>
+<span>He praised the trembling heart as fertile ground,</span>
+<span>Then sold its night to those who wished it fed.</span></p>
+<p><span>No whip was heard, yet all the room was bound;</span>
+<span>The watchers watched, and watching became ore,</span>
+<span>Drawn vein by vein without a human sound.</span></p>
+<p><span>“O soul,” I cried, “who counts thy hidden store,</span>
+<span>When sorrow enters dressed for daily trade,</span>
+<span>And silence cannot shelter any more?”</span></p>
+<p><span>The buyer owns the wound his price has made.</span></p>
+</aside>
+
 I entered because the doors were already open.

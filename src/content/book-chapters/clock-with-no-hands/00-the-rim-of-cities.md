@@ -128,4 +128,35 @@ I leaned closer to the slit, trying to see what made one part summon the next, a
 
 I did not yet know how to answer that laugh.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I walked where cities leaned in rings of stone,</span>
+<span>Each tower cried, Thou hast arrived too late,</span>
+<span>And wore the smoke of kingdoms for a throne.</span></p>
+<p><span>Another rang, Thou comest before the gate,</span>
+<span>Its eastern windows bruised with counterfeit dawn,</span>
+<span>And sold tomorrow as a minted fate.</span></p>
+<p><span>A third said, All is ended and withdrawn,</span>
+<span>While clocks without their fingers shone in brass,</span>
+<span>And children counted shadows and were drawn.</span></p>
+<p><span>I saw the avenues like rivers pass,</span>
+<span>Their bridges turning slowly like a wheel,</span>
+<span>Beneath a heaven sheeted over glass.</span></p>
+<p><span>The hours bent their mouths, and made me feel</span>
+<span>That agency was buried under coal,</span>
+<span>Or locked within some planetary seal.</span></p>
+<p><span>Yet underneath the pavement breathed a soul,</span>
+<span>It whispered, None shall hide his secret name,</span>
+<span>For even cinders answer to the whole.</span></p>
+<p><span>Then Late and Early knelt in one red flame,</span>
+<span>Their crowns were ash, their choristers were breath,</span>
+<span>And I beheld Inevitable’s shame.</span></p>
+<p><span>It had no face but borrowed ours in death,</span>
+<span>It had no hand until we offered now,</span>
+<span>Its shadow fed upon withheld breath.</span></p>
+<p><span>The word burned inward, branded on my brow,</span>
+<span>A living coal, shaped like the human hand,</span>
+<span>And all false hours scattered from the plough.</span></p>
+<p><span>I raised my palm, and felt the cities stand.</span></p>
+</aside>
+
 So I watched the snake pass again, head, body, tail, while the clock with no hands waited behind me, enormous and warm, making its useless, civilized sound.

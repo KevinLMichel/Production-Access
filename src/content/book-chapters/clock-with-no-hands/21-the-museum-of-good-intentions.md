@@ -72,4 +72,23 @@ The museum's inward-opening glass taught me that critique is not an exit by itse
 
 I smashed the mirror with the hammer.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I climbed a palace built of tempered stone,</span>
+<span>Where every conquered grief was washed in light,</span>
+<span>And empire smiled beside its borrowed throne.</span></p>
+<p><span>The lamps were gentle, mercifully white;</span>
+<span>They gilded chains as difficult days,</span>
+<span>And taught the spear to disappear from sight.</span></p>
+<p><span>Beneath soft labels slept the older phrase:</span>
+<span>Good purpose, progress, burden, civil care,</span>
+<span>Each hung with velvet in the amber haze.</span></p>
+<p><span>The ruined faces, framed with patient air,</span>
+<span>Did not ask pity from the polished wall,</span>
+<span>But named the hand that made its ruin fair.</span></p>
+<p><span>“O gracious halls,” I heard their shadows call,</span>
+<span>“Your beauty is the veil that crimes adore;</span>
+<span>The tasteful light is still an empire’s pall.”</span></p>
+<p><span>No bright excuse returns the stolen shore.</span></p>
+</aside>
+
 The glass did not shatter outward. It opened inward. Cold air poured through. I stepped into a supermarket aisle lit by fluorescent abundance.

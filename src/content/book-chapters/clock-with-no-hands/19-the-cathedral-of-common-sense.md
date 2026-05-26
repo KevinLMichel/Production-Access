@@ -92,4 +92,23 @@ The cathedral feared laughter almost as much as heresy. Laughter made scale huma
 
 I walked out through a side door.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I came into a church of ancient phrase,</span>
+<span>Where common sense wore gold around its throat,</span>
+<span>And dust was incense in the settled haze.</span></p>
+<p><span>Its saints were sayings every coward wrote:</span>
+<span>Thus has it been, thus must it ever be;</span>
+<span>No hand can turn the river or the boat.</span></p>
+<p><span>Upon the ceiling, painted solemnly,</span>
+<span>Was inevitability in blue,</span>
+<span>A heaven forged to sanctify the knee.</span></p>
+<p><span>The pews were full of those who never knew</span>
+<span>That phrases harden into iron bars,</span>
+<span>And old consent can make a prison new.</span></p>
+<p><span>Then through a crack between the painted stars,</span>
+<span>A coal of now fell burning to the floor,</span>
+<span>And showed the saints as masks, the hymns as scars.</span></p>
+<p><span>What men call fate is often fear made law.</span></p>
+</aside>
+
 On the other side was a marketplace where attention was sold by the pound.

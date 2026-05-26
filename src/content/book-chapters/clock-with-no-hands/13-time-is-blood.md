@@ -80,4 +80,23 @@ The city section of the clock had taken something from me that I could not name.
 
 My blood fell onto the floor, but the floor had become a desk, and the blood had become red ink spreading across an exam paper.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>The clock was mute; the gears forgot their sound,</span>
+<span>Yet in the street a redder dial ran,</span>
+<span>And marked each hour upon the open ground.</span></p>
+<p><span>No brass confessed the measure made by man;</span>
+<span>But blood, that honest instrument of cost,</span>
+<span>Began where polished arguments began.</span></p>
+<p><span>“Delay,” it said, “is never wholly lost;</span>
+<span>It gathers names beneath the official seal,</span>
+<span>And pays at last what caution thought it crossed.”</span></p>
+<p><span>Each pulse became a number none could steal,</span>
+<span>Each wound a bell that rang through flesh and stone,</span>
+<span>Each vein a river under history’s wheel.</span></p>
+<p><span>O rulers counting shadows from a throne,</span>
+<span>Come read the seconds written in the slain;</span>
+<span>The truest clock is never yours alone.</span></p>
+<p><span>Where blood begins, excuses end in pain.</span></p>
+</aside>
+
 A girl beside me raised her hand.

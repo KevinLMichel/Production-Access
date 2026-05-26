@@ -68,4 +68,35 @@ My hand trembled not because it was weak, but because it had stopped outsourcing
 
 My shadow fell across the clock face.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I came once more before the eyeless clock,</span>
+<span>No hand moved over nations, fields, or hands,</span>
+<span>Its silence leaned against the heart like rock.</span></p>
+<p><span>Around it waited ruined schools and lands,</span>
+<span>The supermarket light, the burning face,</span>
+<span>The court, the screen, the river with its hands.</span></p>
+<p><span>The numbers shone, but empty was the face,</span>
+<span>The hidden gears turned solemn as a wheel,</span>
+<span>Yet none could grant the hour its missing grace.</span></p>
+<p><span>I pressed my ear against the ribs of steel,</span>
+<span>It whispered, Do not call my stillness fate,</span>
+<span>No mechanism wills what hands conceal.</span></p>
+<p><span>The outer rim pronounced the hour late,</span>
+<span>But in the hollow warmed a human skin,</span>
+<span>A pulse that shook the hinges of the gate.</span></p>
+<p><span>I feared the hour that risk might now begin,</span>
+<span>For contact meant the ending of excuse,</span>
+<span>And all the waiting world looked back within.</span></p>
+<p><span>The clock demanded neither charm nor use,</span>
+<span>It waited like a wound beneath the touch,</span>
+<span>For freedom is the nerve no gears produce.</span></p>
+<p><span>I learned that missing meant not lack, but touch,</span>
+<span>A naked palm required by the brow,</span>
+<span>The smallest courage answering too much.</span></p>
+<p><span>Then from the dark circumference came now,</span>
+<span>It struck no bell, but traveled through my hand,</span>
+<span>And signed its fire upon my inward brow.</span></p>
+<p><span>The clock awoke when flesh became its hand.</span></p>
+</aside>
+
 For the first time, the clock moved.

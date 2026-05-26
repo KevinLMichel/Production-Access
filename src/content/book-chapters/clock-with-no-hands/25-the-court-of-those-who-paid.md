@@ -56,4 +56,23 @@ The court gathered every previous room into one silence. The clock, the fence, t
 
 The hollow in the court opened.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I entered court where no paid counsel spoke;</span>
+<span>The unpaid witnesses sat pale and stern,</span>
+<span>Whose counted losses rose like courtroom smoke.</span></p>
+<p><span>They did not beg for pity in return,</span>
+<span>Nor coins flung down from balconies of grace;</span>
+<span>They asked who signed the wheel that made them burn.</span></p>
+<p><span>A miner’s lung, a mother’s ashen face,</span>
+<span>A poisoned river, school, and splintered stone</span>
+<span>Stood forth and gave the silence human face.</span></p>
+<p><span>“No pity,” sang the living and the stone,</span>
+<span>“But authorship: name who began the wheel,</span>
+<span>Who took our years and called the taking loan.”</span></p>
+<p><span>The judges heard the buried axle squeal</span>
+<span>Within the law’s embroidered, cautious breath,</span>
+<span>And every fee became a turning wheel.</span></p>
+<p><span>Who pays in life demands a name for death.</span></p>
+</aside>
+
 From beneath it rose the machine.

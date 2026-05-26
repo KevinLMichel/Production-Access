@@ -82,4 +82,23 @@ The pharmacy light softened every face and made each private burden look almost 
 
 Inside was a mechanical eye.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I found a chapel washed in cobalt glass,</span>
+<span>Where bottles burned like votive stars in rows,</span>
+<span>Downstream from grief that should not need to pass.</span></p>
+<p><span>The clerks moved softly among measured rows,</span>
+<span>And mercy, real as water, changed its name</span>
+<span>To tablets counted under sleepless lows.</span></p>
+<p><span>No angel mocked the salve, the vial, the flame;</span>
+<span>For broken flesh requires a tender art,</span>
+<span>And medicine is not the child of shame.</span></p>
+<p><span>Yet through the wall I heard the city’s heart,</span>
+<span>Of wages, rents, and loneliness accuse,</span>
+<span>And laws that tore the living root apart.</span></p>
+<p><span>“O chapel after ruin, thou canst choose</span>
+<span>To bless the wound; thy mercy is not vain,</span>
+<span>But why must preventable grief seek thy pews?”</span></p>
+<p><span>The balm is real; the world has authored pain.</span></p>
+</aside>
+
 It blinked.

@@ -70,4 +70,23 @@ The girl stood where no child should stand, and the world had the audacity to ca
 
 I picked it up after the firing stopped. It fell apart in my fingers.
 
+<aside class="clock-terza" aria-label="Terza rima interlude">
+<p><span>I saw the child beneath the iron sky,</span>
+<span>Her cheek still holding morning’s vanished milk,</span>
+<span>Commanded by the thunder to reply.</span></p>
+<p><span>No woven flag, no painted praise of silk,</span>
+<span>Could cleanse the terror braided in her braid,</span>
+<span>Or make her childhood into public silk.</span></p>
+<p><span>Her little hands, by history betrayed,</span>
+<span>Were lifted where no cradle should have been,</span>
+<span>And learned the trigger as a bitter trade.</span></p>
+<p><span>The sky came down, metallic, blind, and thin;</span>
+<span>She answered upward, not with glory’s breath,</span>
+<span>But with the fear that adults folded in.</span></p>
+<p><span>O age, that crowns the child and names it faith,</span>
+<span>Behold thy judgment standing in the snow:</span>
+<span>A daughter made interpreter of death.</span></p>
+<p><span>No song of courage hides what made her so.</span></p>
+</aside>
+
 The gun sight tilted toward me, its circular frame becoming the compass of a schoolchild drawing a perfect circle on paper.
