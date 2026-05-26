@@ -4516,6 +4516,70 @@ body.theme-shifting-worlds .batch-world-cover img {
   z-index: 1;
 }
 
+.home-page .rail-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.home-page .rail-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  margin: -0.2rem 0 0.35rem;
+}
+
+.home-page .rail-hint {
+  color: rgba(247, 242, 232, 0.62);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.home-page .rail-buttons {
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.home-page .rail-buttons button {
+  display: inline-grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid rgba(39, 216, 255, 0.28);
+  border-radius: 999px;
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.18), transparent 38%),
+    linear-gradient(135deg, rgba(39, 216, 255, 0.14), rgba(244, 201, 93, 0.08)),
+    rgba(7, 14, 30, 0.72);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+  font: 900 1.45rem/1 var(--sans);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.home-page .rail-buttons button:hover,
+.home-page .rail-buttons button:focus-visible {
+  border-color: rgba(244, 201, 93, 0.55);
+  transform: translateY(-2px);
+  background:
+    radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.22), transparent 38%),
+    linear-gradient(135deg, rgba(39, 216, 255, 0.24), rgba(244, 201, 93, 0.14)),
+    rgba(7, 14, 30, 0.88);
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.34),
+    0 0 28px rgba(39, 216, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
 .home-page .book-rail {
   position: relative;
   grid-auto-columns: clamp(252px, 28vw, 350px);
@@ -4526,11 +4590,23 @@ body.theme-shifting-worlds .batch-world-cover img {
 }
 
 .home-page .book-rail[data-loop-ready="true"] {
-  scrollbar-width: none;
+  scrollbar-color: rgba(39, 216, 255, 0.54) rgba(255, 255, 255, 0.08);
+  scrollbar-width: thin;
 }
 
 .home-page .book-rail[data-loop-ready="true"]::-webkit-scrollbar {
-  display: none;
+  display: block;
+  height: 8px;
+}
+
+.home-page .book-rail[data-loop-ready="true"]::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.home-page .book-rail[data-loop-ready="true"]::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(39, 216, 255, 0.64), rgba(244, 201, 93, 0.42));
 }
 
 .home-page .book-rail.is-paused {
@@ -4739,17 +4815,28 @@ body:is(.theme-freedom-by-design, .theme-fragmented-become-whole, .theme-subcons
 .reader-mode .reader-column,
 .reader-mode .freedom-reader {
   transition:
-    opacity 220ms ease,
-    transform 220ms ease,
-    grid-template-columns 220ms ease,
-    max-width 220ms ease,
-    padding 220ms ease,
-    box-shadow 220ms ease;
+    opacity 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    grid-template-columns 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    max-width 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    padding 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    width 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reader-mode .reader-sidebar__back,
+.reader-mode .reader-sidebar p,
+.reader-mode .reader-sidebar strong,
+.reader-mode .reader-sidebar nav {
+  transition:
+    opacity 420ms ease,
+    max-height 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 body.reader-immersive .site-header {
-  opacity: 0.54;
-  transform: translateY(-0.35rem) scale(0.992);
+  opacity: 0.64;
+  transform: translateY(-0.22rem) scale(0.996);
 }
 
 body.reader-immersive .site-header:hover,
@@ -4760,42 +4847,60 @@ body.reader-immersive .site-header:focus-within {
 
 @media (min-width: 821px) {
   body.reader-immersive .freedom-reader {
-    grid-template-columns: minmax(58px, 72px) minmax(0, 1fr);
-    gap: clamp(0.85rem, 2vw, 1.35rem);
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(0.9rem, 2.2vw, 1.6rem);
   }
 
   body.reader-immersive .reader-sidebar {
+    position: fixed;
+    top: 1rem;
+    left: max(1rem, calc((100vw - 1180px) / 2));
+    z-index: 40;
     overflow: hidden;
-    min-height: 58vh;
-    padding: 0.82rem 0.68rem;
-    opacity: 0.48;
-    transform: translateX(-0.45rem);
+    width: min(168px, calc(100vw - 2rem));
+    max-height: calc(100vh - 2rem);
+    min-height: auto;
+    padding: 0.88rem 0.82rem;
+    opacity: 0.7;
+    transform: translateY(0.12rem);
   }
 
   body.reader-immersive .reader-sidebar:hover,
   body.reader-immersive .reader-sidebar:focus-within {
-    overflow: visible;
-    width: min(260px, 78vw);
+    overflow: auto;
+    width: min(286px, calc(100vw - 2rem));
     opacity: 1;
     transform: none;
     box-shadow: 0 28px 100px rgba(0, 0, 0, 0.48), 0 0 38px var(--batch-glow, rgba(39, 216, 255, 0.13));
   }
 
   body.reader-immersive .reader-sidebar__back {
-    max-height: 54vh;
+    max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+  }
+
+  body.reader-immersive .reader-sidebar__back::before {
+    margin-right: 0.38rem;
+    color: color-mix(in srgb, var(--fbd-gold-bright, var(--gold)) 84%, white 8%);
+    content: "Contents";
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
   }
 
   body.reader-immersive .reader-sidebar:hover .reader-sidebar__back,
   body.reader-immersive .reader-sidebar:focus-within .reader-sidebar__back {
-    max-height: none;
+    max-width: none;
     white-space: normal;
-    writing-mode: horizontal-tb;
     transform: none;
+  }
+
+  body.reader-immersive .reader-sidebar:hover .reader-sidebar__back::before,
+  body.reader-immersive .reader-sidebar:focus-within .reader-sidebar__back::before {
+    content: "";
   }
 
   body.reader-immersive .reader-sidebar p,
@@ -4816,12 +4921,15 @@ body.reader-immersive .site-header:focus-within {
     max-height: 40rem;
     opacity: 1;
     pointer-events: auto;
+    transition:
+      opacity 420ms ease 80ms,
+      max-height 520ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   body.reader-immersive .reader-column {
-    max-width: min(100%, 980px);
+    max-width: min(100%, 1030px);
     margin-inline: auto;
-    padding-inline: clamp(1.4rem, 5vw, 5rem);
+    padding-inline: clamp(1.45rem, 5vw, 5.4rem);
   }
 
   body.reader-immersive .reader-header,
@@ -4885,6 +4993,17 @@ body.reader-immersive .site-header:focus-within {
 
   .home-page .dashboard-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-page .rail-controls {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .home-page .rail-buttons button {
+    width: 2.15rem;
+    height: 2.15rem;
   }
 
   .home-page .book-rail {
@@ -5151,5 +5270,51 @@ body.reader-immersive .site-header:focus-within {
 
   .hero-stat-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 821px) {
+  body.reader-immersive .freedom-reader {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.reader-immersive .freedom-reader .reader-sidebar {
+    position: fixed;
+    top: 1rem;
+    left: max(1rem, calc((100vw - 1180px) / 2));
+    z-index: 40;
+    overflow: hidden;
+    width: min(168px, calc(100vw - 2rem));
+    max-height: calc(100vh - 2rem);
+    min-height: auto;
+    padding: 0.88rem 0.82rem;
+    opacity: 0.7;
+    transform: translateY(0.12rem);
+  }
+
+  body.reader-immersive .freedom-reader .reader-sidebar:hover,
+  body.reader-immersive .freedom-reader .reader-sidebar:focus-within {
+    overflow: auto;
+    width: min(286px, calc(100vw - 2rem));
+    opacity: 1;
+    transform: none;
+  }
+
+  body.reader-immersive .freedom-reader .reader-column {
+    max-width: min(100%, 1030px);
+    margin-inline: auto;
+  }
+
+  body.reader-immersive .freedom-reader .reader-sidebar__back {
+    font-size: 0;
+  }
+
+  body.reader-immersive .freedom-reader .reader-sidebar__back::before {
+    font-size: 0.68rem;
+  }
+
+  body.reader-immersive .freedom-reader .reader-sidebar:hover .reader-sidebar__back,
+  body.reader-immersive .freedom-reader .reader-sidebar:focus-within .reader-sidebar__back {
+    font-size: 0.92rem;
   }
 }

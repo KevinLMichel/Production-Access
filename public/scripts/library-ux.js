@@ -5,15 +5,77 @@ function prefersReducedMotion() {
 }
 
 function initLoopingRails() {
-  if (prefersReducedMotion()) return;
-
+  const reducedMotion = prefersReducedMotion();
   const rails = Array.from(document.querySelectorAll(".home-page .book-rail"));
   rails.forEach((rail, index) => {
+    const shell = rail.closest("[data-rail-shell]") || rail;
+    const prevButton = shell.querySelector("[data-rail-prev]");
+    const nextButton = shell.querySelector("[data-rail-next]");
     const originalItems = Array.from(rail.children);
-    if (originalItems.length < 3 || rail.dataset.loopReady === "true") return;
+    if (originalItems.length < 2 || rail.dataset.railEnhanced === "true") return;
+
+    rail.dataset.railEnhanced = "true";
+    rail.dataset.loopRail = String(index + 1);
+
+    let paused = false;
+    const pause = () => {
+      paused = true;
+      rail.classList.add("is-paused");
+      shell.classList.add("is-paused");
+    };
+    const play = () => {
+      paused = false;
+      rail.classList.remove("is-paused");
+      shell.classList.remove("is-paused");
+    };
+
+    const normalizeScroll = () => {
+      if (reducedMotion || rail.dataset.loopReady !== "true") return;
+      const loopPoint = rail.scrollWidth / 2;
+      if (loopPoint <= 0) return;
+      if (rail.scrollLeft >= loopPoint) {
+        rail.scrollLeft -= loopPoint;
+      } else if (rail.scrollLeft < 0) {
+        rail.scrollLeft += loopPoint;
+      }
+    };
+
+    const scrollRail = (direction) => {
+      pause();
+      const firstCard = originalItems[0];
+      const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : rail.clientWidth * 0.78;
+      const railStyle = getComputedStyle(rail);
+      const parsedGap = parseFloat(railStyle.columnGap || railStyle.gap || "0");
+      const gap = Number.isFinite(parsedGap) ? parsedGap : 16;
+      if (direction < 0 && rail.dataset.loopReady === "true" && rail.scrollLeft < cardWidth + gap) {
+        rail.scrollLeft += rail.scrollWidth / 2;
+      }
+      rail.scrollBy({ left: direction * Math.max(cardWidth + gap, rail.clientWidth * 0.72), behavior: "smooth" });
+      window.setTimeout(() => {
+        normalizeScroll();
+        play();
+      }, 760);
+    };
+
+    prevButton?.addEventListener("click", () => scrollRail(-1));
+    nextButton?.addEventListener("click", () => scrollRail(1));
+
+    shell.addEventListener("mouseenter", pause);
+    shell.addEventListener("mouseleave", play);
+    shell.addEventListener("focusin", pause);
+    shell.addEventListener("focusout", play);
+    shell.addEventListener("pointerdown", pause);
+    shell.addEventListener("pointerup", play);
+    shell.addEventListener("touchstart", pause, { passive: true });
+    shell.addEventListener("touchend", play, { passive: true });
+    rail.addEventListener("scroll", normalizeScroll, { passive: true });
+
+    if (reducedMotion || originalItems.length < 3) {
+      rail.dataset.loopReady = "manual";
+      return;
+    }
 
     rail.dataset.loopReady = "true";
-    rail.dataset.loopRail = String(index + 1);
     originalItems.forEach((item) => {
       const clone = item.cloneNode(true);
       clone.setAttribute("aria-hidden", "true");
@@ -25,27 +87,8 @@ function initLoopingRails() {
       rail.append(clone);
     });
 
-    let paused = false;
     let lastTime = 0;
     const speed = Number(rail.dataset.loopSpeed || 18 + index * 4);
-
-    const pause = () => {
-      paused = true;
-      rail.classList.add("is-paused");
-    };
-    const play = () => {
-      paused = false;
-      rail.classList.remove("is-paused");
-    };
-
-    rail.addEventListener("mouseenter", pause);
-    rail.addEventListener("mouseleave", play);
-    rail.addEventListener("focusin", pause);
-    rail.addEventListener("focusout", play);
-    rail.addEventListener("pointerdown", pause);
-    rail.addEventListener("pointerup", play);
-    rail.addEventListener("touchstart", pause, { passive: true });
-    rail.addEventListener("touchend", play, { passive: true });
 
     function tick(time) {
       if (!lastTime) lastTime = time;
@@ -99,10 +142,20 @@ function initReaderImmersion() {
   if (!reader || !column) return;
 
   let ticking = false;
-  const threshold = () => Math.max(180, column.getBoundingClientRect().top + window.scrollY - 72);
+  let immersive = false;
+  const threshold = () => Math.max(190, column.getBoundingClientRect().top + window.scrollY - 92);
 
   function update() {
-    const immersive = window.scrollY > threshold();
+    const base = threshold();
+    const enterAt = base + 86;
+    const exitAt = base - 58;
+
+    if (!immersive && window.scrollY > enterAt) {
+      immersive = true;
+    } else if (immersive && window.scrollY < exitAt) {
+      immersive = false;
+    }
+
     document.body.classList.toggle("reader-immersive", immersive);
     ticking = false;
   }

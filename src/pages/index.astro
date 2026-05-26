@@ -104,8 +104,17 @@ const downloadCount = books.filter((book) => book.data.formats.some((format) => 
       <p class="eyebrow">Start here</p>
       <h2 id="featured-heading">Featured works</h2>
     </div>
-    <div class="book-rail">
-      {featured.map((book) => <BookCard book={book} variant="shelf" />)}
+    <div class="rail-shell" data-rail-shell>
+      <div class="rail-controls" aria-label="Featured works carousel controls">
+        <span class="rail-hint">Scroll, drag, or let it orbit</span>
+        <div class="rail-buttons">
+          <button type="button" data-rail-prev aria-controls="featured-rail" aria-label="Previous featured works">‹</button>
+          <button type="button" data-rail-next aria-controls="featured-rail" aria-label="Next featured works">›</button>
+        </div>
+      </div>
+      <div class="book-rail" id="featured-rail" aria-label="Featured works carousel">
+        {featured.map((book) => <BookCard book={book} variant="shelf" />)}
+      </div>
     </div>
   </section>
 
@@ -114,8 +123,17 @@ const downloadCount = books.filter((book) => book.data.formats.some((format) => 
       <p class="eyebrow">In motion</p>
       <h2 id="active-heading">New and active</h2>
     </div>
-    <div class="book-rail">
-      {active.map((book) => <BookCard book={book} variant="shelf" />)}
+    <div class="rail-shell" data-rail-shell>
+      <div class="rail-controls" aria-label="New and active carousel controls">
+        <span class="rail-hint">Pause, browse, continue</span>
+        <div class="rail-buttons">
+          <button type="button" data-rail-prev aria-controls="active-rail" aria-label="Previous new and active books">‹</button>
+          <button type="button" data-rail-next aria-controls="active-rail" aria-label="Next new and active books">›</button>
+        </div>
+      </div>
+      <div class="book-rail" id="active-rail" aria-label="New and active carousel">
+        {active.map((book) => <BookCard book={book} variant="shelf" />)}
+      </div>
     </div>
   </section>
 
@@ -141,8 +159,17 @@ const downloadCount = books.filter((book) => book.data.formats.some((format) => 
       <p class="eyebrow">Practical shelf</p>
       <h2 id="field-guide-heading">Field guides and strategy books</h2>
     </div>
-    <div class="book-rail">
-      {fieldGuides.map((book) => <BookCard book={book} variant="shelf" />)}
+    <div class="rail-shell" data-rail-shell>
+      <div class="rail-controls" aria-label="Field guide carousel controls">
+        <span class="rail-hint">Manual controls stay active</span>
+        <div class="rail-buttons">
+          <button type="button" data-rail-prev aria-controls="field-guide-rail" aria-label="Previous field guides and strategy books">‹</button>
+          <button type="button" data-rail-next aria-controls="field-guide-rail" aria-label="Next field guides and strategy books">›</button>
+        </div>
+      </div>
+      <div class="book-rail" id="field-guide-rail" aria-label="Field guides and strategy books carousel">
+        {fieldGuides.map((book) => <BookCard book={book} variant="shelf" />)}
+      </div>
     </div>
   </section>
 </BaseLayout>
