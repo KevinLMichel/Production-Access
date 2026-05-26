@@ -1,12 +1,6 @@
 ---
 const title = "Shifting Worlds";
-const subtitle = "Harnessing the Power of Mental Models for Success and Wellness";
 const author = "Kevin L. Michel";
-const backPitch = [
-  "Shifting Worlds is a practical guide to the inner models that quietly organize your life: attention, emotion, language, identity, expectation, wellness, visualization, relationships, work, and daily action.",
-  "Kevin L. Michel shows how possibility becomes practical. Through vivid stories and clear exercises, this book teaches you to aim, rehearse, regulate, track evidence, redesign the sentence beneath the sentence, and take the small actions that make a better world believable.",
-  "This is not vague manifestation. It is model engineering: a disciplined way to change what you notice, what you choose, and what you repeatedly become."
-];
 ---
 
 <!doctype html>
@@ -20,84 +14,7 @@ const backPitch = [
   </head>
   <body>
     <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
-      <div class="universe-field" aria-hidden="true"></div>
-      <div class="particle-field particle-field--cyan" aria-hidden="true"></div>
-      <div class="particle-field particle-field--violet" aria-hidden="true"></div>
-      <div class="particle-field particle-field--gold" aria-hidden="true"></div>
-      <div class="wave-field" aria-hidden="true"></div>
-      <div class="back-motif" aria-hidden="true"></div>
-      <div class="spine-light" aria-hidden="true"></div>
-      <div class="grain" aria-hidden="true"></div>
-
-      <section class="back-cover" aria-label="Back cover">
-        <p class="kicker">A breakthrough guide to possibility</p>
-        <h2>Change the model, and the world begins to answer differently.</h2>
-        <div class="back-copy">
-          {backPitch.map((paragraph) => <p>{paragraph}</p>)}
-        </div>
-        <div class="signal-list">
-          <span>Attention</span>
-          <span>Emotion</span>
-          <span>Language</span>
-          <span>Identity</span>
-          <span>Action</span>
-          <span>Evidence</span>
-        </div>
-        <p class="back-footer">Change your inner model. Change your outer world.</p>
-      </section>
-
-      <section class="spine" aria-label="Book spine">
-        <span class="spine-title">SHIFTING WORLDS</span>
-        <span class="spine-author">{author}</span>
-      </section>
-
-      <section class="front-cover" aria-label="Front cover">
-        <p class="front-hook">
-          <span>Your mind can open doors.</span>
-          <span>Your models can change worlds.</span>
-        </p>
-
-        <div class="front-portal" aria-hidden="true">
-          <svg viewBox="0 0 560 560" role="img">
-            <defs>
-              <radialGradient id="portal-core" cx="50%" cy="51%" r="54%">
-                <stop offset="0%" stop-color="#f5ffff" stop-opacity="0.95" />
-                <stop offset="16%" stop-color="#4debff" stop-opacity="0.9" />
-                <stop offset="42%" stop-color="#3a2bff" stop-opacity="0.42" />
-                <stop offset="78%" stop-color="#b56cff" stop-opacity="0.22" />
-                <stop offset="100%" stop-color="#071a3d" stop-opacity="0" />
-              </radialGradient>
-            </defs>
-            <circle cx="280" cy="280" r="256" fill="url(#portal-core)" />
-            <g class="portal-rings">
-              <circle cx="280" cy="280" r="100" />
-              <circle cx="280" cy="280" r="145" />
-              <circle cx="280" cy="280" r="190" />
-              <circle cx="280" cy="280" r="235" />
-            </g>
-            <g class="portal-rays">
-              {Array.from({ length: 32 }).map((_, index) => (
-                <line
-                  x1="280"
-                  y1="280"
-                  x2={280 + Math.cos((index / 32) * Math.PI * 2) * 270}
-                  y2={280 + Math.sin((index / 32) * Math.PI * 2) * 270}
-                />
-              ))}
-            </g>
-          </svg>
-        </div>
-
-        <h1>
-          <span>Shifting</span>
-          <span>Worlds</span>
-        </h1>
-        <p class="cover-subtitle">{subtitle}</p>
-        <p class="author">{author}</p>
-        <p class="author-credit">Author of <em>Moving Through Parallel Worlds To Achieve Your Dreams</em></p>
-      </section>
-
-      <div class="barcode-reserve" aria-hidden="true"></div>
+      <div class="cover-wrap-source" aria-hidden="true"></div>
     </main>
   </body>
 </html>
