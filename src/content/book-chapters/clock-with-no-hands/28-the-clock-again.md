@@ -84,7 +84,7 @@ I pressed my palm there, and the metal was warm.
 
 The word had not been holding the world together.
 
-I saw then that a hand is not merely a pointer. It is a risk. To raise a hand is to interrupt the circle, to say that the hour is not complete without participation. The clock had been waiting not for permission from history, but for contact.
+A hand is not merely a pointer. It is a risk. To raise a hand is to interrupt the circle, to say that the hour is not complete without participation. The clock had been waiting not for permission from history, but for contact.
 
 The central pin no longer looked useless. It looked unfinished. I could see now that it had not been waiting for a manufactured hand, a perfect hand, a chosen hand, or a historically certified hand. It had been waiting for any hand willing to stop pretending absence was destiny.
 

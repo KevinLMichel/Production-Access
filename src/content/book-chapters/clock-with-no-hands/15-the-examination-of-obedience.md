@@ -119,4 +119,4 @@ The pencil in her hand lengthened, hardened, darkened. Its eraser became a claw.
 <p><span>One forbidden flame can light the stone.</span></p>
 </aside>
 
-It became a hammer.
+By the time I looked back, it had become a hammer.

@@ -45,6 +45,8 @@ const currentIndex = sections.findIndex((entry) => entry.id === section.id);
 const previous = currentIndex > 0 ? sections[currentIndex - 1] : undefined;
 const next = currentIndex < sections.length - 1 ? sections[currentIndex + 1] : undefined;
 const wordCount = getChapterWordCount(section);
+const isClockWorld = book.id === "clock-with-no-hands";
+const currentPartSections = isClockWorld ? sections.filter((entry) => entry.data.part === section.data.part) : [];
 const downloadFormat = book.data.formats.find(
   (format) => format.href && (format.href.toLowerCase().endsWith(".pdf") || format.label.toLowerCase().includes("download"))
 );
@@ -70,6 +72,19 @@ function sectionLabel(order: number, subtitle?: string) {
         {downloadFormat && <a href={downloadFormat.href} target="_blank" rel="noopener noreferrer">Download PDF</a>}
         <a href="/books/">Library catalogue</a>
       </nav>
+      {
+        isClockWorld && currentPartSections.length > 1 && (
+          <nav class="clock-part-nav" aria-label={`Sections in ${section.data.part}`}>
+            <span>Current chamber</span>
+            {currentPartSections.map((entry) => (
+              <a class:list={[entry.id === section.id && "is-current"]} href={chapterHref(entry)} aria-current={entry.id === section.id ? "page" : undefined}>
+                <small>{sectionLabel(entry.data.order, entry.data.subtitle)}</small>
+                <strong>{entry.data.title}</strong>
+              </a>
+            ))}
+          </nav>
+        )
+      }
     </aside>
 
     <div class="reader-column batch-reader-column">

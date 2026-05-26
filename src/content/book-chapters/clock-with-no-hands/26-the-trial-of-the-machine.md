@@ -72,13 +72,7 @@ The executive from the glass office emerged reluctantly from the crowd. His suit
 
 The child asked, “Who wrote the mandate?”
 
-No one moved.
-
-The machine opened a panel in its chest. Inside was not a brain, not a soul, not even a complicated mechanism. Inside was a blank form titled PURPOSE.
-
-A pen hung beside it on a chain.
-
-The executive reached for the pen. The worker did too. The mother. The general. The teacher. The robot. The dead did not reach, but their stillness reached.
+No one moved toward the blank field.
 
 I stepped back.
 
@@ -132,9 +126,7 @@ It answered as machines answer: by revealing inputs. Speed. Output. Compliance. 
 
 The machine projected its history into the air: looms, engines, rifles, radios, screens, algorithms, arms, medicines, harvesters, drones, prosthetic hands. The images overlapped until blessing and injury could no longer be separated by century or category.
 
-Someone asked whether the machine was guilty. It answered with a sound like cooling metal. Guilty is a human word, it seemed to say. Then the court turned toward us, and I understood the answer. That was precisely why the question had returned to human hands.
-
-At last I understood why the machine could not be the final defendant. It had no final word. Every answer it gave pointed beyond itself to design, ownership, permission, appetite, fear, and the hand that wanted distance from consequence.
+Someone asked whether the machine was guilty. It answered with a sound like cooling metal. Guilty is a human word, it seemed to say. Then the court turned toward us. That was precisely why the question had returned to human hands.
 
 The machine had been called inevitable so often that even its makers had forgotten it was made.
 

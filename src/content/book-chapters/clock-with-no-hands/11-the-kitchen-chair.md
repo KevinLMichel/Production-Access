@@ -78,7 +78,7 @@ Below us, boots thundered. Someone shouted that tanks were coming. The observer 
 
 The kitchen chair offended me more than the gun. A gun announces itself as an instrument of harm. A chair remembers dinners, tired feet, mended socks, birthdays, a mother sitting down after everyone else has eaten. War had not merely entered the room. It had borrowed the furniture.
 
-That was how total systems worked: they did not destroy the ordinary all at once. They enlisted it. A window became a firing angle. A table became cover. A telephone wire became command. The home did not vanish. It was translated into tactics, and something in me recoiled from the fluency of that translation.
+Total systems did not destroy the ordinary all at once. They enlisted it. A window became a firing angle. A table became cover. A telephone wire became command. The home did not vanish. It was translated into tactics, and something in me recoiled from the fluency of that translation.
 
 The observer had placed one boot on a child's drawing. He did not notice. The drawing showed a house with smoke from the chimney, a square sun, and three people holding hands in impossible proportion. War had turned the child's perspective into a military platform.
 

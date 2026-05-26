@@ -56,7 +56,7 @@ The child whispered, “You broke it.”
 
 The snake lifted its head and looked at me. Its eyes were gold and without accusation. Then it coiled upon itself, tightening into a circle. Its tail touched its mouth. Its scales became teeth of brass. Its body became the rim of the clock.
 
-The lesson was almost insulting in its simplicity. The fence did not lie; it merely withheld the rest. It gave me a clean fragment and let my mind do the violence. I supplied the separation. I believed the spaces. I accepted the mercy of categories because categories made the world easier to survive. But the snake kept moving, patient as water, refusing the neatness I wanted from it.
+The fence did not lie; it merely withheld the rest. It gave me a clean fragment and let my mind do the violence. I supplied the separation. I believed the spaces. I accepted the mercy of categories because categories made the world easier to survive. But the snake kept moving, patient as water, refusing the neatness I wanted from it.
 
 I thought then of every office, classroom, broadcast, and history book that had taught me to name the head and forget the body. Production here, poverty there. Decision here, consequence there. War here, grief there. The fence did not need to command me if it could train my eyes. It only had to make the whole thing too large to see at once.
 
@@ -65,8 +65,6 @@ I had always trusted fences more than snakes. Fences gave the comfort of arrange
 That was the first wound to my certainty: not pain, but connection. If the head belonged to the body and the body to the tail, perhaps the city belonged to the factory, the factory to the office, the office to the war, the war to the school, and the school to the screen. Perhaps nothing ended where I had been taught to stop looking.
 
 The fence had taught me the first grammar of helplessness: make a whole thing appear in parts, then tell the witness that each part is innocent of the next. I could feel that grammar still working in me, tidying horror into chapters before horror had finished moving.
-
-I understood that the fence was not only outside me. I had carried smaller fences in my own thinking, little boards between action and consequence, comfort and cost, safety and someone else's danger.
 
 Part of me wanted the snake to become a riddle with a clever answer. I wanted the kind of insight that lets a man leave unchanged except for the pleasure of understanding. But the snake did not offer that bargain. It moved with the calm authority of reality itself, showing me that the world had never been organized for my convenience. The fence simplified what it could not contain, and I had spent much of my life mistaking that simplification for truth.
 

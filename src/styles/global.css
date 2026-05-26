@@ -5461,3 +5461,319 @@ body.reader-immersive .site-header:focus-within {
     font-size: 0.92rem;
   }
 }
+
+/* Clock with No Hands final polish: darker chambers, quieter reading surface, and brass navigation. */
+body.theme-clock-with-no-hands {
+  --clock-ash: #080b0c;
+  --clock-panel: rgba(13, 15, 16, 0.78);
+  --clock-panel-soft: rgba(28, 24, 20, 0.66);
+  --clock-brass: #d8ae65;
+  --clock-brass-soft: rgba(216, 174, 101, 0.34);
+  --clock-ember: #b94731;
+  --clock-smoke: rgba(209, 199, 178, 0.74);
+}
+
+body.theme-clock-with-no-hands.theme-batch-book-world {
+  background:
+    radial-gradient(circle at 50% 9%, rgba(216, 174, 101, 0.13), transparent 30rem),
+    radial-gradient(circle at 16% 78%, rgba(185, 71, 49, 0.14), transparent 30rem),
+    linear-gradient(145deg, #030506 0%, #0a0e10 48%, #150f0d 100%);
+}
+
+body.theme-clock-with-no-hands .batch-world::before,
+body.theme-clock-with-no-hands .batch-reader::before {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(216, 174, 101, 0.2), transparent 25rem),
+    radial-gradient(circle at 20% 72%, rgba(185, 71, 49, 0.2), transparent 25rem),
+    radial-gradient(circle at 80% 42%, rgba(108, 124, 118, 0.14), transparent 28rem),
+    linear-gradient(145deg, rgba(3, 5, 6, 0.98), rgba(18, 20, 20, 0.92), rgba(6, 7, 8, 0.98));
+}
+
+body.theme-clock-with-no-hands .batch-world::after,
+body.theme-clock-with-no-hands .batch-reader::after {
+  background:
+    radial-gradient(circle at 50% 28%, rgba(242, 222, 181, 0.12), transparent 14rem),
+    repeating-radial-gradient(circle at 50% 30%, rgba(216, 174, 101, 0.16) 0 1px, transparent 1px 38px),
+    repeating-conic-gradient(from -8deg at 50% 30%, rgba(216, 174, 101, 0.13) 0 0.75deg, transparent 0.75deg 18deg),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.034) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: auto, auto, auto, 72px 72px, 72px 72px;
+  opacity: 0.72;
+}
+
+body.theme-clock-with-no-hands .batch-world-hero {
+  border-color: rgba(216, 174, 101, 0.4);
+  background:
+    radial-gradient(circle at 72% 38%, rgba(216, 174, 101, 0.17), transparent 19rem),
+    radial-gradient(circle at 18% 78%, rgba(185, 71, 49, 0.16), transparent 18rem),
+    linear-gradient(135deg, rgba(242, 222, 181, 0.1), rgba(255, 255, 255, 0.018)),
+    var(--clock-panel);
+}
+
+body.theme-clock-with-no-hands .batch-world-hero::before {
+  background:
+    linear-gradient(90deg, rgba(216, 174, 101, 0.13), transparent 38%),
+    repeating-linear-gradient(90deg, transparent 0 4.7%, rgba(216, 174, 101, 0.055) 4.75% 4.9%, transparent 4.95% 10%),
+    radial-gradient(circle at 20% 24%, rgba(185, 71, 49, 0.09), transparent 15rem);
+}
+
+body.theme-clock-with-no-hands .batch-world-hero h1 {
+  max-width: 780px;
+  color: #f5ead2;
+  text-shadow: 0 0 34px rgba(216, 174, 101, 0.12);
+}
+
+body.theme-clock-with-no-hands .batch-world-cover img {
+  border-radius: 16px;
+  box-shadow:
+    0 38px 130px rgba(0, 0, 0, 0.62),
+    0 0 0 1px rgba(216, 174, 101, 0.42),
+    0 0 55px rgba(185, 71, 49, 0.14);
+}
+
+body.theme-clock-with-no-hands .batch-world-section,
+body.theme-clock-with-no-hands .batch-world-stats div,
+body.theme-clock-with-no-hands .batch-part-panel,
+body.theme-clock-with-no-hands .batch-card-grid article,
+body.theme-clock-with-no-hands .batch-chapter-tile,
+body.theme-clock-with-no-hands .batch-reader .reader-sidebar,
+body.theme-clock-with-no-hands .batch-reader .reader-column {
+  border-color: rgba(216, 174, 101, 0.3);
+  background:
+    radial-gradient(circle at 85% 8%, rgba(216, 174, 101, 0.08), transparent 13rem),
+    linear-gradient(145deg, rgba(241, 224, 188, 0.07), rgba(255, 255, 255, 0.018)),
+    var(--clock-panel-soft);
+}
+
+body.theme-clock-with-no-hands .batch-part-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+body.theme-clock-with-no-hands .batch-part-panel::before {
+  position: absolute;
+  inset: 1rem;
+  content: "";
+  pointer-events: none;
+  border: 1px solid rgba(216, 174, 101, 0.1);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(216, 174, 101, 0.09), transparent 16rem),
+    repeating-radial-gradient(circle at 50% 0%, rgba(216, 174, 101, 0.08) 0 1px, transparent 1px 32px);
+  opacity: 0.72;
+}
+
+body.theme-clock-with-no-hands .batch-chapter-tile {
+  min-height: 12rem;
+  border-radius: 22px;
+}
+
+body.theme-clock-with-no-hands .batch-chapter-tile::before {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  pointer-events: none;
+  border: 1px solid rgba(216, 174, 101, 0.2);
+  border-radius: 50%;
+  background:
+    conic-gradient(from 20deg, rgba(216, 174, 101, 0.18), transparent 20%, rgba(185, 71, 49, 0.16), transparent 58%, rgba(216, 174, 101, 0.18)),
+    radial-gradient(circle, rgba(4, 6, 7, 0.9) 0 44%, transparent 46%);
+  opacity: 0.72;
+}
+
+body.theme-clock-with-no-hands .batch-chapter-tile:hover,
+body.theme-clock-with-no-hands .batch-chapter-tile:focus-visible {
+  border-color: rgba(216, 174, 101, 0.66);
+  box-shadow:
+    0 28px 82px rgba(0, 0, 0, 0.42),
+    0 0 34px rgba(216, 174, 101, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+body.theme-clock-with-no-hands .batch-chapter-tile span,
+body.theme-clock-with-no-hands .batch-reader .reader-meta span,
+body.theme-clock-with-no-hands .batch-world .eyebrow,
+body.theme-clock-with-no-hands .batch-reader .eyebrow,
+body.theme-clock-with-no-hands .batch-reader .reader-sidebar__back {
+  color: var(--clock-brass);
+}
+
+body.theme-clock-with-no-hands .batch-chapter-tile small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+body.theme-clock-with-no-hands .batch-reader .reader-column {
+  max-width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+body.theme-clock-with-no-hands .batch-prose {
+  max-width: 70ch;
+  margin-inline: auto;
+  color: rgba(244, 236, 219, 0.91);
+}
+
+body.theme-clock-with-no-hands .batch-prose p,
+body.theme-clock-with-no-hands .batch-prose li {
+  line-height: 1.86;
+}
+
+body.theme-clock-with-no-hands .batch-prose h2,
+body.theme-clock-with-no-hands .batch-prose h3 {
+  color: #f0d49b;
+}
+
+body.theme-clock-with-no-hands .clock-terza {
+  width: min(100%, 39rem);
+  border-block-color: rgba(216, 174, 101, 0.48);
+  color: #f2e2c2;
+  font-family: var(--font-display, var(--serif, Georgia, serif));
+  font-size: clamp(1.02rem, 1.55vw, 1.16rem);
+  line-height: 1.72;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(216, 174, 101, 0.16), transparent 15rem),
+    linear-gradient(135deg, rgba(12, 15, 16, 0.78), rgba(63, 35, 25, 0.24));
+}
+
+body.theme-clock-with-no-hands .clock-terza p {
+  color: inherit;
+  font: inherit;
+}
+
+body.theme-clock-with-no-hands .clock-part-nav {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(216, 174, 101, 0.18);
+  padding-top: 1rem;
+}
+
+body.theme-clock-with-no-hands .clock-part-nav > span {
+  color: rgba(216, 174, 101, 0.82);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+body.theme-clock-with-no-hands .clock-part-nav a {
+  display: grid;
+  gap: 0.1rem;
+  border: 1px solid rgba(216, 174, 101, 0.16);
+  border-radius: 14px;
+  padding: 0.55rem 0.62rem;
+  color: rgba(246, 235, 214, 0.82);
+  background: rgba(3, 5, 6, 0.26);
+}
+
+body.theme-clock-with-no-hands .clock-part-nav a:hover,
+body.theme-clock-with-no-hands .clock-part-nav a:focus-visible,
+body.theme-clock-with-no-hands .clock-part-nav a.is-current {
+  border-color: rgba(216, 174, 101, 0.52);
+  color: #fff4d8;
+  background: rgba(216, 174, 101, 0.1);
+}
+
+body.theme-clock-with-no-hands .clock-part-nav small {
+  color: rgba(216, 174, 101, 0.72);
+  font-size: 0.66rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+body.theme-clock-with-no-hands .clock-part-nav strong {
+  color: inherit;
+  font-size: 0.86rem;
+  line-height: 1.15;
+}
+
+@media (min-width: 821px) {
+  body.reader-immersive.theme-clock-with-no-hands .freedom-reader .reader-sidebar {
+    max-height: 5.4rem !important;
+    transition:
+      width 520ms cubic-bezier(0.22, 1, 0.36, 1),
+      max-height 560ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 420ms ease,
+      transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 520ms ease;
+  }
+
+  body.reader-immersive.theme-clock-with-no-hands .freedom-reader .reader-sidebar:hover,
+  body.reader-immersive.theme-clock-with-no-hands .freedom-reader .reader-sidebar:focus-within {
+    max-height: calc(100vh - 2rem) !important;
+  }
+
+  body.reader-immersive.theme-clock-with-no-hands .clock-part-nav {
+    overflow: hidden;
+    max-height: 0;
+    margin-top: 0;
+    padding-top: 0;
+    opacity: 0;
+    transform: translateY(-0.25rem);
+    transition:
+      max-height 520ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 360ms ease,
+      margin 420ms ease,
+      padding 420ms ease,
+      transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  body.reader-immersive.theme-clock-with-no-hands .reader-sidebar:hover .clock-part-nav,
+  body.reader-immersive.theme-clock-with-no-hands .reader-sidebar:focus-within .clock-part-nav {
+    max-height: 34rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+body.theme-clock-with-no-hands :is(.reader-sidebar nav a, .reader-nav a, .batch-chapter-tile, .button, .text-link):focus-visible {
+  outline: 2px solid rgba(241, 217, 168, 0.92);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px rgba(185, 71, 49, 0.16), 0 0 32px rgba(216, 174, 101, 0.18);
+}
+
+@media (max-width: 900px) {
+  body.theme-clock-with-no-hands .batch-world-hero h1 {
+    font-size: clamp(2.8rem, 12vw, 5.2rem);
+  }
+
+  body.theme-clock-with-no-hands .batch-chapter-tile {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body.theme-clock-with-no-hands .clock-terza {
+    margin-block: 2.4rem;
+    padding: 1.15rem 1rem;
+    font-size: 0.98rem;
+    line-height: 1.64;
+  }
+
+  body.theme-clock-with-no-hands .clock-part-nav {
+    overflow-y: auto;
+    max-height: 15.5rem;
+    padding-right: 0.25rem;
+  }
+
+  body.theme-clock-with-no-hands .clock-part-nav a {
+    padding: 0.48rem 0.58rem;
+  }
+
+  body.theme-clock-with-no-hands .clock-terza p + p {
+    margin-top: 0.85rem;
+  }
+
+  body.theme-clock-with-no-hands .batch-prose {
+    max-width: 100%;
+  }
+}

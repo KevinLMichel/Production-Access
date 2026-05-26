@@ -4,15 +4,17 @@ title: "The Rim of Cities"
 subtitle: "Chapter 1"
 part: "Part I - The Clock"
 order: 0
-summary: "I stood inside a clock large enough to contain weather. There was no waking, no door, no first explanation."
+summary: "I stood inside a clock large enough to contain weather. The metal was warm beneath my shoes."
 updated: "2026-05-26"
 ---
 
 I stood inside a clock large enough to contain weather.
 
-There was no waking, no door, no first explanation. I was already there, standing on a face of pale metal that curved beneath my shoes like the floor of a cathedral, or the deck of a ship, or the underside of a sky that had forgotten which way to fall.
+The metal was warm beneath my shoes.
 
-The metal had warmth in it, the warmth of something alive but disciplined, like the chest of a sleeping animal. Above me, around me, and sometimes beneath me depending on where I turned, the rim rose into a great circular horizon. Its numerals were not numerals. They were cities.
+Not sun-warm. Machine-warm. It curved away in every direction, pale brass under a sky that seemed to have forgotten whether it belonged above me, below me, or inside the thing on which I stood.
+
+At the rim, where numbers should have stood, cities rose instead.
 
 Berlin smoldered where XII should have been. Moscow shone cold and enormous near I, its domes and towers pressed into a brass groove. Stalingrad sat lower on the rim, half white, half smoke, with a river running through it like a wound that had learned to reflect light. Manchester turned in soot and thread. Detroit flashed with glass, steel, and assembly lines. Shenzhen glittered with cranes and blue factory dawn. Washington spoke without moving its lips. Beyond them, where no number belonged, stood a future city made of scaffolding, drone lights, hospital windows, unfinished towers, and rain.
 
@@ -80,9 +82,9 @@ Then the tick faded.
 
 Nothing moved.
 
-That was when I understood the first thing, though I did not yet have words for it. A clock without hands can still make noise. A civilization without agency can still produce urgency. It can still hurry, still threaten, still measure, still accuse. It can say late. It can say early. It can say inevitable. It can say now.
+The silence after the tick was worse than the sound. The cities held their breath. Beneath my palm, the brass seemed to wait for contact it could not make by itself.
 
-But it cannot tell the time.
+Still, it could not tell the time.
 
 I knelt beside the central pin and looked more closely. Around its base were scratches, thousands of them, thin and overlapping. Some looked like numbers. Some like signatures. Some like tally marks left by prisoners. A few had been rubbed almost smooth by years of explanation. I traced one with my thumb and felt a sting in my palm, as if the brass had remembered a wound before I had received it.
 

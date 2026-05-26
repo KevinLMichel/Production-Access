@@ -14,8 +14,6 @@ War, weather, markets, murders, ceremonies, scandals, sports, famine, perfume, e
 
 Everyone watched as if facing daylight.
 
-I watched with them at first. It was difficult not to. The screen did not merely display images; it arranged breathing. People inhaled at threat, exhaled at reassurance, laughed when prompted, frowned when authorized. Their faces changed color with the cuts.
-
 For a long time I stood before the screen because everyone around me faced it with the solemnity of worship. It filled the wall from floor to ceiling. Blue light cooled our faces. On it, cities burned without smell, markets rose without hands, wars began without bodies, leaders spoke without breath, families laughed beside tables no one had labored to set. The screen showed everything and touched nothing.
 
 At first I mistook its brightness for openness. It had the shape of a window. It had movement beyond it. It seemed to offer the world. But when I stepped closer, I saw my own reflection faintly layered over the images. My eyes floated above a parade. My mouth crossed a battlefield. My forehead merged with a graph.

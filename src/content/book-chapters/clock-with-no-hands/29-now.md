@@ -123,6 +123,6 @@ I thought of the snake, still moving beyond the fence. I thought of the wake, st
 <p><span>The bell became the labor of the soul.</span></p>
 </aside>
 
-It entered the machinery.
+The sound entered the machinery.
 
 And the clock, which had no hands until I raised mine, began to strike.

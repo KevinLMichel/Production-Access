@@ -86,9 +86,11 @@ const potentialInsertPlacements = [
 
 const chapterOneDraft = String.raw`I stood inside a clock large enough to contain weather.
 
-There was no waking, no door, no first explanation. I was already there, standing on a face of pale metal that curved beneath my shoes like the floor of a cathedral, or the deck of a ship, or the underside of a sky that had forgotten which way to fall.
+The metal was warm beneath my shoes.
 
-The metal had warmth in it, the warmth of something alive but disciplined, like the chest of a sleeping animal. Above me, around me, and sometimes beneath me depending on where I turned, the rim rose into a great circular horizon. Its numerals were not numerals. They were cities.
+Not sun-warm. Machine-warm. It curved away in every direction, pale brass under a sky that seemed to have forgotten whether it belonged above me, below me, or inside the thing on which I stood.
+
+At the rim, where numbers should have stood, cities rose instead.
 
 Berlin smoldered where XII should have been. Moscow shone cold and enormous near I, its domes and towers pressed into a brass groove. Stalingrad sat lower on the rim, half white, half smoke, with a river running through it like a wound that had learned to reflect light. Manchester turned in soot and thread. Detroit flashed with glass, steel, and assembly lines. Shenzhen glittered with cranes and blue factory dawn. Washington spoke without moving its lips. Beyond them, where no number belonged, stood a future city made of scaffolding, drone lights, hospital windows, unfinished towers, and rain.
 
@@ -156,9 +158,9 @@ Then the tick faded.
 
 Nothing moved.
 
-That was when I understood the first thing, though I did not yet have words for it. A clock without hands can still make noise. A civilization without agency can still produce urgency. It can still hurry, still threaten, still measure, still accuse. It can say late. It can say early. It can say inevitable. It can say now.
+The silence after the tick was worse than the sound. The cities held their breath. Beneath my palm, the brass seemed to wait for contact it could not make by itself.
 
-But it cannot tell the time.
+Still, it could not tell the time.
 
 I knelt beside the central pin and looked more closely. Around its base were scratches, thousands of them, thin and overlapping. Some looked like numbers. Some like signatures. Some like tally marks left by prisoners. A few had been rubbed almost smooth by years of explanation. I traced one with my thumb and felt a sting in my palm, as if the brass had remembered a wound before I had received it.
 
@@ -208,7 +210,7 @@ So I watched the snake pass again, head, body, tail, while the clock with no han
 
 const expansionPassages = {
   2: [
-    "The lesson was almost insulting in its simplicity. The fence did not lie; it merely withheld the rest. It gave me a clean fragment and let my mind do the violence. I supplied the separation. I believed the spaces. I accepted the mercy of categories because categories made the world easier to survive. But the snake kept moving, patient as water, refusing the neatness I wanted from it.",
+    "The fence did not lie; it merely withheld the rest. It gave me a clean fragment and let my mind do the violence. I supplied the separation. I believed the spaces. I accepted the mercy of categories because categories made the world easier to survive. But the snake kept moving, patient as water, refusing the neatness I wanted from it.",
     "I thought then of every office, classroom, broadcast, and history book that had taught me to name the head and forget the body. Production here, poverty there. Decision here, consequence there. War here, grief there. The fence did not need to command me if it could train my eyes. It only had to make the whole thing too large to see at once."
   ],
   3: [
@@ -641,7 +643,7 @@ const partExpansionPassages = {
     "The screen arrived after the school because it was another kind of classroom. It educated without admitting it. It assigned attention, distributed emotion, repeated approved fears, rewarded certain postures, and made whole populations feel informed while keeping them seated. I had once thought propaganda meant falsehood. Now I saw that it could also mean arrangement: the placement of truth in a pattern that trained the watcher to remain harmless."
   ],
   23: [
-    "The supermarket seemed like relief after the screen, and that was its danger. Brightness returned. Music softened. Nothing exploded. No one shouted doctrine from a platform. Yet the aisle had its own metaphysics. It taught that the self was a shopper, that freedom was selection, that need should arrive as preference, that despair could be managed at the pharmacy, and that the future would be convenient if only enough human friction could be removed."
+    "The supermarket seemed like relief after the screen, and that was its danger. Brightness returned. Music softened. No one shouted doctrine from a platform. The aisle did not command. It taught need to arrive as preference."
   ],
   26: [
     "The court gathered every previous room into one silence. The clock, the fence, the wake, the factory, the tank, the school, the screen, and the supermarket had not been separate episodes after all. They were witnesses. Each had shown me a different way human beings hide the hand: inside procedure, inside machinery, inside necessity, inside education, inside entertainment, inside choice, inside the word progress. The court existed because all those hiding places had failed."
@@ -917,6 +919,90 @@ function applyPotentialInserts(section, paragraphs, inserts) {
   return nextParagraphs;
 }
 
+function polishChapterParagraphs(section, paragraphs) {
+  if (section.chapterNumber === 2) {
+    return paragraphs.filter(
+      (paragraph) => !paragraph.startsWith("I understood that the fence was not only outside me.")
+    );
+  }
+
+  if (section.chapterNumber === 16) {
+    return paragraphs.map((paragraph) => {
+      if (paragraph === "It became a hammer.") {
+        return "By the time I looked back, it had become a hammer.";
+      }
+      return paragraph;
+    });
+  }
+
+  if (section.chapterNumber === 19) {
+    return paragraphs.filter(
+      (paragraph) => !paragraph.startsWith("I watched with them at first.")
+    );
+  }
+
+  if (section.chapterNumber === 23) {
+    return paragraphs.filter(
+      (paragraph) =>
+        !paragraph.startsWith("I picked up an apple.") &&
+        !paragraph.startsWith("At the checkout, the scanner chirped") &&
+        !paragraph.startsWith("Above us, the sign rocked") &&
+        !paragraph.startsWith("Every shelf was full. That was the first cruelty.") &&
+        !paragraph.startsWith("FREEDOM.CHOICE.GROWTH.SECURITY.") &&
+        !paragraph.startsWith("Freedom, I saw, can be reduced") &&
+        !paragraph.startsWith("I picked up a bright package") &&
+        !paragraph.startsWith("I noticed how tired everyone") &&
+        !paragraph.startsWith("The aisle made hunger fluent")
+    );
+  }
+
+  if (section.chapterNumber === 27) {
+    return paragraphs
+      .filter(
+        (paragraph) =>
+          !paragraph.startsWith("The machine opened a panel in its chest.") &&
+          !paragraph.startsWith("A pen hung beside it on a chain.") &&
+          !paragraph.startsWith("The executive reached for the pen.") &&
+          !paragraph.startsWith("The machine could not be the final defendant.") &&
+          !paragraph.startsWith("At last I understood why the machine could not be the final defendant.")
+      )
+      .map((paragraph) => {
+        if (paragraph.startsWith("No one moved.")) {
+          return "No one moved toward the blank field.";
+        }
+        if (paragraph.startsWith("Someone asked whether the machine was guilty.")) {
+          return "Someone asked whether the machine was guilty. It answered with a sound like cooling metal. Guilty is a human word, it seemed to say. Then the court turned toward us. That was precisely why the question had returned to human hands.";
+        }
+        return paragraph;
+      });
+  }
+
+  if (section.chapterNumber === 29) {
+    return paragraphs.map((paragraph) => {
+      if (paragraph.startsWith("I saw then that a hand is not merely a pointer.")) {
+        return "A hand is not merely a pointer. It is a risk. To raise a hand is to interrupt the circle, to say that the hour is not complete without participation. The clock had been waiting not for permission from history, but for contact.";
+      }
+      return paragraph;
+    });
+  }
+
+  if (section.chapterNumber === 30) {
+    return paragraphs.map((paragraph) => {
+      if (paragraph === "It entered the machinery.") {
+        return "The sound entered the machinery.";
+      }
+      return paragraph;
+    });
+  }
+
+  return paragraphs.map((paragraph) => {
+    if (paragraph.startsWith("That was how total systems worked:")) {
+      return "Total systems did not destroy the ordinary all at once. They enlisted it. A window became a firing angle. A table became cover. A telephone wire became command. The home did not vanish. It was translated into tactics, and something in me recoiled from the fluency of that translation.";
+    }
+    return paragraph;
+  });
+}
+
 function escapeHtml(value) {
   return value
     .replace(/&/g, "&amp;")
@@ -1049,7 +1135,7 @@ function buildChapterBody(section, draftSection, poems, inserts) {
     [...paragraphs.slice(0, insertAt), ...expansions, ...paragraphs.slice(insertAt)],
     inserts
   );
-  const body = proseParagraphs.join("\n\n");
+  const body = polishChapterParagraphs(section, proseParagraphs).join("\n\n");
   return insertTerzaInterlude(body, interlude, section);
 }
 

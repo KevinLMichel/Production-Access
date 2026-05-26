@@ -16,16 +16,6 @@ A man pushed his cart slowly, studying two cans of beans as if one might forgive
 
 The shelves were full. That was the obscenity. There was no famine here, no empty granary, no failed harvest, no locust swarm darkening the sun. There was abundance polished under lamps, arranged by color, guarded by prices, divided into choices so narrow they could be mistaken for liberty only by those trained not to look up.
 
-I picked up an apple. It was cold from the misting machine. Wax shone on its skin. The sticker bore a number, a country, and a barcode. No tree was mentioned. No hand. No soil. No back bent under weather. No truck driver awake at dawn. No cashier standing eight hours beneath the sign that promised freedom.
-
-At the checkout, the scanner chirped with each item, a bright little birdcall of permission. The woman with the medicine put one bottle back. The student signed his name. The man chose the cheaper beans and stared at the floor as if apologizing to his hunger.
-
-Above us, the sign rocked gently in the recycled air.
-
-Every shelf was full. That was the first cruelty. No famine emptiness, no barren racks, no honest scarcity. Cereal boxes stood in bright armies. Fruit shone under mist. Meat reddened behind glass. Medicine lined the pharmacy wall. Toys, shoes, tools, diapers, books, flowers, televisions, pillows, and bread stretched aisle after aisle beneath signs naming ideals.
-
-FREEDOM.CHOICE.GROWTH.SECURITY.INNOVATION.MERIT.EFFICIENCY.DEMOCRACY.
-
 The customers were hungry.
 
 They pushed carts that squeaked. Their faces had the strained arithmetic of people calculating while pretending not to calculate. At checkout, they did not pay with money. Not only money.
@@ -82,17 +72,9 @@ I looked down at my cart. Inside were the shoe, the hammer, the broken plank, th
 
 The aisle promised choice with the solemnity of a constitution. Boxes stood in ranks. Bottles gleamed. Fruit shone under artificial sunrise. A thousand labels addressed me as sovereign, and yet the air felt strangely supervised.
 
-Freedom, I saw, can be reduced until it fits between shelves. Choose this brand or that. This flavor or that. This relief or that. The deeper questions remain locked in the warehouse: who stocked the aisle, who harvested the hunger, who priced the medicine, who decided that abundance should feel like anxiety?
-
 A speaker above the aisle played music designed to make urgency pleasant. The cart wheels clicked in rhythm. Somewhere a refrigeration unit hummed like a sleeping animal. I saw shoppers moving through the light with faces of private calculation, each person sovereign inside a maze built before arrival.
 
-I picked up a bright package and felt no joy from it, only the pressure to choose correctly among things that did not matter enough. That, too, was a theft: not only money, not only health, but discernment. A society can bury freedom under options until the hand forgets what choosing is for.
-
-I noticed how tired everyone looked beneath the brightness. The aisle had mastered invitation without welcome. It offered endless entry and no rest, endless selection and no guidance, endless abundance and no feast.
-
-The aisle made hunger fluent in packaging. Even need had been taught to speak brand names.
-
-The supermarket seemed like relief after the screen, and that was its danger. Brightness returned. Music softened. Nothing exploded. No one shouted doctrine from a platform. Yet the aisle had its own metaphysics. It taught that the self was a shopper, that freedom was selection, that need should arrive as preference, that despair could be managed at the pharmacy, and that the future would be convenient if only enough human friction could be removed.
+The supermarket seemed like relief after the screen, and that was its danger. Brightness returned. Music softened. No one shouted doctrine from a platform. The aisle did not command. It taught need to arrive as preference.
 
 I lifted the hammer.
 
