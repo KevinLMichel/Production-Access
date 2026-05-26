@@ -4,30 +4,72 @@ title: "The Museum of Good Intentions"
 subtitle: "Chapter 22"
 part: "Part V - The Screen"
 order: 21
-summary: "The narrator must confront his own society, not merely others. Final prose target: 1,050 words."
+summary: "Every empire had its own room. The first room was painted rose and gold. Angels hovered over ships."
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+Every empire had its own room.
 
-## Chapter Promise
-The narrator must confront his own society, not merely others.
+The first room was painted rose and gold. Angels hovered over ships. Beneath them, men in chains disappeared into holds. A plaque read: EXPANSION OF COMMERCE AND CIVILIZATION.
 
-## Draft Frame
-Final prose target: 1,050 words.
+The second room smelled of tea and gunpowder. Portraits of administrators lined the walls, each wearing an expression of unbearable responsibility. Behind them, famine maps had been embroidered into curtains.
 
-## Scene Architecture
-I enter a museum where every empire has curated its own innocence. Each room says: WE MEANT WELL.
+The third room displayed a polished airplane suspended over a village. The exhibit label said HUMANITARIAN INTERVENTION. When I stood beneath it, bomb bay doors opened and dropped pamphlets explaining regret.
 
-## Key Narrative Beats
-- British angels hover above famine maps.
-- French civilizers polish chains.
-- American exhibits show humanitarian bombs suspended above oil fields.
-- Soviet exhibits show workers smiling beneath portraits while prisoners dig foundations under the floor.
-- A guide says, “Mistakes were made.”
-- I ask, “By whom?”
-- The guide’s face becomes a mirror.
-- I see myself.
+The fourth room showed workers smiling beneath enormous portraits while, under the transparent floor, prisoners dug foundations with bleeding hands.
 
-## Transition
-The mirror becomes a freezer door in a supermarket aisle.
+The fifth room was my country’s.
+
+It was the brightest.
+
+There were flags everywhere. Speeches played from hidden speakers. Children of many colors ran through wheat fields in slow motion. Soldiers handed bottles of water to grateful strangers. A touchscreen invited visitors to choose between FREEDOM, SECURITY, PROSPERITY, and LEADERSHIP. Every button played the same montage.
+
+A guide approached me. He was handsome in the way official things are handsome, symmetrical and untroubled.
+
+“Mistakes were made,” he said.
+
+“By whom?”
+
+He smiled. “History is complex.”
+
+“Who made the mistakes?”
+
+“The period.”
+
+“The period had hands?”
+
+His smile thinned.
+
+I walked to a display case containing a mirror draped in velvet.
+
+“That exhibit is not currently active,” the guide said.
+
+I pulled the velvet away.
+
+In the mirror I saw myself standing in the museum with the child’s shoe in one hand, the hammer in the other, the jar lid in my pocket, the blue ribbon ash still under my fingernails. Behind me stood all the rooms I had passed through. Not behind my country. Behind me.
+
+I wanted the mirror to accuse someone else. It did not.
+
+The guide spoke softly. “Self-criticism is useful when properly framed.”
+
+“What frame do you recommend?”
+
+He offered me one made of polished slogans.
+
+The museum was beautiful in the way excuses can be beautiful. Every empire had arranged its violence beneath polished glass and soft lighting. Captions explained necessity, progress, order, defense, destiny. The dead were given tasteful fonts.
+
+I lingered longest before the rooms that resembled my own world. It is easy to condemn old banners and foreign uniforms. Harder to stand before a clean exhibit labeled convenience, security, growth, lifestyle, and feel the same machinery humming behind the glass.
+
+One exhibit contained a drone polished like a saint's relic. Another displayed a contract, another a school timetable, another a smiling advertisement for a product manufactured by hands the advertisement never showed. Each object had been washed of context until it gleamed.
+
+At the exit, a guest book invited me to write what I had learned. The pen was chained to the desk. I almost laughed. Even reflection had been tethered. I wrote one sentence anyway: Good intentions are not innocent after they learn what they serve.
+
+The museum had preserved everything except consequence. It kept uniforms, tools, photographs, maps, slogans, and apologies. But consequence is alive only in the bodies that carry it, and bodies do not fit neatly behind glass.
+
+The museum's exits were marked clearly. Its moral exits were harder to find.
+
+The museum's inward-opening glass taught me that critique is not an exit by itself. A man can identify every exhibit and still remain inside the building. I had named the machinery of other worlds. Now I was being asked whether I could recognize my own.
+
+I smashed the mirror with the hammer.
+
+The glass did not shatter outward. It opened inward. Cold air poured through. I stepped into a supermarket aisle lit by fluorescent abundance.

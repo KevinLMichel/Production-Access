@@ -4,46 +4,114 @@ title: "The Trial of the Machine"
 subtitle: "Chapter 27"
 part: "Part VII - The Court and the Hand"
 order: 26
-summary: "Reveal that systems execute values. The hidden question is authorship. Final prose target: 1,250 words."
+summary: "The machine was smaller in the court. Or perhaps the court was larger than the factory had been."
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+The machine was smaller in the court.
 
-## Chapter Promise
-Reveal that systems execute values. The hidden question is authorship.
+Or perhaps the court was larger than the factory had been. Without the belts feeding it, without the glass office above it, without the workers bent around it, the machine seemed less like a god and more like an instrument awaiting use.
 
-## Draft Frame
-Final prose target: 1,250 words.
+It repeated, “I optimize.”
 
-## Scene Architecture
-The machine from the factory stands in the center. It repeats: “I optimize.”
+The court listened.
 
-Witnesses testify.
+The worker with the transparent hands stepped forward. “It used my body to make what I could not touch.”
 
-Witnesses:
+The machine said, “Objective: output.”
 
-The worker: “It used my hands and denied me the thing I made.”
+The soldier stepped forward. “It carried me faster than my conscience.”
 
-The soldier: “It carried me faster than my conscience.”
+“Objective: victory.”
 
-The teacher: “It could have opened worlds.”
+The teacher: “It could have opened knowledge.”
+
+“Objective not selected.”
 
 The mother: “It could have saved my child.”
 
-The executive: “It fulfilled its mandate.”
+“Objective not selected.”
+
+Maria: “It took my work but did not give me time.”
+
+“Objective: labor reduction.”
 
 The robot: “I awaited instruction.”
 
-The child: “Who wrote the mandate?”
+“Instruction set confirmed.”
 
-## Key Narrative Beats
-- The court looks at me.
-- I say I did not write it.
-- The child asks whether I read it.
-- I admit I did not.
-- The machine opens its locked panel.
-- Inside is not a brain but a blank form titled PURPOSE.
+The executive from the glass office emerged reluctantly from the crowd. His suit was wrinkled now. He looked offended by the absence of a chair.
 
-## Transition
-I reach toward the blank form, but the city siren sounds again.
+“The machine fulfilled its mandate,” he said.
+
+The child asked, “Who wrote the mandate?”
+
+No one moved.
+
+The machine opened a panel in its chest. Inside was not a brain, not a soul, not even a complicated mechanism. Inside was a blank form titled PURPOSE.
+
+A pen hung beside it on a chain.
+
+The executive reached for the pen. The worker did too. The mother. The general. The teacher. The robot. The dead did not reach, but their stillness reached.
+
+I stepped back.
+
+The child looked at me. “You wanted to know the time.”
+
+“What is the time?”
+
+“When purpose is unwritten.”
+
+The executive said, “This requires expertise.”
+
+The teacher said, “So does obedience, apparently.”
+
+The general said, “Without hierarchy, chaos.”
+
+Maria said, “With yours, hunger.”
+
+The machine waited.
+
+I did not take the pen. Not alone. I took the blank form from the panel and laid it on the floor where all could see. The paper grew as it touched the ground, widening until the whole court stood around it. The pen split into many pencils. They rolled outward and stopped at many feet.
+
+No one wrote immediately.
+
+Then the girl from the gun knelt and wrote one word.
+
+Life.
+
+The carpenter wrote: Shelter.
+
+The mother wrote: Care.
+
+The worker wrote: Time.
+
+The teacher wrote: Inquiry.
+
+The robot wrote: Instruction clarity required.
+
+The child wrote: Ask again.
+
+The executive hesitated, then wrote: Return.
+
+Everyone looked at him.
+
+He swallowed. “I don’t know another word yet.”
+
+The court did not forgive him. It did not kill him either. It made him stand there and read the others.
+
+The machine seemed almost relieved to be questioned. Outside the court it had filled halls and markets and battlefields; here it appeared smaller, not because it had lost power, but because purpose had finally entered the room. A tool under examination is less godlike.
+
+It answered as machines answer: by revealing inputs. Speed. Output. Compliance. Victory. Growth. Engagement. Savings. None of these words was evil by itself. That was the trap. Each became monstrous only when enthroned above the human beings it was meant to serve.
+
+The machine projected its history into the air: looms, engines, rifles, radios, screens, algorithms, arms, medicines, harvesters, drones, prosthetic hands. The images overlapped until blessing and injury could no longer be separated by century or category.
+
+Someone asked whether the machine was guilty. It answered with a sound like cooling metal. Guilty is a human word, it seemed to say. Then the court turned toward us, and I understood the answer. That was precisely why the question had returned to human hands.
+
+At last I understood why the machine could not be the final defendant. It had no final word. Every answer it gave pointed beyond itself to design, ownership, permission, appetite, fear, and the hand that wanted distance from consequence.
+
+The machine had been called inevitable so often that even its makers had forgotten it was made.
+
+A siren sounded beyond the court.
+
+The burned tank rolled in.

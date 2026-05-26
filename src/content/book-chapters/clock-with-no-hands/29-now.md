@@ -4,47 +4,90 @@ title: "Now"
 subtitle: "Chapter 30"
 part: "Part VII - The Court and the Hand"
 order: 29
-summary: "Now develops the next movement in the narrator's passage from witness to agency. Final prose target: 900 words."
+summary: "It did not move clockwise. It moved outward. The shadow of my hand lengthened across the face, not as command but as invitation."
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+It did not move clockwise.
 
-## Chapter Promise
-Now develops the next movement in the narrator's passage from witness to agency.
+It moved outward.
 
-## Draft Frame
-Final prose target: 900 words.
+The shadow of my hand lengthened across the face, not as command but as invitation. From the center of the clock, each tick traveled toward the rim and entered a city.
 
-## Scene Architecture
-The clock moves for the first time, but not clockwise. It moves outward. Each tick becomes an action somewhere in the rim of cities.
+Tick.
 
-Tick-images:
+In the factory, the woman at the press stopped humming under her breath and sang aloud. Another worker joined her. Then another. The supervisor wrote them up until his pen ran out of ink.
 
-A worker speaks to another worker.
+Tick.
 
-A teacher lets the child ask.
+The carpenter installed a handle on one of his doors and walked through it before the lock could decide otherwise.
 
-A machine is repurposed.
+Tick.
 
-A screen goes dark and a window opens.
+At the river, a boat carried bread west and children east. The water still remembered fire, but it carried other things.
 
-A river carries bread instead of bodies.
+Tick.
 
-A boardroom wall becomes transparent.
+In the ruined school, a child answered a question with another question. The proctor reached for the red pen and found it had become chalk.
 
-A soldier lowers a rifle.
+Tick.
 
-A doctor opens a clinic.
+Behind the screen, someone turned the UNDERSTANDING dial again and did not turn it back when the supervisor shouted.
 
-A programmer changes the ownership field.
+Tick.
 
-A child writes a question no one can erase.
+In the cathedral, a woman stood before communion and asked whether practicality had ever been tried on the powerful.
 
-The final paragraph should be quiet, not triumphant. I understand that the world has not been saved by one gesture. But it has answered.
+Tick.
 
-## Ending Cadence
-- The clock had no hands until I raised mine.
-- The wake widened behind me, bright and fading, but it did not steer the ship.
-- I stood in the center of the hour and understood that now was not a point in time but a duty.
-Best final line: The clock had no hands until I raised mine.
+In the supermarket, Maria sat at a table with engineers, nurses, clerks, farmers, teachers, and programmers. The robot waited beside them. On the wall was written: WHO BENEFITS?
+
+Tick.
+
+In the museum, the room of my country remained open after closing. Visitors entered expecting innocence and found mirrors. Some turned away. Some stayed.
+
+Tick.
+
+In the court, the machine accepted a new purpose and asked for clarification. The child laughed. The teacher said clarification was a noble beginning.
+
+Tick.
+
+The tank-tree grew another ring.
+
+The clock did not save the world. That became clear immediately. Sirens still sounded. Hunger still counted. Men in clean rooms still learned new names for old thefts. Flags still covered coffins. Screens still pretended to be windows. The old ribbons crawled across the floor, looking for hands willing to retie them.
+
+But something had changed in the clock’s center.
+
+I had thought the missing hand would descend from above, engineered, authorized, historically scheduled. I had thought time would declare itself, that the hour would arrive with trumpets and proofs, that the future would come as a train comes, whether one waits well or badly.
+
+Instead there was only this: a hand raised, then another, then another.
+
+Not pure hands. Not innocent hands. Worker’s hands, soldier’s hands, children’s hands, guilty hands, frightened hands, mechanical hands, old hands, hands that had signed bad papers, hands that had dropped tools, hands that had held rifles, hands that had done nothing when something should have been done. Hands, still.
+
+Around the rim, the cities brightened and darkened. The wake widened behind the ship, luminous and fading. It showed everything. It drove nothing.
+
+The child asked again, “What time is it?”
+
+I looked at my raised hand. I looked at the cities. I looked at the routes opening where the ribbons had fallen. I looked at the machine waiting for purpose, the school waiting for questions, the supermarket waiting for courage, the river waiting for boats, the screen waiting to be broken or used honestly, the tank waiting each day to become either weapon or tree.
+
+“Now,” I said.
+
+The word did not echo.
+
+The word now had changed during the journey. At first it had seemed urgent, almost cruel, another command stamped into brass. Now it felt spacious. Not easy. Spacious. It contained the dead, the living, the machines, the children, the cities, the possible futures, and the unbearable fact that none of them absolved me from acting.
+
+I did not know whether the hand I raised would be enough. That was not the promise. The promise was smaller and more demanding: that the world was not only something happening to me. It was also something passing through me into consequence.
+
+No trumpet answered. No city became pure. No machine knelt. This mattered. If the world had transformed completely, I might have mistaken agency for magic. Instead the old dangers remained, and that made the raised hand more honest.
+
+Around me, other hands rose unevenly. Some quickly, some reluctantly, some shaking, some scarred, some mechanical, some too small, some too old, some guilty, some clean only because they had never been tested. The clock accepted none as perfect. It accepted them as present.
+
+The strike of the clock did not sound like bells. It sounded like doors unlocking in different cities at different distances. Some opened only a finger's width. Some opened inward. Some opened onto rooms still on fire. But they opened.
+
+The sound entered me last. Not as command. As answer.
+
+I thought of the snake, still moving beyond the fence. I thought of the wake, still widening. I thought of the girl at the gun, the child in the classroom, the cashier before the robot, the machine in the court. None of them had vanished into symbol. They remained, insisting that meaning without response is only another form of delay. The hour had become intimate. It had entered the hand. It had stopped being a subject for observers and become a demand upon the living. Even silence now had consequences. Even waiting had chosen a side. The clock knew. So did I, finally, with my hand raised.
+
+It entered the machinery.
+
+And the clock, which had no hands until I raised mine, began to strike.

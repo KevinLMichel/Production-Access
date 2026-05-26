@@ -4,34 +4,64 @@ title: "Rats' War"
 subtitle: "Chapter 11"
 part: "Part III - The Tank and the City"
 order: 10
-summary: "Destroy abstraction. Ideology becomes dust, thirst, fear, staircases. Final prose target: 1,300 words."
+summary: "The house had once been yellow. I knew because a strip of paint survived behind a stove. The rest was gray dust, brick, splintered floorboards, exposed pipe, torn wallpaper, wire, plaster, a"
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+The house had once been yellow.
 
-## Chapter Promise
-Destroy abstraction. Ideology becomes dust, thirst, fear, staircases.
+I knew because a strip of paint survived behind a stove. The rest was gray dust, brick, splintered floorboards, exposed pipe, torn wallpaper, wire, plaster, and men whispering with grenades in their hands.
 
-## Draft Frame
-Final prose target: 1,300 words.
+A soldier pressed a finger to his lips when he saw me. I crouched beside him. Above us, boots moved. Below us, someone coughed. Across the hall, a body lay under a fallen door. I could not tell whose. Dust had erased the uniform.
 
-## Scene Architecture
-I emerge inside a half-destroyed apartment building. War is vertical. Germans above, Russians below, civilians hidden between floors. The building contains domestic remnants: a vase, a boy’s homework, a kitchen chair, a wedding photograph, a cracked mirror.
+The soldier pointed upward, then downward, then at himself. He drew three lines in the dust.
 
-## Key Narrative Beats
-- I crawl through a wall hole into a kitchen where soldiers whisper beside a stove.
-- Grenades roll down stairwells.
-- The same hallway changes hands twice in ten minutes.
-- No one knows who controls the building.
-- Dust covers all uniforms, making enemies briefly indistinguishable.
-- A soldier asks me for water in a language I do not understand.
-- I give him some.
-- Another soldier raises his rifle at me for doing so.
-- The ceiling collapses before he fires.
+Enemy. Us. Enemy.
 
-## Craft Constraint
-Do not over-choreograph the battle. Confusion is the point.
+The building was a layered cake of fear.
 
-## Transition
-I grab the kitchen chair and drag it through rubble. It becomes an observation post.
+A cupboard stood against one wall with its doors open. Inside were plates painted with blue flowers. One plate had cracked exactly through the flower’s center. A child’s arithmetic book lay on the floor. I opened it without knowing why.
+
+If Anna has six apples and gives two to Misha—
+
+The rest was covered in blood.
+
+A grenade rolled down the stairs.
+
+Everyone moved at once. Someone kicked it into a room without a wall. The explosion blew dust back through the hallway. Men coughed, cursed, fired upward. A burst answered from below. I flattened myself behind the stove. The yellow paint beside my cheek was warm.
+
+In the next room a German soldier and a Russian soldier collided through opposite holes in the wall. For one second they were too close to shoot. They looked almost embarrassed. Then each tried to kill the other with a knife. They fell against a table, broke it, rolled into flour spilled from a torn sack. When it ended, both were white from head to foot, two ghosts tangled on the floor.
+
+I crawled past them toward a sound that was not battle.
+
+A man was asking for water.
+
+He lay under a window with one hand pressed to his stomach. His language was not mine, or perhaps it was and the blood in his mouth changed it. I held my canteen to his lips. He drank and coughed. A soldier behind me shouted. I turned and saw a rifle aimed at my chest.
+
+“He is the enemy,” the soldier said.
+
+“He is thirsty.”
+
+“That is not a category.”
+
+Before he could fire, the ceiling collapsed between us. I was thrown sideways into a room that had no outer wall. For a moment I looked down over the city. Smoke moved through streets like animals searching for food. The river burned beyond everything. Far off, artillery flashed on the opposite bank, and seconds later the world answered.
+
+I found a kitchen chair upright in the rubble.
+
+It was absurdly intact. One leg shorter than the others. Initials carved under the seat. A chair made for breakfast, quarrels, sewing, waiting, resting one foot while tying a boot. I dragged it toward the window hole because I needed something ordinary to touch.
+
+In the house, strategy became stair dust. The great maps shrank to a doorway, a landing, a dark room where breathing too loudly could betray a man. No ideology survived unchanged in that closeness. It either became mercy, fear, courage, hunger, hatred, or the simple animal desire to see another morning.
+
+The soldiers moved like rats because the world had made ratness useful. They learned pipes, holes, shadows, smells. They learned to live beneath the dignity of speeches. If there was bravery there, and there was, it was not clean. It had plaster in its mouth.
+
+The house had its own weather: plaster snow, smoke fog, heat lightning from rifles, the damp cold of cellars. Men learned this weather intimately. They knew which stair creaked, which wall had become thin enough to hear through, which hole opened into another family's bedroom.
+
+I thought of how far the speeches were from this room. Speeches require distance. They need a balcony, a microphone, a crowd, a clean shirt. Here, language shortened. Water. Duck. Wait. Now. The words that remained were the ones the body could afford.
+
+The house narrowed time. There was no century there, no campaign, no theory of history. There was only the next stair, the next breath, the next sound behind plaster. Philosophy became a question of where to place one's foot.
+
+In that house, survival was not noble or base. It was intimate. It had breath on its face.
+
+A telephone wire coiled around its legs.
+
+When I pulled the chair free, the wire tightened and led me upward.

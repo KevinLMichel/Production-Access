@@ -12,7 +12,7 @@ I stood inside a clock large enough to contain weather.
 
 There was no waking, no door, no first explanation. I was already there, standing on a face of pale metal that curved beneath my shoes like the floor of a cathedral, or the deck of a ship, or the underside of a sky that had forgotten which way to fall.
 
-The clock rose around me in a great circular wall. Its rim vanished into cloud. Its numerals were not numerals. They were cities.
+The metal had warmth in it, the warmth of something alive but disciplined, like the chest of a sleeping animal. Above me, around me, and sometimes beneath me depending on where I turned, the rim rose into a great circular horizon. Its numerals were not numerals. They were cities.
 
 Berlin smoldered where XII should have been. Moscow shone cold and enormous near I, its domes and towers pressed into a brass groove. Stalingrad sat lower on the rim, half white, half smoke, with a river running through it like a wound that had learned to reflect light. Manchester turned in soot and thread. Detroit flashed with glass, steel, and assembly lines. Shenzhen glittered with cranes and blue factory dawn. Washington spoke without moving its lips. Beyond them, where no number belonged, stood a future city made of scaffolding, drone lights, hospital windows, unfinished towers, and rain.
 
@@ -24,11 +24,17 @@ I looked for the hands.
 
 There were none.
 
+That should have made the clock useless. Instead it made it tyrannical. The absence of hands did not free me from time. It made every hour possible at once. Everything could be called late. Everything could be called early. Everything could be excused as inevitable. Without hands, the clock could not point, but it could accuse.
+
 At the center of the clock face was a smooth brass pin, polished by use or by waiting. It had the dignity of a throne and the uselessness of a button no one had pressed. Around it, faint circular scars suggested that hands had once turned there. Or perhaps that many hands had tried and failed.
 
 I walked toward the rim.
 
 The floor was warm, but not with comfort. It had the warmth of machinery that had been running long before I arrived. Beneath the metal, gears shifted in a hidden depth. Some turned slowly, with the patience of institutions. Others clicked fast, like teeth. Now and then the whole structure trembled, and one city on the rim brightened while another dimmed, as if history were a series of rooms wired to the same unstable current.
+
+When I looked down, I did not see my reflection. I saw the underside of streets.
+
+Pipes. Roots. Bones. Cables. Sewers. Foundations. Men in helmets. Women carrying baskets. Children asleep under tables. A hand writing orders. Another hand sewing a sleeve. Another tightening a bolt. Another signing a foreclosure notice. Another closing over a throat.
 
 When I reached the edge of the face, I saw that each city was not painted there. It opened inward.
 
@@ -40,7 +46,7 @@ I wanted someone to tell me the hour.
 
 No one appeared.
 
-Instead, I found three plaques fixed into the inner rim. They were small, brass, and almost hidden between the cities. The first read:
+Instead, I found four plaques fixed into the inner rim. They were small, brass, and almost hidden between the cities. The first read:
 
 LATE.
 
@@ -53,6 +59,12 @@ EARLY.
 It was colder.
 
 The third read:
+
+INEVITABLE.
+
+That one was not cold. It was dead.
+
+The fourth read:
 
 NOW.
 
@@ -68,7 +80,7 @@ Then the tick faded.
 
 Nothing moved.
 
-That was when I understood the first thing, though I did not yet have words for it. A clock without hands can still make noise. A civilization without agency can still produce urgency. It can still hurry, still threaten, still measure, still accuse. It can say late. It can say early. It can say now.
+That was when I understood the first thing, though I did not yet have words for it. A clock without hands can still make noise. A civilization without agency can still produce urgency. It can still hurry, still threaten, still measure, still accuse. It can say late. It can say early. It can say inevitable. It can say now.
 
 But it cannot tell the time.
 

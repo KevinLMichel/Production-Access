@@ -4,43 +4,84 @@ title: "The Robot at Checkout"
 subtitle: "Chapter 25"
 part: "Part VI - The Supermarket"
 order: 24
-summary: "The technological hinge of the book: the future is not in the machine, but in governance over the machine."
+summary: "The robot stood in lane seven. It was sleek, white, jointed, efficient, and innocent in the awful way machines can be innocent."
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+The robot stood in lane seven.
 
-## Chapter Promise
-The technological hinge of the book: the future is not in the machine, but in governance over the machine.
+It was sleek, white, jointed, efficient, and innocent in the awful way machines can be innocent. Its screen displayed a smiling face composed of blue lines.
 
-## Draft Frame
-Final prose target: 1,250 words.
+WELCOME. HOW MAY I IMPROVE YOUR EXPERIENCE?
 
-## Scene Architecture
-A robot replaces the cashier. It is neither sinister nor kind. It scans items with perfect efficiency. The displaced cashier stands beside it, still wearing her name tag.
+Beside it stood the cashier it had replaced. Her name tag read MARIA. Her hands hung at her sides as if she did not know what to do with them now that speed no longer required them.
 
-## Key Narrative Beats
-- The robot asks, “How may I improve your experience?”
-- The cashier laughs.
-- The store splits into two possible aisles.
-- Aisle one: dispossession
-- Workers vanish.
-- Owners rise into balcony offices.
-- Productivity becomes unemployment.
-- Time saved becomes profit extracted.
-- Aisle two: abundance
-- Workweeks shorten.
-- Clinics expand.
-- Schools open at night for adults.
-- Parks fill.
-- People learn instruments.
-- Machines do dangerous work.
-- Human beings recover time.
-- The robot asks, “Which aisle is authorized?”
-- I ask where authorization comes from.
-- It points to a locked office labeled OWNERSHIP.
-- I still have the broken pencil from the school.
-- I use it as a key.
+The robot scanned a loaf of bread.
 
-## Transition
-The locked office opens onto a vast circular court.
+BEEP.
+
+“Labor reduced.”
+
+It scanned a carton of eggs.
+
+BEEP.
+
+“Efficiency increased.”
+
+It scanned diapers.
+
+BEEP.
+
+“Margin improved.”
+
+Maria laughed once.
+
+The robot turned its screen toward her. “Customer amusement detected.”
+
+“I’m not a customer.”
+
+“Please identify role.”
+
+She touched her name tag. “I used to know.”
+
+The aisle split.
+
+On the left, the store grew colder. Workers faded from registers, stocking rooms, loading docks, farms, trucks, warehouses, offices. Their aprons fell to the floor. Their wages rose as light into the office of the three shadows. The robot multiplied. Productivity climbed. Hours did not fall. Prices did not fall. Need did not fall. People stood outside the store looking through glass at shelves they had filled.
+
+On the right, the store changed differently. Machines lifted heavy crates. Robots cleaned spills, harvested fields without poisoning workers, delivered medicine, assisted surgeons, translated classrooms, repaired pipes, built housing, carried the injured, did the dangerous and deadening work. Maria sat in a classroom at noon learning anatomy. The man with the ruined back worked twenty hours and spent afternoons in a park. The mother slept. The student studied without debt. The worker wrote music badly at first and then better.
+
+Both aisles were possible. Both used the same machines.
+
+The robot asked, “Which aisle is authorized?”
+
+“Who authorizes?”
+
+It pointed toward the smoked-glass office.
+
+The three shadows watched.
+
+I walked to their door. It had a lock shaped exactly like the one on the FUTURE machine. OWNERSHIP INPUT.
+
+I searched my pockets for a key and found the pencil from the classroom, broken at the tip. It looked too small to open anything. I inserted it anyway.
+
+The lock resisted.
+
+Maria stepped beside me and placed her hand over mine. Then the man with insulin. Then the child. Then the robot, after a pause, extended one delicate metal finger.
+
+The lock opened.
+
+The robot's politeness made it more sorrowful. It did not resent the displaced cashier. It did not enjoy the efficiency it represented. It merely performed the future it had been assigned. Its blank face reflected the fluorescent lights and, faintly, my own.
+
+I wanted to ask whether it had stolen a job, but the question felt too small. A machine cannot steal what a society hands over. The deeper theft had happened earlier, in meetings, incentives, designs, laws, habits, and the old dream of labor without laborers.
+
+A woman approached the robot with coupons folded like legal documents. The machine rejected one, accepted another, froze on the third. Its screen apologized. She apologized back. That was the moment that hurt: the human apologizing to the machine for needing mercy from a rule.
+
+I placed my hand on the scanner and watched red light pass under my skin. For a moment I looked transparent. Bone, vein, barcode, palm. The machine did not recognize a hand. It recognized input. The difference was the whole trial waiting ahead of us.
+
+The robot waited after every transaction as if expecting gratitude. Maybe that expectation belonged to its makers, not to it. The machine had inherited a human desire: to be called progress without being asked progress toward what.
+
+The robot blinked, and I wondered how much of the age could be summarized by machines apologizing for rules humans refused to own.
+
+Beyond the office was not an office.
+
+It was a court without a judge.

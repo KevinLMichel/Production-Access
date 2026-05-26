@@ -4,28 +4,80 @@ title: "The Audience Commodity"
 subtitle: "Chapter 21"
 part: "Part V - The Screen"
 order: 20
-summary: "Make media economics surreal and memorable. Final prose target: 1,000 words. I enter a marketplace where audiences are sold by the pound."
+summary: "The auctioneer had a voice made of polished wood. “Lot twentyseven,” he called. “Suburban anxiety, aged fortyfive to sixtyfive, moderate education, high purchasing power, fearresponsive, nos"
 updated: "2026-05-26"
 ---
 
-> Live build note: this chapter is currently a public blueprint for the novella. It preserves the scene architecture, moral pressure, and transition logic while the full prose draft is built iteratively.
+The auctioneer had a voice made of polished wood.
 
-## Chapter Promise
-Make media economics surreal and memorable.
+“Lot twenty-seven,” he called. “Suburban anxiety, aged forty-five to sixty-five, moderate education, high purchasing power, fear-responsive, nostalgia-sensitive.”
 
-## Draft Frame
-Final prose target: 1,000 words.
+Hands rose in the dark.
 
-## Scene Architecture
-I enter a marketplace where audiences are sold by the pound. Attention is bottled. Outrage is refined. Fear is packaged in family sizes.
+“Lot twenty-eight. Youth aspiration, urban, indebted, identity-fragmented, premium engagement potential.”
 
-## Key Narrative Beats
-- A family watches a screen while conveyor belts carry them forward.
-- Their couch has wheels.
-- A broker auctions “suburban anxiety,” “youth aspiration,” “elder resentment,” “working-class despair.”
-- I see my own attention in a jar labeled PREMIUM EDUCATED MALE / MORAL UNEASE / HIGH ENGAGEMENT.
-- I break the jar.
-- A swarm of moths escapes.
+More hands.
 
-## Transition
-The auctioneer’s gavel becomes a supermarket scanner.
+I stood among cages filled not with bodies but with moods. Outrage hissed in red glass cylinders. Loneliness floated in blue bags. Desire was packed in velvet boxes. Resentment came in barrels stamped FAMILY SIZE. Hope was kept under refrigeration because it spoiled quickly.
+
+A broker led me through the stalls.
+
+“Are you buying or being sold?”
+
+“I don’t know.”
+
+“Then probably both.”
+
+He showed me a couch on a conveyor belt. A family sat on it watching a screen. They believed they were at home. Beneath the couch, rollers carried them slowly toward a packaging machine.
+
+The father muttered at the news. The mother scrolled on her phone. The older child wore headphones. The younger child stared not at the screen but at the family staring at screens.
+
+“What are they worth?” I asked.
+
+“Together or divided?”
+
+“Does it matter?”
+
+“Division increases yield.”
+
+The broker handed me a jar.
+
+Inside, a moth of light battered itself against the glass. The label read:
+
+MORAL UNEASE / EDUCATED MALE / LONG-FORM ENGAGEMENT / HIGH CONVERSION RISK.
+
+“That’s mine,” I said.
+
+“It was yours.”
+
+I twisted the lid. The broker grabbed my wrist.
+
+“You break it, you lose targeting.”
+
+“I hope so.”
+
+The jar opened. The moth flew out, struck my cheek, and dissolved into warmth. All around the marketplace, other jars trembled. A few cracked. Not many. Enough to make the auctioneer pause.
+
+“Security,” he said calmly.
+
+I ran.
+
+Behind me, cages opened and shut. Moods escaped and became weather. Outrage without direction became lightning. Loneliness became fog. Hope, unrefrigerated, began to smell like bread.
+
+I reached a hall lined with mirrors. Above the entrance, letters carved in marble read:
+
+In the marketplace, attention had texture. Some of it arrived bright and nervous, some dull with fatigue, some fragrant with loneliness, some sharp with anger. The buyers handled it expertly. They knew which fear would keep, which appetite could be ripened, which grief could be packaged beside a product.
+
+I watched a child laugh at a flickering toy while a broker measured the laugh for resale. The horror was not that joy existed there. The horror was that joy had been intercepted before it could become free. Even delight had been placed on a scale.
+
+The auctioneer invited me to bid on myself. A mirror descended, and beneath it a tag listed my habits: fear responsive, fatigue susceptible, nostalgia tolerant, novelty seeking, shame reactive. The price changed as I watched.
+
+I wanted to smash the mirror, but anger had already been priced. The market had room for my rebellion if my rebellion remained a mood. What it feared was not feeling. It feared sustained attention freed from purchase.
+
+The market did not need my love. It only needed my return. My outrage, boredom, desire, envy, compassion, and loneliness all passed through the same turnstile if they kept me looking.
+
+The auction continued after I refused to bid. Markets do not end because one person wakes up.
+
+MUSEUM OF GOOD INTENTIONS.
+
+I entered because the doors were already open.
