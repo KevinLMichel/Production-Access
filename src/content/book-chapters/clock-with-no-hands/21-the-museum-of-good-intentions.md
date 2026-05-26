@@ -4,7 +4,7 @@ title: "The Museum of Good Intentions"
 subtitle: "Chapter 22"
 part: "Part V - The Screen"
 order: 21
-summary: "Every empire had its own room. The first room was painted rose and gold. Angels hovered over ships."
+summary: "Every empire had its own room. The first room was painted rose and gold."
 updated: "2026-05-26"
 ---
 

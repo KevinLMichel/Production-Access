@@ -92,6 +92,26 @@ I wanted to open a window, but the office had none. It had transparency without 
 
 NECESSARY.
 
+Then the glass wall answered the stamp by showing me what this room would become when the logic of the factory changed uniforms.
+
+The office was soundproofed so completely that the war below arrived only as a tremor in the glass. I could see the city burning through the long windows, but I could not hear the roofs fall. Flames moved in silence along the riverfront. A hospital wing opened like a book in the distance, each floor briefly visible, each room bright with fire. In the office, a man adjusted the cuff of his shirt and asked for the casualty figures to be rounded.
+
+On the table lay maps under clean sheets of glass. Grease pencils made elegant arrows across neighborhoods where people had names, debts, fevers, favorite songs, missing teeth. The arrows were blue, crimson, black. They curved with the beauty of calligraphy. No one in the room smelled the smoke. The vents breathed chilled air over bowls of peeled fruit.
+
+A woman at the far end translated suffering into columns. “Displacement,” she said. “Reduced capacity.” Another corrected her. “Temporary disruption.” A third man, older, with a voice softened by education, tapped the map with one manicured finger. “Acceptable,” he said.
+
+I watched his finger rest on a school.
+
+Down below, someone ran through ash carrying a bundle that was either bedding or a child. The distinction mattered desperately to the person carrying it and not at all to the room. I put my hand on the glass. It was cold enough to hurt.
+
+The older man noticed me. “Distance,” he said, almost kindly, “is necessary for judgment.”
+
+I looked again at the school beneath his finger. Its roof had vanished. Snow or ash fell into the classrooms. The desks were still in rows.
+
+I lifted the bowl of peeled fruit and threw it at the window. It burst without breaking the glass. Orange pulp slid down over the burning city, and for a moment the map and the fire occupied the same surface.
+
+No one moved until a drop of juice touched the old man’s finger.
+
 <aside class="clock-terza" aria-label="Terza rima interlude">
 <p><span>Above the hands there floated walls of glass,</span>
 <span>A cloud of ledgers over bleeding hands,</span>

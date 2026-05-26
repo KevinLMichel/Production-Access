@@ -4,7 +4,7 @@ title: "The Cathedral of Common Sense"
 subtitle: "Chapter 20"
 part: "Part V - The Screen"
 order: 19
-summary: "The cathedral was full. Not with worshipers exactly, though everyone knelt. The pews were arranged by income, credential, and proximity to power."
+summary: "The cathedral was full. Not with worshipers exactly, though everyone knelt."
 updated: "2026-05-26"
 ---
 

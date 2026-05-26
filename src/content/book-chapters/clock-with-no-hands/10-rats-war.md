@@ -4,7 +4,7 @@ title: "Rats' War"
 subtitle: "Chapter 11"
 part: "Part III - The Tank and the City"
 order: 10
-summary: "The house had once been yellow. I knew because a strip of paint survived behind a stove. The rest was gray dust, brick, splintered floorboards, exposed pipe, torn wallpaper, wire, plaster, a"
+summary: "The house had once been yellow. I knew because a strip of paint survived behind a stove."
 updated: "2026-05-26"
 ---
 

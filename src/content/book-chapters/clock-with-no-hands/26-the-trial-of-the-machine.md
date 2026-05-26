@@ -12,6 +12,32 @@ The machine was smaller in the court.
 
 Or perhaps the court was larger than the factory had been. Without the belts feeding it, without the glass office above it, without the workers bent around it, the machine seemed less like a god and more like an instrument awaiting use.
 
+The machine waited in the center of the court with the patience of a thing that had never been blamed successfully. Its surface was neither clean nor dirty. It was maintained. Brass gears turned behind glass panels. Wires entered it from the floor, from the ceiling, from the walls, from the hands of the people gathered around it. Some wires were thick as ropes. Some were fine as hair. Many disappeared into sleeves.
+
+On its iron chest was a plate stamped FUTURE.
+
+The child approached first. She carried no weapon, only an examination pencil worn short between her fingers. “What do you do?” she asked.
+
+The machine answered without pause. “I optimize.”
+
+“For whom?”
+
+A smaller gear clicked out of rhythm. Somewhere in the crowd, a man coughed.
+
+“I execute assigned purpose,” the machine said.
+
+“Who assigns it?”
+
+A panel opened in its chest. Inside was not a heart, not a furnace, not a demon, not even the cold blue eye I had feared. There was only a slot, a lever, and a paper form held under clips. At the top of the form were the words PURPOSE FIELD. The space beneath was blank, though the paper was stained by many hands.
+
+The executive stepped forward with a fountain pen. The general reached for the lever. The teacher held them both back without touching them. The worker with transparent hands stared at the blank field as if seeing, for the first time, the place where his life had been translated into command.
+
+The machine waited.
+
+Its emptiness was more terrible than malice. Malice could be hated. Emptiness invited occupation. It would carry bread or fire, medicine or orders, leisure or exhaustion. It would count whatever it was taught to count and ignore whatever had not been entered.
+
+I looked at the pencil in the child’s hand.
+
 It repeated, “I optimize.”
 
 The court listened.

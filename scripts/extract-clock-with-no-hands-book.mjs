@@ -18,6 +18,9 @@ const terzaPath =
     "Book Downlo",
     "Terza Rima Poems by Kevin L. Michel for The Clock with No Hands.docx"
   );
+const potentialInsertsPath =
+  process.env.BOOK_ACCESS_CLOCK_NO_HANDS_INSERTS_INPUT ??
+  path.join(process.env.USERPROFILE ?? "", "Downloads", "Book Downlo", "Book potential inserts The Clock with No Hands.docx");
 const outputDir = path.join(root, "src", "content", "book-chapters", "clock-with-no-hands");
 const updated = "2026-05-26";
 
@@ -66,6 +69,20 @@ const terzaSelectionOverrides = new Map([
   [29, "alternate"],
   [30, "alternate"]
 ]);
+
+const potentialInsertPlacements = [
+  { chapterNumber: 4, insertNumber: 3, afterParagraph: 1 },
+  { chapterNumber: 5, insertNumber: 2, beforeFinalParagraph: true },
+  { chapterNumber: 7, insertNumber: 4, beforeFinalParagraph: true },
+  { chapterNumber: 12, insertNumber: 5, afterParagraph: 1 },
+  { chapterNumber: 16, insertNumber: 6, afterParagraph: 8 },
+  { chapterNumber: 19, insertNumber: 7, afterParagraph: 4 },
+  { chapterNumber: 23, insertNumber: 8, afterParagraph: 1 },
+  { chapterNumber: 27, insertNumber: 9, afterParagraph: 2 },
+  { chapterNumber: 29, insertNumber: 10, variant: "destiny", afterIncludes: "THERE IS NO ALTERNATIVE was not tied" },
+  { chapterNumber: 29, insertNumber: 1, afterIncludes: "But they no longer sounded equally true." },
+  { chapterNumber: 30, insertNumber: 10, variant: "now", afterParagraph: 2 }
+];
 
 const chapterOneDraft = String.raw`I stood inside a clock large enough to contain weather.
 
@@ -765,6 +782,141 @@ function loadTerzaPoems(filePath) {
   return { primary, alternate };
 }
 
+function loadPotentialInserts(filePath) {
+  const paragraphs = extractParagraphs(filePath);
+  const inserts = new Map();
+  let current;
+
+  for (const paragraph of paragraphs) {
+    const heading = paragraph.match(/^Insert\s+(\d{1,2})\s+\W+\s+(.+)$/i);
+    if (heading) {
+      current = { insertNumber: Number(heading[1]), title: heading[2].trim(), paragraphs: [] };
+      inserts.set(current.insertNumber, current);
+      continue;
+    }
+
+    if (current) current.paragraphs.push(paragraph);
+  }
+
+  if (inserts.size !== 10) throw new Error(`Expected 10 Clock potential prose inserts, found ${inserts.size}`);
+  return inserts;
+}
+
+function requirePotentialInsert(inserts, insertNumber) {
+  const insert = inserts.get(insertNumber);
+  if (!insert) throw new Error(`Missing Clock potential prose insert ${insertNumber}`);
+  return insert.paragraphs;
+}
+
+function adaptPotentialInsert(inserts, placement) {
+  const source = requirePotentialInsert(inserts, placement.insertNumber);
+
+  if (placement.insertNumber === 1) {
+    return [
+      "I found the plaque marked INEVITABLE beneath the clock's central pin, lower than the others, almost hidden where the brass had gone green from age and fingerprints. LATE, EARLY, and NOW had been polished by many hands. This one was darker, as if people preferred not to touch it.",
+      source[1],
+      "I worked at the first screw with the hard edge of the broken ruler the child had left beside the wheel. It resisted. The clock groaned under me. From the cities around the rim came a murmur, not of alarm but of administration: forms shuffled, stamps fell, doors locked, engines resumed. I kept turning. A thin shaving of brass curled under my thumb.",
+      ...source.slice(3)
+    ];
+  }
+
+  if (placement.insertNumber === 2) {
+    return [
+      "Then the glass wall answered the stamp by showing me what this room would become when the logic of the factory changed uniforms.",
+      ...source
+    ];
+  }
+
+  if (placement.insertNumber === 6) {
+    return [
+      source[0],
+      source[1],
+      source[2],
+      source[3],
+      source[4],
+      source[8],
+      source[9],
+      source[10],
+      source[11],
+      source[12]
+    ].filter(Boolean);
+  }
+
+  if (placement.insertNumber === 7) {
+    return [
+      source[0],
+      source[1],
+      source[2],
+      source[3],
+      source[4],
+      source[5],
+      source[6],
+      source[7],
+      source[8]
+    ].filter(Boolean);
+  }
+
+  if (placement.insertNumber === 9) {
+    return [
+      source[0],
+      source[1],
+      source[2],
+      source[3],
+      source[4],
+      source[5],
+      source[6],
+      source[7],
+      source[8],
+      source[9],
+      source[10],
+      source[11],
+      source[12]
+    ].filter(Boolean);
+  }
+
+  if (placement.insertNumber === 10 && placement.variant === "destiny") {
+    return [
+      "DESTINY remained beneath the last false knot, a narrow ribbon I had mistaken for shadow. It tightened when I touched it. From the rim came a chorus of warnings in many voices. Too late. Too early. Too costly. Too dangerous. Too complicated. Not your place. Not your hour. Not your hand.",
+      "The snake slid across the brass and watched me with its lidless eye.",
+      "I pulled.",
+      "The ribbon came loose so suddenly I nearly fell. Behind it was only the pin, plain and scratched. No thunder sounded. No law of nature broke. The clock did not punish me. It waited, which was worse."
+    ];
+  }
+
+  if (placement.insertNumber === 10 && placement.variant === "now") {
+    return [
+      "The cities still burned and glittered around the rim. Trains moved through Berlin. Snow fell on the broken city. Screens flashed in towers of glass. Factory belts whispered under fluorescent light. The supermarket doors opened and closed through the night, breathing cold air onto the pavement. Nothing had ended. Nothing had been redeemed by my arrival.",
+      "At the center, the brass pin protruded from the face like a wound that had healed badly. The old ribbons lay loose around it, no longer laws, only materials someone might tie again if no one kept watch."
+    ];
+  }
+
+  return source;
+}
+
+function insertionIndex(paragraphs, placement) {
+  if (placement.afterIncludes) {
+    const found = paragraphs.findIndex((paragraph) => paragraph.includes(placement.afterIncludes));
+    if (found !== -1) return found + 1;
+  }
+
+  if (placement.beforeFinalParagraph) return Math.max(0, paragraphs.length - 1);
+  if (typeof placement.afterParagraph === "number") return Math.min(paragraphs.length, placement.afterParagraph);
+  return Math.max(0, paragraphs.length - 1);
+}
+
+function applyPotentialInserts(section, paragraphs, inserts) {
+  const placements = potentialInsertPlacements.filter((placement) => placement.chapterNumber === section.chapterNumber);
+  let nextParagraphs = [...paragraphs];
+
+  for (const placement of placements) {
+    const prose = adaptPotentialInsert(inserts, placement);
+    const index = insertionIndex(nextParagraphs, placement);
+    nextParagraphs = [...nextParagraphs.slice(0, index), ...prose, ...nextParagraphs.slice(index)];
+  }
+
+  return nextParagraphs;
+}
+
 function escapeHtml(value) {
   return value
     .replace(/&/g, "&amp;")
@@ -872,7 +1024,7 @@ function insertTerzaInterlude(body, interlude, section) {
   return [...paragraphs.slice(0, insertBefore), interlude, ...paragraphs.slice(insertBefore)].join("\n\n");
 }
 
-function buildChapterBody(section, draftSection, poems) {
+function buildChapterBody(section, draftSection, poems, inserts) {
   const interlude = renderTerzaBlock(selectedTerzaForChapter(section, poems));
   if (section.chapterNumber === 1) return insertTerzaInterlude(chapterOneDraft, interlude, section);
   if (!draftSection) throw new Error(`Missing draft section for chapter ${section.chapterNumber}: ${section.title}`);
@@ -892,17 +1044,28 @@ function buildChapterBody(section, draftSection, poems) {
     ...(hingePassages[section.chapterNumber] ?? [])
   ];
   const insertAt = Math.max(1, paragraphs.length - 2);
-  const body = [...paragraphs.slice(0, insertAt), ...expansions, ...paragraphs.slice(insertAt)].join("\n\n");
+  const proseParagraphs = applyPotentialInserts(
+    section,
+    [...paragraphs.slice(0, insertAt), ...expansions, ...paragraphs.slice(insertAt)],
+    inserts
+  );
+  const body = proseParagraphs.join("\n\n");
   return insertTerzaInterlude(body, interlude, section);
 }
 
 function summarize(markdown, fallback) {
   const compact = markdown
+    .replace(/<aside[\s\S]*?<\/aside>/g, "")
+    .replace(/<[^>]+>/g, " ")
     .replace(/[#*_`>|-]/g, "")
     .replace(/\s+/g, " ")
     .trim();
-  const sentence = compact.match(/^(.{90,220}?[.!?])\s/)?.[1];
-  return sentence || compact.slice(0, 190) || fallback;
+  const sentences = compact.match(/[^.!?]+[.!?]/g)?.map((sentence) => sentence.trim()) ?? [];
+  const summary = sentences.slice(0, 2).join(" ");
+  if (summary && summary.length <= 220) return summary;
+  if (sentences[0]) return sentences[0];
+  const clipped = compact.slice(0, 190).replace(/\s+\S*$/, "").trim();
+  return clipped || fallback;
 }
 
 function wordCount(markdown) {
@@ -916,6 +1079,7 @@ async function main() {
   const draftParagraphs = extractParagraphs(draftPath);
   const draftSections = findDraftSections(draftParagraphs);
   const terzaPoems = loadTerzaPoems(terzaPath);
+  const potentialInserts = loadPotentialInserts(potentialInsertsPath);
   await fs.rm(outputDir, { recursive: true, force: true });
   await fs.mkdir(outputDir, { recursive: true });
 
@@ -935,7 +1099,7 @@ async function main() {
       );
     }
 
-    const body = buildChapterBody(section, draftSection, terzaPoems);
+    const body = buildChapterBody(section, draftSection, terzaPoems, potentialInserts);
     totalWords += wordCount(body);
     const subtitle = `Chapter ${section.chapterNumber}`;
     const filename = `${String(section.order).padStart(2, "0")}-${slugify(section.title)}.md`;

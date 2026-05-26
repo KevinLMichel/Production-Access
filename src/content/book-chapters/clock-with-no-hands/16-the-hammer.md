@@ -4,7 +4,7 @@ title: "The Hammer"
 subtitle: "Chapter 17"
 part: "Part IV - The School"
 order: 16
-summary: "The teacher placed the hammer on the desk. No one touched it. It lay there innocently, which is the most dangerous way for a tool to lie."
+summary: "The teacher placed the hammer on the desk. No one touched it."
 updated: "2026-05-26"
 ---
 

@@ -42,6 +42,14 @@ COMMON SENSE dissolved when exposed to air.
 
 THERE IS NO ALTERNATIVE was not tied at all. It was only painted to look like a knot.
 
+DESTINY remained beneath the last false knot, a narrow ribbon I had mistaken for shadow. It tightened when I touched it. From the rim came a chorus of warnings in many voices. Too late. Too early. Too costly. Too dangerous. Too complicated. Not your place. Not your hour. Not your hand.
+
+The snake slid across the brass and watched me with its lidless eye.
+
+I pulled.
+
+The ribbon came loose so suddenly I nearly fell. Behind it was only the pin, plain and scratched. No thunder sounded. No law of nature broke. The clock did not punish me. It waited, which was worse.
+
 The wheel stood free.
 
 The child rose.
@@ -55,6 +63,26 @@ My palm ached. The old cut had reopened. Blood gathered in the line.
 I lifted my hand.
 
 Returning to the clock felt less like coming back than becoming answerable to the beginning. The cities were still there. The plaques were still there. Late. Early. Inevitable. Now. But they no longer sounded equally true.
+
+I found the plaque marked INEVITABLE beneath the clock's central pin, lower than the others, almost hidden where the brass had gone green from age and fingerprints. LATE, EARLY, and NOW had been polished by many hands. This one was darker, as if people preferred not to touch it.
+
+The word had been screwed into the metal with four little black bolts. I knelt and saw that the bolts were not ancient. Their heads were sharp, their slots clean. Someone had installed the word recently and then rubbed soot around it to make it look old.
+
+I worked at the first screw with the hard edge of the broken ruler the child had left beside the wheel. It resisted. The clock groaned under me. From the cities around the rim came a murmur, not of alarm but of administration: forms shuffled, stamps fell, doors locked, engines resumed. I kept turning. A thin shaving of brass curled under my thumb.
+
+When the first screw came loose, the plaque shifted. Behind it, hidden in the cavity, were smaller labels stacked like contraband: POLICY, DESIGN, ORDERS, OWNERSHIP, FEAR, HABIT, CONVENIENCE. None had the majesty of fate. They were plain words on cheap tin, practical and handled, the kind of words men used in rooms with fluorescent lights when they wished not to tremble.
+
+I removed the second screw. The floor tilted. The snake appeared in the shadow of the pin, watching with one bright eye.
+
+“You will be blamed for the instability,” someone said from inside the clockwork.
+
+I removed the third screw.
+
+The plaque dropped before I could catch it. It struck the metal floor with a small, almost disappointing sound. No thunder followed. No god appeared. The clock did not collapse. It merely exposed the rectangular patch beneath, clean and untarnished, where the brass had been protected from the air.
+
+I pressed my palm there, and the metal was warm.
+
+The word had not been holding the world together.
 
 I saw then that a hand is not merely a pointer. It is a risk. To raise a hand is to interrupt the circle, to say that the hour is not complete without participation. The clock had been waiting not for permission from history, but for contact.
 

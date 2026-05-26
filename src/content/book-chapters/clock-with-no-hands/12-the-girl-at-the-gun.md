@@ -4,7 +4,7 @@ title: "The Girl at the Gun"
 subtitle: "Chapter 13"
 part: "Part III - The Tank and the City"
 order: 12
-summary: "The gun stood in the open, angled toward a sky full of machines. Its crew were girls. I saw that before I understood it."
+summary: "The gun stood in the open, angled toward a sky full of machines. Its crew were girls."
 updated: "2026-05-26"
 ---
 

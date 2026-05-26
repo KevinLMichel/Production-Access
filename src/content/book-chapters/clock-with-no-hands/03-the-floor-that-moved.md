@@ -4,11 +4,37 @@ title: "The Floor That Moved"
 subtitle: "Chapter 4"
 part: "Part II - The Factory"
 order: 3
-summary: "The floor moved beneath me in long black strips. I was inside a factory so large that weather formed under its roof."
+summary: "The floor moved beneath me in long black strips. The factory had aisles like a church."
 updated: "2026-05-26"
 ---
 
 The floor moved beneath me in long black strips.
+
+The factory had aisles like a church. The machines stood in rows, black and upright, each with its own vibration, its own iron throat. Belts moved where pews should have been. Hooks descended from overhead tracks with the patience of incense censers. The air smelled of oil, hot dust, wet wool, and something faintly sweet, like bread burned before it could feed anyone.
+
+No one spoke above a whisper. The workers bent their heads not in prayer but in timing. Their hands rose and fell according to the rhythm imposed from the ceiling, where pulleys turned like indifferent planets. A bell rang at intervals. When it rang, bodies shifted. When it rang again, bodies returned. The bell did not announce meaning. It divided endurance into units.
+
+At the far wall, where an altar might have stood, there was a sealed chute. Everything made in the factory disappeared into it. Shoes, rifles, toys, pills, forms, screens, diplomas, bolts, keys, artificial hands, wedding rings, eviction notices, medals. I waited to see what came back. Nothing did.
+
+A woman beside me polished the same metal plate again and again. Her face was young, but her eyes had the flat shine of something rubbed thin.
+
+“What is it for?” I asked.
+
+She did not look up. “For the next station.”
+
+“And after that?”
+
+“The next.”
+
+“And at the end?”
+
+She smiled as if I had asked whether the dead received wages. “There is no end on the floor.”
+
+Above us, through the high interior windows, I saw the glass office. Figures moved there in softened light. They looked down occasionally, the way saints in old paintings looked down from clouds, though without mercy and without wounds.
+
+A drop of oil fell from a chain onto my sleeve. I rubbed it between my fingers. It shone black, then gold, then black again.
+
+The machines continued their hymn, and every note had been extracted from a living hand.
 
 I was inside a factory so large that weather formed under its roof. Clouds of lint gathered above textile machines. Rain fell over a greenhouse where no plants grew. Snow drifted across a refrigerated hall of hanging meat. Sparks rose from welding stations and disappeared into rafters too high to see.
 

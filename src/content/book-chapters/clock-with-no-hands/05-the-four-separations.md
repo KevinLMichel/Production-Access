@@ -4,7 +4,7 @@ title: "The Four Separations"
 subtitle: "Chapter 6"
 part: "Part II - The Factory"
 order: 5
-summary: "I found the carpenter in a room filled with doors. He built them beautifully. Oak, pine, steel, glass, composite, carved, plain, fireproof, ornamental, reinforced."
+summary: "I found the carpenter in a room filled with doors. He built them beautifully."
 updated: "2026-05-26"
 ---
 

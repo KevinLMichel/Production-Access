@@ -4,11 +4,29 @@ title: "The Kitchen Chair"
 subtitle: "Chapter 12"
 part: "Part III - The Tank and the City"
 order: 11
-summary: "The artillery observer sat on the chair as if attending a lecture. He was a narrow man with spectacles cracked across one lens."
+summary: "The artillery observer sat on the chair as if attending a lecture. In the city, nothing remained only itself."
 updated: "2026-05-26"
 ---
 
 The artillery observer sat on the chair as if attending a lecture.
+
+In the city, nothing remained only itself. A door became a shield. A bathtub became a water tank. A child’s sled carried ammunition. A curtain, torn into strips, bound a wound. A piano lay on its side in the street, and soldiers stacked bricks inside it until it became part of a barricade. The keys still showed beneath the dust, white and black, waiting for hands that had fled or burned.
+
+I carried a kitchen chair through three rooms and a wall that was no longer a wall. One leg was shorter than the others. Someone had carved initials under the seat. At first I thought to use it for rest. Then a man with a field telephone saw it and told me to bring it to the window.
+
+He placed it carefully beside a hole blasted through the brick and stood on it to see over the sill. The chair creaked under him. He adjusted his periscope and began speaking numbers into the receiver. Across the river, guns answered. The floor lifted beneath my feet. Dust fell from the ceiling in pale sheets.
+
+When he stepped down, I saw that the chair seat had split.
+
+“It was someone’s,” I said.
+
+He glanced at the initials. “Everything was someone’s.”
+
+A shell burst in the street below. The door we had leaned against the window took the fragments. They struck it with a hard wooden drumming, and the door held. It had once opened between rooms. Now it kept metal from entering flesh.
+
+Later, when the firing moved away, I found a teacup unbroken in a cupboard whose back had been blown out. It was blue with a gold rim. I held it in both hands and waited for it to become useful.
+
+In that place, usefulness was a kind of death.
 
 He was a narrow man with spectacles cracked across one lens. His uniform was filthy, but his manner was careful, almost tender. He had placed a field telephone on a crate beside him. A periscope protruded through a shell hole in the wall. Each time he leaned toward it, dust fell from the ceiling onto his cap.
 

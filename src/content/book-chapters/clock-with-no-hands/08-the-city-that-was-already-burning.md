@@ -4,7 +4,7 @@ title: "The City That Was Already Burning"
 subtitle: "Chapter 9"
 part: "Part III - The Tank and the City"
 order: 8
-summary: "The city was white before it was fire. That was what struck me first. White apartment blocks, white civic buildings, pale factories, pale staircases climbing the high bank above the river."
+summary: "The city was white before it was fire. That was what struck me first."
 updated: "2026-05-26"
 ---
 

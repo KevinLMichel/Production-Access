@@ -4,7 +4,7 @@ title: "The Court of Those Who Paid"
 subtitle: "Chapter 26"
 part: "Part VII - The Court and the Hand"
 order: 25
-summary: "The court was circular and roofless. No bench stood above us. No flag. No throne. No seal. The absence of a judge made the place more severe, not less."
+summary: "The court was circular and roofless. No bench stood above us."
 updated: "2026-05-26"
 ---
 

@@ -4,7 +4,7 @@ title: "The Wake"
 subtitle: "Chapter 3"
 part: "Part I - The Clock"
 order: 2
-summary: "I stood on the deck of a ship crossing a black ocean. No stars showed. The sky was a lid. The ship moved without sails, without engine noise, without visible crew."
+summary: "I stood on the deck of a ship crossing a black ocean. No stars showed."
 updated: "2026-05-26"
 ---
 

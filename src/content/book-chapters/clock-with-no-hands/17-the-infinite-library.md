@@ -4,7 +4,7 @@ title: "The Infinite Library"
 subtitle: "Chapter 18"
 part: "Part IV - The School"
 order: 17
-summary: "The library had no center. Shelves climbed into cloud. Screens floated between ladders. Scrolls fed themselves into scanners."
+summary: "The library had no center. Shelves climbed into cloud."
 updated: "2026-05-26"
 ---
 

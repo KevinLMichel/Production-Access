@@ -4,7 +4,7 @@ title: "The Classroom Without a Roof"
 subtitle: "Chapter 15"
 part: "Part IV - The School"
 order: 14
-summary: "The classroom had no roof, but snow fell politely. It landed on desks, shoulders, rifles, textbooks, bandages, briefcases, lunch pails, helmets, laptops, hymnals, ledgers, and the kitchen ch"
+summary: "The classroom had no roof, but snow fell politely."
 updated: "2026-05-26"
 ---
 

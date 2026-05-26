@@ -4,11 +4,23 @@ title: "The Aisle of Freedom"
 subtitle: "Chapter 23"
 part: "Part VI - The Supermarket"
 order: 22
-summary: "The supermarket was open at midnight. Every shelf was full. That was the first cruelty. No famine emptiness, no barren racks, no honest scarcity."
+summary: "The supermarket was open at midnight. The aisle was named FREEDOM in red letters suspended from the ceiling."
 updated: "2026-05-26"
 ---
 
 The supermarket was open at midnight.
+
+The aisle was named FREEDOM in red letters suspended from the ceiling. Beneath the sign were fifty kinds of cereal, thirty kinds of soap, walls of bottled water, razors locked behind plastic, candles scented like forests cut down elsewhere, and a shelf of small flags made in countries whose names had been rubbed from the tags.
+
+A man pushed his cart slowly, studying two cans of beans as if one might forgive him and the other condemn him. A woman compared medicines under the cold fluorescent light. She held one bottle, then another, then looked at the child asleep against her shoulder. At the end of the aisle, a student stood before a display of notebooks and calculators, holding a loan agreement so long it dragged behind him like a ceremonial robe.
+
+The shelves were full. That was the obscenity. There was no famine here, no empty granary, no failed harvest, no locust swarm darkening the sun. There was abundance polished under lamps, arranged by color, guarded by prices, divided into choices so narrow they could be mistaken for liberty only by those trained not to look up.
+
+I picked up an apple. It was cold from the misting machine. Wax shone on its skin. The sticker bore a number, a country, and a barcode. No tree was mentioned. No hand. No soil. No back bent under weather. No truck driver awake at dawn. No cashier standing eight hours beneath the sign that promised freedom.
+
+At the checkout, the scanner chirped with each item, a bright little birdcall of permission. The woman with the medicine put one bottle back. The student signed his name. The man chose the cheaper beans and stared at the floor as if apologizing to his hunger.
+
+Above us, the sign rocked gently in the recycled air.
 
 Every shelf was full. That was the first cruelty. No famine emptiness, no barren racks, no honest scarcity. Cereal boxes stood in bright armies. Fruit shone under mist. Meat reddened behind glass. Medicine lined the pharmacy wall. Toys, shoes, tools, diapers, books, flowers, televisions, pillows, and bread stretched aisle after aisle beneath signs naming ideals.
 

@@ -4,7 +4,7 @@ title: "The Screen Was Not a Window"
 subtitle: "Chapter 19"
 part: "Part V - The Screen"
 order: 18
-summary: "The screen showed everything. War, weather, markets, murders, ceremonies, scandals, sports, famine, perfume, elections, medicine, debt relief, troop movements, recipes, celebrity apology, pa"
+summary: "The screen showed everything."
 updated: "2026-05-26"
 ---
 
@@ -15,6 +15,24 @@ War, weather, markets, murders, ceremonies, scandals, sports, famine, perfume, e
 Everyone watched as if facing daylight.
 
 I watched with them at first. It was difficult not to. The screen did not merely display images; it arranged breathing. People inhaled at threat, exhaled at reassurance, laughed when prompted, frowned when authorized. Their faces changed color with the cuts.
+
+For a long time I stood before the screen because everyone around me faced it with the solemnity of worship. It filled the wall from floor to ceiling. Blue light cooled our faces. On it, cities burned without smell, markets rose without hands, wars began without bodies, leaders spoke without breath, families laughed beside tables no one had labored to set. The screen showed everything and touched nothing.
+
+At first I mistook its brightness for openness. It had the shape of a window. It had movement beyond it. It seemed to offer the world. But when I stepped closer, I saw my own reflection faintly layered over the images. My eyes floated above a parade. My mouth crossed a battlefield. My forehead merged with a graph.
+
+A soft click came from beneath the floor.
+
+Then another.
+
+I looked down. Thin wires had risen from the boards and attached themselves to my shoes, my cuffs, the pulse at my wrist. They were delicate as fishing line. I tried to pull one free and felt a tug behind my eyes.
+
+Behind the screen, I heard machines sorting glass jars. Each jar held a small gray moth. Labels passed on a belt: ANGER, NOSTALGIA, FEAR OF LOSS, DESIRE TO BELONG, PRIVATE SHAME, UNNAMED LONGING. A technician held one jar to the light, inspected the trembling wings inside, and placed it in a crate marked ENGAGEMENT.
+
+I stepped behind the screen. No one stopped me. Perhaps they assumed no watcher would leave the light willingly.
+
+From behind, the screen was not luminous. It was wires, dust, heat, unpaid hands, and instructions taped to metal frames. A woman with tired eyes adjusted a dial labeled SERIOUSNESS. Another fed tragedies into a slot and trimmed away whatever did not fit.
+
+I touched the back of the screen. It was warm as skin and blind as stone.
 
 A man beside me said, “At least we can see the world.”
 

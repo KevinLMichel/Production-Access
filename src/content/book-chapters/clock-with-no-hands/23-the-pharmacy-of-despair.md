@@ -4,7 +4,7 @@ title: "The Pharmacy of Despair"
 subtitle: "Chapter 24"
 part: "Part VI - The Supermarket"
 order: 23
-summary: "At the back of the supermarket, the pharmacy had stainedglass windows. People knelt before the counter holding prescriptions, bills, pink slips, photographs, and small plastic cards that dec"
+summary: "At the back of the supermarket, the pharmacy had stainedglass windows."
 updated: "2026-05-26"
 ---
 

@@ -4,13 +4,17 @@ title: "Now"
 subtitle: "Chapter 30"
 part: "Part VII - The Court and the Hand"
 order: 29
-summary: "It did not move clockwise. It moved outward. The shadow of my hand lengthened across the face, not as command but as invitation."
+summary: "It did not move clockwise. It moved outward."
 updated: "2026-05-26"
 ---
 
 It did not move clockwise.
 
 It moved outward.
+
+The cities still burned and glittered around the rim. Trains moved through Berlin. Snow fell on the broken city. Screens flashed in towers of glass. Factory belts whispered under fluorescent light. The supermarket doors opened and closed through the night, breathing cold air onto the pavement. Nothing had ended. Nothing had been redeemed by my arrival.
+
+At the center, the brass pin protruded from the face like a wound that had healed badly. The old ribbons lay loose around it, no longer laws, only materials someone might tie again if no one kept watch.
 
 The shadow of my hand lengthened across the face, not as command but as invitation. From the center of the clock, each tick traveled toward the rim and entered a city.
 

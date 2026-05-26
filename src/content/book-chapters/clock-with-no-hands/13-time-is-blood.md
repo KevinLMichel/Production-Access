@@ -4,7 +4,7 @@ title: "Time Is Blood"
 subtitle: "Chapter 14"
 part: "Part III - The Tank and the City"
 order: 13
-summary: "A clock hung on the wall of a ruined school. Its face was cracked. Its hands were bone. I knew they were bone because they were not shaped like bone in the decorative sense, not ivory, not carved."
+summary: "A clock hung on the wall of a ruined school. Its face was cracked."
 updated: "2026-05-26"
 ---
 

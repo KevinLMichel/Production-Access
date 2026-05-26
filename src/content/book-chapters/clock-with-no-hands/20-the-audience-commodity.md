@@ -4,7 +4,7 @@ title: "The Audience Commodity"
 subtitle: "Chapter 21"
 part: "Part V - The Screen"
 order: 20
-summary: "The auctioneer had a voice made of polished wood. “Lot twentyseven,” he called. “Suburban anxiety, aged fortyfive to sixtyfive, moderate education, high purchasing power, fearresponsive, nos"
+summary: "The auctioneer had a voice made of polished wood. “Lot twentyseven,” he called."
 updated: "2026-05-26"
 ---
 

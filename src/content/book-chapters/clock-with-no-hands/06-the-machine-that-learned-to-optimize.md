@@ -4,7 +4,7 @@ title: "The Machine That Learned to Optimize"
 subtitle: "Chapter 7"
 part: "Part II - The Factory"
 order: 6
-summary: "The machine occupied a hall of its own. It had no single shape. At first it resembled an engine, then a server rack, then a loom, then a cathedral organ, then a furnace, then a brain drawn b"
+summary: "The machine occupied a hall of its own. It had no single shape."
 updated: "2026-05-26"
 ---
 
@@ -79,6 +79,22 @@ The machine's light reflected in my eyes. For a moment I could not tell whether 
 The factory had promised order, but it had ended by producing something larger than work. It had produced a way of seeing. Once the human being became an input, the rest followed with terrible ease. The tank waiting beneath my feet was not an interruption of the factory's logic. It was one of its children.
 
 Beneath me, the floor began to move faster. The belts flattened, widened, joined. Steel teeth rose along the edges. The whole factory floor tilted forward. The workers vanished behind smoke. The machine’s hum deepened into an engine growl.
+
+I first saw the tank before it had learned to move. It lay in pieces along the factory line, a body distributed among stations. Here was the plate that would become its side. Here the ring that would hold its turret. Here the teeth of the tread, stacked like black jawbones. Men and women bent over it with gauges and torches, feeding it measure by measure into existence.
+
+It did not look violent yet. It looked unfinished, almost helpless. Its armor arrived on hooks. Its engine came wrapped in oiled paper. Its gun barrel rested on wooden cradles like a sleeping limb. A boy swept filings from beneath it and whistled through his teeth. The tune was bright and ordinary. Sparks fell around him like brief orange insects.
+
+At one station, a woman stamped numbers into the metal. She struck each digit with a hammer and wiped the plate with her sleeve. I asked her whether she knew where it would go.
+
+“Forward,” she said.
+
+The word passed along the line. Forward. Forward. Forward. It was painted on crates, printed on forms, shouted by foremen, whispered by exhausted men washing their hands in gray basins. No one said toward what. The direction itself had become an answer.
+
+When the final plates were bolted on, the tank seemed less assembled than born. The engine coughed, caught, and filled the hall with blue smoke. The workers stepped back. Some smiled. Some crossed their arms. One man touched the armor lightly, as if proud of a son who would never write home.
+
+The doors at the end of the factory opened. Cold air rushed in. Beyond them stretched the steppe, pale and waiting.
+
+The tank rolled forward, dragging the factory’s shadow behind it.
 
 <aside class="clock-terza" aria-label="Terza rima interlude">
 <p><span>I met a machine with wings of white,</span>

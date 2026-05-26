@@ -24,6 +24,26 @@ I tried to tear one. It stretched like skin.
 
 The girl from the margin sat unstrapped near the window. The proctor had no strap for her because she had not accepted a desk. She wrote questions on the glass with her finger.
 
+The examination room had no roof, but the proctor behaved as if weather were a disciplinary problem. Snow fell onto the desks. Ash fell with it. He moved between the rows carrying a stack of papers against his chest, his shoes clicking on broken tile. Each page was warm when he placed it before us, as if it had just come from a machine.
+
+At the top of mine, in neat black letters, was written: SELECT THE SAFEST ANSWER.
+
+The first question asked which door should remain closed. The second asked which voice should be trusted because it was amplified. The third asked how many witnesses were necessary before suffering became official. The fourth offered four definitions of freedom, all of them involving permission.
+
+Around me, pencils moved quickly. The students wrote with the desperation of prisoners filling out release forms. A soldier in the front row chewed his eraser. A woman with factory oil under her nails stared at the ceiling, where clouds passed over us like unsupervised thoughts. A child beside me raised her hand.
+
+The proctor did not look at her. “Questions after the examination.”
+
+The room went still. Snow ticked softly against the desks.
+
+The proctor’s smile was thin and administrative. “Understanding is not required for completion.”
+
+I looked at my paper again. The safe answers waited in their little boxes. They had been printed before I arrived. They would remain after I left. I took my pencil and wrote across them, slowly enough for the proctor to see: Who benefits from my silence?
+
+The pencil point broke on the last word.
+
+The child smiled and offered me hers.
+
 What is a country for?
 
 Why is obedience praised more than care?
