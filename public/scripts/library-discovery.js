@@ -67,6 +67,7 @@ function initDiscovery() {
 
   function render() {
     let visible = 0;
+    const hasActiveFilter = Boolean(state.topic || state.shelf || state.status || state.q.trim());
     cards.forEach((card) => {
       const show = matches(card);
       card.hidden = !show;
@@ -75,6 +76,7 @@ function initDiscovery() {
 
     if (count) count.textContent = `${visible} ${visible === 1 ? "title" : "titles"} showing`;
     if (empty) empty.hidden = visible !== 0;
+    panel.classList.toggle("has-active-filter", hasActiveFilter);
     updatePressed(topicButtons, state.topic, "data-topic-filter");
     updatePressed(shelfButtons, state.shelf, "data-shelf-filter");
     updatePressed(statusButtons, state.status, "data-status-filter");

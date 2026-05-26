@@ -30,12 +30,27 @@ const downloadCount = books.filter((book) => book.data.formats.some((format) => 
         <a class="button button--primary" href="/books/">Browse the books</a>
         <a class="button button--ghost" href="/author/">About Kevin</a>
       </div>
+      <div class="hero-signal-strip" aria-label="Library experience highlights">
+        <span>Read online</span>
+        <span>Track progress locally</span>
+        <span>Return by signal</span>
+      </div>
     </div>
 
     <GlassPanel className="hero__stat-panel">
       <p class="eyebrow">Current archive</p>
       <strong>{books.length}</strong>
       <span>catalogued titles</span>
+      <div class="hero-stat-grid" aria-label="Library availability">
+        <div>
+          <b>{readableCount}</b>
+          <small>readable</small>
+        </div>
+        <div>
+          <b>{downloadCount}</b>
+          <small>PDFs</small>
+        </div>
+      </div>
       <div class="signal-bars" aria-hidden="true">
         <span></span><span></span><span></span><span></span>
       </div>
