@@ -1,0 +1,57 @@
+---
+const title = "The Clock with No Hands";
+const author = "Kevin L. Michel";
+const backCopy = [
+  "The Clock with No Hands is a surreal metaphysical novella about a narrator who enters a vast clock whose rim is built from cities, factories, classrooms, screens, supermarkets, battlefields, and courts.",
+  "Through thirty compact chapters and terza rima interludes, Kevin L. Michel follows a figure moving through the machinery of history and the excuses of civilization. The question grows sharper at every threshold: if no one made the machine, why does it keep obeying human desire?",
+  "Dark, symbolic, and urgent, this is a book about labor, war, education, propaganda, technology, consumer choice, and the return of moral agency. It does not ask whether the clock is real. It asks what your hand will do now."
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Full-wrap KDP cover for ${title} by ${author}.`} />
+    <title>{title} | Paperback Cover</title>
+    <link rel="stylesheet" href="/clock-with-no-hands-cover.css" />
+  </head>
+  <body>
+    <main class="cover-sheet" aria-label={`Full paperback cover for ${title}`}>
+      <div class="sheet-atmosphere" aria-hidden="true"></div>
+      <div class="back-chronograph" aria-hidden="true"></div>
+      <div class="front-art" aria-hidden="true"></div>
+      <div class="front-text-mask" aria-hidden="true"></div>
+      <div class="spine-field" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <section class="back-cover" aria-label="Back cover">
+        <p class="kicker">A metaphysical novella</p>
+        <h2>Time has no hands until someone raises one.</h2>
+        <div class="back-copy">
+          {backCopy.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <p class="back-footer">A clock without hands. A civilization waiting for agency.</p>
+      </section>
+
+      <section class="spine" aria-label="Book spine">
+        <span class="spine-title">THE CLOCK WITH NO HANDS</span>
+        <span class="spine-author">{author}</span>
+      </section>
+
+      <section class="front-cover" aria-label="Front cover">
+        <h1 class="cover-title" aria-label={title}>
+          <span class="title-the">The</span>
+          <span class="title-clock">Clock</span>
+          <span class="title-with">With</span>
+          <span class="title-no-hands">No Hands</span>
+        </h1>
+        <p class="front-author">{author}</p>
+      </section>
+
+      <div class="barcode-reserve" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>
