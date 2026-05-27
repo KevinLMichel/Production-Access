@@ -26,7 +26,7 @@ He distributed papers.
 
 The first question read: Which of the following is inevitable?
 
-A. The existing arrangement.B. The existing arrangement.C. The existing arrangement.D. All of the above.
+A. The existing arrangement. B. The existing arrangement. C. The existing arrangement. D. All of the above.
 
 The second: Who benefits when you obey?
 

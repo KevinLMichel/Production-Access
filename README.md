@@ -134,6 +134,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 191 pages at 5.5 x 8.5 inches.
 
+## The Clock with No Hands PDF
+
+Regenerate the downloadable The Clock with No Hands interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:clock-with-no-hands
+```
+
+The generated file is committed at `public/downloads/the-clock-with-no-hands-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 144 pages at 5.5 x 8.5 inches.
+
 ## Freedom by Design Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

@@ -697,10 +697,11 @@ function decodeXml(value) {
 
 function cleanText(value) {
   return value
-    .replace(/\u00e2\u20ac\u0153|\u00e2\u20ac\ufffd|\u00e2\u20ac/g, '"')
     .replace(/\u00e2\u20ac\u2122|\u00e2\u20ac\u02dc/g, "'")
+    .replace(/\u00e2\u20ac\u0153|\u00e2\u20ac\ufffd|\u00e2\u20ac\u009d/g, '"')
     .replace(/\u00e2\u20ac\u201c|\u00e2\u20ac\u009d/g, "-")
     .replace(/\u00e2\u20ac\u00a6/g, "...")
+    .replace(/\u00e2\u20ac/g, '"')
     .replace(/Ã¢â‚¬Å“|Ã¢â‚¬ï¿½/g, '"')
     .replace(/Ã¢â‚¬Ëœ|Ã¢â‚¬â„¢/g, "'")
     .replace(/Ã¢â‚¬â€|Ã¢â‚¬â€œ/g, "-")
@@ -930,6 +931,15 @@ function polishChapterParagraphs(section, paragraphs) {
     return paragraphs.map((paragraph) => {
       if (paragraph === "It became a hammer.") {
         return "By the time I looked back, it had become a hammer.";
+      }
+      return paragraph;
+    });
+  }
+
+  if (section.chapterNumber === 15) {
+    return paragraphs.map((paragraph) => {
+      if (paragraph === "A. The existing arrangement.B. The existing arrangement.C. The existing arrangement.D. All of the above.") {
+        return "A. The existing arrangement. B. The existing arrangement. C. The existing arrangement. D. All of the above.";
       }
       return paragraph;
     });

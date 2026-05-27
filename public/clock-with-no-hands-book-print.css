@@ -1,0 +1,460 @@
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.58in 0.76in;
+}
+
+@page front {
+  margin: 0.72in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page toc:left {
+  margin: 0.7in 0.82in 0.72in 0.58in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page toc:right {
+  margin: 0.7in 0.58in 0.72in 0.82in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page part {
+  margin: 0.68in 0.58in 0.76in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page chapter {
+  margin: 0.68in 0.58in 0.76in;
+}
+
+@page chapter:left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Kevin L. Michel";
+    color: #564b3e;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #564b3e;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.1pt;
+  }
+}
+
+@page chapter:right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "The Clock with No Hands";
+    color: #564b3e;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #564b3e;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8.1pt;
+  }
+}
+
+@page chapter:first {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+@page chapter:blank {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page back {
+  margin: 0.72in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #151311;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 10.35pt;
+  line-height: 1.4;
+}
+
+body {
+  background: #fff;
+  counter-reset: page -1;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+blockquote {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.half-title-page,
+.title-page,
+.copyright-page {
+  page: front;
+}
+
+.half-title-page {
+  align-items: center;
+  break-after: right;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.half-title-page h1,
+.title-page h1 {
+  color: #14120f;
+  font-size: 29pt;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+  margin: 0 auto;
+  max-width: 3.85in;
+}
+
+.title-page {
+  align-items: center;
+  break-after: page;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.title-page h1 {
+  font-size: 34pt;
+  margin: 0.28in auto 0.46in;
+}
+
+.title-eyebrow,
+.title-author,
+.chapter-kicker,
+.toc-chapter,
+.toc-part span {
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title-eyebrow {
+  color: #9f6e2e;
+  font-size: 8.2pt;
+  font-weight: 700;
+}
+
+.title-author {
+  color: #14120f;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.copyright-page {
+  break-after: right;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 8.2pt;
+  line-height: 1.42;
+  padding-top: 0.16in;
+}
+
+.copyright-page p {
+  margin-bottom: 0.14in;
+}
+
+.toc-page {
+  break-after: page;
+  page: toc;
+}
+
+.toc-page h1,
+.about-author-page h1 {
+  color: #14120f;
+  font-size: 24pt;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin-bottom: 0.26in;
+}
+
+.toc-page ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-page li {
+  border-bottom: 0.65pt solid rgba(20, 18, 15, 0.16);
+  break-inside: avoid;
+  padding: 0.041in 0;
+}
+
+.toc-page .toc-part-row {
+  border-bottom: 0;
+  padding: 0.105in 0 0.028in;
+}
+
+.toc-entry {
+  display: grid;
+  gap: 0.08in;
+  grid-template-columns: 0.68in minmax(0, 1fr) 0.38in;
+}
+
+.toc-entry::after {
+  content: attr(data-page);
+  color: #14120f;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 8.1pt;
+  font-weight: 700;
+  text-align: right;
+}
+
+.toc-title {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-chapter {
+  color: #8b5d25;
+  font-size: 6.8pt;
+  font-weight: 700;
+}
+
+.toc-part span {
+  color: #a64533;
+  font-size: 7.2pt;
+  font-weight: 700;
+}
+
+.book-body {
+  counter-reset: chapter;
+}
+
+.part-opener {
+  align-content: center;
+  break-before: page;
+  display: grid;
+  min-height: 6.85in;
+  page: part;
+  text-align: center;
+}
+
+.part-opener h1 {
+  color: #14120f;
+  font-size: 24pt;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 0;
+}
+
+.print-chapter {
+  break-before: page;
+  page: chapter;
+}
+
+.chapter-opener {
+  margin-bottom: 0.3in;
+  padding-top: 0.62in;
+}
+
+.chapter-kicker {
+  color: #9f6e2e;
+  font-size: 7.7pt;
+  font-weight: 700;
+  margin-bottom: 0.14in;
+}
+
+.chapter-opener h1 {
+  color: #14120f;
+  font-size: 21pt;
+  letter-spacing: -0.032em;
+  line-height: 1.05;
+  margin-bottom: 0.12in;
+}
+
+.chapter-body {
+  hyphens: auto;
+  orphans: 3;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-align-last: left;
+  widows: 3;
+}
+
+.chapter-body h2,
+.chapter-body h3 {
+  break-after: avoid;
+  color: #14120f;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.chapter-body h2 {
+  font-size: 13.2pt;
+  margin: 0.28in 0 0.1in;
+}
+
+.chapter-body h3 {
+  color: #6c4a22;
+  font-size: 11.1pt;
+  margin: 0.22in 0 0.08in;
+}
+
+.chapter-body p {
+  margin: 0;
+}
+
+.chapter-body p + p {
+  text-indent: 0.2in;
+}
+
+.chapter-body h2 + p,
+.chapter-body h3 + p,
+.chapter-body blockquote + p,
+.chapter-body aside + p,
+.chapter-body ul + p,
+.chapter-body ol + p {
+  text-indent: 0;
+}
+
+.chapter-body blockquote {
+  border-bottom: 0.75pt solid rgba(159, 110, 46, 0.42);
+  border-top: 0.75pt solid rgba(159, 110, 46, 0.42);
+  color: #14120f;
+  font-size: 9.95pt;
+  font-style: italic;
+  line-height: 1.37;
+  margin: 0.18in 0.22in;
+  padding: 0.08in 0;
+  text-align: left;
+}
+
+.chapter-body ul,
+.chapter-body ol {
+  margin: 0 0 0.14in 0.22in;
+  padding: 0;
+  text-align: left;
+}
+
+.chapter-body li {
+  margin-bottom: 0.05in;
+}
+
+.clock-terza {
+  break-inside: avoid;
+  border-bottom: 0.8pt solid rgba(159, 110, 46, 0.52);
+  border-top: 0.8pt solid rgba(159, 110, 46, 0.52);
+  color: #211b16;
+  font-size: 9.25pt;
+  font-style: italic;
+  line-height: 1.38;
+  margin: 0.24in 0.18in;
+  padding: 0.12in 0.08in;
+  text-align: left;
+}
+
+.clock-terza p {
+  margin: 0;
+  text-indent: 0;
+}
+
+.clock-terza p + p {
+  margin-top: 0.085in;
+}
+
+.clock-terza span {
+  display: block;
+}
+
+.about-author-page {
+  break-before: page;
+  page: back;
+  padding-top: 1.12in;
+}
+
+.about-author-page p {
+  font-size: 10.4pt;
+  line-height: 1.45;
+  max-width: 3.9in;
+}
