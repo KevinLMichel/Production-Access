@@ -1,6 +1,6 @@
-# Kevin L. Michel - The Library
+# Production Access
 
-An Astro-powered catalogue hub for books by Kevin L. Michel.
+An Astro-powered production-content fork of Kevin L. Michel - The Library.
 
 ## Local Development
 
