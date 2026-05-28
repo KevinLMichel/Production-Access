@@ -3,97 +3,122 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BookCard from "../components/BookCard.astro";
 import FeaturedBook from "../components/FeaturedBook.astro";
 import GlassPanel from "../components/GlassPanel.astro";
-import { getAllTopics, getBooks, getBooksByShelf, getFeaturedBook } from "../lib/books";
+import { getBooks, getBooksByShelf, getFeaturedBook } from "../lib/books";
 import { siteMeta } from "../lib/siteMeta";
 
 const books = await getBooks();
 const featuredBook = await getFeaturedBook();
 const featured = getBooksByShelf(books, "Featured").slice(0, 6);
-const active = getBooksByShelf(books, "New & Active").slice(0, 6);
 const fieldGuides = getBooksByShelf(books, "Field Guides").slice(0, 6);
-const comingSoon = getBooksByShelf(books, "Coming Soon").slice(0, 8);
-const topics = getAllTopics(books).slice(0, 18);
+const activeBuilds = books
+  .filter((book) => book.data.status === "revision")
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const pdfBuilds = books.filter((book) => book.data.formats.some((format) => format.href?.toLowerCase().endsWith(".pdf")));
 const readableCount = books.filter((book) => book.data.status === "available" || book.data.formats.some((format) => format.href)).length;
-const downloadCount = books.filter((book) => book.data.formats.some((format) => format.href?.toLowerCase().endsWith(".pdf"))).length;
+const downloadCount = pdfBuilds.length;
+
+const studioModules = [
+  {
+    label: "Manuscript systems",
+    title: "Draft, expand, revise",
+    copy: "Turn outlines, notes, DOCX packets, story banks, and rough chapters into coherent book manuscripts."
+  },
+  {
+    label: "Book worlds",
+    title: "Readable web editions",
+    copy: "Build full online reader experiences with chapters, covers, themes, reader tools, and catalogue structure."
+  },
+  {
+    label: "PDF interiors",
+    title: "Trade-ready interiors",
+    copy: "Generate 5.5 x 8.5 interiors with front matter, running heads, tables of contents, indexes when useful, and careful typography."
+  },
+  {
+    label: "Cover workflows",
+    title: "KDP cover wraps",
+    copy: "Create full paperback spreads from template geometry, live CSS text, high-resolution exports, and KDP-safe production checks."
+  }
+];
+
+const workflowSteps = ["Source", "Structure", "Manuscript", "Book World", "PDF", "Cover", "Launch"];
 ---
 
-<BaseLayout title={siteMeta.displayTitle} description={siteMeta.description} bodyClass="home-page">
-  <section class="hero">
-    <div class="hero__copy">
-      <p class="eyebrow">Book Access</p>
-      <h1>Kevin L. Michel <span>The Library</span></h1>
+<BaseLayout title={siteMeta.displayTitle} description={siteMeta.description} bodyClass="home-page production-home">
+  <section class="production-hero">
+    <div class="production-hero__copy">
+      <p class="eyebrow">Production Access Studio</p>
+      <h1>Live books, built from raw signal to finished system.</h1>
       <p class="hero__lede">
-        A future-facing catalogue for the collected works: field guides, philosophical manuals,
-        parables, poems, strategy books, and living manuscripts.
+        Production Access is the working floor for manuscript expansion, ghostwriting-ready builds,
+        web-readable book worlds, PDF interiors, KDP cover wraps, and publishing experiments.
       </p>
       <div class="hero__actions">
-        <a class="button button--primary" href="/books/">Browse the books</a>
-        <a class="button button--ghost" href="/author/">About Kevin</a>
+        <a class="button button--primary" href="/live-builds/">Explore live builds</a>
+        <a class="button button--ghost" href="/books/">View example books</a>
       </div>
-      <div class="hero-signal-strip" aria-label="Library experience highlights">
-        <span>Read online</span>
-        <span>Track progress locally</span>
-        <span>Return by signal</span>
+      <div class="hero-signal-strip" aria-label="Production Access capabilities">
+        <span>Manuscripts</span>
+        <span>Book worlds</span>
+        <span>PDF interiors</span>
+        <span>Cover wraps</span>
       </div>
     </div>
 
-    <GlassPanel className="hero__stat-panel">
-      <p class="eyebrow">Current archive</p>
-      <strong>{books.length}</strong>
-      <span>catalogued titles</span>
-      <div class="hero-stat-grid" aria-label="Library availability">
+    <GlassPanel className="production-hero__panel">
+      <p class="eyebrow">Current production floor</p>
+      <strong>{activeBuilds.length}</strong>
+      <span>active builds</span>
+      <div class="hero-stat-grid" aria-label="Production Access archive">
         <div>
           <b>{readableCount}</b>
-          <small>readable</small>
+          <small>readable examples</small>
         </div>
         <div>
           <b>{downloadCount}</b>
-          <small>PDFs</small>
+          <small>PDF workflows</small>
         </div>
       </div>
-      <div class="signal-bars" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
+      <div class="production-orbit" aria-hidden="true">
+        {workflowSteps.map((step) => <span>{step}</span>)}
       </div>
     </GlassPanel>
   </section>
 
-  <section class="library-dashboard" data-library-dashboard aria-labelledby="dashboard-heading">
+  <section class="production-modules" aria-labelledby="production-modules-heading">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Reader OS</p>
-        <h2 id="dashboard-heading">Your Library dashboard</h2>
+        <p class="eyebrow">Studio capabilities</p>
+        <h2 id="production-modules-heading">From manuscript chaos to publishable assets</h2>
       </div>
-      <a class="text-link" href="/books/">Open full catalogue</a>
+      <a class="text-link" href="/live-builds/#workflow">See workflow</a>
     </div>
+    <div class="production-module-grid">
+      {studioModules.map((module) => (
+        <GlassPanel className="production-module">
+          <p class="eyebrow">{module.label}</p>
+          <h3>{module.title}</h3>
+          <p>{module.copy}</p>
+        </GlassPanel>
+      ))}
+    </div>
+  </section>
 
-    <div class="dashboard-grid">
-      <GlassPanel className="dashboard-card dashboard-card--continue">
-        <p class="eyebrow">Continue reading</p>
-        <h3 data-dashboard-title>No active session yet</h3>
-        <p data-dashboard-copy>Open any readable book and the Library will remember your place on this device.</p>
-        <a class="button button--ghost" href="/books/" data-dashboard-link>Choose a book</a>
-      </GlassPanel>
-
-      <GlassPanel className="dashboard-card">
-        <p class="eyebrow">Available now</p>
-        <strong>{readableCount}</strong>
-        <span>readable titles</span>
-      </GlassPanel>
-
-      <GlassPanel className="dashboard-card">
-        <p class="eyebrow">Downloads</p>
-        <strong>{downloadCount}</strong>
-        <span>PDF interiors</span>
-      </GlassPanel>
-
-      <GlassPanel className="dashboard-card dashboard-card--signals">
-        <p class="eyebrow">Recent signals</p>
-        <div class="dashboard-signals" data-dashboard-signals>
-          <span>clarity</span>
-          <span>discipline</span>
-          <span>agency</span>
-        </div>
-      </GlassPanel>
+  <section class="production-pipeline" aria-labelledby="pipeline-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Active board</p>
+        <h2 id="pipeline-heading">Live builds in motion</h2>
+      </div>
+      <a class="text-link" href="/live-builds/">Open full board</a>
+    </div>
+    <div class="pipeline-preview-grid">
+      {activeBuilds.slice(0, 5).map((book) => (
+        <a class="pipeline-preview-card" href={`/books/${book.id}/`}>
+          <span>{book.data.statusLabel}</span>
+          <strong>{book.data.title}</strong>
+          <small>{book.data.dek}</small>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -101,70 +126,69 @@ const downloadCount = books.filter((book) => book.data.formats.some((format) => 
 
   <section class="shelf-section" aria-labelledby="featured-heading">
     <div class="section-heading">
-      <p class="eyebrow">Start here</p>
-      <h2 id="featured-heading">Featured works</h2>
+      <div>
+        <p class="eyebrow">Proof of process</p>
+        <h2 id="featured-heading">Example book worlds</h2>
+      </div>
+      <a class="text-link" href="/books/">Full catalogue</a>
     </div>
     <div class="rail-shell" data-rail-shell>
-      <div class="rail-controls" aria-label="Featured works carousel controls">
+      <div class="rail-controls" aria-label="Example book world carousel controls">
         <span class="rail-hint">Scroll, drag, or let it orbit</span>
         <div class="rail-buttons">
-          <button type="button" data-rail-prev aria-controls="featured-rail" aria-label="Previous featured works">‹</button>
-          <button type="button" data-rail-next aria-controls="featured-rail" aria-label="Next featured works">›</button>
+          <button type="button" data-rail-prev aria-controls="featured-rail" aria-label="Previous example book worlds">&lsaquo;</button>
+          <button type="button" data-rail-next aria-controls="featured-rail" aria-label="Next example book worlds">&rsaquo;</button>
         </div>
       </div>
-      <div class="book-rail" id="featured-rail" aria-label="Featured works carousel">
+      <div class="book-rail" id="featured-rail" aria-label="Example book worlds carousel">
         {featured.map((book) => <BookCard book={book} variant="shelf" />)}
       </div>
     </div>
   </section>
 
-  <section class="shelf-section" aria-labelledby="active-heading">
-    <div class="section-heading">
-      <p class="eyebrow">In motion</p>
-      <h2 id="active-heading">New and active</h2>
+  <section class="production-workflow-strip" id="workflow" aria-labelledby="workflow-heading">
+    <div>
+      <p class="eyebrow">Production line</p>
+      <h2 id="workflow-heading">The repeatable build path</h2>
     </div>
-    <div class="rail-shell" data-rail-shell>
-      <div class="rail-controls" aria-label="New and active carousel controls">
-        <span class="rail-hint">Pause, browse, continue</span>
-        <div class="rail-buttons">
-          <button type="button" data-rail-prev aria-controls="active-rail" aria-label="Previous new and active books">‹</button>
-          <button type="button" data-rail-next aria-controls="active-rail" aria-label="Next new and active books">›</button>
-        </div>
-      </div>
-      <div class="book-rail" id="active-rail" aria-label="New and active carousel">
-        {active.map((book) => <BookCard book={book} variant="shelf" />)}
-      </div>
-    </div>
+    <ol>
+      {workflowSteps.map((step) => <li>{step}</li>)}
+    </ol>
   </section>
 
-  <section class="split-showcase">
+  <section class="split-showcase production-split">
     <GlassPanel>
-      <p class="eyebrow">Browse by signal</p>
-      <h2>Topics across the library</h2>
-      <div class="topic-cloud">
-        {topics.map((topic) => <a href={`/books/?topic=${encodeURIComponent(topic)}`}>{topic}</a>)}
-      </div>
+      <p class="eyebrow">Project intake</p>
+      <h2>Ghostwriting and client builds are next</h2>
+      <p>
+        The intake layer is intentionally not live yet. For now, this site demonstrates the
+        production system: turning source material into structured books, web editions,
+        downloadable interiors, and cover assets.
+      </p>
+      <a class="button button--primary" href="/live-builds/#project-intake">View intake plan</a>
     </GlassPanel>
     <GlassPanel>
-      <p class="eyebrow">Coming shelf</p>
-      <h2>Future catalogue records</h2>
+      <p class="eyebrow">PDF-ready examples</p>
+      <h2>Interior workflows already running</h2>
       <ul class="compact-list">
-        {comingSoon.map((book) => <li><a href={`/books/${book.id}/`}>{book.data.title}</a></li>)}
+        {pdfBuilds.slice(0, 6).map((book) => <li><a href={`/books/${book.id}/`}>{book.data.title}</a></li>)}
       </ul>
     </GlassPanel>
   </section>
 
   <section class="shelf-section" aria-labelledby="field-guide-heading">
     <div class="section-heading">
-      <p class="eyebrow">Practical shelf</p>
-      <h2 id="field-guide-heading">Field guides and strategy books</h2>
+      <div>
+        <p class="eyebrow">Systems shelf</p>
+        <h2 id="field-guide-heading">Field guides and strategy builds</h2>
+      </div>
     </div>
     <div class="rail-shell" data-rail-shell>
       <div class="rail-controls" aria-label="Field guide carousel controls">
         <span class="rail-hint">Manual controls stay active</span>
         <div class="rail-buttons">
-          <button type="button" data-rail-prev aria-controls="field-guide-rail" aria-label="Previous field guides and strategy books">‹</button>
-          <button type="button" data-rail-next aria-controls="field-guide-rail" aria-label="Next field guides and strategy books">›</button>
+          <button type="button" data-rail-prev aria-controls="field-guide-rail" aria-label="Previous field guides and strategy books">&lsaquo;</button>
+          <button type="button" data-rail-next aria-controls="field-guide-rail" aria-label="Next field guides and strategy books">&rsaquo;</button>
         </div>
       </div>
       <div class="book-rail" id="field-guide-rail" aria-label="Field guides and strategy books carousel">

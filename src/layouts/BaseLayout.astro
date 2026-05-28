@@ -15,9 +15,9 @@ const {
 } = Astro.props;
 
 const navItems = [
-  { href: "/", label: "Library" },
+  { href: "/", label: "Studio" },
+  { href: "/live-builds/", label: "Live Builds" },
   { href: "/books/", label: "Books" },
-  { href: "/author/", label: "Author" },
   { href: "/about/", label: "About" }
 ];
 ---
@@ -37,11 +37,11 @@ const navItems = [
   <body class={bodyClass}>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="Kevin L. Michel Library home">
-          <span class="brand__mark">KL</span>
+        <a class="brand" href="/" aria-label="Production Access home">
+          <span class="brand__mark">PA</span>
           <span>
-            <strong>Kevin L. Michel</strong>
-            <small>The Library</small>
+            <strong>Production Access</strong>
+            <small>Live Book Studio</small>
           </span>
         </a>
 
@@ -56,7 +56,7 @@ const navItems = [
 
       <footer class="site-footer">
         <p>{siteMeta.displayTitle}. {siteMeta.subtitle}.</p>
-        <p>Books, manuscripts, parables, field guides, and philosophical work by Kevin L. Michel.</p>
+        <p>Manuscript development, book worlds, PDF interiors, cover workflows, and production-ready publishing systems.</p>
       </footer>
     </div>
   </body>

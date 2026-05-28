@@ -1,9 +1,9 @@
 export const siteMeta = {
-  title: "Kevin L. Michel - The Library",
-  displayTitle: "Kevin L. Michel — The Library",
-  subtitle: "The Collected Works",
+  title: "Production Access",
+  displayTitle: "Production Access",
+  subtitle: "Live book production studio",
   description:
-    "A luminous catalogue hub for books, living manuscripts, field guides, parables, poems, and philosophical works by Kevin L. Michel.",
+    "A live content production studio for book worlds, ghostwriting-ready manuscripts, downloadable interiors, cover workflows, and publishing systems.",
   author: "Kevin L. Michel",
   url: "https://production-access.onrender.com"
 };

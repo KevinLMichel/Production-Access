@@ -1,0 +1,147 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GlassPanel from "../components/GlassPanel.astro";
+import StatusPill from "../components/StatusPill.astro";
+import { getBooks, bookHref, formatDate } from "../lib/books";
+import { bookVisualThemeStyle } from "../lib/bookVisualThemes";
+import { siteMeta } from "../lib/siteMeta";
+
+const books = await getBooks();
+const activeBuilds = books
+  .filter((book) => book.data.status === "revision")
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+
+const stageGroups = [
+  {
+    title: "Live Draft",
+    deck: "Books actively being written, expanded, and shaped in public.",
+    books: activeBuilds.filter((book) => book.data.statusLabel === "Live draft")
+  },
+  {
+    title: "Work in Progress",
+    deck: "Structured projects with reader pages and revision space still open.",
+    books: activeBuilds.filter((book) => book.data.statusLabel === "Work in progress")
+  },
+  {
+    title: "Final Draft",
+    deck: "Drafts close to completion, ready for polishing, interiors, and release work.",
+    books: activeBuilds.filter((book) => book.data.statusLabel === "Final draft")
+  },
+  {
+    title: "Living Manuscript",
+    deck: "Projects intentionally kept open for iterative improvement.",
+    books: activeBuilds.filter((book) => book.data.statusLabel === "Living manuscript")
+  },
+  {
+    title: "Completed Example Builds",
+    deck: "Readable examples that show the production stack in action.",
+    books: books.filter((book) => book.data.status === "available").slice(0, 12)
+  }
+];
+
+const workflow = [
+  ["Source Material", "Notes, DOCX files, outlines, transcripts, image references, story banks, or raw ideas."],
+  ["Manuscript Expansion", "Chapter architecture, continuity passes, prose development, exercises, and editorial review."],
+  ["Book World", "Catalogue metadata, covers, themed hubs, chapter routes, reader tools, and responsive layouts."],
+  ["Reader UX", "Progress memory, local highlights, discovery filters, mobile polish, and immersive reading surfaces."],
+  ["PDF Interior", "Trade-size pages, front matter, contents, running heads, indexes when useful, and KDP-safe export."],
+  ["Cover Wrap", "Template geometry, spine math, back copy, front art, high-resolution flattening, and previewer checks."],
+  ["Deployment", "Static build, GitHub push, Render deployment, and a stable web edition."]
+];
+---
+
+<BaseLayout
+  title={`Live Builds | ${siteMeta.displayTitle}`}
+  description="Active Production Access book builds, project stages, and the repeatable publishing workflow."
+  bodyClass="production-live-builds"
+>
+  <section class="live-build-hero">
+    <div>
+      <p class="eyebrow">Live production board</p>
+      <h1>Books move from signal to system here.</h1>
+      <p>
+        This page tracks the public proof-of-process layer: active manuscripts, near-final drafts,
+        living projects, completed examples, and the workflow that turns raw material into production-ready assets.
+      </p>
+    </div>
+    <GlassPanel className="live-build-hero__panel">
+      <span>{activeBuilds.length}</span>
+      <strong>active builds</strong>
+      <p>Current projects with revision status, live reader pages, or final-draft development.</p>
+      <a class="button button--primary" href="#project-intake">Project intake coming soon</a>
+    </GlassPanel>
+  </section>
+
+  <section class="build-board" aria-labelledby="build-board-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Active project board</p>
+        <h2 id="build-board-heading">Build stages</h2>
+      </div>
+      <a class="text-link" href="/books/">Browse all example builds</a>
+    </div>
+
+    <div class="build-stage-grid">
+      {stageGroups.map((group) => (
+        <section class="build-stage" aria-labelledby={`stage-${group.title.toLowerCase().replaceAll(" ", "-")}`}>
+          <header>
+            <p class="eyebrow">{group.books.length} builds</p>
+            <h3 id={`stage-${group.title.toLowerCase().replaceAll(" ", "-")}`}>{group.title}</h3>
+            <p>{group.deck}</p>
+          </header>
+          <div class="build-stage__cards">
+            {group.books.length > 0 ? (
+              group.books.map((book) => (
+                <a class="build-card" href={bookHref(book)} style={bookVisualThemeStyle(book)}>
+                  {book.data.cover && <img src={book.data.cover} alt="" loading="lazy" />}
+                  <div>
+                    <StatusPill status={book.data.status} label={book.data.statusLabel} />
+                    <strong>{book.data.title}</strong>
+                    <span>{book.data.dek}</span>
+                    <small>Updated {formatDate(book.data.updated)}</small>
+                  </div>
+                </a>
+              ))
+            ) : (
+              <p class="build-stage__empty">No builds in this lane yet.</p>
+            )}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+
+  <section class="workflow-lab" id="workflow" aria-labelledby="workflow-lab-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Production workflow</p>
+        <h2 id="workflow-lab-heading">The repeatable build system</h2>
+      </div>
+    </div>
+    <div class="workflow-lab__grid">
+      {workflow.map(([label, copy], index) => (
+        <GlassPanel className="workflow-step">
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <h3>{label}</h3>
+          <p>{copy}</p>
+        </GlassPanel>
+      ))}
+    </div>
+  </section>
+
+  <section class="project-intake" id="project-intake">
+    <GlassPanel className="project-intake__panel">
+      <p class="eyebrow">Coming soon</p>
+      <h2>Client and ghostwriting intake is the next layer.</h2>
+      <p>
+        Production Access is not taking form submissions or payments yet. The first version is proof:
+        a working studio for book drafting, book-world construction, PDF interiors, cover wraps, and deployment.
+        When intake opens, this section will explain how a project moves from source packet to finished deliverables.
+      </p>
+      <div class="project-intake__actions">
+        <a class="button button--primary" href="/books/">View example builds</a>
+        <a class="button button--ghost" href="/">Return to studio</a>
+      </div>
+    </GlassPanel>
+  </section>
+</BaseLayout>
