@@ -4733,6 +4733,7 @@ body.theme-clock-with-no-hands .clock-terza span {
 }
 
 .home-page .book-rail[data-loop-ready="true"] {
+  scroll-snap-type: none;
   scrollbar-color: rgba(39, 216, 255, 0.54) rgba(255, 255, 255, 0.08);
   scrollbar-width: thin;
 }

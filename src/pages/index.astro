@@ -8,8 +8,8 @@ import { siteMeta } from "../lib/siteMeta";
 
 const books = await getBooks();
 const featuredBook = await getFeaturedBook();
-const featured = getBooksByShelf(books, "Featured").slice(0, 6);
-const fieldGuides = getBooksByShelf(books, "Field Guides").slice(0, 6);
+const featured = getBooksByShelf(books, "Featured").slice(0, 14);
+const fieldGuides = getBooksByShelf(books, "Field Guides").slice(0, 14);
 const activeBuilds = books
   .filter((book) => book.data.status === "revision")
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
@@ -134,7 +134,7 @@ const workflowSteps = ["Source", "Structure", "Manuscript", "Book World", "PDF",
     </div>
     <div class="rail-shell" data-rail-shell>
       <div class="rail-controls" aria-label="Example book world carousel controls">
-        <span class="rail-hint">Scroll, drag, or let it orbit</span>
+        <span class="rail-hint">Use arrows, drag, or let it orbit</span>
         <div class="rail-buttons">
           <button type="button" data-rail-prev aria-controls="featured-rail" aria-label="Previous example book worlds">&lsaquo;</button>
           <button type="button" data-rail-next aria-controls="featured-rail" aria-label="Next example book worlds">&rsaquo;</button>
@@ -185,7 +185,7 @@ const workflowSteps = ["Source", "Structure", "Manuscript", "Book World", "PDF",
     </div>
     <div class="rail-shell" data-rail-shell>
       <div class="rail-controls" aria-label="Field guide carousel controls">
-        <span class="rail-hint">Manual controls stay active</span>
+        <span class="rail-hint">Use arrows, drag, or let it orbit</span>
         <div class="rail-buttons">
           <button type="button" data-rail-prev aria-controls="field-guide-rail" aria-label="Previous field guides and strategy books">&lsaquo;</button>
           <button type="button" data-rail-next aria-controls="field-guide-rail" aria-label="Next field guides and strategy books">&rsaquo;</button>

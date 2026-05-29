@@ -18,76 +18,181 @@ function initLoopingRails() {
     rail.dataset.loopRail = String(index + 1);
 
     let paused = false;
-    const pause = () => {
-      paused = true;
-      rail.classList.add("is-paused");
-      shell.classList.add("is-paused");
+    let hovering = false;
+    let focused = false;
+    let resumeTimer = 0;
+    let lastTime = 0;
+    let middleStart = 0;
+    let afterStart = 0;
+    let loopSpan = 0;
+    let resizeTimer = 0;
+
+    const setPaused = (value) => {
+      paused = value;
+      rail.classList.toggle("is-paused", value);
+      shell.classList.toggle("is-paused", value);
     };
-    const play = () => {
-      paused = false;
-      rail.classList.remove("is-paused");
-      shell.classList.remove("is-paused");
+
+    const pause = () => {
+      window.clearTimeout(resumeTimer);
+      setPaused(true);
+    };
+
+    const schedulePlay = (delay = 1450) => {
+      if (reducedMotion || rail.dataset.loopReady !== "true") return;
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(() => {
+        if (!hovering && !focused) setPaused(false);
+      }, delay);
+    };
+
+    const createClone = (item, placement) => {
+      const clone = item.cloneNode(true);
+      clone.dataset.railClone = placement;
+      clone.setAttribute("aria-hidden", "true");
+      clone.tabIndex = -1;
+      if ("inert" in clone) clone.inert = true;
+      clone.querySelectorAll("a, button, input, select, textarea, [tabindex]").forEach((interactive) => {
+        interactive.tabIndex = -1;
+        interactive.setAttribute("aria-hidden", "true");
+      });
+      return clone;
+    };
+
+    const measureLoop = () => {
+      if (rail.dataset.loopReady !== "true") return;
+      const firstOriginal = originalItems[0];
+      const firstAfter = rail.querySelector('[data-rail-clone="after"]');
+      if (!firstOriginal || !firstAfter) return;
+      middleStart = firstOriginal.offsetLeft;
+      afterStart = firstAfter.offsetLeft;
+      loopSpan = afterStart - middleStart;
     };
 
     const normalizeScroll = () => {
       if (reducedMotion || rail.dataset.loopReady !== "true") return;
-      const loopPoint = rail.scrollWidth / 2;
-      if (loopPoint <= 0) return;
-      if (rail.scrollLeft >= loopPoint) {
-        rail.scrollLeft -= loopPoint;
-      } else if (rail.scrollLeft < 0) {
-        rail.scrollLeft += loopPoint;
+      if (!loopSpan) measureLoop();
+      if (loopSpan <= 0) return;
+      if (rail.scrollLeft < middleStart) {
+        rail.scrollLeft += loopSpan;
+      } else if (rail.scrollLeft >= afterStart) {
+        rail.scrollLeft -= loopSpan;
       }
     };
 
-    const scrollRail = (direction) => {
-      pause();
+    const jumpToMiddle = () => {
+      measureLoop();
+      if (loopSpan > 0) {
+        rail.scrollLeft = middleStart;
+      }
+    };
+
+    const getScrollAmount = () => {
       const firstCard = originalItems[0];
       const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : rail.clientWidth * 0.78;
       const railStyle = getComputedStyle(rail);
       const parsedGap = parseFloat(railStyle.columnGap || railStyle.gap || "0");
       const gap = Number.isFinite(parsedGap) ? parsedGap : 16;
-      if (direction < 0 && rail.dataset.loopReady === "true" && rail.scrollLeft < cardWidth + gap) {
-        rail.scrollLeft += rail.scrollWidth / 2;
+      return Math.max(cardWidth + gap, rail.clientWidth * 0.72);
+    };
+
+    const ensureButtonRunway = (direction, amount) => {
+      if (rail.dataset.loopReady !== "true") return;
+      if (!loopSpan) measureLoop();
+      if (loopSpan <= 0) return;
+      const buffer = amount * 1.45;
+      if (direction < 0 && rail.scrollLeft - middleStart < buffer) {
+        rail.scrollLeft += loopSpan;
+      } else if (direction > 0 && afterStart - rail.scrollLeft < buffer) {
+        rail.scrollLeft -= loopSpan;
       }
-      rail.scrollBy({ left: direction * Math.max(cardWidth + gap, rail.clientWidth * 0.72), behavior: "smooth" });
+    };
+
+    const scrollRail = (direction) => {
+      pause();
+      const amount = getScrollAmount();
+      ensureButtonRunway(direction, amount);
+      rail.scrollBy({
+        left: direction * amount,
+        behavior: reducedMotion ? "auto" : "smooth"
+      });
       window.setTimeout(() => {
         normalizeScroll();
-        play();
-      }, 760);
+        schedulePlay(1100);
+      }, reducedMotion ? 0 : 860);
+    };
+
+    const pauseForInteraction = () => {
+      pause();
+      schedulePlay(1650);
+    };
+
+    const remeasureAfterResize = () => {
+      if (rail.dataset.loopReady !== "true") return;
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        const previousSpan = loopSpan || 1;
+        const relativePosition = (rail.scrollLeft - middleStart) / previousSpan;
+        measureLoop();
+        if (loopSpan > 0) {
+          const safeRelativePosition = Math.max(0, Math.min(0.98, relativePosition));
+          rail.scrollLeft = middleStart + safeRelativePosition * loopSpan;
+          normalizeScroll();
+        }
+      }, 140);
     };
 
     prevButton?.addEventListener("click", () => scrollRail(-1));
     nextButton?.addEventListener("click", () => scrollRail(1));
 
-    shell.addEventListener("mouseenter", pause);
-    shell.addEventListener("mouseleave", play);
-    shell.addEventListener("focusin", pause);
-    shell.addEventListener("focusout", play);
+    shell.addEventListener("mouseenter", () => {
+      hovering = true;
+      pause();
+    });
+    shell.addEventListener("mouseleave", () => {
+      hovering = false;
+      schedulePlay(900);
+    });
+    shell.addEventListener("focusin", () => {
+      focused = true;
+      pause();
+    });
+    shell.addEventListener("focusout", () => {
+      window.setTimeout(() => {
+        if (!shell.contains(document.activeElement)) {
+          focused = false;
+          schedulePlay(900);
+        }
+      }, 0);
+    });
     shell.addEventListener("pointerdown", pause);
-    shell.addEventListener("pointerup", play);
+    shell.addEventListener("pointerup", () => schedulePlay(1550));
+    shell.addEventListener("pointercancel", () => schedulePlay(1550));
     shell.addEventListener("touchstart", pause, { passive: true });
-    shell.addEventListener("touchend", play, { passive: true });
+    shell.addEventListener("touchend", () => schedulePlay(1550), { passive: true });
+    shell.addEventListener("touchcancel", () => schedulePlay(1550), { passive: true });
+    shell.addEventListener("wheel", pauseForInteraction, { passive: true });
+    shell.addEventListener("keydown", (event) => {
+      if (["ArrowLeft", "ArrowRight", "Home", "End", "PageUp", "PageDown", " "].includes(event.key)) {
+        pauseForInteraction();
+      }
+    });
     rail.addEventListener("scroll", normalizeScroll, { passive: true });
+    window.addEventListener("resize", remeasureAfterResize, { passive: true });
 
-    if (reducedMotion || originalItems.length < 3) {
+    if (reducedMotion || originalItems.length < 4) {
       rail.dataset.loopReady = "manual";
       return;
     }
 
-    rail.dataset.loopReady = "true";
-    originalItems.forEach((item) => {
-      const clone = item.cloneNode(true);
-      clone.setAttribute("aria-hidden", "true");
-      clone.tabIndex = -1;
-      clone.querySelectorAll("a, button").forEach((interactive) => {
-        interactive.tabIndex = -1;
-        interactive.setAttribute("aria-hidden", "true");
-      });
-      rail.append(clone);
-    });
+    const beforeClones = originalItems.map((item) => createClone(item, "before"));
+    const afterClones = originalItems.map((item) => createClone(item, "after"));
+    rail.prepend(...beforeClones);
+    rail.append(...afterClones);
 
-    let lastTime = 0;
+    rail.dataset.loopReady = "true";
+    requestAnimationFrame(jumpToMiddle);
+
     const speed = Number(rail.dataset.loopSpeed || 18 + index * 4);
 
     function tick(time) {
@@ -96,11 +201,8 @@ function initLoopingRails() {
       lastTime = time;
 
       if (!paused && document.visibilityState === "visible") {
-        const loopPoint = rail.scrollWidth / 2;
         rail.scrollLeft += speed * delta;
-        if (rail.scrollLeft >= loopPoint) {
-          rail.scrollLeft -= loopPoint;
-        }
+        normalizeScroll();
       }
 
       requestAnimationFrame(tick);
