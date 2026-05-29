@@ -59,6 +59,21 @@ export const batchBookWorlds = {
     accent2: "#ffd45a",
     glow: "rgba(87, 77, 255, 0.28)"
   },
+  "the-ok-zone": {
+    eyebrow: "An OK is NOT Enough Book",
+    heroTitle: "Comfortable can keep you stuck longer than crisis ever could.",
+    lede:
+      "A live-draft performance book for ambitious people who look functional from the outside but know they are tolerating less than they are capable of.",
+    promiseTitle: "Move from tolerable discomfort to earned self-respect.",
+    promiseBody:
+      "The OK Zone names the hidden middle ground between crisis and fulfilment. Tomas Svitorka guides the reader through the Rut Zone, OK Zone, and Winning Zone, then turns philosophy into standards, confidence evidence, practice, discipline, and weekly review.",
+    mapTitle: "Rut Zone, OK Zone, Winning Zone",
+    cardHeading: "OK Zone tools",
+    cards: ["Minimum Acceptable Standard", "H3 Method", "Confidence Credit Score", "Weekly Winning Zone Review"],
+    accent: "#f0ad2e",
+    accent2: "#8fce4f",
+    glow: "rgba(42, 166, 255, 0.25)"
+  },
   "clock-with-no-hands": {
     eyebrow: "A Metaphysical Novella",
     heroTitle: "A clock without hands. A civilization waiting for agency.",
