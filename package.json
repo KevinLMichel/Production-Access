@@ -40,6 +40,7 @@
     "extract:mental-toughness-dreams": "node scripts/extract-mental-toughness-dreams-book.mjs",
     "extract:new-prince-book-world": "node scripts/extract-new-prince-book-world.mjs",
     "extract:ok-zone": "node scripts/extract-ok-zone-book.mjs",
+    "extract:ancestral-rage": "node scripts/extract-ancestral-rage-book.mjs",
     "extract:session-three-book-worlds": "node scripts/extract-session-three-book-worlds.mjs",
     "extract:session-four-book-worlds": "node scripts/extract-session-four-book-worlds.mjs",
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",

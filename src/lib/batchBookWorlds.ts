@@ -74,6 +74,21 @@ export const batchBookWorlds = {
     accent2: "#8fce4f",
     glow: "rgba(42, 166, 255, 0.25)"
   },
+  "ancestral-rage-sacred-purpose": {
+    eyebrow: "A Fierce Meditation on Lineage",
+    heroTitle: "The fire is real. The question is whether it becomes purpose.",
+    lede:
+      "A live-build manuscript about ancestral memory, disciplined rage, family history, media, identity, and the responsibility to turn inherited pain into sacred command.",
+    promiseTitle: "Reclaim history without becoming possessed by it.",
+    promiseBody:
+      "Ancestral Rage, Sacred Purpose treats rage as a dangerous but necessary signal. Rico Saunders moves from bloodline, family scripts, hidden curriculum, and media machinery toward responsibility, discipline, purpose, and the light a person chooses to pass on.",
+    mapTitle: "Rage, blood, memory, meaning, destiny, purpose",
+    cardHeading: "Purpose disciplines",
+    cards: ["Rage Inventory", "Ancestral Ledger", "Genealogical Dig", "Purpose Manifesto"],
+    accent: "#8f1d14",
+    accent2: "#c89b52",
+    glow: "rgba(143, 29, 20, 0.28)"
+  },
   "clock-with-no-hands": {
     eyebrow: "A Metaphysical Novella",
     heroTitle: "A clock without hands. A civilization waiting for agency.",
