@@ -96,7 +96,7 @@ export const batchBookWorlds = {
       "A major live-draft novel in which a modern city dies for one night, wakes beneath the earth as a civic body, and is forced to confess what each organ made the Feet carry.",
     promiseTitle: "Civilization must become the architecture of courage.",
     promiseBody:
-      "The City with a Heavy Heart follows Nia Bell, a night bus driver from the Low Steps, into the Hall of Measure where Veyra's Tongue, Stomach, Eyes, Fists, Lungs, Mirror, Memory, and Feet are weighed against a feather. The book asks whether a city can confess without turning confession into another institution.",
+      "The City with a Heavy Heart follows Nia Bell, a night bus driver from the Low Steps, into the Hall of Measure where Veyra's Tongue, Stomach, Eyes, Fists, Knees, Lungs, Skin, Memory, Burning Throat, Animal, First Mouth, and Feet are weighed against a feather. The book asks whether a city can confess without turning confession into another institution.",
     mapTitle: "Night route, underworld court, civic organs, refusal, dawn",
     cardHeading: "Civic thresholds",
     cards: ["The N17 Route", "The Hall of Measure", "The Confessions of Function", "The Feet Refuse"],

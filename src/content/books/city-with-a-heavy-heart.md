@@ -1,8 +1,8 @@
 ---
 title: "The City with a Heavy Heart"
 subtitle: "How to Heal Your Mind, Renew Your Purpose, and Transform Your City, Starting With You"
-dek: "A live-draft surreal philosophical novel about a city that dies for one night and is weighed against a feather."
-description: "A major live-build novel by Kevin L. Michel about Veyra, a modern city that stops breathing, wakes beneath the earth as a civic body, and must face its organs, excuses, cowardice, courage, and the moral weight carried by the Feet."
+dek: "A live-draft surreal civic novel about Veyra, a city that dies for one night and is weighed as a body."
+description: "A major live-build novel by Kevin L. Michel about Veyra, a modern city that stops breathing, wakes beneath the earth as a civic body, and must face its language, hunger, eyes, fists, memory, courage, and the moral weight carried by the Feet."
 author: "Kevin L. Michel"
 status: "revision"
 statusLabel: "Live draft"
@@ -22,4 +22,4 @@ links:
     kind: "read"
 ---
 
-The City with a Heavy Heart is being built live on Production Access as a major surreal philosophical novel.
+The City with a Heavy Heart is being built live on Production Access as a surreal civic novel of judgment, confession, public courage, and moral repair.
