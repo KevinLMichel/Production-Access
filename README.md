@@ -147,6 +147,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 144 pages at 5.5 x 8.5 inches.
 
+## The City with a Heavy Heart PDF
+
+Regenerate the downloadable The City with a Heavy Heart interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:city-heavy-heart
+```
+
+The generated file is committed at `public/downloads/city-with-a-heavy-heart-kevin-l-michel.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 288 pages at 5.5 x 8.5 inches.
+
 ## Freedom by Design Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

@@ -1,0 +1,479 @@
+---
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import PrintIndex from "../../../../components/PrintIndex.astro";
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "The City with a Heavy Heart",
+  subtitle: "How to Heal Your Mind, Renew Your Purpose, and Transform Your City, Starting With You",
+  author: "Kevin L. Michel"
+};
+
+const aboutAuthor =
+  "Kevin L. Michel writes philosophical fiction, practical philosophy, civic allegory, poetic reflection, and self-development works for readers trying to live with more clarity, courage, discipline, imagination, and inner authority. His books move between symbolic worlds, moral inquiry, practical strategy, mythic reflection, and the everyday work of becoming more fully human.";
+
+type IndexAnchor = {
+  id: string;
+  order: number;
+  phrase: string;
+};
+
+type IndexSubentry = {
+  term: string;
+  targets: string[];
+};
+
+type IndexEntry = {
+  term: string;
+  targets?: string[];
+  subentries?: IndexSubentry[];
+};
+
+const indexAnchors: IndexAnchor[] = [
+  { id: "idx-veyra-night", order: 0, phrase: "By three in the morning, Veyra belonged to those who could not afford daylight." },
+  { id: "idx-n17-route", order: 0, phrase: "There was only the lower deck of the N17" },
+  { id: "idx-miko-ticket", order: 0, phrase: "cracked transfer ticket damp from Miko" },
+  { id: "idx-moral-weather", order: 0, phrase: "moral weather" },
+  { id: "idx-amara-vale", order: 1, phrase: "Mayor Amara Vale" },
+  { id: "idx-city-stillness", order: 2, phrase: "The city did not explode." },
+  { id: "idx-hall-beneath", order: 3, phrase: "The city lay beneath itself" },
+  { id: "idx-hall-measure", order: 3, phrase: "Hall of Measure" },
+  { id: "idx-feather-scale", order: 3, phrase: "feather laid on a scale" },
+  { id: "idx-tongue", order: 4, phrase: "When the Tongue answered" },
+  { id: "idx-witness-route", order: 5, phrase: "The witness was the passengers of N17" },
+  { id: "idx-civic-body", order: 6, phrase: "The Judges did not explain Veyra by districts" },
+  { id: "idx-stomach", order: 7, phrase: "When the Stomach answered" },
+  { id: "idx-eyes", order: 8, phrase: "When the Eyes answered" },
+  { id: "idx-theo-marrek", order: 9, phrase: "Professor Theo Marrek had spent forty years" },
+  { id: "idx-fists", order: 10, phrase: "When the Fists answered" },
+  { id: "idx-knees", order: 11, phrase: "When the Knees answered" },
+  { id: "idx-lungs", order: 12, phrase: "When the Lungs answered" },
+  { id: "idx-skin", order: 13, phrase: "When the Skin answered" },
+  { id: "idx-memory", order: 14, phrase: "When Memory answered" },
+  { id: "idx-burning-throat", order: 15, phrase: "When the Burning Throat answered" },
+  { id: "idx-feet-shifting", order: 16, phrase: "At first, Nia thought the sound was thunder." },
+  { id: "idx-tongue-stomach-cross", order: 17, phrase: "When Amara and Cassian stood side by side" },
+  { id: "idx-eyes-fists-cross", order: 18, phrase: "When the Eyes and the Fists answered" },
+  { id: "idx-approved-anger", order: 19, phrase: "The Mirror did not reflect the city." },
+  { id: "idx-animal", order: 20, phrase: "The Animal Under the Table" },
+  { id: "idx-nia-confession", order: 21, phrase: "Nia had waited all night" },
+  { id: "idx-feet-strike", order: 22, phrase: "The Feet did not march." },
+  { id: "idx-first-mouth", order: 23, phrase: "The First Mouth" },
+  { id: "idx-new-weight", order: 24, phrase: "The Recorder of Weight wrote slowly" },
+  { id: "idx-veyra-wakes", order: 25, phrase: "Veyra returned above ground" },
+  { id: "idx-architecture-courage", order: 26, phrase: "The first new room in Veyra was not beautiful." },
+  { id: "idx-davi-public-record", order: 26, phrase: "For the first time, Davi's absence had a public address." }
+];
+
+const indexEntries: IndexEntry[] = [
+  {
+    term: "agency",
+    targets: ["idx-architecture-courage"],
+    subentries: [
+      { term: "as raised hand", targets: ["idx-first-mouth", "idx-architecture-courage"] },
+      { term: "as procedure", targets: ["idx-veyra-wakes", "idx-architecture-courage"] }
+    ]
+  },
+  { term: "Amara Vale", targets: ["idx-amara-vale"] },
+  { term: "Animal Under the Table", targets: ["idx-animal"] },
+  {
+    term: "approved anger",
+    targets: ["idx-approved-anger"],
+    subentries: [
+      { term: "marketplace", targets: ["idx-approved-anger"] },
+      { term: "performance", targets: ["idx-burning-throat", "idx-approved-anger"] }
+    ]
+  },
+  { term: "Architecture of Courage", targets: ["idx-architecture-courage"] },
+  {
+    term: "body, civic",
+    targets: ["idx-civic-body", "idx-feet-strike"],
+    subentries: [
+      { term: "anatomy explained", targets: ["idx-civic-body"] },
+      { term: "strike", targets: ["idx-feet-strike"] },
+      { term: "weight", targets: ["idx-new-weight"] }
+    ]
+  },
+  { term: "Brant Kade", targets: ["chapter-16", "idx-burning-throat"] },
+  { term: "Burning Throat", targets: ["idx-burning-throat"] },
+  { term: "Cassian Venn", targets: ["chapter-9", "idx-eyes"] },
+  {
+    term: "children",
+    targets: ["idx-miko-ticket", "idx-nia-confession"],
+    subentries: [
+      { term: "Miko", targets: ["idx-miko-ticket", "idx-nia-confession"] },
+      { term: "inheritance of civic fear", targets: ["chapter-6", "idx-nia-confession"] }
+    ]
+  },
+  {
+    term: "confession",
+    targets: ["idx-nia-confession", "idx-architecture-courage"],
+    subentries: [
+      { term: "as public record", targets: ["idx-davi-public-record"] },
+      { term: "as repair", targets: ["idx-new-weight", "idx-architecture-courage"] },
+      { term: "Nia Bell", targets: ["idx-nia-confession"] }
+    ]
+  },
+  {
+    term: "courage",
+    targets: ["idx-architecture-courage"],
+    subentries: [
+      { term: "architecture", targets: ["idx-architecture-courage"] },
+      { term: "children watching adults", targets: ["idx-witness-route", "idx-nia-confession"] },
+      { term: "public rooms", targets: ["idx-veyra-wakes", "idx-architecture-courage"] }
+    ]
+  },
+  { term: "Davi", targets: ["idx-witness-route", "idx-davi-public-record"] },
+  {
+    term: "dawn",
+    targets: ["idx-new-weight", "idx-veyra-wakes", "idx-architecture-courage"],
+    subentries: [
+      { term: "conditional", targets: ["idx-new-weight", "idx-veyra-wakes"] },
+      { term: "public architecture", targets: ["idx-architecture-courage"] }
+    ]
+  },
+  { term: "Elise Rowan", targets: ["chapter-14", "idx-skin"] },
+  {
+    term: "evidence",
+    targets: ["idx-miko-ticket", "idx-feather-scale", "idx-davi-public-record"],
+    subentries: [
+      { term: "cracked transfer ticket", targets: ["idx-miko-ticket"] },
+      { term: "Davi's public record", targets: ["idx-davi-public-record"] },
+      { term: "Feather", targets: ["idx-feather-scale"] }
+    ]
+  },
+  { term: "Eyes", targets: ["idx-eyes", "idx-eyes-fists-cross"] },
+  { term: "Feather", targets: ["idx-feather-scale", "idx-hall-measure"] },
+  {
+    term: "Feet",
+    targets: ["idx-feet-shifting", "idx-feet-strike", "idx-architecture-courage"],
+    subentries: [
+      { term: "begin to move", targets: ["idx-feet-shifting"] },
+      { term: "refusal", targets: ["idx-feet-strike"] },
+      { term: "procedure after dawn", targets: ["idx-architecture-courage"] }
+    ]
+  },
+  { term: "First Mouth", targets: ["idx-first-mouth"] },
+  { term: "Fists", targets: ["idx-fists", "idx-eyes-fists-cross"] },
+  {
+    term: "growth",
+    targets: ["idx-stomach", "idx-tongue-stomach-cross"],
+    subentries: [
+      { term: "appetite", targets: ["idx-stomach"] },
+      { term: "language of progress", targets: ["idx-tongue-stomach-cross"] }
+    ]
+  },
+  { term: "Hall of Measure", targets: ["idx-hall-beneath", "idx-hall-measure"] },
+  { term: "Intellectual", targets: ["idx-theo-marrek"] },
+  { term: "justice", targets: ["idx-hall-measure", "idx-new-weight", "idx-architecture-courage"] },
+  { term: "Knees", targets: ["idx-knees"] },
+  { term: "Lenora Hatch", targets: ["chapter-14", "idx-skin"] },
+  { term: "Low Steps", targets: ["idx-n17-route"] },
+  { term: "Lungs", targets: ["idx-lungs"] },
+  {
+    term: "memory",
+    targets: ["idx-memory", "idx-davi-public-record"],
+    subentries: [
+      { term: "archive of unpaid names", targets: ["idx-memory"] },
+      { term: "Davi", targets: ["idx-davi-public-record"] }
+    ]
+  },
+  { term: "Miko", targets: ["idx-miko-ticket", "idx-nia-confession"] },
+  { term: "moral repair", targets: ["idx-new-weight", "idx-veyra-wakes", "idx-architecture-courage"] },
+  { term: "moral weather", targets: ["idx-moral-weather"] },
+  { term: "Mother Elian", targets: ["chapter-12", "idx-knees"] },
+  {
+    term: "N17 Route",
+    targets: ["idx-n17-route", "idx-witness-route"],
+    subentries: [
+      { term: "passengers", targets: ["idx-witness-route"] },
+      { term: "transfer ticket", targets: ["idx-miko-ticket"] }
+    ]
+  },
+  {
+    term: "Nia Bell",
+    targets: ["idx-veyra-night", "idx-witness-route", "idx-nia-confession"],
+    subentries: [
+      { term: "as driver", targets: ["idx-n17-route"] },
+      { term: "as witness", targets: ["idx-witness-route"] },
+      { term: "confession", targets: ["idx-nia-confession"] }
+    ]
+  },
+  { term: "procedure", targets: ["idx-new-weight", "idx-veyra-wakes", "idx-architecture-courage"] },
+  {
+    term: "public language",
+    targets: ["idx-moral-weather", "idx-tongue", "idx-tongue-stomach-cross"],
+    subentries: [
+      { term: "official notices", targets: ["idx-moral-weather"] },
+      { term: "Tongue", targets: ["idx-tongue"] }
+    ]
+  },
+  { term: "Sera Quill", targets: ["chapter-20"] },
+  { term: "silence", targets: ["idx-city-stillness", "idx-nia-confession", "idx-feet-strike"] },
+  { term: "Skin", targets: ["idx-skin"] },
+  { term: "Stomach", targets: ["idx-stomach", "idx-tongue-stomach-cross"] },
+  { term: "strike", targets: ["idx-feet-strike"] },
+  { term: "Theo Marrek", targets: ["idx-theo-marrek"] },
+  { term: "Tongue", targets: ["idx-tongue", "idx-tongue-stomach-cross"] },
+  {
+    term: "Veyra",
+    targets: ["idx-veyra-night", "idx-city-stillness", "idx-veyra-wakes"],
+    subentries: [
+      { term: "as body", targets: ["idx-civic-body"] },
+      { term: "night city", targets: ["idx-veyra-night"] },
+      { term: "waking", targets: ["idx-veyra-wakes"] }
+    ]
+  },
+  { term: "Witness of the Whole Route", targets: ["idx-witness-route"] }
+];
+
+// Vivliostyle resolves backward index target-counters reliably, but forward
+// TOC target-counters collapse under the page reset. These static locators
+// mirror the visible printed folios for the current City print layout.
+const tocPageNumbers: Record<number, number> = {
+  0: 2,
+  1: 5,
+  2: 8,
+  3: 12,
+  4: 24,
+  5: 36,
+  6: 48,
+  7: 61,
+  8: 73,
+  9: 85,
+  10: 97,
+  11: 109,
+  12: 121,
+  13: 133,
+  14: 145,
+  15: 157,
+  16: 170,
+  17: 182,
+  18: 194,
+  19: 206,
+  20: 218,
+  21: 231,
+  22: 243,
+  23: 255,
+  24: 268,
+  25: 272,
+  26: 276
+};
+
+const sections = await getBookChapters("city-with-a-heavy-heart");
+const markdownProcessor = await createMarkdownProcessor({ syntaxHighlight: false });
+
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const html = await renderPrintMarkdownWithIndexAnchors(section.body ?? "", section.data.order);
+
+    return {
+      section,
+      html,
+      printId: sectionId(section.data.order),
+      label: section.data.subtitle ?? `Chapter ${section.data.order + 1}`
+    };
+  })
+);
+
+const printIds = new Set(renderedSections.map((entry) => entry.printId));
+const indexAnchorIds = new Set(indexAnchors.map((anchor) => anchor.id));
+const undefinedTargets = [...collectIndexTargets(indexEntries)].filter(
+  (target) => !printIds.has(target) && !indexAnchorIds.has(target)
+);
+
+if (undefinedTargets.length > 0) {
+  throw new Error(`City with a Heavy Heart index has undefined targets: ${undefinedTargets.join(", ")}`);
+}
+
+async function renderPrintMarkdownWithIndexAnchors(markdown: string, order: number) {
+  const injectedMarkdown = injectIndexAnchors(markdown, order);
+  const rendered = await markdownProcessor.render(injectedMarkdown);
+  return rendered.code.replaceAll('src="/images/', 'src="images/');
+}
+
+function injectIndexAnchors(markdown: string, order: number) {
+  const normalizedMarkdown = markdown.replace(/\r\n/g, "\n");
+  const anchors = indexAnchors.filter((anchor) => anchor.order === order);
+
+  if (anchors.length === 0) {
+    return normalizedMarkdown;
+  }
+
+  const insertions = new Map<number, string[]>();
+
+  for (const anchor of anchors) {
+    const phraseIndex = normalizedMarkdown.indexOf(anchor.phrase);
+
+    if (phraseIndex === -1) {
+      throw new Error(`City index anchor phrase not found for ${anchor.id}: ${anchor.phrase}`);
+    }
+
+    const paragraphBreakIndex = normalizedMarkdown.lastIndexOf("\n\n", phraseIndex);
+    const insertAt = paragraphBreakIndex === -1 ? 0 : paragraphBreakIndex + 2;
+    const markers = insertions.get(insertAt) ?? [];
+    markers.push(indexAnchorMarkup(anchor.id));
+    insertions.set(insertAt, markers);
+  }
+
+  let output = normalizedMarkdown;
+  const sortedInsertions = [...insertions.entries()].sort(([a], [b]) => b - a);
+
+  for (const [insertAt, markers] of sortedInsertions) {
+    output = `${output.slice(0, insertAt)}${markers.join("\n")}\n\n${output.slice(insertAt)}`;
+  }
+
+  return output;
+}
+
+function indexAnchorMarkup(id: string) {
+  return `<div id="${id}" class="print-index-anchor" aria-hidden="true"></div>`;
+}
+
+function collectIndexTargets(entries: IndexEntry[]) {
+  const targets = new Set<string>();
+
+  for (const entry of entries) {
+    for (const target of entry.targets ?? []) {
+      targets.add(target);
+    }
+
+    for (const subentry of entry.subentries ?? []) {
+      for (const target of subentry.targets) {
+        targets.add(target);
+      }
+    }
+  }
+
+  return targets;
+}
+
+function sectionId(order: number) {
+  return `chapter-${order + 1}`;
+}
+
+function tocPageNumber(order: number) {
+  return tocPageNumbers[order] ?? "";
+}
+
+function partId(part: string) {
+  return part
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function partTitle(part: string) {
+  return part.replace(/^Part\s+[IVX]+:\s*/, "").trim();
+}
+
+const printSections = [];
+const seenParts = new Set<string>();
+
+for (const entry of renderedSections) {
+  const part = entry.section.data.part;
+
+  if (!seenParts.has(part)) {
+    seenParts.add(part);
+    printSections.push({ type: "part", part, id: partId(part) });
+  }
+
+  printSections.push({ type: "section", ...entry });
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="half-title-page" aria-label="Half title">
+      <h1>{book.title}</h1>
+    </section>
+
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">A surreal civic novel</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owner, except as permitted by law.
+      </p>
+      <p>
+        This is a work of literary fiction, civic allegory, and philosophical imagination. Names, characters, places, institutions, incidents, systems, and symbolic settings are used imaginatively for narrative, artistic, and critical purposes.
+      </p>
+      <p>Production Access live-draft PDF edition.</p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          printSections.map((section) =>
+            section.type === "part" ? (
+              <li class="toc-part-row">
+                <div class="toc-part">
+                  <span>{section.part}</span>
+                </div>
+              </li>
+            ) : (
+              <li>
+                <div class="toc-entry" data-target={`#${section.printId}`} data-page={tocPageNumber(section.section.data.order)}>
+                  <span class="toc-chapter">{section.label}</span>
+                  <span class="toc-title">{section.section.data.title}</span>
+                </div>
+              </li>
+            )
+          )
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        printSections.map((section) =>
+          section.type === "part" ? (
+            <section class="part-opener" id={section.id}>
+              <p class="chapter-kicker">{section.part}</p>
+              <h1>{partTitle(section.part)}</h1>
+            </section>
+          ) : (
+            <PrintBookChapter
+              chapter={section.section}
+              printId={section.printId}
+              html={section.html}
+              kickerLabel={section.label}
+              showSubtitle={false}
+            />
+          )
+        )
+      }
+    </main>
+
+    <section class="about-author-page" aria-label="About the Author">
+      <h1>About the Author</h1>
+      <p>{aboutAuthor}</p>
+    </section>
+
+    <section class="index-page" aria-label="Index">
+      <h1>Index</h1>
+      <PrintIndex entries={indexEntries} />
+    </section>
+  </body>
+</html>

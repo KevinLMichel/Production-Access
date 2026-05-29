@@ -16,10 +16,16 @@ formats:
   - label: "Start Reading"
     href: "/books/city-with-a-heavy-heart/"
     status: "available"
+  - label: "Download PDF"
+    href: "/downloads/city-with-a-heavy-heart-kevin-l-michel.pdf"
+    status: "available"
 links:
   - label: "Start Reading"
     href: "/books/city-with-a-heavy-heart/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/city-with-a-heavy-heart-kevin-l-michel.pdf"
+    kind: "download"
 ---
 
 The City with a Heavy Heart is being built live on Production Access as a surreal civic novel of judgment, confession, public courage, and moral repair.
