@@ -171,7 +171,7 @@ npm run book:pdf:the-ok-zone
 The generated file is committed at `public/downloads/the-ok-zone-tomas-svitorka.pdf`.
 Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
 
-Current generated interior: 136 pages at 5.5 x 8.5 inches.
+Current generated interior: 146 pages at 5.5 x 8.5 inches.
 
 ## Freedom by Design Cover
 

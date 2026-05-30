@@ -448,6 +448,7 @@ a {
 .chapter-body h3 + p,
 .chapter-body blockquote + p,
 .chapter-body aside + p,
+.chapter-body figure + p,
 .chapter-body ul + p,
 .chapter-body ol + p,
 .chapter-body .print-index-anchor + p {
@@ -479,6 +480,37 @@ a {
 
 .chapter-body li {
   margin-bottom: 0.05in;
+}
+
+.chapter-body .ok-zone-figure {
+  background: #fff;
+  border: 0.55pt solid rgba(7, 26, 61, 0.26);
+  border-radius: 0.055in;
+  break-inside: avoid;
+  color: #243244;
+  margin: 0.18in 0;
+  padding: 0.055in;
+  page-break-inside: avoid;
+  text-align: left;
+}
+
+.chapter-body .ok-zone-figure img {
+  display: block;
+  height: auto;
+  max-height: 4.9in;
+  object-fit: contain;
+  width: 100%;
+}
+
+.chapter-body .ok-zone-figure figcaption {
+  color: #354252;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 7.5pt;
+  font-style: normal;
+  hyphens: none;
+  line-height: 1.22;
+  margin: 0.045in 0 0;
+  text-align: left;
 }
 
 .about-author-page {

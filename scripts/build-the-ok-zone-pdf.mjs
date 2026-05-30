@@ -1,4 +1,4 @@
-import { mkdir } from "node:fs/promises";
+import { cp, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { exec } from "node:child_process";
 
@@ -16,6 +16,8 @@ const vivliostyleCommand = resolve(
 const pdfPath = resolve(root, "public", "downloads", "the-ok-zone-tomas-svitorka.pdf");
 const printInput = resolve(root, "dist", "books", "the-ok-zone", "print", "index.html");
 const printStylesheet = resolve(root, "public", "the-ok-zone-book-print.css");
+const sourceImageDir = resolve(root, "public", "images", "the-ok-zone");
+const printImageDir = resolve(root, "dist", "books", "the-ok-zone", "print", "images", "the-ok-zone");
 
 function run(command, args) {
   return new Promise((resolveRun, reject) => {
@@ -60,6 +62,7 @@ await mkdir(dirname(pdfPath), { recursive: true });
 
 console.log("Building Astro print route for The OK Zone...");
 await run(nodeCommand, [astroCommand, "build"]);
+await cp(sourceImageDir, printImageDir, { recursive: true });
 
 console.log("Generating The OK Zone trade-book PDF...");
 await run(nodeCommand, [
