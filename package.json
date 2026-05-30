@@ -27,6 +27,7 @@
     "book:pdf:shifting-worlds": "node scripts/build-shifting-worlds-pdf.mjs",
     "book:pdf:clock-with-no-hands": "node scripts/build-clock-with-no-hands-pdf.mjs",
     "book:pdf:city-heavy-heart": "node scripts/build-city-heavy-heart-pdf.mjs",
+    "book:pdf:the-ok-zone": "node scripts/build-the-ok-zone-pdf.mjs",
     "book:pdf:steam": "node scripts/build-steam-pdf.mjs",
     "book:pdf:subconscious": "node scripts/build-subconscious-pdf.mjs",
     "extract:fragmented": "node scripts/extract-fragmented-book.mjs",

@@ -160,6 +160,19 @@ Run `npm run build` before pushing so Render publishes the current static site a
 
 Current generated interior: 288 pages at 5.5 x 8.5 inches.
 
+## The OK Zone PDF
+
+Regenerate the downloadable The OK Zone interior PDF after chapter changes:
+
+```powershell
+npm run book:pdf:the-ok-zone
+```
+
+The generated file is committed at `public/downloads/the-ok-zone-tomas-svitorka.pdf`.
+Run `npm run build` before pushing so Render publishes the current static site and PDF asset.
+
+Current generated interior: 136 pages at 5.5 x 8.5 inches.
+
 ## Freedom by Design Cover
 
 Regenerate the KDP paperback cover wrap after the paperback page count/template changes:

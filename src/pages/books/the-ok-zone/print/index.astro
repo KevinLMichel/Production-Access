@@ -1,0 +1,402 @@
+---
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import PrintBookChapter from "../../../../components/PrintBookChapter.astro";
+import PrintIndex from "../../../../components/PrintIndex.astro";
+import { getBookChapters } from "../../../../lib/bookWorld";
+
+const book = {
+  title: "The OK Zone",
+  subtitle: "Why Comfortable Keeps You Stuck, and How to Build a Life You're Proud Of",
+  author: "Tomas Svitorka"
+};
+
+const aboutAuthor =
+  "Tomas Svitorka is a life and performance coach, speaker, and founder of the OK is NOT enough philosophy. With a background in psychology and more than a decade of coaching experience, he helps ambitious professionals, entrepreneurs, and high performers move beyond comfortable mediocrity and build lives they are genuinely proud of. His work combines practical psychology, clear strategy, accountability, and a no-BS approach to personal growth. Known for his direct, grounded style, Tomas challenges people to raise their standards, strengthen their confidence, and take consistent action toward the goals that matter most to them.";
+
+type IndexAnchor = {
+  id: string;
+  order: number;
+  phrase: string;
+};
+
+type IndexSubentry = {
+  term: string;
+  targets: string[];
+};
+
+type IndexEntry = {
+  term: string;
+  targets?: string[];
+  subentries?: IndexSubentry[];
+};
+
+const indexAnchors: IndexAnchor[] = [
+  { id: "idx-ok-holiday-test", order: 0, phrase: "If you went on holiday and the resort was OK" },
+  { id: "idx-ok-life", order: 0, phrase: "Yet many people tolerate an OK life for years." },
+  { id: "idx-method-tools", order: 0, phrase: "the Minimum Acceptable Standard, the H3 Method" },
+  { id: "idx-rut-zone", order: 1, phrase: "At the bottom is the Rut Zone." },
+  { id: "idx-winning-zone", order: 1, phrase: "The Winning Zone is not a place where everything is easy." },
+  { id: "idx-zone-map", order: 1, phrase: "When you complete the zone map" },
+  { id: "idx-tolerable-discomfort", order: 2, phrase: "Tolerable discomfort is one of the most expensive states" },
+  { id: "idx-quiet-cost", order: 2, phrase: "the word decent had become a cage" },
+  { id: "idx-brain-protects-ok", order: 3, phrase: "Your brain does not repeat patterns randomly." },
+  { id: "idx-pattern-protection", order: 3, phrase: "What does the pattern protect?" },
+  { id: "idx-regret-late-alarm", order: 4, phrase: "Regret is a terrible alarm clock" },
+  { id: "idx-fear-flipping", order: 4, phrase: "I call this Fear Flipping." },
+  { id: "idx-coaching-transition", order: 4, phrase: "Moving towards coaching was not obvious at the beginning." },
+  { id: "idx-success-definition", order: 5, phrase: "Before you raise your standards" },
+  { id: "idx-minimum-standard", order: 6, phrase: "The Minimum Acceptable Standard, or M.A.S." },
+  { id: "idx-performance-system", order: 6, phrase: "We are building a performance system." },
+  { id: "idx-own-hard", order: 7, phrase: "Chosen hardship is different." },
+  { id: "idx-running-training", order: 7, phrase: "When I train for a marathon or an ultra" },
+  { id: "idx-room-audit", order: 8, phrase: "Do a Room Audit." },
+  { id: "idx-library-effect", order: 8, phrase: "I often use the library effect." },
+  { id: "idx-public-speaking", order: 8, phrase: "Someone who avoids public speaking" },
+  { id: "idx-motivation-optional", order: 9, phrase: "Motivation is lovely" },
+  { id: "idx-london-marathon", order: 9, phrase: "When I trained for the London Marathon" },
+  { id: "idx-heart-head-hands", order: 10, phrase: "Heart gives the goal meaning." },
+  { id: "idx-h3-method", order: 10, phrase: "The H3 Method turns ambition into something you can use." },
+  { id: "idx-confidence-score", order: 11, phrase: "I call this the Confidence Credit Score." },
+  { id: "idx-evidence-ledger", order: 11, phrase: "Your nervous system needs receipts." },
+  { id: "idx-practice-become", order: 12, phrase: "practise it until you become it" },
+  { id: "idx-workshops", order: 12, phrase: "When I began running workshops" },
+  { id: "idx-coach-mind", order: 13, phrase: "You can coach the mind." },
+  { id: "idx-coaching-questions", order: 13, phrase: "Use coaching questions." },
+  { id: "idx-failure-feedback", order: 14, phrase: "Failures are inevitable unless you are playing extremely safe" },
+  { id: "idx-corrupted-audio", order: 14, phrase: "I once recorded several videos and then realised the audio was unusable." },
+  { id: "idx-failure-debrief", order: 14, phrase: "Choose one recent mistake. Complete the Failure Debrief." },
+  { id: "idx-weekly-review", order: 15, phrase: "Every Sunday, complete the Weekly Winning Zone Review." },
+  { id: "idx-system-coach", order: 15, phrase: "Think of the system as a coach that lives in your week." },
+  { id: "idx-drift", order: 16, phrase: "You will re-enter the OK Zone." },
+  { id: "idx-reset-ritual", order: 16, phrase: "Create a reset ritual." },
+  { id: "idx-first-move", order: 17, phrase: "Choose one first move." },
+  { id: "idx-do-not-wait", order: 17, phrase: "You do not need a crisis to begin." }
+];
+
+const indexEntries: IndexEntry[] = [
+  {
+    term: "accountability",
+    targets: ["idx-method-tools", "idx-weekly-review"],
+    subentries: [
+      { term: "performance system", targets: ["idx-system-coach", "idx-weekly-review"] },
+      { term: "reset after drift", targets: ["idx-reset-ritual"] }
+    ]
+  },
+  { term: "catering-to-coaching transition", targets: ["idx-coaching-transition"] },
+  {
+    term: "confidence",
+    targets: ["idx-confidence-score", "idx-evidence-ledger"],
+    subentries: [
+      { term: "Confidence Credit Score", targets: ["idx-confidence-score"] },
+      { term: "evidence ledger", targets: ["idx-evidence-ledger"] },
+      { term: "practice", targets: ["idx-practice-become", "idx-workshops"] }
+    ]
+  },
+  { term: "Confidence Credit Score", targets: ["idx-confidence-score"] },
+  { term: "coaching", targets: ["idx-coaching-transition", "idx-coach-mind"] },
+  { term: "comfort", targets: ["idx-ok-life", "idx-tolerable-discomfort"] },
+  { term: "corrupted-audio lesson", targets: ["idx-corrupted-audio"] },
+  { term: "discipline", targets: ["idx-motivation-optional", "idx-performance-system", "idx-weekly-review"] },
+  { term: "drift", targets: ["idx-drift", "idx-reset-ritual"] },
+  { term: "Evidence Ledger", targets: ["idx-evidence-ledger"] },
+  {
+    term: "failure",
+    targets: ["idx-failure-feedback", "idx-corrupted-audio"],
+    subentries: [
+      { term: "debrief", targets: ["idx-failure-debrief"] },
+      { term: "as feedback", targets: ["idx-failure-feedback"] },
+      { term: "process change", targets: ["idx-corrupted-audio", "idx-failure-debrief"] }
+    ]
+  },
+  { term: "Fear Flipping", targets: ["idx-fear-flipping"] },
+  { term: "first move", targets: ["idx-first-move"] },
+  {
+    term: "H3 Method",
+    targets: ["idx-h3-method"],
+    subentries: [
+      { term: "Hands", targets: ["idx-h3-method"] },
+      { term: "Head", targets: ["idx-h3-method"] },
+      { term: "Heart", targets: ["idx-heart-head-hands"] }
+    ]
+  },
+  { term: "Heart, Head, Hands", targets: ["idx-heart-head-hands"] },
+  { term: "holiday/movie test", targets: ["idx-ok-holiday-test"] },
+  { term: "identity", targets: ["idx-pattern-protection", "idx-practice-become"] },
+  { term: "library effect", targets: ["idx-library-effect"] },
+  { term: "London Marathon", targets: ["idx-london-marathon"] },
+  {
+    term: "Minimum Acceptable Standard",
+    targets: ["idx-minimum-standard"],
+    subentries: [
+      { term: "as non-negotiable line", targets: ["idx-minimum-standard"] },
+      { term: "as performance system", targets: ["idx-performance-system"] }
+    ]
+  },
+  { term: "motivation", targets: ["idx-motivation-optional", "idx-london-marathon"] },
+  { term: "OK is NOT enough", targets: ["idx-ok-life", "idx-do-not-wait"] },
+  {
+    term: "OK Zone",
+    targets: ["idx-ok-life", "idx-winning-zone", "idx-drift"],
+    subentries: [
+      { term: "diagnosis", targets: ["idx-zone-map"] },
+      { term: "drift back into", targets: ["idx-drift"] },
+      { term: "holiday test", targets: ["idx-ok-holiday-test"] },
+      { term: "tolerable discomfort", targets: ["idx-tolerable-discomfort"] }
+    ]
+  },
+  { term: "performance system", targets: ["idx-performance-system", "idx-system-coach"] },
+  { term: "Practice It Until You Become It", targets: ["idx-practice-become", "idx-workshops"] },
+  { term: "public speaking", targets: ["idx-public-speaking", "idx-workshops"] },
+  { term: "regret", targets: ["idx-regret-late-alarm"] },
+  { term: "reset ritual", targets: ["idx-reset-ritual"] },
+  { term: "Room Audit", targets: ["idx-room-audit"] },
+  { term: "running", targets: ["idx-running-training", "idx-london-marathon"] },
+  { term: "Rut Zone", targets: ["idx-rut-zone"] },
+  { term: "standards", targets: ["idx-success-definition", "idx-minimum-standard", "idx-performance-system"] },
+  { term: "success", targets: ["idx-success-definition"] },
+  { term: "tolerable discomfort", targets: ["idx-tolerable-discomfort", "idx-quiet-cost"] },
+  { term: "Weekly Winning Zone Review", targets: ["idx-weekly-review"] },
+  { term: "Winning Zone", targets: ["idx-winning-zone", "idx-weekly-review"] },
+  { term: "zone map", targets: ["idx-zone-map"] }
+];
+
+// Vivliostyle resolves backward index target-counters reliably, but forward
+// TOC target-counters collapse under the page reset. These static locators
+// mirror the visible printed folios for the current OK Zone print layout.
+const tocPageNumbers: Record<number, number> = {
+  0: 1,
+  1: 9,
+  2: 16,
+  3: 23,
+  4: 30,
+  5: 38,
+  6: 45,
+  7: 52,
+  8: 59,
+  9: 67,
+  10: 73,
+  11: 80,
+  12: 87,
+  13: 94,
+  14: 101,
+  15: 109,
+  16: 116,
+  17: 122
+};
+
+const sections = await getBookChapters("the-ok-zone");
+const markdownProcessor = await createMarkdownProcessor({ syntaxHighlight: false });
+
+const renderedSections = await Promise.all(
+  sections.map(async (section) => {
+    const html = await renderPrintMarkdownWithIndexAnchors(section.body ?? "", section.data.order);
+
+    return {
+      section,
+      html,
+      printId: sectionId(section.data.order),
+      label: section.data.subtitle ?? `Chapter ${section.data.order}`
+    };
+  })
+);
+
+const printIds = new Set(renderedSections.map((entry) => entry.printId));
+const indexAnchorIds = new Set(indexAnchors.map((anchor) => anchor.id));
+const undefinedTargets = [...collectIndexTargets(indexEntries)].filter(
+  (target) => !printIds.has(target) && !indexAnchorIds.has(target)
+);
+
+if (undefinedTargets.length > 0) {
+  throw new Error(`The OK Zone index has undefined targets: ${undefinedTargets.join(", ")}`);
+}
+
+async function renderPrintMarkdownWithIndexAnchors(markdown: string, order: number) {
+  const injectedMarkdown = injectIndexAnchors(markdown, order);
+  const rendered = await markdownProcessor.render(injectedMarkdown);
+  return rendered.code.replaceAll('src="/images/', 'src="images/');
+}
+
+function injectIndexAnchors(markdown: string, order: number) {
+  const normalizedMarkdown = markdown.replace(/\r\n/g, "\n");
+  const anchors = indexAnchors.filter((anchor) => anchor.order === order);
+
+  if (anchors.length === 0) {
+    return normalizedMarkdown;
+  }
+
+  const insertions = new Map<number, string[]>();
+
+  for (const anchor of anchors) {
+    const phraseIndex = normalizedMarkdown.indexOf(anchor.phrase);
+
+    if (phraseIndex === -1) {
+      throw new Error(`The OK Zone index anchor phrase not found for ${anchor.id}: ${anchor.phrase}`);
+    }
+
+    const paragraphBreakIndex = normalizedMarkdown.lastIndexOf("\n\n", phraseIndex);
+    const insertAt = paragraphBreakIndex === -1 ? 0 : paragraphBreakIndex + 2;
+    const markers = insertions.get(insertAt) ?? [];
+    markers.push(indexAnchorMarkup(anchor.id));
+    insertions.set(insertAt, markers);
+  }
+
+  let output = normalizedMarkdown;
+  const sortedInsertions = [...insertions.entries()].sort(([a], [b]) => b - a);
+
+  for (const [insertAt, markers] of sortedInsertions) {
+    output = `${output.slice(0, insertAt)}${markers.join("\n")}\n\n${output.slice(insertAt)}`;
+  }
+
+  return output;
+}
+
+function indexAnchorMarkup(id: string) {
+  return `<div id="${id}" class="print-index-anchor" aria-hidden="true"></div>`;
+}
+
+function collectIndexTargets(entries: IndexEntry[]) {
+  const targets = new Set<string>();
+
+  for (const entry of entries) {
+    for (const target of entry.targets ?? []) {
+      targets.add(target);
+    }
+
+    for (const subentry of entry.subentries ?? []) {
+      for (const target of subentry.targets) {
+        targets.add(target);
+      }
+    }
+  }
+
+  return targets;
+}
+
+function sectionId(order: number) {
+  return `chapter-${order + 1}`;
+}
+
+function tocPageNumber(order: number) {
+  return tocPageNumbers[order] ?? "";
+}
+
+function partId(part: string) {
+  return part
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function partTitle(part: string) {
+  return part.replace(/^Part\s+[IVX]+\s*-\s*/, "").trim();
+}
+
+const printSections = [];
+const seenParts = new Set<string>();
+
+for (const entry of renderedSections) {
+  const part = entry.section.data.part;
+
+  if (part.startsWith("Part ") && !seenParts.has(part)) {
+    seenParts.add(part);
+    printSections.push({ type: "part", part, id: partId(part) });
+  }
+
+  printSections.push({ type: "section", ...entry });
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="author" content={book.author} />
+    <meta name="description" content={`Print/PDF edition of ${book.title} by ${book.author}.`} />
+    <title>{book.title} | PDF Edition</title>
+  </head>
+  <body>
+    <section class="half-title-page" aria-label="Half title">
+      <h1>{book.title}</h1>
+    </section>
+
+    <section class="title-page" aria-label="Title page">
+      <div>
+        <p class="title-eyebrow">OK is NOT enough</p>
+        <h1>{book.title}</h1>
+        <p class="title-subtitle">{book.subtitle}</p>
+        <p class="title-author">{book.author}</p>
+      </div>
+    </section>
+
+    <section class="copyright-page" aria-label="Copyright page">
+      <p><strong>{book.title}</strong></p>
+      <p>Copyright &copy; 2026 Tomas Svitorka and Kevin L. Michel.</p>
+      <p>All rights reserved.</p>
+      <p>
+        No part of this publication may be reproduced, distributed, transmitted, stored in a retrieval system, or used in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written permission from the copyright owners, except as permitted by law.
+      </p>
+      <p>
+        This book is intended for personal-development, coaching, and educational purposes. It does not replace professional medical, psychological, financial, legal, or therapeutic advice.
+      </p>
+      <p>Production Access live-draft PDF edition.</p>
+      <p>Printed in the United States of America.</p>
+    </section>
+
+    <nav class="toc-page" aria-label="Table of contents">
+      <h1>Contents</h1>
+      <ol>
+        {
+          printSections.map((section) =>
+            section.type === "part" ? (
+              <li class="toc-part-row">
+                <div class="toc-part">
+                  <span>{section.part}</span>
+                </div>
+              </li>
+            ) : (
+              <li>
+                <div class="toc-entry" data-target={`#${section.printId}`} data-page={tocPageNumber(section.section.data.order)}>
+                  <span class="toc-chapter">{section.label}</span>
+                  <span class="toc-title">{section.section.data.title}</span>
+                </div>
+              </li>
+            )
+          )
+        }
+      </ol>
+    </nav>
+
+    <main class="book-body">
+      {
+        printSections.map((section) =>
+          section.type === "part" ? (
+            <section class="part-opener" id={section.id}>
+              <p class="chapter-kicker">{section.part}</p>
+              <h1>{partTitle(section.part)}</h1>
+            </section>
+          ) : (
+            <PrintBookChapter
+              chapter={section.section}
+              printId={section.printId}
+              html={section.html}
+              kickerLabel={section.label}
+              showSubtitle={false}
+            />
+          )
+        )
+      }
+    </main>
+
+    <section class="about-author-page" aria-label="About the Author">
+      <h1>About the Author</h1>
+      <p>{aboutAuthor}</p>
+    </section>
+
+    <section class="index-page" aria-label="Index">
+      <h1>Index</h1>
+      <PrintIndex entries={indexEntries} />
+    </section>
+  </body>
+</html>

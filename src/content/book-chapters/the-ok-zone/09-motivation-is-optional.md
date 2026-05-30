@@ -14,13 +14,13 @@ Most goals fail when the work becomes inconvenient, boring or uncomfortable. New
 
 Your brain loves novelty. Starting feels good because it gives you a little identity upgrade. I am the kind of person who trains now. I am starting a business. I am writing a book. But after the announcement comes the repetition. That is where the real person is built.
 
-This chapter is one piece of the OK Zone Method. It is designed to move you from recognition to responsibility, then from responsibility to behaviour.
+This is where the work becomes visible. A stronger standard has to become a calendar entry, a conversation, a training session, a prepared room, a repeated behaviour, or it remains a nice idea with no legs.
 
 Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.
 
 The question is not, do I feel motivated today? The question is, what did I commit to and what is the minimum action that keeps me in integrity? You do not need heroic effort every day. You need enough consistency to keep the promise alive.
 
-When I coach someone through this, I am not looking for drama. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your bank account reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
+If someone tells me they only act when they feel motivated, I know the system is fragile. We have to build something sturdier than mood: reminders, standards, scheduling, accountability and a next action small enough to begin.
 
 When I trained for the London Marathon, there were many runs. Some were short. Some were long. Some were wet, boring or inconvenient. If I had waited to feel inspired for every session, the training plan would have fallen apart quickly. The plan mattered because it carried me when motivation was quiet.
 
@@ -28,7 +28,7 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Use minimum actions. If the full workout is not possible, what is the smallest version that keeps the identity alive? If writing for two hours is not possible, can you write for twenty minutes? If a difficult call feels too much, can you write the first three bullet points and schedule it?
 
-One way to use this chapter is to look at your life through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
+When motivation is high, use it. When it is low, do not worship its absence. Ask what the system says. Ask what the standard says. Ask what the next small action is. That is how you stop making mood the manager of your future.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.
 
@@ -46,7 +46,7 @@ The OK Zone is often maintained by tiny permissions. I will do it later. This do
 
 This is why I keep returning to evidence. Your future confidence will not be built from intentions. It will be built from remembered proof. Proof that you showed up. Proof that you corrected yourself. Proof that you asked for help. Proof that you could do something clumsy and continue. Proof that you did not disappear the moment the work became uncomfortable.
 
-If this chapter makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
+If the idea makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
 
 There is also an important kindness in this work. You do not have to hate the version of you that adapted to OK. That version probably did the best it knew with the tools it had. Thank it if you need to. Then upgrade the tools. The next version of your life does not require self-hatred. It requires better leadership.
 
@@ -75,5 +75,7 @@ Do not make this theoretical. The OK Zone loves theory because theory can feel l
 Pre-write your plan for tired days, bored days, scared days and busy days. Decide what the minimum action is before those days arrive.
 
 Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.
+
+Do the practice before you feel ready. The point is not to impress yourself with intensity. The point is to give your future self one more piece of evidence.
 
 **Takeaway:** Motivation is useful when it visits. Discipline keeps the door open when motivation leaves.

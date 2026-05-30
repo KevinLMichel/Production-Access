@@ -16,10 +16,16 @@ formats:
   - label: "Start Reading"
     href: "/books/the-ok-zone/"
     status: "available"
+  - label: "Download PDF"
+    href: "/downloads/the-ok-zone-tomas-svitorka.pdf"
+    status: "available"
 links:
   - label: "Start Reading"
     href: "/books/the-ok-zone/"
     kind: "read"
+  - label: "Download PDF"
+    href: "/downloads/the-ok-zone-tomas-svitorka.pdf"
+    kind: "download"
 ---
 
 The OK Zone is being built live on Production Access as a practical performance book by Tomas Svitorka.

@@ -14,13 +14,13 @@ People often wait for discomfort to become intolerable. They wait until the pain
 
 Tolerable discomfort works because it is familiar. You know how to live with it. You know how to explain it. You know how to make jokes about it. You know how to distract yourself from it. Possibility, on the other hand, asks for effort, risk and a new identity.
 
-This chapter is one piece of the OK Zone Method. It is designed to move you from recognition to responsibility, then from responsibility to behaviour.
+The first job is to name the pattern without making it your identity. Diagnosis is not condemnation. It is the moment you stop arguing with the facts and start using them.
 
 Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.
 
 The way out is not to make yourself miserable. The way out is to raise your honesty. Instead of asking, can I survive this? ask, would I deliberately choose this for another five years? That question changes the room. It forces you to compare tolerance with pride.
 
-When I coach someone through this, I am not looking for drama. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your bank account reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
+I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
 
 I have seen many clients who were not in dramatic trouble. Their problem was more subtle. They had a decent career, decent income, decent relationship or decent health, but the word decent had become a cage. They were not broken. They were bored with their own compromises.
 
@@ -28,7 +28,7 @@ This is where many ambitious people need a little kindness and a little challeng
 
 The audit works because it makes the invisible visible. When something stays vague, you can keep negotiating with it. When you write it down, it becomes harder to hide from. I keep tolerating low energy. I keep tolerating poor preparation. I keep tolerating a calendar that belongs to everyone except me. Now we have something to work with.
 
-One way to use this chapter is to look at your life through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
+Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.
 
@@ -46,7 +46,7 @@ The OK Zone is often maintained by tiny permissions. I will do it later. This do
 
 This is why I keep returning to evidence. Your future confidence will not be built from intentions. It will be built from remembered proof. Proof that you showed up. Proof that you corrected yourself. Proof that you asked for help. Proof that you could do something clumsy and continue. Proof that you did not disappear the moment the work became uncomfortable.
 
-If this chapter makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
+If the idea makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
 
 There is also an important kindness in this work. You do not have to hate the version of you that adapted to OK. That version probably did the best it knew with the tools it had. Thank it if you need to. Then upgrade the tools. The next version of your life does not require self-hatred. It requires better leadership.
 
@@ -75,5 +75,7 @@ Do not make this theoretical. The OK Zone loves theory because theory can feel l
 Finish these sentences: I keep tolerating, I complain about, I know I could improve, I have been saying one day about, and I would feel embarrassed if this stayed the same for five more years.
 
 Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.
+
+This is where diagnosis earns its keep. Once you have named the pattern, do not leave it as information. Turn it into one cleaner decision.
 
 **Takeaway:** If you can tolerate it, you can repeat it. If you can name it, you can change it.

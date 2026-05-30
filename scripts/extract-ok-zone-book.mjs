@@ -408,22 +408,18 @@ function wordCount(value) {
 }
 
 function buildBody(section) {
-  const numbered = section.subtitle?.startsWith("Chapter")
-    ? `This chapter is one piece of the OK Zone Method. It is designed to move you from recognition to responsibility, then from responsibility to behaviour.`
-    : `This section frames the work as a practical conversation between you and your own standards.`;
-
   return [
     section.opening,
     section.problem,
     section.why,
-    numbered,
+    purposeBridge(section),
     `Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.`,
     section.reframe,
-    `When I coach someone through this, I am not looking for drama. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your bank account reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.`,
+    coachingLens(section),
     section.story,
     `This is where many ambitious people need a little kindness and a little challenge. Kindness, because the old pattern probably helped you survive or feel safe at some point. Challenge, because the fact that something once helped you does not mean it should keep leading your life. Gratitude for the old strategy does not require loyalty to it.`,
     section.method,
-    `One way to use this chapter is to look at your life through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.`,
+    practicalWindow(section),
     `The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.`,
     `I want to keep bringing you back to behaviour because behaviour is where self-respect is either built or lost. It is easy to agree with an idea while reading. It is harder to live it at 7:00 on a cold morning, during an awkward meeting, after a poor night's sleep, or when nobody is going to praise you for doing the right thing. That is exactly why those moments matter.`,
     `You may also notice a little resistance here. Good. Resistance is often the sign that the conversation has become real. The part of you that wants change will lean forward. The part of you that wants familiarity will look for exceptions. It will say, this sounds good, but not this week. It will say, I already know this. It will say, my situation is different. Sometimes your situation is different. Sometimes that sentence is simply the OK Zone defending its territory.`,
@@ -432,7 +428,7 @@ function buildBody(section) {
     `If you are an ambitious person, there is another trap: turning every principle into a massive project. You read one chapter and decide to reorganise your whole life. It feels powerful for a day, then the size of it becomes too much. I would rather you make one clean change and keep it than make ten dramatic promises and abandon all of them by next week.`,
     `The OK Zone is often maintained by tiny permissions. I will do it later. This does not really matter. I had a hard day. Nobody will know. I can catch up tomorrow. Sometimes those sentences are reasonable. Sometimes they are the language of drift. You need to learn the difference between recovery and excuse. Recovery restores you. Excuse protects avoidance.`,
     `This is why I keep returning to evidence. Your future confidence will not be built from intentions. It will be built from remembered proof. Proof that you showed up. Proof that you corrected yourself. Proof that you asked for help. Proof that you could do something clumsy and continue. Proof that you did not disappear the moment the work became uncomfortable.`,
-    `If this chapter makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.`,
+    discomfortBridge(section),
     `There is also an important kindness in this work. You do not have to hate the version of you that adapted to OK. That version probably did the best it knew with the tools it had. Thank it if you need to. Then upgrade the tools. The next version of your life does not require self-hatred. It requires better leadership.`,
     `Leadership of yourself is not dramatic. It is mostly small decisions made repeatedly. Go to bed. Tell the truth. Prepare. Move your body. Ask the better question. Do the first repetition. Review the week. Repair the mistake. Say no. Say yes. Study. Practise. Begin again. The basics are not glamorous, but they are where the life changes.`,
     `A useful way to make this real is to stop asking whether you are generally doing well and start asking where the standard is visible. If someone watched your last seven days, what would they think you value? Not what would they think you believe, or what would they think you intend, but what would they think you actually value from the way you spent your time, protected your energy, used your attention and followed through? That question can be uncomfortable, but it is also freeing because it brings the work back to reality.`,
@@ -447,8 +443,127 @@ function buildBody(section) {
     `### Apply This: ${section.exerciseTitle}`,
     section.exercise,
     `Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.`,
+    finalTurn(section),
     `**Takeaway:** ${section.takeaway}`
   ].join("\n\n");
+}
+
+function purposeBridge(section) {
+  if (section.part === "Opening") {
+    return `The conversation begins with one uncomfortable standard: if your life is technically fine but quietly shrinking you, fine is no longer good enough. I am not asking you to invent a crisis. I am asking you to stop outsourcing your wake-up call to pain.`;
+  }
+
+  if (section.part.includes("Diagnose")) {
+    return `The first job is to name the pattern without making it your identity. Diagnosis is not condemnation. It is the moment you stop arguing with the facts and start using them.`;
+  }
+
+  if (section.part.includes("Raise")) {
+    return `Raising the standard does not mean becoming harsh with yourself. It means becoming specific enough that your better life has something to organise around.`;
+  }
+
+  if (section.part.includes("Build")) {
+    return `This is where the work becomes visible. A stronger standard has to become a calendar entry, a conversation, a training session, a prepared room, a repeated behaviour, or it remains a nice idea with no legs.`;
+  }
+
+  if (section.part.includes("Winning")) {
+    return `The Winning Zone is maintained by review, recovery and honest correction. You do not stay there by hype. You stay there by noticing earlier and returning faster.`;
+  }
+
+  return `The closing question is simple: what will you do with what you now know? Insight only becomes self-respect when it changes the next decision.`;
+}
+
+function coachingLens(section) {
+  const title = section.title.toLowerCase();
+
+  if (title.includes("three zones")) {
+    return `With clients, I often start by getting the map out of the clouds and into real life. Where are you drifting? Where are you genuinely progressing? Where are you telling yourself a comforting story because nothing has broken loudly enough yet? The map gives us a place to begin.`;
+  }
+
+  if (title.includes("brain")) {
+    return `I do not ask people to hate their own mind. I ask them to understand its strategy. What does the pattern protect? What discomfort does it avoid? What reward does it get immediately, even if the long-term cost is high?`;
+  }
+
+  if (title.includes("regret")) {
+    return `In coaching, regret is useful only if it arrives early enough to change behaviour. I want you to borrow wisdom from your future self before the bill becomes painful.`;
+  }
+
+  if (title.includes("environment")) {
+    return `When a client is stuck, I look at the room, the routines and the people around the routine. Not as blame, but as design. A better environment reduces the amount of heroism required.`;
+  }
+
+  if (title.includes("motivation")) {
+    return `If someone tells me they only act when they feel motivated, I know the system is fragile. We have to build something sturdier than mood: reminders, standards, scheduling, accountability and a next action small enough to begin.`;
+  }
+
+  if (title.includes("failure")) {
+    return `After a mistake, I want specifics. Not, I am useless. Not, everything is ruined. What happened? What was controllable? What was not? What did the result reveal about preparation, process or support?`;
+  }
+
+  if (title.includes("performance system") || title.includes("stay out")) {
+    return `A good system gives you feedback before life has to shout. It lets you catch the drift while it is still a small correction, not a dramatic rescue mission.`;
+  }
+
+  return `I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.`;
+}
+
+function practicalWindow(section) {
+  const title = section.title.toLowerCase();
+
+  if (title.includes("environment")) {
+    return `Look around the rooms you live and work in. What does each room make easier? What does it make harder? A room can coach you into movement or sedate you into drift. Your environment is already training you; the question is whether it is training the life you say you want.`;
+  }
+
+  if (title.includes("confidence")) {
+    return `Confidence needs a ledger. Where have you kept a promise? Where have you practised when nobody was watching? Where have you done the awkward repetition? Your self-belief becomes sturdier when your memory has receipts.`;
+  }
+
+  if (title.includes("motivation")) {
+    return `When motivation is high, use it. When it is low, do not worship its absence. Ask what the system says. Ask what the standard says. Ask what the next small action is. That is how you stop making mood the manager of your future.`;
+  }
+
+  if (title.includes("failure")) {
+    return `A useful debrief has three windows: what happened, what did I learn, and what do I adjust next time? If you only punish yourself, you waste the data. If you only excuse yourself, you waste the lesson.`;
+  }
+
+  return `Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.`;
+}
+
+function discomfortBridge(section) {
+  const title = section.title.toLowerCase();
+
+  if (title.includes("fear")) {
+    return `If fear appears, do not automatically obey it and do not automatically fight it. Ask what it is protecting, what it is exaggerating, and what a brave but intelligent next move would look like.`;
+  }
+
+  if (title.includes("standard") || title.includes("hard")) {
+    return `If a higher standard makes you uncomfortable, listen carefully. Sometimes discomfort means too much too soon. Sometimes it means the old identity has been asked to give up the steering wheel.`;
+  }
+
+  if (title.includes("stay out")) {
+    return `When you notice drift, do not dramatise it. Correct it. Shame wants a whole courtroom. Leadership needs one clean next action.`;
+  }
+
+  return `If the idea makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.`;
+}
+
+function finalTurn(section) {
+  if (section.part === "Closing") {
+    return `Let the first move be small enough to do and meaningful enough to count. A better life does not begin when everything changes. It begins when you stop negotiating with the one thing you already know is true.`;
+  }
+
+  if (section.part.includes("Winning")) {
+    return `Review is not punishment. It is maintenance. If you keep a system alive long enough, it begins to keep you alive in return.`;
+  }
+
+  if (section.part.includes("Build")) {
+    return `Do the practice before you feel ready. The point is not to impress yourself with intensity. The point is to give your future self one more piece of evidence.`;
+  }
+
+  if (section.part.includes("Raise")) {
+    return `Do not let the standard remain a sentence. Give it a behaviour. Give it a time. Give it a place. Give it enough structure to survive your mood.`;
+  }
+
+  return `This is where diagnosis earns its keep. Once you have named the pattern, do not leave it as information. Turn it into one cleaner decision.`;
 }
 
 async function main() {

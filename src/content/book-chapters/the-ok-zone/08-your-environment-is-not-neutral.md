@@ -14,13 +14,13 @@ If everyone around you is tolerating OK, OK will feel sensible. If everyone arou
 
 We are social creatures. We learn by proximity. This can damage us when we compare ourselves to punish ourselves. But comparison can also be useful when we treat it as research. Instead of saying, they are ahead, I am behind, ask, what are they doing that I can learn from?
 
-This chapter is one piece of the OK Zone Method. It is designed to move you from recognition to responsibility, then from responsibility to behaviour.
+Raising the standard does not mean becoming harsh with yourself. It means becoming specific enough that your better life has something to organise around.
 
 Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.
 
 I often use the library effect. If you try to study in a room where everyone is watching television, eating snacks and laughing, studying feels harder. If you study in a library where everyone is focused, the same behaviour feels easier. The environment has not done the work for you, but it has reduced the friction.
 
-When I coach someone through this, I am not looking for drama. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your bank account reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
+When a client is stuck, I look at the room, the routines and the people around the routine. Not as blame, but as design. A better environment reduces the amount of heroism required.
 
 When I got into personal development, one of the most powerful things was discovering that people were actively learning skills I thought were fixed. Communication, discipline, confidence, goal setting, mindset, all of these became learnable. That changed the room I was in mentally, even before my physical environment changed.
 
@@ -28,7 +28,7 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Do a Room Audit. Who makes your old standards feel normal? Who quietly raises your ambition? Who tells you that your goal is unrealistic because they have never attempted anything similar? Who has already walked the road you are trying to begin?
 
-One way to use this chapter is to look at your life through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
+Look around the rooms you live and work in. What does each room make easier? What does it make harder? A room can coach you into movement or sedate you into drift. Your environment is already training you; the question is whether it is training the life you say you want.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.
 
@@ -46,7 +46,7 @@ The OK Zone is often maintained by tiny permissions. I will do it later. This do
 
 This is why I keep returning to evidence. Your future confidence will not be built from intentions. It will be built from remembered proof. Proof that you showed up. Proof that you corrected yourself. Proof that you asked for help. Proof that you could do something clumsy and continue. Proof that you did not disappear the moment the work became uncomfortable.
 
-If this chapter makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
+If the idea makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
 
 There is also an important kindness in this work. You do not have to hate the version of you that adapted to OK. That version probably did the best it knew with the tools it had. Thank it if you need to. Then upgrade the tools. The next version of your life does not require self-hatred. It requires better leadership.
 
@@ -75,5 +75,7 @@ Do not make this theoretical. The OK Zone loves theory because theory can feel l
 Name who normalises OK, who normalises courage, who has the skill or standard you need, and what room you need to enter next.
 
 Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.
+
+Do not let the standard remain a sentence. Give it a behaviour. Give it a time. Give it a place. Give it enough structure to survive your mood.
 
 **Takeaway:** The people around you teach you what is normal. Choose your teachers carefully.

@@ -1,0 +1,598 @@
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-serif-4/source-serif-4-latin-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/source-sans-3/source-sans-3-latin-700-normal.woff2") format("woff2");
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.68in 0.58in 0.76in;
+}
+
+@page front {
+  margin: 0.72in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page toc:left {
+  margin: 0.66in 0.82in 0.7in 0.58in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page toc:right {
+  margin: 0.66in 0.58in 0.7in 0.82in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page part {
+  margin: 0.68in 0.58in 0.76in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page chapter {
+  margin: 0.68in 0.58in 0.76in;
+}
+
+@page chapter:left {
+  margin-left: 0.56in;
+  margin-right: 0.74in;
+
+  @top-left {
+    content: "Tomas Svitorka";
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-left {
+    content: counter(page);
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+@page chapter:right {
+  margin-left: 0.74in;
+  margin-right: 0.56in;
+
+  @top-right {
+    content: "The OK Zone";
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 7.2pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+@page chapter:first {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+@page chapter:blank {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page back {
+  margin: 0.72in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page index:left {
+  margin: 0.68in 0.84in 0.74in 0.58in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+
+  @bottom-left {
+    content: counter(page);
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+@page index:right {
+  margin: 0.68in 0.58in 0.74in 0.84in;
+
+  @top-left { content: none; }
+  @top-right { content: none; }
+
+  @bottom-right {
+    content: counter(page);
+    color: #354252;
+    font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+    font-size: 8pt;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #111827;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 10.25pt;
+  line-height: 1.4;
+}
+
+body {
+  background: #fff;
+  counter-reset: page -1;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+blockquote {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.half-title-page,
+.title-page,
+.copyright-page {
+  page: front;
+}
+
+.half-title-page {
+  align-items: center;
+  break-after: right;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.half-title-page h1,
+.title-page h1 {
+  color: #071a3d;
+  font-size: 34pt;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  margin: 0 auto;
+  max-width: 4.15in;
+}
+
+.title-page {
+  align-items: center;
+  break-after: page;
+  display: flex;
+  min-height: 6.85in;
+  text-align: center;
+}
+
+.title-page h1 {
+  font-size: 39pt;
+  margin: 0.25in auto 0.23in;
+}
+
+.title-subtitle {
+  color: #1f2937;
+  font-size: 10.6pt;
+  line-height: 1.32;
+  margin: 0 auto 0.42in;
+  max-width: 3.75in;
+}
+
+.title-eyebrow,
+.title-author,
+.chapter-kicker,
+.toc-chapter,
+.toc-part span {
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title-eyebrow {
+  color: #b27912;
+  font-size: 8pt;
+  font-weight: 700;
+}
+
+.title-author {
+  color: #071a3d;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.copyright-page {
+  break-after: right;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 8.15pt;
+  line-height: 1.42;
+  padding-top: 0.16in;
+}
+
+.copyright-page p {
+  margin-bottom: 0.14in;
+}
+
+.toc-page {
+  break-after: page;
+  page: toc;
+}
+
+.toc-page h1,
+.about-author-page h1,
+.index-page h1 {
+  color: #071a3d;
+  font-size: 23pt;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin-bottom: 0.24in;
+}
+
+.toc-page ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-page li {
+  border-bottom: 0.65pt solid rgba(7, 26, 61, 0.14);
+  break-inside: avoid;
+  padding: 0.04in 0;
+}
+
+.toc-page .toc-part-row {
+  border-bottom: 0;
+  padding: 0.1in 0 0.03in;
+}
+
+.toc-entry {
+  display: grid;
+  gap: 0.07in;
+  grid-template-columns: 0.62in minmax(0, 1fr) 0.38in;
+}
+
+.toc-entry::after {
+  content: attr(data-page);
+  color: #071a3d;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 8pt;
+  font-weight: 700;
+  text-align: right;
+}
+
+.toc-entry[data-page=""]::after {
+  content: target-counter(attr(data-target url), page);
+}
+
+.toc-title {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.toc-chapter {
+  color: #0c8f61;
+  font-size: 6.7pt;
+  font-weight: 700;
+}
+
+.toc-part span {
+  color: #b27912;
+  font-size: 7.1pt;
+  font-weight: 700;
+}
+
+.book-body {
+  counter-reset: chapter;
+}
+
+.part-opener {
+  align-content: center;
+  break-before: page;
+  display: grid;
+  min-height: 6.85in;
+  page: part;
+  position: relative;
+  text-align: center;
+}
+
+.part-opener::before {
+  background:
+    linear-gradient(90deg, transparent, rgba(12, 143, 97, 0.55), rgba(178, 121, 18, 0.62), transparent),
+    radial-gradient(circle at center, rgba(12, 143, 97, 0.15), transparent 55%);
+  content: "";
+  height: 0.055in;
+  left: 16%;
+  position: absolute;
+  right: 16%;
+  top: 2.52in;
+}
+
+.part-opener h1 {
+  color: #071a3d;
+  font-size: 24pt;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin: 0 auto;
+  max-width: 4in;
+}
+
+.print-chapter {
+  break-before: page;
+  page: chapter;
+}
+
+.chapter-opener {
+  margin-bottom: 0.28in;
+  padding-top: 0.58in;
+}
+
+.chapter-kicker {
+  color: #0c8f61;
+  font-size: 7.6pt;
+  font-weight: 700;
+  margin-bottom: 0.13in;
+}
+
+.chapter-opener h1 {
+  color: #071a3d;
+  font-size: 20.5pt;
+  letter-spacing: -0.032em;
+  line-height: 1.05;
+  margin-bottom: 0.12in;
+}
+
+.chapter-body {
+  hyphens: auto;
+  orphans: 3;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-align-last: left;
+  widows: 3;
+}
+
+.chapter-body h2,
+.chapter-body h3 {
+  break-after: avoid;
+  color: #071a3d;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.chapter-body h2 {
+  font-size: 13pt;
+  margin: 0.28in 0 0.1in;
+}
+
+.chapter-body h3 {
+  color: #0a6c4c;
+  font-size: 11pt;
+  margin: 0.22in 0 0.08in;
+}
+
+.chapter-body p {
+  margin: 0;
+}
+
+.chapter-body p + p {
+  text-indent: 0.2in;
+}
+
+.chapter-body h2 + p,
+.chapter-body h3 + p,
+.chapter-body blockquote + p,
+.chapter-body aside + p,
+.chapter-body ul + p,
+.chapter-body ol + p,
+.chapter-body .print-index-anchor + p {
+  text-indent: 0;
+}
+
+.chapter-body strong {
+  color: #071a3d;
+}
+
+.chapter-body blockquote {
+  border-bottom: 0.75pt solid rgba(12, 143, 97, 0.38);
+  border-top: 0.75pt solid rgba(178, 121, 18, 0.38);
+  color: #111827;
+  font-size: 9.7pt;
+  font-style: italic;
+  line-height: 1.36;
+  margin: 0.17in 0.2in;
+  padding: 0.075in 0;
+  text-align: left;
+}
+
+.chapter-body ul,
+.chapter-body ol {
+  margin: 0 0 0.14in 0.22in;
+  padding: 0;
+  text-align: left;
+}
+
+.chapter-body li {
+  margin-bottom: 0.05in;
+}
+
+.about-author-page {
+  break-before: page;
+  page: back;
+  padding-top: 1.12in;
+}
+
+.about-author-page p {
+  font-size: 10.35pt;
+  line-height: 1.45;
+  max-width: 3.9in;
+}
+
+.index-page {
+  break-before: page;
+  page: index;
+}
+
+.print-index-anchor {
+  break-after: avoid;
+  display: block;
+  height: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.print-index-list {
+  column-gap: 0.28in;
+  columns: 2;
+  list-style: none;
+  margin: 0.12in 0 0;
+  padding: 0;
+}
+
+.index-entry {
+  break-inside: avoid;
+  font-size: 8pt;
+  line-height: 1.22;
+  margin-bottom: 0.04in;
+  padding-left: 0.11in;
+  text-indent: -0.11in;
+}
+
+.index-letter {
+  border-top: 0.35pt solid rgba(12, 143, 97, 0.35);
+  break-after: avoid;
+  color: #0a6c4c;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 6.8pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  list-style: none;
+  margin: 0.045in 0 0.045in;
+  padding-top: 0.035in;
+  text-transform: uppercase;
+}
+
+.index-letter:first-child {
+  margin-top: 0;
+}
+
+.index-line {
+  break-inside: avoid;
+  display: block;
+}
+
+.index-term {
+  color: #071a3d;
+  font-size: 7.55pt;
+  font-weight: 800;
+  letter-spacing: 0.018em;
+  text-transform: none;
+}
+
+.index-pages {
+  color: #0a6c4c;
+  font-family: "Source Sans 3", "Arial Narrow", sans-serif;
+  font-size: 7.8pt;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.index-term::after,
+.index-subterm::after {
+  content: " ";
+}
+
+.index-page-ref::after {
+  content: target-counter(attr(data-target url), page);
+}
+
+.index-subentries {
+  columns: 1;
+  list-style: none;
+  margin: 0.014in 0 0.02in 0.12in;
+  padding: 0;
+  text-indent: 0;
+}
+
+.index-subentries li {
+  break-inside: avoid;
+  display: block;
+  font-size: 7.72pt;
+  line-height: 1.2;
+  margin-bottom: 0.014in;
+  padding-left: 0.1in;
+  text-indent: -0.1in;
+}
+
+.index-subterm {
+  color: #243244;
+  font-style: italic;
+}

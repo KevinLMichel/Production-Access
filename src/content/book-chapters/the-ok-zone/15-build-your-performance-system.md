@@ -14,13 +14,13 @@ People often rely on heroic effort. They wait until things become messy, then tr
 
 What gets measured gets managed, but only if you measure the right things. Personal KPIs are not there to turn you into a machine. They are there to give you feedback. Sleep, energy, movement, nutrition, focus, money, time, confidence practice, relationship attention, these are signals.
 
-This chapter is one piece of the OK Zone Method. It is designed to move you from recognition to responsibility, then from responsibility to behaviour.
+The Winning Zone is maintained by review, recovery and honest correction. You do not stay there by hype. You stay there by noticing earlier and returning faster.
 
 Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.
 
 Think of the system as a coach that lives in your week. It asks, what matters? What is slipping? What needs support? What is the next best action? You are not trying to control everything. You are trying to stay awake to the few things that shape everything else.
 
-When I coach someone through this, I am not looking for drama. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your bank account reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
+A good system gives you feedback before life has to shout. It lets you catch the drift while it is still a small correction, not a dramatic rescue mission.
 
 I have worked with clients who discovered huge amounts of time disappearing into habits they had never measured. Social media, television, vague evenings, constant context switching. Once they saw the numbers, the conversation changed. It was no longer, I do not have time. It was, this is where the time is going.
 
@@ -28,7 +28,7 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Build your system around three areas: You, Your Environment and Your Performance. You includes health, energy, mindset and confidence. Your Environment includes people, spaces, distractions and support. Your Performance includes goals, skills, actions and review.
 
-One way to use this chapter is to look at your life through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
+Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.
 
@@ -46,7 +46,7 @@ The OK Zone is often maintained by tiny permissions. I will do it later. This do
 
 This is why I keep returning to evidence. Your future confidence will not be built from intentions. It will be built from remembered proof. Proof that you showed up. Proof that you corrected yourself. Proof that you asked for help. Proof that you could do something clumsy and continue. Proof that you did not disappear the moment the work became uncomfortable.
 
-If this chapter makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
+If the idea makes you uncomfortable, do not rush to make the discomfort go away. Sit with it long enough to hear what it is saying. Sometimes discomfort says, I am being attacked. Sometimes it says, I have been found out. Sometimes it says, I want more, but I am scared of the cost. That last one is usually worth listening to.
 
 There is also an important kindness in this work. You do not have to hate the version of you that adapted to OK. That version probably did the best it knew with the tools it had. Thank it if you need to. Then upgrade the tools. The next version of your life does not require self-hatred. It requires better leadership.
 
@@ -75,5 +75,7 @@ Do not make this theoretical. The OK Zone loves theory because theory can feel l
 Review what went well, where you settled, what needs attention, which standard to raise and the one action that would make the biggest difference next week.
 
 Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.
+
+Review is not punishment. It is maintenance. If you keep a system alive long enough, it begins to keep you alive in return.
 
 **Takeaway:** Systems are how standards survive real life.
