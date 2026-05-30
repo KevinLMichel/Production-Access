@@ -43,6 +43,7 @@
     "extract:ok-zone": "node scripts/extract-ok-zone-book.mjs",
     "extract:ancestral-rage": "node scripts/extract-ancestral-rage-book.mjs",
     "extract:city-heavy-heart": "node scripts/extract-city-heavy-heart-book.mjs",
+    "extract:island-refused-saved": "node scripts/extract-island-refused-saved-book.mjs",
     "extract:session-three-book-worlds": "node scripts/extract-session-three-book-worlds.mjs",
     "extract:session-four-book-worlds": "node scripts/extract-session-four-book-worlds.mjs",
     "extract:session-two-book-worlds": "node scripts/extract-session-two-book-worlds.mjs",

@@ -104,6 +104,21 @@ export const batchBookWorlds = {
     accent2: "#111111",
     glow: "rgba(210, 162, 29, 0.28)"
   },
+  "island-that-refused-to-be-saved": {
+    eyebrow: "A Political-Mythic Island Novel",
+    heroTitle: "The offer was beautiful. The cost was memory.",
+    lede:
+      "A final-draft novel of Saint Orison and Nayara, where a transparent constitution promises rescue while the old words, paths, currents, graves, and pronouns begin to vanish.",
+    promiseTitle: "A people cannot be saved by becoming illegible to themselves.",
+    promiseBody:
+      "The Island That Refused to Be Saved follows Tavio Senn, Mira Baptiste, Amiel Dorsain, Maman Zelie, and Dr. Corin Vale through public consultations, school reforms, land registries, coastal relocation, forbidden notebooks, and the Court Beneath the Reef. The island must decide whether refusing a false rescue can become the beginning of honest repair.",
+    mapTitle: "Offer, clean ink, underwater court, refusal",
+    cardHeading: "Island evidence",
+    cards: ["The Glass Constitution", "Words That Ran Away", "The Court Beneath the Reef", "Article Zero"],
+    accent: "#d2a65d",
+    accent2: "#0f4d5d",
+    glow: "rgba(18, 91, 104, 0.28)"
+  },
   "clock-with-no-hands": {
     eyebrow: "A Metaphysical Novella",
     heroTitle: "A clock without hands. A civilization waiting for agency.",
