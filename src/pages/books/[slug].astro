@@ -50,6 +50,19 @@ const totalWords = sections.reduce((sum, section) => sum + getChapterWordCount(s
 const downloadFormat = book.data.formats.find(
   (format) => format.href && (format.href.toLowerCase().endsWith(".pdf") || format.label.toLowerCase().includes("download"))
 );
+const carryForwardFallback =
+  "A compact thread from the book's larger argument, carried as a practical lens for reading and return.";
+const carryForwardCards = batchWorld
+  ? batchWorld.cards.map((card, cardIndex) => ({
+      title: card,
+      body: batchWorld.cardBodies[cardIndex] ?? carryForwardFallback
+    }))
+  : [];
+if (batchWorld && batchWorld.cardBodies.length !== batchWorld.cards.length) {
+  console.warn(
+    `[book-world] ${book.id} has ${batchWorld.cards.length} carry-forward cards but ${batchWorld.cardBodies.length} card bodies.`
+  );
+}
 const themeStyle = batchWorld
   ? `--batch-accent: ${batchWorld.accent}; --batch-accent-2: ${batchWorld.accent2}; --batch-glow: ${batchWorld.glow};`
   : "";
@@ -116,11 +129,11 @@ function sectionLabel(order: number, subtitle?: string) {
             </div>
           </div>
           <div class="practice-grid batch-card-grid">
-            {batchWorld.cards.map((card, cardIndex) => (
+            {carryForwardCards.map((card, cardIndex) => (
               <article>
                 <span>{String(cardIndex + 1).padStart(2, "0")}</span>
-                <h3>{card}</h3>
-                <p>A compact thread from the book's larger argument, carried as a practical lens for reading and return.</p>
+                <h3>{card.title}</h3>
+                <p>{card.body}</p>
               </article>
             ))}
           </div>

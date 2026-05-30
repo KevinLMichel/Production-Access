@@ -10,6 +10,12 @@ export const batchBookWorlds = {
     mapTitle: "From permanent crisis to useful local power",
     cardHeading: "Field manual tools",
     cards: ["Hard Times Triangle", "Emergency liquidity", "Administrative go-bag", "Local power map"],
+    cardBodies: [
+      "Use this triangle to separate household discipline, public pressure, and neighbor power before crisis turns every problem into panic.",
+      "Treat cash, documents, and obligations as a resilience system, not a shame ledger. The goal is time to think when pressure rises.",
+      "Keep the records, IDs, contacts, and proof you would need if a gatekeeper suddenly asked you to prove your life.",
+      "Name the people, offices, rules, and local levers that shape your situation. Then choose pressure that is lawful, specific, and shared."
+    ],
     accent: "#b44732",
     accent2: "#e6c878",
     glow: "rgba(180, 71, 50, 0.22)"
@@ -25,6 +31,12 @@ export const batchBookWorlds = {
     mapTitle: "Creation, wisdom, justice, mercy, humility, patience, hope",
     cardHeading: "Wisdom practices",
     cards: ["Hear wisdom's call", "Balance truth and mercy", "Practice humble strength", "Carry hope through shadow"],
+    cardBodies: [
+      "Read for the voice that interrupts noise with counsel. Wisdom arrives as a call before it becomes a path.",
+      "Let truth keep its spine and mercy keep its hands. The stronger life refuses both cruelty and sentimental evasion.",
+      "Humility is not shrinking. It is strength placed under reverence, so service can act without needing applause.",
+      "When the valley darkens, keep one practice alive. Hope becomes durable when it is carried through shadow, not around it."
+    ],
     accent: "#0fb2c5",
     accent2: "#f0b84d",
     glow: "rgba(15, 178, 197, 0.24)"
@@ -40,6 +52,12 @@ export const batchBookWorlds = {
     mapTitle: "Perception, intention, healing, movement, transformation",
     cardHeading: "Reality-warping lenses",
     cards: ["Perception as doorway", "Intention as compass", "Compassion as force", "Transformation as practice"],
+    cardBodies: [
+      "Before trying to change a life, notice the lens making that life feel fixed. Perception is often the first movable piece.",
+      "Use intention as orientation, not fantasy. A clear inner direction helps scattered energy gather around the next true step.",
+      "Let compassion become a force of perception. It changes what you notice, how you respond, and which future remains possible.",
+      "Transformation is not a mood. It is the repeated art of choosing the next shape when the old one stops serving life."
+    ],
     accent: "#25d9ff",
     accent2: "#ff5f8f",
     glow: "rgba(37, 217, 255, 0.24)"
@@ -55,6 +73,12 @@ export const batchBookWorlds = {
     mapTitle: "Model-making, shifting science, success, wellness, daily practice",
     cardHeading: "World-shifting tools",
     cards: ["Model Audit", "Three-World Simulation", "Vocabulary Shift", "Daily Shift Protocol"],
+    cardBodies: [
+      "Audit the assumptions quietly deciding what you notice, attempt, and expect. A changed model makes different action visible.",
+      "When stuck, compare the world of habit, the world of fear, and the world of aim. Choice becomes clearer beside alternatives.",
+      "Change the sentence beneath the sentence. Your language is not decoration; it is instruction your nervous system keeps obeying.",
+      "Use a daily protocol to make the new world physical: one signal, one action, one record, one correction."
+    ],
     accent: "#20d8ff",
     accent2: "#ffd45a",
     glow: "rgba(87, 77, 255, 0.28)"
@@ -70,6 +94,12 @@ export const batchBookWorlds = {
     mapTitle: "Rut Zone, OK Zone, Winning Zone",
     cardHeading: "OK Zone tools",
     cards: ["Minimum Acceptable Standard", "H3 Method", "Confidence Credit Score", "Weekly Winning Zone Review"],
+    cardBodies: [
+      "Draw the line below which your self-respect begins to leak. Then make that line practical enough to keep on a hard Tuesday.",
+      "Connect Heart, Head, and Hands before chasing momentum. Meaning, plan, and action must all be wired for change to hold.",
+      "Build confidence with deposits, not speeches. Each small brave action gives your mind evidence it can trust under pressure.",
+      "Review the week before drift becomes identity. What you measure calmly, you can adjust before the OK Zone gets comfortable again."
+    ],
     accent: "#f0ad2e",
     accent2: "#8fce4f",
     glow: "rgba(42, 166, 255, 0.25)"
@@ -85,6 +115,12 @@ export const batchBookWorlds = {
     mapTitle: "Rage, blood, memory, meaning, destiny, purpose",
     cardHeading: "Purpose disciplines",
     cards: ["Rage Inventory", "Ancestral Ledger", "Genealogical Dig", "Purpose Manifesto"],
+    cardBodies: [
+      "Name what the fire is trying to protect before you obey it. Rage becomes dangerous when it stays unnamed and untrained.",
+      "List what your bloodline handed you: wounds, gifts, scripts, warnings, and commands. Then choose what deserves discipline.",
+      "Research the family and historical ground beneath your reactions. Memory becomes power when it stops surviving as rumor.",
+      "Turn pain into a stated assignment. Purpose needs language clear enough to guide choices when emotion is loud."
+    ],
     accent: "#8f1d14",
     accent2: "#c89b52",
     glow: "rgba(143, 29, 20, 0.28)"
@@ -100,6 +136,12 @@ export const batchBookWorlds = {
     mapTitle: "Night route, underworld court, civic organs, refusal, dawn",
     cardHeading: "Civic thresholds",
     cards: ["The N17 Route", "The Hall of Measure", "The Confessions of Function", "The Feet Refuse"],
+    cardBodies: [
+      "Follow the night route as evidence. The city reveals itself through who must keep moving while everyone else sleeps.",
+      "Enter the Hall as a reader-juror. Ask what each institution protects, what it hides, and who pays the weight.",
+      "Listen to each organ as a function, not just a villain. Systems confess through the work they normalize.",
+      "When the Feet refuse, notice the moral threshold: a city changes when the burdened stop carrying what power will not name."
+    ],
     accent: "#d2a21d",
     accent2: "#111111",
     glow: "rgba(210, 162, 29, 0.28)"
@@ -115,6 +157,12 @@ export const batchBookWorlds = {
     mapTitle: "Offer, clean ink, underwater court, refusal",
     cardHeading: "Island evidence",
     cards: ["The Glass Constitution", "Words That Ran Away", "The Court Beneath the Reef", "Article Zero"],
+    cardBodies: [
+      "Read clean documents for what fingerprints they erase. Transparency can become another disguise when memory is made inconvenient.",
+      "Track the words that disappear first. A people loses more than vocabulary when home becomes difficult to say.",
+      "Treat the reef court as memory with teeth. The dead ask what rescue costs when it requires forgetting the rescued.",
+      "Return to Article Zero whenever reform sounds too smooth. The island survives by naming what no imported clause can own."
+    ],
     accent: "#d2a65d",
     accent2: "#0f4d5d",
     glow: "rgba(18, 91, 104, 0.28)"
@@ -130,6 +178,12 @@ export const batchBookWorlds = {
     mapTitle: "Clock, factory, city, school, screen, supermarket, court",
     cardHeading: "Thresholds",
     cards: ["The missing hand", "The factory of separation", "The burning river", "The court of purpose"],
+    cardBodies: [
+      "Look for the hand the machine claims not to have. Fatalism often hides the human choices that keep systems turning.",
+      "Follow how separation becomes efficient. The factory teaches what happens when labor forgets the bodies attached to it.",
+      "Let the river show the cost of abstract orders. History becomes harder to excuse when it has heat, mud, and breath.",
+      "At the court of purpose, ask what the machine is for. A blank purpose field is never morally neutral."
+    ],
     accent: "#c79a4f",
     accent2: "#c74a35",
     glow: "rgba(199, 154, 79, 0.25)"
@@ -145,6 +199,12 @@ export const batchBookWorlds = {
     mapTitle: "Through the shard, toward the real",
     cardHeading: "Self-direction practices",
     cards: ["Perception audit", "Desire check", "Language as instrument", "Reality without escape"],
+    cardBodies: [
+      "Ask what your perception is selecting before you call it reality. The audit begins where certainty feels most automatic.",
+      "Desire is data, not command. Check what it points toward, what it avoids, and what self it is trying to build.",
+      "Use language as a tool for steering attention. The words you choose can either clarify agency or decorate surrender.",
+      "Refuse both denial and escape. Reality becomes workable when you meet it fully without letting it own the whole frame."
+    ],
     accent: "#7ee6ff",
     accent2: "#f4d28d",
     glow: "rgba(126, 230, 255, 0.25)"
@@ -160,6 +220,12 @@ export const batchBookWorlds = {
     mapTitle: "Lantern, city, trial, dawn",
     cardHeading: "Archetypal trials",
     cards: ["Power without worship", "Pleasure without enslavement", "Truth without cruelty", "Silence without disappearance"],
+    cardBodies: [
+      "Study power without kneeling to it. The trial is to recognize force while refusing to let it define the soul.",
+      "Pleasure becomes safer when it is welcomed without being crowned. Desire can speak without becoming the king.",
+      "Truth must keep its blade clean. Say what is real without turning accuracy into an excuse for cruelty.",
+      "Silence can heal or hide. Learn whether quiet is making room for wisdom or helping fear disappear."
+    ],
     accent: "#b58cff",
     accent2: "#f08a5d",
     glow: "rgba(181, 140, 255, 0.23)"
@@ -175,6 +241,12 @@ export const batchBookWorlds = {
     mapTitle: "From hidden battlefield to unconquerable self",
     cardHeading: "Warrior disciplines",
     cards: ["Clarity as sword", "Courage as shield", "Integrity as armor", "Unity of command"],
+    cardBodies: [
+      "Use clarity to cut through fog before reacting. The first victory is knowing what battle you are actually in.",
+      "Courage is protection for action, not absence of fear. Carry the shield and move while the body still trembles.",
+      "Integrity keeps the warrior from becoming the threat. Let your rules hold when anger offers easier weapons.",
+      "Bring the inner army under one command. Scattered impulses become strength only when they answer to a chosen aim."
+    ],
     accent: "#e44d3a",
     accent2: "#f4d2a0",
     glow: "rgba(228, 77, 58, 0.23)"
@@ -190,6 +262,12 @@ export const batchBookWorlds = {
     mapTitle: "Rivalry, illusion, mastery, reunion",
     cardHeading: "Council questions",
     cards: ["Who speaks inside?", "What filter rules perception?", "Where does choice begin?", "Which self can govern?"],
+    cardBodies: [
+      "Name the voice currently ruling the room inside you. Choice begins when the speaker is no longer mistaken for the self.",
+      "Find the filter before arguing with the picture. Perception is shaped by the god you have allowed to hold the lens.",
+      "Choice begins in the pause between impulse and enthronement. That pause is small, but it is politically decisive.",
+      "The governing self is the one that can listen without surrendering the chair. Rule means integration, not suppression."
+    ],
     accent: "#ffd36c",
     accent2: "#73d2ff",
     glow: "rgba(255, 211, 108, 0.22)"
@@ -205,6 +283,12 @@ export const batchBookWorlds = {
     mapTitle: "From inner pulse to outer deed",
     cardHeading: "Action laws",
     cards: ["Act greatly", "Move in the certain way", "Choose quality over quantity", "Let momentum compound"],
+    cardBodies: [
+      "Do the next meaningful thing at full size. Greatness often begins as quality of presence before it becomes scale.",
+      "Move when the signal is clear, without competing with panic. Certain action is calm enough to be precise.",
+      "A few aligned actions can outperform a crowd of anxious motions. Choose the deed with the cleanest connection to purpose.",
+      "Momentum compounds when each completed action makes the next one easier. Let motion teach belief how to stand."
+    ],
     accent: "#65f0b3",
     accent2: "#f5d36b",
     glow: "rgba(101, 240, 179, 0.2)"
@@ -220,6 +304,12 @@ export const batchBookWorlds = {
     mapTitle: "Spark, metamorphosis, illumination, integration",
     cardHeading: "Transforming movements",
     cards: ["Notice the longing", "Let insight disturb the frame", "Stand in the space between thoughts", "Return changed"],
+    cardBodies: [
+      "Treat longing as information from the life not yet built. It points toward a door before it explains the room.",
+      "Let real insight disturb your favorite explanation. A thought that changes everything will first make the old frame unstable.",
+      "Practice standing in the gap before naming it. The space between thoughts is where a new self can hear itself.",
+      "Do not return as proof that nothing happened. Bring one changed behavior back to ordinary life."
+    ],
     accent: "#ffb86b",
     accent2: "#91d8ff",
     glow: "rgba(255, 184, 107, 0.22)"
@@ -235,6 +325,12 @@ export const batchBookWorlds = {
     mapTitle: "From Lyceum to manifesto",
     cardHeading: "Becoming pressures",
     cards: ["Education as trial", "Archive as mirror", "City as flux", "Manifesto as choice"],
+    cardBodies: [
+      "Treat education as pressure that reveals the self under construction. Ask whether the lesson produces obedience, freedom, or both.",
+      "Let the archive reflect what inheritance cannot finish. Old records become useful when they provoke a living choice.",
+      "The city is flux made visible. Watch how institutions, crowds, and streets test every private theory of becoming.",
+      "A manifesto matters only if it costs comfort. Choice becomes real when the page asks for a life."
+    ],
     accent: "#9ee66e",
     accent2: "#ffd46b",
     glow: "rgba(158, 230, 110, 0.2)"
@@ -250,6 +346,12 @@ export const batchBookWorlds = {
     mapTitle: "Mind, mood, memory, meaning",
     cardHeading: "Upgrade modules",
     cards: ["Reprogram the mind", "Regulate the mood", "Sharpen memory", "Live from meaning"],
+    cardBodies: [
+      "Install better mental pathways through repetition, not wishful thinking. The mind changes when thought becomes trained behavior.",
+      "Regulate mood as a practice of state design. Emotional weather matters, but it does not have to command the day.",
+      "Sharpen memory by giving attention a structure. What you review, connect, and rehearse becomes easier to retrieve.",
+      "Meaning is a daily orientation. Put your choices where your stated values can actually find them."
+    ],
     accent: "#4fd4ff",
     accent2: "#ff9f6e",
     glow: "rgba(79, 212, 255, 0.23)"
@@ -265,6 +367,12 @@ export const batchBookWorlds = {
     mapTitle: "From war machines to public futures",
     cardHeading: "Public questions",
     cards: ["Who funds invention?", "What does security justify?", "Which benefits go civilian?", "What progress could we choose instead?"],
+    cardBodies: [
+      "Follow the money behind invention. Funding priorities reveal which problems a society makes urgent and which it leaves waiting.",
+      "Ask what security is being used to authorize. Some protections are necessary; others quietly expand power beyond debate.",
+      "Track how military tools become civilian habits. Benefits matter, but so do the incentives and costs that delivered them.",
+      "Imagine an innovation agenda chosen by public flourishing, not permanent emergency. Different priorities would produce different futures."
+    ],
     accent: "#8ac7ff",
     accent2: "#f0b35a",
     glow: "rgba(138, 199, 255, 0.22)"
@@ -280,6 +388,12 @@ export const batchBookWorlds = {
     mapTitle: "From win chemistry to the infinite game",
     cardHeading: "Competitive tools",
     cards: ["Win chemistry", "Territory control", "Pressure conversion", "Flow and longevity"],
+    cardBodies: [
+      "Notice the chemistry of winning before the score confirms it. Breath, posture, rhythm, and belief all send competitive signals.",
+      "Control space with intention. Court position is psychological pressure when every step tells the opponent where the match lives.",
+      "Turn pressure into information instead of threat. The player who can translate nerves fastest gains tactical oxygen.",
+      "Flow lasts longer when recovery, identity, and training support it. Longevity is a performance strategy, not an afterthought."
+    ],
     accent: "#76f0ff",
     accent2: "#f5c15f",
     glow: "rgba(118, 240, 255, 0.22)"
@@ -295,6 +409,12 @@ export const batchBookWorlds = {
     mapTitle: "Glimmer, message, flight, archive",
     cardHeading: "Gate questions",
     cards: ["Who controls truth?", "What does safety hide?", "When does order decay?", "What survives disclosure?"],
+    cardBodies: [
+      "Ask who benefits when truth is delayed for your protection. A gate may guard knowledge, or it may guard power.",
+      "Safety language can hide hierarchy. Look for the people asked to remain ignorant so stability can look clean.",
+      "Order decays when it can no longer answer honest questions. Secrecy becomes brittle the moment it fears daylight.",
+      "Disclosure is not just exposure; it is responsibility after exposure. What survives must be true enough to rebuild with."
+    ],
     accent: "#ff6f61",
     accent2: "#73d6ff",
     glow: "rgba(255, 111, 97, 0.2)"
@@ -310,6 +430,12 @@ export const batchBookWorlds = {
     mapTitle: "Problem, model, decision, leverage, life",
     cardHeading: "Plain-language tools",
     cards: ["Find the real problem", "Use base rates", "Lower friction", "Design for resilience"],
+    cardBodies: [
+      "Strip the problem to the mechanism that actually moves. Most frustration shrinks when the real constraint is named.",
+      "Use base rates to cool the drama. History, numbers, and patterns can protect decisions from a loud anecdote.",
+      "Reduce friction before demanding more willpower. Good design makes the right action easier to repeat.",
+      "Build systems that can survive stress, fatigue, and bad days. Resilience is planned before it is needed."
+    ],
     accent: "#7fdcff",
     accent2: "#ffd36c",
     glow: "rgba(127, 220, 255, 0.21)"
@@ -325,6 +451,12 @@ export const batchBookWorlds = {
     mapTitle: "Experience, evidence, theory, ethics",
     cardHeading: "Consciousness lenses",
     cards: ["First-person evidence", "Brain-body tests", "Big theories", "Ethical stakes"],
+    cardBodies: [
+      "Start from lived experience without apologizing for it. First-person reality is evidence, even when it resists easy measurement.",
+      "Use brain and body tests as windows, not final verdicts. Correlation can guide inquiry without closing the mystery.",
+      "Compare theories by what they explain and what they leave untouched. A big claim should earn its reach.",
+      "Let consciousness change how you treat beings who can suffer. Metaphysics becomes serious when ethics enters the room."
+    ],
     accent: "#9ae8ff",
     accent2: "#d3b3ff",
     glow: "rgba(154, 232, 255, 0.22)"
@@ -340,6 +472,12 @@ export const batchBookWorlds = {
     mapTitle: "Line, argument, settlement, repair",
     cardHeading: "Civic safeguards",
     cards: ["Nonviolence compact", "Secure forums", "Virality guardrails", "Adult citizenship"],
+    cardBodies: [
+      "Hold speech inside a nonviolence compact. Courage grows when disagreement is protected from both cowardice and cruelty.",
+      "Build forums where people can test words without being destroyed by one imperfect sentence. Safety should serve truth.",
+      "Slow the reward cycle around outrage. Virality often punishes nuance before wisdom has time to arrive.",
+      "Adult citizenship means speaking, listening, correcting, and staying in the room. Freedom matures through responsibility."
+    ],
     accent: "#6ee7ff",
     accent2: "#ffcf7a",
     glow: "rgba(110, 231, 255, 0.22)"
@@ -355,6 +493,12 @@ export const batchBookWorlds = {
     mapTitle: "Mark, signal, road, code",
     cardHeading: "Identity symbols",
     cards: ["The maker's mark", "Signal and belief", "Mercury's road", "Zeroes and ones"],
+    cardBodies: [
+      "Ask what mark your choices are leaving. Identity is not only felt; it is impressed into repeated action.",
+      "Notice how signals teach belief. What you display, repeat, and reward begins to tell you who you are.",
+      "Travel the road between message and meaning. A symbol has power only when life keeps backing it up.",
+      "Digital marks still become moral marks. Even zeroes and ones train reputation, memory, and self-understanding."
+    ],
     accent: "#ff9e64",
     accent2: "#f2dfad",
     glow: "rgba(255, 158, 100, 0.22)"
@@ -370,6 +514,12 @@ export const batchBookWorlds = {
     mapTitle: "Different defaults, deeper functions, wealth hacks",
     cardHeading: "Mind-wealth prompts",
     cards: ["Rich defaults", "Subconscious functions", "Belief programming", "Wealth creation hacks"],
+    cardBodies: [
+      "Install wealth defaults before motivation is tested. The subconscious follows repeated cues more faithfully than occasional ambition.",
+      "Study what the automatic mind is doing with money, risk, comfort, and delay. Hidden functions become changeable when mapped.",
+      "A belief program is not a slogan; it is a repeated instruction paired with evidence. Recode through practice.",
+      "Use hacks only when they support character and skill. Wealth grows best when shortcuts serve a real system."
+    ],
     accent: "#64f0b8",
     accent2: "#f7d56d",
     glow: "rgba(100, 240, 184, 0.2)"
@@ -385,6 +535,12 @@ export const batchBookWorlds = {
     mapTitle: "Foundation, relation, career, society, legacy",
     cardHeading: "Strategy moves",
     cards: ["Read power", "Build trust", "Negotiate cleanly", "Leave a legacy"],
+    cardBodies: [
+      "Read power as terrain, not gossip. Strategy begins when you know who can move what, and why.",
+      "Trust is strategic capital. Build it before you need it, and protect it when winning would tempt compromise.",
+      "Negotiate with clarity about interests, boundaries, and tradeoffs. Clean deals reduce hidden resentment later.",
+      "Legacy is influence that keeps helping after the moment passes. Build systems, people, and principles that outlast applause."
+    ],
     accent: "#f4b65f",
     accent2: "#7edcff",
     glow: "rgba(244, 182, 95, 0.22)"
@@ -400,6 +556,12 @@ export const batchBookWorlds = {
     mapTitle: "Founding, vigil, void, sanctuary, dawn",
     cardHeading: "Shadow-world forces",
     cards: ["Refusal", "Discord", "Harmony", "Dawn after shadow"],
+    cardBodies: [
+      "Refusal can be a sacred boundary. Notice what your soul can no longer perform without becoming smaller.",
+      "Discord is not always failure; sometimes it is the first honest sound. Listen before forcing harmony too soon.",
+      "True harmony does not erase difference. It finds the form where separate voices can become music without surrendering truth.",
+      "After shadow, dawn asks for embodiment. Carry the changed music into how you speak, work, and choose."
+    ],
     accent: "#a68cff",
     accent2: "#67e0ff",
     glow: "rgba(166, 140, 255, 0.22)"
@@ -415,6 +577,12 @@ export const batchBookWorlds = {
     mapTitle: "Letter, virtue, fire, farewell",
     cardHeading: "Virtue tests",
     cards: ["Maximum virtue", "Fire as trial", "Service as measure", "Confidence without worship"],
+    cardBodies: [
+      "Aim virtue at its highest form, not its easiest performance. Excellence should deepen character before it decorates identity.",
+      "Let fire test what is real. Trial burns away borrowed confidence and reveals the discipline that remains.",
+      "Measure greatness by service, not spectacle. Power becomes cleanest when it strengthens what cannot repay it.",
+      "Confidence is safest when it refuses worship. Stand tall without needing the world to kneel."
+    ],
     accent: "#ffd166",
     accent2: "#ff7a5c",
     glow: "rgba(255, 209, 102, 0.22)"
@@ -430,6 +598,12 @@ export const batchBookWorlds = {
     mapTitle: "Story, mind, body, connection, wealth, strategy, legacy",
     cardHeading: "Acceleration rules",
     cards: ["Own the story", "Rewire the mind", "Build the wealth engine", "Pursue legacy"],
+    cardBodies: [
+      "Own the story before it owns your decisions. The second half changes when the narrator becomes deliberate.",
+      "Rewiring begins with repeated proof. New thoughts need routines, cues, and actions that make them believable.",
+      "Build wealth like an engine, not a wish. Income, skill, leverage, and discipline must turn together.",
+      "Legacy clarifies what acceleration is for. Move faster toward something worthy enough to survive your mood."
+    ],
     accent: "#7cff8a",
     accent2: "#ffd166",
     glow: "rgba(124, 255, 138, 0.2)"
@@ -445,6 +619,12 @@ export const batchBookWorlds = {
     mapTitle: "Twilight, doubt, assembly, farewell, crucible, song",
     cardHeading: "Mythic movements",
     cards: ["Old gods fading", "Cleansing doubt", "The great assembly", "A new song"],
+    cardBodies: [
+      "Notice which old certainties have gone quiet. Their absence may reveal what you have been worshipping without names.",
+      "Doubt can cleanse without destroying. Let it remove false devotion while protecting the capacity for reverence.",
+      "At the assembly, listen to every modern power asking for loyalty. Not every shining god deserves a temple.",
+      "A new song should make people more human, not more obedient. Test the sacred by what it awakens."
+    ],
     accent: "#c9a4ff",
     accent2: "#ff8f70",
     glow: "rgba(201, 164, 255, 0.22)"
@@ -460,6 +640,12 @@ export const batchBookWorlds = {
     mapTitle: "Forge the engine, wield the impact",
     cardHeading: "Deed disciplines",
     cards: ["Daily deeds audit", "Focused fortress", "Calm edge", "Legacy architecture"],
+    cardBodies: [
+      "Audit the deeds, not the declarations. Your real philosophy is visible in what gets done repeatedly.",
+      "Build a fortress around attention. Focus is easier when noise has to ask permission before entering.",
+      "Keep calm sharp, not soft. The edge is the ability to act cleanly while pressure is loud.",
+      "Design legacy as repeated contribution. What you build into others will speak longer than your announcements."
+    ],
     accent: "#ff6d4a",
     accent2: "#f7d58b",
     glow: "rgba(255, 109, 74, 0.22)"
@@ -475,6 +661,12 @@ export const batchBookWorlds = {
     mapTitle: "Thirty-three meditations on renewal",
     cardHeading: "Mortality practices",
     cards: ["Remember clearly", "Release the old self", "Return to the day", "Live awake"],
+    cardBodies: [
+      "Remember death to clarify the day. Mortality strips false urgency from what never deserved your life.",
+      "Let an old self die without turning the funeral into shame. Release can be disciplined and tender.",
+      "Return to the ordinary day with sharper gratitude. The practice matters only if it changes Tuesday.",
+      "Awake living is finite living made conscious. Choose with the knowledge that time is not theoretical."
+    ],
     accent: "#e8e1d0",
     accent2: "#9fb2ff",
     glow: "rgba(232, 225, 208, 0.18)"
@@ -490,6 +682,12 @@ export const batchBookWorlds = {
     mapTitle: "Ambition, challenge, maneuver, action",
     cardHeading: "Princely disciplines",
     cards: ["Forge ambition", "Read the battlefield", "Strike decisively", "Persist through siege"],
+    cardBodies: [
+      "Ambition needs a forge, not a fantasy. Let desire become training, sacrifice, and clear standards.",
+      "Read conflict as terrain. The prince survives by seeing obstacles, allies, timing, and risk before charging.",
+      "Decisive action is a claim on the future. Waiting too long can become a rival throne.",
+      "A siege tests whether identity is stronger than delay. Persistence turns blocked roads into character."
+    ],
     accent: "#f2c56b",
     accent2: "#73d7ff",
     glow: "rgba(242, 197, 107, 0.22)"
@@ -505,6 +703,12 @@ export const batchBookWorlds = {
     mapTitle: "Concepts, patterns, adaptation, science",
     cardHeading: "Sleep questions",
     cards: ["What patterns exist?", "What are the tradeoffs?", "How does adaptation work?", "What does science say?"],
+    cardBodies: [
+      "Learn the patterns before choosing one. Sleep experiments deserve precision, humility, and respect for the body.",
+      "Every schedule trades something. Count the costs in mood, health, relationships, attention, and safety, not only hours gained.",
+      "Adaptation is a stress process, not a badge. Track signals carefully and change course when the body speaks clearly.",
+      "Let science keep ambition honest. Recovery is not weakness; it is the system that makes effort sustainable."
+    ],
     accent: "#78d8ff",
     accent2: "#c6a7ff",
     glow: "rgba(120, 216, 255, 0.22)"
@@ -520,6 +724,12 @@ export const batchBookWorlds = {
     mapTitle: "Moon-shell, challenge, scorch, memory",
     cardHeading: "Parable forces",
     cards: ["Moonlit oath", "Tidal pressure", "Refusal under heat", "A story carried forward"],
+    cardBodies: [
+      "The oath matters because it is small and costly. Dignity often begins before anyone powerful is watching.",
+      "Pressure reveals whether obedience is respect or fear. The tide can command movement without owning the soul.",
+      "Heat tests the refusal after applause is gone. Endurance gives dignity a body.",
+      "A parable survives when someone retells the courage. Carry the shell as a reminder of quiet defiance."
+    ],
     accent: "#ffad68",
     accent2: "#8de7ff",
     glow: "rgba(255, 173, 104, 0.22)"
@@ -535,6 +745,12 @@ export const batchBookWorlds = {
     mapTitle: "Oath, envy, blight, shrine, covenant",
     cardHeading: "Folklore lessons",
     cards: ["Receive the gift", "Resist imitation", "Honor the covenant", "Let greed go hungry"],
+    cardBodies: [
+      "Receive blessing with humility. A gift becomes dangerous when gratitude is replaced by entitlement.",
+      "Imitation without covenant copies the surface and loses the spirit. Ask what promise made the fruit possible.",
+      "Keep faith with the source of the gift. Ritual matters when it protects memory from convenience.",
+      "Greed starves because it cannot be satisfied by enough. Let the hungry impulse go without feeding it authority."
+    ],
     accent: "#70e08f",
     accent2: "#ffd36c",
     glow: "rgba(112, 224, 143, 0.2)"
@@ -550,6 +766,12 @@ export const batchBookWorlds = {
     mapTitle: "Awakening, audit, loop, system",
     cardHeading: "Liberation practices",
     cards: ["Map attention leaks", "Clear mental barnacles", "Design liberation loops", "Scale from self to system"],
+    cardBodies: [
+      "Find where attention is leaking before demanding more discipline. Freedom begins with an honest map of capture.",
+      "Clear the mental barnacles that make movement feel heavier than it is. Simplicity can be an act of recovery.",
+      "Design loops that return you to agency after drift. Liberation is easier when reset has a path.",
+      "Move from personal clarity to shared systems. A liberated mind should make rooms, teams, and tools less coercive."
+    ],
     accent: "#6be7ff",
     accent2: "#ffcf7a",
     glow: "rgba(107, 231, 255, 0.22)"
@@ -565,6 +787,12 @@ export const batchBookWorlds = {
     mapTitle: "Mindset, body, strategy, alignment",
     cardHeading: "Green-book principles",
     cards: ["Vision principle", "Energy management", "Momentum mechanics", "Forward motion"],
+    cardBodies: [
+      "Hold vision as a seed and a standard. What you see clearly becomes easier to cultivate daily.",
+      "Manage energy as success capital. The body, mood, and schedule all decide how much ambition can become action.",
+      "Momentum is mechanical before it is magical. Small wins reduce resistance and make the next step more likely.",
+      "Forward motion beats dramatic intention. Keep moving in the direction your aligned self can sustain."
+    ],
     accent: "#8dff7a",
     accent2: "#f2d36b",
     glow: "rgba(141, 255, 122, 0.21)"
@@ -580,6 +808,12 @@ export const batchBookWorlds = {
     mapTitle: "Seed, summons, juice, honor, slices",
     cardHeading: "Village questions",
     cards: ["Who owns the fruit?", "What does honor require?", "How is justice shared?", "What remains after sweetness?"],
+    cardBodies: [
+      "Ask ownership questions before sweetness distracts everyone. Desire can make simple facts suddenly complicated.",
+      "Honor requires more than appearing respectable. It asks what you owe when no one can force your hand.",
+      "Justice shared well leaves dignity intact. The village must learn how fairness tastes after judgment is done.",
+      "After sweetness, memory remains. What people remember about the mango becomes the law beneath the law."
+    ],
     accent: "#ffb84d",
     accent2: "#72e6b5",
     glow: "rgba(255, 184, 77, 0.22)"
@@ -595,6 +829,12 @@ export const batchBookWorlds = {
     mapTitle: "Identity, reality, moderation, courage, mortality",
     cardHeading: "Stoic meditations",
     cards: ["Digital identity", "Reality and attention", "Moderation in excess", "Mortality as compass"],
+    cardBodies: [
+      "Treat online identity as a role, not a soul. The Stoic test is whether virtue survives the screen.",
+      "Attention decides which reality becomes livable. Guard the inner forum from every passing crowd.",
+      "Moderation is rebellion in a culture of excess. Choose enough before appetite becomes government.",
+      "Mortality returns scale to daily irritation. Remembering death can make ordinary choices cleaner."
+    ],
     accent: "#d9b35f",
     accent2: "#9db6ff",
     glow: "rgba(217, 179, 95, 0.2)"
@@ -610,6 +850,12 @@ export const batchBookWorlds = {
     mapTitle: "Longing, forms, beloved, trials, illumination, return",
     cardHeading: "Pilgrim passages",
     cards: ["Longing as gate", "Forms and emptiness", "The beloved revealed", "Return with fire"],
+    cardBodies: [
+      "Enter longing as a threshold, not a defect. Hunger can reveal the shape of the shrine you keep building.",
+      "Watch forms without mistaking them for fullness. The vessel matters, but emptiness may still be speaking.",
+      "The beloved reveals what desire cannot possess. Love becomes instruction when it stops being an idol.",
+      "Return with fire, but do not worship the flame. Revelation must become humility in the ordinary road."
+    ],
     accent: "#ff9b6a",
     accent2: "#cba6ff",
     glow: "rgba(255, 155, 106, 0.23)"
@@ -625,6 +871,12 @@ export const batchBookWorlds = {
     mapTitle: "From crisis-built house to quiet house",
     cardHeading: "Calm-building tools",
     cards: ["Chaos baseline audit", "Three-breath repair", "One-room reset", "30-day quiet house build"],
+    cardBodies: [
+      "Measure the chaos honestly before designing calm. A good house begins with a truthful survey of load and leak.",
+      "Use three breaths as a repair ritual, not a performance. Calm often starts with one nervous system interruption.",
+      "Reset one room so the body can believe in order again. Environment teaches the mind what is possible.",
+      "Build quiet over thirty days through repeatable maintenance. Calm becomes architecture when practices stop depending on crisis."
+    ],
     accent: "#c8a45a",
     accent2: "#8fb8c8",
     glow: "rgba(200, 164, 90, 0.2)"
@@ -640,6 +892,12 @@ export const batchBookWorlds = {
     mapTitle: "Signal, story, pause, influence, will",
     cardHeading: "Power practices",
     cards: ["Machinery inventory", "Pre-speech scan", "Ten-second sovereignty", "Conscious default card"],
+    cardBodies: [
+      "Inventory the machinery moving you before calling it choice. Power begins when hidden defaults become visible.",
+      "Scan the body before speech turns into strategy. Presence can keep influence from becoming performance.",
+      "Use ten seconds to recover sovereignty. A pause is small enough to practice and strong enough to redirect power.",
+      "Write the default you want before pressure writes one for you. Conscious power is installed through repetition."
+    ],
     accent: "#b24d34",
     accent2: "#d9b35f",
     glow: "rgba(178, 77, 52, 0.23)"
@@ -655,6 +913,12 @@ export const batchBookWorlds = {
     mapTitle: "Altitude, dust, court, witness, verdict, rain",
     cardHeading: "Mythic pressures",
     cards: ["The law of altitude", "Aurel touches dust", "Witnesses of the city", "The first rain"],
+    cardBodies: [
+      "Treat altitude as a moral question, not only a place. Distance changes what power believes it can ignore.",
+      "Dust is the first lesson in shared weight. Aurel learns by touching what distance once abstracted.",
+      "Witnesses make suffering harder to dismiss. The city speaks when one fallen watcher can finally hear it.",
+      "The first rain is not forgiveness; it is consequence made fertile. Renewal begins with contact, not innocence."
+    ],
     accent: "#8fb8ff",
     accent2: "#d9ad5f",
     glow: "rgba(143, 184, 255, 0.24)"
@@ -670,6 +934,12 @@ export const batchBookWorlds = {
     mapTitle: "Caution, self-belief, potential, preservation, leadership, conquest",
     cardHeading: "Princely disciplines",
     cards: ["Ethical caution", "Foundation of self-belief", "Strategic relationships", "Conqueror's mindset"],
+    cardBodies: [
+      "Study power without giving it your conscience. The warning matters because confidence without ethics becomes predatory.",
+      "Build self-belief from kept promises, not borrowed applause. The foundation must hold when no one crowns you.",
+      "Choose relationships strategically and humanely. Alliances should sharpen the mission without turning people into tools.",
+      "The conqueror mindset begins with self-command. Win the inner field before trying to rule the outer one."
+    ],
     accent: "#7ecbff",
     accent2: "#d5b66a",
     glow: "rgba(126, 203, 255, 0.23)"
@@ -685,6 +955,12 @@ export const batchBookWorlds = {
     mapTitle: "Identity, reality, temperance, relationships, courage, wisdom, death",
     cardHeading: "Stoic practices",
     cards: ["Return of the Stoic", "Sphere of influence", "Courage under fear", "Mortality as teacher"],
+    cardBodies: [
+      "Let the old Stoic return as a mirror. The question is whether modern speed has improved the soul.",
+      "Separate your actions from the weather of events. Influence begins where obsession with control ends.",
+      "Courage under fear is practiced in small refusals. Do the right thing while the body argues.",
+      "Mortality teaches priority. The day becomes clearer when death is allowed to speak without drama."
+    ],
     accent: "#6be7ff",
     accent2: "#d9e8ff",
     glow: "rgba(107, 231, 255, 0.24)"
@@ -700,6 +976,12 @@ export const batchBookWorlds = {
     mapTitle: "Caution, ambition, armory, conquest, shadow, cost",
     cardHeading: "Strategic instruments",
     cards: ["Ethical caution", "Throne of dreams", "Armory of influence", "Price of power"],
+    cardBodies: [
+      "Keep the ethical caution visible. Strategy is useful protection only when conscience remains in command.",
+      "Examine the throne before you desire it. Ambition should know what kind of ruler it is creating.",
+      "Build an armory of influence for defense, discernment, and clean action. Tools become dangerous when they replace character.",
+      "Count the price before calling power victory. Some wins collect interest from the soul."
+    ],
     accent: "#9f2230",
     accent2: "#c4c7cf",
     glow: "rgba(159, 34, 48, 0.24)"
@@ -715,6 +997,12 @@ export const batchBookWorlds = {
     mapTitle: "Essence, intention, attraction, expansion, destiny",
     cardHeading: "Quantum laws",
     cards: ["Ego and essence", "Intentional creation", "Energetic balance", "Unified-field actualization"],
+    cardBodies: [
+      "Bring ego and essence into conversation. Power becomes less brittle when identity stops fighting its deeper source.",
+      "Treat intention as seed, instruction, and responsibility. Creation begins inward, then asks for disciplined outer participation.",
+      "Balance energy before forcing outcome. A charged system needs rhythm, recovery, and alignment to stay useful.",
+      "Act as part of a field, not an isolated wish. Actualization becomes stronger when self and world move together."
+    ],
     accent: "#9d7cff",
     accent2: "#61e8ff",
     glow: "rgba(157, 124, 255, 0.24)"
@@ -730,6 +1018,12 @@ export const batchBookWorlds = {
     mapTitle: "Expectation, signal, practice, biology, integration",
     cardHeading: "Attraction mechanics",
     cards: ["Expectancy and mindset", "Visualization and priming", "Confidence signals", "Habits and integration"],
+    cardBodies: [
+      "Expectancy changes effort, perception, and persistence. Mindset matters most when it becomes behavior you can observe.",
+      "Visualize to prime action, not replace it. Mental rehearsal should make the next real step easier.",
+      "Confidence signals travel through posture, speech, practice, and follow-through. The body often convinces the mind by moving first.",
+      "Integrate attraction through habits. Repeated action turns belief from a claim into a lived pattern."
+    ],
     accent: "#73e0ff",
     accent2: "#f6c768",
     glow: "rgba(115, 224, 255, 0.22)"
@@ -745,6 +1039,12 @@ export const batchBookWorlds = {
     mapTitle: "Power, sacrifice, collapse, restoration",
     cardHeading: "Civilization questions",
     cards: ["Power or transcendence?", "Why civilizations crumble", "Voluntary sacrifice", "Beauty as civic order"],
+    cardBodies: [
+      "Ask whether order is serving meaning or merely protecting power. This is the choice beneath every institution.",
+      "Civilizations crumble when appetite, cynicism, and control replace sacrifice. Collapse begins as a spiritual accounting error.",
+      "Voluntary sacrifice turns desire into service before coercion arrives. The gift offered freely can prevent harsher demands later.",
+      "Beauty reminds a people that utility is not enough. Civic order needs forms that lift the soul."
+    ],
     accent: "#f0c06a",
     accent2: "#d95f5f",
     glow: "rgba(240, 192, 106, 0.22)"
