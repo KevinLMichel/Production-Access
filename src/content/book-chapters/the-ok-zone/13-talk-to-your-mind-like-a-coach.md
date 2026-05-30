@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 You can coach the mind. You can give it better questions. Instead of letting it ask, what if I fail? ask, how can I prepare? Instead of, what will people think? ask, who could be helped if I do this well? Instead of, why am I so behind? ask, what is the next useful action?
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/inner-coach-vs-inner-critic.png" alt="Hand-drawn inner coach versus inner critic and fear translation tool." loading="lazy" />
+  <figcaption>A coaching mind gives fear a job to do instead of letting it run the room.</figcaption>
+</figure>
+
 I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
 
 During long runs, the mind can become noisy. It says, this is hard, stop, slow down, why are we doing this, maybe today is not the day. I do not need to fight every thought. I can question it, redirect it and remind it of the bigger reason. The mind needs a job.

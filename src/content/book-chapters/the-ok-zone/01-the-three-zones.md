@@ -10,6 +10,11 @@ updated: 2026-05-28
 
 Imagine life as three levels stacked on top of each other. At the bottom is the Rut Zone. In the middle is the OK Zone. At the top is the Winning Zone. Most people think the bottom is the worst place to be. I disagree.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/three-zones-silent-trap.png" alt="Hand-drawn Three Zones map showing Rut Zone, OK Zone, Winning Zone, and the silent trap of comfort." loading="lazy" />
+  <figcaption>The core map: the Rut hurts, the Winning Zone grows, and the OK Zone quietly hides the cost.</figcaption>
+</figure>
+
 The Rut is painful, but pain has one strange advantage: it creates urgency. When you lose the job, the relationship breaks, the health problem becomes impossible to ignore or the money situation becomes frightening, you do not sit around asking if you feel motivated. You act because you have to.
 
 The OK Zone is different. It is not painful enough to force you to move. You can stay there for years because the price is paid quietly. You do not wake up every morning in crisis. You wake up slightly flat, slightly numb, slightly aware that life is passing and you are not fully in it.

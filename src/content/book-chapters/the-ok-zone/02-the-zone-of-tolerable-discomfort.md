@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 The audit works because it makes the invisible visible. When something stays vague, you can keep negotiating with it. When you write it down, it becomes harder to hide from. I keep tolerating low energy. I keep tolerating poor preparation. I keep tolerating a calendar that belongs to everyone except me. Now we have something to work with.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/tolerable-discomfort-jar.png" alt="Hand-drawn tolerable discomfort jar and five-year drift line showing small tolerated problems becoming heavier over time." loading="lazy" />
+  <figcaption>Tolerable discomfort accumulates slowly; the audit helps you see the weight before it becomes a crisis.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

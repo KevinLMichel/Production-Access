@@ -10,6 +10,11 @@ updated: 2026-05-28
 
 If you went on holiday and the resort was OK, would you rush to book the same place next year? Probably not. If you watched a film and it was OK, would you recommend it to your closest friend? Probably not. If you went on a date and the connection was OK, would you feel excited to build a life with that person? Again, probably not.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/ok-test-comfort-cost-meter.png" alt="Hand-drawn OK Test and comfort cost meter showing OK holiday, OK film, OK life, and the hidden cost of staying comfortable." loading="lazy" />
+  <figcaption>The OK Test makes the opening question visible: why reject an OK holiday or OK film, but tolerate an OK life?</figcaption>
+</figure>
+
 Yet many people tolerate an OK life for years. They have an OK job, OK health, OK energy, OK relationships, OK confidence and OK standards. Nothing is collapsing, so nothing feels urgent. There is no fire alarm. There is only that quiet internal sentence: I know I could be doing better.
 
 The danger of OK is that it gives you enough comfort to avoid change and enough dissatisfaction to lose respect for yourself. It is not dramatic. It is not the bottom. It is the middle, and the middle can be more dangerous than the bottom because the bottom normally forces a decision.

@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 The question is not, do I feel motivated today? The question is, what did I commit to and what is the minimum action that keeps me in integrity? You do not need heroic effort every day. You need enough consistency to keep the promise alive.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/motivation-system-bridge.png" alt="Hand-drawn motivation weather versus system bridge and boring day machine showing progress without waiting for inspiration." loading="lazy" />
+  <figcaption>Motivation comes and goes; a system keeps you moving across the boring days.</figcaption>
+</figure>
+
 If someone tells me they only act when they feel motivated, I know the system is fragile. We have to build something sturdier than mood: reminders, standards, scheduling, accountability and a next action small enough to begin.
 
 When I trained for the London Marathon, there were many runs. Some were short. Some were long. Some were wet, boring or inconvenient. If I had waited to feel inspired for every session, the training plan would have fallen apart quickly. The plan mattered because it carried me when motivation was quiet.

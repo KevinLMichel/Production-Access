@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 Practice removes the pressure to pretend. You do not need to announce yourself as a finished product. You can say, I am practising. That is honest. It gives you permission to be a beginner while still taking the work seriously.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/practice-until-you-become-it.png" alt="Hand-drawn practice ladder comparing fake it with practise it and showing identity built through repetition." loading="lazy" />
+  <figcaption>Identity grows through repetition, not pretence.</figcaption>
+</figure>
+
 I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
 
 When I began running workshops, I was not brilliant at the start. How could I be? Public speaking, facilitation and holding a room are skills. So I practised. I ran sessions. I learned what worked. I learned what did not. Repetition gave me feedback, and feedback created improvement.

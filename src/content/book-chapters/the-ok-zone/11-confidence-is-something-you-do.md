@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 I call this the Confidence Credit Score. Every time you do something slightly uncomfortable and survive it, you deposit evidence. Every time you avoid everything that scares you, you teach yourself that avoidance is necessary. The score is not moral. It is behavioural.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/confidence-credit-score.png" alt="Hand-drawn confidence credit score and evidence bank showing confidence built through action and evidence." loading="lazy" />
+  <figcaption>Confidence grows when action creates evidence.</figcaption>
+</figure>
+
 I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
 
 One client-style example I often think about is the shy professional who begins with tiny acts of courage. Sitting beside a stranger on a bus. Speaking up once in a meeting. Asking a question. Sharing a small opinion. Then, after enough repetitions, standing in front of a room and speaking calmly. Not because she magically became a different person, but because she practised the behaviours of confidence.

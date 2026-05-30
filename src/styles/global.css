@@ -4495,6 +4495,59 @@ body.theme-the-ok-zone .batch-prose strong {
   color: #d9f6ae;
 }
 
+body.theme-the-ok-zone .ok-zone-figure {
+  position: relative;
+  margin: clamp(2rem, 5vw, 3.6rem) 0;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  overflow: hidden;
+  border: 1px solid rgba(240, 173, 46, 0.34);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(240, 173, 46, 0.14), transparent 17rem),
+    radial-gradient(circle at 86% 20%, rgba(143, 206, 79, 0.12), transparent 16rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.032));
+  box-shadow:
+    0 28px 84px rgba(0, 8, 18, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+
+body.theme-the-ok-zone .ok-zone-figure::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(72, 174, 255, 0.1), transparent 25%, transparent 76%, rgba(240, 173, 46, 0.1)),
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: auto, 100% 20px;
+  opacity: 0.42;
+}
+
+body.theme-the-ok-zone .ok-zone-figure img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  background: #fffdf5;
+  box-shadow:
+    0 20px 58px rgba(0, 8, 18, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+body.theme-the-ok-zone .ok-zone-figure figcaption {
+  position: relative;
+  z-index: 1;
+  margin: 0.9rem 0.2rem 0;
+  color: rgba(236, 250, 230, 0.88);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(0.88rem, 1.8vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+}
+
 body.theme-the-ok-zone :is(.reader-sidebar nav a, .reader-nav a, .batch-chapter-tile, .button, .text-link):focus-visible {
   outline: 2px solid rgba(240, 173, 46, 0.94);
   outline-offset: 4px;

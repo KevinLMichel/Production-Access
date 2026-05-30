@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 I call this Fear Flipping. You turn the fear around and ask, what if I do not do this? What if I never write the book, never have the conversation, never build the business, never get fit, never practise confidence, never leave the OK Zone? Sometimes the bigger fear is not failure. It is realising too late that you protected yourself from the wrong thing.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/regret-late-alarm.png" alt="Hand-drawn fear flipping scale and future-self alarm clock comparing fear of acting with fear of never acting." loading="lazy" />
+  <figcaption>Fear Flipping asks a sharper question: what will it cost if you never try?</figcaption>
+</figure>
+
 In coaching, regret is useful only if it arrives early enough to change behaviour. I want you to borrow wisdom from your future self before the bill becomes painful.
 
 I have used this in my own life many times. Moving towards coaching was not obvious at the beginning. There were doubts. Would people take me seriously? Could I make a living? Was coaching even a real path for me? But the thought of staying in work that did not fit me was worse than the uncertainty of trying.

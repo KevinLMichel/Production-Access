@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Do a Room Audit. Who makes your old standards feel normal? Who quietly raises your ambition? Who tells you that your goal is unrealistic because they have never attempted anything similar? Who has already walked the road you are trying to begin?
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/environment-room-audit.png" alt="Hand-drawn room audit sketch and normal is contagious diagram showing how spaces, cues, and people train behaviour." loading="lazy" />
+  <figcaption>Your environment is already coaching you. The Room Audit helps you decide what it is coaching you toward.</figcaption>
+</figure>
+
 Look around the rooms you live and work in. What does each room make easier? What does it make harder? A room can coach you into movement or sedate you into drift. Your environment is already training you; the question is whether it is training the life you say you want.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

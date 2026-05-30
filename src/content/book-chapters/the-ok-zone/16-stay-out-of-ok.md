@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Create a reset ritual. It can be simple: review the week, clean the environment, train, write the next three actions, speak to an accountability person, return to the minimum standard. The ritual matters because it removes negotiation. You know what to do when you notice the signs.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/stay-out-of-ok-warning-system.png" alt="Hand-drawn OK Zone early warning system and reset ritual loop." loading="lazy" />
+  <figcaption>Stay out of OK by noticing drift early and resetting fast.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

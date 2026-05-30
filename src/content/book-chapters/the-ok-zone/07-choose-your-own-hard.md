@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 Chosen hardship is different. It has direction. When I train for a marathon or an ultra, parts of it are uncomfortable. Some runs are enjoyable. Some are not. But the discomfort belongs to something I respect. It is connected to a goal, a value and an identity I want to strengthen.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/choose-your-own-hard.png" alt="Hand-drawn chosen hard versus unchosen hard paths with a discomfort trade-off board." loading="lazy" />
+  <figcaption>You do not avoid hard; you choose which hard to live with.</figcaption>
+</figure>
+
 I am not looking for drama here. I am looking for facts. What is happening? What keeps happening? What do you say you want? What do you actually do? What does your calendar reveal? What does your body reveal? What do your relationships reveal? The facts are not there to shame you. They are there to give you something honest to work with.
 
 When I was preparing for long races, I did not wake up every day buzzing with motivation. There were runs where I would rather have stayed comfortable. But I had already decided what the discomfort was for. That changes the conversation in your mind. You stop asking, do I feel like it? and start asking, what did I commit to?

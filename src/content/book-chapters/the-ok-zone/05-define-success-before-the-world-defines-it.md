@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Use the five whys. I want a bigger business. Why? So I can earn more. Why? So I can feel secure. Why? Because I grew up feeling that money could disappear. Now we are having a real conversation. The business goal may still matter, but it is now connected to a deeper need that can be handled with more intelligence.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/borrowed-goals-real-goals.png" alt="Hand-drawn borrowed goals versus real goals shelves and five whys root drill ending in freedom." loading="lazy" />
+  <figcaption>A goal becomes yours when you know why it matters, not just how impressive it looks.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

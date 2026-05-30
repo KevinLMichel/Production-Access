@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Build your system around three areas: You, Your Environment and Your Performance. You includes health, energy, mindset and confidence. Your Environment includes people, spaces, distractions and support. Your Performance includes goals, skills, actions and review.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/performance-system-dashboard.png" alt="Hand-drawn weekly Winning Zone review dashboard and you environment performance system gears." loading="lazy" />
+  <figcaption>A strong week is built by a working system.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

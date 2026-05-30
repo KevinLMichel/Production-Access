@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 A good debrief separates facts from drama. What happened? What was in my control? What was not? What did I assume? What did I fail to prepare? What system would prevent this next time? This gives the mind something constructive to do.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/failure-feedback-receipts.png" alt="Hand-drawn failure debrief sheet and mistake to method conveyor turning reflection into improved strategy." loading="lazy" />
+  <figcaption>A mistake becomes useful when it is reviewed.</figcaption>
+</figure>
+
 A useful debrief has three windows: what happened, what did I learn, and what do I adjust next time? If you only punish yourself, you waste the data. If you only excuse yourself, you waste the lesson.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

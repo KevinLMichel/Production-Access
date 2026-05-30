@@ -391,6 +391,171 @@ const sections = [
   }
 ];
 
+const figuresByTitle = new Map([
+  [
+    "The Life That Is Good Enough to Cost You Everything",
+    {
+      file: "ok-test-comfort-cost-meter.png",
+      after: "opening",
+      alt: "Hand-drawn OK Test and comfort cost meter showing OK holiday, OK film, OK life, and the hidden cost of staying comfortable.",
+      caption: "The OK Test makes the opening question visible: why reject an OK holiday or OK film, but tolerate an OK life?"
+    }
+  ],
+  [
+    "The Three Zones",
+    {
+      file: "three-zones-silent-trap.png",
+      after: "opening",
+      alt: "Hand-drawn Three Zones map showing Rut Zone, OK Zone, Winning Zone, and the silent trap of comfort.",
+      caption: "The core map: the Rut hurts, the Winning Zone grows, and the OK Zone quietly hides the cost."
+    }
+  ],
+  [
+    "The Zone of Tolerable Discomfort",
+    {
+      file: "tolerable-discomfort-jar.png",
+      after: "method",
+      alt: "Hand-drawn tolerable discomfort jar and five-year drift line showing small tolerated problems becoming heavier over time.",
+      caption: "Tolerable discomfort accumulates slowly; the audit helps you see the weight before it becomes a crisis."
+    }
+  ],
+  [
+    "Why Your Brain Chooses OK",
+    {
+      file: "brain-safety-board.png",
+      after: "reframe",
+      alt: "Hand-drawn brain safety board and pattern protection diagram showing why old behaviour protects certainty, identity, approval, and comfort.",
+      caption: "Old patterns survive because they protect something. The work is to understand the protection and choose a better cost."
+    }
+  ],
+  [
+    "Regret Is a Late Alarm",
+    {
+      file: "regret-late-alarm.png",
+      after: "reframe",
+      alt: "Hand-drawn fear flipping scale and future-self alarm clock comparing fear of acting with fear of never acting.",
+      caption: "Fear Flipping asks a sharper question: what will it cost if you never try?"
+    }
+  ],
+  [
+    "Define Success Before the World Defines It",
+    {
+      file: "borrowed-goals-real-goals.png",
+      after: "method",
+      alt: "Hand-drawn borrowed goals versus real goals shelves and five whys root drill ending in freedom.",
+      caption: "A goal becomes yours when you know why it matters, not just how impressive it looks."
+    }
+  ],
+  [
+    "Your Minimum Acceptable Standard",
+    {
+      file: "minimum-acceptable-standard.png",
+      after: "method",
+      alt: "Hand-drawn minimum acceptable standard line and standards thermostat connected to work, health, relationships, and habits.",
+      caption: "Your life adjusts to the lowest standard you keep accepting."
+    }
+  ],
+  [
+    "Choose Your Own Hard",
+    {
+      file: "choose-your-own-hard.png",
+      after: "reframe",
+      alt: "Hand-drawn chosen hard versus unchosen hard paths with a discomfort trade-off board.",
+      caption: "You do not avoid hard; you choose which hard to live with."
+    }
+  ],
+  [
+    "Your Environment Is Not Neutral",
+    {
+      file: "environment-room-audit.png",
+      after: "method",
+      alt: "Hand-drawn room audit sketch and normal is contagious diagram showing how spaces, cues, and people train behaviour.",
+      caption: "Your environment is already coaching you. The Room Audit helps you decide what it is coaching you toward."
+    }
+  ],
+  [
+    "Motivation Is Optional",
+    {
+      file: "motivation-system-bridge.png",
+      after: "reframe",
+      alt: "Hand-drawn motivation weather versus system bridge and boring day machine showing progress without waiting for inspiration.",
+      caption: "Motivation comes and goes; a system keeps you moving across the boring days."
+    }
+  ],
+  [
+    "Heart, Head, Hands",
+    {
+      file: "heart-head-hands-h3-method.png",
+      after: "method",
+      alt: "Hand-drawn H3 Method triangle and goal wiring diagram connecting heart, head, and hands.",
+      caption: "Heart gives the why, Head gives the plan, Hands turn the goal into real-world progress."
+    }
+  ],
+  [
+    "Confidence Is Something You Do",
+    {
+      file: "confidence-credit-score.png",
+      after: "reframe",
+      alt: "Hand-drawn confidence credit score and evidence bank showing confidence built through action and evidence.",
+      caption: "Confidence grows when action creates evidence."
+    }
+  ],
+  [
+    "Practice It Until You Become It",
+    {
+      file: "practice-until-you-become-it.png",
+      after: "reframe",
+      alt: "Hand-drawn practice ladder comparing fake it with practise it and showing identity built through repetition.",
+      caption: "Identity grows through repetition, not pretence."
+    }
+  ],
+  [
+    "Talk to Your Mind Like a Coach",
+    {
+      file: "inner-coach-vs-inner-critic.png",
+      after: "reframe",
+      alt: "Hand-drawn inner coach versus inner critic and fear translation tool.",
+      caption: "A coaching mind gives fear a job to do instead of letting it run the room."
+    }
+  ],
+  [
+    "Failure Is Feedback With Receipts",
+    {
+      file: "failure-feedback-receipts.png",
+      after: "method",
+      alt: "Hand-drawn failure debrief sheet and mistake to method conveyor turning reflection into improved strategy.",
+      caption: "A mistake becomes useful when it is reviewed."
+    }
+  ],
+  [
+    "Build Your Performance System",
+    {
+      file: "performance-system-dashboard.png",
+      after: "method",
+      alt: "Hand-drawn weekly Winning Zone review dashboard and you environment performance system gears.",
+      caption: "A strong week is built by a working system."
+    }
+  ],
+  [
+    "Stay Out of OK",
+    {
+      file: "stay-out-of-ok-warning-system.png",
+      after: "method",
+      alt: "Hand-drawn OK Zone early warning system and reset ritual loop.",
+      caption: "Stay out of OK by noticing drift early and resetting fast."
+    }
+  ],
+  [
+    "Do Not Wait Until You Have To",
+    {
+      file: "first-move-method-map.png",
+      after: "method",
+      alt: "Hand-drawn first move and complete method map from diagnosing the zone through reset and a stronger Winning Zone.",
+      caption: "The closing map: you do not need a crisis, you need a first move."
+    }
+  ]
+]);
+
 function slugify(value) {
   return value
     .toLowerCase()
@@ -407,18 +572,44 @@ function wordCount(value) {
   return (value.match(/\b[\w’']+\b/g) ?? []).length;
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function figureFor(section, after) {
+  const figure = figuresByTitle.get(section.title);
+
+  if (!figure || figure.after !== after) {
+    return "";
+  }
+
+  return [
+    `<figure class="ok-zone-figure">`,
+    `  <img src="/images/the-ok-zone/${figure.file}" alt="${escapeHtml(figure.alt)}" loading="lazy" />`,
+    `  <figcaption>${escapeHtml(figure.caption)}</figcaption>`,
+    `</figure>`
+  ].join("\n");
+}
+
 function buildBody(section) {
   return [
     section.opening,
+    figureFor(section, "opening"),
     section.problem,
     section.why,
     purposeBridge(section),
     `Let me make the distinction practical. There is a difference between a life that is quiet because you chose peace and a life that is quiet because you stopped asking for more. There is a difference between patience and passivity. There is a difference between contentment and resignation. The OK Zone often hides in those differences.`,
     section.reframe,
+    figureFor(section, "reframe"),
     coachingLens(section),
     section.story,
     `This is where many ambitious people need a little kindness and a little challenge. Kindness, because the old pattern probably helped you survive or feel safe at some point. Challenge, because the fact that something once helped you does not mean it should keep leading your life. Gratitude for the old strategy does not require loyalty to it.`,
     section.method,
+    figureFor(section, "method"),
     practicalWindow(section),
     `The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.`,
     `I want to keep bringing you back to behaviour because behaviour is where self-respect is either built or lost. It is easy to agree with an idea while reading. It is harder to live it at 7:00 on a cold morning, during an awkward meeting, after a poor night's sleep, or when nobody is going to praise you for doing the right thing. That is exactly why those moments matter.`,
@@ -439,13 +630,14 @@ function buildBody(section) {
     section.direct,
     `This is also where standards become compassionate. A standard is not a whip. A standard is an agreement with the person you want to become. It says, this matters enough that I will not leave it to mood. It says, even on an ordinary Tuesday, even when there is no applause, even when the first attempt is clumsy, I will still behave like this life is mine to build.`,
     section.practice,
+    figureFor(section, "practice"),
     `Do not make this theoretical. The OK Zone loves theory because theory can feel like progress without asking for risk. Read, reflect, then move. One small action taken today will teach you more than another week of thinking about what kind of person you might become.`,
     `### Apply This: ${section.exerciseTitle}`,
     section.exercise,
     `Keep the exercise simple enough that you can complete it without turning it into a project. Write the answer by hand if you can. Be honest, not impressive. Then choose one visible action that proves you are taking the insight seriously.`,
     finalTurn(section),
     `**Takeaway:** ${section.takeaway}`
-  ].join("\n\n");
+  ].filter(Boolean).join("\n\n");
 }
 
 function purposeBridge(section) {

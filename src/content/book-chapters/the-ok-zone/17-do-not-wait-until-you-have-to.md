@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 You now have the method. Diagnose the zone. Name the tolerable discomfort. Understand what the pattern protects. Flip the fear. Define success for yourself. Set your Minimum Acceptable Standard. Choose your own hard. Audit the room. Stop depending on motivation. Use Heart, Head and Hands. Build confidence through evidence. Practise it until you become it. Coach your mind. Debrief failure. Build the system. Notice drift early.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/first-move-method-map.png" alt="Hand-drawn first move and complete method map from diagnosing the zone through reset and a stronger Winning Zone." loading="lazy" />
+  <figcaption>The closing map: you do not need a crisis, you need a first move.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.

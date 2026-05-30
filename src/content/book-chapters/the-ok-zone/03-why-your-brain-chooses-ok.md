@@ -20,6 +20,11 @@ Let me make the distinction practical. There is a difference between a life that
 
 The useful question is not, what is wrong with me? The useful question is, how does this pattern make sense? When you understand the payoff, you can replace it with something better. If avoidance gives you relief, you need a new way to create relief. If scrolling gives you escape, you need a better recovery system. If procrastination protects you from judgement, you need safer ways to practise being seen.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/brain-safety-board.png" alt="Hand-drawn brain safety board and pattern protection diagram showing why old behaviour protects certainty, identity, approval, and comfort." loading="lazy" />
+  <figcaption>Old patterns survive because they protect something. The work is to understand the protection and choose a better cost.</figcaption>
+</figure>
+
 I do not ask people to hate their own mind. I ask them to understand its strategy. What does the pattern protect? What discomfort does it avoid? What reward does it get immediately, even if the long-term cost is high?
 
 When I started studying personal development, one of the biggest reliefs was realising that I was not set in stone. Who I was, how I showed up, how I communicated, how I worked, how I managed my mind, these things could improve. That was not a motivational slogan for me. It was practical liberation.

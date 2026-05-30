@@ -28,6 +28,11 @@ This is where many ambitious people need a little kindness and a little challeng
 
 Create minimums you can actually keep. If your current health routine is nothing, do not declare that you will train six days a week, eat perfectly and become a different species by Monday. That is ego disguised as commitment. Start with a minimum that builds trust.
 
+<figure class="ok-zone-figure">
+  <img src="/images/the-ok-zone/minimum-acceptable-standard.png" alt="Hand-drawn minimum acceptable standard line and standards thermostat connected to work, health, relationships, and habits." loading="lazy" />
+  <figcaption>Your life adjusts to the lowest standard you keep accepting.</figcaption>
+</figure>
+
 Use the idea through four practical windows: work, health, relationships and confidence. At work, ask where OK has become the default standard. In health, ask what your body has been trying to tell you politely before it has to shout. In relationships, ask where you have confused peace with avoidance. In confidence, ask what you keep waiting to feel before you are willing to practise.
 
 The same principle will look different in each window. In work, it might mean preparing properly instead of improvising and hoping nobody notices. In health, it might mean making the walk non-negotiable before you try to become an athlete. In relationships, it might mean saying the sentence you keep editing out. In confidence, it might mean doing the small brave thing today rather than waiting for a personality transplant.
